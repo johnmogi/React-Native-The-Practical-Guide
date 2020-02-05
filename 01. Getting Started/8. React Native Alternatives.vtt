@@ -1,0 +1,175 @@
+WEBVTT
+
+00:02.460 --> 00:06.610
+I also don't want to hide that React Native is a fast moving target.
+
+00:06.660 --> 00:10.010
+We got new words it's being published almost every month.
+
+00:10.110 --> 00:15.480
+Breaking changes do happen and of course I'll do my very best to keep this course updated to let you
+
+00:15.480 --> 00:21.210
+know about changes and how to adjust your code but sometimes you just have to go back to an app you
+
+00:21.210 --> 00:26.610
+built six months ago and you have to change something there because something changed in the latest
+
+00:26.610 --> 00:28.170
+version of risk native.
+
+00:28.170 --> 00:33.930
+And in order to continue working on your app you need to change something in the code which used to
+
+00:33.930 --> 00:34.800
+work before.
+
+00:34.800 --> 00:35.850
+That's normal.
+
+00:35.850 --> 00:41.800
+That will happen not all the time not every month but it will happen also and React Native.
+
+00:41.820 --> 00:45.120
+You typically have a high dependency on third party packages.
+
+00:45.120 --> 00:51.600
+Now the good thing is when working with Expo that's only partly true because Expo already itself is
+
+00:51.600 --> 00:54.690
+such a wrapper with a lot of cool features built in.
+
+00:54.690 --> 01:00.060
+Therefore you have a high dependency on Expo when working with that but you don't have to find dozens
+
+01:00.060 --> 01:05.950
+of other third party packages to access to camera to work with Bluetooth or anything like that.
+
+01:06.030 --> 01:09.200
+If you're building a barebones react native app that would be different.
+
+01:09.290 --> 01:14.060
+They're only a basic set of features is built right into React Native.
+
+01:14.100 --> 01:19.320
+And for most things that you want to add to your native app you would have to reach out to our community
+
+01:19.320 --> 01:21.550
+managed packages to make them work.
+
+01:21.570 --> 01:26.600
+And even with Expo we'll need a couple of third party packages to have everything we want.
+
+01:26.700 --> 01:31.350
+And that is something you have you have that dependency and that of course means that if those packages
+
+01:31.350 --> 01:37.300
+change or aren't maintained anymore you have to find alternatives or you have to update your code.
+
+01:37.440 --> 01:44.400
+So that's something you just all have to be aware of and react native simply also has some blocks not
+
+01:44.400 --> 01:45.360
+crucial ones.
+
+01:45.390 --> 01:51.270
+You can build basically any app you want with React Native but sometimes things just don't work as you
+
+01:51.270 --> 01:56.360
+would expect them to work and you need to get creative find work arounds and so on.
+
+01:56.430 --> 02:02.640
+And in this course I will also show you some of these strange things React Native has but in general
+
+02:02.730 --> 02:09.420
+when building React Native apps you have to be willing to stay updated to use google to dive into issue
+
+02:09.420 --> 02:15.690
+discussions and to simply well try things out with Expo you have a pretty smooth development experience
+
+02:15.720 --> 02:22.770
+but still the road can be bumpy from time to time now that might all sound pretty bad.
+
+02:22.800 --> 02:27.100
+So shouldn't you learn React Native tan but let's have a look at the alternatives.
+
+02:27.220 --> 02:33.580
+Of course one alternative always is that you build real native apps with the Android framework for job
+
+02:33.580 --> 02:37.710
+or Kopplin or with swift Objective C for IWM.
+
+02:38.290 --> 02:43.180
+You can't do that but of course the downside is you have to learn these languages and the huge advantage
+
+02:43.180 --> 02:49.330
+of working in one project and sharing a lot of code will be totally lost in risk native apps.
+
+02:49.330 --> 02:54.460
+Sure you will will probably need to adjust your code to the platform you're running on from time to
+
+02:54.460 --> 03:01.330
+time but the vast majority of your code base can be shared and can be reused without any adjustments.
+
+03:01.330 --> 03:06.520
+If you're using the native platform languages then you definitely have to work in two totally different
+
+03:06.520 --> 03:12.790
+projects and you won't be able to reuse a lot of code alternative 2 is that you build a progressive
+
+03:12.790 --> 03:13.210
+web app.
+
+03:13.240 --> 03:19.300
+That's a normal web app that utilizes some features that make it look and feel like a mobile app but
+
+03:19.300 --> 03:26.230
+it's not distributed through the app stores and it relies on users using a browser that supports the
+
+03:26.230 --> 03:30.550
+features you're using and if that's not the case the app doesn't run that well.
+
+03:30.560 --> 03:38.790
+The third alternative is that you use a ionic or a similar solution ionic is tool or a framework that
+
+03:38.820 --> 03:44.790
+allows you to build real native apps which you distribute fruity app stores with web technologies in
+
+03:44.790 --> 03:50.550
+the end ionic takes a normal web app and wraps it into a native app so it doesn't compile anything it
+
+03:50.550 --> 03:53.700
+just wraps it and that's a nice approach.
+
+03:53.700 --> 03:59.320
+I like ionic actually and it can be perfect for a lot of apps but of course a possible downside is that
+
+03:59.340 --> 04:03.290
+performance can be worse because you just have a wrapped web app.
+
+04:03.330 --> 04:09.030
+You have no compiled native app and that's something you do have with weak native of course and since
+
+04:09.030 --> 04:15.060
+v overall got tools and we can acquire knowledge to tops has overcome the challenges react native sometimes
+
+04:15.090 --> 04:22.080
+poses React Native is an awesome way of building native apps you can share a code you get great performance
+
+04:22.260 --> 04:26.150
+you can distributed free app stores that's pretty nice.
+
+04:26.280 --> 04:32.160
+Now one side note you also got alternatives like flatter or native script those alternatives follow
+
+04:32.160 --> 04:37.770
+a similar approach as risk native does you get a comp. app there they simply use different programming
+
+04:37.770 --> 04:43.440
+languages different frameworks and attached you find a link to a comparison video where I compare all
+
+04:43.440 --> 04:48.690
+these alternatives in case you're interested in a bit a little bit of a deeper dive into that topic
+
+04:48.720 --> 04:49.050
+there.

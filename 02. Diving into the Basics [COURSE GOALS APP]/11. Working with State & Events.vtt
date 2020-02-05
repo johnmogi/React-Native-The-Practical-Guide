@@ -1,0 +1,316 @@
+WEBVTT
+
+00:02.340 --> 00:06.210
+So there was a lot of talking a lot of stuff being done.
+
+00:06.210 --> 00:10.680
+Now it's really time to make this partner work and let us add a goal here.
+
+00:10.680 --> 00:11.780
+Right.
+
+00:11.850 --> 00:17.040
+And for that we need to find out what the user entered and thereafter of course listen to a tap on the
+
+00:17.040 --> 00:23.850
+button and then add the entered goal to an array of goals which we have to manage somewhere which we
+
+00:23.850 --> 00:26.460
+then can output down there in this bottom view.
+
+00:26.460 --> 00:26.850
+Right.
+
+00:26.850 --> 00:29.630
+That's what we need to do now in this course.
+
+00:29.670 --> 00:35.600
+I will use functional components only with the react hooks feature which is relatively new.
+
+00:35.640 --> 00:41.550
+So in case you don't know react hoax yet definitely learn about them first for example in my react Complete
+
+00:41.550 --> 00:42.120
+Guide.
+
+00:42.120 --> 00:47.250
+I have thoroughly covered them but attached you all to find some other resources that get you started
+
+00:47.250 --> 00:54.000
+with reactor hooks because we'll need reactor hooks to for example get the user input.
+
+00:54.000 --> 01:00.280
+We used to use state hook for Dad which we import from react not from React Native but from react to
+
+01:00.300 --> 01:02.070
+core react feature.
+
+01:02.220 --> 01:10.620
+And then here in this functional component in this app component we can get the entered goal and also
+
+01:10.620 --> 01:19.110
+get the set entered goal function to update the state with the help of U.S. state and by default we
+
+01:19.110 --> 01:24.840
+have an initial state which is an empty string because the user hasn't entered anything at the beginning.
+
+01:24.870 --> 01:27.330
+Now we can bind this to the text input.
+
+01:27.330 --> 01:33.870
+That means when the user types a character we want to update our state and safety entered text in the
+
+01:33.870 --> 01:39.240
+state here which we can then access through entered goal and will pass to entered gold back into the
+
+01:39.240 --> 01:46.680
+text input text as to where binding it's a so-called controlled component which you also know from react
+
+01:46.680 --> 01:50.380
+for web with normal age table input elements.
+
+01:50.430 --> 01:57.340
+So here we can listen to on change text a prop provided by text input which takes a function that will
+
+01:57.430 --> 01:59.930
+execute for every keystroke.
+
+01:59.970 --> 02:04.660
+Now we could provide a inline function here but we can also set up a separate function to have a bit
+
+02:04.660 --> 02:09.850
+of a cleaner code and you can have a function in a function and we need to have it in here so we can
+
+02:09.850 --> 02:17.770
+use our state or a set entered gold function here by simply adding a new function here.
+
+02:18.990 --> 02:26.400
+Goal Input handler could be a name the name is up to you though in that function we'll get the entered
+
+02:26.580 --> 02:34.170
+text automatically that will be passed in by react or by React Native here and we can then call set
+
+02:34.200 --> 02:40.770
+entered goal and pass the entered text as a value because the enter text here will already be a string
+
+02:41.100 --> 02:48.630
+because we connect goal Input handler to on changed text by simply pointing added here that's important
+
+02:48.900 --> 02:54.300
+don't add parentheses down there because this would execute this function when this code gets parsed
+
+02:54.330 --> 02:59.880
+so when the UI gets rendered for the first time you don't want to execute this immediately though you
+
+02:59.880 --> 03:05.940
+want to executed on every keystroke in Dafur you just take the name of the function you pass that name
+
+03:05.940 --> 03:12.210
+off the function to on change text and that effectively tells React Native hey that's the function I
+
+03:12.210 --> 03:19.260
+should execute for every keystroke so don't add parentheses here so that this can run on every keystroke
+
+03:20.010 --> 03:25.170
+now instead of this function syntax you by the way also can use a different syntax which is the one
+
+03:25.170 --> 03:31.080
+I will use throughout the course where you create a constant with that name here and then the value
+
+03:31.080 --> 03:38.190
+of that constant after equals sign is simply a function using that arrow function syntax so then this
+
+03:38.180 --> 03:44.490
+here is your argument list and desist the function body that's normal javascript syntax it is supported
+
+03:44.490 --> 03:49.470
+by the javascript code react native is able to run and therefore does this the syntax I will use you
+
+03:49.470 --> 03:56.820
+connect it to on change text exactly in the same way as before OK so now we have dysfunction connected
+
+03:57.090 --> 04:01.050
+we update our state with whatever the user entered on every keystroke.
+
+04:01.050 --> 04:07.800
+Now we also have to pass that text back into the text input so that it's displayed there correctly by
+
+04:07.800 --> 04:14.190
+simply binding the value property to entered code so to our estate which will change with every keystroke
+
+04:14.870 --> 04:20.400
+and with Dad we're getting access to the user input because it will now always be stored in entered
+
+04:20.400 --> 04:27.010
+goal now when the user presses the button we want to use that entered goal so for Dad I'll add another
+
+04:27.040 --> 04:33.730
+function here add goal handler and that's just a naming convention I'm using for these functions here
+
+04:33.940 --> 04:39.310
+you can name them whatever you want whatever you are used to from your react apps in the end the function
+
+04:39.310 --> 04:45.820
+name should simply describe what's about to happen and dad here will handle a press on that button which
+
+04:45.820 --> 04:52.920
+in the end will then add a goal here the function won't take any arguments but in the function body
+
+04:52.920 --> 04:58.150
+I want to add my entered goal to a list of goals and we have no list yet.
+
+04:58.230 --> 05:04.830
+So for now what I do here is console log which is supported and React Native entered goal so that we
+
+05:04.830 --> 05:10.710
+at least see that this was saved correctly and that this function is executed for this to execute we
+
+05:10.710 --> 05:16.680
+need to connect it to the button though there we can add the on press prop and point at the add goal
+
+05:16.680 --> 05:24.160
+handler again without parentheses so that this doesn't execute immediately but only when a press happens.
+
+05:24.540 --> 05:33.720
+And now let's save all of that and let's go back and let's maybe enter learn React Native and the good
+
+05:33.720 --> 05:41.560
+thing is you can use your real keyboard here and press at and you should see here in your terminal this
+
+05:41.560 --> 05:48.130
+log you'll also see this by the way in your expo def tools here in the browser tab there.
+
+05:48.150 --> 05:52.670
+If you click on one of the connected devices the one where you just click the button in my case the
+
+05:52.670 --> 05:57.730
+android device then there at the bottom you'll also see a learned React Native.
+
+05:57.730 --> 06:05.350
+And of course it also works and I was learn all about React Native if we entered this year and click
+
+06:05.350 --> 06:12.840
+Add then we all see Dad being logged here and also see that India Expo dev tools if you click on the
+
+06:12.840 --> 06:16.810
+iPhone at the very bottom we see this log OK.
+
+06:16.910 --> 06:21.530
+So we're getting the user input we're storing it we're console logging it of course we don't want a
+
+06:21.530 --> 06:27.530
+console logging we want to output it below our input here instead we want of a list of our goals below
+
+06:27.530 --> 06:35.000
+this input area so for that we need that second view here which should output our list of items.
+
+06:35.030 --> 06:40.250
+So here between the opening and closing tags I want to output all the elements we added all the goals
+
+06:40.280 --> 06:45.740
+we added For that we first of all need to manage our goals and we can set up a number of state for that
+
+06:46.400 --> 06:51.780
+which initially is an empty array hence I pass an empty well array as a value to use state.
+
+06:51.860 --> 06:58.010
+And there we have our course goals and a set course goals function.
+
+06:58.010 --> 07:03.070
+Now these names are always up to you but they should describe what's in your state and how you can update
+
+07:03.070 --> 07:04.230
+it.
+
+07:04.240 --> 07:10.330
+So now you're when we add a goal I want to update my core skills to add the new goal for data can call
+
+07:10.330 --> 07:20.840
+set course goals and now set course goals to a new array where I take my old course goals and add a
+
+07:20.840 --> 07:21.740
+new one.
+
+07:21.740 --> 07:25.100
+Now this is this index you might not know that's the so-called spread operator.
+
+07:25.100 --> 07:30.470
+It's a javascript feature which takes an existing array and course gold is an array.
+
+07:30.470 --> 07:38.030
+It's our current state snapshot before the update and pulls out all the elements from that array and
+
+07:38.030 --> 07:43.280
+then adds them here to a new array which is why I have to surrounding square brackets without his surrounding
+
+07:43.280 --> 07:43.840
+square brackets.
+
+07:43.850 --> 07:49.310
+This would not work but now we create a new array and we add all the elements of the old array and now
+
+07:49.310 --> 07:51.100
+we can also add a new element.
+
+07:51.110 --> 07:53.370
+So here I add a comma to add an extra element.
+
+07:53.390 --> 08:00.310
+After all the elements and pulling out here and the element I add here is my entered goal of course.
+
+08:00.320 --> 08:04.680
+So now we update our list of goals with the old list of goals.
+
+08:04.730 --> 08:10.250
+Initially an empty list but then this will grow over time because we then all to add a new goal.
+
+08:10.250 --> 08:17.380
+When we press that button now a tiny side note when working with set course goals cause goals here is
+
+08:17.380 --> 08:21.410
+our previous state and the way react updates to state.
+
+08:21.460 --> 08:28.210
+This should always be your most current state snapshot but it's not 100 percent guaranteed to have that
+
+08:28.360 --> 08:32.750
+100 percent guarantee when you update your state based on the old state.
+
+08:32.920 --> 08:39.250
+You can use the function form of this set function where you don't pass the value of you of your new
+
+08:39.250 --> 08:39.950
+state here.
+
+08:40.060 --> 08:46.870
+But instead you pass it in a function typically an anonymous function where you get your current state
+
+08:46.990 --> 08:53.850
+or current goals so your current state snapshot and then you return your updated values.
+
+08:53.860 --> 09:01.240
+So here I return my updated array with that in line arrow function syntax where if you only have one
+
+09:01.240 --> 09:06.640
+expression you can omit the curly braces and the return statement and just entered the value you want
+
+09:06.640 --> 09:08.650
+to return and it will be returned.
+
+09:08.680 --> 09:13.310
+That's all normal javascript here nothing react native specific.
+
+09:13.450 --> 09:21.070
+So here ident take my current goals and then add my entered goal descent ex is a bit better the average
+
+09:21.070 --> 09:26.170
+syntax would have worked as well but this is guaranteed to always work because we lack native will here
+
+09:26.200 --> 09:33.520
+always go ahead and give you de guarantee the latest state snapshot before it then applies your state
+
+09:33.550 --> 09:35.050
+change here.
+
+09:35.260 --> 09:42.410
+Now that's all nice will now have a list an array of goals managed here how can we now output this though.

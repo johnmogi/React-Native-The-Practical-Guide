@@ -1,0 +1,133 @@
+WEBVTT
+
+00:02.230 --> 00:08.300
+So we got started with the text input right now we're not doing anything with the values the user enters.
+
+00:08.350 --> 00:14.020
+But before we do that let's make sure that actually the button is not below that input but next to it
+
+00:14.020 --> 00:15.520
+on the right.
+
+00:15.520 --> 00:17.700
+And for that again we need to work on the layout.
+
+00:17.710 --> 00:21.970
+That's why I have this extra view here around the text input in the button.
+
+00:21.970 --> 00:27.490
+We wouldn't need that but now with that nested view we can control how these two items are aligned to
+
+00:27.490 --> 00:31.440
+each other by again adding this style of property here.
+
+00:31.660 --> 00:38.980
+And now for a layout for positioning things React Native uses flex blocks which you also might know
+
+00:38.980 --> 00:45.050
+from the web in case you don't attach to find resources that gets you started with CFS flex box.
+
+00:45.220 --> 00:49.840
+You don't need to know flex box in and out but it helps to know a bit about it.
+
+00:49.840 --> 00:56.590
+Flex blocks were such that it positions elements inside of a view next to each other or above each other
+
+00:56.800 --> 01:00.200
+by default above each other and React Native.
+
+01:00.230 --> 01:06.460
+You can change that by setting flex direction from column which is the default to row.
+
+01:06.880 --> 01:12.610
+And by just adding this on this view we overwrite the default which is well the default which is why
+
+01:12.610 --> 01:18.430
+we don't have to set it off column and now already we'll see that the button in the text input sit next
+
+01:18.430 --> 01:19.180
+to each other.
+
+01:19.330 --> 01:26.100
+Doesn't look that great yet but they're sitting next to each other now to make it look better.
+
+01:26.130 --> 01:27.960
+We can also add more.
+
+01:28.140 --> 01:34.300
+For example you can define how things are aligned and distributed in their row or column.
+
+01:34.650 --> 01:41.700
+For example with justify content you can control how items are distributed along their main axis and
+
+01:41.700 --> 01:45.410
+with row the main axis is from left to right.
+
+01:45.480 --> 01:50.570
+If dead would be column the main axis would be from top to bottom.
+
+01:50.630 --> 01:57.980
+So now we could specify a value end here my idea even gives me auto completion which is very convenient.
+
+01:58.130 --> 02:05.210
+We could specify a value of space between for example what this means is that all the remaining free
+
+02:05.210 --> 02:07.690
+space is between the two elements.
+
+02:07.760 --> 02:12.560
+So they're now not sitting directly next to each other but instead there is some free space between
+
+02:12.560 --> 02:13.590
+them as you can tell.
+
+02:14.590 --> 02:18.010
+And we can also line them on their cross axes.
+
+02:18.060 --> 02:23.950
+So main axis for Flex direction row was left to right cross axis.
+
+02:23.950 --> 02:31.130
+Dennis top to bottom four flex direction column the main axis would be top to bottom and the cross axis
+
+02:31.130 --> 02:32.220
+would be left to right.
+
+02:32.270 --> 02:38.750
+So the cross axis simply is the opposite of the main axis so to say justify content positions along
+
+02:38.750 --> 02:46.910
+the main axis with a line items you can control how to child elements of this view are aligned along
+
+02:46.910 --> 02:51.670
+the cross axis there you have different values like for example center.
+
+02:51.980 --> 02:58.250
+So in this case since we have flex direction row this should vertically center all items which means
+
+02:58.250 --> 03:05.230
+that the button now looks nicer and is simply centered there in the middle of this input well and now
+
+03:05.230 --> 03:10.150
+we can also ramp up the width of that input a little bit by going to the text input and there on the
+
+03:10.150 --> 03:17.050
+style we can also add a width of let's say 200 to give us a width of 200 pixels which means that this
+
+03:17.050 --> 03:24.170
+now is a bit bigger alternatively by the way you could have also choose a percentage value like 80 percent
+
+03:24.560 --> 03:30.830
+which means that this takes 80 percent of the available width made available by its parent component
+
+03:30.890 --> 03:38.180
+so by the view that surrounds it and now with that we had a look at the first important fundamentals
+
+03:38.450 --> 03:44.720
+about laying things out in react native and styling things but right now we're doing all of that with
+
+03:44.720 --> 03:51.040
+that concept called inline styles which means we're setting up the styles directly on the elements and
+
+03:51.050 --> 03:52.250
+that's not ideal.

@@ -1,0 +1,112 @@
+WEBVTT
+
+00:02.270 --> 00:07.850
+For this ultra deep brand new project again with Expo expo in it and then the name of your choice and
+
+00:07.880 --> 00:13.040
+I'll name it are in complete guide because in the end this is a complete wreck native guide what you've
+
+00:13.040 --> 00:16.790
+got here and I'll start with the blank template here Soledad.
+
+00:16.810 --> 00:22.700
+First option Mike is here regarding the name I'll named as R and guide but you can choose any name you
+
+00:22.700 --> 00:29.570
+want here is simply hit enter and I'll go with NPM not with yarn and now just as in the first core section.
+
+00:29.570 --> 00:33.390
+This will create a new project and set up by react native app in there.
+
+00:33.410 --> 00:37.120
+So let's wait for this to finish and with it finished.
+
+00:37.120 --> 00:44.040
+You could follow these instructions but I'll not do this here instead here I am back in Visual Studio
+
+00:44.100 --> 00:49.020
+code still with my first app from the first section opened and I'll open the new one now.
+
+00:49.030 --> 00:53.750
+The one we just created and here is the project open up individual pseudocode.
+
+00:53.760 --> 00:58.660
+I walked through all the core files and folders we have here in the first course modules so not repeat
+
+00:58.660 --> 00:59.770
+this here.
+
+00:59.970 --> 01:05.820
+And with that opened up here invidious pseudocode I'll now actually go to the menu and then choose terminal
+
+01:05.820 --> 01:12.420
+new terminal to open up my system terminal or a system command prompt depending on which operating system
+
+01:12.420 --> 01:15.270
+you're working on here in the eye to eat.
+
+01:15.300 --> 01:21.660
+So that's your normal command prompt your normal terminal just integrated into the I.T. and already
+
+01:21.660 --> 01:26.220
+navigated into that project folder so you don't need to use to navigate anywhere else.
+
+01:26.290 --> 01:30.520
+And now here I'll run NPM start and this will do the same as if I would have run it here.
+
+01:30.590 --> 01:37.230
+The difference is now I always see errors or any log messages directly here in the I.T. which is more
+
+01:37.230 --> 01:38.630
+convenient to work with.
+
+01:38.700 --> 01:44.360
+We still got that process which you should keep on running to get these live updates when you save something.
+
+01:44.370 --> 01:50.130
+You see the commands you can type your or the shortcuts you can press to launch your app on emulators
+
+01:51.260 --> 01:59.030
+and you also have that browser tab up and running here for your application the export dev tools.
+
+01:59.030 --> 02:05.060
+Now I got to emulators up and running your Android and I guess you don't need that of course but I want
+
+02:05.060 --> 02:07.380
+to show you how does Apple Juice and both.
+
+02:07.440 --> 02:15.240
+And it can run this app on Android by pressing a here in the terminal and I can run it on I w too by
+
+02:15.240 --> 02:18.180
+pressing I and I did both here.
+
+02:18.180 --> 02:23.450
+Alternatively we could have used these buttons here in the Expo dev tools in the browser.
+
+02:23.610 --> 02:29.430
+So now it is launching the app here on these devices on the android and Iowa simulator and I'll be back
+
+02:29.430 --> 02:32.420
+once it is finished because the first launch always takes a bit longer.
+
+02:32.460 --> 02:39.830
+Subsequent rebuilds reloads are way faster of course and here we get that starting app or running on
+
+02:39.830 --> 02:41.560
+these emulators.
+
+02:41.700 --> 02:47.960
+Now in case that looks a bit different for you attached you find my starting Project in exactly the
+
+02:47.960 --> 02:51.170
+same way I have it here so that you can all use that.
+
+02:51.170 --> 02:53.820
+Replace the files in your project with mine.
+
+02:53.990 --> 02:57.920
+And then if you run NPM start get well this look here.
+
+02:57.920 --> 03:02.030
+So this is the starting project will now build up on and will now work on.

@@ -1,0 +1,361 @@
+WEBVTT
+
+00:02.620 --> 00:08.140
+To view and edit our code we need an editor and I recommend using Visual Studio code which is a free
+
+00:08.140 --> 00:13.480
+to use very powerful idea which is great for JavaScript development which is what we're doing here at
+
+00:13.480 --> 00:14.210
+the end.
+
+00:14.290 --> 00:16.680
+You can get it from code to visual studio dot com.
+
+00:16.720 --> 00:21.490
+There you find versions for Mac Windows and Linux simply download the one for your operating system
+
+00:21.790 --> 00:28.070
+and walk through the installer disk gives you once you did install it open up visual pseudocode and
+
+00:28.070 --> 00:34.390
+in there open your project by going to file open and then simply pick your project.
+
+00:34.390 --> 00:40.200
+Mike has our end first app click open here and this will now open up the project here in Visual Studio
+
+00:40.220 --> 00:47.080
+code now my virtual city code looks the way it does look here because I have a special theme enabled
+
+00:47.380 --> 00:51.950
+which you can change under preferences color theme and there I'm using the dark plus theme.
+
+00:51.970 --> 00:54.420
+So if you want to have the same look you can use that.
+
+00:54.670 --> 01:00.680
+And I also installed a special extension which you can do under view extensions there.
+
+01:00.760 --> 01:08.230
+I got the material icon the theme installed this one here which is totally optional but you can install
+
+01:08.230 --> 01:09.550
+it from there as well.
+
+01:09.580 --> 01:13.480
+And they're often go back to the you explorer to see your files again.
+
+01:13.510 --> 01:16.060
+So did you get the same file icons as I have here.
+
+01:16.060 --> 01:24.290
+Again it's totally optional and with that out of the way this is our ReACT native app managed by Expo.
+
+01:24.300 --> 01:28.920
+Now let me quickly walk you through what we have here and then show you what you can change in code
+
+01:29.190 --> 01:31.470
+to change something in your app.
+
+01:31.470 --> 01:34.350
+Now we have a couple of folders and files here.
+
+01:34.380 --> 01:37.570
+The DOT Expo folder just hold some configuration for Excel.
+
+01:37.590 --> 01:43.500
+You don't need to touch this the assets folder Dad hold some images in this case like the icon of your
+
+01:43.500 --> 01:49.470
+app and the splash screen image and we'll dive into how you can customize this towards the end of the
+
+01:49.470 --> 01:55.470
+course and we'll use our assets like images in general for all this course of course the node modules
+
+01:55.470 --> 02:01.120
+folder holds all the dependencies of this project that's for example react and react native but all
+
+02:01.120 --> 02:05.740
+the dependencies off dependencies and this folder is managed automatically for you.
+
+02:05.790 --> 02:11.460
+So you don't need to touched us and you shouldn't touch it indeed get ignore is a file that helps us
+
+02:11.460 --> 02:16.920
+with get which is a source code management system where source code management tool and you don't need
+
+02:16.920 --> 02:22.860
+to use it if you do you probably know what get ignored does it if you don't know what get us after this
+
+02:22.860 --> 02:29.100
+lecture you'll find a brief introduction to it or some resources to help you get started with it but
+
+02:29.130 --> 02:34.530
+you don't need to use get to work with rec native Watchmen conflict that's something you can ignore
+
+02:34.530 --> 02:39.750
+as you see it's empty year it's a tool used behind the scenes by expo in the end and the capture has
+
+02:39.750 --> 02:45.930
+fall Dennis to fall which holds the code that is responsible for rendering what we see here on the screen
+
+02:46.590 --> 02:52.350
+we'll dive into this in a second app Jason hold some configuration for our ReACT native app powered
+
+02:52.350 --> 02:59.140
+by Expo and we'll dive into this for all this course as well for now let's ignore it Babel config configure
+
+02:59.140 --> 03:04.950
+is how the javascript code is optimized and compiled you can leave the default here as well and the
+
+03:04.950 --> 03:10.380
+package does Jason File manages your dependencies there you see that you're using Expo but all to react
+
+03:10.700 --> 03:17.970
+all the react Dom because Expo actually also supports building react apps for web but then also react
+
+03:17.970 --> 03:23.910
+native here and while react native web because again Expo gives you the option of all the building Web
+
+03:23.910 --> 03:28.710
+apps with the help of React Native it's not something we'll focus on in this course though.
+
+03:28.710 --> 03:30.600
+So that's the setup we have here.
+
+03:30.600 --> 03:35.520
+The important file for us at the moment is to capture us file because that's the end responsible for
+
+03:35.790 --> 03:37.800
+getting something onto the screen.
+
+03:37.800 --> 03:43.350
+Now the exact file content you're seeing here in your app jazz file could change over time though this
+
+03:43.410 --> 03:48.390
+starting Project which gets generated automatically simply sometimes is changed.
+
+03:48.570 --> 03:53.520
+That does of course not affect what I explain here or discourse that does not mean that anything is
+
+03:53.520 --> 03:55.300
+outdated or anything like that.
+
+03:55.350 --> 03:57.580
+It's just as different starting Project.
+
+03:57.720 --> 04:03.130
+And if you want to follow along with exactly the same when I got you'll find it attached to can all
+
+04:03.150 --> 04:07.320
+you step but of course you could also continue with viewers if it looks slightly different because as
+
+04:07.320 --> 04:09.870
+I mentioned it's just a starting project.
+
+04:09.870 --> 04:14.250
+You've got reorg native of course still works the same as I explain it here and they'll for you can
+
+04:14.250 --> 04:19.770
+absolutely follow along with that and added your app jazz file just the way I edited it and in there
+
+04:19.770 --> 04:24.290
+we see we do import react just as we would do it in a react web app.
+
+04:24.420 --> 04:30.630
+We need to import react because here you can also see we're using J as X which is this special javascript
+
+04:30.630 --> 04:32.640
+syntax that looks like age to.
+
+04:32.790 --> 04:35.390
+But in the end is just JavaScript.
+
+04:35.460 --> 04:42.120
+And in case you never saw it as definitely dive into our ReACT app or react tutorial first I do expect
+
+04:42.270 --> 04:45.720
+that you know how react generally works.
+
+04:45.720 --> 04:51.270
+We always have another import here and that's the react native import where we import style sheet text
+
+04:51.360 --> 04:53.220
+and view from there.
+
+04:53.220 --> 04:59.640
+Now these are these special components and features I was talking about earlier text and you are components
+
+04:59.640 --> 05:06.720
+provided by react native that are compiled to native platform widgets and styles she does an extra feature
+
+05:06.720 --> 05:10.290
+provided by React Native that helps you with styling.
+
+05:10.290 --> 05:15.820
+Now then here we have a normal react component as we would build it in a react for web app to.
+
+05:16.120 --> 05:21.960
+We are having a functional component here and with the help of React hoax we can work with functional
+
+05:21.960 --> 05:28.110
+components only as you probably know and dysfunctional component return some J as ex code that is rendered
+
+05:28.200 --> 05:29.270
+onto the screen.
+
+05:29.400 --> 05:35.550
+And here we're using the view widget or The View component provided by React Native and the text component
+
+05:36.270 --> 05:38.790
+and the view component is like a div.
+
+05:38.790 --> 05:45.720
+It's a good wrapper also good for applying some styles for some containers and detects this then used
+
+05:45.870 --> 05:50.030
+for while outputting some text which you put between its opening and closing tax.
+
+05:50.270 --> 05:57.090
+And down here we have some styles to find React Native does not use CSA as but it use a styling syntax
+
+05:57.090 --> 06:04.890
+that is well based on CSR s or follow a similar naming conventions but we'll dive deeper into how to
+
+06:04.890 --> 06:08.550
+style your React Native apps throughout this course of course.
+
+06:08.550 --> 06:14.490
+So with that let's change what we see on the screen and let's actually add a button here.
+
+06:14.490 --> 06:20.730
+Now the good thing is we can import a button from React Native that's a number a core component provided
+
+06:20.730 --> 06:26.140
+by React Native so we can add this import and then use a down there however we don't use it without
+
+06:26.140 --> 06:27.280
+opening and closing tag.
+
+06:27.280 --> 06:33.190
+But as a self closing element and then we can add a title prop here to set the text we see on the button
+
+06:33.460 --> 06:36.620
+for example change text.
+
+06:36.850 --> 06:41.010
+Now when we tap this button we might want to change this text here.
+
+06:41.200 --> 06:45.970
+And for this we need to manage some state here because I want to change some data which should lead
+
+06:46.180 --> 06:49.680
+to this component being re rendered and for this you need state.
+
+06:49.900 --> 06:56.110
+Now prior to react 16 dot eight which is supported here though you would have to convert this to a class
+
+06:56.110 --> 07:00.270
+based component to use state since react 16 to date.
+
+07:00.310 --> 07:03.710
+We can use react hooks and in case you don't know what hooks are.
+
+07:03.820 --> 07:08.620
+You should definitely dive into the basics of hooks attached you find resources that get you started
+
+07:08.620 --> 07:14.800
+with that hooks are imported from react and here we need to use state hook which allows us to manage
+
+07:14.800 --> 07:17.290
+state in a functional component.
+
+07:17.290 --> 07:26.230
+With that we can use that hook by calling use state here and giving it a default value which could be
+
+07:26.230 --> 07:27.910
+this text here.
+
+07:27.910 --> 07:34.420
+Let's cut it from down there and added here as a string and then here we can use array to structuring
+
+07:34.420 --> 07:41.040
+to get our output text and get a function to change or reset or overwrite this output text.
+
+07:41.110 --> 07:43.800
+And that's just how to use state hook works.
+
+07:43.840 --> 07:49.620
+It gives you an array with exactly two elements where the first element is your current state snapshot.
+
+07:49.660 --> 07:55.510
+So even our starting state or their offer for subsequent re render cycles whatever we set our state
+
+07:55.510 --> 07:56.120
+to.
+
+07:56.220 --> 08:01.300
+And the second is a function that allows you to set your state to a new value in calling that function
+
+08:01.530 --> 08:07.150
+will read render the entire component and output text will then refer to the latest new state.
+
+08:07.180 --> 08:13.670
+So here between text I want to output output text and up on a press of the spot.
+
+08:13.680 --> 08:15.400
+Now I want to change this.
+
+08:15.400 --> 08:21.250
+So on the bottle we can deal for register on press which is basically the equivalent to on click which
+
+08:21.310 --> 08:22.640
+you would have in the web.
+
+08:22.660 --> 08:29.020
+Here it's on press and then we need to bind as to a function for example to an anonymous inline function
+
+08:29.020 --> 08:36.740
+here with this syntax where we call set output text and we set this to the text changed.
+
+08:36.820 --> 08:42.340
+So this will call this function here overwrite our state data for re rendered this component.
+
+08:42.340 --> 08:48.100
+This will be updated in the next render cycle and therefore since we output output text down there.
+
+08:48.100 --> 08:51.520
+This will change if we now save all of that.
+
+08:51.520 --> 08:58.840
+The cool thing is your app which you should still have opened on your phone should have automatically
+
+08:58.850 --> 08:59.390
+reloaded.
+
+08:59.390 --> 09:00.830
+You don't need to restarted.
+
+09:00.920 --> 09:08.090
+You don't need to scan this code here again just by changing the code and saving this file it should
+
+09:08.150 --> 09:15.320
+automatically reload here and now if we now tap change text here you see the text changed and that's
+
+09:15.320 --> 09:19.020
+your first react native app doing its job powered by Expo.
+
+09:19.040 --> 09:24.590
+But again you can build and published it as a standalone app and will do that by the end of the course.
+
+09:24.740 --> 09:30.110
+And therefore this is an amazing way of getting started and react native development can be as easy
+
+09:30.110 --> 09:30.850
+as.
+
+09:31.150 --> 09:36.510
+Now with dead let's finish up this first module before we then dive way deeper into React Native and
+
+09:36.590 --> 09:40.130
+into writing react native code from the second course module on.

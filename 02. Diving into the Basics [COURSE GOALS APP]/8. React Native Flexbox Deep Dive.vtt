@@ -1,0 +1,457 @@
+WEBVTT
+
+00:02.230 --> 00:08.100
+In this lecture I want to dive a bit deeper into flex box especially regarding how you use it and react
+
+00:08.110 --> 00:08.690
+native apps.
+
+00:08.710 --> 00:12.310
+If you know all about that already you can of course skip this lecture.
+
+00:12.340 --> 00:14.920
+So for this I prepared a simple dummy application.
+
+00:14.920 --> 00:20.420
+And of course you find Dad attached it's a normal react native app built with Expo and in the app jazz
+
+00:20.460 --> 00:26.890
+file here what I have in the end is just a view with free view is in there where each student has a
+
+00:26.890 --> 00:29.990
+text with text 1 to free.
+
+00:30.010 --> 00:36.310
+This simply creates some boxes with different colors red blue and green and now will use flex blocks
+
+00:36.310 --> 00:41.950
+to move these boxes around so that you can get a feeling for her flex box works because it's so important
+
+00:42.240 --> 00:43.240
+now.
+
+00:43.660 --> 00:49.120
+First things first by default every view and react native.
+
+00:49.120 --> 00:55.410
+Even if you assign no special styles uses flex box and that's different to the Web for example there
+
+00:55.420 --> 01:01.370
+if you have a div which would be your equivalent to a view kind of it doesn't use flex box by default.
+
+01:01.450 --> 01:08.260
+In react native it does every view by default organizes its children with the help of this flex box
+
+01:08.350 --> 01:15.490
+thing flags box simply is a term is simply a concept from C as s that is all about organizing child
+
+01:15.520 --> 01:17.440
+elements in a one dimensional space.
+
+01:17.440 --> 01:21.990
+So here for example in a column that's also never default.
+
+01:21.990 --> 01:29.340
+Not only does every view by default use flex box it also by default organizes children in a column.
+
+01:29.340 --> 01:33.020
+So from top to bottom that's all the difference to the Web.
+
+01:33.020 --> 01:37.350
+And I don't want to emphasize these differences too much because of course you don't need to be a web
+
+01:37.350 --> 01:42.400
+developer to build rect native apps but I think a lot of people do know web development.
+
+01:42.400 --> 01:47.400
+Do know with CSA as flex box and therefore it makes sense to all the talk about the differences in the
+
+01:47.400 --> 01:48.840
+web when you use flex box.
+
+01:48.840 --> 01:51.220
+Not only is it not turned on by default.
+
+01:51.240 --> 01:56.820
+In addition if you do turn it on the default is to organize all child elements in a row and here default
+
+01:56.820 --> 01:59.010
+is to organize them in a column.
+
+01:59.010 --> 02:05.910
+You can change that default though so in this case on the view which holds my boxes by adding flex direction
+
+02:05.910 --> 02:12.960
+here and setting this to row for example now you will see that these free boxes are organized in a row
+
+02:12.960 --> 02:16.560
+from left to right now besides row and column.
+
+02:16.560 --> 02:19.250
+You also have row reverse and column reverse.
+
+02:19.260 --> 02:21.720
+And this simply also well does what the name implies.
+
+02:21.720 --> 02:29.010
+Now we still have a row but the first element to Redbox actually is on the right and not on left anymore.
+
+02:29.010 --> 02:30.820
+So that's all something you can do.
+
+02:30.840 --> 02:36.210
+Let me go back to Rovio so that's the the first thing you can do.
+
+02:36.210 --> 02:42.750
+Another important thing about flex box is how child elements are sized here.
+
+02:42.810 --> 02:47.040
+I gave every child element a width and a height of 100.
+
+02:47.070 --> 02:54.660
+Now if we would remove that with and height thing on every child element Daniel will see that now we
+
+02:54.660 --> 03:01.890
+have a very very small row year because every box now is only as wide added as its child requires it
+
+03:01.890 --> 03:05.700
+to be an only as tall as its child requires it to be.
+
+03:05.700 --> 03:11.180
+So every box here which holds a number is only as wide and tall as the number it's containing.
+
+03:11.340 --> 03:18.180
+Now you can changed it with the surrounding flex box container to let's give data with of let's say
+
+03:18.330 --> 03:22.740
+300 pixels or of 80 percent off the parent with.
+
+03:22.740 --> 03:28.950
+So in this case since it's the root element of the device with and let's give it a height of let's say
+
+03:29.020 --> 03:30.230
+three hundred.
+
+03:30.480 --> 03:36.720
+If we do that and now really important I'm doing this on the view which holds all these boxes I'm not
+
+03:36.720 --> 03:39.380
+doing it on the boxes themselves.
+
+03:39.480 --> 03:45.050
+So if we assign this width and height on the surrounding box you see something interesting.
+
+03:45.150 --> 03:48.250
+The height is assumed for all the elements.
+
+03:48.270 --> 03:54.810
+Now all the views in the flex box take the height of the parent the width has no impact here.
+
+03:54.870 --> 03:59.510
+That's also a default behaviour you've got here obviously since we haven't changed anything.
+
+03:59.760 --> 04:06.840
+The default behaviour here indeed is that these child elements in a flex box.
+
+04:06.850 --> 04:15.360
+So in this outer view here are organized such that they align themselves along the cross axes by stretching.
+
+04:15.490 --> 04:20.510
+OK that were a lot of terms what does this mean now when working with Flex box.
+
+04:20.530 --> 04:29.290
+We have two important axis the main axis depends on your flex direction for a row which we have here
+
+04:29.350 --> 04:37.690
+flex direction row the main axis is from left to right for row reverse it would be right to left for
+
+04:37.690 --> 04:42.570
+column it would be top to bottom for column reverse it would be bottom to top.
+
+04:42.580 --> 04:44.270
+So that's the main axis.
+
+04:44.620 --> 04:48.630
+And then you also have a cross axis and that's simply the opposite of the main axis.
+
+04:48.640 --> 04:56.110
+So for a row where the main axis is from left to right the cross axis would be from top to bottom if
+
+04:56.110 --> 05:01.900
+the main axis is from right to left which would be the case for Roe reverse then the cross axis would
+
+05:01.900 --> 05:03.100
+be from bottom to top.
+
+05:03.340 --> 05:06.940
+OK so that's the main axis and cross axis concept.
+
+05:06.940 --> 05:13.060
+Now you can organize your child elements so in this view where we have the free boxes as child elements
+
+05:13.360 --> 05:20.170
+you can organize these child elements along this axis you use justified content to organize elements
+
+05:20.200 --> 05:27.760
+along the main axis and you have a line items to organize elements around d cross axis.
+
+05:27.760 --> 05:31.040
+Now you see the values you got for justify content here.
+
+05:31.090 --> 05:37.230
+If you add these quotes or if you place or cursor in there and you had controlled space you see you
+
+05:37.230 --> 05:44.040
+can center elements you can position them at the end or at the start of that container or you can add
+
+05:44.040 --> 05:45.270
+some space in between.
+
+05:45.300 --> 05:52.500
+For example if we use space between here and we use a line item center then things will change.
+
+05:52.500 --> 05:57.490
+Now you will see there taking the width of the surrounding container.
+
+05:57.540 --> 06:03.360
+Every box itself still is pretty small but they're split or they're distributed across the width of
+
+06:03.360 --> 06:09.570
+the parent container and they're no longer taking the height because along the cross axis we're aligning
+
+06:09.570 --> 06:12.960
+them with a line items and dare I set this to center.
+
+06:13.020 --> 06:19.620
+The default here is stretch and if I set it back to stretch then unsurprisingly they do stretch for
+
+06:19.620 --> 06:20.960
+the entire height.
+
+06:20.970 --> 06:26.490
+Now if you want to make sure that they take their way little with you can set stretch here on Justified
+
+06:26.490 --> 06:32.820
+content which is your main axis positioning vehicle so you can set stretch here.
+
+06:32.980 --> 06:35.880
+So what can you do regarding that then.
+
+06:35.890 --> 06:40.780
+Well that is something you now configure on every child item itself.
+
+06:40.810 --> 06:50.290
+You can tell a child item how much space it should take off the space it's potentially getting stretch
+
+06:50.290 --> 06:54.220
+here is kind of a special case dare you set this up on the parent item.
+
+06:54.220 --> 06:56.640
+Normally you set this up on the child item.
+
+06:56.680 --> 07:02.200
+So for example if I set this to center now so that the parent doesn't tell the child how much space
+
+07:02.200 --> 07:08.950
+it should take then we can fully control the space a child takes by going to the child style and there
+
+07:08.950 --> 07:17.410
+you can add flex the Flex property the Flex property is applied to items that are inside of a flex box.
+
+07:17.410 --> 07:19.730
+So did our inside of a view.
+
+07:19.810 --> 07:25.660
+In this case here and that can be a view itself but that could also be another component like a text
+
+07:25.660 --> 07:27.150
+for example.
+
+07:27.160 --> 07:31.320
+So now here you can add flex and you can set this to a value of 1 for example.
+
+07:31.330 --> 07:35.940
+So flex needs to be a number if you set this to 1 what you will see is dead.
+
+07:35.950 --> 07:44.050
+Now the red container where a did set flex to 1 takes all the available with it can get just so much
+
+07:44.110 --> 07:50.440
+that it leaves enough space for the blue and the green container so that they can squeeze their content
+
+07:50.620 --> 07:52.470
+into the surrounding flex box.
+
+07:52.480 --> 07:58.360
+Now we can see the boundaries of the surrounding container but the boundaries would essentially be where
+
+07:58.600 --> 08:03.060
+the red item starts and the green item ends on the horizontal axis here.
+
+08:04.720 --> 08:11.020
+So now flex 1 makes sure that the red item gets as big as it can get.
+
+08:11.170 --> 08:17.140
+So it takes as much space as it can get by default views only take as much space as their child elements
+
+08:17.140 --> 08:17.690
+required.
+
+08:17.710 --> 08:24.040
+So asked is one character required but with Flex 1 you changed us and they now take as much space along
+
+08:24.040 --> 08:25.140
+the main axis.
+
+08:25.150 --> 08:29.140
+So along the width you're asked to can get for the cross axis.
+
+08:29.140 --> 08:34.310
+Again that's a special case you have to do this on the parent for the main axis.
+
+08:34.360 --> 08:38.790
+And since we have ro here the main axis is a horizontal axis from left to right.
+
+08:38.800 --> 08:41.520
+You do this with the flex property on a child.
+
+08:42.700 --> 08:48.550
+No of course you can add flex to Abbott child elements as well like that second to the blue container
+
+08:48.550 --> 08:50.260
+with the two in there.
+
+08:50.260 --> 08:52.420
+You can add flex one there as well.
+
+08:52.420 --> 08:56.690
+So now I have flex one on the red container and flex one on the blue container.
+
+08:56.710 --> 09:03.790
+What now happens is that both of them take the available free space and amongst these two boxes the
+
+09:03.790 --> 09:08.870
+space is distributed evenly and that's what this number here indicates.
+
+09:08.930 --> 09:11.210
+This number is a relative number.
+
+09:11.210 --> 09:18.350
+All items in the same flex box with the flex property distribute the away label space by considering
+
+09:18.410 --> 09:23.130
+the number you assign here and these numbers are relative to each other.
+
+09:23.140 --> 09:29.800
+So if I give the blue container flex to here then this means that off the away label space you have
+
+09:29.950 --> 09:36.100
+in that surrounding container after deducting the space every element needs to squeeze its content in
+
+09:36.100 --> 09:36.840
+there.
+
+09:36.970 --> 09:42.480
+The blue container will take twice as much space as this one because here we have flex one.
+
+09:42.490 --> 09:43.760
+Here we have flex 2.
+
+09:43.810 --> 09:50.560
+If we had flex free here then this would take three fifths of the available free space because we have
+
+09:50.560 --> 09:52.150
+free plus 2.
+
+09:52.210 --> 09:58.300
+So we have 5 available segments so to say and here the red container would take 3 segments blue container
+
+09:58.300 --> 09:59.950
+would take 2 segments.
+
+09:59.950 --> 10:05.950
+If we have 1 and 2 then we have three available segments and the blue container takes two of them.
+
+10:06.070 --> 10:13.510
+Red takes one so you always add up these flex numbers and then distribute or that's automatically done
+
+10:13.510 --> 10:17.680
+of course but then the available space is distributed accordingly.
+
+10:17.680 --> 10:22.660
+So now here will see that the blue container is twice as big as the red one or it takes twice as much
+
+10:22.660 --> 10:25.090
+free space as the red one.
+
+10:25.090 --> 10:27.090
+So this is how you can work with flex.
+
+10:27.130 --> 10:33.760
+You can organize how items are positioned with Flex direction with justified content and with a line
+
+10:33.790 --> 10:39.370
+items and you can also make your items grow and shrink with the help of flex.
+
+10:39.430 --> 10:44.490
+So now that's a brief introduction to flex marks in react native.
+
+10:44.560 --> 10:51.070
+As I said inspired by a flex box for a c as s so if you knew that all of what I explained here is probably
+
+10:51.070 --> 10:52.280
+not new to you.
+
+10:52.450 --> 10:54.610
+Will work with Flex blocks throughout this course.
+
+10:54.610 --> 10:58.900
+So there things will also become clearer and we'll work a lot with it and you'll see how you can create
+
+10:58.930 --> 11:05.170
+beautiful user interfaces with Flex box flex books in the end is the tool in react native to structure
+
+11:05.170 --> 11:10.570
+your content on a page to organize your content and you will typically work with a lot of views which
+
+11:10.570 --> 11:15.190
+you all nested into each other so that you can position elements the way you want because of course
+
+11:15.190 --> 11:16.720
+and that's all important.
+
+11:16.840 --> 11:21.680
+You don't just have to have one view in your app which uses flex blocks.
+
+11:21.730 --> 11:26.050
+You could have another view in there which also uses flex blocks that actually as I mentioned every
+
+11:26.050 --> 11:31.570
+view by default uses flex blocks and you can then nest these views into each other so that you position
+
+11:31.600 --> 11:35.070
+everything the way you want and you'll also see this in this module already.
+
+11:35.140 --> 11:41.200
+And actually I'm already doing it here in my view is here which are in the surrounding view so my boxes
+
+11:41.200 --> 11:47.710
+here there I also use justified content in the line items to center my numbers in these boxes so that
+
+11:47.710 --> 11:54.070
+1 2 and 3 are centered there horizontally and vertically and that works because we have flex box turned
+
+11:54.070 --> 12:00.700
+on by default and we can't turn it off by the way and therefore I just use these two properties here
+
+12:00.700 --> 12:08.320
+to align my content office view along the main and the cross axis and here since I set no special flex
+
+12:08.320 --> 12:14.170
+direction for this view the main axis is top to bottom because the default flex direction is column
+
+12:14.530 --> 12:16.420
+and the cross axis is left to right.
+
+12:16.420 --> 12:17.440
+That's just a side note.

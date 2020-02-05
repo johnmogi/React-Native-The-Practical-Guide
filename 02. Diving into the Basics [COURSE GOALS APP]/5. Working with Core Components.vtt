@@ -1,0 +1,178 @@
+WEBVTT
+
+00:02.230 --> 00:06.820
+And for this it makes sense to start here in the app J.S. file.
+
+00:06.820 --> 00:10.370
+Now leave that terminal open here and that process running of course.
+
+00:10.390 --> 00:15.280
+So that changes in your code are automatically reflected to the emulators.
+
+00:15.340 --> 00:18.420
+And now let's see how we can get started with that.
+
+00:18.460 --> 00:23.590
+I already mentioned in the first course module that React Native is all about these built in core components
+
+00:23.590 --> 00:28.870
+like text and view a view would be your div from web development.
+
+00:28.870 --> 00:32.920
+In case you're a web developer which you probably are if you react.
+
+00:32.920 --> 00:34.790
+So it's a great container component.
+
+00:34.810 --> 00:40.050
+You can style it as you see it here and you can wrap our content with it.
+
+00:40.240 --> 00:44.930
+Now a text on the other hand is a core component for well outputting text.
+
+00:44.930 --> 00:49.870
+That's its goal not there to output an image but there to output text.
+
+00:49.870 --> 00:55.540
+Now what you can't do in React Native and that's the first important thing you can't for example output
+
+00:55.540 --> 00:57.810
+text between a view like this.
+
+00:57.910 --> 01:04.120
+If we would try to safeties without that text wrapper you see we get an error that's by the way a screen
+
+01:04.120 --> 01:09.880
+you will see from time to time when working with React Native it gives you an error it explains what
+
+01:09.880 --> 01:15.910
+went wrong here for example it's a pretty clear error message telling us that text strings must be rendered
+
+01:15.910 --> 01:17.800
+within the text component.
+
+01:17.950 --> 01:19.330
+And why is that so important.
+
+01:19.330 --> 01:21.100
+Why am I emphasizing this.
+
+01:21.220 --> 01:24.590
+Because that's an important difference to web development there.
+
+01:24.610 --> 01:27.850
+You can put text anywhere in web development.
+
+01:27.970 --> 01:35.800
+You could have a div and between the div opening and closing tax you could have any text and this will
+
+01:35.800 --> 01:41.500
+not work on React Native not only because we're using a div that that's not supported there but of course
+
+01:41.650 --> 01:49.810
+because on React Native you really can only output text between text tax so you need to use that text
+
+01:49.810 --> 01:56.530
+component provided by React Native to output text and that's a crucial difference to the Web where you
+
+01:56.530 --> 02:02.560
+can throw your text anywhere and React Native it's way more important that you use the right built in
+
+02:02.560 --> 02:09.070
+component for the job you want to get done and for styling for setting up a container where you structure
+
+02:09.070 --> 02:15.070
+different content that would be a view for outputting text that could be a text for outputting an image
+
+02:15.070 --> 02:20.460
+for example you will have an image component so that's how React Native works.
+
+02:20.860 --> 02:28.180
+And speaking of styling of layout thing The View has this as a main job it's mainly there to apply styles
+
+02:28.450 --> 02:31.070
+and to layout the content you have in there.
+
+02:31.180 --> 02:34.050
+And speaking of that let's get started with layout.
+
+02:34.360 --> 02:39.580
+Let's say in our app we want to have q main areas here on that screen at the top.
+
+02:39.580 --> 02:45.850
+I want to allow the user to enter some text and the right of that I want to have a button to confirm
+
+02:45.850 --> 02:46.720
+this choice.
+
+02:46.720 --> 02:47.640
+And below that.
+
+02:47.650 --> 02:53.110
+So that's part one the input area and below that we have the second part and that's the list of goals
+
+02:53.110 --> 02:54.530
+the user entered.
+
+02:54.550 --> 03:00.640
+So therefore here in Akshay us we can get started by having a wrapping view because just like in normal
+
+03:00.640 --> 03:06.280
+react you need to have one parent component and that will typically be a view and react native because
+
+03:06.280 --> 03:10.590
+that gives you most layout and styling options and inside of that view.
+
+03:10.780 --> 03:17.910
+We could have another view for the input area where we then add our input and below that yet another
+
+03:17.970 --> 03:23.860
+view to have our list of goals and I'll get rid of that text and it's pretty normal and React Native
+
+03:23.860 --> 03:31.350
+that you have quite a lot of views nested into each other so that you can build any layout you want.
+
+03:31.380 --> 03:38.150
+Now let's get rid of this container down there by the way and all of this style assignment and let's
+
+03:38.150 --> 03:40.230
+start with all of that from scratch.
+
+03:40.250 --> 03:46.100
+Important takeaway right now is each component provided by rec native has its own job.
+
+03:46.100 --> 03:51.560
+There aren't that many components but the ones that are there have clearly defined roles and you do
+
+03:51.560 --> 03:56.510
+then build your UI by nesting these components into each other depending on which you want to achieve.
+
+03:56.510 --> 04:01.550
+For example if you want to build a layout you start with nesting a couple of views and then once you're
+
+04:01.910 --> 04:07.040
+at the part where you want to output content you'll start adding text sense on and we'll do all of that
+
+04:07.250 --> 04:14.960
+over the next lectures you can also always go to the official React Native docs and there if you click
+
+04:14.960 --> 04:21.740
+on guides components and AP eyes you'll get an overview over these core building blocks you'll find
+
+04:21.740 --> 04:27.320
+the view here the text the image the text input which I mentioned early already and a couple of other
+
+04:27.350 --> 04:32.720
+core components and you'll see pretty much all of those or most of those throughout this course it is
+
+04:32.720 --> 04:37.370
+a great place to dive deeper and learn more about them and as you already can tell if you'll leave out
+
+04:37.370 --> 04:44.360
+the platform specific ones down there which are more niche focused then there aren't that many core
+
+04:44.390 --> 04:51.110
+components only about 10 core components and that's how reactive works nonetheless you'll be able to
+
+04:51.110 --> 04:53.690
+build any app you want as you will see.

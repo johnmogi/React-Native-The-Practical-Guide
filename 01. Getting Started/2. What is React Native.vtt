@@ -1,0 +1,160 @@
+WEBVTT
+
+00:02.380 --> 00:03.300
+So what is.
+
+00:03.310 --> 00:04.660
+React Native.
+
+00:04.660 --> 00:06.520
+Let's start with the react part.
+
+00:06.520 --> 00:07.860
+Although no one asked react.
+
+00:07.900 --> 00:08.190
+Yes.
+
+00:08.200 --> 00:13.260
+Which is the name of that library and I do expect that you know what react J is this.
+
+00:13.360 --> 00:15.570
+You don't have to be an expert in react.
+
+00:15.580 --> 00:18.290
+Yes but you should know what reaction is.
+
+00:18.310 --> 00:22.450
+Nonetheless let's briefly summarize what it is so did we're on the same page.
+
+00:22.480 --> 00:25.910
+It's a javascript library for building user interfaces.
+
+00:25.930 --> 00:27.400
+That's the official definition.
+
+00:27.400 --> 00:35.560
+That is what react the end it runs on javascript and it's good at building user interfaces.
+
+00:35.560 --> 00:41.420
+Typically we use react in web development for building Web apps but it's important to understand and
+
+00:41.430 --> 00:42.880
+react itself.
+
+00:42.880 --> 00:49.360
+The library actually makes no assumption about what we're building with it because it's actually another
+
+00:49.360 --> 00:54.970
+library which you also use when you're building Web apps with react that is responsible for rendering
+
+00:54.970 --> 00:56.260
+something on through the screen.
+
+00:56.260 --> 00:58.470
+And that's the react DRM library.
+
+00:58.570 --> 01:04.660
+Now in every react for a web project you're working on you will call react on render at some point of
+
+01:04.660 --> 01:11.070
+time and hand off the react app to that method to actually render something onto the screen.
+
+01:11.170 --> 01:18.310
+And that's the library that knows about the Web and knows how to well render HD him elements as on react
+
+01:18.310 --> 01:21.130
+itself is platform agnostic.
+
+01:21.220 --> 01:27.850
+It's just a library that's good at building trees of components of finding out whether something changed
+
+01:28.120 --> 01:33.010
+if something needs to be re rendered off managing state of passing data around.
+
+01:33.100 --> 01:38.890
+But it does so in an abstract way which is why you can use react on any platform.
+
+01:38.890 --> 01:42.490
+You're not restricted to the browser to HD him out to the Web.
+
+01:42.610 --> 01:50.020
+You can use the logic react gives you anywhere it's to react DRM part that then knows how to work with
+
+01:50.100 --> 01:55.420
+HD him at the end zone and that is super important to understand because that's important when we think
+
+01:55.420 --> 02:02.890
+about react native react native as a separate library which in the end is a collection of special react
+
+02:02.890 --> 02:08.530
+components it gives you so a collection of components you can use in your react app and these components
+
+02:08.560 --> 02:15.370
+are special because react native actually knows how to translate them how to compile these components
+
+02:15.610 --> 02:23.410
+to native widgets for ISIS and for Android so react native kind of is like react dumb it knows how to
+
+02:23.410 --> 02:30.490
+talk to native platform to Android ISIS and how to render native widgets and it gives you a bunch of
+
+02:30.490 --> 02:36.820
+these widgets as React Components so that you can build a user interface with these compiler all components
+
+02:36.820 --> 02:43.690
+so to say because you won't be able to use your regular divs and age 1 in paragraph tax in week native
+
+02:43.690 --> 02:49.620
+apps because there are no direct equivalents for debt in native code but I'll come back to that now
+
+02:49.630 --> 02:55.330
+besides giving you these components React Native is a bit more than that it also gives you access to
+
+02:55.330 --> 02:59.740
+some native platform API is for example it helps you use the device camera.
+
+02:59.800 --> 03:05.680
+So things like that common tasks you would want to do in native apps and in general react native gives
+
+03:05.680 --> 03:11.560
+you tools to connect javascript code to native platform code because you typically build or react native
+
+03:11.560 --> 03:17.890
+app by mostly writing javascript code or depending on the app you're building by entirely writing javascript
+
+03:17.890 --> 03:18.490
+code.
+
+03:18.520 --> 03:25.600
+Now I say mostly at least that's a possibility because you can also write native code for ISIS or Android
+
+03:25.840 --> 03:30.670
+and react native gives you the tools to connect your javascript code to the native code though that's
+
+03:30.670 --> 03:36.310
+a bit more advanced and in many apps you will never need debt and therefore React Native gives you full
+
+03:36.310 --> 03:42.460
+flexibility it gives you a way of connecting javascript to native code and it also gives you a lot of
+
+03:42.460 --> 03:48.090
+pre-built native features which are conveniently usable from inside your javascript code.
+
+03:48.280 --> 03:54.550
+So if you den combine React Native in the features that gives you with react J.S. which knows how to
+
+03:54.910 --> 04:00.700
+update the user interface and how to control are user interface then you get everything you need to
+
+04:00.700 --> 04:06.730
+compile a real native mobile app and that's all the what React Native gives you it gives you everything
+
+04:06.730 --> 04:12.780
+you need to then take your javascript code and compile that to a real native mobile app which you can
+
+04:12.780 --> 04:16.760
+and shipped the App Store for ISIS or to the Google Play store for Android.
+
+04:16.870 --> 04:19.840
+So you get a real native mobile app as a result in the end.

@@ -1,0 +1,286 @@
+WEBVTT
+
+00:02.410 --> 00:07.890
+So back in code we started with throwing in some views here and of course right now this won't work.
+
+00:07.900 --> 00:13.930
+This will just break or it will not render anything meaningful to the screen in that first nested view
+
+00:13.930 --> 00:14.920
+here in this block.
+
+00:14.920 --> 00:21.330
+I went to have a text and put an A BUTTON conveniently both as provided by rec native.
+
+00:21.330 --> 00:27.390
+We have a text input here and we also have a button component so we can import both text input which
+
+00:27.390 --> 00:33.510
+allows the user to enter text and button and then here in that view it at first nested if you will add
+
+00:33.510 --> 00:40.890
+a text input as a self closing tag because there is nothing we could pass between opening and closing
+
+00:40.890 --> 00:42.440
+tax and for the button.
+
+00:42.450 --> 00:47.430
+You could think that you use a button like this but actually that's not how does React Native button
+
+00:47.430 --> 00:47.960
+works.
+
+00:47.970 --> 00:53.620
+Instead it's a self closing button and you set a title property to define which text to render dear.
+
+00:53.840 --> 01:00.150
+And here we could say at now we have a text input and a button there.
+
+01:00.360 --> 01:08.230
+And if we save this and there's reloads we see the button here but we don't see the text input right.
+
+01:08.490 --> 01:11.070
+So that's not working as intended.
+
+01:11.070 --> 01:16.850
+The reason for that is actually that the text input will be hidden here be below the status bar.
+
+01:16.920 --> 01:22.740
+So now is the time where we should get started with adding some layout some structure to this page because
+
+01:22.770 --> 01:25.410
+just adding components alone won't do the trick.
+
+01:25.410 --> 01:30.990
+A week native app is all about using components and then adding the right layout to right structure
+
+01:31.080 --> 01:40.190
+to your components so here for example it would make sense to add some general padding around dead views
+
+01:40.190 --> 01:46.310
+on this top view padding basically as some distance from the border of that view which is basically
+
+01:46.760 --> 01:48.870
+the device frame in our case here.
+
+01:48.920 --> 01:54.890
+Since I'm talking about the topmost view to the content of the view so some spacing between the borders
+
+01:54.980 --> 02:00.650
+of the topmost of the surrounding view and the content in the view and for Dad we can add the style
+
+02:00.650 --> 02:02.660
+property here on The View.
+
+02:02.660 --> 02:09.530
+Most components in React Native support to style property the view does and there you use this dynamic
+
+02:10.070 --> 02:15.800
+content binding here which you know from normal react to with the single curly braces and style expects
+
+02:15.800 --> 02:21.590
+a javascript object now so we add another pair of curly braces here and now common mistake is that you
+
+02:21.590 --> 02:25.530
+think this is a special syntax which requires double curly braces.
+
+02:25.670 --> 02:31.390
+Indeed it's the normal react syntax with similarly curly braces where then the dynamic value you're
+
+02:31.400 --> 02:34.640
+passing to style just happens to be a javascript object.
+
+02:34.640 --> 02:40.310
+Hence we have a number of pair of curly braces and in this object you can now have key value pairs where
+
+02:40.310 --> 02:46.610
+the keys are your style property names and the values are well the values for these style properties
+
+02:47.420 --> 02:51.740
+and these style property names are influenced by CSX.
+
+02:51.770 --> 02:58.250
+So here what you can do is you can add padding that exists and React Native as well and a comprehensive
+
+02:58.250 --> 03:04.130
+list of supported style properties can always be found by going to the component you're using like the
+
+03:04.130 --> 03:10.850
+view here and then by clicking on the style property in here if you click on View stalls you'll see
+
+03:10.850 --> 03:17.750
+a list of all provided properties which you can use and you'll see some special properties void of view
+
+03:17.750 --> 03:24.410
+here and then some general props like layout props and there you would find the padding for example.
+
+03:24.480 --> 03:30.640
+So that's how you can find out what supported but you'll also see many examples throughout this course.
+
+03:30.650 --> 03:36.080
+So you're at padding and the value now can just be a number which will be device independent pixels
+
+03:36.290 --> 03:41.300
+so a pixel value which always looks good know battered which device size you have.
+
+03:41.330 --> 03:46.990
+So here we could add 10 and if we do that now we see the button is a bit further down.
+
+03:47.050 --> 03:51.860
+Maybe let's add 30 years so that we can see a bigger difference.
+
+03:52.090 --> 03:56.050
+And now it's working and now if you tap above the button you don't really see an input here.
+
+03:56.050 --> 04:01.230
+But you see that my soft keyboard opened up on Android on I guess it doesn't open by default.
+
+04:01.240 --> 04:03.790
+But there also you can tap here.
+
+04:03.970 --> 04:11.410
+And if you were to tap off enough or if you go to hardware that keyboard toggle software keyboard it
+
+04:11.410 --> 04:13.780
+should open up there as well.
+
+04:13.780 --> 04:15.180
+So here we all have an input.
+
+04:15.190 --> 04:19.840
+So now we can see that input because now it's not behind that status bar anymore.
+
+04:19.840 --> 04:27.040
+So adding that padding probably made sense because now we made sure that our layout is inside of our
+
+04:27.040 --> 04:28.660
+screen here.
+
+04:28.660 --> 04:31.980
+Now there are other tools for making sure we have enough Peti here as well.
+
+04:32.170 --> 04:36.460
+But for now let's manually set the padding and let's maybe said to a value of 30.
+
+04:36.880 --> 04:39.760
+So we were getting started with the layout.
+
+04:39.760 --> 04:43.650
+Now let's go back to this component and let's make sure we can see something.
+
+04:43.660 --> 04:48.120
+We can see that there is a text input and we don't just have to guess it.
+
+04:48.550 --> 04:54.070
+For this we can go to the text input in there for example at the place holder prop and justice before
+
+04:54.070 --> 04:55.800
+to find out what you can set.
+
+04:55.810 --> 05:02.990
+You can always go to the official box in this case to the text input docs and there you find a description
+
+05:03.000 --> 05:04.930
+how to use it and some examples.
+
+05:05.070 --> 05:10.770
+But if you scroll down you'll also find all the props you can set in there for example you find out
+
+05:11.130 --> 05:16.410
+that you can set a place holder prop which is that dummy text that is shown before the user entered
+
+05:16.410 --> 05:17.640
+some text.
+
+05:17.640 --> 05:23.580
+So here dad takes a string and here we could enter course gold because you should be able to set your
+
+05:23.580 --> 05:24.940
+course goal here.
+
+05:25.040 --> 05:28.970
+And if you do that you see both on Android and on ISIS.
+
+05:28.980 --> 05:31.510
+There is this coarse gold text.
+
+05:31.510 --> 05:33.590
+Now it still could be a bit better.
+
+05:33.600 --> 05:39.180
+Could be a bit clearer that there is a text input and therefore here all at a style and number inline
+
+05:39.210 --> 05:40.170
+style.
+
+05:40.170 --> 05:48.170
+And here I'll set up border bottom color of black black now is a string such color shortcuts are supported
+
+05:48.180 --> 05:53.940
+in React Native and a comprehensive list of all the way lable colors is attached to this lecture here
+
+05:54.870 --> 06:01.860
+and I can also see that a border bottom width of let's say 1 and what this does is it should set a bottom
+
+06:01.860 --> 06:07.770
+border on this input so that now if you go back we have to add underlining here we can clearly see it
+
+06:07.770 --> 06:13.710
+on ISIS and since there still is not that much space on ISIS let me actually wrap up this padding up
+
+06:13.710 --> 06:17.520
+here to 50 maybe yeah that looks better.
+
+06:17.540 --> 06:22.630
+So now we have that border blower input and that makes it clear that there is an input here.
+
+06:22.810 --> 06:26.380
+Of course you're not restricted to only setting a border on the bottom.
+
+06:26.380 --> 06:28.640
+You could also just set a general border.
+
+06:28.660 --> 06:32.140
+But leaving out bottom here a border color and a border with.
+
+06:32.530 --> 06:36.180
+And if you did that then this would be surrounded by a border.
+
+06:36.190 --> 06:42.250
+Now one important note regarding these style names here is style property names you'll of course see
+
+06:42.250 --> 06:49.390
+that its border with border color written like this in normal CSX you wouldn't have border dash color
+
+06:49.750 --> 06:55.870
+and that would apply the border color but Dad would be an invalid property name in JavaScript which
+
+06:55.870 --> 06:57.670
+is why this is not supported.
+
+06:57.670 --> 07:03.280
+No actually valid property name in JavaScript would be if you wrap this in quotes though.
+
+07:03.520 --> 07:10.240
+But even that is not supported in react native so these alternative sin taxes for example this syntax
+
+07:10.240 --> 07:18.010
+would work in javascript if you apply some style to a Web HD him element these syntax are not supported
+
+07:18.010 --> 07:23.320
+and react native though they are you really have to use this camel case syntax where you for example
+
+07:23.320 --> 07:29.740
+write border color like this or insured you have to use the property names you also find in the official
+
+07:29.740 --> 07:37.030
+docs there are no alternative names for these style properties and we could now also add a pattern here
+
+07:37.600 --> 07:43.570
+of let's say 10 so that we have some spacing between the border and the actual part where we enter something
+
+07:43.720 --> 07:49.540
+and I'd say this already looks way better and we can clearly see that we here have an input where users
+
+07:49.540 --> 07:50.530
+can enter something.

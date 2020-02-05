@@ -1,0 +1,337 @@
+WEBVTT
+
+00:02.530 --> 00:07.990
+Now we test a d application on a real device which is of course pretty nice and also amazing to see
+
+00:07.990 --> 00:10.520
+it run there before development.
+
+00:10.540 --> 00:16.270
+I will actually use a simulator which is a virtual device running on my machine somebody so that I don't
+
+00:16.270 --> 00:20.310
+constantly have to test the app on my real device.
+
+00:20.460 --> 00:23.660
+I like having it here also makes it easier for recording.
+
+00:23.680 --> 00:29.680
+You probably also want to test the app on a simulator at some point for example because you probably
+
+00:29.680 --> 00:35.530
+only own either Android or an ISIS device and you also want to test and see your app onto your respective
+
+00:35.530 --> 00:41.410
+other platform where you have both devices you have an iPhone you have an Android phone but you also
+
+00:41.410 --> 00:47.530
+want to test your app on an older iPhone on a smaller Android device and with simulators and emulators
+
+00:47.680 --> 00:52.860
+you can launch different types of devices and test your app there to get started with that.
+
+00:52.870 --> 00:55.030
+Go to the guides section down there and click on.
+
+00:55.030 --> 00:59.710
+Up and Running doesn't matter where you click though in the end you just need to get to dock stowed
+
+00:59.740 --> 01:03.460
+exposed on Io and they are in the managed workflow.
+
+01:03.520 --> 01:09.910
+You can click on IAW simulator where Androids do you emulator and there you'll learn how to install
+
+01:10.000 --> 01:16.690
+Android Studio and then launch a virtual device or install X code which is Apple's development environment
+
+01:16.900 --> 01:23.620
+and launch an ISIS simulator important ISIS simulator can only be launched on Mac OS devices because
+
+01:23.710 --> 01:30.020
+X code a tool which you absolutely need for dad is not available on Windows or Linux so you can't run
+
+01:30.040 --> 01:37.180
+in Iowa's simulator on Windows or Linux you can run an Android Studio emulator there though on Mac OS
+
+01:37.180 --> 01:38.510
+you can run both.
+
+01:38.530 --> 01:41.710
+So let's now install these things and let's start with the androids.
+
+01:41.770 --> 01:47.650
+You emulator for it as your first of all need to install Android Studio for this you can of course simply
+
+01:47.650 --> 01:53.080
+google for Android Studio and you should find developer dot Android dot com slash studio simply click
+
+01:53.080 --> 02:00.550
+on there and then there choose download Android Studio and agree to these terms here.
+
+02:00.550 --> 02:05.090
+Now this will open up that download window and now download Android Studio which is quite large and
+
+02:05.090 --> 02:07.280
+deal for this download can take a while.
+
+02:07.360 --> 02:09.810
+Now I'll be back once this download is finished.
+
+02:09.920 --> 02:16.250
+To then continue with the setup so the download finished for me and with that I'm opening this up now
+
+02:16.280 --> 02:22.490
+I'm on Mac here but all the windows you simply will double click on that downloaded file to start the
+
+02:22.490 --> 02:27.750
+installer and the installer will open up and walk you for a couple of steps.
+
+02:27.810 --> 02:33.590
+Now in that installer you can simply leave all the default settings now with the Android Studio installed
+
+02:33.590 --> 02:36.080
+and the installation finished will launch in a second.
+
+02:36.080 --> 02:41.960
+Now before I launch to camera with you when we walk through this first step make sure you have these
+
+02:41.960 --> 02:45.860
+settings down there on Mac OS and Linux configured correctly.
+
+02:46.010 --> 02:47.780
+So in Windows you should need to do that.
+
+02:47.840 --> 02:52.580
+But on Mac OS and Linux make sure you follow these two steps which you'll find in the official docs
+
+02:52.640 --> 03:00.170
+so that everything works correctly now with that let's launch Android Studio once you started.
+
+03:00.170 --> 03:02.640
+You should see a screen that looks something like this.
+
+03:02.750 --> 03:07.580
+There you can click on configure and then choose the SDK manager.
+
+03:07.610 --> 03:15.310
+Now here in the SDK manager make sure that you have one of the latest SDK is installed.
+
+03:15.350 --> 03:20.180
+Now typically you have the topmost SDK which is is still in beta.
+
+03:20.480 --> 03:26.150
+So in my case that's the Android API level 29 Q which has no official name yet.
+
+03:26.390 --> 03:30.050
+And the latest stable where in my case pi is the one you should install.
+
+03:30.050 --> 03:33.170
+Typically the second item here in that list.
+
+03:33.170 --> 03:37.190
+So the first word which has a real name so to say in this case pi.
+
+03:37.190 --> 03:40.920
+Make sure that this is installed simply by checking it here.
+
+03:41.000 --> 03:46.460
+And once you've checked it you can click apply down there and this will automatically download and install
+
+03:46.460 --> 03:53.830
+it besides having an SDK installed make sure that in the SDK tools you have the android emulator installed
+
+03:53.830 --> 03:54.640
+here.
+
+03:54.640 --> 04:01.120
+So simply click on this year at a checkmark here and the SDK platform tools and the SDK tools that all
+
+04:01.120 --> 04:11.890
+these free are checked here also check into X 86 emulator accelerator here and the Google Play Services
+
+04:13.110 --> 04:16.100
+with all of the checked click apply.
+
+04:16.100 --> 04:21.300
+And now again this will prompt you and then start downloads of all these items and install them into
+
+04:21.300 --> 04:27.600
+your android setup here and you need all these things installed to develop Android applications.
+
+04:27.600 --> 04:34.620
+So let's wait for this download and installation to finish here and with that finished you're done here.
+
+04:34.630 --> 04:40.300
+You can close that and the next step still in that Android Studio window here is that you click on configure
+
+04:40.570 --> 04:42.410
+a video manager.
+
+04:42.490 --> 04:46.750
+This is the manager that allows you to create and launch virtual devices.
+
+04:46.750 --> 04:49.120
+You see I got a couple of devices already.
+
+04:49.120 --> 04:53.830
+You might have non You can always create a new one in the bottom left corner by clicking on create virtual
+
+04:53.830 --> 05:00.070
+device and then choose a phone here and you can choose any image you want here to create different devices
+
+05:00.070 --> 05:01.340
+of different sizes.
+
+05:01.360 --> 05:06.310
+I would recommend going with one that has to play store installed that can help with testing certain
+
+05:06.310 --> 05:08.430
+features which we might need later.
+
+05:08.440 --> 05:11.830
+But in general you can pick any image here which you want.
+
+05:11.860 --> 05:15.350
+I'll go with the pixel to here click next.
+
+05:15.490 --> 05:17.150
+Then she was an android virgin.
+
+05:17.170 --> 05:20.230
+You want to use on that the vice.
+
+05:20.230 --> 05:20.620
+And there.
+
+05:20.620 --> 05:22.500
+I would use the latest a stable one.
+
+05:22.510 --> 05:28.110
+So not the beta one not Q In my case but the latest stable one you might need to download it first.
+
+05:28.120 --> 05:32.350
+This image this is independent from the S2 case you installed a second ago.
+
+05:32.350 --> 05:38.730
+These are device images so make sure you download the latest stable one and select it thereafter after
+
+05:39.040 --> 05:40.420
+click on Next.
+
+05:40.420 --> 05:42.600
+You can leave the default settings here.
+
+05:42.610 --> 05:46.680
+You could dive into advanced settings if you really know what you're doing but otherwise you can leave
+
+05:46.700 --> 05:51.520
+the defaults and click finish and this will now create a new emulator.
+
+05:51.610 --> 05:57.250
+In my case this one here and you can launch the emulator by clicking that green play button here and
+
+05:57.250 --> 06:04.200
+this will now start that emulator here which is now booting up here and once it is booted up you can
+
+06:04.200 --> 06:09.180
+run your expo app you'll react native app on this emulator.
+
+06:09.180 --> 06:10.530
+So let's wait for this to finish.
+
+06:10.530 --> 06:17.420
+Let me then show you how to launch your expo app on that emulator so the emulator finished up booting
+
+06:18.890 --> 06:25.640
+and now you can launch your app on this emulator simply by going to your project where you might have
+
+06:25.640 --> 06:28.190
+your process is still running if you quit it.
+
+06:28.220 --> 06:33.020
+You can simply restart NPM start in your react native Expo project.
+
+06:33.020 --> 06:39.930
+So that's what I'm doing here and it's again starting the expo dev tools in the browser here and now
+
+06:39.930 --> 06:46.530
+here where we proceed scant is QR code you can press run on Android device or emulator and if you have
+
+06:46.530 --> 06:51.870
+an emulator up and running it will automatically run your app there or in your terminal here where you
+
+06:51.870 --> 06:54.120
+have to is running and people start process.
+
+06:54.120 --> 06:57.720
+You can press a to all the launch your app on the emulator.
+
+06:57.750 --> 06:58.950
+That's what I just did.
+
+06:59.100 --> 07:02.850
+This will now install the expo client on the emulator automatically.
+
+07:02.880 --> 07:07.750
+So you don't need to install or manually install the expo client there it's done for you.
+
+07:07.830 --> 07:12.540
+And once it's done with that it builds your app and runs it on that Android device.
+
+07:12.570 --> 07:15.060
+So let's wait for this to finish.
+
+07:15.060 --> 07:21.610
+Here it is here it's booting up and yes click OK here you're prompted whether you want to allow displaying
+
+07:21.610 --> 07:29.800
+does app the first time you launch this turned as on your then go back go 2D Abdur here or to do task
+
+07:29.800 --> 07:36.460
+manager and go back into your app here and now here is your expo app launching it's again building that
+
+07:36.460 --> 07:42.490
+JavaScript bundle at the bottom and once it's done it will launch your expo app here and only that first
+
+07:42.490 --> 07:48.240
+build takes quite long subsequent rebuilds and hot reloads as you saw are pretty fast.
+
+07:48.520 --> 07:55.960
+So let's wait for this bill to finish and now it is finishing up here and here we see our app by the
+
+07:55.960 --> 07:56.410
+way.
+
+07:56.410 --> 07:57.130
+This is nice.
+
+07:57.130 --> 08:00.700
+We saw it on the iPhone before at least here in the videos.
+
+08:00.700 --> 08:05.440
+Now here it's running on Android and the button is one of the very few components react native offers
+
+08:05.470 --> 08:08.410
+which does automatically adjust its look to the platform.
+
+08:08.410 --> 08:09.940
+So that's pretty sweet.
+
+08:09.940 --> 08:15.820
+And we have the same functionality as before and this allows us to test as not only on the real device
+
+08:15.850 --> 08:17.560
+but also in a simulator.
+
+08:17.590 --> 08:23.020
+And there you can simulate any android device you want which is of course pretty useful.
+
+08:23.020 --> 08:25.500
+So that's the app running on an android simulator.
+
+08:25.510 --> 08:31.540
+And throughout this course I will always always show how this runs and works on an android emulator.
+
+08:31.540 --> 08:34.390
+Now let's next dive into running this on OS.

@@ -1,0 +1,226 @@
+WEBVTT
+
+00:02.460 --> 00:04.290
+So now did we know what react database.
+
+00:04.290 --> 00:07.370
+Let's take a brief look behind the scenes.
+
+00:07.530 --> 00:13.080
+Now as I mentioned with react and react native we we build an app and our code typically looks something
+
+00:13.080 --> 00:13.700
+like this.
+
+00:13.710 --> 00:19.260
+We built normal React Components as you know it from the web with JavaScript because javascript is the
+
+00:19.260 --> 00:21.650
+language we use to build React Native apps.
+
+00:21.810 --> 00:26.290
+But in there we use special components like view and text here.
+
+00:26.310 --> 00:31.130
+These are not your normal HD hymnal elements because the normal HD hymnal elements are not supported
+
+00:31.680 --> 00:37.230
+the native platforms don't know how to use them they are for a you use special components given to you
+
+00:37.230 --> 00:42.600
+by React Native for which React Native is able to translate them to instructions to native platforms
+
+00:42.630 --> 00:46.380
+to understand its debts how this works.
+
+00:46.380 --> 00:51.150
+Now it's important to understand that your view is so the components you're working with data for our
+
+00:51.150 --> 00:58.440
+Indian compile to real native widgets to real native elements to real native code your javascript code
+
+00:58.470 --> 01:03.480
+where you manage your business logic will not be compiled but your views will be and that of course
+
+01:03.750 --> 01:09.190
+also means that you typically get a great performance when building React Native apps because the result
+
+01:09.190 --> 01:14.310
+is a real native app where a large chunk of the code is real native code.
+
+01:14.310 --> 01:19.300
+Now if we take a closer look at this component thing it's important to understand Dad.
+
+01:19.320 --> 01:25.640
+You can of course use risk for building Web apps but that you could also build native apps for Android.
+
+01:25.650 --> 01:31.530
+I was with native codes and without React Native or that you can use React Native so these are four
+
+01:31.530 --> 01:37.410
+different ways of building apps where of course react for the Web won't give us a native app but just
+
+01:37.410 --> 01:40.260
+to compare how it is would be related.
+
+01:40.260 --> 01:45.630
+So if you're using react for the Web you typically work with let's say a div to structure your content
+
+01:46.260 --> 01:48.540
+if you would work directly with Android.
+
+01:48.540 --> 01:54.780
+So you would build your app in Android Studio without React Native at all you would work with an android
+
+01:54.780 --> 02:00.600
+view for example that would be a widget you can use there in the user interface you're building directly
+
+02:00.600 --> 02:08.970
+with native platform features to structure your content on I w that would be the UI view widget and
+
+02:08.970 --> 02:10.780
+you don't need to memorize these terms.
+
+02:10.830 --> 02:16.020
+I just want to explain how React Native translates things for you because and react native apps you
+
+02:16.020 --> 02:18.180
+actually use the view element.
+
+02:18.180 --> 02:22.950
+Now if you have a look at that view element you of course see that it's very similar to the dev element
+
+02:23.010 --> 02:24.830
+it looks like a H2 l tech.
+
+02:24.840 --> 02:30.510
+The difference of course is that it starts with a capital character and that view is no h him l tag
+
+02:30.690 --> 02:36.180
+the browser wouldn't know what to do with that view but react native doesn't react native will translate
+
+02:36.240 --> 02:42.990
+that view to the Android view or to the UI view for you and it does that of course not just for this
+
+02:43.050 --> 02:49.260
+view General wrapper component but for example if you're a fetching user input on the Web you would
+
+02:49.260 --> 02:54.210
+do that with the input element if you would build a native Android app you would use added text for
+
+02:54.210 --> 02:59.850
+a native highways app you would use UI text field and then react native there's the text input component
+
+03:00.090 --> 03:06.240
+again react native compiles that to the native widgets for you and that's how React Native works behind
+
+03:06.240 --> 03:11.520
+the scenes of course we don't care about the Web in this course here just so that you understand that
+
+03:11.520 --> 03:17.310
+there are some similarities we use these tax which look like HCM alt text but of course that the important
+
+03:17.440 --> 03:24.660
+differences that these are special components compiled to native code now as already mentioned it's
+
+03:24.660 --> 03:30.500
+important to understand that for UI react data gives you special components which are then compiled
+
+03:30.540 --> 03:33.000
+native use for your average logic.
+
+03:33.060 --> 03:38.760
+So if you're using redox or if you having any business logic you're sending HP requests you're transforming
+
+03:38.760 --> 03:47.070
+data all your other javascript code is not compiled to native code but instead it's running on a special
+
+03:47.070 --> 03:52.980
+fret hosted by React Native so you can imagine your react native app which you get in the end as a real
+
+03:52.980 --> 03:58.450
+native app because it is one where all the views have been compiled to native widgets but where there
+
+03:58.450 --> 04:05.760
+is extra mini app inside of your app a mini javascript app running in their hosted and started by React
+
+04:05.760 --> 04:12.690
+Native so to say which runs all your javascript code and your javascript code can then talk to the native
+
+04:12.690 --> 04:13.800
+platform.
+
+04:14.160 --> 04:19.860
+You can picture it is like this year you have your code your app and you build a native app and that's
+
+04:19.860 --> 04:25.110
+running on a native platform and of course there you have certain platform features away label like
+
+04:25.110 --> 04:27.150
+for example using device camera.
+
+04:27.150 --> 04:32.520
+Now as already mentioned your code can be split into two things here your views and your business logic.
+
+04:32.520 --> 04:38.430
+So the average javascript code now is already mentioned multiple times your views are compiled to native
+
+04:38.490 --> 04:46.620
+views to native widgets for these platforms and your code however is kept as javascript code and you
+
+04:46.620 --> 04:53.090
+can tap into native platform features like the camera because your javascript code runs in a special
+
+04:53.100 --> 04:58.430
+virtual machine in the end spun up and hosted by react native inside of your app.
+
+04:58.440 --> 05:04.710
+So the right part here is all inside of our native app which we ship to the app stores and that JavaScript
+
+05:04.710 --> 05:10.080
+code is javascript virtual machine knows how to talk to the native platform features.
+
+05:10.200 --> 05:14.340
+So to the operating system your app is running on in the end through a special bridge.
+
+05:14.340 --> 05:20.580
+You could say and that bridge and that virtual machine that's all automatically provided by rec native.
+
+05:20.580 --> 05:22.050
+You don't have to care about this.
+
+05:22.170 --> 05:29.190
+All you do is you write your react native app with JavaScript and with these special components and
+
+05:29.190 --> 05:30.720
+that's all you need to know for now.
+
+05:30.720 --> 05:36.870
+This is how I react native app works behind the scenes and I find it important to be aware of this because
+
+05:37.170 --> 05:43.050
+it takes some of the magic away in a positive sense because you understand what you're actually writing
+
+05:43.050 --> 05:47.020
+and what will happen with your code and how this code ends up in a native app.
+
+05:47.100 --> 05:51.960
+And of course you'll also understand that you have a real native app therefore in the end not all your
+
+05:51.960 --> 05:52.980
+code is compiled.
+
+05:52.980 --> 05:58.300
+That would be pretty impossible but your views are compiled and of course the views.
+
+05:58.320 --> 06:03.650
+So the part the user sees is the most important part when it comes to performance for an app because
+
+06:03.650 --> 06:05.700
+re rendering the UI and all of that.
+
+06:05.700 --> 06:10.620
+That's typically the performance intensive part and therefore it's very good that this is compiled.
+
+06:10.620 --> 06:13.410
+That's one of the huge strengths of React Native.

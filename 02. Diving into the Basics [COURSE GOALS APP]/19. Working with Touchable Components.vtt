@@ -1,0 +1,319 @@
+WEBVTT
+
+00:02.330 --> 00:03.970
+We can add our elements here.
+
+00:03.970 --> 00:08.150
+What we're not able to do is delete them and that's the next step.
+
+00:08.190 --> 00:10.880
+I want to take the next thing I want to implement here.
+
+00:10.960 --> 00:16.420
+We got our flat list with all these goal items and it would be nice if we could tap such a goal item.
+
+00:16.450 --> 00:18.010
+So such a list item.
+
+00:18.130 --> 00:21.960
+And when we tap it we simply remove it from the list.
+
+00:21.970 --> 00:27.550
+Now the good thing is we can uniquely identify every item because every item here has an I.D. so we
+
+00:27.550 --> 00:30.590
+can use that I.D. for it and getting rid of the item.
+
+00:30.760 --> 00:35.240
+The missing thing is that we can tap it now on our own component.
+
+00:35.260 --> 00:38.730
+We can simply add on press or anything like that.
+
+00:38.740 --> 00:44.040
+This will not work via console log.
+
+00:44.050 --> 00:46.300
+Does that work here.
+
+00:46.300 --> 00:49.570
+We'll not see that log as soon as I pressed the item.
+
+00:49.570 --> 00:55.990
+So let me show this to you if you let this reload here and then we again learn React Native and I add
+
+00:55.990 --> 01:02.050
+this and I tap this multiple times here I'm tapping this you don't see the output here and it makes
+
+01:02.050 --> 01:07.990
+sense does a custom component and on press Wood now simply be a prop we pass to this component just
+
+01:07.990 --> 01:13.420
+prop would be connected to this function but nothing is triggering that prop from inside the component
+
+01:14.020 --> 01:18.850
+so we'll have to go into that component and make sure that this view is principle.
+
+01:19.030 --> 01:24.200
+Now actually a view has various props that help us with listening to events.
+
+01:24.280 --> 01:30.190
+If you type on your your idea if you're using Visual pseudocode should give you some auto completion
+
+01:30.570 --> 01:33.830
+and you see there are quite a lot of events you can listen to.
+
+01:33.940 --> 01:40.150
+For example on touch and actually helps us with listening when the user basically touches and is done
+
+01:40.180 --> 01:41.450
+touching this.
+
+01:41.620 --> 01:48.340
+The issue with that is dead on touch end and a couple of other listeners we got here are on a Q low
+
+01:48.430 --> 01:49.300
+level.
+
+01:49.480 --> 01:56.020
+We can set up very detailed listeners to various events here for example on touch and doesn't tell us
+
+01:56.020 --> 01:57.960
+how long the user pressed is.
+
+01:58.090 --> 02:03.640
+And if you ever need to find out if it was a long press or a short press you would have to manually
+
+02:03.640 --> 02:10.090
+set a timer when the user starts touching those with on touch start wait for on touch end and then manually
+
+02:10.090 --> 02:12.480
+decide if that was long enough or not.
+
+02:12.610 --> 02:16.870
+It's typically not what you want to do though it's of course great that you have the full flexibility
+
+02:16.870 --> 02:24.100
+of doing that but if you want these standards touch events like a long press well then this is not ideal
+
+02:24.100 --> 02:26.770
+because you would have to do all the heavy lifting on your own.
+
+02:26.770 --> 02:31.390
+You would have to write a lot of code to find out which kind of touch it was on your own.
+
+02:31.390 --> 02:34.200
+The good thing is React Native has you covered.
+
+02:34.240 --> 02:40.660
+There is a built in touchable component which you can import and touchable is a component you can wrap
+
+02:40.660 --> 02:42.670
+around any ever a component you have.
+
+02:42.760 --> 02:49.660
+So around any view or any text or whatever you have and it's not visible it doesn't render anything
+
+02:49.660 --> 02:56.200
+you can see on the screen but it will wrap this and registered touch event on the child you wrap touchable
+
+02:56.200 --> 03:03.190
+around and touchable then gives you finished touch events so more detailed touch events which were pre
+
+03:03.190 --> 03:09.070
+configured for you know to be exact touchable like this can't be used as a component it acts more as
+
+03:09.070 --> 03:13.900
+a parent class for week native because there are multiple specific versions of touchable which you don't
+
+03:13.900 --> 03:15.040
+actually should use.
+
+03:15.160 --> 03:21.730
+For example there is touchable opacity let's use touchable opacity instead of touchable because that
+
+03:21.730 --> 03:23.980
+now really is a component you can use.
+
+03:23.980 --> 03:30.760
+And now here you will see that if you type on you get a couple of high level touch events you can listen
+
+03:30.760 --> 03:34.140
+to like on press or on long press.
+
+03:34.210 --> 03:37.120
+And that's of course way more helpful.
+
+03:37.120 --> 03:42.910
+Now here I can listen to you on press which means it's well a normal press event as we could listen
+
+03:42.910 --> 03:49.290
+to on the button and when this is triggered what we can do of course we can execute any code we want.
+
+03:49.360 --> 03:54.520
+And for example we could forward this to let's say props on delete.
+
+03:54.520 --> 04:00.400
+So we call a function that was passed into this component on the on the lead prop.
+
+04:00.410 --> 04:05.980
+We're not setting this prop right now but we're now calling something on this prop and now we can go
+
+04:05.980 --> 04:12.610
+to the place to app J.S. where we use goal item and add the on delete prop instead of on press and on
+
+04:12.610 --> 04:18.820
+the lead should not point at a function because we are expecting a function here in our goal item because
+
+04:18.820 --> 04:25.030
+on press expects a function and we're simply forwarding what on delete points to Q1 press.
+
+04:25.840 --> 04:32.750
+So on delete should point at a function and it is but only a function that prints does that work nonetheless.
+
+04:32.980 --> 04:34.480
+That's at least good for testing.
+
+04:34.480 --> 04:43.310
+So let's see if I learn react native and I add this and I tapped us here multiple times you see I get
+
+04:43.310 --> 04:49.940
+this feedback this slight opacity of fact your up on pressing if I do this you see that here in the
+
+04:49.940 --> 04:56.070
+log so Dad did work and you'll also see the effect of touchable opacity.
+
+04:56.110 --> 05:02.560
+This actually gives us a visual feedback about our touch by changing the capacity of the element we
+
+05:02.560 --> 05:03.600
+touched.
+
+05:03.610 --> 05:10.930
+You can also control this opacity by setting the active opacity prop here on touchable opacity and setting
+
+05:10.930 --> 05:13.620
+this to a number for example to dot eight.
+
+05:13.750 --> 05:18.120
+And now this will be way less transparent for example if you press it.
+
+05:18.130 --> 05:23.980
+So now I've learned React Native here and impressed this the opacity effect is way less strong as you
+
+05:23.980 --> 05:29.860
+can see so you can configure this to your needs and with Dad you can not only add a nice effect but
+
+05:29.860 --> 05:35.980
+of course all eyes will listen to depress effect no touchable opacity is not the only component you
+
+05:35.980 --> 05:43.720
+can use though besides touchable opacity you also have touchable highlight so let's use touchable highlight
+
+05:43.750 --> 05:48.850
+now instead to see how that behaves and the general idea is the same with touchable highlight.
+
+05:48.880 --> 05:55.570
+You can also listen to press events so to these high level events these pre configured events but the
+
+05:55.570 --> 05:57.370
+visual feedback will be a different one.
+
+05:57.460 --> 06:01.980
+Here will not changed your passage of the rapt element but the background color.
+
+06:02.020 --> 06:06.520
+So now I've learned React Native and I tap this.
+
+06:06.520 --> 06:11.830
+You see now the background color changes to black and of course does here in this case is not the visual
+
+06:11.830 --> 06:17.260
+effect we want now you can also configure active capacity there if you want.
+
+06:17.260 --> 06:22.660
+You can configure which DeLay is assume for a long press you could have done it on taxable capacity
+
+06:22.660 --> 06:29.080
+as well so you can configure that effect and you can simply play around with that to get a feeling for
+
+06:29.080 --> 06:30.360
+how to use it.
+
+06:30.700 --> 06:40.240
+Besides touch of opacity and touchable highlight you also have touchable native feedback and that only
+
+06:40.240 --> 06:45.150
+works on Android and for now you don't know how to find out whether this runs on Android or not.
+
+06:45.190 --> 06:48.550
+I'll show you how to determine which platform you're running on later.
+
+06:48.550 --> 06:53.980
+For now let's use that and you won't be able to test is on the iPhone simulator but here on Android
+
+06:53.980 --> 06:58.140
+if I now add this you will see that you get this ripple effect.
+
+06:58.140 --> 07:04.930
+Now if you test us here and of course you can also configure this effect here with props you can set.
+
+07:05.090 --> 07:10.400
+And as always the official docs are also a great place to go if you want to learn more about how to
+
+07:10.400 --> 07:11.080
+configure this.
+
+07:11.090 --> 07:14.360
+So having that ripple effect can be nice on Android too.
+
+07:14.420 --> 07:19.940
+And last but not least there also is touchable without feedback and this does what the name suggests.
+
+07:20.000 --> 07:25.700
+It allows you to register these events but it gives no visual feedback because sometimes you just want
+
+07:25.700 --> 07:31.970
+to have something which you can tap but where you indeed don't want to give any feedback to the user.
+
+07:32.240 --> 07:34.740
+So here I can tap this as much as I want.
+
+07:34.820 --> 07:37.760
+The tap is registered and hence I see the output here.
+
+07:37.760 --> 07:44.210
+But we get no visual feedback so these touchable components are really important and react native because
+
+07:44.240 --> 07:51.140
+they allow you to attach the normal high level touch listeners like on press on long press ends on to
+
+07:51.230 --> 07:57.080
+any component and react native and with Dad you can build your own touchable components your own buttons
+
+07:57.080 --> 07:59.980
+your own links whatever you need.
+
+07:59.980 --> 08:08.800
+Now here all go back to touchable opacity because I liked this opacity effect but really feel free to
+
+08:08.800 --> 08:14.410
+pass the value here and play around with these different touchable effects and play around with the
+
+08:14.410 --> 08:16.490
+different configurations you can apply there.
+
+08:16.570 --> 08:19.990
+Obviously we'll heavily use touchable for all this and horror of course.
+
+08:19.990 --> 08:26.020
+So we'll see them there plenty of times but this is also a great place for you to get started with these
+
+08:26.140 --> 08:27.940
+components as a Z.
+
+08:27.940 --> 08:33.040
+I'll go if touchable pass to here and now the next step is to make sure that we don't just lock something
+
+08:33.040 --> 08:36.700
+to the console but that we actually delete the item which was pressed.

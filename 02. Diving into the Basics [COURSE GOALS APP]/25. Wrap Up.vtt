@@ -1,0 +1,91 @@
+WEBVTT
+
+00:02.230 --> 00:07.780
+So throughout this module we had a look at a lot of important basics you have to know when working with
+
+00:07.780 --> 00:13.030
+React Native you'll learn about these core components which you import from React Native and that you
+
+00:13.120 --> 00:15.910
+only can work with these core components.
+
+00:15.910 --> 00:21.580
+You can build your own components but these components then in turn all they have to be based on these
+
+00:21.580 --> 00:27.640
+built in core components or on other custom components which then are based on these core components.
+
+00:27.850 --> 00:32.830
+That is really crucial you have to use these core components and you can solve these core components
+
+00:32.920 --> 00:38.320
+with the help of inline styles or a style sheet as we're doing it here in the end all the styling of
+
+00:38.320 --> 00:42.190
+course happens with JavaScript because that's all just a javascript code here.
+
+00:42.190 --> 00:46.750
+It's a javascript object in the end to which we're then pointing here when we're assigning a style.
+
+00:46.990 --> 00:51.270
+And in general you control your entire UI with JavaScript.
+
+00:51.310 --> 00:53.590
+This part here the view.
+
+00:53.800 --> 00:55.890
+So the elements you're building here.
+
+00:55.960 --> 00:59.850
+This is the part which React Native will compile to native code.
+
+01:00.190 --> 01:03.670
+This part up here you're our javascript code.
+
+01:03.670 --> 01:07.280
+Dad will stay javascript code that will not be compiled.
+
+01:07.370 --> 01:13.300
+Instead Dad will run in this virtual machine which I showed you in Section 1 of this course and we'll
+
+01:13.300 --> 01:20.230
+then talk to the native code through a special bridge set up by React Native now and other than that
+
+01:20.230 --> 01:22.030
+we use normal react features.
+
+01:22.060 --> 01:29.770
+We're using props to pass data around reusing state here with use state they use state hook to use functional
+
+01:29.770 --> 01:35.650
+components only you could have converted this to a class based component to use set state there and
+
+01:35.650 --> 01:39.440
+use state and there as you probably learned about class based components.
+
+01:39.520 --> 01:43.690
+But I want to use this very modern react syntax and hence I use react hooks.
+
+01:43.870 --> 01:47.560
+And with that we got the basics set.
+
+01:47.560 --> 01:52.420
+Now of course besides the official docs which are always worth a look if you want to learn more about
+
+01:52.420 --> 01:59.650
+a specific component will dive much deeper into these components we used here into styling and in the
+
+01:59.650 --> 02:06.460
+next section we'll also have a look at how you can debug such application before we then build a different
+
+02:06.460 --> 02:12.460
+app a more beautiful apple ready where we didn't dive also into questions like how you can adjust your
+
+02:12.460 --> 02:20.320
+app to different device sizes how you can style your widgets your components with a bit of a nicer way
+
+02:20.620 --> 02:25.360
+and also how you can adjust your styles or your layout to the different platforms.
+
+02:25.360 --> 02:27.370
+So I guess for Android you're running on.

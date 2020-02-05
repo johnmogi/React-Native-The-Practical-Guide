@@ -1,0 +1,25 @@
+WEBVTT
+
+00:02.300 --> 00:07.160
+So time to now really dive in to React Native with the help of Expo here.
+
+00:07.160 --> 00:09.770
+But again Expo is really just a thin extra layer.
+
+00:09.770 --> 00:11.420
+What are you learning is React Native.
+
+00:11.510 --> 00:13.070
+So let's get started.
+
+00:13.070 --> 00:15.550
+Let's get started building our React Native happened.
+
+00:15.680 --> 00:22.160
+Let's dive into the core basics you've got to know when you work with React Native how you work with
+
+00:22.160 --> 00:29.220
+these building components how you style your app and how you generally will go about building a react
+
+00:29.240 --> 00:31.130
+native app and wiring things up.

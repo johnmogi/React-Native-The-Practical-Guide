@@ -1,0 +1,142 @@
+WEBVTT
+
+00:02.310 --> 00:04.600
+Now there's one thing you will notice.
+
+00:05.590 --> 00:10.710
+If you enter a goal here and here I will quickly use the same goal over and over again.
+
+00:10.720 --> 00:12.000
+Even though that gives me an error.
+
+00:12.040 --> 00:17.120
+But the Apple continue work to work so let's ignore the warning at the bottom.
+
+00:17.140 --> 00:22.690
+If I entered this often enough you see at some point of time will exceed the boundaries of the screen
+
+00:22.720 --> 00:25.270
+but by default you can scroll.
+
+00:25.400 --> 00:29.800
+And that's something which can be really confusing if you're getting started with React Native because
+
+00:29.800 --> 00:31.890
+of your coming from the web there.
+
+00:31.930 --> 00:38.650
+You can always scroll the browser by default makes your page scroll lable if your content exceeds the
+
+00:38.650 --> 00:40.720
+boundaries of the page here.
+
+00:40.750 --> 00:42.300
+That's not the same.
+
+00:42.340 --> 00:48.500
+You don't get scrolling just because your content goes beyond the boundaries of your screen.
+
+00:48.520 --> 00:52.380
+Instead your content is just not reachable anymore.
+
+00:52.420 --> 00:56.530
+Now obviously that's not an option that's a horrible user experience you want to have a scroll level
+
+00:56.530 --> 01:04.330
+content but in native apps you have to be explicit about the fact that this page or a part of this page
+
+01:04.540 --> 01:08.410
+should be scroll lable and it's the same and react native therefore.
+
+01:08.440 --> 01:16.060
+So here what we can do is we can use a number of component baked interact native and that's the scroll
+
+01:16.060 --> 01:20.710
+view and as the name suggests this is a view which is grown label.
+
+01:20.710 --> 01:29.360
+So now we can replace this view here which holds our list items with the scroll view on the scroll view
+
+01:29.370 --> 01:31.980
+you also got properties that allow you to configure it.
+
+01:32.010 --> 01:38.020
+You can just place your cursor here and hit controlled space to get an idea of what you can set or check
+
+01:38.020 --> 01:39.390
+out the official docs.
+
+01:39.390 --> 01:45.150
+For example you could set horizontal to scroll horizontally but here I'll leave the default which is
+
+01:45.150 --> 01:53.240
+vertical scrolling and by just adding this you will see that now if I add learn React Native a dozen
+
+01:53.240 --> 01:54.430
+times here.
+
+01:54.740 --> 02:02.420
+So let me fill that page now does a scroll of as you can see I can now scroll my content and only the
+
+02:02.420 --> 02:04.760
+part which is wrapped in the scroll view.
+
+02:04.850 --> 02:10.850
+We could have wrapped it around the entire page so we could have replaced this view here with a scroll
+
+02:10.850 --> 02:15.250
+view or wrap this with a scroll view so that would all the work.
+
+02:16.180 --> 02:20.770
+It's also something we can do and then the entire pages scroll lable.
+
+02:20.820 --> 02:24.020
+So if I now add learn React Native here
+
+02:27.950 --> 02:33.280
+you'll see that now the entire page scrolls here and I guess you can even scroll without items that's
+
+02:33.280 --> 02:40.600
+the default I was behavior but it of course always bounces back but that's up to you where you at this.
+
+02:40.600 --> 02:46.150
+And here I just want to have a subsection of the screen which is scroll lable so I only wrap this section
+
+02:46.150 --> 02:47.170
+with the scroll view.
+
+02:47.170 --> 02:53.290
+But this is of course a super important component for any content where you can't guarantee that it
+
+02:53.290 --> 02:55.040
+fits onto the screen.
+
+02:55.100 --> 02:59.650
+No of course you might think that with all these device sizes available you can never guarantee this
+
+03:00.250 --> 03:04.810
+but there are certain pieces of content like input in a button which you will always be able to fit
+
+03:04.810 --> 03:10.780
+onto the screen and which also can be configured to resize them selves to fit onto the screen whereas
+
+03:10.780 --> 03:16.000
+there is other content typically lists of data like this year where you can't guarantee it and where
+
+03:16.000 --> 03:21.760
+you just know after 10 or 20 items it will definitely exceed any screen.
+
+03:21.850 --> 03:27.770
+And that's the content you want to wrap into a scroll view over content like input buttons hardcoded
+
+03:27.940 --> 03:29.040
+static text.
+
+03:29.140 --> 03:35.290
+So basically any content where you know how many items you'll have in advance typically can be squeezed
+
+03:35.320 --> 03:42.340
+onto a screen with the right tools namely with Flex box which will also do for all at this course but
+
+03:42.340 --> 03:46.360
+for a dynamically generated content like this you definitely want a scroll view.

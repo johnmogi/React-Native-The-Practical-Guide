@@ -1,0 +1,322 @@
+WEBVTT
+
+00:02.240 --> 00:08.750
+SO THAT WAS A LOT OF INTRODUCTION TO REACT native and Expo but I find it important that you understand
+
+00:08.750 --> 00:11.540
+what you're working with before you get started.
+
+00:11.540 --> 00:18.470
+Now with that it's time to get started though and for this visit Expo dot I Oh there you can click on
+
+00:18.470 --> 00:22.020
+get started and you'll find these starting steps here.
+
+00:22.190 --> 00:24.290
+Now you don't really need that first step.
+
+00:24.290 --> 00:30.920
+We can jump right into step number two which is that you need node J.S. now you need no s which is a
+
+00:30.920 --> 00:36.800
+javascript runtime that allows you for example to build server side apps with JavaScript you don't need
+
+00:36.800 --> 00:39.980
+that because we're about right and you know us code in this course.
+
+00:39.980 --> 00:41.020
+It's not a node course.
+
+00:41.030 --> 00:42.550
+No worries you don't need to know.
+
+00:42.590 --> 00:50.750
+No chance but it's a package which allows us to run javascript on our machine and for example the expo
+
+00:50.750 --> 00:54.680
+client behind the scenes also runs on javascript.
+
+00:54.680 --> 00:57.410
+It's totally not related to react native.
+
+00:57.410 --> 01:00.100
+That's just for this tool to work correctly.
+
+01:00.230 --> 01:05.050
+Also for this command to install the tool NPM that's the node package manager.
+
+01:05.150 --> 01:08.320
+And that's also made available by no charge us.
+
+01:08.330 --> 01:14.300
+So the first step is that you wizard no chase dot org and there download the latest version.
+
+01:14.300 --> 01:20.300
+In my case 12 dots six from there to get started and whatever your latest version is when you're viewing
+
+01:20.300 --> 01:22.840
+that simply download that version install it.
+
+01:22.880 --> 01:28.080
+It gives you a normal install or you can simply walk through by clicking through all these steps there.
+
+01:28.100 --> 01:29.420
+Nothing too fancy.
+
+01:29.420 --> 01:32.220
+It's a way lable for Mac OS and Windows and Linux.
+
+01:32.270 --> 01:38.330
+So simply downloaded here walk for the installer and once it is installed you can proceed to this third
+
+01:38.330 --> 01:39.760
+step here.
+
+01:39.830 --> 01:46.130
+So with no chase installed let's copy that command here and then open your normal terminal or on Windows
+
+01:46.130 --> 01:49.770
+your command prompt and paste that command in here.
+
+01:49.790 --> 01:54.530
+Now on Mac and Linux you might need to add a pseudo in front of this on Windows.
+
+01:54.530 --> 01:57.820
+This will not be required to get the right permissions.
+
+01:57.830 --> 01:59.090
+So here I'll enter it.
+
+01:59.120 --> 02:03.630
+Then you might be prompted for your password simply enter it if you are.
+
+02:03.740 --> 02:09.290
+And now it is will install the exposed CLIA which is this tool that helps us create and manage react
+
+02:09.290 --> 02:15.080
+native projects with the help of Expo globally on your machine so that you can use it from anywhere
+
+02:15.230 --> 02:16.280
+on your machine.
+
+02:16.280 --> 02:19.190
+So from anywhere in your terminal.
+
+02:19.280 --> 02:21.540
+So let's wait for this installation to finish.
+
+02:21.560 --> 02:26.180
+You can ignore any warnings you might be getting in between and I'll be back once this installation
+
+02:26.180 --> 02:27.470
+finished.
+
+02:27.560 --> 02:33.170
+You can also ignore such in-between arrows here by the way as long as the overall doesn't crash with
+
+02:33.170 --> 02:35.990
+an error but finishes with a message like this one in the end.
+
+02:35.990 --> 02:38.030
+You were successful.
+
+02:38.030 --> 02:43.760
+So with us we got exposed steel I installed the next step is to create our project so step number four
+
+02:43.760 --> 02:44.510
+here.
+
+02:44.510 --> 02:46.280
+We do this by running expo in it.
+
+02:46.340 --> 02:52.250
+And then any project name of your choice and for that first of all make sure that you use the C D command
+
+02:52.310 --> 02:58.890
+to navigate into the folder here on your machine where you want to create that project so I did that.
+
+02:58.890 --> 03:04.440
+Here I I'm in that folder and now I can run expo in it and I'll name this r n first app because it's
+
+03:04.440 --> 03:09.870
+our first react native app here after all simply hit enter that name of course is totally up to you
+
+03:09.870 --> 03:11.250
+what you have here.
+
+03:11.250 --> 03:16.530
+And this will now create a new folder in the place where you ran this command and set up our ReACT native
+
+03:16.800 --> 03:18.810
+app they're using Expo.
+
+03:18.900 --> 03:22.290
+Now you probably are asked which template you want to use.
+
+03:22.350 --> 03:25.480
+And there you can go with the blank template for now.
+
+03:25.560 --> 03:32.700
+Make sure you don't use bare minimum because that would be a setup without the expo environment with
+
+03:32.700 --> 03:34.060
+all the convenience features.
+
+03:34.080 --> 03:36.570
+So definitely go with Lang here.
+
+03:36.570 --> 03:42.570
+Now next you'll probably be asked to enter a name for your app and I'll just enter our end first app
+
+03:42.570 --> 03:43.050
+here.
+
+03:43.080 --> 03:47.770
+That's the and the name which is displayed in the tasks which are off your app on the home screen and
+
+03:47.770 --> 03:48.540
+so on.
+
+03:48.570 --> 03:52.130
+You can leave to slag as it is and simply hit enter again.
+
+03:52.140 --> 03:58.650
+Now I'm also you using yarn on my machine which is an alternative to NPM you might not be asked whether
+
+03:58.650 --> 04:00.780
+you want to use yarn which is totally fine.
+
+04:00.780 --> 04:03.210
+I will also choose no here to use NPM.
+
+04:03.390 --> 04:08.550
+And therefore now it is will go ahead create this project folder install all required dependencies and
+
+04:08.550 --> 04:14.970
+there like react and react native and give us a HREOC native project which we can use to build a native
+
+04:14.970 --> 04:15.330
+app.
+
+04:15.570 --> 04:17.960
+So let's wait for this to finish now.
+
+04:17.970 --> 04:23.610
+Now once it did finish you see the next instructions here you can navigate into the newly created folder
+
+04:23.610 --> 04:31.230
+with the CDE command and then in there is simply run NPM start NPM start will now start up the expo
+
+04:31.230 --> 04:38.410
+development tool the expo dev tools and a new tab should open up in your browser.
+
+04:38.570 --> 04:43.420
+Here is that tab which did open you are any issues here you can ignore it for now.
+
+04:43.550 --> 04:49.070
+This year is the expo development tool or the expo dev tools as it's called.
+
+04:49.280 --> 04:55.610
+It's a window which allows you to run your app on different connected devices or add simulators.
+
+04:55.760 --> 05:00.740
+And it allows you to generally manage parts of your app you see some output from your app.
+
+05:00.740 --> 05:02.650
+Here are some warnings you might be getting.
+
+05:02.750 --> 05:09.200
+And this is a very convenient window for managing your app and for running your app now.
+
+05:09.210 --> 05:15.780
+Also make sure that here in the terminal where you ran NPM start you'll leave that process running.
+
+05:15.810 --> 05:21.000
+You might see that it didn't finish you don't see that input line again where you can enter commands
+
+05:21.630 --> 05:27.630
+instead here you can't type or you can press some of the shortcuts you see here but you can't type new
+
+05:27.630 --> 05:28.500
+commands.
+
+05:28.500 --> 05:33.960
+You can always quit this process by hitting control and see simultaneously but you should leave this
+
+05:33.960 --> 05:37.640
+process up and running for as long as you're working on your project.
+
+05:37.740 --> 05:42.660
+And if you are then done for today you can quit it and restarted on the next day because this process
+
+05:42.660 --> 05:47.850
+will all watch your code and whenever you change something in your code and you save that change it
+
+05:47.850 --> 05:52.530
+will automatically safeties and publish it to your connected device.
+
+05:52.560 --> 05:58.680
+But speaking of that let's connect the device and for that the easiest way of getting started is to
+
+05:58.680 --> 06:01.940
+use your iPhone or Android phone which you own.
+
+06:01.950 --> 06:08.290
+So in my case it's an iPhone here and here's my real phone and I'm in the App Store now it's in German
+
+06:08.290 --> 06:12.730
+because I have a German phone but this is the normal App Store now in there you can go to the search
+
+06:12.730 --> 06:19.900
+area and search for Expo when you did that you should find that Expo client here and you can simply
+
+06:20.020 --> 06:26.680
+download that to your device it's free to use simply install it onto your device and wait for this installation
+
+06:26.680 --> 06:28.430
+to finish of course.
+
+06:28.450 --> 06:30.690
+And once this is finished.
+
+06:30.700 --> 06:37.030
+You can open this and now with the expo app installed you don't need to sign up here.
+
+06:37.370 --> 06:42.880
+Instead on Android you should be able to scan that barcode right from inside your expo app on I was
+
+06:42.880 --> 06:49.230
+simply open up the camera app and then you can go all the way to the dev tools here and you'll see that
+
+06:49.230 --> 06:58.190
+barcode here simply hold your camera onto debt on ISIS or the expo app scanner here on Android and you
+
+06:58.190 --> 07:03.510
+should be prompted whether you want to open an app in Expo and simply hit open there.
+
+07:03.800 --> 07:07.730
+And now this should open your app here in the Expo client which you installed.
+
+07:07.760 --> 07:14.810
+Again without signing up just by holding arrive on camera over that barcode or on Android by doing that
+
+07:14.810 --> 07:19.350
+from directly inside the expo app where you will have that option to do so.
+
+07:19.370 --> 07:24.050
+So now it is will built a javascript bundle as you see here at the bottom or put in other words.
+
+07:24.050 --> 07:30.260
+This will now take your app and compile it basically and prepare it and then load it here over exposed
+
+07:30.320 --> 07:36.920
+servers into your app and you can simply have got it here on the first screen and then DS your starting
+
+07:36.920 --> 07:38.130
+react native app.
+
+07:38.270 --> 07:43.220
+And now let's actually view the code for this and see how we can change something into code to see something
+
+07:43.220 --> 07:45.110
+different here on this screen.

@@ -1,0 +1,61 @@
+WEBVTT
+
+00:02.390 --> 00:05.320
+Of course the question is what will rebuild here.
+
+00:05.330 --> 00:06.930
+Now we'll dive into the basics here.
+
+00:06.940 --> 00:09.800
+Therefore of course here will build a relatively simple app.
+
+00:09.830 --> 00:13.880
+But already showing a lot of the core features you got to know.
+
+00:13.880 --> 00:20.450
+So the app will build here will be an app where you can save your goals for this course your course
+
+00:20.450 --> 00:27.440
+goals they offer will start by adding an input field here where you are able to enter your goal and
+
+00:27.440 --> 00:30.100
+of course then a button which adds it.
+
+00:30.290 --> 00:41.370
+And then here will have these various items these various list items below that with your goals on them.
+
+00:41.420 --> 00:50.870
+If you tap them that will delete the item so app on a tap that will be deleted but pressing that button.
+
+00:50.870 --> 00:58.610
+We of course add an item and we'll also enhance does application good for all at this module so that
+
+00:58.610 --> 01:01.370
+it also works a bit differently by the end of the module.
+
+01:01.400 --> 01:05.090
+Then we'll just have a plus button here so to save.
+
+01:05.210 --> 01:12.230
+And by pressing this button here we will open a modal which is an overlay over the screen where you
+
+01:12.230 --> 01:13.620
+can then enter your goal.
+
+01:13.760 --> 01:15.340
+And we still will have the output here.
+
+01:15.350 --> 01:20.810
+But basically the inputs will be taken away from that main screen into that modal the idea of is of
+
+01:20.810 --> 01:26.150
+course very trivial app here is that we get to know a lot of these core features these core components
+
+01:26.150 --> 01:30.450
+you work with how to install these components how to work with such a modal and so on.
+
+01:30.680 --> 01:34.640
+And we'll obviously build way more complex apps for the course of course.
+
+01:34.640 --> 01:40.520
+So let's get started with this very trivial nonetheless super important and helpful application now.

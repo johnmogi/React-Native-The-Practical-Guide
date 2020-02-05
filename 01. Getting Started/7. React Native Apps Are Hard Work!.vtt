@@ -1,0 +1,106 @@
+WEBVTT
+
+00:02.190 --> 00:07.040
+Getting started would react native apps can be really hard work.
+
+00:07.080 --> 00:09.260
+It wasn't dead hard with Expo end.
+
+00:09.270 --> 00:15.330
+Indeed generally Expo makes working with rec native pretty simple and fun but it's important to understand
+
+00:15.360 --> 00:21.030
+that React Native is not about writing javascript once and running it everywhere It's instead about
+
+00:21.120 --> 00:27.210
+learning React Native once and then write code that is flexible regarding the platform it's running
+
+00:27.210 --> 00:32.970
+on for example and you will see that throughout the course there aren't dead many components React Native
+
+00:32.970 --> 00:39.210
+ships with that would automatically adapt the way to look to the underlying platform you as a developer
+
+00:39.210 --> 00:45.290
+instead have to find out on which platform your code is running and then adjust your styles to that
+
+00:45.290 --> 00:51.830
+platform to get a look that fits the platform or maybe even adjust your logic to that platform.
+
+00:51.870 --> 00:58.680
+The same for orientation or device size changes you need to write code that is flexible you will learn
+
+00:58.710 --> 01:03.900
+all about that in this course but you will see that writing react native code is not about writing code
+
+01:03.900 --> 01:09.870
+once but instead you will have to add some if checks to find out on which platform you're running to
+
+01:09.870 --> 01:16.190
+adjust the look and feel of your app based on the platform and device size your app runs on.
+
+01:16.200 --> 01:22.380
+So to sum it up you have no or very little cross platform styling of components most components that
+
+01:22.380 --> 01:23.660
+are built into React Native.
+
+01:23.660 --> 01:26.090
+Don't come with a lot of styling attached to them.
+
+01:26.100 --> 01:32.470
+You have to take care about styling instead and you only have a basic set of pre-built components anyways.
+
+01:32.520 --> 01:36.510
+Don't expect a vast amount of pre-built components.
+
+01:36.510 --> 01:43.020
+If you worked with other alternatives like flatter or ionic you're used to having a bunch of components
+
+01:43.050 --> 01:49.140
+which are pre styled and give you a lot of awesome functionality out of the blocks React Native is much
+
+01:49.140 --> 01:55.920
+more bare bone you got some basic components which you need but then all components that would be a
+
+01:55.920 --> 02:02.100
+bit more complex are components you will have to build on your own based on these primitives you're
+
+02:02.100 --> 02:07.350
+given and indeed you will see these primitives you're getting are actually all you need.
+
+02:07.350 --> 02:12.810
+But again we're back to you will need to combine to manually install them manually and that's something
+
+02:12.900 --> 02:16.130
+our alternatives sometimes do for you for risk native.
+
+02:16.140 --> 02:18.250
+You have to do it on your own.
+
+02:18.390 --> 02:24.840
+Also as I just mentioned for creating responsive designs where your app looks good on different device
+
+02:24.840 --> 02:30.410
+sizes and different device orientations you don't really have tools that help you with that.
+
+02:30.480 --> 02:36.300
+You will have to write code that is flexible that checks to available device size and that then automatically
+
+02:36.300 --> 02:37.410
+adjusts.
+
+02:37.410 --> 02:40.920
+So there is a lot of manual work to be done by you.
+
+02:40.920 --> 02:41.750
+As you can tell.
+
+02:42.240 --> 02:44.220
+But that also gives you a lot of power.
+
+02:44.340 --> 02:50.000
+And in this course you will get all the knowledge you need to master this and build truly amazing react
+
+02:50.010 --> 02:51.120
+native applications.

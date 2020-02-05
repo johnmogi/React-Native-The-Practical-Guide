@@ -1,0 +1,196 @@
+WEBVTT
+
+00:04.540 --> 00:11.110
+Inline styles are very easy to apply but their downside is that the more complex your app gets and your
+
+00:11.110 --> 00:18.260
+setup gets your component gets the harder it is to follow along with all these inline cells.
+
+00:18.370 --> 00:24.040
+You will have a lot of code up there in your J is X code and it can be hard to read it to understand
+
+00:24.040 --> 00:24.720
+it.
+
+00:24.870 --> 00:27.870
+They are four walls you can use inline styles.
+
+00:27.940 --> 00:32.740
+It's actually recommended to use a style sheet object and that's exactly what's getting treated down
+
+00:32.740 --> 00:33.820
+there.
+
+00:33.820 --> 00:39.120
+This uses style sheet which is a class in the end provided by HREOC native which is why we imported
+
+00:39.130 --> 00:46.660
+from there in Disney and creates a javascript object which contains all your style configuration.
+
+00:46.660 --> 00:51.940
+The difference to a vanilla javascript object which you could also create on your own like this is simply
+
+00:51.940 --> 00:59.590
+dead stylish you create could in the future also apply some performance optimizations and apply your
+
+00:59.590 --> 01:01.530
+styles more efficiently in the end.
+
+01:01.600 --> 01:07.480
+Therefore you should use that because you'll lose nothing but in the future you might benefit from additional
+
+01:07.540 --> 01:12.190
+optimizations right now when I'm recording this there is no difference though.
+
+01:12.190 --> 01:17.800
+But again you should use styles you'd create because it won't hurt and you might get additional performance
+
+01:17.800 --> 01:22.120
+optimizations in the future and no advantage of using the style sheet instead.
+
+01:22.120 --> 01:28.150
+This will automatically add some validation which means that if you're using incorrect style property
+
+01:28.150 --> 01:33.550
+or incorrect value React Native will detect this and will throw an error which simply makes it easier
+
+01:33.550 --> 01:35.380
+for you to spot such errors.
+
+01:35.470 --> 01:39.370
+If there would be no validation it would fail silently.
+
+01:39.370 --> 01:45.160
+It would just not apply to style and you might not even see that instantly or you'll see that the styling
+
+01:45.160 --> 01:48.070
+isn't correct but you don't really see why it's not working.
+
+01:48.070 --> 01:53.950
+Therefore this built in validation is a no advantage of using that style sheet object here to create
+
+01:54.040 --> 01:56.680
+you pass a javascript object as an argument.
+
+01:56.680 --> 02:01.450
+So the argument you pass here is that JavaScript object and then that object you can now define your
+
+02:01.450 --> 02:07.000
+styles and you don't do it is by adding padding 10 because it would be unclear where this should be
+
+02:07.000 --> 02:08.020
+applied.
+
+02:08.020 --> 02:15.280
+Instead you use any property name of your choice like for example screen to setup the style for our
+
+02:15.370 --> 02:16.810
+overall screen view.
+
+02:16.810 --> 02:21.040
+So for this top level of you here and you could have chosen any name you want here.
+
+02:21.040 --> 02:26.490
+This doesn't have to be screen here you now have a nested javascript object.
+
+02:26.560 --> 02:30.610
+So the value for this property is another javascript object.
+
+02:30.610 --> 02:33.800
+And there you setup padding 50 for example.
+
+02:33.820 --> 02:37.630
+So the styling we had up there as well.
+
+02:37.700 --> 02:40.510
+Now we can remove that style up here.
+
+02:40.520 --> 02:45.980
+I still have to style property but I no longer have to inline style object and instead here.
+
+02:46.010 --> 02:52.120
+I now point at styles which is this constant which holds our established object.
+
+02:52.150 --> 02:58.430
+I point at styles and then with Dot I point at the screen style and that's what I meant.
+
+02:58.430 --> 03:00.090
+You can choose any name you want here.
+
+03:00.170 --> 03:06.440
+If you would have named this route then you would have just have to use route up there so you can use
+
+03:06.440 --> 03:07.160
+any name you want.
+
+03:07.160 --> 03:12.550
+You just have to make sure that the names you use down there meet the names you use up here and now
+
+03:12.570 --> 03:18.540
+just tells rec native that this view should get the styles defined for a screen down there.
+
+03:18.650 --> 03:20.990
+You can do the same for our input container.
+
+03:20.990 --> 03:25.860
+Let's say again this name is totally up to you input container here.
+
+03:25.880 --> 03:28.400
+I will take it as style object.
+
+03:28.400 --> 03:37.130
+I applied as an inline style to this view before and I applied this as my value for it as input container.
+
+03:37.130 --> 03:42.260
+Now here on that view we reference style start input container.
+
+03:42.260 --> 03:48.110
+Now if some auto formatting which you by the way can do in Visual Studio code by going to Preferences
+
+03:49.130 --> 03:54.860
+Keyboard shortcuts and then search for format document that's the shortcut you want to press so that
+
+03:55.010 --> 04:00.780
+auto formats the documents the file with that we have some clean code structure here.
+
+04:00.860 --> 04:04.710
+We see these are our input container styles and we apply them here.
+
+04:04.730 --> 04:10.910
+Another advantage of having this style sheet object is also did you can apply the same style to multiple
+
+04:10.910 --> 04:12.680
+views without copying it.
+
+04:12.710 --> 04:18.200
+So if we want to have the input container style not just on this view but also on this one down there.
+
+04:18.350 --> 04:25.160
+While we could simply write style styles dot input container you can apply this style to as many components
+
+04:25.190 --> 04:26.290
+as you want.
+
+04:26.290 --> 04:32.460
+Now of course I don't need it here but we could use it here if we would need it not the last style I
+
+04:32.460 --> 04:35.030
+want to apply is on the text input here.
+
+04:35.030 --> 04:40.970
+Dear I'll just named as input website.
+
+04:41.130 --> 04:50.220
+Too many curly braces set up my stalls here then and then on the text input refer to styles dot input
+
+04:50.430 --> 04:55.430
+like that was that if we saved as we have the same look as before.
+
+04:55.560 --> 05:01.320
+But now we're using the style sheet objects which makes sharing and reusing styles easier and which
+
+05:01.320 --> 05:05.610
+possibly also yields us some future performs optimizations.
+
+05:05.610 --> 05:10.290
+And in addition our J is X code here simply is much leaner now.

@@ -1,0 +1,211 @@
+WEBVTT
+
+00:02.240 --> 00:04.430
+Now does all the nice practice for you.
+
+00:04.460 --> 00:09.440
+You can post the video here and try positioning these two buttons next to Java on your own.
+
+00:09.440 --> 00:15.190
+Only did two buttons not the input into two buttons but these two buttons should be in a new line below
+
+00:15.200 --> 00:17.430
+the input but then sit next to each other.
+
+00:17.570 --> 00:23.610
+After a short pause which you can use to pass the video we'll of course do that together.
+
+00:23.650 --> 00:25.440
+So where are you successful.
+
+00:25.450 --> 00:26.950
+Let's try it together.
+
+00:26.990 --> 00:34.670
+The key here is to use flex box and our view because again as I mentioned earlier and as is really important
+
+00:34.670 --> 00:41.530
+there is stand view components are your core component for organizing our components or for being used
+
+00:41.530 --> 00:43.570
+as a container which you can also style.
+
+00:43.600 --> 00:49.610
+But here in this case to organize other components so I'll move the two buttons instead of that view.
+
+00:49.720 --> 00:55.720
+And now we can assign a style to that view and that style of course will be defined here in our style
+
+00:55.750 --> 00:59.660
+object in all named as Button container.
+
+00:59.710 --> 01:06.400
+This is up to you does name and in there I want to set a flex direction of row to have him sit next
+
+01:06.400 --> 01:13.360
+to each other and then I'll set justify content of space between to have the free space between the
+
+01:13.360 --> 01:16.330
+two buttons.
+
+01:16.340 --> 01:25.190
+Now let's add to stall here too that view styles button container and safeties and now here are the
+
+01:25.190 --> 01:32.420
+buttons but to have the free space have an effect here which will be even clearer on Android by the
+
+01:32.420 --> 01:34.900
+way that it's currently not having any effect.
+
+01:35.000 --> 01:37.880
+So that space between us not having any effect.
+
+01:37.910 --> 01:41.820
+Let me quickly show it is on Android.
+
+01:42.030 --> 01:42.410
+You see it.
+
+01:42.420 --> 01:43.890
+There is no free space.
+
+01:43.920 --> 01:47.790
+The reason for that simply is that we have no width assigned to our button container and therefore has
+
+01:47.790 --> 01:48.200
+learned.
+
+01:48.210 --> 01:50.100
+It only takes the width of the children.
+
+01:50.370 --> 01:52.660
+And that is simply the width of the two buttons.
+
+01:52.710 --> 01:53.820
+Add it together.
+
+01:53.940 --> 01:56.570
+Hence there is no free space to add in between.
+
+01:56.610 --> 02:01.410
+So we have some free space in between we simply need to assign a with to the button container.
+
+02:01.530 --> 02:05.800
+And now Dad width is of course up to you since the input has 80 percent.
+
+02:05.820 --> 02:14.340
+We could go with 80 percent here as well or maybe with 60 percent to have it a little bit more narrow
+
+02:14.400 --> 02:20.130
+Dendi input above so that the buttons do not sit on the edges of the input but that's of course up to
+
+02:20.130 --> 02:21.090
+you.
+
+02:21.090 --> 02:27.060
+And they are for now with Dad if this reloads and we have a look at this on Android.
+
+02:27.060 --> 02:33.390
+By using this convenient way of closing it and restarting it now we should see some free space between
+
+02:33.390 --> 02:34.930
+these two buttons.
+
+02:34.950 --> 02:36.730
+Yeah that's looking good.
+
+02:36.770 --> 02:38.700
+And of course you can play around with that.
+
+02:38.730 --> 02:42.830
+You could also alternatively of course add styles to the buttons.
+
+02:42.840 --> 02:49.440
+You can add style props here too and add a margin on the left and right of each button that would have
+
+02:49.440 --> 02:50.510
+work too.
+
+02:50.520 --> 02:56.250
+You can also play around with our values here like space around to have the free space to the left and
+
+02:56.250 --> 02:58.710
+right of the buttons and not just between them.
+
+02:58.770 --> 03:03.000
+These are all things you can do I'll go with space around here and have a final look at this.
+
+03:03.000 --> 03:06.000
+But ultimately that's of course simply something that's up to you.
+
+03:06.030 --> 03:11.400
+Important here is of course that you understand how you can achieve something with the help of a view
+
+03:11.550 --> 03:15.390
+which you wrap around your buttons and flex Buxton.
+
+03:15.600 --> 03:18.900
+And with that I'd say we have a decent look here.
+
+03:19.110 --> 03:26.550
+Now one last thing really last thing which I also want to do is resize these buttons because they're
+
+03:26.550 --> 03:31.380
+not equally sized and I think it would look a bit nicer if they had the same size.
+
+03:31.410 --> 03:37.920
+Now on a button you can't add a style prop and set the with no matter if you're using inline styles
+
+03:37.950 --> 03:40.700
+or the stylus sheet object instead.
+
+03:40.710 --> 03:44.050
+And that's something you have to know which is why I'm covering it here.
+
+03:44.100 --> 03:51.860
+You have to wrap your button into a separate view like I'm doing it here and then give that view a button
+
+03:52.070 --> 03:59.270
+for example here we could add styles button referring to a button property down there to each view and
+
+03:59.270 --> 04:05.990
+there on this button property which I'm now adding you could add a width of let's say 40 percent and
+
+04:05.990 --> 04:08.780
+that will be 40 percent off the parent of that view.
+
+04:08.780 --> 04:15.440
+So 40 percent of that button container view which itself takes 60 percent of the entire available width
+
+04:16.220 --> 04:20.580
+and we can do this on the upper button as well of course.
+
+04:20.600 --> 04:28.010
+So that's just something you have to know if you add your surrounding views here around your buttons.
+
+04:28.010 --> 04:34.490
+Now with that if we again restart Android we should have buttons that are equally sized which of course
+
+04:34.580 --> 04:36.710
+often something you want.
+
+04:36.710 --> 04:42.980
+Of course you could have also used pixel value here instead of percentage values but now with that I'm
+
+04:43.220 --> 04:44.710
+really happy.
+
+04:44.780 --> 04:48.590
+I think that's now rehab that's looking good behaving good.
+
+04:48.710 --> 04:51.320
+And yet it's a good start with react native.
+
+04:51.320 --> 04:57.140
+Now obviously there is so much more we can learn and we will dive into so much more we can do regarding
+
+04:57.140 --> 05:02.540
+the styling because as already mentioned does is certainly not the most beautiful app you ever built
+
+05:03.110 --> 05:05.990
+but we covered a lot of important fundamentals here.

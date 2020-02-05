@@ -1,0 +1,259 @@
+WEBVTT
+
+00:02.360 --> 00:08.270
+Now I just show you the scroll view and it's already time to let go in to get rid of the scroll view.
+
+00:08.330 --> 00:11.000
+Why the scroll you is great.
+
+00:11.000 --> 00:13.600
+If you have a scroll label area on your screen.
+
+00:13.790 --> 00:19.490
+But it's not so great if you have a list where you don't know how long it will be or which might be
+
+00:19.490 --> 00:21.310
+very very long.
+
+00:21.320 --> 00:27.440
+Now if you know you have some content maybe a list of data but you know it's only 20 items so it will
+
+00:27.440 --> 00:33.740
+probably exceed my screen boundaries but it will never be more than 20 or 15 items.
+
+00:33.740 --> 00:35.500
+Then you can use a scroll view.
+
+00:35.750 --> 00:42.500
+But if you have very long lists then a scroll you can be very inefficient because what it does is it
+
+00:42.500 --> 00:47.510
+renders all the elements in advance even the ones that are not on the screen.
+
+00:47.510 --> 00:53.220
+That means that even the goals down there which are currently not visible are fully rendered.
+
+00:53.300 --> 00:58.520
+And when you scroll such a very long list with a lot of elements or if you do anything else on the screen
+
+00:58.910 --> 01:00.620
+that can really slow down your app.
+
+01:00.650 --> 01:05.870
+If you have a list with hundreds or thousands of elements and there are all always rendered even if
+
+01:05.870 --> 01:09.500
+you don't see them that can really slow down your app.
+
+01:09.500 --> 01:16.130
+So in order to speed that up there is a component built into React Native that handles such infinite
+
+01:16.130 --> 01:20.460
+lists or lists that are potentially very long in a more efficient way.
+
+01:20.510 --> 01:28.580
+And that's the flat list component which you also import from React Native flat list replaces scroll
+
+01:28.580 --> 01:28.810
+view.
+
+01:28.820 --> 01:35.960
+So to say so here we can simply use flat list which is a self closing element and flat list has two
+
+01:36.050 --> 01:42.770
+important properties the first properties to data property where you point at your input data and this
+
+01:42.770 --> 01:44.570
+should point at an array.
+
+01:44.600 --> 01:49.610
+So here I appoint at course goals because that's the data when output.
+
+01:49.610 --> 01:57.170
+The second important property is the render item that takes a function which is called for every item
+
+01:57.170 --> 02:00.840
+in your data to render a list item.
+
+02:00.850 --> 02:04.060
+This is a function which will get some data about that item.
+
+02:04.060 --> 02:08.410
+Hence I'll name the argument item data and then it has to return a component.
+
+02:08.410 --> 02:11.470
+So here I'll return the same view I had before.
+
+02:11.470 --> 02:16.270
+Just get rid of the manual mapping logic so I'll still return this view.
+
+02:16.270 --> 02:21.670
+Now you don't need to set a key here anymore but I'll come back to how does this Keat in a second.
+
+02:21.670 --> 02:27.060
+So now here we get the item data and therefore we don't have to goal here anymore.
+
+02:27.190 --> 02:35.820
+An item data is a more complex object but in there what you'll have is a item property besides item
+
+02:35.820 --> 02:36.840
+you also have to index.
+
+02:36.840 --> 02:44.180
+So the number two position of that item India array starting at 0 and separators which would allow you
+
+02:44.180 --> 02:50.270
+to basically render a separator as dynamically between list items not something we'll do here but item
+
+02:50.270 --> 02:52.340
+will be your data.
+
+02:52.340 --> 02:57.080
+So one element from your input data and that here is data from one of our goals.
+
+02:57.230 --> 03:02.920
+And if we do that and we save this let's now learn React Native.
+
+03:03.180 --> 03:08.430
+Maybe you're on IV the iPhone to mix things up and we can add things here.
+
+03:08.670 --> 03:14.700
+And if I add a lot and I then close to keyboard I can scroll but you'll see that there is a warning
+
+03:15.630 --> 03:21.120
+we expand as we see virtualize list missing keys for items.
+
+03:21.120 --> 03:24.450
+So that is a number of warning related to keys.
+
+03:24.450 --> 03:31.680
+The reason for that is that flat list automatically adds keys to your items but only if your data your
+
+03:31.680 --> 03:40.770
+input data has a certain shape and or current shape where we simply have an array of strings is not
+
+03:40.900 --> 03:45.130
+supported the shape it would expect.
+
+03:45.150 --> 03:53.910
+Instead you don't have goals which are just strings but instead that your list is a list of objects
+
+03:54.390 --> 04:02.640
+where you must have a key property in that object and here will actually create a random key now With
+
+04:02.640 --> 04:09.560
+math random and then I convert this to a string because it should be a string and of course that's not
+
+04:09.560 --> 04:10.420
+perfectly unique.
+
+04:10.430 --> 04:14.810
+You might have the same random number twice but it's good enough for this demo here.
+
+04:14.810 --> 04:17.750
+And now you can't have any other data in here and that object.
+
+04:17.750 --> 04:19.610
+The key is the only must have properties.
+
+04:19.610 --> 04:21.480
+So here I'll have a value property.
+
+04:21.500 --> 04:24.610
+But you could have named this Val or text or whatever you want.
+
+04:24.640 --> 04:25.720
+I'll go with value.
+
+04:26.360 --> 04:28.190
+And this is now my entered.
+
+04:28.190 --> 04:29.580
+Goal.
+
+04:29.590 --> 04:36.070
+So now our course goals array here is an array of objects where each object has a key property and a
+
+04:36.070 --> 04:37.720
+value property.
+
+04:37.720 --> 04:44.320
+And now if we feed debt course goals array into flat list flat list is happy because it expects a data
+
+04:44.320 --> 04:50.800
+source where you have an array of objects where every object has a key property and then anything you
+
+04:50.800 --> 04:52.920
+want now to output our data.
+
+04:52.930 --> 04:59.020
+It's no longer enough to X item data item because item is no object and not just a string anymore but
+
+04:59.020 --> 05:05.590
+item will have a key and a value property now because that's what we're setting up up there and I can
+
+05:05.590 --> 05:12.490
+simply access the value property to output the text and now if we saved as this rebuilds and therefore
+
+05:12.530 --> 05:21.350
+now if we tried this again with learn with learn React Native close to keyboard you see we no longer
+
+05:21.350 --> 05:27.380
+get the warning we can still scroll this of course we get no error here either because now we have that
+
+05:27.380 --> 05:32.990
+key property here now in case you have data where you don't have a key property and you don't want to
+
+05:32.990 --> 05:41.000
+transform it let's say you had I.D. instead which would cause a warning as you can see if I test is
+
+05:43.570 --> 05:45.160
+we get the warning here.
+
+05:45.760 --> 05:52.290
+In that case you can always add another property to flat list besides data and render item you can add
+
+05:52.290 --> 05:59.440
+the key extractor property which takes a function that tells flat list how to extract your key and by
+
+05:59.440 --> 06:06.190
+default the logic is I'll have a look at the item and look for a key property but now with key extractor
+
+06:06.190 --> 06:12.220
+you can change this key extractor takes a function which takes two arguments the item it's looking at
+
+06:12.220 --> 06:17.800
+and the index of that item and now you need to return a key it by default it would look for item dot
+
+06:17.800 --> 06:21.740
+key so that's the default logic which you don't need to add.
+
+06:21.940 --> 06:29.950
+Now here I changed the key or the unique identifier to be on an I.D. prop and therefore I will change
+
+06:29.950 --> 06:35.920
+this down there in the key extractor to get the I.D. as a key and now with Dad you also get rid of the
+
+06:35.920 --> 06:41.770
+warning because you went form react natives flat list how to get a unique key for every item in your
+
+06:41.770 --> 06:42.160
+list.
+
+06:42.670 --> 06:53.850
+So now here if you again learn React Native you're we at this you'll see this works we can scroll this
+
+06:54.030 --> 07:00.150
+we also get no warning so that's flat list and you should use flat list for very long lists for lists
+
+07:00.360 --> 07:05.370
+where you don't know how long they will be but where they potentially are very long because dad gives
+
+07:05.370 --> 07:10.110
+you a better performance than the scroll view which on the other hand is great if you know you only
+
+07:10.110 --> 07:14.970
+have a limited amount of items which will probably go beyond your screen boundaries but where you won't
+
+07:14.970 --> 07:18.210
+have too many redundant items rendered outside of the screen.

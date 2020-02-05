@@ -1,0 +1,232 @@
+WEBVTT
+
+00:02.240 --> 00:05.200
+So now did we have an idea of what React Native is.
+
+00:05.390 --> 00:11.330
+We can get started with React Native and I'd say let's get started by building our first little react
+
+00:11.330 --> 00:15.530
+native app or by getting our first three act native app up and running.
+
+00:15.620 --> 00:20.750
+So we want to create a new react native app and as it turns out we actually got two options for that
+
+00:21.750 --> 00:27.690
+if you search for React Native you'll find your official page and all that visual page if you click
+
+00:27.690 --> 00:31.520
+on get started you actually have q options here.
+
+00:31.560 --> 00:36.630
+You have the expo seal a quick start and you react native seal a quick start.
+
+00:36.630 --> 00:43.080
+Now what's the difference and which approach should you use and why and what will we use in this course
+
+00:44.400 --> 00:51.180
+so we can use the expo Seelye the expo tool for generating and managing our ReACT native app or we use
+
+00:51.180 --> 00:52.870
+to react native Seelye.
+
+00:53.010 --> 00:58.260
+Now if you first have that choice you would probably go for do you react native Seelye because you want
+
+00:58.260 --> 01:00.810
+to build the react native app after all right.
+
+01:00.870 --> 01:03.020
+Well let's have a look at what Expo is.
+
+01:03.090 --> 01:06.150
+It's a third party service which is completely free to use.
+
+01:06.150 --> 01:11.430
+You don't need to sign up to get started and you don't have to pay to build an app which you can publish
+
+01:11.430 --> 01:12.150
+to the App Store.
+
+01:12.180 --> 01:18.580
+So it's really free to use what Expo gives you is kind of a managed app development workflow.
+
+01:18.630 --> 01:24.840
+It takes a lot of complexity away from you because building react native apps can be very complex especially
+
+01:24.840 --> 01:31.410
+when it comes to integrating certain native the wise features like accessing the camera and expo simply
+
+01:31.410 --> 01:33.070
+gives you a lot of convenience there.
+
+01:33.090 --> 01:37.920
+It makes development of risk native apps a breeze and so much easier.
+
+01:37.920 --> 01:44.820
+The downside is that you're limited to the expo ecosystem because expo in the end is like a rapper you
+
+01:44.820 --> 01:52.110
+could say around your app a thin extra layer between your app and the native raw react native experience
+
+01:52.680 --> 01:57.810
+and you still get a native app and you end and you still use React Native under the hood that's all
+
+01:57.810 --> 02:04.530
+happening but Expo abstracts away some of the complexity which also means it of course removes some
+
+02:04.530 --> 02:11.450
+of the fine grained control you would normally have if you build a raw react native app because if we
+
+02:11.450 --> 02:17.390
+have a look at that our workflow the risk native CLIA that's in yet managed by any react native Timor
+
+02:17.420 --> 02:19.580
+parts of the react Native community.
+
+02:19.640 --> 02:25.670
+And there you have a bare bone development setup which means you get a native app you need to install
+
+02:25.700 --> 02:32.420
+Android Studio you need to install X code to built that app and you need to configure and manage a lot
+
+02:32.420 --> 02:33.190
+on your own.
+
+02:33.290 --> 02:38.990
+As soon as you start adding certain native the wise features like let's say as soon as you want to use
+
+02:38.990 --> 02:44.540
+the device camera you will have to bring in third party packages where the set up process can be quite
+
+02:44.540 --> 02:47.600
+complex and therefore this can be more cumbersome.
+
+02:47.600 --> 02:53.570
+You have pretty much no convenience or utility features to tap into but of course the advantage would
+
+02:53.570 --> 03:00.050
+be that you have full control you can control every tiny piece you can easily write your own native
+
+03:00.080 --> 03:03.210
+Android in Iowa's code and connect this to your javascript code.
+
+03:03.230 --> 03:05.390
+That's not really possible with expo.
+
+03:05.600 --> 03:10.340
+So if you are a super advanced developer and you already know you'll be building a very complex app
+
+03:10.370 --> 03:17.270
+where you need to do a lot of manual work arounds a lot of fine grained configuration then you definitely
+
+03:17.360 --> 03:20.150
+want the full barebones experience on the right.
+
+03:20.240 --> 03:25.820
+If you were getting started or if you're building a normal app then the Expos you lie will very likely
+
+03:25.820 --> 03:27.020
+give you everything you need.
+
+03:27.050 --> 03:32.060
+It gives you wrappers for the most common native device features you need like using the camera like
+
+03:32.060 --> 03:32.870
+using maps.
+
+03:32.870 --> 03:35.330
+That's all made super simple.
+
+03:35.330 --> 03:42.740
+And if you ever get to a point where you find out oh I need more control then you can always also switch
+
+03:42.800 --> 03:45.620
+from the actual workflow to the native workflow.
+
+03:45.620 --> 03:52.160
+You can eject and then you have the full flexibility therefore nothing speaks against getting started
+
+03:52.160 --> 03:56.840
+with Expo you can always switch to the average experience if you need to and we'll use expo in this
+
+03:56.840 --> 04:02.030
+course because it's simpler because it gives you everything you need for most apps because it's so much
+
+04:02.030 --> 04:05.370
+more convenient to work with and because you can always switch.
+
+04:05.510 --> 04:11.750
+Now later down in the course I will also give you an introduction to the more bare bone workflow and
+
+04:11.840 --> 04:17.850
+what that would mean for you but for the majority of the course will work with Expo behind the scenes
+
+04:17.850 --> 04:24.390
+does Expo to work such that you have your native device or your simulator so your iPhone or your Android
+
+04:24.390 --> 04:27.740
+phone and you have your app your react native app.
+
+04:27.750 --> 04:28.700
+We will be writing.
+
+04:28.710 --> 04:35.310
+So your javascript code where you write your react native app now on your native device or on the simulator
+
+04:35.550 --> 04:42.030
+you will install extra app from the App Store the expo client app and we'll do that together in the
+
+04:42.030 --> 04:43.830
+next lecture.
+
+04:43.830 --> 04:50.340
+Now your app can then be loaded into the client app which is this extra wrapper to see it there to run
+
+04:50.340 --> 04:51.500
+it there to test it there.
+
+04:51.510 --> 04:54.180
+And that's of course great for development.
+
+04:54.180 --> 05:02.070
+You can also publish your app as Expo app so that other people who have the expo client installed can
+
+05:02.130 --> 05:03.500
+easily run your app.
+
+05:03.510 --> 05:07.550
+They don't even need to install it from the Google Play store or the Apple App Store.
+
+05:07.740 --> 05:12.870
+But of course typically you want to build an app which you can publish to these app stores and no worries
+
+05:12.990 --> 05:14.880
+that's possible with Expo 2.
+
+05:15.120 --> 05:20.190
+That extra client app which you have which wraps your app is great for development because it speeds
+
+05:20.190 --> 05:21.800
+up the entire development workflow.
+
+05:22.080 --> 05:28.350
+But if you want a standalone app so app that is not relying on that Expo client which most of your potential
+
+05:28.350 --> 05:36.260
+users probably won't have installed well then Expo also allows you to build and publish standalone apps.
+
+05:36.330 --> 05:43.350
+So apps that do not rely on the Expo client being installed so therefore with Expo you can build normally
+
+05:43.350 --> 05:49.950
+apps which are distributed to the normal app stores standalone where your users don't need any special
+
+05:49.950 --> 05:55.390
+app installed but you have that extra convenience during development which is great.
+
+05:55.440 --> 06:02.040
+And as I mentioned before if you would need to you can always switch or eject as it's called to the
+
+06:02.040 --> 06:04.020
+non Expo development flow as well.

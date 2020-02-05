@@ -1,0 +1,151 @@
+WEBVTT
+
+00:02.560 --> 00:08.680
+For centering the content in the middle we can use a technique I already covered earlier styling and
+
+00:08.710 --> 00:11.500
+they're specifically flex box.
+
+00:11.500 --> 00:17.470
+So on our model we have that view where in our model we have that view that's our route view.
+
+00:17.500 --> 00:19.400
+It's the only element in the model.
+
+00:19.420 --> 00:25.090
+And then this view of course has other child elements but that's the only direct child of our model.
+
+00:25.180 --> 00:29.310
+There we have the input container style which we apply and there we currently set a flex directional
+
+00:29.350 --> 00:30.490
+row.
+
+00:30.490 --> 00:35.170
+Now of course we could leave that but I'd say intermodal if we presented on a full screen like this
+
+00:35.620 --> 00:41.230
+I'm actually fine with the vertical orientation so that we have the input and below that the button.
+
+00:41.610 --> 00:48.250
+So I'll change this back to column or since this is the default simply delete this flex direction.
+
+00:48.250 --> 00:52.580
+And now I want you centered as horizontally and vertically though.
+
+00:52.810 --> 00:59.480
+And for Dad we can set justified content to center here and a line items to center.
+
+00:59.680 --> 01:01.690
+But data alone won't do the trick.
+
+01:01.780 --> 01:05.710
+You can see if you open a modal it's still all the way at the top.
+
+01:05.800 --> 01:07.920
+And the reason for data is that our input container.
+
+01:07.930 --> 01:14.080
+So that view we're assigning this style to by default doesn't take the full away level space it can
+
+01:14.080 --> 01:16.720
+get in these surrounding you.
+
+01:16.720 --> 01:22.450
+So in this case in the model the modal theoretically takes the full height and width of the screen but
+
+01:22.480 --> 01:25.480
+the view simply doesn't take that full available space by default.
+
+01:25.480 --> 01:26.560
+That's just how it works.
+
+01:26.560 --> 01:28.630
+That's the default setting.
+
+01:28.630 --> 01:31.900
+It only takes the space its children require.
+
+01:31.900 --> 01:33.590
+So the text input and the button.
+
+01:33.730 --> 01:38.830
+So the view essentially has the height of text input and button combined.
+
+01:38.980 --> 01:47.420
+And then also the width of the broadest child in this case so if the text input here and by the way
+
+01:47.420 --> 01:51.940
+your Android just didn't update correctly that's why you see this strange output here.
+
+01:51.940 --> 02:02.010
+You can ignore that for now so to make the view take you fool away lable space here you can simply go
+
+02:02.010 --> 02:04.320
+to the style you apply to to view.
+
+02:04.320 --> 02:11.670
+In this case our input container style here and set flex to one year flex is a property which is well
+
+02:12.120 --> 02:18.270
+used in conjunction with Flex box and as you learned earlier in this module in this extra flex box lecture
+
+02:18.480 --> 02:25.140
+flex allows you to control how much space your different items inside of a flex box take and if it's
+
+02:25.140 --> 02:26.430
+the only item.
+
+02:26.430 --> 02:29.970
+This simply ensures that this container will take all the available space.
+
+02:29.970 --> 02:34.980
+You could also set this to flex to the exact value doesn't matter here if it's the only child but you
+
+02:34.980 --> 02:39.570
+need to set flex to make sure that this takes the full available space.
+
+02:39.600 --> 02:44.160
+If you don't do it it will just take as much space as its child elements do.
+
+02:44.280 --> 02:48.850
+If you set flex it will take as much space as its parent element gives it.
+
+02:48.900 --> 02:50.720
+So ask the parent element of that view.
+
+02:50.730 --> 02:52.990
+The modal in this case gives the view.
+
+02:53.340 --> 03:00.650
+So with Flex 1 added here if you now save this on ours you see now it is this nicely centered.
+
+03:00.670 --> 03:05.860
+And to also see this on Android what you can do is you can open the tasks which are closed as app here
+
+03:06.070 --> 03:08.210
+and press a year to restart.
+
+03:08.320 --> 03:11.890
+Does app on Android doesn't like the model as it seems.
+
+03:11.890 --> 03:19.970
+And now here you also see that now tiny adjustment is a little bit of spacing between the button and
+
+03:20.000 --> 03:22.140
+the input which I want to have for Dad.
+
+03:22.250 --> 03:30.530
+I'll go to the input and add a margin bottom of 10 here but with that I'm quite happy about that again.
+
+03:30.530 --> 03:35.380
+Unfortunately Android is really having some issues here with my model so let's close it and see it
+
+03:39.120 --> 03:40.430
+whenever that looks good.
+
+03:40.440 --> 03:42.000
+Yeah this is good.
+
+03:42.000 --> 03:47.430
+Now I want to make sure that when we click add here we do actually now close the modal.

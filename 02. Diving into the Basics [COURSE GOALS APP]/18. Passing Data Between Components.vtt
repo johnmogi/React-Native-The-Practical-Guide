@@ -1,0 +1,247 @@
+WEBVTT
+
+00:02.250 --> 00:03.310
+Very successful.
+
+00:03.350 --> 00:04.710
+Let's do it together.
+
+00:04.710 --> 00:11.390
+Let's create a new component here in goal input by importing react from react.
+
+00:11.500 --> 00:14.040
+And then here are all named as goal input.
+
+00:14.040 --> 00:20.610
+And I just like this constant syntax here you could use function goal input to create your functional
+
+00:20.610 --> 00:28.120
+component that would be fine too then here all export the default goal input and now here we need to
+
+00:28.120 --> 00:31.030
+return something and that something is in the end.
+
+00:31.030 --> 00:33.700
+This view with the text input and the button.
+
+00:34.090 --> 00:42.650
+So let me grab that entire view returned here between brackets so that this is a written across multiple
+
+00:42.650 --> 00:50.110
+lines and nicely formatted and of course we now need to again import stuff from React Native because
+
+00:50.110 --> 00:55.840
+we're using a couple of components from reactive we are using the view component we are using the text
+
+00:55.840 --> 01:00.460
+input component we are using the button component and I also want to use the stylus used component to
+
+01:00.460 --> 01:02.270
+set up my style sheet object.
+
+01:02.470 --> 01:10.510
+So for Dad let's add styles here with style sheet dot create pass and object to get started create method
+
+01:11.140 --> 01:16.840
+and of course take the styles from the app J as fall that would be the input container anti input so
+
+01:16.840 --> 01:21.540
+cut both so that only the screen remains here and back and goal input.
+
+01:21.730 --> 01:28.510
+I'll add both here to my style sheet so that this should work again what won't work right now is that
+
+01:28.510 --> 01:37.840
+when we tap the button that we add this because here we now actually well we are not having the state
+
+01:37.870 --> 01:42.790
+and goal input and when I tap the button I actually want to do something an app chars.
+
+01:42.910 --> 01:49.480
+So first of all we need to split the state the entered goal should not be managed an app J.S. but it
+
+01:49.480 --> 01:54.040
+should be managed in goal input because that's where we have to text input in the end which is where
+
+01:54.040 --> 02:01.360
+the user does enter the goal so let's add to use state import here in goal input and then add our state
+
+02:01.360 --> 02:08.950
+management logic here with entered goal and set entered goal which we get from you state which we initialized
+
+02:08.950 --> 02:14.650
+with an empty string let's add it here to goal input and from the app last fall I'll also take the goal
+
+02:14.650 --> 02:18.780
+Input handler cut it from there and add it to goal input here.
+
+02:18.820 --> 02:24.910
+So this function in a function which we connect to on change text and now with that fetching the user
+
+02:24.910 --> 02:26.490
+input should work again.
+
+02:26.740 --> 02:32.660
+Now for the button when we press this I want to trigger a function app Chase I want to trigger the app
+
+02:32.680 --> 02:38.360
+goal handler and that function should stay here because I need to manage to list here because the app
+
+02:38.560 --> 02:44.350
+as fall is the only component which will have access to the goal input enter the flattest where we output
+
+02:44.350 --> 02:52.950
+the goals and speaking off that we can already import goal inputs there in app J.S. from components
+
+02:52.950 --> 03:02.010
+goal input and add goal input as a component here above the flat list but again now we need to be able
+
+03:02.010 --> 03:06.790
+to find out when a button is pressed in this component and then react.
+
+03:06.790 --> 03:14.740
+You do that by passing the function which the child component should execute eventually as a prop to
+
+03:14.740 --> 03:16.150
+the child component.
+
+03:16.150 --> 03:20.850
+So here we could add on add goal dad name is totally up to you.
+
+03:20.860 --> 03:22.230
+It's a prop you define.
+
+03:22.840 --> 03:25.990
+And this points at ad goal handler.
+
+03:26.030 --> 03:32.980
+This alone won't do anything but on ad goal will now be received as a prop inside of goal input and
+
+03:32.980 --> 03:37.520
+it will point at a function which means we can execute it as a function there.
+
+03:37.540 --> 03:41.550
+So in goal input they're on press.
+
+03:41.950 --> 03:45.990
+I can simply point at prop start on ad goal right.
+
+03:46.000 --> 03:51.370
+Because all that goal is that prop name I'm setting up here in the app just fall Data's received instead
+
+03:51.370 --> 03:57.430
+of goal input on the props object we're getting in every functional component and on ad goal points
+
+03:57.430 --> 04:00.200
+at a function so we can pass it to oppress.
+
+04:00.330 --> 04:05.630
+So did on press or react native therefore knows that it should call this function when we press the
+
+04:05.630 --> 04:06.470
+button.
+
+04:06.550 --> 04:09.430
+That's how you do this and react native.
+
+04:09.430 --> 04:17.150
+Still we'd have an issue because in ad code handler I'm referring to the entered goal and dead previously
+
+04:17.170 --> 04:19.670
+was managed in here but isn't anymore.
+
+04:19.750 --> 04:25.540
+We managed to enter goal which is to text input entered by the user in goal input now and not an app
+
+04:25.550 --> 04:26.340
+Chase.
+
+04:26.950 --> 04:32.620
+So ad Gil handler should actually now receive an argument which is the goal title or whatever you want
+
+04:32.620 --> 04:33.160
+to name it.
+
+04:33.190 --> 04:37.530
+This name is up to you and that's what we stored as a value here.
+
+04:37.540 --> 04:47.700
+Now we have to make sure that we forward this argument when on that goal gets executed in the goal input
+
+04:48.870 --> 04:55.350
+so that happens here on a press and dare we just point at this to also set up an argument which should
+
+04:55.350 --> 04:58.410
+eventually be passed along we get two options.
+
+04:58.410 --> 05:02.620
+Option 1 is that we set up an anonymous arrow function here.
+
+05:02.640 --> 05:08.250
+Now does arrow function will be executed eventually and therefore now we can add parentheses here because
+
+05:08.250 --> 05:09.930
+this will now not get executed.
+
+05:09.960 --> 05:16.050
+When this gets rendered first instead this arrow function will be registered as ad to be executed function
+
+05:16.050 --> 05:17.730
+for on press.
+
+05:17.730 --> 05:25.230
+And now here in on ad goal we can forward the entered goal for example Deadwood work or alternatively
+
+05:25.290 --> 05:30.690
+we don't use this anonymous arrow function approach and hence we can't add parentheses here but then
+
+05:30.690 --> 05:38.790
+we can use another javascript feature on functions we can call bind to pre configure some arguments
+
+05:39.120 --> 05:43.560
+which should eventually be passed along when this function gets executed.
+
+05:43.560 --> 05:47.190
+The first argument is always to want the this keyword should refer.
+
+05:47.190 --> 05:52.680
+This doesn't matter for us here so we can just write this but the second argument here were all our
+
+05:52.680 --> 05:58.440
+arguments they're often actually will be the arguments received by this function when it is called and
+
+05:58.440 --> 06:00.270
+it is called up on a button press.
+
+06:00.270 --> 06:06.210
+So these are now the arguments which are forwarded to the on ad goal function which in the end is just
+
+06:06.210 --> 06:10.600
+our ad goal handler function and there we need to gold title.
+
+06:10.620 --> 06:12.080
+So we need to forward this.
+
+06:12.120 --> 06:17.740
+So therefore here I can now set up entered goal as a to be forwarded argument.
+
+06:17.940 --> 06:20.760
+That's normal vanilla javascript syntax here.
+
+06:21.850 --> 06:24.740
+And now with this it's getting rendered.
+
+06:24.740 --> 06:25.920
+That's looking good.
+
+06:26.090 --> 06:31.340
+And if I enter your learned react native you're still getting output here so that all works.
+
+06:31.340 --> 06:36.770
+But now we split the Zap into multiple components which is what you typically do in react to apps and
+
+06:36.770 --> 06:42.740
+react native apps just like you do it and react for web apps because it keeps your components leaner
+
+06:42.800 --> 06:46.550
+more focused and your code more organized and easier to understand.

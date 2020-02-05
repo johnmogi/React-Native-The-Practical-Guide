@@ -1,0 +1,67 @@
+WEBVTT
+
+00:02.280 --> 00:08.160
+So what are the requirements for you to complete this course and to build native mobile apps with React
+
+00:08.160 --> 00:09.260
+Native.
+
+00:09.360 --> 00:11.280
+You need javascript and react knowledge.
+
+00:11.280 --> 00:12.510
+You don't need to be an expert.
+
+00:12.540 --> 00:15.000
+But basic knowledge is required.
+
+00:15.060 --> 00:20.910
+You don't need to know Android Java swift or objective c or Copland you don't need to know anything
+
+00:20.910 --> 00:24.990
+of that will not write code in those languages.
+
+00:24.990 --> 00:30.170
+Now regarding the hardware and software you have it depends on what you want to built.
+
+00:30.330 --> 00:36.390
+If you want to build an ISIS app which you distribute through the app store then on windows that's not
+
+00:36.390 --> 00:42.930
+possible locally but with the help of Expo you can actually build such an app there remotely which means
+
+00:43.110 --> 00:48.330
+it's getting built on exposed servers and you can always distribute it to the App Store with the help
+
+00:48.330 --> 00:54.240
+of Expo but it's a bit more difficult and if you're not using Expo you absolutely can't build IOW apps
+
+00:54.240 --> 00:54.990
+on Windows.
+
+00:54.990 --> 00:57.870
+That's simply a restriction imposed by Apple.
+
+00:57.870 --> 00:59.240
+Same is true for Linux by the way.
+
+00:59.240 --> 01:01.530
+You can't build Iwas apps there either.
+
+01:01.800 --> 01:08.370
+Android apps can be built on Windows locally with or without Expo and it's the same for Mac OS and all
+
+01:08.370 --> 01:08.960
+platforms.
+
+01:08.970 --> 01:14.880
+You can build Iaw and Android apps on Mac OS with or without export without problems.
+
+01:14.880 --> 01:15.990
+So it doesn't look too bad.
+
+01:16.200 --> 01:19.540
+I'd say no real deal breakers in here.
+
+01:19.770 --> 01:24.330
+With that let's dive deeper into React Native and learn all about it.

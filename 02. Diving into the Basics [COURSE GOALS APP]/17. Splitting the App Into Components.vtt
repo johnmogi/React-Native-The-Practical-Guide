@@ -1,0 +1,151 @@
+WEBVTT
+
+00:02.380 --> 00:08.210
+So we already had a look at a solid set of basics you need for building rack native apps for Brooking
+
+00:08.210 --> 00:10.050
+with these core building blocks.
+
+00:10.190 --> 00:13.460
+Either though of course a lot of the things are still unclear.
+
+00:13.460 --> 00:17.660
+We have Drew we had a closer look at styling Adelaide outing and so on.
+
+00:17.780 --> 00:22.820
+But one thing which we definitely should do now is also explore how you can build your own components
+
+00:23.030 --> 00:25.780
+because thus far we always worked in the app has fallen.
+
+00:26.000 --> 00:28.820
+You will certainly not build bigger apps in one file.
+
+00:28.820 --> 00:31.360
+Only that file would get super big after all.
+
+00:31.430 --> 00:37.190
+And if you have a custom component which you plan on repeating right now we would have to copy and paste
+
+00:37.190 --> 00:38.420
+our code.
+
+00:38.660 --> 00:44.060
+So let's create new components and therefore here in the project I'll add a new folder named components.
+
+00:44.060 --> 00:49.020
+The name is up to you but since I plan on store some components in there that may make sense to me.
+
+00:49.710 --> 00:55.250
+And in there I want to create a component for the list item and all to one for our input area.
+
+00:55.340 --> 01:00.320
+So let's create two new files in there and I will have a naming convention for the files where I start
+
+01:00.320 --> 01:09.440
+with capital case CHARACTERS AND I'LL HAVE MY GOAL item Doc J.S. it's a javascript file of course.
+
+01:09.440 --> 01:16.100
+And my goal input dot J.S. file now both will hold normal react component so let's start with the goal
+
+01:16.100 --> 01:21.830
+item and therefore import react from react just as you need to do it in a react for web project.
+
+01:21.830 --> 01:29.570
+Then here all create my functional component goal item which gets props and which then has to return
+
+01:29.570 --> 01:36.000
+some J as X here and I'll export this as a default just like this.
+
+01:36.090 --> 01:42.030
+Now the J has X I want to render Dare has to use react native components or other custom components
+
+01:42.060 --> 01:44.570
+which then in turn use React Native components.
+
+01:44.730 --> 01:51.180
+And here all go with this content I had in here so I'll cut it from the app j ust file and return it
+
+01:51.180 --> 01:51.790
+here.
+
+01:52.450 --> 01:57.100
+Now in order to use this here we have to import the U.N. text.
+
+01:57.100 --> 01:59.970
+So these two components from React Native.
+
+01:59.980 --> 02:05.760
+So let's import view and text from react dash native here.
+
+02:05.790 --> 02:10.410
+In addition I'm setting up some styles and I want to use the style sheets so I'll import this here as
+
+02:10.410 --> 02:20.110
+well and then set up my styles constant which you could name differently of course with Styles she'd
+
+02:20.380 --> 02:26.990
+create and I'll go back to the app J fall and grab my list item style here.
+
+02:26.990 --> 02:32.960
+Cut it from data and go to the goal item and added here to this object I passed two styles sheet.
+
+02:33.020 --> 02:39.140
+Create Now this should work but of course what I'm outputting here will no longer be on item data.
+
+02:39.500 --> 02:46.550
+Instead let's expect that we simply get this as props so even props children so that it can be passed
+
+02:46.550 --> 02:53.210
+between the opening and closing tag of our custom component or maybe props title whatever you want a
+
+02:53.210 --> 02:59.770
+proper name of your choice then now we can use our custom component to goal item by going back to the
+
+02:59.770 --> 03:06.580
+app just fall in here I'll add import to goal item with a capital G so that react recognizes this as
+
+03:06.580 --> 03:15.370
+a custom component from dot slash components goal item you can omit deep thought J.S. and now we can
+
+03:15.370 --> 03:24.550
+use goal item down here in render item as a custom component in this case a self closing component because
+
+03:24.610 --> 03:30.220
+since I'm using props title and not props children I don't expect anything between the opening and closing
+
+03:30.220 --> 03:37.660
+tax of my custom component I do expect the title prop though so let's set this here with title and then
+
+03:37.660 --> 03:43.360
+here we can point at item data then get access at the item which is object where we have a value key
+
+03:44.480 --> 03:53.210
+and with that we should still see the same as before if we enter some goals here learn all about R N
+
+03:54.870 --> 04:01.230
+Yeah that's looking good now with our custom component now here's a good practice for you to also put
+
+04:01.260 --> 04:07.320
+de text input and button or doesn't tire of you here actually into our goal input component and of course
+
+04:07.320 --> 04:12.810
+for Dad you'll also need to wire up communication between the app chairs fall into goal input component
+
+04:13.170 --> 04:18.930
+to be informed when users press this button in the goal input component and then add data here in the
+
+04:18.930 --> 04:19.730
+app as follows.
+
+04:20.280 --> 04:25.260
+It's how you would do it in a react for web project Q So if you have experience with dad it should be
+
+04:25.260 --> 04:30.860
+no problem otherwise we'll do it together in the next lecture but if you know how to do it definitely
+
+04:30.860 --> 04:32.010
+try it on your own first.
+
+04:32.010 --> 04:32.250
+Now.

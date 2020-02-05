@@ -1,0 +1,271 @@
+WEBVTT
+
+00:02.380 --> 00:06.220
+So what's in this chorus now what will you learn in this course.
+
+00:06.220 --> 00:12.520
+We're almost done getting started and therefore with this basic module we're well we set everything
+
+00:12.520 --> 00:16.900
+up and you get a rough idea of what we act native is and how it works.
+
+00:16.900 --> 00:23.700
+After this we'll of course have a very important module where we dive into the React Native basics in
+
+00:23.710 --> 00:29.500
+this module you'll learn all the core fundamentals you need to know about React Native how these apps
+
+00:29.500 --> 00:35.260
+work how you work with React Native components how you build your own components how you make that all
+
+00:35.260 --> 00:39.930
+work as a native app what you can test on your emulators or real devices.
+
+00:40.090 --> 00:43.180
+All of that is in this super important module.
+
+00:43.480 --> 00:49.390
+Now after all these core basics which are really important we'll also have a look at debugging.
+
+00:49.390 --> 00:51.100
+How can you track down errors.
+
+00:51.100 --> 00:53.530
+Which tools are there to help you with debugging.
+
+00:53.530 --> 00:57.070
+These are all questions we'll tackle in the debugging module.
+
+00:57.260 --> 01:03.550
+Now thereafter we will dive back into the basics but into these advanced basics if you want to call
+
+01:03.550 --> 01:08.500
+it like this we'll have a look at how you build real apps how you style apps which different options
+
+01:08.500 --> 01:13.840
+you have there how you work with all these components that are baked into React Native and with your
+
+01:13.840 --> 01:18.300
+own components that you can build based on those how you layout your apps.
+
+01:18.310 --> 01:25.300
+So here will really bring together many concepts and compose that all in a more realistic app which
+
+01:25.300 --> 01:31.660
+does more useful things and we're will need to tackle certain problems you have to tackle in Real Apps.
+
+01:31.720 --> 01:37.600
+So that's never a core module for you to learn how React Native works and how React Native apps are
+
+01:37.600 --> 01:39.050
+built.
+
+01:39.070 --> 01:43.900
+Now once you completed this module we'll have a solid understanding of all these fundamentals but there
+
+01:43.900 --> 01:46.530
+will be one problem up to this point.
+
+01:46.630 --> 01:49.990
+The apps we build thus far are not really flexible.
+
+01:49.990 --> 01:56.050
+They're not really adapting to different screen sizes and there might be differences between IAW or
+
+01:56.050 --> 01:56.880
+Android.
+
+01:56.950 --> 02:03.910
+Regarding how apps should look like or how certain things should behave which we don't really cater
+
+02:03.910 --> 02:10.300
+for deaf we will then have a module where we dive into how to build responsive and adaptive apps.
+
+02:10.300 --> 02:15.970
+So how you make sure that your apps look great and work the way it is should work on different devices
+
+02:15.970 --> 02:19.690
+different device sizes and also on different platforms.
+
+02:19.690 --> 02:27.530
+So on Android I was and how you can use one project and one code base to still fine tune your app to
+
+02:27.550 --> 02:30.970
+different platforms in certain areas.
+
+02:30.970 --> 02:36.970
+Now after all of that you'll have very solid fundamentals but will also only have worked on apps that
+
+02:36.970 --> 02:39.260
+have mostly one screen.
+
+02:39.580 --> 02:45.640
+Now in most apps you have taps you have a side drawer you can navigate forth and back between different
+
+02:45.640 --> 02:52.180
+pages and you have nice transitions and animations for these navigation actions and therefore will have
+
+02:52.180 --> 02:59.080
+a whole module dedicated to navigation and how you can build navigation into your app how you can provide
+
+02:59.290 --> 03:05.500
+beautiful transitions how you can add taps different kinds of taps to your application and all these
+
+03:05.500 --> 03:10.980
+core techniques and things that you need in most applications are going to build.
+
+03:11.050 --> 03:17.920
+Now by then we'll also have a feeling for a problem that managing state managing data in our application
+
+03:17.920 --> 03:23.040
+can be tricky as our application grows and therefore will then have a whole module where we dive in
+
+03:23.040 --> 03:30.280
+to how to manage state with the help of redux and how you can pass data around in your application.
+
+03:30.280 --> 03:35.470
+After all that it's really time to practice and therefore we'll have a whole module where we build a
+
+03:35.470 --> 03:41.260
+brand new application from scratch where we incorporate all the things we learned thus far.
+
+03:41.620 --> 03:47.710
+That's a module where you can practice on your own or you just follow along with me or you'll practice
+
+03:47.710 --> 03:50.000
+first and then compare your solution to mine.
+
+03:50.050 --> 03:56.350
+So it's a big practice module where all these core things we learn about come together and can be seen
+
+03:56.350 --> 03:57.590
+in practice.
+
+03:57.660 --> 04:02.830
+Now after that we'll take that same app and enhance it for example by handling user input in a better
+
+04:02.830 --> 04:10.720
+way by validating it by showing error messages by making sure that our app has certain data criteria
+
+04:10.810 --> 04:14.670
+that needs to be fulfilled before we can continue ends on debts.
+
+04:14.740 --> 04:20.840
+And now our core module because of course in many applications you'll need to gather user input.
+
+04:20.840 --> 04:27.790
+Now thereafter we'll all leave our application in a certain sense because we'll learn how to send data
+
+04:27.790 --> 04:31.760
+to a server and store it on that server in a database.
+
+04:31.780 --> 04:36.130
+Of course it's a a crucial task because not all data lives on your device.
+
+04:36.130 --> 04:41.770
+Instead there is some data that needs to be shared with our users for example or that should be backed
+
+04:41.770 --> 04:48.400
+up or that should be a way lable even if users reinstall your app and for all of that that data needs
+
+04:48.400 --> 04:50.000
+to be stored away from your app.
+
+04:50.050 --> 04:54.340
+It needs to be stored on a server it needs to be stored in a database and that's exactly what we'll
+
+04:54.340 --> 04:58.200
+have a look at in this HDTV requests module now.
+
+04:58.230 --> 05:05.790
+Speaking of services on many applications all need user authentication you need to be able to sign users
+
+05:05.790 --> 05:08.900
+up and locked him in locked him out manage their session.
+
+05:09.000 --> 05:14.250
+And that's exactly what we'll have a detailed look at and user authentication section and NAV records
+
+05:14.250 --> 05:19.800
+section with a number a core feature that you need in many applications and we'll have a detailed look
+
+05:19.800 --> 05:21.950
+at all of that in this module.
+
+05:22.170 --> 05:27.320
+After this module you will have a lot of core building blocks you need for apps you typically build.
+
+05:27.510 --> 05:32.730
+But one thing will be missing and that's how you tap into native device features how you can use the
+
+05:32.730 --> 05:38.730
+device camera how you can get the user location or how you can use Google Maps and that's what we'll
+
+05:38.730 --> 05:44.280
+have a look at in this native device features module you will learn how you can get the user location
+
+05:44.310 --> 05:51.360
+how you can use it how you can store it on a on the vice sequel lts database all that fun stuff is in
+
+05:51.360 --> 06:00.140
+this module and therefore this is another crucial module of course now there after all dive in two different
+
+06:00.140 --> 06:06.050
+ways of building your risk native app because for the majority of discourse we actually use Expo the
+
+06:06.050 --> 06:11.750
+tool we got started with and is first course module because it makes building React Native apps such
+
+06:11.750 --> 06:17.070
+a breeze at such fun it's easier and therefore definitely my recommended approach.
+
+06:17.240 --> 06:19.910
+But you might not always want to use it.
+
+06:19.910 --> 06:26.840
+And in this module I explained when you might not want to use it and how you then build apps without
+
+06:26.840 --> 06:33.920
+it though I can already have a little spoiler at this point for most applications the vast majority
+
+06:34.100 --> 06:39.740
+Expo is an amazing tool and all the important really important all what you'll learn in this course
+
+06:39.950 --> 06:46.160
+can be applied to Expo and non Expo apps and I make that clear in this different workflows module as
+
+06:46.160 --> 06:52.440
+well and a show how non Expo works work and how you write code for them and surprise.
+
+06:52.520 --> 06:56.130
+It's exactly the same as you learn in the rest of the course basically.
+
+06:56.540 --> 07:02.060
+Now they're after we of course aren't really there to just build app and that throw it away.
+
+07:02.090 --> 07:04.280
+Instead you typically want to publish it.
+
+07:04.400 --> 07:09.350
+So we'll have a whole module focusing on how you publish apps and we'll not just have a look at how
+
+07:09.350 --> 07:12.100
+you build it and how you then get it into the App Store.
+
+07:12.110 --> 07:18.320
+We also will have a look at over the air updates for example how you can automatically update the installed
+
+07:18.320 --> 07:24.140
+apps without forcing your users to read download an updated version which is really amazing so that's
+
+07:24.140 --> 07:27.160
+all covered in this module.
+
+07:27.180 --> 07:31.860
+A lot of content all these modules of course are extremely detailed.
+
+07:32.040 --> 07:37.230
+You'll get tons of knowledge about React Native and by the end of the course you'll be able to build
+
+07:37.230 --> 07:39.120
+amazing react native applications.

@@ -1,0 +1,250 @@
+WEBVTT
+
+00:02.340 --> 00:08.370
+Now did we get these basics out of the way and before we dive way deeper into React Native and also
+
+00:08.370 --> 00:13.920
+how we can style our apps and a little bit of a more beautiful way because obviously our styling here
+
+00:13.950 --> 00:18.260
+definitely still has some upside potential to put it like this.
+
+00:18.420 --> 00:23.790
+Before we dive all of that let me show you another exciting component that's built into React Native
+
+00:23.790 --> 00:29.970
+and that also shows how easily you can add cool features to react native apps.
+
+00:30.150 --> 00:32.010
+And that's the modal component.
+
+00:32.010 --> 00:38.310
+You find it of course in your official box and that components and API is guide here and there you will
+
+00:38.310 --> 00:42.650
+find a modal down there.
+
+00:43.420 --> 00:50.470
+Now it's under others and here this modal is a nice component that allows you to well add such a nice
+
+00:50.740 --> 00:55.780
+overlay full screen overlay with a little effort.
+
+00:55.900 --> 01:00.490
+Now let's add a modal for actually hosting our goal input.
+
+01:00.490 --> 01:04.020
+Right now the goal input is here at the top and that's all right.
+
+01:04.540 --> 01:10.480
+But I actually want to move that into a modal so that we have it on a full screen overlay in the end.
+
+01:10.660 --> 01:12.790
+And we only have a button here at the top.
+
+01:12.790 --> 01:16.480
+So in place of coal input which opens that model.
+
+01:16.630 --> 01:19.000
+So let's go to goal input and there.
+
+01:19.000 --> 01:19.780
+I want you.
+
+01:19.810 --> 01:25.000
+Well wrapped as into a Modal Soul import modal from React Native because it's a component shipping With
+
+01:25.000 --> 01:27.600
+React Native and there.
+
+01:27.640 --> 01:34.020
+I want to use that modal around my view here.
+
+01:34.040 --> 01:38.080
+So just like this for now and now let's save that.
+
+01:38.180 --> 01:41.150
+Let's see if that already changes something a bit.
+
+01:41.180 --> 01:42.740
+Yeah or styling is off.
+
+01:42.740 --> 01:46.420
+We're losing that padding which we set up originally.
+
+01:46.420 --> 01:46.700
+Right.
+
+01:46.710 --> 01:52.370
+And Ab J.S. we have that general padding on our screen view which is dead out of you.
+
+01:52.370 --> 01:58.430
+Well it's certainly not getting applied on the two platforms anymore on the two devices because our
+
+01:58.430 --> 02:03.800
+content is way outside of this screen and sort of modal is already doing something.
+
+02:03.800 --> 02:08.480
+Of course we're not really seeing that much now for modal.
+
+02:09.020 --> 02:14.030
+So for this modal component you can set a wizard will keep that defines whoever it is as well currently
+
+02:14.030 --> 02:19.730
+visible or not and that takes a Boolean if we set this to false for example and thereafter we have a
+
+02:19.730 --> 02:21.020
+look at our applications.
+
+02:21.080 --> 02:25.880
+We of course seen empty screen by the way in case Android shouldn't update for you after settings to
+
+02:25.900 --> 02:32.660
+false simply closed the app here with the help of the app drawer and thereafter in your process down
+
+02:32.660 --> 02:37.080
+there the people start process press a again to restart this on Android.
+
+02:37.100 --> 02:39.650
+So now we have an empty screen when this is set to false.
+
+02:39.650 --> 02:42.410
+Now we obviously a hard coating this is not the solution.
+
+02:42.410 --> 02:47.990
+Instead an app us and I won't have a button which allows us to open that model and then we will close
+
+02:47.990 --> 02:49.340
+the modal from inside the mode.
+
+02:49.350 --> 02:55.760
+When we pressed the app button there that we're already importing button here into app J.S. and now
+
+02:55.760 --> 03:00.530
+that I see this we can of course also get rid of this these imports which we're not using here right
+
+03:00.560 --> 03:01.480
+now.
+
+03:01.550 --> 03:06.400
+So just leave the button import here along with the ivory imports we are using.
+
+03:06.490 --> 03:12.260
+And now here at the very top we can add the button which sets the self closing tag though and set the
+
+03:12.260 --> 03:22.160
+title to add new gold maybe something like that if we do that we of course should see that button here
+
+03:22.160 --> 03:22.750
+at the top.
+
+03:22.750 --> 03:24.040
+And here it is.
+
+03:24.140 --> 03:31.000
+And now when we press that button we want to show that modal right now for that we need to manage more
+
+03:31.000 --> 03:31.920
+state.
+
+03:31.990 --> 03:38.350
+So in here besides managing the course goals I will now also manage where we're currently in course
+
+03:38.410 --> 03:41.220
+at Mode or if we're not.
+
+03:41.260 --> 03:48.220
+So initially we're not so the initial state I'm setting is false and I'll name my state here and of
+
+03:48.220 --> 03:50.100
+course that is totally up to you.
+
+03:50.140 --> 03:55.460
+I'll name it is at Mode and set is at Mode.
+
+03:55.660 --> 03:56.860
+Again these names are up to you.
+
+03:56.860 --> 04:03.220
+I'm just having a convention here which you all defined in the official react docks where here we try
+
+04:03.220 --> 04:08.110
+to give the state we're controlling a fitting name and then we basically take that name and add set
+
+04:08.110 --> 04:12.430
+in front of it to make it clear that this is the function to change that state.
+
+04:12.430 --> 04:17.230
+So set is at Mode is what we in the end need to call when this button is pressed.
+
+04:17.230 --> 04:22.750
+And here we can use it inline function or use a named function and just add the handler here whatever
+
+04:22.750 --> 04:23.700
+you want.
+
+04:24.130 --> 04:28.450
+I'll go with the inline function and call set as ad mode and set this to true here.
+
+04:28.480 --> 04:35.800
+When this button is called so of be open a motel now we can take that is add mode to a state where you
+
+04:35.800 --> 04:43.760
+are changing and past is two goal input to then change the visibility of the model in their so here
+
+04:43.760 --> 04:50.120
+we could add a visible prop but that prop name is up to you because it's on our own component and I
+
+04:50.120 --> 04:51.680
+passed he is add mode.
+
+04:51.680 --> 04:54.800
+So that's the state we're controlling to visible mode.
+
+04:54.800 --> 04:59.660
+So the value stored in is ad mode is passed as a value to the visible prop.
+
+04:59.660 --> 05:03.710
+Now in goal input we can therefore now use that visible prop.
+
+05:03.710 --> 05:06.670
+So here we can use props visible.
+
+05:06.740 --> 05:12.080
+Now referring to the visible prop we got on the goal input which we then forward to the visible prop
+
+05:12.230 --> 05:17.170
+of the modal if we now save that and we have a look at our app.
+
+05:17.310 --> 05:22.440
+If I press add new goal here indeed you see that modal content appear again.
+
+05:22.590 --> 05:25.020
+Now obviously it's not looking that beautiful here.
+
+05:25.020 --> 05:26.590
+So we should change this.
+
+05:26.700 --> 05:33.450
+And one other thing I want to change is that animation would be nice here for opening the model right.
+
+05:33.450 --> 05:40.740
+So here let's add animation type which is a nice prop. We can set here and you can set this to a string
+
+05:40.740 --> 05:45.210
+and there you got three options non is the default but you can set this to slide.
+
+05:45.420 --> 05:48.450
+And now the models would actually appear by sliding up.
+
+05:48.490 --> 05:51.760
+So if you press at New Gold now it is slides up.
+
+05:51.760 --> 05:53.430
+All is on Android.
+
+05:53.430 --> 05:59.130
+So that's a way better user experience I'd say the next step is that we ensure that our content in the
+
+05:59.130 --> 06:04.410
+mobile is presented in a nicer way may be centered here in the middle of the modal.

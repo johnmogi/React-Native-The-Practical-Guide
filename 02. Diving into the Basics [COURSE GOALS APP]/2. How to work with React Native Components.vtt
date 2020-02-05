@@ -1,0 +1,91 @@
+WEBVTT
+
+00:02.370 --> 00:04.560
+A crucial part of reigniting.
+
+00:04.680 --> 00:07.900
+Are these components which are built into React Native.
+
+00:07.920 --> 00:13.340
+Because as you'll learn in the first section of this course these are special components for which React
+
+00:13.350 --> 00:21.420
+Native knows how to translate how to compile them to native platform widgets and you can only use such
+
+00:21.420 --> 00:23.730
+components in React Native apps.
+
+00:23.790 --> 00:29.070
+You can build your own components but these then also in the end have to be made up of these built in
+
+00:29.190 --> 00:29.910
+components.
+
+00:30.000 --> 00:33.390
+You can't use divs or paragraphs or anything like that.
+
+00:33.600 --> 00:38.550
+So we have to work with the ones built into React Native because they are rig native knows how to translate
+
+00:38.550 --> 00:43.640
+them and there we have things like The View text button touchable text input image.
+
+00:43.650 --> 00:46.620
+These are some of the components you will see from this course.
+
+00:46.620 --> 00:51.150
+There are more and we'll see plenty of them throughout the course and you will learn how to work with
+
+00:51.150 --> 00:58.620
+those how to configure them and how to compose nice user interfaces with the help of these components.
+
+00:58.620 --> 01:04.500
+Now you as a just mentioned of course build your user interfaces your custom components with the help
+
+01:04.500 --> 01:11.130
+of these built in components here so you compose your user interface your components from these built
+
+01:11.160 --> 01:16.830
+in components there and it looks something like this you build your own my title component by taking
+
+01:16.830 --> 01:23.520
+the built in ones and mixing and matching them together to get the look or the component you need styling
+
+01:23.520 --> 01:28.770
+all is an important part and React Native apps and there it's important to understand that React Native
+
+01:28.860 --> 01:35.070
+doesn't use web technologies it doesn't use HD Himmel it uses javascript arguably but doesn't use HD
+
+01:35.070 --> 01:41.580
+him and it also doesn't use C as s so CSX which you use for styling and the web is not support and react
+
+01:41.580 --> 01:50.010
+native but it gives you styling commands styling configuration you can add to your components so to
+
+01:50.010 --> 01:55.740
+these components that are built into React Native even with the help of inline styles or with so-called
+
+01:55.830 --> 02:02.580
+style sheet objects and there you write these style instructions in javascript but you use a certain
+
+02:02.580 --> 02:09.990
+text which is based on CSX so it's not directly related to CSX but of course it's influenced by CSX
+
+02:10.170 --> 02:17.310
+many of the instructions you use here are inspired by CSX and many of the rules or of the properties
+
+02:17.310 --> 02:24.420
+you know from CSX all the work here in JavaScript in your react native app now regarding the inline
+
+02:24.420 --> 02:30.810
+styles vs. styles sheet objects thing I will show both but I will already say that using style sheet
+
+02:30.840 --> 02:34.800
+object is preferred but I'll come back to that once we do use it.
+
+02:34.910 --> 02:39.450
+And with that now do we know roughly what's up with components installing.
+
+02:39.550 --> 02:43.220
+Why don't we just get started and start working with these things.

@@ -1,0 +1,109 @@
+WEBVTT
+
+00:02.310 --> 00:08.520
+So let's all these components there and for that we want to apply some style to the text components
+
+00:09.120 --> 00:12.780
+the text component does indeed support to stall a property.
+
+00:12.780 --> 00:19.680
+As you can verify in the official box but the text component actually does support less stalling features
+
+00:19.710 --> 00:20.610
+than the view does.
+
+00:20.970 --> 00:26.030
+And therefore I'll wrap this into another view component and that's just a view component.
+
+00:26.040 --> 00:31.560
+We are importing from React Native that's all to the part I meant with you only got a couple of base
+
+00:31.560 --> 00:36.960
+components but they'll get you very far because you work with views and patterns and texts all the time
+
+00:37.530 --> 00:44.730
+so you're all wrap as text with the opening and closing view component here and now here we have more
+
+00:44.730 --> 00:46.090
+styling options.
+
+00:46.290 --> 00:50.730
+Now again I'll not go for inline styles here but add styles to the style sheet.
+
+00:50.730 --> 00:54.000
+For example we could named as list item but the name is up to you.
+
+00:54.210 --> 01:03.810
+And let's say here we want to have a padding of 10 LEDs so maybe give it a background color of this
+
+01:03.810 --> 01:17.750
+grey hex code here give it a border color of black and also a border width of 1.
+
+01:17.880 --> 01:25.720
+And now let's assign list item as a style tutors have you are referring to styles that list item here.
+
+01:25.770 --> 01:34.380
+And with that if we save this now our list item should look a bit better learn React Native.
+
+01:34.610 --> 01:39.620
+This is how it looks like now some spacing would probably also be nice.
+
+01:39.620 --> 01:46.850
+We can achieve Dad with margin padding is spacing between the border and the content margin is spacing
+
+01:46.850 --> 01:49.270
+between the border and the surrounding contents.
+
+01:49.280 --> 01:55.130
+So the average elements around it and dare we could add margin 10 to add a margin in all directions
+
+01:55.460 --> 01:59.600
+we could all just add a margin to the top or just to the bottom or.
+
+01:59.720 --> 02:06.050
+And that's something which doesn't exist in C S S you can add a margin vertical of 10 to have a margin
+
+02:06.050 --> 02:08.560
+to top and bottom but not left and right.
+
+02:08.720 --> 02:15.770
+And that's by the way an example of how this is based on CSX but it's not the same because margin vertical
+
+02:15.860 --> 02:23.210
+wouldn't be a property you haven't CSX while you have it and react native so if we know it's safe.
+
+02:23.210 --> 02:29.840
+Dad and we add learn and react native here.
+
+02:30.030 --> 02:38.430
+Now you see there is some spacing between those items and of course also on Io s if we do it there.
+
+02:38.550 --> 02:46.440
+So there's not adds our items and whilst we probably still don't win a beauty award it's a good start
+
+02:46.440 --> 02:51.050
+at least will dive way deeper into styling and all you can do there later in this course.
+
+02:51.060 --> 02:54.090
+We just have to get there is step by step of course.
+
+02:54.090 --> 03:00.750
+Now one thing we have to adjust now by the way the key here always has to be on the the route element
+
+03:00.750 --> 03:01.460
+in your list.
+
+03:01.500 --> 03:05.730
+So the element which you are repeating and we're not just repeating the text anymore instead we're now
+
+03:05.730 --> 03:07.020
+repeating the entire view.
+
+03:07.320 --> 03:14.430
+So the key should be added to that view here not to the text in the view that's why I got this warning
+
+03:14.430 --> 03:15.520
+or this error again.
+
+03:15.600 --> 03:19.230
+Now with the key moved to the view instead of the text this should be gone.

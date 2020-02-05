@@ -1,0 +1,130 @@
+WEBVTT
+
+00:02.380 --> 00:06.940
+So we installed Android Studio and launched the app here on an android emulator.
+
+00:06.940 --> 00:08.560
+Now let's do the same when I was.
+
+00:08.570 --> 00:12.580
+And this as I mentioned before only works on mac os.
+
+00:12.580 --> 00:14.930
+You can do this on Windows unfortunately.
+
+00:15.100 --> 00:20.790
+The first step there is that you install X code and you do that from inside your app store.
+
+00:20.790 --> 00:26.690
+So the app store on your Mac there you can simply search for X code and then install X code.
+
+00:26.690 --> 00:30.120
+I already got it installed but simply install it from there.
+
+00:30.120 --> 00:36.020
+These are the Apple Developer tools you can only install them on a Mac and you should do so there with
+
+00:36.020 --> 00:36.770
+that installed.
+
+00:36.770 --> 00:45.740
+Make sure you install the X code command line tools by simply launching X code and there without necessarily
+
+00:45.740 --> 00:47.510
+opening a project you don't have to do that.
+
+00:47.510 --> 00:53.850
+Going to X code preferences in the top left corner and then make sure you got command line tools installed
+
+00:53.850 --> 01:00.360
+here by selecting the most recent entry you have here under a command line tools that is already all
+
+01:00.720 --> 01:09.270
+you can now launch a simulator by going to X code and then open developer tool simulator here.
+
+01:09.300 --> 01:15.900
+This will now launch up an ISIS simulator.
+
+01:16.110 --> 01:17.640
+Here it is booting up.
+
+01:17.700 --> 01:20.040
+And for me it picked iPhone X here.
+
+01:20.040 --> 01:26.010
+You can change that simulator by clicking on it and then going to hardware here the voice and then selecting
+
+01:26.010 --> 01:32.250
+Iaw and you can pick different phones and if you choose a different one year it will launch a new emulator
+
+01:32.820 --> 01:40.180
+with that different configuration and here I'll just go with this iPhone X s simulator.
+
+01:40.180 --> 01:43.220
+I closed all simulators and then restarted it.
+
+01:43.290 --> 01:49.080
+And then it automatically picks the last one you'd show us here and now let's wait for disk to boot
+
+01:49.080 --> 01:54.050
+up before we can run our risk native Expo app there.
+
+01:54.050 --> 02:00.760
+Here it is running and now again go back to your NPM start process which should be up and running and
+
+02:00.770 --> 02:06.650
+in there you can hit I too launched this project on an ISIS simulator.
+
+02:06.680 --> 02:13.530
+Alternatively you can always go to the expo def tools in that browser tab and click Run on IAW simulator
+
+02:13.560 --> 02:14.060
+there.
+
+02:14.080 --> 02:15.490
+That would work as well.
+
+02:15.490 --> 02:19.940
+Here you also see some log where it tells you that it's connecting and so on.
+
+02:19.990 --> 02:23.860
+So now you're where ask where we want to open as an Expo and the answer is yes.
+
+02:23.980 --> 02:29.240
+Just as on Android it automatically installed the expo app so you don't need to do that manually it
+
+02:29.250 --> 02:34.600
+does it for you and then it launches does app and launches your project in that app.
+
+02:34.600 --> 02:38.720
+So let's again wait for that to finish click.
+
+02:38.720 --> 02:39.880
+Got it here.
+
+02:40.010 --> 02:45.770
+And here's the app and just as on the real device we can click change text to change to text.
+
+02:45.770 --> 02:48.860
+So this is the app now running on simulators.
+
+02:48.860 --> 02:54.380
+This is the setup I'll use for the course so that I can show this app on different devices here on the
+
+02:54.380 --> 02:55.340
+screen.
+
+02:55.340 --> 03:01.640
+You can test it on simulators as well you can test it on real native devices before you ever publish
+
+03:01.640 --> 03:02.240
+app.
+
+03:02.240 --> 03:08.120
+You should definitely also test on real devices though otherwise you won't know how your app behaves
+
+03:08.120 --> 03:08.570
+there.
+
+03:08.570 --> 03:12.890
+So using simulators only is not an option but for development it's of course great.

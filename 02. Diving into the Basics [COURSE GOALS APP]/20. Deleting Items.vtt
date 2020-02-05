@@ -1,0 +1,181 @@
+WEBVTT
+
+00:02.600 --> 00:08.300
+Now to delete the item which was pressed I'll add a new function here in my app component.
+
+00:08.480 --> 00:10.790
+So a new function which has stored in this constant.
+
+00:11.150 --> 00:13.750
+And I'll name it remove goal handler.
+
+00:13.970 --> 00:20.180
+And here I expect to get the goal I.D. as I input because this idea allows us to identify the item which
+
+00:20.180 --> 00:22.280
+we want to remove as an alternative.
+
+00:22.280 --> 00:26.620
+We could also get the index India array and then removed the item by index.
+
+00:26.630 --> 00:32.450
+But I think the idea is even better because well we have an I.D. clearly matched to every item why wouldn't
+
+00:32.450 --> 00:34.480
+we use that for the leading it.
+
+00:34.750 --> 00:40.220
+And now in here we can set our course goals because of course I want to update my course goals.
+
+00:40.220 --> 00:45.070
+And again we're making an update that's based on our current course goals.
+
+00:45.080 --> 00:47.190
+So I'll use that function form here.
+
+00:47.240 --> 00:50.400
+I pass a function an anonymous function to set course goals.
+
+00:50.510 --> 00:52.610
+There I get my current state snapshot.
+
+00:52.610 --> 00:57.890
+My current course goals and in the function body I have to return the updated course goals.
+
+00:57.890 --> 01:04.490
+Now in case you're wondering why I don't have curly braces UP HERE here I use the shorter syntax where
+
+01:04.490 --> 01:06.860
+I only have one expression which I want to return.
+
+01:06.860 --> 01:10.500
+So I amidst the function body and the return statement here.
+
+01:10.730 --> 01:15.380
+I'll have a little bit of a longer statement therefore I want to have the function body here for readability
+
+01:15.860 --> 01:22.430
+because in your all return current goals filter because filter is a built in method built into javascript
+
+01:22.730 --> 01:28.940
+that allows us to return a new array filter always yields a new array which is based on the old array
+
+01:28.940 --> 01:32.800
+on which you're calling it filtered by a certain criteria.
+
+01:32.840 --> 01:39.260
+Now the criteria is new and passed with the help of a function which you pass to filter this function
+
+01:39.260 --> 01:45.540
+which you pass to filter gets the goal because this function runs on every element on the array you're
+
+01:45.540 --> 01:46.490
+calling it.
+
+01:46.490 --> 01:51.800
+So in this case it runs on every goal we have in the current golden array and therefore we get that
+
+01:51.800 --> 01:52.220
+goal.
+
+01:52.220 --> 01:57.890
+It's currently running on and now we can return true if we want to keep that item or false if we want
+
+01:57.890 --> 02:05.150
+to drop it and we want to return true if the idea of the goal we're looking at is not equal to the goal
+
+02:05.250 --> 02:09.560
+I.D. We're getting us our argument because that's the idea of goal we want to delete.
+
+02:09.710 --> 02:14.750
+So we only want to keep items where these ideas do not match because if they do match then that's the
+
+02:14.750 --> 02:16.000
+item we want to get rid of.
+
+02:16.070 --> 02:19.580
+And therefore we of course want to drop it from our new Array.
+
+02:20.120 --> 02:25.820
+So this is defaulter logic for getting rid of all item and returning this here as our new state which
+
+02:25.820 --> 02:27.620
+is new and set thereafter.
+
+02:27.620 --> 02:35.810
+Now we can connect remove handler to on delete and now here we got two options or multiple options of
+
+02:35.810 --> 02:36.760
+doing this.
+
+02:36.830 --> 02:42.200
+We can simply point add remove goal handler but keep in mind that you need to pass the I.D. So option
+
+02:42.200 --> 02:50.710
+number one is that you also forward the idea here to goal item by simply pointing at item data dot item
+
+02:50.770 --> 02:57.760
+dot I.D. because just as each item has a value each item here also has an I.D. because we're adding
+
+02:57.760 --> 03:03.260
+an idea when we're adding an item up there and now as IDs we pass the I.D. to the goal item and we pass
+
+03:03.260 --> 03:09.280
+the on delete prop to the goal item inside of the goal item here where we call on delete in the end
+
+03:09.280 --> 03:14.320
+or where we forward the handler on delete points at 2 on press.
+
+03:14.320 --> 03:20.320
+We could all the bind this to set a default argument when this gets called into default arguments here
+
+03:20.320 --> 03:25.900
+would be props ideas so the idea we're all getting so that this idea is passed 2 on delete when it's
+
+03:25.900 --> 03:32.800
+getting called upon a press that's option number 1 and it's the option I will use but also to show you
+
+03:32.800 --> 03:38.530
+the other option the other option would be that you don't pass the I.D. 2 goal item but instead here
+
+03:38.530 --> 03:44.050
+on delete you know in the end the removed goal handler will be executed and then here you could add
+
+03:44.080 --> 03:50.590
+bind this and then point that item data item I.D. Dad would all the work.
+
+03:51.040 --> 03:56.280
+Now I will revert this however and I will go with the approach where all the information is instead
+
+03:56.290 --> 04:04.030
+of the goal item and we do connect our function with the idea from inside to go item now is that we
+
+04:04.030 --> 04:06.880
+should have a setup where we can all delete our goals.
+
+04:06.910 --> 04:13.780
+So let's wait for this to reload and let's test it maybe here on us we want to learn React Native and
+
+04:13.840 --> 04:17.830
+now I want to use different names so that we can see if we deleted the right one.
+
+04:17.830 --> 04:26.520
+We want to learn it all we want you maybe also get really good at React Native and whatever it is.
+
+04:26.980 --> 04:33.790
+And now I will actually click on learn it all to to delete that and that seems to work here.
+
+04:34.060 --> 04:35.710
+Learn React Native and now.
+
+04:35.710 --> 04:40.720
+The last one all delete it and also without any errors here.
+
+04:40.750 --> 04:47.440
+So this seems to work fine with Dad we're deleting items with the help of touchable touchable opacity
+
+04:47.440 --> 04:54.430
+in this case which helps you register events like on press on any component or on any components you
+
+04:54.430 --> 04:54.700
+need.
