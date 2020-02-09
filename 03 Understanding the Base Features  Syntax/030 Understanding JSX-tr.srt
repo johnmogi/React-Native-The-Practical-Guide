@@ -1,0 +1,263 @@
+1
+00:00:02,150 --> 00:00:06,920
+Son dersin sonunda size bu bileşen üzerinde yürüdüm ve genel olarak ne yapılandı.
+
+2
+00:00:07,020 --> 00:00:08,610
+Şimdi derinliklerine dalalım.
+
+3
+00:00:08,680 --> 00:00:17,160
+Bu açıklama için GSX'in bu kilidi buradan çıkarması için artık burada kullanılmıyor ve başka bir şey döndüreceğim.
+
+4
+00:00:17,730 --> 00:00:23,310
+Buraya aktardığım yeniden eylem nesnesini kullanabilir ve üzerinde bir yöntem çağırabilirim.
+
+5
+00:00:23,370 --> 00:00:30,690
+True Yate elemanı bu gizlemelerle ithalat yapmak zorunda olduğumuz nedenlerin tümü burada hareket ediyor çünkü buradaki bu
+
+6
+00:00:31,050 --> 00:00:33,720
+kod burada yazdıklarımız için henüz derlenmemiştir.
+
+7
+00:00:33,810 --> 00:00:40,260
+yaratıcı öğeyi bir yöntem olarak görmüyor olsak da özgür bağımsız değişkenleri gerçekten
+
+8
+00:00:40,260 --> 00:00:48,240
+sonsuz miktarda argüman alır ancak en azından benim için ilk önce DOM'a sunmak istediğimiz öğedir.
+
+9
+00:00:48,240 --> 00:00:48,840
+Bu
+
+10
+00:00:48,840 --> 00:00:54,580
+Bu, bir div gibi normal bir H-G erkek elemanı olabilen bir ölüm diski olabilir.
+
+11
+00:00:54,660 --> 00:00:58,980
+Birazdan bir yönünüz varsa, kendi bileşeniniz de olabilir.
+
+12
+00:00:59,160 --> 00:01:04,860
+Gerçi bir bileşende olduğumuzdan, içe aktardığımız herhangi bir ses bileşenini oluşturabileceğimizi ancak
+
+13
+00:01:04,860 --> 00:01:08,390
+böyle bir bileşene sahip olmadığımızı beyan edemiyoruz.
+
+14
+00:01:08,400 --> 00:01:13,000
+İkinci argüman temel olarak bunun konfigürasyonudur.
+
+15
+00:01:13,350 --> 00:01:20,460
+Ve orada bir javascript nesnesi Desire'ın isteğine bağlı olarak geçebiliriz, çünkü hepsini boşluk geçirebiliriz ve
+
+16
+00:01:20,460 --> 00:01:23,140
+şimdilik yapılandırmamızı istemediğimiz için yapacağız.
+
+17
+00:01:23,280 --> 00:01:30,510
+Üçüncü argüman burada herhangi bir çocuk miktarı ve Hamas tarafından ayrılmış çoklu argümanlara
+
+18
+00:01:30,510 --> 00:01:31,820
+sahip olabiliriz.
+
+19
+00:01:31,890 --> 00:01:35,980
+Çocuklar bu ölümün iç içe geçmişini demektir.
+
+20
+00:01:36,060 --> 00:01:39,450
+Şimdi bu durumda Nasta h'ye bir eleman istiyorum.
+
+21
+00:01:39,720 --> 00:01:49,650
+1 yaşını ekleyerek ve ardından sayı bağımsız değişkeni olarak denemekle, bu metin buraya birden çok ünlem işareti ekleyelim
+
+22
+00:01:49,650 --> 00:01:56,310
+ve bu tırnak işaretini ters eğik çizgiyle kaçıralım, böylece bunun ayrık eleman
+
+23
+00:01:56,310 --> 00:01:58,570
+yöntemi ile işlendiğini tespit edebiliriz.
+
+24
+00:01:59,410 --> 00:02:05,450
+Şimdi bununla birlikte, bu kodu yaratmak için dört bağımsız değişken div içeren öğe kaydetmeme izin verin. işareti ve nokta bulunmuyorsa kaydedilmiş görüyorsunuz ve daha sonra uygulamamıza dönelim.
+
+25
+00:02:05,500 --> 00:02:13,270
+Şimdi 1 yaşında ve metin dosyayı Visual Studio kodunda kaydettiğinizden emin olunuz, burada çarpı
+
+26
+00:02:13,270 --> 00:02:19,300
+Burada H-1 görüyoruz.
+
+27
+00:02:19,300 --> 00:02:21,210
+Merhaba ben tepki gösteriyorum.
+
+28
+00:02:21,440 --> 00:02:23,610
+Bunu Chrome'daki geliştirici
+
+29
+00:02:23,650 --> 00:02:28,840
+araçlarında incelersek, benim durumumdasın, bunu kullanmam kesinlikle öneririm.
+
+30
+00:02:28,840 --> 00:02:29,600
+Bir ucun içinde iki metin düğümlü bir div başlattığını göreceksiniz.
+
+31
+00:02:29,770 --> 00:02:34,330
+Merhaba ben bir reaktör uygulamasıyım, bu yüzden yardım sunmadık.
+
+32
+00:02:34,390 --> 00:02:37,340
+olarak yorumlandığı varsayılan davranış.
+
+33
+00:02:37,360 --> 00:02:45,370
+Metin oluşturduğumuz bir unsur ve bu aslında 1 yılın metin
+
+34
+00:02:45,370 --> 00:02:46,010
+Farkın içinde başka bir öğe oluşturmak istiyorsanız öğe olarak oluşturulmaz.
+
+35
+00:02:46,120 --> 00:02:52,510
+Burada yapmamız gereken şu ki, bu kodu, sonunda yeni bir
+
+36
+00:02:52,750 --> 00:03:00,580
+HVM l öğesi yaratmak için elemanı yaratmaya tepki olarak adlandırılan bir romanla değiştiriyoruz.
+
+37
+00:03:00,580 --> 00:03:03,290
+Burada h bir sonra null s yapılandırmasını ve ardından oluşturmak istediğiniz metni gönderiyoruz.
+
+38
+00:03:03,310 --> 00:03:10,900
+Şimdi bunu karıştırıp işte bunu söyleyelim.
+
+39
+00:03:10,900 --> 00:03:15,800
+Şimdi bu dosyayı kaydettiysek ve uygulamaya geri dönersek, bir teknisyen bu işi yapar.
+
+40
+00:03:15,810 --> 00:03:21,690
+Şimdi bunu geliştirici araçlarında incelersek de görebilirsiniz.
+
+41
+00:03:21,690 --> 00:03:25,640
+Ölüm sarmalıyoruz.
+
+42
+00:03:25,780 --> 00:03:27,460
+Bir etiket.
+
+43
+00:03:27,490 --> 00:03:29,900
+Şimdi göremediğimiz şey,
+
+44
+00:03:29,950 --> 00:03:38,290
+C SS tarzı uygulanmasıdır, çünkü J dosyamızda eklenen sınıfın X kodunu görmüyoruz.
+
+45
+00:03:39,190 --> 00:03:40,770
+Sınıflı değil sınıflı bir C S S sınıfı ekledik.
+
+46
+00:03:40,780 --> 00:03:45,640
+Bu arada ismini de bir sonraki konferansa sınıfın adını
+
+47
+00:03:45,640 --> 00:03:51,680
+neden kullandığımıza tekrar geleceğiz, böylece ticaret elementi çağrısında sınıf ismini aldık.
+
+48
+00:03:51,690 --> 00:03:55,850
+Boşluğu yapılandırma olarak değil yalnızca bir javascript nesnesi olarak aktarırdık.
+
+49
+00:03:55,920 --> 00:04:01,020
+Ve orada sınıf adını tanımlayabilir ve eklemek istediğimiz C S S sınıflarını atayabiliriz.
+
+50
+00:04:01,530 --> 00:04:07,470
+Örneğin burada aynı sınıfta başvuruyoruz.
+
+51
+00:04:07,620 --> 00:04:11,930
+Şimdi yeniden yüklediği bu dosyayı kaydettik ve
+
+52
+00:04:12,770 --> 00:04:20,710
+şu an tekrar yüklenen bu stüdyoların merkez metinleri ile güncellenmiş halini görüyoruz; bu
+
+53
+00:04:20,710 --> 00:04:28,210
+CEO'ların, iki günlük günde burada uygulanıyor gibi görüyoruz, burada yeniden yazma eylemiyle
+
+54
+00:04:28,210 --> 00:04:36,910
+yarattığımız kodu anlamak çok önemli elemanı ve yuvalanmış recreate öğesi bu GSX X kodunun
+
+55
+00:04:36,940 --> 00:04:45,310
+tam karşılığıdır ve aslında bu kod burada kutudan çıkarılan birçok dahili araçtan derlenmiş olsun.
+
+56
+00:04:45,340 --> 00:04:46,960
+derlendiğinde onu kullanacağız.
+
+57
+00:04:46,960 --> 00:04:54,160
+Bu projede, bu sözdizimini kullanırken tekrar kullanmamıza rağmen tekrar eyleme geçmemizin nedeni budur çünkü sahne arkasında
+
+58
+00:04:54,160 --> 00:04:59,720
+Elbette böyle kodu yazarken eleman yaratacak, özellikle
+
+59
+00:05:00,010 --> 00:05:07,180
+de eklediğiniz ve yerleştirdiğiniz element sayısı arttıkça hantal.
+
+60
+00:05:07,180 --> 00:05:10,000
+Bu yüzden genellikle bu kodu kullanmıyoruz.
+
+61
+00:05:10,000 --> 00:05:12,910
+Bunun yerine j ile j kullanmamızın nedeni bununla başlayan kod. Ancak, iç kısımları anlamak ve
+
+62
+00:05:13,210 --> 00:05:19,930
+bunun neye dönüştüğünü anlamak süper önemlidir.
+
+63
+00:05:19,930 --> 00:05:24,080
+Ve aynı zamanda en önemlisi de, öyle olmadığı halde görünmediğini anlar.
+
+64
+00:05:24,130 --> 00:05:31,090
+Bu sonunda javascript.
+
+65
+00:05:31,090 --> 00:05:33,370
+Bu koda derlenir.
+
+66
+00:05:33,400 --> 00:05:35,960
+&nbsp;

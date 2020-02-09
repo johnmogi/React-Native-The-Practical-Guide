@@ -1,0 +1,43 @@
+1
+00:00:02,430 --> 00:00:10,650
+Bienvenido al módulo del discurso, aprendimos muchas cosas sobre la reacción y también vimos algunos errores en
+
+2
+00:00:10,740 --> 00:00:12,790
+nuestra aplicación de reactivación.
+
+3
+00:00:12,880 --> 00:00:21,900
+Ahora, no importa cuán bueno sea el programador que sea, llegará a errores o mensajes de error siempre o la mayoría
+
+4
+00:00:21,900 --> 00:00:22,680
+del tiempo.
+
+5
+00:00:22,680 --> 00:00:25,390
+Peor que esos errores lógicos.
+
+6
+00:00:25,470 --> 00:00:32,460
+Ahora, en este manual, le mostraré cómo puede depurar su aplicación de reactivación, cómo debe leer y
+
+7
+00:00:32,520 --> 00:00:35,340
+comprender los mensajes de error de reactivación.
+
+8
+00:00:35,400 --> 00:00:41,940
+son bastante buenos y útiles, y cómo puede crear una aplicación de reactivación sin errores.
+
+9
+00:00:41,940 --> 00:00:44,270
+Debido a que muchos de ellos
+
+10
+00:00:44,700 --> 00:00:50,940
+Sumérjase en esto y aprendamos las diversas técnicas que tiene a su disposición para comprender
+
+11
+00:00:50,940 --> 00:00:52,660
+y manejar los errores.

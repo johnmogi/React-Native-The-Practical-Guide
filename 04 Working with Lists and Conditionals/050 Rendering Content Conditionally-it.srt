@@ -1,0 +1,499 @@
+1
+00:00:02,130 --> 00:00:09,760
+Quindi eccomi di nuovo nel file Sì effettivo e il metodo di rendering che hai imparato viene
+
+2
+00:00:09,850 --> 00:00:14,450
+utilizzato durante la creazione di un componente estendendoci all'oggetto componente.
+
+3
+00:00:14,470 --> 00:00:23,800
+Produciamo tre persone e questo è chiaramente una specie di lista perché anche Pearse è gestito
+
+4
+00:00:23,800 --> 00:00:26,350
+nel nostro stato qui.
+
+5
+00:00:26,460 --> 00:00:33,900
+Avrebbe senso pubblicare questo come una lista, ma prima di immergerci in questo, immergersi nell'esprimere il
+
+6
+00:00:33,940 --> 00:00:42,880
+contenuto in modo condizionale, per prima cosa diciamo che quando clicchiamo su questo pulsante non vogliamo veramente cambiare i nomi
+
+7
+00:00:42,910 --> 00:00:44,300
+come facciamo ora.
+
+8
+00:00:44,530 --> 00:00:52,810
+Ma diciamo invece che vogliamo mostrare o nascondere le persone che abbiamo qui.
+
+9
+00:00:53,140 --> 00:01:00,610
+Per questo possiamo ad esempio avvolgere tutte queste persone in un giorno di dire in modo che alla fine possiamo mostrare o nascondere questo
+
+10
+00:01:00,610 --> 00:01:06,550
+dispositivo e anche mostrare e nascondere automaticamente tutto ciò che è in vista il giorno in cui è l'idea
+
+11
+00:01:06,550 --> 00:01:09,680
+che sta dietro a tutte le persone con la birra.
+
+12
+00:01:10,030 --> 00:01:11,680
+Quindi questo è il primo passo.
+
+13
+00:01:12,160 --> 00:01:21,690
+C'è un secondo passo ora è che abbiamo bisogno di cambiare questo Meffert tutto il nome per attivare il gestore della persona
+
+14
+00:01:22,510 --> 00:01:26,190
+e non passeremo più un argomento a questo metodo.
+
+15
+00:01:26,200 --> 00:01:32,740
+Ora con quello tornerò alla vecchia sintassi di non usare una funzione che restituisce una chiamata a una
+
+16
+00:01:32,740 --> 00:01:39,550
+funzione numerica ma semplicemente passando un riferimento So Altamonte true Yate un metodo chiamato commuta il gestore della persona.
+
+17
+00:01:39,850 --> 00:01:42,670
+Quindi lo aggiungerò qui sopra il metodo di rendering.
+
+18
+00:01:42,970 --> 00:01:49,570
+E potremmo usare sia la sintassi che la sintassi qui che tratterà un metodo qui avremo problemi
+
+19
+00:01:49,600 --> 00:01:52,130
+se vogliamo usare la parola chiave.
+
+20
+00:01:52,390 --> 00:02:00,010
+E poiché chiameremo questo metodo qui su uno sfogo sparato nel dormitorio questo porterebbe a problemi reali.
+
+21
+00:02:00,070 --> 00:02:05,370
+Sabol vedi la tassa di Iverson di assegnare una funzione di freccia a una proprietà.
+
+22
+00:02:05,410 --> 00:02:07,280
+Creerà anche un metodo alla fine.
+
+23
+00:02:07,330 --> 00:02:14,440
+È solo una sintassi diversa e grazie agli interni di javascript questo fa sì che questa
+
+24
+00:02:14,500 --> 00:02:21,310
+parola chiave all'interno di questo metodo sempre in tutte le circostanze ritorni alla sola classe.
+
+25
+00:02:21,310 --> 00:02:24,250
+Quindi ti consiglio di usarlo adesso.
+
+26
+00:02:24,250 --> 00:02:31,600
+Ora voglio prendere di mira alcune proprietà che alla fine i siti chi vogliamo mostrare questo Dave con le
+
+27
+00:02:31,600 --> 00:02:34,140
+persone al suo interno o meno.
+
+28
+00:02:34,510 --> 00:02:41,320
+Quindi prima di tutto andrò al mio stato e aggiungerò il nome di un proprietario e mostrerò le persone che il nome, naturalmente,
+
+29
+00:02:41,320 --> 00:02:42,260
+dipende da te.
+
+30
+00:02:42,550 --> 00:02:45,280
+E lo metto su false inizialmente.
+
+31
+00:02:45,280 --> 00:02:52,690
+Ora, se è falso, non voglio che tu ti sia presentato per i suoi peccati e come possiamo renderlo ora dinamicamente.
+
+32
+00:02:53,290 --> 00:03:01,210
+futuro, sì, in questo momento, porteresti una direttiva su questa morte, come se tu sapessi che avremmo l'if.
+
+33
+00:03:01,210 --> 00:03:07,580
+Bene, possiamo andare alla morte e nelle strutture di Ivor come un angelo o, in
+
+34
+00:03:07,780 --> 00:03:10,580
+Ora il re-act funziona diversamente qui.
+
+35
+00:03:10,630 --> 00:03:18,280
+Ricorda sempre che stiamo lavorando con javascript, ma potrebbe sembrare HVM, ma è J
+
+36
+00:03:18,280 --> 00:03:19,140
+come x.
+
+37
+00:03:19,240 --> 00:03:23,750
+È solo zucchero sintattico per re-act creare elemento.
+
+38
+00:03:23,920 --> 00:03:27,980
+Quindi alla fine qui abbiamo il codice javascript.
+
+39
+00:03:28,420 --> 00:03:35,860
+Quindi possiamo lavorarci perché possiamo lavorare con il codice javascript se vogliamo renderlo dinamicamente.
+
+40
+00:03:35,860 --> 00:03:43,600
+tra virgolette singole e l'intero div che avvolge le persone non l'esterno div l'iniziativa.
+
+41
+00:03:43,600 --> 00:03:44,850
+Possiamo racchiuderlo
+
+42
+00:03:45,160 --> 00:03:50,640
+E ora tra le virgolette ule e puoi scrivere espressioni javascript.
+
+43
+00:03:50,830 --> 00:03:55,470
+Questo non è solo vero per due più due o quattro che raggiungono lo stato.
+
+44
+00:03:55,600 --> 00:04:01,490
+Puoi anche eseguire il rendering del contenuto in modo condizionale aggiungendo un turno a ogni espressione.
+
+45
+00:04:01,930 --> 00:04:10,150
+Quello che non puoi fare qui è un'istruzione if se qualcosa poi qualcosa che sembra sarebbe la soluzione
+
+46
+00:04:10,150 --> 00:04:15,510
+giusta per spostare semplicemente il diff all'interno del blocco if qui.
+
+47
+00:04:15,700 --> 00:04:17,020
+Ma questo non funziona.
+
+48
+00:04:17,110 --> 00:04:24,150
+In realtà, è possibile utilizzare solo istruzioni semplici senza istruzioni di blocco come parte di questa sintassi dinamica.
+
+49
+00:04:24,190 --> 00:04:27,720
+Quindi tra la coppia di apertura e chiusura di una singola chiamata.
+
+50
+00:04:27,940 --> 00:04:33,640
+Quindi usare un blocco come questo non funzionerà, ma possiamo usare un'espressione ternaria.
+
+51
+00:04:33,670 --> 00:04:37,710
+Possiamo semplicemente verificare se questo stato mostra persone.
+
+52
+00:04:37,750 --> 00:04:40,470
+Tieni presente che questo è un booleano.
+
+53
+00:04:40,660 --> 00:04:44,990
+Assegniamo false inizialmente.
+
+54
+00:04:45,110 --> 00:04:52,730
+Quindi questo ci darà vero o falso e non trasformerà ogni espressione che è un costrutto javascript predefinito.
+
+55
+00:04:52,730 --> 00:04:59,330
+Controlla questa condizione aggiungendo un punto interrogativo e quindi decidiamo cosa fare se questo è vero.
+
+56
+00:04:59,570 --> 00:05:03,110
+Bene, se è vero, vogliamo produrre questo caro.
+
+57
+00:05:03,800 --> 00:05:07,470
+Quindi in questo momento la parte ha offerto un punto interrogativo.
+
+58
+00:05:07,550 --> 00:05:10,470
+Quindi questa def viene eseguita.
+
+59
+00:05:10,610 --> 00:05:18,350
+Se questo è vero, dobbiamo anche definire il caso else aggiungendo due punti e poi quello che vogliamo fare.
+
+60
+00:05:18,410 --> 00:05:23,850
+Se non è vero, questo null significa semplicemente non rendere nulla.
+
+61
+00:05:23,870 --> 00:05:27,530
+Questo potrebbe sembrare super confuso la prima volta che lo usi.
+
+62
+00:05:27,530 --> 00:05:29,670
+Sono consapevole di questo.
+
+63
+00:05:29,780 --> 00:05:37,610
+Quindi, ciò di cui abbiamo bisogno e facciamo qui è semplicemente sfruttare il fatto che tutto ciò che scriviamo
+
+64
+00:05:37,670 --> 00:05:44,960
+qui è in dnt javascript e possiamo inserire espressioni javascript in J S X con singole parentesi.
+
+65
+00:05:44,960 --> 00:05:52,820
+Si impara che questo significa che possiamo naturalmente accedere a qualsiasi proprietà di javascript e usarlo in un turno la nostra espressione.
+
+66
+00:05:52,820 --> 00:06:00,650
+Ancora una volta questo è un costrutto javascript predefinito che crea un'espressione ternaria avendo una condizione.
+
+67
+00:06:00,650 --> 00:06:02,500
+Questo non deve essere una proprietà.
+
+68
+00:06:02,510 --> 00:06:05,140
+Potrebbe anche essere un controllo in cui vediamo se è vero.
+
+69
+00:06:05,270 --> 00:06:08,400
+Ma poiché questo è un booleano, è automaticamente vero o falso.
+
+70
+00:06:08,450 --> 00:06:15,980
+Ma a questo punto sarebbe opportuno eliminare un punto interrogativo per separare il nostro controllo da cosa fare se si tratta di
+
+71
+00:06:15,980 --> 00:06:16,950
+un caso vero.
+
+72
+00:06:17,060 --> 00:06:19,070
+E questo qui fa parte qui.
+
+73
+00:06:19,070 --> 00:06:22,560
+Ora tieni presente che non gli scriviamo prima.
+
+74
+00:06:22,620 --> 00:06:23,620
+Saluti x.
+
+75
+00:06:23,780 --> 00:06:28,350
+Quindi alla fine chiamiamo re-act create element.
+
+76
+00:06:28,550 --> 00:06:32,340
+Se questa condizione è vera, non la chiameremo esplicitamente.
+
+77
+00:06:32,510 --> 00:06:34,030
+Stiamo rendendo questo contenuto.
+
+78
+00:06:34,070 --> 00:06:40,080
+Ma hai imparato che c'è una parola in codice per reagire creando elementi dietro le quinte e
+
+79
+00:06:40,080 --> 00:06:43,460
+poi abbiamo la condizione Altes separata da due punti.
+
+80
+00:06:43,460 --> 00:06:49,040
+Questo significa semplicemente se controllare qui non è vero.
+
+81
+00:06:49,520 --> 00:06:51,380
+Quindi fai questo.
+
+82
+00:06:51,380 --> 00:06:55,420
+E poiché non eseguiamo semplicemente nulla, restituiamo NULL.
+
+83
+00:06:55,430 --> 00:07:00,620
+Fondamentalmente significa che non renderemo nulla che rende null e che non è nulla.
+
+84
+00:07:00,620 --> 00:07:02,910
+Questo è come puoi leggere di nuovo.
+
+85
+00:07:02,960 --> 00:07:09,560
+Può sembrare super strano ma ha perfettamente senso una volta che hai capito come
+
+86
+00:07:09,590 --> 00:07:10,810
+javascript funziona davvero.
+
+87
+00:07:10,910 --> 00:07:13,820
+È tutto javascript.
+
+88
+00:07:13,820 --> 00:07:16,410
+Ora con questo completiamo la nostra logica.
+
+89
+00:07:16,540 --> 00:07:24,510
+Assicurati che il gestore della levetta sia impostato correttamente, quindi non possiamo semplicemente impostare Konst.
+
+90
+00:07:24,620 --> 00:07:26,820
+Mostra mostrare una nuova costante in là.
+
+91
+00:07:26,840 --> 00:07:29,660
+Che è questo spettacolo di persone.
+
+92
+00:07:29,690 --> 00:07:36,250
+Questo è vero o falso poiché lo stato attuale e quindi chiamiamo questo set set per regolare lo stato.
+
+93
+00:07:36,560 --> 00:07:42,990
+E ora qui semplicemente impostiamo show show uguale a ciò che show non è.
+
+94
+00:07:43,000 --> 00:07:50,240
+Aggiungendo un punto esclamativo di fronte ad esso, si dice semplicemente che la parola dice che se Das show è vero, dirà
+
+95
+00:07:50,240 --> 00:07:52,120
+che mostra la persistenza su false.
+
+96
+00:07:52,310 --> 00:08:00,280
+media stato semplicemente non viene toccato re-act unisce il valore della persona dello show aggiornato per noi in questo stato.
+
+97
+00:08:00,280 --> 00:08:07,480
+Se i dati mostrati falsi diranno che la persistenza dello spettacolo è vera e, ancora una volta importante,
+
+98
+00:08:07,480 --> 00:08:15,610
+questo si fonde con lo stato detto stato con un oggetto dove impostiamo solo persone spettacolo non significa che l'intero stato
+
+99
+00:08:15,760 --> 00:08:20,770
+viene sostituito con persone dello spettacolo solo le persone dello stato vecchio in
+
+100
+00:08:20,770 --> 00:08:25,110
+Questo è quello che sta succedendo qui ora con papà in atto.
+
+101
+00:08:25,270 --> 00:08:32,530
+Dovremmo essere in grado di salvare questo preventivo e assicurarci che NPM start sia in esecuzione e poi andare
+
+102
+00:08:32,530 --> 00:08:34,820
+verso la tua applicazione in esecuzione.
+
+103
+00:08:34,840 --> 00:08:39,130
+Se fai clic su Cambia nome ora vedi le persone.
+
+104
+00:08:39,310 --> 00:08:44,590
+perso per alcune di queste persone che in realtà non si stavano preparando a legare in modo errato.
+
+105
+00:08:44,590 --> 00:08:46,870
+Arriviamo all'avvertimento che abbiamo già perso il valore
+
+106
+00:08:46,930 --> 00:08:48,540
+Possiamo ignorarlo qui però.
+
+107
+00:08:48,580 --> 00:08:51,670
+In realtà è anche una buona cosa che arriviamo qui.
+
+108
+00:08:51,700 --> 00:08:56,520
+Ci mostra chiaramente che il re-act morto non ha nascosto i valori prima.
+
+109
+00:08:56,710 --> 00:08:59,890
+Altrimenti avrebbe ricevuto questo avvertimento all'inizio.
+
+110
+00:08:59,890 --> 00:09:01,900
+Quando ricarichi la pagina non la capiamo.
+
+111
+00:09:02,080 --> 00:09:03,900
+Lo otteniamo solo dopo aver fatto clic sul pulsante.
+
+112
+00:09:04,000 --> 00:09:11,010
+Quindi il reattore in realtà rende questi elementi solo una volta che la nostra condizione è vera per il clic di nuovo.
+
+113
+00:09:11,320 --> 00:09:12,810
+È nascosto
+
+114
+00:09:13,110 --> 00:09:16,800
+Ora posso anche confermarlo ispezionando l'alba.
+
+115
+00:09:17,100 --> 00:09:23,430
+Se osserviamo più da vicino un elemento radice nella mappa lo vediamo, ma nel qui e
+
+116
+00:09:23,430 --> 00:09:25,720
+nel basso non c'è assolutamente nulla.
+
+117
+00:09:25,860 --> 00:09:27,570
+Ora guardò un punto sulla destra.
+
+118
+00:09:27,570 --> 00:09:34,260
+Qui una volta che clicco sul pulsante che hai visto questo ha fatto lampeggiare questo è il Nuovo Giorno con le nostre persone.
+
+119
+00:09:34,260 --> 00:09:40,360
+In realtà è stato appena aggiunto il rendering a Dom una volta che la condizione era vera.
+
+120
+00:09:40,410 --> 00:09:43,300
+Questo è come funziona e reagisce.
+
+121
+00:09:43,380 --> 00:09:49,960
+Ora aggiornerò semplicemente la didascalia di questo pulsante per alternare le persone, ma questo è solo un cambiamento estetico.
+
+122
+00:09:50,130 --> 00:09:57,720
+Abbiamo già ottenuto un controllo condizionale funzionante, ora la scrittura di condizioni come questa però funziona ma può anche
+
+123
+00:09:57,720 --> 00:10:00,360
+portare a confondere il codice GSX.
+
+124
+00:10:00,360 --> 00:10:07,350
+Se hai un sacco di controlli magari anche annidati, ti mostrerò un'alternativa a questo nella prossima
+
+125
+00:10:07,350 --> 00:10:08,010
+lezione.

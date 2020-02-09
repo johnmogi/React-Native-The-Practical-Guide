@@ -1,0 +1,243 @@
+1
+00:00:02,250 --> 00:00:08,530
+En la última conferencia aprendemos cómo renderizar un contenido dinámicamente de forma condicional. Debo decir que estamos
+
+2
+00:00:08,550 --> 00:00:14,520
+muertos. Simplemente aprovechamos el hecho de que todo aquí es javascript y ese es generalmente el
+
+3
+00:00:14,580 --> 00:00:16,240
+mantra de la reacción.
+
+4
+00:00:16,320 --> 00:00:18,160
+Todo es javascript
+
+5
+00:00:18,180 --> 00:00:24,600
+También mencioné que usar simplemente convertir cada expresión como lo hacemos aquí no es necesariamente óptimo, aquí
+
+6
+00:00:24,600 --> 00:00:25,700
+está perfectamente bien.
+
+7
+00:00:25,710 --> 00:00:33,930
+Pero a medida que nuestra aplicación crece y, a medida que anidamos las condiciones, puede ser difícil hacer un seguimiento de
+
+8
+00:00:33,930 --> 00:00:36,330
+qué expresión es responsable de qué.
+
+9
+00:00:36,360 --> 00:00:39,250
+Y para verlos en nuestro código GSX.
+
+10
+00:00:39,750 --> 00:00:43,830
+Entonces, hay una solución más limpia para lo que quiero mostrarles en esta conferencia.
+
+11
+00:00:43,830 --> 00:00:48,290
+Permítanme eliminar se llama fuerte expresión ternaria aquí.
+
+12
+00:00:48,390 --> 00:00:53,480
+De modo que, por el momento, todas las personas son representadas todo el tiempo nuevamente.
+
+13
+00:00:53,590 --> 00:00:59,640
+Vaya, debería asegurarme de eliminar solo la expresión partes, no la muerte.
+
+14
+00:00:59,790 --> 00:01:04,270
+Entonces con eso volvemos al punto de partida en este momento no podemos hablar todo esto.
+
+15
+00:01:04,350 --> 00:01:11,390
+Ahora tenga en cuenta que todo es javascript y al final lo que estamos haciendo aquí con J es que X está muerto.
+
+16
+00:01:11,390 --> 00:01:16,790
+Lo estamos devolviendo con la declaración de devolución en el método de representación.
+
+17
+00:01:16,800 --> 00:01:23,310
+Ahora, hay algo importante que hay que tener en cuenta cuando se vuelve a renderizar algo
+
+18
+00:01:23,310 --> 00:01:31,330
+en la pantalla cuando decide que necesita actualizar la pantalla que ejecuta, representa Methot y no solo una expresión de
+
+19
+00:01:31,390 --> 00:01:32,820
+retorno para todo aquí.
+
+20
+00:01:33,030 --> 00:01:41,640
+De modo que todo lo que se encuentra dentro del método de renderizado se ejecuta cada vez que se vuelve a generar este componente y,
+
+21
+00:01:42,060 --> 00:01:43,790
+por lo tanto, podemos aprovecharlo.
+
+22
+00:01:43,860 --> 00:01:47,720
+Podemos agregar algún código aquí antes de devolver algo.
+
+23
+00:01:47,730 --> 00:01:52,400
+Agregaré una variable llamada personas aquí que se establecerá en NULL.
+
+24
+00:01:52,470 --> 00:01:54,880
+Ahora esto debería ser el predeterminado.
+
+25
+00:01:54,900 --> 00:01:57,650
+Podrías dar un regalo como cualquier otro nombre que te guste.
+
+26
+00:01:57,720 --> 00:02:00,060
+Luego agregaré una declaración IF normal.
+
+27
+00:02:00,120 --> 00:02:03,150
+Puedo hacer esto aquí porque no estoy dentro de J como X. Estoy dentro de mi código normal de JavaScript aquí y allá. Ahora quiero verificar si es estado mostrar personas.
+
+28
+00:02:03,180 --> 00:02:10,500
+Tenga en cuenta que show people es un booleano. Por lo tanto, es verdadero o falso.
+
+29
+00:02:10,500 --> 00:02:14,740
+No es necesario que necesariamente lo comparemos con verdadero o falso.
+
+30
+00:02:14,760 --> 00:02:17,930
+Podemos omitir esto, así que ahora tengo que
+
+31
+00:02:17,940 --> 00:02:26,460
+verificar y si esto es cierto, entonces quiero establecer mi variable personal en algún j como código X y siempre tener en cuenta.
+
+32
+00:02:26,790 --> 00:02:29,850
+hace lo que GSX compila al final.
+
+33
+00:02:29,910 --> 00:02:36,150
+También podría configurarlo para el resultado de volver a crear el elemento de creación, simplemente
+
+34
+00:02:36,140 --> 00:02:37,050
+Ahora voy a ajustar el código aquí.
+
+35
+00:02:37,290 --> 00:02:39,390
+Mis personas
+
+36
+00:02:39,420 --> 00:02:40,860
+Cortaré la definición allí con la persona que está adentro y la agregaré aquí.
+
+37
+00:02:41,190 --> 00:02:48,300
+Ahora lo que estoy haciendo es lo siguiente.
+
+38
+00:02:48,300 --> 00:02:50,310
+Por personas predeterminadas.
+
+39
+00:02:50,430 --> 00:02:51,450
+Esta variable es nula.
+
+40
+00:02:51,450 --> 00:02:52,970
+generarla aquí en mi código GSX.
+
+41
+00:02:53,160 --> 00:02:59,800
+Pero si esta persona de mostrar estado es una persona real que realmente tiene este código GSX y con eso puedo tomar la variable de esa persona y
+
+42
+00:02:59,800 --> 00:03:05,820
+Regreso al final así que si solo llaves de llamada puedo sacar personas aquí refiriéndome
+
+43
+00:03:05,820 --> 00:03:14,400
+a la variable de esa persona que ahora es Sieber por defecto o personas si Mostrar personas es verdadera y dado que
+
+44
+00:03:14,610 --> 00:03:22,230
+se vuelve fría cada vez que Rea comprueba si necesita volver a ejecutar esta página o Este componente debo
+
+45
+00:03:22,320 --> 00:03:29,010
+decir, ya que esto ocurre cada vez que se produce una preproducción, nos aseguramos de que siempre
+
+46
+00:03:29,030 --> 00:03:35,300
+tomemos en cuenta el estado más reciente e incluso no proporcionemos nada a las personas porque
+
+47
+00:03:35,310 --> 00:03:42,090
+ten en cuenta que una de las dos cosas que activan una actualización es un estado cambio.
+
+48
+00:03:42,120 --> 00:03:43,430
+Ahora con esto, déjenme guardar este archivo y volver a la aplicación.
+
+49
+00:03:43,500 --> 00:03:49,560
+Ahí vamos a la estafa. No vemos el error
+
+50
+00:03:49,570 --> 00:03:53,040
+Puedo relacionarme con la página 2, ver claramente que estamos usando la última versión.
+
+51
+00:03:53,280 --> 00:03:57,410
+Y ahora déjame hacer clic en alternar personas y preguntar antes de ver el mismo comportamiento.
+
+52
+00:03:57,660 --> 00:04:03,410
+Podemos leer esto alternar, pero ahora estamos usando esta forma más elegante de
+
+53
+00:04:03,460 --> 00:04:10,080
+tercerizar este cheque desde GSX. Regresamos a una variable que asignamos condicionalmente antes de regresar.
+
+54
+00:04:10,440 --> 00:04:16,840
+Aún en la función de renderizar.
+
+55
+00:04:16,920 --> 00:04:19,590
+Pero antes de devolver esto con papá, guardamos D. J. como XP return y, por lo tanto,
+
+56
+00:04:19,600 --> 00:04:27,560
+nuestra plantilla principal de este componente.
+
+57
+00:04:27,560 --> 00:04:28,050
+Podrías decir que lo mantenemos limpio y nos aseguramos de que solo tengamos esta pequeña referencia aquí.
+
+58
+00:04:28,050 --> 00:04:34,820
+Las personas en su interior ya sea en el extremo o nada o todas las personas.
+
+59
+00:04:34,830 --> 00:04:40,410
+Esta es la forma preferida de generar contenido
+
+60
+00:04:40,520 --> 00:04:46,470
+condicional y es la forma en que recomendaría usarlo.
+
+61
+00:04:46,470 --> 00:04:46,980
+&nbsp;

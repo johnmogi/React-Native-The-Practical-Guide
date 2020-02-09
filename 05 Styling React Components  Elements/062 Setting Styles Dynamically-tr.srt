@@ -1,0 +1,159 @@
+1
+00:00:02,200 --> 00:00:08,410
+Bu nedenle, The Last Lecture'da özetleniyorsa, Weber'de bekleyen stili dinamik olarak
+
+2
+00:00:08,410 --> 00:00:11,580
+ayarlayalım ki bizler kişileri göstermek üzereyiz.
+
+3
+00:00:11,620 --> 00:00:17,920
+Şimdiden burada dinamik olarak durumla nasıl render edebildiğimizi ve bazı GSX'i
+
+4
+00:00:17,920 --> 00:00:25,400
+bir değişkende depoladığımızı ve daha sonra bu değişkeni şablonumuzda veya iade işlevinde çıktırabileceğimizi
+
+5
+00:00:25,400 --> 00:00:26,660
+ya da söylemeliyiz.
+
+6
+00:00:26,910 --> 00:00:30,910
+Şimdi her zaman olduğu gibi burada her şey javascript.
+
+7
+00:00:31,000 --> 00:00:38,680
+Dolayısıyla düğmeye bir stil atarsak, Cauley ayraçları arasındaki bu bölüm herhangi bir javascript
+
+8
+00:00:38,680 --> 00:00:39,740
+ifadesi olabilir.
+
+9
+00:00:39,940 --> 00:00:46,330
+Birimiz için elbette bir javascript nesnesi stilleri tanımladığımız yerden geçirebiliriz veya
+
+10
+00:00:46,330 --> 00:00:48,600
+elbette stil özelliklerine ulaşabiliriz.
+
+11
+00:00:48,670 --> 00:00:51,080
+Affedersiniz, yaptığım gibi söylemeliyim değişken.
+
+12
+00:00:51,160 --> 00:00:54,350
+Bu stil değişkenini dinamik olarak ayarlayabiliriz.
+
+13
+00:00:54,350 --> 00:01:03,170
+Dolayısıyla, burada bu durum, eğer doğruysa, bu durum geçerliliğini gösterir; bu, Pearse'un görülebileceği anlamına gelir.
+
+14
+00:01:03,190 --> 00:01:10,030
+Son dersin ana hatlarını çizdiğim gibi butonun kırmızı bir arka planı olmalıdır çünkü bir
+
+15
+00:01:10,030 --> 00:01:12,780
+tıklama diğer taraftan kişileri kaldıracaktır.
+
+16
+00:01:12,910 --> 00:01:18,500
+Varsayılan kurulum, beyaz bir arka plan rengine sahip olmamalı, yeşil bir arka plan rengine sahip olmamalıdır.
+
+17
+00:01:18,790 --> 00:01:25,680
+Ve belki metin rengini beyaza ayarlamak istiyoruz, böylece normal renk mülküyle öne çıkıyor.
+
+18
+00:01:25,690 --> 00:01:29,860
+Şimdi bunu söylersem, yeşil bir arka plan rengim var.
+
+19
+00:01:29,980 --> 00:01:32,350
+Ona tıklarsak kişininkini görürüz.
+
+20
+00:01:32,490 --> 00:01:37,730
+Artık kişilerin kazançlı olması için kırmızı arka plan rengi alması lazım.
+
+21
+00:01:37,750 --> 00:01:44,110
+Bu yüzden yapabileceğimiz şey, bir kişinin değişkenini belirlediğimiz haliyle zaten var olan
+
+22
+00:01:44,110 --> 00:01:51,810
+İF bildirimimizde elbette bunu yapanın yanı sıra bu kişinin değişkenini belirlemekten başka yapacaklarımızı vermektir.
+
+23
+00:01:51,820 --> 00:01:58,630
+Ayrıca tarzı öğrenebilir ve stil nesnesinin açıkça sahip olduğu arka plan rengi özelliklerini ayarlayabilirim.
+
+24
+00:01:58,630 --> 00:02:03,640
+Elbette bunun gibi okumak için onu buraya kurduk.
+
+25
+00:02:03,970 --> 00:02:07,380
+Dolayısıyla bu tarz nesneye basitçe giriyoruz.
+
+26
+00:02:07,510 --> 00:02:10,900
+Yeni bir değer atamıyoruz, bu yüzden hala bir sabittir.
+
+27
+00:02:11,200 --> 00:02:15,610
+Ancak, özelliklerinden birine arka plan rengine yeni bir değer atadık.
+
+28
+00:02:16,060 --> 00:02:20,980
+Ve bu küçücük değişim, dinamik bir tasarıma sahip olduk.
+
+29
+00:02:21,070 --> 00:02:22,880
+Bu uygulamayı tekrar yükleyeyim.
+
+30
+00:02:23,050 --> 00:02:27,770
+Yeşil Düğme kırmızı düğme yeşil düğme vb.
+
+31
+00:02:28,210 --> 00:02:34,870
+Yani bu, hayır başını sarmak zorunda olduğun çok önemli bir şey, zaten yapmadıysan gösterir.
+
+32
+00:02:34,870 --> 00:02:36,580
+Her şey javascript.
+
+33
+00:02:36,640 --> 00:02:45,800
+Sanırım bu değişkeni dinamik olarak değiştirmeden önce bunu söylemiştim, tıpkı bu değişkeni dinamik olarak değiştirirken tıpkı bir
+
+34
+00:02:46,090 --> 00:02:50,530
+şeyi dinamik olarak değiştirirsek, burada javascript hakkında konuşuyoruz.
+
+35
+00:02:50,620 --> 00:02:56,230
+Stil nesnesini istediğiniz herhangi bir javascript koduyla değiştirebilir ve sonra
+
+36
+00:02:56,230 --> 00:03:01,360
+onu buraya bağladığınızda, basitçe nasıl düzenlenmiş olursanız olun uygulanacaktır.
+
+37
+00:03:01,390 --> 00:03:06,850
+Bu çok önemli bir yenileme ve bu size nasıl dinamik olarak hücreler atayabileceğinizi gösterir.
+
+38
+00:03:06,850 --> 00:03:09,010
+Şimdi sınıf isimleri olsa ne olacak.
+
+39
+00:03:09,040 --> 00:03:14,030
+Bunları dinamik olarak ayarlayabilir miyiz, sınıf isimleri listesini iletebilir miyiz?
+
+40
+00:03:14,230 --> 00:03:18,030
+Evet yapabiliriz ve bir sonraki dersin nasıl çalıştığını göstereceğim.

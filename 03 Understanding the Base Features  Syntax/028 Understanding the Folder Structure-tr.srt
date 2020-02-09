@@ -1,0 +1,419 @@
+1
+00:00:02,360 --> 00:00:06,360
+Son dersimizde projemizi yaratıcı tepki ile yarattık.
+
+2
+00:00:06,450 --> 00:00:11,980
+Ve bahsettiğim gibi, NPM'nin başlatıldığından emin olun, bu süreç, kodunuz üzerinde çalışırken her
+
+3
+00:00:11,980 --> 00:00:13,260
+zaman çalışıyor demektir.
+
+4
+00:00:13,290 --> 00:00:19,160
+Şimdi stüdyo kodu olan Microsoft ile oluşturulmuş klasörü açtım.
+
+5
+00:00:19,200 --> 00:00:22,030
+Kurs için kullanacağım fikir budur.
+
+6
+00:00:22,200 --> 00:00:25,430
+Ancak kullanmak istediğiniz herhangi bir fikir veya editörü kullanabilirsiniz.
+
+7
+00:00:25,500 --> 00:00:31,950
+Örneğin tüm bir web mağazası ve bir alternatif veya olağanüstü bir şey olurdu veya Adam veya sevdiğiniz
+
+8
+00:00:31,950 --> 00:00:33,000
+herhangi bir editör.
+
+9
+00:00:33,000 --> 00:00:38,850
+Şimdi burada bir tema ve bazı uzantılar yüklüyorum ve kullandığınız yapılandırmayı
+
+10
+00:00:39,140 --> 00:00:42,170
+bu videolara ekli PTF dokümanında bulabilirsiniz.
+
+11
+00:00:42,210 --> 00:00:48,150
+Aynı şeyi kullanmak istiyorsanız, ancak temayı ne olursa olsun favori ayarlarınızı kullanmaktan
+
+12
+00:00:48,150 --> 00:00:53,230
+çekinmeyin ve aynı miktarda dosyanın ve klasörün projenizde olması gerekir.
+
+13
+00:00:53,460 --> 00:00:58,890
+Dolayısıyla, sahip olduğumuz tüm dosya ve klasörleri dolaştıracağımızı kök düzeyinde öğrenelim, bir çift
+
+14
+00:00:58,890 --> 00:01:00,420
+yapılandırma dosyası elde edelim.
+
+15
+00:01:00,480 --> 00:01:03,010
+Buradaki kilit dosyaları temelde göz ardı edilebilir.
+
+16
+00:01:03,030 --> 00:01:07,800
+Onların göğüs kilitleme bağımlılıklarının kelimelerini kullanarak genel bağımlılıklarını kullanıyoruz.
+
+17
+00:01:07,800 --> 00:01:14,250
+Projemizin şapkaları paketlenmiş bitişik dosyada tanımlanmıştır ve orada üç tane askıya sahip olduğunuzu görebilirsiniz; bu
+
+18
+00:01:14,250 --> 00:01:18,360
+projede yer alan ve hepsi Create re-act uygulaması tarafından oluşturulmuştur.
+
+19
+00:01:18,540 --> 00:01:24,720
+Gördüğünüz gibi, burada açıkçası tepki aldığımızı görüyoruz, bunu tekrar inceleme aşamasında, 16 numaralı yeniden
+
+20
+00:01:24,720 --> 00:01:26,520
+yayınlanma aday sürümünü kullanıyorum.
+
+21
+00:01:26,520 --> 00:01:32,710
+Bu yeniden aktive edilmeli Dom aynı ve yeniden aktive komut dosyaları bahsettiğim gibi
+
+22
+00:01:32,760 --> 00:01:39,900
+tüm bu iş akışını sunan bir paket Bu geliştirme sunucusu yeni nesil javascript özellikleri destekliyor
+
+23
+00:01:39,990 --> 00:01:46,340
+ve bu projede pakette kullandığımız tüm bu şeyler komşu baba birkaç komut dosyası tanımlamak.
+
+24
+00:01:46,560 --> 00:01:51,000
+Bu komut dosyalarını NPM run ve ardından komut dosyası adı ile çalıştırabilirsiniz.
+
+25
+00:01:51,180 --> 00:01:57,060
+İstisna, NPM ile birlikte çalışmaya başlayarak komutu yürütmeye başlayabilir ve görebildiğiniz gibi
+
+26
+00:01:57,060 --> 00:02:02,680
+bu yeniden aktive komut dosyaları paketini kullanarak bazı başlangıç ​​komutlarını orada yürütebilirsiniz.
+
+27
+00:02:02,690 --> 00:02:03,730
+Bu sadece bir emir.
+
+28
+00:02:03,750 --> 00:02:08,900
+Bu paket bir yol kat eder ve bu komut bu geliştirme sunucusunu başlatmak olur.
+
+29
+00:02:08,940 --> 00:02:15,750
+Tüm kodumuzu izleyin kodumuzu derleyin ve kodunuzu optimize edin ve uygulamanızı dağıtmaya hazır olduğunuzda bunları
+
+30
+00:02:15,750 --> 00:02:21,360
+yapın NPM çalıştırın envanterini optimize etmek için onu çalıştırın ve insan sunucusunun
+
+31
+00:02:21,570 --> 00:02:28,740
+iradesini yerine getirmeyin, bunun yerine optimize edilmiş kodunuzu saklayın Bir klasör, çünkü şu anda burada
+
+32
+00:02:28,770 --> 00:02:30,090
+derlenmiş kodunuzu görmeyeceksiniz.
+
+33
+00:02:30,090 --> 00:02:31,770
+Her şey hafızada olur.
+
+34
+00:02:31,770 --> 00:02:35,190
+Ancak uygulamayı daha sonra kursta konuşlandırmak için geri geleceğim.
+
+35
+00:02:35,220 --> 00:02:37,140
+Jason'ın takip ettiği bu paketin konuşmasını kapatalım.
+
+36
+00:02:37,140 --> 00:02:44,710
+Şimdilik, düğüm modülleri klasörü, projemizin tüm bağımlılıklarını ve Suppe bağımlılıklarını tutar.
+
+37
+00:02:44,940 --> 00:02:46,780
+İşte bu yüzden çok şey var.
+
+38
+00:02:46,800 --> 00:02:53,130
+Sadece kollara tepki vermek ve komut dosyalarını yeniden harekete geçirmek zorunda kaldık, ancak komut dosyalarını yeniden hareket ettirmek diğer bağımlılıkları da çoktur.
+
+39
+00:02:53,130 --> 00:02:56,550
+Kodu derleyen ve böylece devam eden bütün bu küçük araçlar.
+
+40
+00:02:56,760 --> 00:02:59,820
+Nod modülleri klasörüne bir şey düzenlememelisiniz.
+
+41
+00:02:59,850 --> 00:03:06,510
+NPM kurulumunu proje klasörünüzde çalıştırırsanız otomatik olarak oluşturulur ve Yeniden Oluştur komut dosyaları
+
+42
+00:03:06,570 --> 00:03:08,680
+oluşturarak otomatik olarak yapılır.
+
+43
+00:03:08,850 --> 00:03:11,160
+Ortak klasör daha ilginç.
+
+44
+00:03:11,160 --> 00:03:16,070
+Temel olarak olsa sonunda web sunucusu tarafından hizmet alan kök klasördür.
+
+45
+00:03:16,080 --> 00:03:23,090
+Burada yalnızca dosyaları tutuyoruz, komut dosyalarını kaynak klasöre ekleyerek düzenleyebiliyoruz.
+
+46
+00:03:23,490 --> 00:03:26,580
+Burada bir önemli dosya endeksimiz var, h t m l.
+
+47
+00:03:26,700 --> 00:03:30,960
+Bu normal bir HGL sayfasıdır ve hala tek bir sayfadır.
+
+48
+00:03:30,980 --> 00:03:32,010
+Daha azımız var.
+
+49
+00:03:32,070 --> 00:03:35,760
+Bu projeye daha fazla HDMI sayfası eklemeyeceğiz.
+
+50
+00:03:35,820 --> 00:03:41,950
+Birden fazla sayfa projesi oluşturuyorsanız, birden fazla türde projeler oluşturursunuz, daha sonra yeniden
+
+51
+00:03:42,240 --> 00:03:43,630
+uygulama uygulaması oluşturamazsınız.
+
+52
+00:03:43,650 --> 00:03:47,690
+Tim buraya gelir ya da isterseniz kendi iş akışınıza ihtiyacınız var.
+
+53
+00:03:47,820 --> 00:03:54,820
+Sonuçta, komut dosyalarımızın bu yapı iş akışı tarafından enjekte edileceği tek sayfa.
+
+54
+00:03:54,840 --> 00:04:01,200
+İşte bu yüzden burada bir komut dosyası içeri aktarımı görmüyorsunuz ve bu dosyayı düzenleyebilirsiniz, ancak burada NEHTA
+
+55
+00:04:01,200 --> 00:04:02,160
+HTML kodu yazacağız.
+
+56
+00:04:02,340 --> 00:04:05,670
+Kimlik rotasıyla diff yılını vurgulamak istiyorum.
+
+57
+00:04:05,700 --> 00:04:11,910
+Bu önem kazanacak çünkü bu reaksiyon uygulamamızı daha sonra monte edeceğiz ve tabii
+
+58
+00:04:12,060 --> 00:04:14,160
+ki çalışıp tepki göstereceğiz.
+
+59
+00:04:14,160 --> 00:04:20,880
+Abwehr kütüphanelerini C-s kütüphanesi olarak veya bazı meta etiketler eklemek istemek için herhangi bir
+
+60
+00:04:20,880 --> 00:04:25,170
+ithalat eklemeniz gerekiyorsa o yıl DHV posta dosyasında yapabilirsiniz.
+
+61
+00:04:25,170 --> 00:04:26,930
+Onu burada daha çok yaşlandırabilirsiniz.
+
+62
+00:04:26,940 --> 00:04:33,480
+Follett'in orada komşusunu yeniden hareket ettirmek için bunu yapmak istiyor olabilirsiniz, çünkü yeniden eylem
+
+63
+00:04:33,480 --> 00:04:37,230
+uygulaması bize kutudan ilerici bir Web uygulaması sağlıyor.
+
+64
+00:04:37,260 --> 00:04:43,230
+ve bize uygulamanızla ilgili bazı meta veriler bulabildiğimiz manifestoyu bitişik sonbaharda veriyor.
+
+65
+00:04:43,230 --> 00:04:45,630
+En azından en basit olanı
+
+66
+00:04:45,630 --> 00:04:48,150
+Bizim için ilginç olan kaynak klasör.
+
+67
+00:04:48,270 --> 00:04:53,150
+Burada birkaç dosya alıyoruz ve bunlar aslında çalışacağımız dosyalardır.
+
+68
+00:04:53,240 --> 00:04:56,310
+Bu aslında tepki başvurumuzdur.
+
+69
+00:04:56,580 --> 00:04:58,380
+Şu anda bizim için en önemli şey.
+
+70
+00:04:58,380 --> 00:05:06,540
+Bir sonraki js dosyası Domino'daki bu kök elemanımıza h chimley dosyamıza erişir; bu nedenle
+
+71
+00:05:06,540 --> 00:05:12,000
+Kimliğe sahip kök dizini HVM dosyasında gördüğümüz bu Def'dir.
+
+72
+00:05:12,000 --> 00:05:20,500
+Bunu yaptığınız göreceğiniz gibi render yöntemini render yöntemiyle işler.
+
+73
+00:05:20,850 --> 00:05:29,940
+Şimdi, bir uygulama dosyasından Daut J. uzantısını içe aktardığımız bazı uygulama nesnesinin veya
+
+74
+00:05:30,060 --> 00:05:36,480
+öğenin bir referansı. S. otomatik olarak yapım iş akışımız tarafından eklendiğinden ve daha
+
+75
+00:05:36,480 --> 00:05:38,290
+sonra bu uygulamanın JS dosyasını düşündüğümüzü gözlemlediğimizden çıkarıldı.
+
+76
+00:05:38,290 --> 00:05:45,870
+Dolayısıyla, şu anda bu başlangıç ​​projesinde sahip olduğumuz ilk ve tek tekrar et
+
+77
+00:05:45,870 --> 00:05:47,010
+bileşenimizi görüyoruz.
+
+78
+00:05:47,070 --> 00:05:53,580
+Burada bazı GSX görüyoruz ve bir sonraki derslerde tam olarak burada gördüğümüz şeylere derinlemesine dalacağız.
+
+79
+00:05:53,880 --> 00:06:01,210
+Şimdilik, bu kaydırma bölümündeki tüm içeriği kaldıralım ve bir etiket ekleyelim.
+
+80
+00:06:01,240 --> 00:06:12,010
+Sayın Merhaba ben de tepki gösterelim elbette kapatalım ve sonra da kurtaralım.
+
+81
+00:06:12,010 --> 00:06:15,200
+Dosyalarınızı kaydetmeyi unutmayın, bu her zaman önemlidir.
+
+82
+00:06:15,240 --> 00:06:21,400
+NPM'nin çalışmaya başlaması bu yana, otomatik olarak bir derlemeyi tetikleyecektir.
+
+83
+00:06:21,580 --> 00:06:27,130
+Ve otomatik olarak sayfanızı yeniden yüklemelisiniz, bu yüzden eski içeriğiniz yerine bir tepki
+
+84
+00:06:27,190 --> 00:06:28,960
+uygulaması olduğum Merhaba'yı görmelisiniz.
+
+85
+00:06:29,050 --> 00:06:35,380
+Bununla birlikte, onun logosunu da kaldırabiliriz, hangisini düşürdüğünü sorma. Çünkü artık projemizde kullanmıyoruz.
+
+86
+00:06:35,380 --> 00:06:38,850
+Ve şimdi biraz daha temiz bir kaynak klasörü var.
+
+87
+00:06:38,860 --> 00:06:42,040
+Şimdi başka ne daha yaratmak yeniden yaratmak bizim için yaratmak.
+
+88
+00:06:42,070 --> 00:06:48,640
+stilleri tanımlayan C S S dosyasına doğru verdi, ancak bu sonbahara kadar kapsamı olmadığını söylüyorum.
+
+89
+00:06:48,640 --> 00:06:52,660
+Bu uygulamayı temelde bu applet caz dosyasında kullandığımız bazı
+
+90
+00:06:52,660 --> 00:07:00,370
+Bunlar hala küresel şekillendirme ve aslında bu dosyadaki ilk uygulama sınıfı tanımı hariç her şeyi
+
+91
+00:07:00,370 --> 00:07:07,240
+kaldıracağım ve hepimiz ona ulaştıktan sonra orada kaydedeceğiz. Bundan sonra da Stahl'ın küresel olduğunu
+
+92
+00:07:07,240 --> 00:07:14,540
+ve ne kullanılması gerektiğini düşündüğüm için bazı genel set başvurunuzun gövdesi için sizin kadar.
+
+93
+00:07:14,660 --> 00:07:20,020
+Kayıtlar servis görevlisi japes fall, adın otomatik olarak oluşturulan bir servis görevlisini kaydettirmek
+
+94
+00:07:20,260 --> 00:07:22,290
+için önemli olduğu anlamına gelir.
+
+95
+00:07:22,300 --> 00:07:26,490
+Bu, kutudan çıkan aşamalı Web Ebbe ile alâkalı.
+
+96
+00:07:26,560 --> 00:07:30,180
+Temel olarak, komut dosyalarımızı önceden çökertir.
+
+97
+00:07:30,220 --> 00:07:34,160
+Orada bir şey yapılandırmamız ve test dosyasına ihtiyacımız yok.
+
+98
+00:07:34,290 --> 00:07:36,880
+Kursun ilerleyen saatlerinde dalışa gireceğiz.
+
+99
+00:07:36,880 --> 00:07:44,380
+Temelde uygulamanızdaki örnek bileşenler için farklı birimler için birim testleri oluşturmamızı sağlar.
+
+100
+00:07:44,410 --> 00:07:51,670
+Bu genel kurulum ve koordinatların çoğunluğu APT veya James veya yarattığımız yeni
+
+101
+00:07:51,670 --> 00:07:52,630
+bileşenlerimizde çalışacaktır.
+
+102
+00:07:52,630 --> 00:07:58,260
+Konuştuğumuzda bu dosyayı analiz edelim, burada gördüğümüz sözdizimini anlamalısınız.
+
+103
+00:07:58,390 --> 00:08:01,990
+Logo dosyasını kaldırdığımız için bu logo içe aktarmadan kurtulalım.
+
+104
+00:08:01,990 --> 00:08:08,530
+ve tam da ne olduğunu ve uygulamanıza nasıl daha fazla bileşen eklediğimizi J S X'e dalıştıralım.
+
+105
+00:08:08,530 --> 00:08:09,730
+Artık onu gördüm

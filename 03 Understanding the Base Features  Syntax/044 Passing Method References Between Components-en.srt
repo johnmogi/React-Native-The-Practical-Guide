@@ -1,0 +1,339 @@
+1
+00:00:02,590 --> 00:00:08,460
+So let's say we want to call the switchNameHändler which I recognized also changes the age
+
+2
+00:00:08,460 --> 00:00:11,060
+so maybe the name wasn't chosen perfectly.
+
+3
+00:00:11,350 --> 00:00:17,200
+Let's say we want to call that not when clicking this button here or not only when clicking this button
+
+4
+00:00:17,770 --> 00:00:26,050
+but also let's say when clicking any paragraph here, the paragraph which can say it contains name and
+
+5
+00:00:26,050 --> 00:00:28,860
+age inside a person component.
+
+6
+00:00:29,440 --> 00:00:37,840
+Now for that in the person component, we could add onClick but now what? We can't call that handler method
+
+7
+00:00:37,840 --> 00:00:40,620
+it's in a different file in a different class.
+
+8
+00:00:40,900 --> 00:00:49,000
+Well we can actually pass a reference to this handler as a property to our component and this is no
+
+9
+00:00:49,000 --> 00:00:50,140
+fancy hack,
+
+10
+00:00:50,290 --> 00:00:53,330
+this is actually a very common pattern.
+
+11
+00:00:53,810 --> 00:00:59,620
+I'll first of all restructure this over multiple lines for all these components so that we have an easier
+
+12
+00:00:59,620 --> 00:01:06,460
+time seeing which properties we're passing and then let's say I don't even want to pass this for other
+
+13
+00:01:06,550 --> 00:01:09,630
+components but only for this usage of it,
+
+14
+00:01:10,030 --> 00:01:17,620
+so here I will add a new property which I'll name click and the name is totally up to you.
+
+15
+00:01:18,460 --> 00:01:23,160
+Here I will pass a reference to this switchNameHandler.
+
+16
+00:01:23,410 --> 00:01:30,460
+So basically what I also did here, this switchNameHandler on the click on the button, here I'm passing
+
+17
+00:01:30,460 --> 00:01:34,740
+it as a reference to this click property.
+
+18
+00:01:35,020 --> 00:01:45,190
+And now we can use this click property in person.js. There I now can simply call props click because
+
+19
+00:01:45,190 --> 00:01:48,310
+click is the name of the property I defined here
+
+20
+00:01:48,610 --> 00:01:52,740
+and this will execute this function which I pass as a reference.
+
+21
+00:01:52,780 --> 00:02:00,460
+So if we save all the files app.js and person.js, we should see that in our application we can
+
+22
+00:02:00,460 --> 00:02:05,380
+of course still click this button to change the name of Maximillian and the age of Stephanie.
+
+23
+00:02:05,590 --> 00:02:10,190
+But if I reload again, we can also click this paragraph with Manu here,
+
+24
+00:02:10,310 --> 00:02:19,120
+you'll also see it changed the name and the years. This is something important to understand, an important pattern,
+
+25
+00:02:19,320 --> 00:02:28,940
+you can pass methods also as props so that you can call a method which might change the state in another
+
+26
+00:02:29,160 --> 00:02:34,200
+component which doesn't have direct access to the state and which shouldn't have direct access to the
+
+27
+00:02:34,200 --> 00:02:35,220
+state.
+
+28
+00:02:35,220 --> 00:02:41,460
+It's a common pattern and it's important to know, you can pass down click handlers which allow you to
+
+29
+00:02:41,460 --> 00:02:45,150
+change data in the parent component, in the app component
+
+30
+00:02:45,150 --> 00:02:55,020
+in this case for the person component. Maybe we also want to pass a value to our function,
+
+31
+00:02:55,020 --> 00:03:01,510
+maybe here switchNameHandler should receive the new name, so that here where I hardcoded Maximilien
+
+32
+00:03:01,530 --> 00:03:06,730
+as the new name I actually set name equal to new name.
+
+33
+00:03:06,740 --> 00:03:10,390
+Now how do we pass that data?
+
+34
+00:03:10,390 --> 00:03:12,600
+There are two ways of doing that,
+
+35
+00:03:12,610 --> 00:03:16,910
+the first is that you call bind, here
+
+36
+00:03:16,960 --> 00:03:19,690
+you may simply bind this,
+
+37
+00:03:19,780 --> 00:03:26,820
+this controls what this inside the function will refer to and by binding it to this here
+
+38
+00:03:26,850 --> 00:03:31,840
+outside of the function we're binding it to the class might look strange but is a typical way of handling
+
+39
+00:03:31,850 --> 00:03:36,110
+this issue in javascript, we wouldn't have need to do that though.
+
+40
+00:03:36,430 --> 00:03:42,340
+But we can use this syntax because I also want to pass the second argument to bind.
+
+41
+00:03:42,610 --> 00:03:50,710
+This now is a list of arguments actually which will be passed into our function and here this should be the
+
+42
+00:03:50,710 --> 00:03:51,610
+new name,
+
+43
+00:03:51,790 --> 00:03:54,150
+so here this could be a Maximillian
+
+44
+00:03:54,410 --> 00:03:56,270
+and to really see a difference,
+
+45
+00:03:56,620 --> 00:04:02,290
+let's copy that bind code and let's also bind it down here when we pass the function as a reference
+
+46
+00:04:02,290 --> 00:04:03,480
+to the click prop
+
+47
+00:04:03,970 --> 00:04:11,230
+and let's change this to Max with an exclamation mark here, so that we can see a difference depending
+
+48
+00:04:11,230 --> 00:04:13,090
+on where we clicked.
+
+49
+00:04:13,380 --> 00:04:21,030
+If we now save this with bind added and this received as an argument and the switchNameHandler, let's
+
+50
+00:04:21,040 --> 00:04:28,210
+see what happens if I click Switch Name and still changing it to Maximilien here which makes sense because
+
+51
+00:04:28,210 --> 00:04:34,130
+this is what I bound it to but that it works confirms that it works with receiving an argument and if I
+
+52
+00:04:34,130 --> 00:04:41,460
+click on the I'm Manu paragraph, you'll see that it change to Max with an exclamation mark.
+
+53
+00:04:41,480 --> 00:04:44,060
+So this is a way of passing an argument,
+
+54
+00:04:44,120 --> 00:04:45,990
+it's not the only way though,
+
+55
+00:04:46,190 --> 00:04:51,990
+I will leave one of the two code snippets here with bind to show you how this works,
+
+56
+00:04:52,070 --> 00:04:54,580
+I'll also show you an alternative syntax though.
+
+57
+00:04:54,770 --> 00:04:57,840
+So I'll leave bind here where we pass it as props,
+
+58
+00:04:58,010 --> 00:05:00,560
+but we could use this new syntax I'm showing you now
+
+59
+00:05:00,570 --> 00:05:11,510
+also down there. This news syntax looks different, here on onClick I actually execute arrow function which
+
+60
+00:05:11,510 --> 00:05:13,650
+takes no arguments though
+
+61
+00:05:13,690 --> 00:05:16,070
+theoretically it would receive an event object
+
+62
+00:05:16,070 --> 00:05:16,980
+by the way.
+
+63
+00:05:17,420 --> 00:05:18,980
+but I won't use that here,
+
+64
+00:05:19,550 --> 00:05:27,020
+and then simply as a function body returns this function call.
+
+65
+00:05:27,020 --> 00:05:29,120
+Now here are a couple of things you have to understand,
+
+66
+00:05:29,120 --> 00:05:37,550
+first of all, when using an arrow function this implicitly adds a return keyword in front of the code
+
+67
+00:05:37,550 --> 00:05:39,890
+which comes directly after the arrow
+
+68
+00:05:40,070 --> 00:05:42,230
+if it's all written in one line.
+
+69
+00:05:42,230 --> 00:05:46,730
+The alternative is to wrap this in curly braces and write a normal function body.
+
+70
+00:05:47,210 --> 00:05:51,860
+So this gets returned and what I return is a function call,
+
+71
+00:05:51,860 --> 00:05:54,140
+this is why I added the parentheses.
+
+72
+00:05:54,410 --> 00:06:01,700
+Now in an earlier lecture, I said that you shouldn't call this and that was true but here this is not
+
+73
+00:06:01,700 --> 00:06:03,550
+getting executed immediately.
+
+74
+00:06:03,560 --> 00:06:10,250
+Instead what we pass here is an anonymous function which will be executed on a click and which then
+
+75
+00:06:10,250 --> 00:06:13,550
+returns the result of this function getting executed.
+
+76
+00:06:13,550 --> 00:06:17,900
+Which of course simply leads to this function getting executed.
+
+77
+00:06:17,900 --> 00:06:26,270
+This is useful because now here we can easily pass our data, Maximillian, with two exclamation marks
+
+78
+00:06:26,270 --> 00:06:31,760
+maybe. If I now save this and I click Switch Name,
+
+79
+00:06:31,760 --> 00:06:35,000
+we see Maximillian with two exclamation marks.
+
+80
+00:06:35,000 --> 00:06:41,930
+Now this is a very convenient syntax but it can be inefficient, react can re-render certain things
+
+81
+00:06:41,930 --> 00:06:48,950
+in your app too often so I don't necessarily recommend using this if you don't have to, use the bind
+
+82
+00:06:48,950 --> 00:06:50,150
+syntax instead
+
+83
+00:06:50,180 --> 00:06:56,590
+if you can. Still I'll leave it here, you may use it and depending on the size of your application you also
+
+84
+00:06:56,660 --> 00:06:59,520
+might not feel that big of a performance hit
+
+85
+00:06:59,780 --> 00:07:03,100
+but be aware that this can be inefficient.

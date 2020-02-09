@@ -1,0 +1,211 @@
+1
+00:00:02,170 --> 00:00:09,830
+W ostatnim wykładzie rozpoczęliśmy od umieszczenia listy przez odwzorowanie tablicy na tablicę z elementami jsx i jest
+
+2
+00:00:09,910 --> 00:00:13,230
+to typowy wzorzec wyjściowych list w reakcji.
+
+3
+00:00:13,420 --> 00:00:17,760
+Używasz javascript ponieważ hej, wszystko jest javascript, nie mogę
+
+4
+00:00:17,770 --> 00:00:20,250
+powiedzieć tego wystarczająco. Nadal mamy
+
+5
+00:00:20,410 --> 00:00:22,980
+kilka rzeczy do poprawienia, na
+
+6
+00:00:22,990 --> 00:00:25,630
+przykład to kluczowe ostrzeżenie, które otrzymujemy.
+
+7
+00:00:25,700 --> 00:00:27,400
+Wrócę do tego wkrótce,
+
+8
+00:00:27,550 --> 00:00:32,900
+jednak zanim to zrobię, zobaczmy, jak faktycznie możemy manipulować tą tablicą, i
+
+9
+00:00:33,370 --> 00:00:37,050
+do tego pozwól mi dodać nowy detektor kliknięć.
+
+10
+00:00:37,330 --> 00:00:44,140
+Wewnątrz naszych komponentów osobistych mamy tutaj już słuchacza kliknięć w pierwszym akapicie i
+
+11
+00:00:44,140 --> 00:00:49,150
+tam wykonujemy to wsparcie kliknięcia. Przed naszą zmianą
+
+12
+00:00:49,150 --> 00:00:52,700
+tam, wtedy nazwaliśmy switchNameHandler.
+
+13
+00:00:53,020 --> 00:00:55,090
+Teraz usunę tę metodę, nie
+
+14
+00:00:55,180 --> 00:00:58,320
+będę już jej wywoływać z dowolnego miejsca w
+
+15
+00:00:58,540 --> 00:01:01,080
+mojej aplikacji, zamiast tego chcę dodać nowy
+
+16
+00:01:01,190 --> 00:01:03,930
+handler, nazam go deletePersonHandler i możesz być
+
+17
+00:01:03,940 --> 00:01:08,450
+w stanie odgadnąć, co to zrobi. Tutaj chcę usunąć osobę
+
+18
+00:01:08,530 --> 00:01:15,040
+z mojej grupy osób i chcę ją wykonać po kliknięciu tego pierwszego
+
+19
+00:01:15,040 --> 00:01:16,490
+akapitu w osobę.
+
+20
+00:01:16,600 --> 00:01:20,650
+Więc znowu props kliknięty jest wykonywany jako metoda, więc
+
+21
+00:01:20,830 --> 00:01:28,000
+powinienem dodać do mojej osoby propozycję kliknięcia tutaj i tam, powinienem odwołać się do tego deletePersonHandler
+
+22
+00:01:30,280 --> 00:01:36,580
+Teraz, kiedy klikam osobę, którą chcę wykonać tę metodę i chcę ją usunąć tu
+
+23
+00:01:36,580 --> 00:01:42,340
+oczywiście, teraz muszę o tym wiedzieć, bo tu wypisujemy listę dynamiczną, nie wiem
+
+24
+00:01:42,340 --> 00:01:43,700
+do tej pory.
+
+25
+00:01:43,810 --> 00:01:48,730
+Dobrą rzeczą jest to, że ta metoda odwzorowuje również drugi
+
+26
+00:01:48,940 --> 00:01:55,960
+argument, oprócz osoby, której używam do tej pory, mogę dodać drugi argument lub otrzymać go,
+
+27
+00:01:56,050 --> 00:02:04,120
+powinienem powiedzieć, indeks w tablicy i jako notkę boczną, jeśli używasz więcej niż jeden argument w funkcji
+
+28
+00:02:04,120 --> 00:02:07,480
+strzałki ES6, musisz zawijać argumenty w nawiasach.
+
+29
+00:02:07,480 --> 00:02:09,640
+Dostajemy ten indeks za
+
+30
+00:02:09,650 --> 00:02:15,280
+darmo, przekazujemy go automatycznie i chcę go przekazać do deletePersonHandler.
+
+31
+00:02:15,490 --> 00:02:23,430
+Będę używał składni, w której wykonałem tutaj funkcję strzałki, i dlatego teraz mogę przekazywać indeks w
+
+32
+00:02:23,440 --> 00:02:24,430
+ten sposób.
+
+33
+00:02:24,430 --> 00:02:28,670
+Alternatywą byłoby związanie tego indeksu przecinka.
+
+34
+00:02:29,290 --> 00:02:32,920
+Teraz możemy to odebrać w usłudze deletePersonHandler,
+
+35
+00:02:33,010 --> 00:02:42,010
+ale oczywiście potrzebuję przygotować się do indeksu osób i mogę teraz użyć go tutaj, aby odpowiednio
+
+36
+00:02:42,010 --> 00:02:43,840
+zaktualizować mój stan.
+
+37
+00:02:43,840 --> 00:02:51,250
+Przede wszystkim wezmę wszystkie osoby, aby dotrzeć do osób z tego stanu, a następnie
+
+38
+00:02:51,250 --> 00:02:54,820
+chcę stworzyć nową wersję tablicy tej osoby.
+
+39
+00:02:54,820 --> 00:03:02,420
+Po prostu chcę zadzwonić do osób splice i chcę rozpocząć łączenie indeksu osoby i splatanie jednego elementu.
+
+40
+00:03:02,440 --> 00:03:10,570
+To po prostu usuwa jeden element z tablicy, a następnie mogę nazwać ten stan zestawu i
+
+41
+00:03:10,840 --> 00:03:18,120
+ustawić osoby na osoby na stałą mojej osoby, która została zaktualizowana przez splicing jednego elementu.
+
+42
+00:03:18,340 --> 00:03:21,190
+Jeśli zastanawiasz się, w jaki sposób mogę
+
+43
+00:03:21,190 --> 00:03:27,970
+edytować stałą, pamiętaj, że tablice i obiekty są typami referencyjnymi, więc nie przypisałem nowej wartości do
+
+44
+00:03:27,970 --> 00:03:29,960
+stałej, tylko trzymam wskaźnik, zmieniłem
+
+45
+00:03:29,980 --> 00:03:32,480
+tylko ten element, który był wskazując,
+
+46
+00:03:32,500 --> 00:03:35,840
+że to tylko ogólna wiedza javascript.
+
+47
+00:03:35,980 --> 00:03:41,590
+Tak więc ustawiamy stan osób na nowe osoby, osoby zaktualizowane, a to
+
+48
+00:03:41,590 --> 00:03:44,650
+podejście ma wadę, którą naprawimy wkrótce.
+
+49
+00:03:44,950 --> 00:03:46,400
+Spróbujmy jednak, pozwól
+
+50
+00:03:46,540 --> 00:03:53,660
+mi zapisać ten plik i wróćmy, aby przełączać osoby i otrzymujemy te same ostrzeżenia, co poprzednio.
+
+51
+00:03:53,860 --> 00:03:57,870
+Klikamy na akapicie, jak widać, to działa.
+
+52
+00:03:57,880 --> 00:04:03,910
+Możemy teraz usunąć osoby i dokładnie te, na które kliknąłeś, np. Mnau lub Max.
+
+53
+00:04:03,940 --> 00:04:10,300
+Powiedziałem jednak, że to podejście ma wadę i głębiej zagłębię się w tę wadę następnego wykładu.

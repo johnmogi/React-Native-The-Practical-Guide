@@ -1,0 +1,187 @@
+1
+00:00:02,170 --> 00:00:07,570
+En la última conferencia, establecimos el estado y te dije que sería especial que aún no
+
+2
+00:00:07,570 --> 00:00:08,310
+lo veamos.
+
+3
+00:00:08,440 --> 00:00:13,990
+Todo lo que hacemos ahora es administrar nuestros datos allí y luego acceder a eso en nuestro código GSX.
+
+4
+00:00:14,000 --> 00:00:14,540
+Sí.
+
+5
+00:00:14,560 --> 00:00:15,880
+Archivo JS.
+
+6
+00:00:16,340 --> 00:00:19,740
+Hagamos clic ahora en este botón.
+
+7
+00:00:19,810 --> 00:00:23,430
+Hacemos esto agregando un clic.
+
+8
+00:00:23,440 --> 00:00:24,660
+Ahora esto es importante
+
+9
+00:00:24,670 --> 00:00:31,930
+En el javascript normal y en la edad normal, para ser precisos, sería al hacer clic con una c minúscula ahora en
+
+10
+00:00:31,930 --> 00:00:34,170
+JS X y eso es realmente importante.
+
+11
+00:00:34,300 --> 00:00:37,180
+Está en clic con una C. mayúscula
+
+12
+00:00:37,420 --> 00:00:45,580
+Aún así, no asignamos como valor el código que queremos ejecutar con un clic y allí
+
+13
+00:00:45,580 --> 00:00:50,000
+podemos usar llaves para ejecutar algún código dinámico.
+
+14
+00:00:50,020 --> 00:00:58,240
+Ahora, por lo general, desea ejecutar una función de su clase, un método llamado.
+
+15
+00:00:58,460 --> 00:01:06,080
+Y es una convención para dar es un nombre como el siguiente controlador de nombre de interruptor tal vez.
+
+16
+00:01:06,100 --> 00:01:12,700
+es necesario que sigas este patrón para que puedas Nómbralo como quieras, por supuesto, es una buena práctica nombrarlo así.
+
+17
+00:01:12,700 --> 00:01:20,110
+Ahora el primer nombre de cambio de parte depende totalmente de ti, pero normalmente usas el controlador aquí para indicar que este
+
+18
+00:01:20,110 --> 00:01:24,910
+es un método que no estás llamando activamente pero que estás asignando como un
+
+19
+00:01:24,910 --> 00:01:26,260
+controlador de eventos, no
+
+20
+00:01:27,470 --> 00:01:31,570
+Así que cambiar el controlador de nombre ahora debería ser una función.
+
+21
+00:01:31,970 --> 00:01:38,280
+Ahora bien, si acaba de decir igual en este momento, es exactamente la misma sintaxis que para la propiedad del estado.
+
+22
+00:01:38,570 --> 00:01:43,540
+Pero si asignamos una función como un valor aquí, básicamente se convierte en un método.
+
+23
+00:01:43,700 --> 00:01:49,390
+Todavía es una propiedad que podría decirse, pero una propiedad que tiene una función que se puede ejecutar aquí.
+
+24
+00:01:49,440 --> 00:01:53,330
+También úselo como función de seis flechas.
+
+25
+00:01:53,330 --> 00:01:56,070
+Tenga en cuenta que esto es solo una función normal.
+
+26
+00:01:56,070 --> 00:02:01,610
+El final y allí ahora quiero editar mi estado.
+
+27
+00:02:01,890 --> 00:02:05,950
+Los Furbies antes de hacer esto veamos si podemos llamar eso con éxito.
+
+28
+00:02:05,950 --> 00:02:13,450
+Diré que el registro de Konsole se recopiló para que podamos ver algo en la consola una vez que se hizo clic.
+
+29
+00:02:13,930 --> 00:02:22,120
+Iré a mi oyente de clics y entre los brazales de Akali ahora puedo ejecutar este manejador de nombres
+
+30
+00:02:22,750 --> 00:02:25,330
+de cambio y no agregar paréntesis.
+
+31
+00:02:25,420 --> 00:02:26,890
+No hagas esto
+
+32
+00:02:26,890 --> 00:02:33,850
+de inmediato una vez que se vuelva a representar el dom. Ya que ejecuta esta función con los paréntesis.
+
+33
+00:02:33,850 --> 00:02:35,070
+Esto lo ejecutaría
+
+34
+00:02:35,380 --> 00:02:43,330
+Solo queremos pasar una referencia y lo hacemos usando esto y luego refiriéndonos a esa
+
+35
+00:02:43,330 --> 00:02:46,340
+propiedad que tiene una función importante.
+
+36
+00:02:46,720 --> 00:02:54,160
+Si no usa la sintaxis aquí básicamente, donde asigna una función a una propiedad, podría decir
+
+37
+00:02:54,160 --> 00:03:01,030
+que encontrará errores si trata de usar esto, como lo hará pronto en esto.
+
+38
+00:03:01,030 --> 00:03:08,830
+¿Qué función de controlador de nombres, porque esto no se referirá a la clase en tiempo de ejecución simplemente para usted cómo
+
+39
+00:03:08,830 --> 00:03:09,090
+hacerlo?
+
+40
+00:03:09,100 --> 00:03:12,370
+Esto funciona en IIS 5 javascript.
+
+41
+00:03:12,580 --> 00:03:18,170
+Al usar esto como 6 de Sendak, eludimos este problema que se volverá importante más adelante.
+
+42
+00:03:18,250 --> 00:03:25,480
+Por ahora es importante no agregar paréntesis aquí solo pasa una referencia a esta función con la que
+
+43
+00:03:25,480 --> 00:03:26,530
+guarda este archivo.
+
+44
+00:03:26,710 --> 00:03:33,520
+Y no abramos la consola en las herramientas de desarrollador y haga clic en Cambiar nombre y debería ver que se hizo clic
+
+45
+00:03:33,970 --> 00:03:35,750
+en sus herramientas de desarrollador aquí.
+
+46
+00:03:36,840 --> 00:03:38,480
+Ahora eso es bueno
+
+47
+00:03:38,490 --> 00:03:43,230
+Ahora cambiemos el estado, haremos esto en la próxima conferencia.

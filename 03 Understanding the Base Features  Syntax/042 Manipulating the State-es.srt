@@ -1,0 +1,223 @@
+1
+00:00:02,220 --> 00:00:06,630
+En la última conferencia, ejecutamos el controlador de nombre de cambio al hacer clic.
+
+2
+00:00:06,690 --> 00:00:09,370
+Ahora queremos manipular el estado en el clic.
+
+3
+00:00:09,780 --> 00:00:18,450
+Así que comente esta declaración de bloqueo de consola y simplemente podríamos hacer este estado para llegar a esta propiedad
+
+4
+00:00:18,450 --> 00:00:19,590
+de estado aquí.
+
+5
+00:00:19,710 --> 00:00:22,870
+Y como mencioné, esto solo funcionará cuando se use esta sintaxis.
+
+6
+00:00:22,890 --> 00:00:29,450
+Me doy cuenta de que este año no se referirá a la clase y, por lo tanto, no podrá llegar a esa propiedad estatal.
+
+7
+00:00:29,560 --> 00:00:39,090
+Pero funcionará también, entonces las personas del estado pueden acceder a la persona uno y establecer el nombre de Maximillian
+
+8
+00:00:39,090 --> 00:00:41,170
+con mi nombre completo.
+
+9
+00:00:41,250 --> 00:00:45,360
+Guardemos esto y veamos qué pasa si ejecutamos este código.
+
+10
+00:00:45,570 --> 00:00:51,300
+Ya recibimos una advertencia aquí, pero ignorémosla por el momento y dejemos que Slick cambie de nombre.
+
+11
+00:00:51,300 --> 00:00:53,110
+Todavía vemos Macs aquí.
+
+12
+00:00:53,520 --> 00:01:01,110
+Bueno, como dije, recibimos una advertencia sobre esto, no deberíamos mutar, lo que significa cambiar el estado
+
+13
+00:01:01,110 --> 00:01:02,000
+directamente así.
+
+14
+00:01:02,160 --> 00:01:07,050
+Re-act no lo reconocerá y no aceptará este cambio.
+
+15
+00:01:07,140 --> 00:01:09,720
+Entonces no hagas esto
+
+16
+00:01:09,720 --> 00:01:17,910
+En su lugar, use un método especial para volver a actuar que le da a todos ustedes acceso a esto con esto y luego se establece el estado.
+
+17
+00:01:17,910 --> 00:01:22,700
+No hemos definido este método, pero recuerde que ampliamos el componente.
+
+18
+00:01:22,920 --> 00:01:29,820
+Y esto está disponible en la biblioteca de acciones y el objeto componente tiene un método de
+
+19
+00:01:29,850 --> 00:01:30,760
+estado establecido.
+
+20
+00:01:31,130 --> 00:01:38,700
+Este es un método que nos permite actualizar esta propiedad de estado especial aquí y luego
+
+21
+00:01:38,790 --> 00:01:47,880
+nos aseguraremos de que el reactivo conozca como Actualización y actualizaciones que Dawn dijo que el estado toma un
+
+22
+00:01:48,330 --> 00:01:54,290
+objeto como argumento y fusionaremos lo que encontremos aquí con nuestro estado actual.
+
+23
+00:01:54,300 --> 00:02:03,660
+Entonces, si escucho dicha persona en un conjunto actualizado, se fusionará con los datos existentes.
+
+24
+00:02:03,790 --> 00:02:13,630
+otro estado aquí que sea de algún otro valor, entonces esto no se tocaría, incluso si solo actualizamos personas.
+
+25
+00:02:13,630 --> 00:02:15,670
+Entonces, si tuviéramos algún
+
+26
+00:02:15,850 --> 00:02:16,990
+No está claro a qué me refiero.
+
+27
+00:02:16,990 --> 00:02:17,950
+Deja que te enseñe.
+
+28
+00:02:18,190 --> 00:02:26,590
+Estoy copiando personas y, básicamente, agrego esto como una propiedad en el objeto que voy a utilizar como mi
+
+29
+00:02:26,590 --> 00:02:27,550
+actualización aquí.
+
+30
+00:02:27,580 --> 00:02:37,240
+Así que estoy diciendo que dicho estado y dicho estado toma este nuevo objeto donde actualizo mi es donde solo
+
+31
+00:02:37,240 --> 00:02:45,410
+cambio a la primera persona o tal vez también cambiemos Stephani cambiemos su edad a 27 años.
+
+32
+00:02:45,440 --> 00:02:54,850
+Ahora lo que haremos lo que hará la reactivación para nosotros es mirar nuestro estado y ver qué parte de él estamos anulando.
+
+33
+00:02:54,850 --> 00:02:56,770
+Estamos cambiando monederos.
+
+34
+00:02:56,860 --> 00:03:06,060
+No descartará todos los estados, sino que simplemente fusionará el estado anterior con el nuevo y anulará las revisiones ya
+
+35
+00:03:06,120 --> 00:03:10,340
+que definimos claramente un nuevo Worthen de personas aquí.
+
+36
+00:03:10,480 --> 00:03:16,020
+Pero dejaremos nuestro estado intacto porque no estamos diciendo nada al respecto aquí y
+
+37
+00:03:16,040 --> 00:03:17,030
+no se descartará.
+
+38
+00:03:17,050 --> 00:03:18,520
+Lo cual por supuesto es algo bueno.
+
+39
+00:03:18,550 --> 00:03:23,410
+No querrás tener que actualizar todo sobre tu estado cada vez que quieras cambiar solo
+
+40
+00:03:23,410 --> 00:03:25,250
+una pequeña pieza al respecto.
+
+41
+00:03:25,330 --> 00:03:32,240
+Entonces con eso veamos ahora qué sucede si guardamos este archivo si lo guardamos ahora y volvemos a
+
+42
+00:03:32,230 --> 00:03:38,360
+cargar tiap y hago clic en Cambiar nombre miro Max y miro 26 años allá abajo.
+
+43
+00:03:38,550 --> 00:03:47,910
+Usted ve que es Maximiliano y 27 años ahora el dormitorio se actualizó porque Re-Act reconoce que el estado
+
+44
+00:03:47,910 --> 00:03:52,500
+de nuestra replicación cambia y esto realmente es algo especial.
+
+45
+00:03:52,530 --> 00:03:57,650
+Hay muchas cosas que llevan a reaccionar para actualizar el amanecer.
+
+46
+00:03:57,660 --> 00:04:01,480
+En realidad, solo hay dos estados cambiantes.
+
+47
+00:04:02,040 --> 00:04:05,550
+Y qué más puedes ver en acción.
+
+48
+00:04:06,440 --> 00:04:08,780
+Prop. Cambiamos de estado.
+
+49
+00:04:08,810 --> 00:04:16,190
+Eso es bueno, pero tenga en cuenta lo que realmente producimos para cada persona que se define y este componente de persona
+
+50
+00:04:16,640 --> 00:04:18,580
+y allí no usamos el estado.
+
+51
+00:04:18,740 --> 00:04:23,390
+Y como dije, no podemos usarlo allí porque usa la sintaxis de esta función.
+
+52
+00:04:23,990 --> 00:04:27,440
+Aquí usamos accesorios y eso es lo que Obert reacciona.
+
+53
+00:04:27,440 --> 00:04:32,690
+Tenga cuidado con los cambios de estado o prop's.
+
+54
+00:04:32,720 --> 00:04:39,290
+Básicamente analiza codificarlo ya renderizado para el Dom y el código que ahora representaría si fuera
+
+55
+00:04:39,290 --> 00:04:45,290
+Re-Read para todo y luego actualiza el Dom existente en todos los lugares donde
+
+56
+00:04:45,290 --> 00:04:53,600
+necesita actualizarse para reflejar su nuevo estado y prop's. nuevo estado y en realidad tiene nuevos apoyos en persona, sí.

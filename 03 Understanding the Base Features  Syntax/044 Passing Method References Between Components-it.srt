@@ -1,0 +1,339 @@
+1
+00:00:02,590 --> 00:00:08,460
+Quindi diciamo che vogliamo chiamare il nome dell'interruttore hĂ¤ndler che ho riconosciuto tutte le modifiche D. H. Quindi forse il nome non è stato scelto alla perfezione.
+
+2
+00:00:08,460 --> 00:00:11,060
+Supponiamo che tu voglia chiamare questo non quando
+
+3
+00:00:11,350 --> 00:00:17,200
+clicchi su questo pulsante qui o non solo quando fai clic su questo pulsante, ma anche che
+
+4
+00:00:17,770 --> 00:00:26,050
+quando fai clic su un paragrafo sei il paragrafo che può dire che contiene il nome e l'età all'interno di un componente di una persona.
+
+5
+00:00:26,050 --> 00:00:28,860
+Ora per quello nel componente persona potremmo
+
+6
+00:00:29,440 --> 00:00:37,840
+aggiungere al clic, ma ora quello che possiamo chiamare quel metodo gestore è in un file diverso in una classe diversa.
+
+7
+00:00:37,840 --> 00:00:40,620
+Bene, possiamo effettivamente passare un riferimento
+
+8
+00:00:40,900 --> 00:00:49,000
+a questo gestore come una proprietà del nostro componente e questo non è un trucco di fantasia.
+
+9
+00:00:49,000 --> 00:00:50,140
+Questo è in realtà un modello molto comune.
+
+10
+00:00:50,290 --> 00:00:53,330
+Beh, prima di tutto la ristrutturazione è su più
+
+11
+00:00:53,810 --> 00:00:59,620
+righe per tutti questi componenti in modo da avere un tempo più semplice per vedere quali proprietà
+
+12
+00:00:59,620 --> 00:01:06,460
+stiamo passando e quindi diciamo che non voglio passare questo per tutti i componenti ma solo per questo ufficio di utilizzo.
+
+13
+00:01:06,550 --> 00:01:09,630
+Quindi qui aggiungerò una nuova proprietà che chiamerà Plek e il nome è totalmente da te.
+
+14
+00:01:10,030 --> 00:01:17,620
+Qui passerò un riferimento a questo gestore del nome dell'interruttore.
+
+15
+00:01:18,460 --> 00:01:23,160
+Quindi, in pratica, quello che ho fatto anche qui con questo
+
+16
+00:01:23,410 --> 00:01:30,460
+nome gestore sul pulsante Fare clic sul pulsante qui sto passando come riferimento a questa proprietà clic.
+
+17
+00:01:30,460 --> 00:01:34,740
+E ora possiamo usare questa proprietà di clic e la persona J. S. lì ora posso semplicemente chiamare il click di prop perché
+
+18
+00:01:35,020 --> 00:01:45,190
+click è il nome della proprietà definita qui.
+
+19
+00:01:45,190 --> 00:01:48,310
+E questo eseguirà questa funzione che passo come riferimento.
+
+20
+00:01:48,610 --> 00:01:52,740
+Quindi, se salviamo tutti i file come chat in-person, dovremmo vedere
+
+21
+00:01:52,780 --> 00:02:00,460
+che nella nostra applicazione possiamo ancora fare clic su questo pulsante per cambiare il nome di Maximillian N-th di Stephanie.
+
+22
+00:02:00,460 --> 00:02:05,380
+Ma se ricarichiamo di nuovo possiamo fare clic qui su questo paragrafo con Manue.
+
+23
+00:02:05,590 --> 00:02:10,190
+Vedrai che ha cambiato nome e gli anni fanno qualcosa di importante per capire un modello importante.
+
+24
+00:02:10,310 --> 00:02:19,120
+non ha accesso diretto allo stato e che non dovrebbe avere accesso diretto allo stato.
+
+25
+00:02:19,320 --> 00:02:28,940
+È possibile passare metodi anche come oggetti di scena in modo da poter chiamare un metodo che
+
+26
+00:02:29,160 --> 00:02:34,200
+potrebbe cambiare allo stato in un altro componente che
+
+27
+00:02:34,200 --> 00:02:35,220
+È un modello comune
+
+28
+00:02:35,220 --> 00:02:41,460
+ed è importante sapere che è possibile trasferire i gestori di clic che consentono di modificare i dati nel componente principale nel componente dell'app.
+
+29
+00:02:41,460 --> 00:02:45,150
+In questo caso per il componente persona forse non tutti vogliamo passare un valore alla nostra funzione.
+
+30
+00:02:45,150 --> 00:02:55,020
+Forse il tuo gestore del nome dell'interruttore dovrebbe ricevere il nuovo nome in modo che qui dove ho hardcoded Maximilien come
+
+31
+00:02:55,020 --> 00:03:01,510
+il nuovo nome in realtà ho impostato il nome uguale al nuovo nome.
+
+32
+00:03:01,530 --> 00:03:06,730
+Ora come possiamo passare quei dati.
+
+33
+00:03:06,740 --> 00:03:10,390
+Ci sono due modi per farlo.
+
+34
+00:03:10,390 --> 00:03:12,600
+Il primo è che chiami qui.
+
+35
+00:03:12,610 --> 00:03:16,910
+Si può semplicemente legare questo.
+
+36
+00:03:16,960 --> 00:03:19,690
+Questo controlla a cosa si riferirà all'interno della funzione e che lo vincolerà a quest'anno.
+
+37
+00:03:19,780 --> 00:03:26,820
+Al di fuori della funzione che stiamo legando alla classe potrebbe sembrare strano, ma come un tipico modo
+
+38
+00:03:26,850 --> 00:03:31,840
+di gestire questo problema in javascript non avremmo bisogno di farlo comunque.
+
+39
+00:03:31,850 --> 00:03:36,110
+Ma possiamo usare questa sintassi perché voglio anche passare il secondo argomento per legare.
+
+40
+00:03:36,430 --> 00:03:42,340
+funzione e qui dovrebbe essere il nuovo nome.
+
+41
+00:03:42,610 --> 00:03:50,710
+Questo è ora un elenco di argomenti che saranno passati alla nostra
+
+42
+00:03:50,710 --> 00:03:51,610
+Quindi qui potrebbe essere un Maximillian.
+
+43
+00:03:51,790 --> 00:03:54,150
+E vedere davvero la differenza.
+
+44
+00:03:54,410 --> 00:03:56,270
+Copiamo quel codice di binding e
+
+45
+00:03:56,620 --> 00:04:02,290
+questo è tutto ciò che ci lega al nulla quando passiamo la funzione come riferimento al clic Propp.
+
+46
+00:04:02,290 --> 00:04:03,480
+E passiamo a
+
+47
+00:04:03,970 --> 00:04:11,230
+Max con un punto esclamativo in modo che possiamo vedere una differenza a seconda di dove abbiamo fatto clic.
+
+48
+00:04:11,230 --> 00:04:13,090
+a Max con un punto esclamativo.
+
+49
+00:04:13,380 --> 00:04:21,030
+Se ora salviamo questo con BIND aggiunto e questo ricevuto come argomento e il gestore del nome di switch Vediamo cosa succede se faccio clic su
+
+50
+00:04:21,040 --> 00:04:28,210
+switch name e lo si modifica in Maximilien qui che ha senso perché questo è ciò a cui sono legato ma che funziona conferma
+
+51
+00:04:28,210 --> 00:04:34,130
+che funziona con la ricezione di un argomento e mai fare clic sul paragrafo del menu vedrai che una modifica
+
+52
+00:04:34,130 --> 00:04:41,460
+Quindi questo è un modo per superare una discussione.
+
+53
+00:04:41,480 --> 00:04:44,060
+Non è l'unico modo però.
+
+54
+00:04:44,120 --> 00:04:45,990
+Lascio uno dei due frammenti di codice qui con BIND per mostrarti come funziona.
+
+55
+00:04:46,190 --> 00:04:51,990
+Mostra comunque una sintassi alternativa.
+
+56
+00:04:52,070 --> 00:04:54,580
+Quindi lascia legare al tuo dove il percorso dei puntelli.
+
+57
+00:04:54,770 --> 00:04:57,840
+Ma potremmo usare questa nuova sintassi che ti sto mostrando ora.
+
+58
+00:04:58,010 --> 00:05:00,560
+Anche laggiù questo indice
+
+59
+00:05:00,570 --> 00:05:11,510
+delle notizie sembra diverso qui al momento del clic Realmente eseguo la funzione freccia che non accetta argomenti.
+
+60
+00:05:11,510 --> 00:05:13,650
+In teoria riceverà un oggetto evento.
+
+61
+00:05:13,690 --> 00:05:16,070
+A proposito.
+
+62
+00:05:16,070 --> 00:05:16,980
+Ma non lo userò qui.
+
+63
+00:05:17,420 --> 00:05:18,980
+E poi semplicemente come corpo di una funzione restituisce questa chiamata di funzione.
+
+64
+00:05:19,550 --> 00:05:27,020
+Ora ecco un paio di cose che devi capire.
+
+65
+00:05:27,020 --> 00:05:29,120
+Prima di tutto, quando si
+
+66
+00:05:29,120 --> 00:05:37,550
+utilizza una funzione freccia, si aggiunge implicitamente una parola chiave di ritorno davanti al codice che viene immediatamente dopo la freccia.
+
+67
+00:05:37,550 --> 00:05:39,890
+Se è tutto scritto in una riga.
+
+68
+00:05:40,070 --> 00:05:42,230
+L'alternativa è a Raptor e parentesi graffe e scrivere il corpo della funzione normale.
+
+69
+00:05:42,230 --> 00:05:46,730
+Quindi questo viene restituito e ciò che ritorna è una chiamata di funzione.
+
+70
+00:05:47,210 --> 00:05:51,860
+Questo è il motivo per cui ho aggiunto le parentesi.
+
+71
+00:05:51,860 --> 00:05:54,140
+Ora in una delle prime
+
+72
+00:05:54,410 --> 00:06:01,700
+lezioni ho detto che non dovresti chiamare questo e quello era vero, ma qui non viene eseguito immediatamente.
+
+73
+00:06:01,700 --> 00:06:03,550
+Invece quello che passiamo qui è
+
+74
+00:06:03,560 --> 00:06:10,250
+una funzione anonima che verrà eseguita con un clic e che restituisce il risultato di questa funzione che viene eseguita.
+
+75
+00:06:10,250 --> 00:06:13,550
+Il che ovviamente porta semplicemente alla disfunzione che viene eseguita.
+
+76
+00:06:13,550 --> 00:06:17,900
+Questo è utile perché ora qui possiamo facilmente passare i nostri dati Maximillian con due punti esclamativi.
+
+77
+00:06:17,900 --> 00:06:26,270
+Forse ora salva questo e fai clic sul nome dell'interruttore di clic.
+
+78
+00:06:26,270 --> 00:06:31,760
+Vediamo Maximillian con due punti esclamativi.
+
+79
+00:06:31,760 --> 00:06:35,000
+rendere certe cose nella tua app troppo
+
+80
+00:06:35,000 --> 00:06:41,930
+spesso, quindi non è consigliabile usarlo se non si deve usare la sintassi di bind.
+
+81
+00:06:41,930 --> 00:06:48,950
+Ora questa è una sintassi molto comoda, ma può essere un inefficiente re-act può davvero
+
+82
+00:06:48,950 --> 00:06:50,150
+Se puoi ancora
+
+83
+00:06:50,180 --> 00:06:56,590
+lasciarlo qui puoi usarlo e, a seconda delle dimensioni della tua applicazione, potresti anche non sentirti un grande successo.
+
+84
+00:06:56,660 --> 00:06:59,520
+Ma sappi che questo può essere inefficiente.
+
+85
+00:06:59,780 --> 00:07:03,100
+&nbsp;

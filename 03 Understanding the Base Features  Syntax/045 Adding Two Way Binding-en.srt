@@ -1,0 +1,291 @@
+1
+00:00:02,280 --> 00:00:05,290
+We covered a lot and we changed a lot of names here.
+
+2
+00:00:05,550 --> 00:00:14,260
+But what if we actually want to change the name on our own. So let's say that in the person component
+
+3
+00:00:14,260 --> 00:00:23,290
+here, we actually also have another element, a normal input element which is of type text and that's
+
+4
+00:00:23,290 --> 00:00:26,380
+it, it should be self-closing.
+
+5
+00:00:26,470 --> 00:00:34,680
+Now whenever we type something there we want to use what we type here as a new name, now for that
+
+6
+00:00:34,690 --> 00:00:43,970
+we can listen to a special event, onChange. onChange will be fired whenever the value in this input changes.
+
+7
+00:00:44,650 --> 00:00:53,440
+And here, I then want to execute some method which I need to pass down from my app.js file.
+
+8
+00:00:53,440 --> 00:01:01,810
+We got that switchNameHandler and I will leave it as it is and instead add a new handler, I'll name
+
+9
+00:01:01,810 --> 00:01:04,950
+it nameChangedHandler.
+
+10
+00:01:05,380 --> 00:01:08,680
+I expect to get an event object here,
+
+11
+00:01:08,680 --> 00:01:14,710
+we haven't used that before but in there, I still want to change the state.
+
+12
+00:01:14,820 --> 00:01:18,880
+Now of course theoretically you would want to change.
+
+13
+00:01:18,880 --> 00:01:24,250
+the state or the name of the person for which we type this.
+
+14
+00:01:24,250 --> 00:01:31,450
+This is something we'll do later in the course once we learned how to correctly render a list of dynamic
+
+15
+00:01:31,480 --> 00:01:32,560
+elements.
+
+16
+00:01:32,560 --> 00:01:36,340
+So for now I will always change the name of Manu here.
+
+17
+00:01:36,580 --> 00:01:42,220
+So Max will stay Max and Stephanie should keep her age of 26 maybe even
+
+18
+00:01:42,340 --> 00:01:50,410
+but Manu should change its name, no matter in which instance of this person component I type, again
+
+19
+00:01:50,470 --> 00:01:53,190
+this is something we will fix later.
+
+20
+00:01:53,230 --> 00:01:56,490
+So here I will get an event
+
+21
+00:01:56,620 --> 00:02:03,910
+and as you might know for javascript events, this event probably has a target. The target doesn't make
+
+22
+00:02:03,910 --> 00:02:11,280
+for a good name value though but the target should be the input into which we typed,
+
+23
+00:02:11,470 --> 00:02:17,750
+so it should actually also have a value property which is the value the user entered and therefore this
+
+24
+00:02:17,770 --> 00:02:23,180
+now makes for a good updated value for name.
+
+25
+00:02:23,320 --> 00:02:27,580
+So event target value is what I want to assign as a new name for Manu,
+
+26
+00:02:27,640 --> 00:02:35,320
+again for the time being no matter in which input of which component I typed. nameChangedHandler is
+
+27
+00:02:35,320 --> 00:02:36,640
+my handler,
+
+28
+00:02:36,640 --> 00:02:42,680
+now I need to pass this to a component to be able to access it from there.
+
+29
+00:02:43,090 --> 00:02:47,830
+And since I only can change Manu, I will only pass it to the Manu person
+
+30
+00:02:47,920 --> 00:02:50,730
+though we could pass it to any other of course,
+
+31
+00:02:51,010 --> 00:03:01,870
+here I will simply name this changed and pass this.nameChangedHandler following the same logic as
+
+32
+00:03:01,890 --> 00:03:05,460
+for for a click event. Inside the person,
+
+33
+00:03:05,500 --> 00:03:14,500
+I can now access this.changed property and simply call props changed here or not call it don't add
+
+34
+00:03:14,500 --> 00:03:18,450
+parentheses but simply pass the reference to it
+
+35
+00:03:18,580 --> 00:03:25,970
+and keep in mind this refers to the method we declared in app.js, this.nameChangedHandler.
+
+36
+00:03:26,540 --> 00:03:33,410
+The event object will actually be passed to it automatically by react, like a normal javascript.
+
+37
+00:03:33,430 --> 00:03:36,370
+where you always by default get access to the event object.
+
+38
+00:03:37,130 --> 00:03:40,050
+With that, let's save this and let's see what happens.
+
+39
+00:03:40,130 --> 00:03:46,090
+We've got inputs below all components but for most of them nothing happens if I type in them, for Manu though,
+
+40
+00:03:46,100 --> 00:03:53,650
+you see with every keystroke the name updates, Manuel, whatever I want to type there. This is
+
+41
+00:03:53,690 --> 00:04:01,610
+because we bound onChange to these prop.changed which holds a reference to the nameChangedHandler
+
+42
+00:04:01,850 --> 00:04:07,820
+and we then used the default event object to extract the target which is the input element and then
+
+43
+00:04:07,820 --> 00:04:10,970
+the value of the target which is what we entered.
+
+44
+00:04:10,970 --> 00:04:16,850
+This shows us actually two things, how we can dynamically update something, dynamically call an event
+
+45
+00:04:16,850 --> 00:04:22,430
+and use the things we learn before like passing down event references or method references I should
+
+46
+00:04:22,430 --> 00:04:26,990
+say but it also shows us how we can handle inputs.
+
+47
+00:04:27,530 --> 00:04:36,820
+Now it would also be nice if we would see the current value of the name in the input right from the start.
+
+48
+00:04:37,130 --> 00:04:43,760
+So we basically want to set up two way binding, when we change it we want to propagate that change so
+
+49
+00:04:43,760 --> 00:04:46,220
+that we can update the state
+
+50
+00:04:46,430 --> 00:04:49,890
+but we also want to see the current state right from the start.
+
+51
+00:04:50,390 --> 00:04:57,070
+To do this, I can set value equal to prop's name,
+
+52
+00:04:57,080 --> 00:04:59,210
+This is the name after all.
+
+53
+00:04:59,210 --> 00:05:02,160
+And now we have our own two way binding set up,
+
+54
+00:05:02,270 --> 00:05:09,350
+we listen to changes, call the change method in the end which refers to the nameChangedHandler which
+
+55
+00:05:09,350 --> 00:05:17,030
+updates the state and we passed down the state to the person with name and age and we output the
+
+56
+00:05:17,030 --> 00:05:20,510
+name as the value of the input.
+
+57
+00:05:20,510 --> 00:05:24,800
+This now allows us to show that value right from the start
+
+58
+00:05:25,070 --> 00:05:31,190
+and here I actually get a warning, this warning theoretically makes sense because if you provide a value
+
+59
+00:05:31,190 --> 00:05:38,910
+prop without a onChange handler here, you actually run into problems because you're binding the value
+
+60
+00:05:38,910 --> 00:05:43,310
+to a property without allowing yourself to react to changes
+
+61
+00:05:43,310 --> 00:05:45,730
+hence you would lock your input down
+
+62
+00:05:45,770 --> 00:05:51,800
+I could show this if I remove onChange. Now you see we still see the values but if I type there, nothing
+
+63
+00:05:51,800 --> 00:05:55,550
+happens I can't type because we're not handling changes
+
+64
+00:05:55,670 --> 00:06:00,920
+so we always override whatever we try to type with the existing name prop.
+
+65
+00:06:01,340 --> 00:06:08,320
+If I reintroduce onChange though, the error stays here which is simply a false alarm,
+
+66
+00:06:08,510 --> 00:06:14,180
+as you can clearly see, I can't type because I am unable to handle my changes,
+
+67
+00:06:14,180 --> 00:06:19,880
+update my state, update my props and hence reflect my changes in the input here too.
+
+68
+00:06:20,060 --> 00:06:25,230
+So we got a working two way binding and we're able to change that name dynamically now.
+
+69
+00:06:25,340 --> 00:06:31,730
+Again keep in mind only for Manu because we haven't set up the logic for other inputs hence we can't
+
+70
+00:06:31,760 --> 00:06:35,690
+type there because we can't update these names there.
+
+71
+00:06:35,840 --> 00:06:40,630
+And that is probably why it's complaining here for these other inputs.
+
+72
+00:06:40,860 --> 00:06:47,600
+For now we can ignore this though we will improve this once we have a better way of dynamically rendering
+
+73
+00:06:47,690 --> 00:06:49,410
+a list of elements.

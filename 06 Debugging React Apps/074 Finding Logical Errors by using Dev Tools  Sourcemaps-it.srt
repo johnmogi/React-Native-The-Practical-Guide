@@ -1,0 +1,203 @@
+1
+00:00:02,090 --> 00:00:09,330
+E l'ultimo in realtà ha dato un'occhiata ai messaggi di errore sicuramente importanti ma spesso hai errori logici
+
+2
+00:00:09,330 --> 00:00:12,210
+che sono ancora più difficili da individuare.
+
+3
+00:00:12,210 --> 00:00:15,830
+Non si ottiene il messaggio di errore ma in qualche modo non funziona.
+
+4
+00:00:16,170 --> 00:00:23,160
+Diciamo che il nome ha cambiato gestore quando troviamo l'indice di una persona che vogliamo aggiornare che
+
+5
+00:00:23,160 --> 00:00:26,180
+dice che confrontiamo l'ID utente con l'ID.
+
+6
+00:00:26,460 --> 00:00:30,570
+E questo non è corretto una persona non ha la proprietà di un ID utente.
+
+7
+00:00:30,570 --> 00:00:38,640
+Tuttavia, non genera un errore perché l'ID utente non è definito ma è possibile confrontare il risultato con
+
+8
+00:00:38,970 --> 00:00:42,360
+qualcosa che probabilmente non troverà una persona adatta.
+
+9
+00:00:42,360 --> 00:00:48,470
+Quindi, se salvo questo codice, naturalmente correggo l'errore di The Last Lecture.
+
+10
+00:00:48,950 --> 00:00:56,630
+Quindi, se salvi questo codice e torniamo all'applicazione se iniziamo a digitare, non riceviamo un errore, ma
+
+11
+00:00:56,820 --> 00:00:58,860
+posso digitare quanto voglio.
+
+12
+00:00:58,890 --> 00:01:00,030
+Non si aggiornerà.
+
+13
+00:01:00,060 --> 00:01:05,370
+Non vedo nemmeno il mio valore aggiornato qui perché ha rotto l'associazione a due vie perché
+
+14
+00:01:05,370 --> 00:01:08,450
+non sto aggiornando correttamente il nome di questa persona.
+
+15
+00:01:08,460 --> 00:01:11,200
+Ora cosa possiamo fare in questo caso.
+
+16
+00:01:11,370 --> 00:01:14,320
+Possiamo seguire passo passo il nostro codice.
+
+17
+00:01:14,370 --> 00:01:17,650
+Per questo consiglio di utilizzare gli strumenti di sviluppo di Chrome.
+
+18
+00:01:17,760 --> 00:01:27,630
+Lì puoi andare alle fonti toccare nella scheda fonti troverai la struttura del codice mostrato
+
+19
+00:01:27,630 --> 00:01:29,160
+sotto localhost.
+
+20
+00:01:29,160 --> 00:01:34,750
+Lì troverai una cartella sorgente e troverai il tuo codice qui.
+
+21
+00:01:34,770 --> 00:01:39,110
+Ora questo è possibile youtoo mappe sorgente che vengono generate.
+
+22
+00:01:39,450 --> 00:01:47,220
+Fondamentalmente puoi dire file di traduzione che consentono agli strumenti di sviluppo del browser di entrare nel tuo codice mentre lo
+
+23
+00:01:47,250 --> 00:01:53,730
+hai scritto e ti permettono di eseguire il debug di quel codice anche se il codice che viene
+
+24
+00:01:54,060 --> 00:01:57,690
+inviato al browser sarà diverso e ottimizzato e in bundle.
+
+25
+00:01:57,800 --> 00:02:02,310
+Questo è piuttosto interessante perché puoi eseguire il debug del codice che hai scritto anche se non è il
+
+26
+00:02:02,310 --> 00:02:03,630
+codice in esecuzione nel browser.
+
+27
+00:02:03,780 --> 00:02:07,210
+Quindi là dentro sappiamo che qualcosa non funziona quando scrivo qui.
+
+28
+00:02:07,380 --> 00:02:13,840
+E mentre scrivevamo il codice, sappiamo che il nome cambiava gestori che venivano licenziati quando scrivevamo.
+
+29
+00:02:13,980 --> 00:02:17,300
+Quindi posizioniamo un punto di interruzione facendo clic sul numero di linea qui.
+
+30
+00:02:17,700 --> 00:02:19,910
+E iniziamo a digitare di nuovo.
+
+31
+00:02:20,670 --> 00:02:23,890
+Ho digitato un carattere e questo è ora in pausa.
+
+32
+00:02:24,180 --> 00:02:29,370
+Vedrai che sta aggiungendo questo i. e. il codice che lo sovrascriverebbe di nuovo.
+
+33
+00:02:29,370 --> 00:02:32,260
+perché è un comportamento de-evolve dell'elemento th tremelo e dobbiamo eseguire tutto
+
+34
+00:02:32,520 --> 00:02:40,200
+E ora possiamo usare i normali strumenti di debugger di Chrome qui per esaminare il nostro codice e qui possiamo
+
+35
+00:02:40,290 --> 00:02:48,760
+passare alla prossima chiamata di funzione per passare in giorni a trovare la funzione di indice e capire cosa sta succedendo lì.
+
+36
+00:02:49,870 --> 00:02:53,950
+Quindi ora, all'interno, possiamo dare un'occhiata ai dati.
+
+37
+00:02:53,950 --> 00:02:57,510
+Abbiamo una nave baleniera come l'oggetto p.
+
+38
+00:02:57,520 --> 00:03:03,610
+Ora vediamo che questo è per Max è l'oggetto che sta attualmente cercando con find.
+
+39
+00:03:03,620 --> 00:03:08,580
+Quindi abbiamo un'idea di s f a one.
+
+40
+00:03:08,710 --> 00:03:17,050
+che questa espressione qui è indefinita e abbiamo confrontato questo con un'idea di s f a one.
+
+41
+00:03:17,050 --> 00:03:18,210
+Vediamo anche
+
+42
+00:03:18,250 --> 00:03:26,200
+Quindi questo dovrebbe corrispondere a questa prigione che ha deciso dal momento che accediamo all'ID utente, possiamo vedere che
+
+43
+00:03:26,640 --> 00:03:35,530
+è indefinito e possiamo vedere chiaramente che l'ID utente non è un ID valido perché se passiamo il mouse sopra la
+
+44
+00:03:35,530 --> 00:03:41,150
+persona vediamo che c'è solo ID oggetto nessun utente id oggetto con quell'informazione.
+
+45
+00:03:41,380 --> 00:03:46,960
+Ora possiamo uscire da questo processo, tornare al nostro codice e correggere il nostro errore logico.
+
+46
+00:03:47,050 --> 00:03:55,120
+Quindi, utilizzare gli strumenti di debugger di Chrome con le mappe di origine che vengono generate automaticamente è una potente
+
+47
+00:03:55,120 --> 00:03:57,820
+funzionalità per il rilevamento degli errori logici.
+
+48
+00:03:57,850 --> 00:04:03,140
+Puoi guidare il codice mentre sei in viaggio anche se non è il codice in esecuzione nel browser.
+
+49
+00:04:03,310 --> 00:04:06,200
+Quindi c'è uno strumento interessante di cui dovresti essere a conoscenza.
+
+50
+00:04:06,340 --> 00:04:13,210
+Per trovare e correggere gli errori utilizzando gli strumenti di sviluppo con la scheda delle fonti in cui è possibile accedere
+
+51
+00:04:13,210 --> 00:04:15,600
+al codice originale alle mappe di origine.

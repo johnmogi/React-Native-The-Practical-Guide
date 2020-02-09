@@ -1,0 +1,355 @@
+1
+00:00:02,200 --> 00:00:07,840
+So now that you learned how to dynamically set styles and classes, let's go back to the limitations of
+
+2
+00:00:07,900 --> 00:00:11,790
+inline styles learn about. Most important for us right now,
+
+3
+00:00:11,890 --> 00:00:20,500
+the fact that we can't assign a hover style for our button. Hover which in css you would simply
+
+4
+00:00:20,860 --> 00:00:27,340
+create with :hover is a pseudo selector which means it's a selector based on some other selector
+
+5
+00:00:27,370 --> 00:00:29,680
+indicated by that colon.
+
+6
+00:00:29,780 --> 00:00:37,720
+Now we can't assign this in our current application, there we got our style javascript object where we
+
+7
+00:00:37,720 --> 00:00:41,860
+assign or create some styles for the button but hover,
+
+8
+00:00:41,940 --> 00:00:43,510
+yes, how would we set it up here, right?
+
+9
+00:00:43,510 --> 00:00:45,680
+Hover is not a css property.
+
+10
+00:00:46,120 --> 00:00:52,670
+So we could fix this of course by styling the button in the css file but I already mentioned that this style
+
+11
+00:00:52,690 --> 00:00:58,390
+would then not be scoped to this component only and all the buttons in our application would get the
+
+12
+00:00:58,390 --> 00:00:59,440
+styling.
+
+13
+00:00:59,440 --> 00:01:07,600
+Yes, we could work around this with some unique css IDs or classes but having the possibility of using
+
+14
+00:01:07,600 --> 00:01:14,830
+these inline styles here can also be pretty cool because as we already do, you can edit them in your
+
+15
+00:01:14,830 --> 00:01:22,600
+code because everything is javascript. So it would be nice if we could actually use pseudo selectors
+
+16
+00:01:22,780 --> 00:01:23,680
+and media
+
+17
+00:01:23,720 --> 00:01:28,610
+queries in our normal javascript inline styles,
+
+18
+00:01:28,720 --> 00:01:35,620
+and by default that's of course not possible, but we can add a third party package which is pretty popular
+
+19
+00:01:35,830 --> 00:01:38,800
+to add this functionality to our application,
+
+20
+00:01:38,920 --> 00:01:40,610
+so let's do just that.
+
+21
+00:01:40,660 --> 00:01:43,500
+For that, we need to install a new package
+
+22
+00:01:43,540 --> 00:01:49,740
+and here I open my normal terminal on my Mac or on Windows it would be the command prompt,
+
+23
+00:01:49,840 --> 00:01:53,970
+this is just a terminal integrated into Microsoft visual studio code,
+
+24
+00:01:54,010 --> 00:01:59,200
+you can also open the options via integrated terminal.
+
+25
+00:01:59,200 --> 00:02:02,590
+Now this is the same terminal you have on your machine
+
+26
+00:02:02,590 --> 00:02:08,590
+if you access it normally but automatically navigate it your project folder and there I will now
+
+27
+00:02:08,590 --> 00:02:11,320
+install a package with npm install.
+
+28
+00:02:11,350 --> 00:02:19,030
+I'll add --save to also save an entry in package.json so that we also fix the version number
+
+29
+00:02:19,030 --> 00:02:21,310
+and can easily share our project,
+
+30
+00:02:21,610 --> 00:02:23,950
+and then the package is called radium.
+
+31
+00:02:23,950 --> 00:02:30,070
+Simply hit enter now and this will download and add this package to the project so that we can start
+
+32
+00:02:30,100 --> 00:02:31,300
+using it.
+
+33
+00:02:31,300 --> 00:02:39,730
+Radium is a popular package for react which allows us to use inline styles with pseudo selectors and
+
+34
+00:02:39,730 --> 00:02:40,770
+media queries,
+
+35
+00:02:40,780 --> 00:02:42,820
+so pretty awesome.
+
+36
+00:02:42,820 --> 00:02:49,180
+Now that it is installed, we can close the terminal again and we can start using it. Now, to start using
+
+37
+00:02:49,180 --> 00:02:49,700
+it,
+
+38
+00:02:49,700 --> 00:02:53,530
+we first of all have to import it in the file we want to use it
+
+39
+00:02:53,530 --> 00:02:56,430
+and this could be any of your files, could be the app.js
+
+40
+00:02:56,470 --> 00:02:59,420
+file, could be the person file too of course.
+
+41
+00:02:59,620 --> 00:03:06,730
+Let's work in the app.js file though because there is a button where I want to add a hover state. To be
+
+42
+00:03:06,730 --> 00:03:08,230
+able to do this,
+
+43
+00:03:08,270 --> 00:03:11,220
+I first of all need to import radium.
+
+44
+00:03:11,290 --> 00:03:16,070
+So add import statement here, position doesn't matter but it should be at the top of the file,
+
+45
+00:03:16,230 --> 00:03:19,690
+I'll import radium from radium,
+
+46
+00:03:19,690 --> 00:03:21,520
+this is the syntax you can use.
+
+47
+00:03:21,640 --> 00:03:28,520
+Now with that imported, you can scroll all the way down where you export your app and there you can call
+
+48
+00:03:28,520 --> 00:03:33,090
+radium as a function and wrap your app with it.
+
+49
+00:03:33,110 --> 00:03:35,940
+Now this is called a higher order component,
+
+50
+00:03:35,990 --> 00:03:39,230
+something we will also create in our course project later.
+
+51
+00:03:39,440 --> 00:03:45,860
+It might look super fancy but in the end it's just a component wrapping your component adding kind of
+
+52
+00:03:45,860 --> 00:03:48,580
+injecting some extra functionality,
+
+53
+00:03:48,650 --> 00:03:54,260
+in this case some extra syntax which will parse your styles and understand some extra features you can
+
+54
+00:03:54,260 --> 00:03:55,910
+now start using.
+
+55
+00:03:56,000 --> 00:04:04,160
+You can use this on both components created with class and extends component as well as functional components,
+
+56
+00:04:04,250 --> 00:04:13,680
+so there if we add radium by importing radium from radium, we can also export radium person here,
+
+57
+00:04:13,750 --> 00:04:15,700
+both works.
+
+58
+00:04:15,940 --> 00:04:22,930
+Now with that added, we can start adding or using some new features and we of course do this in our style
+
+59
+00:04:23,110 --> 00:04:25,560
+because radium is all about styles.
+
+60
+00:04:25,570 --> 00:04:29,590
+Here are a style which will get assigned to the button in the end.
+
+61
+00:04:29,950 --> 00:04:37,780
+I want to add a hover style and with radium added and wrapping your export, you can simply add a new
+
+62
+00:04:37,780 --> 00:04:44,210
+property ":hover" or any other pseudo selector.
+
+63
+00:04:44,260 --> 00:04:46,720
+All pseudo selectors are supported,
+
+64
+00:04:46,780 --> 00:04:52,000
+you need to wrap them in quotation marks though because since they start with a colon, they are not
+
+65
+00:04:52,000 --> 00:04:58,840
+valid javascript property names, as strings as they are though. As you know, you can create javascript
+
+66
+00:04:58,840 --> 00:05:03,160
+properties as strings or if you don't have an invalid character in them
+
+67
+00:05:03,250 --> 00:05:06,890
+just as we did before like all these other properties.
+
+68
+00:05:07,420 --> 00:05:13,020
+Now the value simply is your set of styles for the hover state
+
+69
+00:05:13,120 --> 00:05:22,180
+so another javascript object where I will now set the background color to light green for the green button
+
+70
+00:05:22,810 --> 00:05:25,590
+and the color of the text to black
+
+71
+00:05:25,590 --> 00:05:36,100
+maybe. And I will also of course overwrite hover down there where I overwrite my background color, there
+
+72
+00:05:36,190 --> 00:05:41,650
+I will simply set style and now not dot hover because it's a string,
+
+73
+00:05:41,650 --> 00:05:44,320
+we need to use square brackets.
+
+74
+00:05:44,420 --> 00:05:53,000
+So here we then assign a new value, a new javascript object where we use light red and black text, like
+
+75
+00:05:53,000 --> 00:05:54,620
+this.
+
+76
+00:05:54,620 --> 00:06:02,600
+With this, we're using a radium feature. Being able to assign a property which is a valid css pseudo
+
+77
+00:06:02,600 --> 00:06:03,640
+selector
+
+78
+00:06:03,890 --> 00:06:07,760
+and taking advantage of radium to still have it work.
+
+79
+00:06:07,850 --> 00:06:13,220
+Now if you save this and all the other files and you reload your application, if you hover over the button,
+
+80
+00:06:13,220 --> 00:06:22,320
+you'll see the change styling, also for the red button though there it's not overwriting it to light red,
+
+81
+00:06:22,350 --> 00:06:24,090
+so let's try a different color.
+
+82
+00:06:26,570 --> 00:06:27,760
+Salmon does work,
+
+83
+00:06:27,790 --> 00:06:32,740
+so light red didn't exist but if I changed to salmon now, it works too.
+
+84
+00:06:33,220 --> 00:06:36,570
+So this is pretty cool because now you have the best of both worlds,
+
+85
+00:06:36,670 --> 00:06:41,620
+you have the normal css pseudo selectors you can add and you still have scoped styles which you can
+
+86
+00:06:41,620 --> 00:06:45,980
+easily edit from within your javascript code, as you can see here.
+
+87
+00:06:46,060 --> 00:06:50,750
+Now radium doesn't limit you to using pseudo selectors as we did,
+
+88
+00:06:51,010 --> 00:06:53,120
+you can also add media queries.
+
+89
+00:06:53,260 --> 00:06:58,470
+Let's maybe do this in the person component and let's do it in the next lecture.

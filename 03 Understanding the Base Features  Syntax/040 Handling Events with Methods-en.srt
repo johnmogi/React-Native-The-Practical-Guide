@@ -1,0 +1,187 @@
+1
+00:00:02,170 --> 00:00:07,570
+In the last lecture, we set up state and I told you that it would be special but we don't really see
+
+2
+00:00:07,570 --> 00:00:08,310
+that yet.
+
+3
+00:00:08,440 --> 00:00:13,990
+All we do right now is manage our data there and then access that in our jsx code in
+
+4
+00:00:14,000 --> 00:00:14,540
+the app.js
+
+5
+00:00:14,560 --> 00:00:15,880
+file.
+
+6
+00:00:16,340 --> 00:00:19,740
+Let's now handle a click on this button,
+
+7
+00:00:19,810 --> 00:00:23,430
+we do this by adding onClick.
+
+8
+00:00:23,440 --> 00:00:24,660
+Now this is important,
+
+9
+00:00:24,670 --> 00:00:31,930
+in normal javascript and normal html to be precise, it would be onclick with a lowercase c. Now in
+
+10
+00:00:31,930 --> 00:00:34,170
+jsx and that is really important,
+
+11
+00:00:34,300 --> 00:00:37,180
+It's onClick with a capital C.
+
+12
+00:00:37,420 --> 00:00:45,580
+Still we then assign as a value the code you want to execute upon a click and there we can use curly
+
+13
+00:00:45,580 --> 00:00:50,000
+braces to execute some dynamic code.
+
+14
+00:00:50,020 --> 00:00:58,240
+Now typically you want to execute a function of your class, a so-called method there,
+
+15
+00:00:58,460 --> 00:01:06,080
+and there is a convention to give this a name like the following Switch Name handler maybe.
+
+16
+00:01:06,100 --> 00:01:12,700
+Now the first part Switch Name is totally up to you but you typically use handler here to indicate that
+
+17
+00:01:12,700 --> 00:01:20,110
+this is a method you're not actively calling but you're assigning as an event handler. It's not required
+
+18
+00:01:20,110 --> 00:01:24,910
+to follow this pattern though, so you can name this whatever you want of course it is a good practice
+
+19
+00:01:24,910 --> 00:01:26,260
+to name it like this though.
+
+20
+00:01:27,470 --> 00:01:31,570
+So Switch Name handler now should be a function.
+
+21
+00:01:31,970 --> 00:01:38,280
+Now if you just said equal, right now it is just the same syntax as for the state property
+
+22
+00:01:38,570 --> 00:01:43,540
+but if we assign a function as a value here it becomes a method basically.
+
+23
+00:01:43,700 --> 00:01:49,390
+It still is a property you could say but a property which holds a function which can be executed. Here
+
+24
+00:01:49,440 --> 00:01:53,330
+I'll also use an ES6 arrow function,
+
+25
+00:01:53,330 --> 00:01:56,070
+keep in mind this is just a normal function
+
+26
+00:01:56,070 --> 00:02:01,610
+at the end. And there, I now want to edit my state,
+
+27
+00:02:01,890 --> 00:02:05,950
+well before we do this, let's see if we can call this successfully.
+
+28
+00:02:05,950 --> 00:02:13,450
+I will say console log was clicked so that we can see something in the console once this was clicked,
+
+29
+00:02:13,930 --> 00:02:22,120
+and I will go to my click listener and between the curly braces, I can now run this Switch Name handler
+
+30
+00:02:22,750 --> 00:02:25,330
+and don't add parentheses,
+
+31
+00:02:25,420 --> 00:02:26,890
+don't do this.
+
+32
+00:02:26,890 --> 00:02:33,850
+This would execute it immediately once react renders this to the dom because you execute this function
+
+33
+00:02:33,850 --> 00:02:35,070
+with the parentheses.
+
+34
+00:02:35,380 --> 00:02:43,330
+We only want to pass a reference and we do this by using this and then referring to that property which
+
+35
+00:02:43,330 --> 00:02:46,340
+holds a function. Important,
+
+36
+00:02:46,720 --> 00:02:54,160
+if you don't use the this syntax here basically where you assign a function to a property you could say, you
+
+37
+00:02:54,160 --> 00:03:01,030
+will run into errors if you try to use this as we will soon do in this
+
+38
+00:03:01,030 --> 00:03:08,830
+in this Switch Name handler function because this will then not refer to the class at runtime, simply to how
+
+39
+00:03:08,830 --> 00:03:09,090
+to
+
+40
+00:03:09,100 --> 00:03:12,370
+this works in ES5 javascript.
+
+41
+00:03:12,580 --> 00:03:18,170
+By using this ES6 syntax, we circumvent this problem which will become important later.
+
+42
+00:03:18,250 --> 00:03:25,480
+For now important, don't add parentheses here, just pass a reference to this function. With that, let's save
+
+43
+00:03:25,480 --> 00:03:26,530
+this file
+
+44
+00:03:26,710 --> 00:03:33,520
+and let's now open the console in the developer tools and click Switch Name and you should see was clicked
+
+45
+00:03:33,970 --> 00:03:35,750
+in your developer tools here.
+
+46
+00:03:36,840 --> 00:03:38,480
+Now that's nice,
+
+47
+00:03:38,490 --> 00:03:43,230
+now let's all change the state, we'll do this in the next lecture.

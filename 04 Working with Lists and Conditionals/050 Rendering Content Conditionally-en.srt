@@ -1,0 +1,499 @@
+1
+00:00:02,130 --> 00:00:09,760
+So here I'm back in the app.js file. In there, in the render method which you learned is used when
+
+2
+00:00:09,850 --> 00:00:14,450
+creating a component by extending the component object, there
+
+3
+00:00:14,470 --> 00:00:23,800
+we output three persons and this clearly is kind of a list because we also have persons managed in
+
+4
+00:00:23,800 --> 00:00:26,350
+our state here.
+
+5
+00:00:26,460 --> 00:00:33,900
+It would make sense to output this as a list but before we dive into that, let's dive into outputting
+
+6
+00:00:33,940 --> 00:00:42,880
+content conditionally first. Let's say when we click this button, we don't really want to switch the names
+
+7
+00:00:42,910 --> 00:00:44,300
+as we do right now
+
+8
+00:00:44,530 --> 00:00:52,810
+but let's say instead we want to show or hide the persons we have down here.
+
+9
+00:00:53,140 --> 00:01:00,610
+For this, we can for example wrap all these persons in a div let's say, so that in the end we can show
+
+10
+00:01:00,610 --> 00:01:06,550
+or hide this div and automatically also show and hide everything that's inside the div, that's
+
+11
+00:01:06,550 --> 00:01:09,680
+the idea behind wrapping all the persons with the div.
+
+12
+00:01:10,030 --> 00:01:11,680
+So that's the first step,
+
+13
+00:01:12,160 --> 00:01:21,690
+the second step now is that we need to change this method, I'll name it to togglePersonsHandler
+
+14
+00:01:22,510 --> 00:01:26,190
+and we'll no longer pass an argument to this method.
+
+15
+00:01:26,200 --> 00:01:32,740
+Now with that, I will go back to the old syntax of not using a function which returns another function
+
+16
+00:01:32,740 --> 00:01:39,550
+call but just passing a reference. I also need to create a method called togglePersonsHandler,
+
+17
+00:01:39,850 --> 00:01:42,670
+so I will add it here above the render method
+
+18
+00:01:42,970 --> 00:01:49,570
+and we could use both syntaxes, this syntax here which will create a method, in here we will have problems
+
+19
+00:01:49,600 --> 00:01:52,130
+if we want to use the this keyword though
+
+20
+00:01:52,390 --> 00:02:00,010
+and since we will call this method here upon event fired in the dom, this would lead to real problems.
+
+21
+00:02:00,070 --> 00:02:05,370
+So I'll use the other syntax of assigning an arrow function to a property,
+
+22
+00:02:05,410 --> 00:02:07,280
+it will also create a method in the end,
+
+23
+00:02:07,330 --> 00:02:14,440
+it's just a different syntax and due to the internals of javascript this makes sure that this, the this
+
+24
+00:02:14,500 --> 00:02:21,310
+keyword inside this method always under all circumstances returns to this class,
+
+25
+00:02:21,310 --> 00:02:24,250
+So I recommend using this. Now in there,
+
+26
+00:02:24,250 --> 00:02:31,600
+I now want to toggle some property which in the end decides if ever we want to display this div with
+
+27
+00:02:31,600 --> 00:02:34,140
+the persons inside of it or not.
+
+28
+00:02:34,510 --> 00:02:41,320
+So first of all, I'll go to my state and add a property, I'll name it showPersons, the name of course
+
+29
+00:02:41,320 --> 00:02:42,260
+is up to you
+
+30
+00:02:42,550 --> 00:02:45,280
+and I'll set it to false initially.
+
+31
+00:02:45,280 --> 00:02:52,690
+Now if it is false, I don't want to show the persons and how can we now render this dynamically?
+
+32
+00:02:53,290 --> 00:03:01,210
+Well we can go to the div and in other frameworks like in Angular or in Vuejs you would now
+
+33
+00:03:01,210 --> 00:03:07,580
+place a directive on this div, for example in Vuejs if you know that, we would have v-if.
+
+34
+00:03:07,780 --> 00:03:10,580
+Now react works different, here
+
+35
+00:03:10,630 --> 00:03:18,280
+always keep in mind we are working with javascript only, it might look like html here but it is
+
+36
+00:03:18,280 --> 00:03:19,140
+jsx,
+
+37
+00:03:19,240 --> 00:03:23,750
+it is just syntactical sugar for reeact create element,
+
+38
+00:03:23,920 --> 00:03:27,980
+so in the end here, we have javascript code,
+
+39
+00:03:28,420 --> 00:03:35,860
+hence we can work with it as we can work with javascript code. If we want to render this dynamically,
+
+40
+00:03:35,860 --> 00:03:43,600
+we can enclose it in single quotation marks, the whole div wrapping the persons not the outer div, the
+
+41
+00:03:43,600 --> 00:03:44,850
+inner div.
+
+42
+00:03:45,160 --> 00:03:50,640
+And now between the quotation marks you learned, you can write javascript expressions.
+
+43
+00:03:50,830 --> 00:03:55,470
+That's not only true for two plus two or for reaching out to the state,
+
+44
+00:03:55,600 --> 00:04:01,490
+you can also render content conditionally by adding a ternary expression.
+
+45
+00:04:01,930 --> 00:04:10,150
+What you can't do here is add an if statement, if something then something, that looks like it would be the
+
+46
+00:04:10,150 --> 00:04:15,510
+right solution to simply then move the div inside of the if block here
+
+47
+00:04:15,700 --> 00:04:17,020
+but this doesn't work.
+
+48
+00:04:17,110 --> 00:04:24,150
+You actually can only use simple statements, no block statements as part of this dynamic syntax.
+
+49
+00:04:24,190 --> 00:04:27,720
+So between the opening and closing single curly brace.
+
+50
+00:04:27,940 --> 00:04:33,640
+So using an if block like this will not work but we can use a ternary expression,
+
+51
+00:04:33,670 --> 00:04:37,710
+we can simply check if this state showPersons,
+
+52
+00:04:37,750 --> 00:04:40,470
+keep in mind this is a boolean,
+
+53
+00:04:40,660 --> 00:04:44,990
+we assign false initially.
+
+54
+00:04:45,110 --> 00:04:52,730
+So this will give us true or false and now a ternary expression which is a default javascript construct
+
+55
+00:04:52,730 --> 00:04:59,330
+checks this condition by adding a question mark and then we decide what to do if this is true.
+
+56
+00:04:59,570 --> 00:05:03,110
+Well if it is true we want to output this div,
+
+57
+00:05:03,800 --> 00:05:07,470
+so right now the part after a question mark,
+
+58
+00:05:07,550 --> 00:05:10,470
+so this div, gets executed
+
+59
+00:05:10,610 --> 00:05:18,350
+if this is true. We also need to define the else case by adding a colon and then what we want to do
+
+60
+00:05:18,410 --> 00:05:23,850
+if it's not true, this is null which simply means render nothing.
+
+61
+00:05:23,870 --> 00:05:27,530
+This might be looking super confusing the first time you use it,
+
+62
+00:05:27,530 --> 00:05:29,670
+I am aware of this.
+
+63
+00:05:29,780 --> 00:05:37,610
+So what will the end do here is we simply take advantage of the fact that all we write here is in the end
+
+64
+00:05:37,670 --> 00:05:44,960
+javascript and we can interject javascript expressions into jsx with single curly braces,
+
+65
+00:05:44,960 --> 00:05:52,820
+you learned that. This means we can of course access any javascript property and use it in a ternary expression,
+
+66
+00:05:52,820 --> 00:06:00,650
+again this is a default javascript construct. A ternary expression is created by having some condition,
+
+67
+00:06:00,650 --> 00:06:02,500
+this doesn't have to be a property,
+
+68
+00:06:02,510 --> 00:06:05,140
+it could also be a check where we see if that is true.
+
+69
+00:06:05,270 --> 00:06:08,400
+But since this is a Boolean it is automatically true or false
+
+70
+00:06:08,450 --> 00:06:15,980
+but this would be valid too. Then we have a question mark to separate our check from the what to do if true
+
+71
+00:06:15,980 --> 00:06:16,950
+case,
+
+72
+00:06:17,060 --> 00:06:19,070
+and this is this part here.
+
+73
+00:06:19,070 --> 00:06:22,560
+Now keep in mind that we're not writing html here, this is
+
+74
+00:06:22,620 --> 00:06:23,620
+jsx
+
+75
+00:06:23,780 --> 00:06:28,350
+so in the end, we are calling react create element
+
+76
+00:06:28,550 --> 00:06:32,340
+if this condition is true. We're not calling it explicitly,
+
+77
+00:06:32,510 --> 00:06:34,030
+we're rendering this content.
+
+78
+00:06:34,070 --> 00:06:40,080
+But you learned that this is converted to react create element behind the scenes. And then we have
+
+79
+00:06:40,080 --> 00:06:43,460
+the else condition separated by a colon.
+
+80
+00:06:43,460 --> 00:06:49,040
+This simply means if this check here is not true,
+
+81
+00:06:49,520 --> 00:06:51,380
+then do this.
+
+82
+00:06:51,380 --> 00:06:55,420
+And since we simply execute nothing here we return null.
+
+83
+00:06:55,430 --> 00:07:00,620
+It basically means we'll render nothing it renders null and that is nothing.
+
+84
+00:07:00,620 --> 00:07:02,910
+This is how you may read this, again
+
+85
+00:07:02,960 --> 00:07:09,560
+may look super strange but makes perfect sense once you wrap your head around how javascript, how react
+
+86
+00:07:09,590 --> 00:07:10,810
+actually works,
+
+87
+00:07:10,910 --> 00:07:13,820
+it's all javascript.
+
+88
+00:07:13,820 --> 00:07:16,410
+Now with this, let's complete our logic by
+
+89
+00:07:16,540 --> 00:07:24,510
+making sure that the toggle person's handler correctly switches the state so we can simply set const
+
+90
+00:07:24,620 --> 00:07:26,820
+doesShow create a new constant in there
+
+91
+00:07:26,840 --> 00:07:29,660
+Which is this state showPersons.
+
+92
+00:07:29,690 --> 00:07:36,250
+This is either true or false it's the current state, and then we call this set state to adjust the state
+
+93
+00:07:36,560 --> 00:07:42,990
+and now here we simply set showPersons equal to what doesShow is not
+
+94
+00:07:43,000 --> 00:07:50,240
+by adding exclamation mark in front of it. This simply converts it, if doesShow is true it will
+
+95
+00:07:50,240 --> 00:07:52,120
+set showPersons to false,
+
+96
+00:07:52,310 --> 00:08:00,280
+if doesShow was false, it will set showPersons to true. And again important, this gets merged with
+
+97
+00:08:00,280 --> 00:08:07,480
+the other state. Set state with an object where we only set showPersons does not mean that the entire state
+
+98
+00:08:07,480 --> 00:08:15,610
+gets replaced with showPersons only, the old state persons, another state simply is not touched, react
+
+99
+00:08:15,760 --> 00:08:20,770
+merges the updated showPersons value for us into this state,
+
+100
+00:08:20,770 --> 00:08:25,110
+this is what's happening here. Now with that in place,
+
+101
+00:08:25,270 --> 00:08:32,530
+we should be able to save this code and make sure that npm start is running and then head over to your
+
+102
+00:08:32,530 --> 00:08:34,820
+running application. Over there,
+
+103
+00:08:34,840 --> 00:08:39,130
+if you click Switch Name, you now see the persons.
+
+104
+00:08:39,310 --> 00:08:44,590
+We get the warning we already gotten lost value that for some of these persons were not actually
+
+105
+00:08:44,590 --> 00:08:46,870
+setting up to bind incorrectly,
+
+106
+00:08:46,930 --> 00:08:48,540
+we can ignore it here though.
+
+107
+00:08:48,580 --> 00:08:51,670
+Actually, it even is a good thing we get here,
+
+108
+00:08:51,700 --> 00:08:56,520
+it clearly shows us that react didn't hide the values before,
+
+109
+00:08:56,710 --> 00:08:59,890
+otherwise we would have gotten this warning right at the start.
+
+110
+00:08:59,890 --> 00:09:01,900
+When you reload the page we don't get it,
+
+111
+00:09:02,080 --> 00:09:03,900
+we only get it once you click the button.
+
+112
+00:09:04,000 --> 00:09:11,010
+So react really only render these elements once our condition is true. If I click again,
+
+113
+00:09:11,320 --> 00:09:12,810
+it's hidden.
+
+114
+00:09:13,110 --> 00:09:16,800
+Now I can also confirm this by inspecting the dom,
+
+115
+00:09:17,100 --> 00:09:23,430
+if we take a closer look into a root element into the app, we see that button here and below the
+
+116
+00:09:23,430 --> 00:09:25,720
+button, there is absolutely nothing.
+
+117
+00:09:25,860 --> 00:09:27,570
+Now watch this part on the right
+
+118
+00:09:27,570 --> 00:09:34,260
+here once I click the button. You saw this div blink up, this is this new div with our persons,
+
+119
+00:09:34,260 --> 00:09:40,360
+it was really just added, rendered to the dom once the condition was true.
+
+120
+00:09:40,410 --> 00:09:43,300
+This is how this works in react,
+
+121
+00:09:43,380 --> 00:09:49,960
+now I'll just update the caption of this button to togglePersons but that's only a cosmetic change,
+
+122
+00:09:50,130 --> 00:09:57,720
+we already got a working conditional check. Now writing conditionals like this though does work but can
+
+123
+00:09:57,720 --> 00:10:00,360
+also lead to confusing jsx code
+
+124
+00:10:00,360 --> 00:10:07,350
+if you have a lot of possibly even nested checks, so I will show you an alternative to this in the next
+
+125
+00:10:07,350 --> 00:10:08,010
+lecture.

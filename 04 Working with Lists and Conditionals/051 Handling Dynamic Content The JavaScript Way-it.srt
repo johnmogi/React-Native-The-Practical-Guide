@@ -1,0 +1,243 @@
+1
+00:00:02,250 --> 00:00:08,530
+Nell'ultima lezione impariamo come rendere dinamicamente condizionale un contenuto che dovrei dire e morto
+
+2
+00:00:08,550 --> 00:00:14,520
+semplicemente sfruttando il fatto che tutto qui è javascript e che generalmente è
+
+3
+00:00:14,580 --> 00:00:16,240
+il mantra di reagire.
+
+4
+00:00:16,320 --> 00:00:18,160
+Tutto è javascript.
+
+5
+00:00:18,180 --> 00:00:24,600
+Ho anche detto che usare solo girare ogni espressione come facciamo qui non è necessariamente ottimale, qui
+
+6
+00:00:24,600 --> 00:00:25,700
+va perfettamente bene.
+
+7
+00:00:25,710 --> 00:00:33,930
+Tuttavia, con l'aumentare della nostra applicazione e il possibile nidificazione delle condizioni, può essere difficile tenere traccia di quale
+
+8
+00:00:33,930 --> 00:00:36,330
+espressione è responsabile di cosa.
+
+9
+00:00:36,360 --> 00:00:39,250
+E per individuarli nel nostro codice GSX.
+
+10
+00:00:39,750 --> 00:00:43,830
+Quindi c'è una soluzione più pulita per ciò che voglio mostrarti in questa conferenza.
+
+11
+00:00:43,830 --> 00:00:48,290
+Lasciami rimuovere è chiamato spumante è l'espressione ternaria qui.
+
+12
+00:00:48,390 --> 00:00:53,480
+In modo che per il momento tutte le persone siano rese continuamente.
+
+13
+00:00:53,590 --> 00:00:59,640
+Whoops dovrei assicurarmi di rimuovere solo le parti dell'espressione, non la morte però.
+
+14
+00:00:59,790 --> 00:01:04,270
+Quindi con questo siamo tornati al punto di partenza in questo momento non possiamo parlare di tutto questo.
+
+15
+00:01:04,350 --> 00:01:11,390
+Ora tieni presente che tutto è javascript e alla fine quello che stiamo facendo qui con J è X è semplicemente morto.
+
+16
+00:01:11,390 --> 00:01:16,790
+Lo restituiremo con l'istruzione return nel metodo render.
+
+17
+00:01:16,800 --> 00:01:23,310
+Ora c'è una cosa importante da tenere a mente quando re-act rende qualcosa sullo schermo quando
+
+18
+00:01:23,310 --> 00:01:31,330
+decide che ha bisogno di aggiornare lo schermo che esegue rende rendering Methot e non solo un'espressione di ritorno
+
+19
+00:01:31,390 --> 00:01:32,820
+per tutto qui.
+
+20
+00:01:33,030 --> 00:01:41,640
+Quindi tutto all'interno del metodo di rendering viene eseguito ogni volta che reagisce a rendere questo componente e
+
+21
+00:01:42,060 --> 00:01:43,790
+quindi possiamo trarne vantaggio.
+
+22
+00:01:43,860 --> 00:01:47,720
+Possiamo aggiungere del codice qui prima di restituire qualcosa.
+
+23
+00:01:47,730 --> 00:01:52,400
+Aggiungerò qui una variabile denominata persone che deve essere impostata su NULL.
+
+24
+00:01:52,470 --> 00:01:54,880
+Ora questo dovrebbe essere il default.
+
+25
+00:01:54,900 --> 00:01:57,650
+Potresti dare un regalo come qualsiasi altro nome che ti piace.
+
+26
+00:01:57,720 --> 00:02:00,060
+Quindi aggiungerò una normale istruzione IF.
+
+27
+00:02:00,120 --> 00:02:03,150
+Posso farlo qui perché non sono dentro J come X. Sono dentro il mio normale codice javascript qui e là ora voglio controllare se sono le persone dello show show.
+
+28
+00:02:03,180 --> 00:02:10,500
+Tieni presente che mostrare le persone è un booleano. Quindi è vero o falso.
+
+29
+00:02:10,500 --> 00:02:14,740
+Non è necessario confrontarlo necessariamente con Vero o falso.
+
+30
+00:02:14,760 --> 00:02:17,930
+Possiamo omettere questo, quindi ora devo controllare e
+
+31
+00:02:17,940 --> 00:02:26,460
+se questo è vero, voglio impostare la mia variabile personale su un po 'come codice X e tenere sempre presente.
+
+32
+00:02:26,790 --> 00:02:29,850
+quello che compila GSX alla fine.
+
+33
+00:02:29,910 --> 00:02:36,150
+Potrei anche solo impostarlo sul risultato di re-act creare elemento fa solo
+
+34
+00:02:36,140 --> 00:02:37,050
+Ora inserirò il codice qui.
+
+35
+00:02:37,290 --> 00:02:39,390
+Le mie persone
+
+36
+00:02:39,420 --> 00:02:40,860
+Lancerò la def laggiù con la persona dentro e la aggiungerò qui.
+
+37
+00:02:41,190 --> 00:02:48,300
+Ora quello che sto facendo è il seguente.
+
+38
+00:02:48,300 --> 00:02:50,310
+Di default persone.
+
+39
+00:02:50,430 --> 00:02:51,450
+Questa variabile è nulla.
+
+40
+00:02:51,450 --> 00:02:52,970
+emetterla qui nel mio codice GSX.
+
+41
+00:02:53,160 --> 00:02:59,800
+Ma se questo show show person è una persona vera che detiene effettivamente questo codice GSX e con questo posso semplicemente prendere la variabile di quella persona ed
+
+42
+00:02:59,800 --> 00:03:05,820
+Rientro alla fine quindi se singole call braces posso produrre qui persone che si riferiscono
+
+43
+00:03:05,820 --> 00:03:14,400
+alla variabile di quella persona che è Sieber ora di default o persone se Mostra persone è vero e dato che
+
+44
+00:03:14,610 --> 00:03:22,230
+rende freddo quando reagisce controlla se ha bisogno di rieseguire questa pagina o questo componente dovrei dire dato che
+
+45
+00:03:22,320 --> 00:03:29,010
+ciò accade ogni volta che viene eseguito il pre-rendering, ci assicuriamo di prendere sempre lo stato
+
+46
+00:03:29,030 --> 00:03:35,300
+più recente che abbiamo in considerazione e persino di non rendere nulla o alle persone,
+
+47
+00:03:35,310 --> 00:03:42,090
+perché tieni presente che una delle due cose che innescano un aggiornamento è uno stato modificare.
+
+48
+00:03:42,120 --> 00:03:43,430
+Ora con questo fammi salvare questo file e tornare all'applicazione.
+
+49
+00:03:43,500 --> 00:03:49,560
+Eccoci al con. Non vediamo l'errore.
+
+50
+00:03:49,570 --> 00:03:53,040
+Posso riferire alla pagina 2 chiaramente vedere che stiamo usando l'ultima versione.
+
+51
+00:03:53,280 --> 00:03:57,410
+E ora permettimi di fare clic su alternare le persone e chiedere prima di vedere lo stesso comportamento.
+
+52
+00:03:57,660 --> 00:04:03,410
+Possiamo leggere questo, ma ora stiamo usando questo modo più elegante di esternalizzare questo
+
+53
+00:04:03,460 --> 00:04:10,080
+controllo dal GSX per tornare a una variabile che assegniamo in modo condizionale prima di tornare.
+
+54
+00:04:10,440 --> 00:04:16,840
+Ancora nella funzione di rendering però.
+
+55
+00:04:16,920 --> 00:04:19,590
+Ma prima di restituire questo con papà, teniamo D. J. come ritorno di XP e quindi il
+
+56
+00:04:19,600 --> 00:04:27,560
+nostro modello principale di questo componente.
+
+57
+00:04:27,560 --> 00:04:28,050
+Si potrebbe dire che lo manteniamo pulito e ci assicuriamo di avere solo questo piccolo riferimento qui.
+
+58
+00:04:28,050 --> 00:04:34,820
+Persone al suo interno o alla fine o niente o tutte le persone.
+
+59
+00:04:34,830 --> 00:04:40,410
+Questo è in realtà il modo preferito per l'output di
+
+60
+00:04:40,520 --> 00:04:46,470
+contenuti condizionali ed è il modo in cui lo consiglierei.
+
+61
+00:04:46,470 --> 00:04:46,980
+&nbsp;

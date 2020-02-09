@@ -1,0 +1,87 @@
+1
+00:00:02,240 --> 00:00:09,220
+Abbiamo imparato come usare pseudo selettori e come facciamo anche le classi nest e li importiamo
+
+2
+00:00:09,220 --> 00:00:12,890
+ancora su quell'oggetto di classe nella lezione precedente.
+
+3
+00:00:12,970 --> 00:00:15,080
+Ora vuoi occuparti delle richieste dei media.
+
+4
+00:00:15,090 --> 00:00:19,350
+E quello era qualcosa che volevo fare nella mia classe di borsa lì.
+
+5
+00:00:19,420 --> 00:00:27,660
+Ho assegnato la persona C S S alla morte esterna e in realtà ho già aggiunto il codice in precedenza.
+
+6
+00:00:27,700 --> 00:00:34,630
+Mi limiterò a commentarlo in qualche modo, mi ha chiesto di modificare la nostra classe Person con
+
+7
+00:00:34,630 --> 00:00:43,750
+questo se avessimo una nuova scheda più larga di 500 pixel perché la sicurezza è regolata sul file C S S e continuerà
+
+8
+00:00:43,840 --> 00:00:46,140
+ad importare questa classe di persone.
+
+9
+00:00:46,140 --> 00:00:49,270
+Bene su questo oggetto di Klaas qui.
+
+10
+00:00:49,510 --> 00:00:55,330
+Anche se è in quella query immediata, quindi, quello che dovremmo vedere è che se ricarico
+
+11
+00:00:55,330 --> 00:01:01,780
+l'applicazione e ho insegnato da persone qui se aumento la vista, la larghezza della casella non cambia.
+
+12
+00:01:01,810 --> 00:01:04,240
+Cambia solo se è abbastanza piccolo.
+
+13
+00:01:04,240 --> 00:01:08,180
+Ci sarà il 60 percento della larghezza.
+
+14
+00:01:08,560 --> 00:01:14,890
+da maneggiare visto che questo modulo pensa semplicemente a questo oggetto di classe qui come oggetto javascript
+
+15
+00:01:15,280 --> 00:01:23,320
+che ti dà accesso a una stringa di lavoro del tuo C come Stahl della tua classe CSS, ma di ac
+
+16
+00:01:23,470 --> 00:01:31,390
+come una classe che è stata modificata per essere unica, quindi semplicemente tradurrà la tua prima lezione in qualcosa di simile.
+
+17
+00:01:31,960 --> 00:01:36,220
+Quindi è stato semplicissimo e Wozzeck può essere un po 'difficile
+
+18
+00:01:36,340 --> 00:01:36,810
+Persona.
+
+19
+00:01:36,810 --> 00:01:44,380
+Sottolineare alcune cache univoche in modo da poter essere sicuro e sicuro che quando si utilizza quella classe in un
+
+20
+00:01:44,380 --> 00:01:49,130
+determinato componente è l'unico posto in cui si applica lo stilo di DC.
+
+21
+00:01:49,240 --> 00:01:53,510
+In nessun altro punto della tua applicazione i canovacci possono avere alcun effetto.
+
+22
+00:01:53,530 --> 00:01:56,750
+Questa è l'idea alla base di C-s come moduli.

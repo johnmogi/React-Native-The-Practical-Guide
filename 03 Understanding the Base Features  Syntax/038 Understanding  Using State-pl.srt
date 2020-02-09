@@ -1,0 +1,307 @@
+1
+00:00:02,320 --> 00:00:06,310
+Podczas ostatnich wykładów przyjrzeliśmy się rekwizytom. Rekwizyty, po prostu obiekt,
+
+2
+00:00:06,340 --> 00:00:12,950
+który daje nam dostęp do wszystkich atrybutów, które przekazujemy naszym własnym komponentom.
+
+3
+00:00:13,050 --> 00:00:20,530
+Teraz czasami nie chcesz otrzymywać informacji z zewnątrz, ale chcesz je mieć wewnątrz
+
+4
+00:00:20,590 --> 00:00:23,880
+komponentu i zmieniać także z niego.
+
+5
+00:00:24,310 --> 00:00:35,220
+Tak na przykład tutaj, w naszej aplikacji. Plik js, powiedzmy, że chcemy również dodać przycisk, który po kliknięciu
+
+6
+00:00:35,420 --> 00:00:38,850
+przełącza jedną z nazw, których tutaj używamy.
+
+7
+00:00:38,920 --> 00:00:42,550
+Więc jeśli po prostu umieścimy podpis Nazwa Przełącznika, dobrze,
+
+8
+00:00:43,150 --> 00:00:47,160
+przyjdziemy do obsługi tego zdarzenia kliknięcia w następnych wykładach.
+
+9
+00:00:47,320 --> 00:00:55,060
+Ale przede wszystkim musimy zdefiniować te nazwy tutaj w sposób nieskodowany, teraz jest to zakodowane w naszym
+
+10
+00:00:55,060 --> 00:00:57,840
+kodzie jsx i jest to w
+
+11
+00:00:57,850 --> 00:01:04,720
+porządku tutaj, ale jeśli później chcemy to zmienić, musimy przechowywać je w jakiejś zmiennej lub
+
+12
+00:01:04,720 --> 00:01:05,650
+coś podobnego że.
+
+13
+00:01:06,070 --> 00:01:12,080
+Cóż, faktycznie jest to klasa i klasa ma właściwości, nie
+
+14
+00:01:12,130 --> 00:01:17,190
+dotyczy to tylko javascript, ale także innych języków programowania.
+
+15
+00:01:17,350 --> 00:01:22,790
+Możesz myśleć o własności jako zmiennej klasy, więc w normalnym
+
+16
+00:01:22,810 --> 00:01:29,300
+kodzie javascript wystarczy napisać, że coś w tym stylu równa się pewnej wartości.
+
+17
+00:01:30,710 --> 00:01:32,650
+To nie działa w
+
+18
+00:01:32,810 --> 00:01:38,710
+klasie, możesz tam po prostu napisać coś równego jakiejś wartości, więc
+
+19
+00:01:38,940 --> 00:01:40,380
+trochę krócej.
+
+20
+00:01:40,410 --> 00:01:48,030
+ale w końcu to samo można powiedzieć. Istnieje jedna specjalna właściwość, którą możesz zdefiniować w dowolnym
+
+21
+00:01:48,030 --> 00:01:49,630
+komponencie, który rozszerza komponent,
+
+22
+00:01:49,770 --> 00:01:52,360
+więc nie możesz tego zrobić osobiście,
+
+23
+00:01:52,380 --> 00:01:56,840
+możesz tutaj zdefiniować właściwości, ponieważ jest to normalna funkcja, więc tutaj
+
+24
+00:01:56,850 --> 00:02:02,940
+musiałbyś użyć pewnych stałych lub niektórych zmiennych. Wciąż to, co robimy, działa
+
+25
+00:02:03,030 --> 00:02:07,480
+tylko w komponentach tworzonych przez rozszerzenie komponentu.
+
+26
+00:02:07,740 --> 00:02:17,340
+Tam możemy zdefiniować specjalny stan nazwy właściwości, podczas gdy rekwizyty są ustawiane i przekazywane z zewnątrz jak nazwa
+
+27
+00:02:17,340 --> 00:02:24,900
+i wiek do komponentu osoby, stan jest zarządzany z wnętrza komponentu, a stan jest
+
+28
+00:02:24,900 --> 00:02:31,700
+dostępny tylko w komponentach, które są używane przez rozszerzenie komponentu, który jest importowany
+
+29
+00:02:31,710 --> 00:02:35,480
+z reagować, nie jest dostępny w komponentach funkcji.
+
+30
+00:02:35,760 --> 00:02:43,260
+Nadal powinieneś używać składników funkcji tak często, jak to możliwe, ponieważ powinieneś używać stanu ostrożnie, ponieważ posiadanie stanu i wszystkich
+
+31
+00:02:43,680 --> 00:02:49,640
+składników i manipulowanie nim z dowolnego miejsca w aplikacji sprawia, że ​​twoja aplikacja staje się szybko
+
+32
+00:02:49,650 --> 00:02:54,580
+nieprzewidywalna i trudna w zarządzaniu, zwłaszcza gdy rośnie, co oczywiście nie ma znaczenia.
+
+33
+00:02:54,660 --> 00:02:57,060
+nie znaczy, że nie powinieneś go
+
+34
+00:02:57,120 --> 00:02:59,230
+używać, ale tutaj ma to sens.
+
+35
+00:02:59,310 --> 00:03:05,050
+Inicjujemy go, przypisując wartość, a ta wartość jest obiektem
+
+36
+00:03:05,070 --> 00:03:14,160
+javascript, ponownie jest to słowo zarezerwowane i powinniśmy go użyć, jeśli chcemy dobrze zarządzać
+
+37
+00:03:14,250 --> 00:03:14,690
+niektórymi
+
+38
+00:03:14,690 --> 00:03:22,820
+wewnętrznymi danymi komponentów, które powinniśmy powiedzieć. Więc teraz państwo może mieć kilka osób, to zależy wyłącznie od
+
+39
+00:03:22,830 --> 00:03:28,980
+ciebie, po prostu tworzę właściwość persons w tym obiekcie javascript i będzie to tablica, i możesz ustawić
+
+40
+00:03:29,160 --> 00:03:36,210
+dowolny rodzaj danych, które chcesz w tym obiekcie stanu. Możesz ustawić właściwość nazwy, która jest
+
+41
+00:03:36,210 --> 00:03:40,940
+jakaś nazwa, możesz naprawdę zarządzać, co chcesz,
+
+42
+00:03:40,950 --> 00:03:44,090
+tutaj chcę zarządzać szereg osób.
+
+43
+00:03:44,370 --> 00:03:52,050
+Teraz tablica tej osoby znowu jest tablicą obiektów javascript, w której każdy obiekt ma nazwę, może
+
+44
+00:03:52,080 --> 00:04:00,720
+Max i wiek, może 28, liczba tutaj, a nie ciąg, w przeciwieństwie do tam, gdzie przekazujemy ciąg, ale
+
+45
+00:04:00,720 --> 00:04:03,270
+liczba jest w porządku stąd .
+
+46
+00:04:03,450 --> 00:04:07,510
+Chcę też mieć tu jeszcze jedną,
+
+47
+00:04:07,530 --> 00:04:11,970
+imię Manu i wiek 29, a
+
+48
+00:04:12,000 --> 00:04:19,130
+trzecią, jak się domyślacie, dla Stephanie, która ma 26 lat.
+
+49
+00:04:19,240 --> 00:04:21,560
+Teraz jest to mój stan, możemy teraz
+
+50
+00:04:21,640 --> 00:04:24,860
+uzyskać dostęp do właściwości takiej jak ta, i nie
+
+51
+00:04:24,910 --> 00:04:32,110
+jest to prawdą tylko dla stanu, ale dla jakiejkolwiek właściwości w naszej metodzie renderowania, po prostu wyprowadzając coś dynamicznego za
+
+52
+00:04:32,110 --> 00:04:41,570
+pomocą pojedynczych nawiasów klamrowych, jak się go nauczyło, a następnie tego słowa kluczowego. Odnosi się to do klasy z powodu naszej składni ES6,
+
+53
+00:04:42,060 --> 00:04:45,360
+której używamy, a na naszej klasie mamy
+
+54
+00:04:45,730 --> 00:04:52,530
+metodę renderowania, którą moglibyśmy nazwać, nie powinniśmy tego robić, chociaż reagujemy na to, ale
+
+55
+00:04:52,540 --> 00:04:54,550
+mamy właściwość stanu.
+
+56
+00:04:54,640 --> 00:04:59,200
+Jak już powiedziałem, możesz także zdefiniować swoje własne właściwości, ale stany są wyjątkowe, czego
+
+57
+00:04:59,200 --> 00:05:00,880
+nauczysz się podczas kolejnych wykładów.
+
+58
+00:05:00,880 --> 00:05:06,510
+Tak więc możemy wtedy uzyskać dostęp do tego stanu i stanu, moja
+
+59
+00:05:06,610 --> 00:05:12,580
+tablica osób może być pierwszym elementem za pomocą indeksu 0, a następnie nazwy.
+
+60
+00:05:12,850 --> 00:05:20,080
+Więc zamiast kodowania twardego, mam teraz dostęp do tej właściwości w tym obiekcie tutaj w
+
+61
+00:05:20,260 --> 00:05:22,520
+tablicy osób we właściwości stanu.
+
+62
+00:05:22,540 --> 00:05:29,400
+Teraz skopiuję ten kod tutaj i zastąpię go także swoim wiekiem, tam oczywiście chcę uzyskać dostęp
+
+63
+00:05:29,440 --> 00:05:31,910
+do właściwości wieku, a ja powtórzę
+
+64
+00:05:32,930 --> 00:05:34,920
+to dla Manu, ale
+
+65
+00:05:34,950 --> 00:05:37,810
+tutaj jest to oczywiście pierwszy element,
+
+66
+00:05:37,850 --> 00:05:44,870
+drugi element z indeksem jeden w tej tablicy. A dla wieku będę także miał dostęp
+
+67
+00:05:44,900 --> 00:05:51,540
+do elementu pierwszego i oczywiście do wieku. I dla Stephanie prawdopodobnie to odgadłeś, indeks
+
+68
+00:05:51,710 --> 00:05:59,870
+drugi, a także dla indeksu wieku i własności wieku. Z tym, jeśli to zapiszemy i wrócimy do aplikacji,
+
+69
+00:06:00,170 --> 00:06:02,240
+zobaczymy przycisk, który nic nie
+
+70
+00:06:02,420 --> 00:06:07,570
+robi i widzimy to samo wyjście jak poprzednio, tym razem przy
+
+71
+00:06:07,700 --> 00:06:09,650
+użyciu właściwości, własności stanu.
+
+72
+00:06:09,650 --> 00:06:12,810
+Teraz powiedziałem, że stan będzie specjalną własnością, ale
+
+73
+00:06:12,830 --> 00:06:21,920
+jak dotąd nie używamy go w szczególny sposób, ale możemy to zmienić. Państwo może zostać zmienione, a jeśli się zmieni i
+
+74
+00:06:21,950 --> 00:06:26,510
+to jest wyjątkowa rzecz i działa tylko na tej
+
+75
+00:06:26,510 --> 00:06:35,880
+własności państwowej, jeśli się zmieni, to doprowadzi to do ponownego renderowania naszej domeny lub do aktualizacji domeny, którą powinienem powiedzieć.
+
+76
+00:06:36,230 --> 00:06:45,380
+Jeśli więc zmienimy na przykład nazwę Max na przykład, doprowadzi to do ponownego renderowania i
+
+77
+00:06:45,620 --> 00:06:51,660
+pokażę ci, jak słuchać zdarzeń, takich jak kliknięcie tego przycisku.

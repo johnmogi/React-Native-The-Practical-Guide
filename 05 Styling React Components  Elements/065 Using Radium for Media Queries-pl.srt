@@ -1,0 +1,223 @@
+1
+00:00:02,200 --> 00:00:08,570
+W ostatnim wykładzie dodaliśmy rad i zaczęliśmy go używać, aby zmienić nasz przycisk
+
+2
+00:00:08,810 --> 00:00:11,190
+i dodać pseudo-selektor, pseudo-selektor hover.
+
+3
+00:00:11,210 --> 00:00:16,220
+Teraz jest to oczywiście miłe, ale możemy również użyć radu do korzystania z zapytań o media.
+
+4
+00:00:16,320 --> 00:00:23,780
+Teraz zrobię to w komponencie osobowym, tam mamy klasę osobową i możemy oczywiście łatwo dodać
+
+5
+00:00:23,780 --> 00:00:31,100
+zapytanie o media tutaj, gdzie mówimy, że jeśli min-szerokość wynosi powiedzmy 500px, to nadpisujemy naszą
+
+6
+00:00:31,100 --> 00:00:36,970
+klasę osobową, aby mieć szerokość 450 pikseli i nie używają już procentów.
+
+7
+00:00:37,130 --> 00:00:38,840
+Moglibyśmy to zrobić, ale
+
+8
+00:00:39,020 --> 00:00:43,490
+skomentuję to rozwiązanie, ponieważ nie chcę używać mojej klasy css,
+
+9
+00:00:43,520 --> 00:00:47,990
+chcę pokazać, jak zrobić to z radem, którego możesz potrzebować
+
+10
+00:00:48,080 --> 00:00:54,040
+w niektórych przypadkach, jeśli chcesz go skalować do składnik lub jeśli chcesz go zmienić dynamicznie.
+
+11
+00:00:54,250 --> 00:00:59,900
+W tym celu dodam nowy styl i oczywiście możesz nazwać tę stałą, co chcesz
+
+12
+00:00:59,900 --> 00:01:08,660
+w mojej funkcji tu i tam, teraz znowu użyję specjalnego selektora, który będzie wyglądał naprawdę dziwnie, ale który działa dzięki radowi i
+
+13
+00:01:08,900 --> 00:01:11,030
+donowi nie zapomnij zawinąć twojego
+
+14
+00:01:11,120 --> 00:01:15,650
+eksportu za pomocą radu, w przeciwnym razie nie zadziała i teraz
+
+15
+00:01:16,070 --> 00:01:18,180
+możesz tutaj napisać zapytanie o media.
+
+16
+00:01:18,440 --> 00:01:30,730
+@media (min-width: 500px), a następnie zdefiniuj style jako obiekt javascript.
+
+17
+00:01:30,880 --> 00:01:33,640
+To nadal jest nazwa właściwości javascript i wiem,
+
+18
+00:01:33,670 --> 00:01:35,060
+że to wygląda na
+
+19
+00:01:35,080 --> 00:01:39,040
+bardzo dziwne, ale ponieważ jest to ciąg znaków, jest to poprawna nazwa,
+
+20
+00:01:39,040 --> 00:01:44,290
+a radium będzie je parsować i oczywiście zrozumieć, ponieważ jest to zapytanie o media i pośród
+
+21
+00:01:44,290 --> 00:01:46,750
+pseudo selektorów, jest to coś, co rozumie rad.
+
+22
+00:01:46,750 --> 00:01:54,820
+Teraz możemy powiedzieć, że chcemy ustawić szerokość elementu, do którego stosujemy styl, do
+
+23
+00:01:54,820 --> 00:02:00,610
+450 px, czyli stałej szerokości, która nie rośnie dynamicznie.
+
+24
+00:02:00,610 --> 00:02:07,510
+A teraz chcę przypisać to do mojego komponentu tutaj, chcę przypisać styl i mam dodaną moją
+
+25
+00:02:07,810 --> 00:02:14,230
+klasę, ale mam też swój styl, który nadpisze moje ustawienie klasy, domyślnie reguł css nie
+
+26
+00:02:14,230 --> 00:02:15,610
+ze względu na rad.
+
+27
+00:02:15,610 --> 00:02:20,120
+A teraz powinniśmy zobaczyć następujące rzeczy, jeśli przeładowuję aplikację lub
+
+28
+00:02:20,140 --> 00:02:27,940
+przełączam osoby, teraz, jak widać, teraz mamy błąd, że wtyczka wymagająca addCSS na przykład podczas korzystania z klatek
+
+29
+00:02:28,000 --> 00:02:31,000
+kluczowych lub dla nas ważnych zapytań o
+
+30
+00:02:31,000 --> 00:02:34,810
+media, musimy zawinąć naszą aplikację w stylowy składnik root.
+
+31
+00:02:34,810 --> 00:02:42,100
+Jest to komponent udostępniony przez Radium i podczas gdy zawijanie eksportu za pomocą radu
+
+32
+00:02:42,220 --> 00:02:50,200
+jest wystarczające dla jego pseudo-selektorów, aby zasadniczo przekształcić selektory takie jak zapytania o media lub
+
+33
+00:02:50,200 --> 00:02:51,700
+inne animacje z
+
+34
+00:02:51,730 --> 00:02:58,150
+klatkami kluczowymi, musimy zawinąć całą aplikację w specjalnym komponencie dostarczonym przez Rad.
+
+35
+00:02:58,150 --> 00:03:05,500
+Tam możemy po prostu zaimportować pierwiastek z radu z tym pierwszym importem radu, importujemy
+
+36
+00:03:05,500 --> 00:03:11,330
+domyślny eksport tego pliku, a następnie importujemy root nazwany styl eksportu,
+
+37
+00:03:11,680 --> 00:03:15,770
+a teraz możemy po prostu zawinąć całą naszą aplikację.
+
+38
+00:03:16,000 --> 00:03:26,240
+Więc możemy po prostu przejść tutaj, oops nie osobiście, przepraszam, oświadczenie return i po prostu zawijam
+
+39
+00:03:26,330 --> 00:03:34,750
+wszystko, cały div z aplikacją klasy class do stylu root tak jak ten.
+
+40
+00:03:34,760 --> 00:03:39,400
+Teraz, jeśli to zapiszemy i ponownie załadujemy aplikację,
+
+41
+00:03:39,470 --> 00:03:41,630
+kliknąłem to ponownie, teraz
+
+42
+00:03:41,730 --> 00:03:47,690
+działa bezbłędnie, a jeśli zmieniam rozmiar tego, widzisz, że pudełka
+
+43
+00:03:47,690 --> 00:03:48,550
+pozostają
+
+44
+00:03:48,920 --> 00:03:52,440
+tylko w środku, ale nie powiększają
+
+45
+00:03:52,580 --> 00:04:00,860
+już szerokości, są rośnie do 60 procent, ale jeśli przekroczę próg zapytań o media 500px.
+
+46
+00:04:00,860 --> 00:04:08,780
+Jeśli więc przekroczę ten próg, w zasadzie będzie on wynosił 60 procent, jeśli przekroczę ten próg,
+
+47
+00:04:08,780 --> 00:04:09,750
+pozostanie on
+
+48
+00:04:09,920 --> 00:04:15,590
+na stałej szerokości 450 pikseli. Ważne, owiń całą aplikację w komponencie głównym tylko
+
+49
+00:04:15,680 --> 00:04:22,700
+tam, gdzie znajduje się stylowy składnik główny dostarczony przez rad, abyś mógł bezpiecznie uzyskać dostęp do zaawansowanych funkcji, aby
+
+50
+00:04:22,700 --> 00:04:29,940
+wywoływać go w ten sposób, np. Zapytania o media. W przypadku samego pseudo selektora nie musisz
+
+51
+00:04:29,940 --> 00:04:34,430
+wykonywać żadnej z tych funkcji, musisz owijać komponent, w
+
+52
+00:04:34,460 --> 00:04:40,340
+którym planujesz używać funkcji radu, takich jak zapytania o media, takich
+
+53
+00:04:40,340 --> 00:04:41,200
+jak pseudo
+
+54
+00:04:41,240 --> 00:04:48,520
+selektory, musisz zawinąć eksport z funkcją radu w zasadzie które importujesz z pakietu radu.
+
+55
+00:04:48,800 --> 00:04:58,310
+Tak więc używanie radu to jeden ze sposobów na uzyskanie najlepszych z obu światów obejmujących style i zaawansowane funkcje css, takie jak
+
+56
+00:04:58,310 --> 00:05:00,740
+selektory pseudosystemów i zapytania o media.

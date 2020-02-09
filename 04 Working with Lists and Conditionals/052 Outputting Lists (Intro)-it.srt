@@ -1,0 +1,59 @@
+1
+00:00:02,190 --> 00:00:08,250
+Durante le ultime lezioni apprendiamo come pubblicare i contenuti in modo condizionale e semplicemente
+
+2
+00:00:08,250 --> 00:00:11,310
+sfruttiamo il fatto che tutto è javascript.
+
+3
+00:00:11,310 --> 00:00:20,100
+Ora voglio rendere la mia lista di persone così lontano che non lo stiamo facendo davvero in modo dinamico.
+
+4
+00:00:20,100 --> 00:00:26,000
+Abbiamo un paio di persone qui nel nostro stato e questa dovrebbe essere la nostra unica fonte di verità.
+
+5
+00:00:26,010 --> 00:00:32,090
+Questa dovrebbe essere la nostra fonte di dati in applicazioni più grandi in applicazioni reali.
+
+6
+00:00:32,100 --> 00:00:37,010
+Questo potrebbe essere popolato da Dedo o con dati recuperati da un server.
+
+7
+00:00:37,350 --> 00:00:46,260
+Quindi abbiamo una serie di persone, ma nel Rouget come X torniamo qui nel nostro condizionale.
+
+8
+00:00:46,260 --> 00:00:53,400
+tre persone e assegnato manualmente i dati alla persona diversa e il nostro array ovviamente è superflessibile.
+
+9
+00:00:54,050 --> 00:00:56,470
+Ora abbiamo semplicemente codificato con hardcoded
+
+10
+00:00:56,700 --> 00:01:04,560
+Se dovessimo cambiare qualcosa se aggiungessimo una nuova persona o ne rimuovessimo una, ciò si interromperà sostanzialmente e non potremo nemmeno rivolgerci
+
+11
+00:01:04,560 --> 00:01:11,200
+a una persona specifica durante l'aggiornamento come facciamo qui con il gestore di click o di modifica delle parole.
+
+12
+00:01:11,210 --> 00:01:14,400
+Tutto questo non funziona veramente nel modo in cui dovrebbe funzionare.
+
+13
+00:01:14,520 --> 00:01:22,170
+Quindi, impariamo come possiamo generare gli elenchi di matrici di dati e come possiamo interagire con
+
+14
+00:01:22,170 --> 00:01:25,620
+loro aggiornandoli e cambiando correttamente gli array.
+
+15
+00:01:25,620 --> 00:01:29,500
+E il nostro stato si concentrerà su tutte queste cose nelle prossime lezioni.

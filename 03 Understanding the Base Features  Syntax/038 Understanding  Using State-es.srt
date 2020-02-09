@@ -1,0 +1,307 @@
+1
+00:00:02,320 --> 00:00:06,310
+En las últimas conferencias, echamos un vistazo a los accesorios de utilería.
+
+2
+00:00:06,340 --> 00:00:12,950
+Simplemente un objeto que nos da acceso a todos los atributos que pasamos a nuestros propios componentes.
+
+3
+00:00:13,050 --> 00:00:20,530
+Ahora, a veces no quieres obtener información del exterior, pero quieres tenerla dentro de un
+
+4
+00:00:20,590 --> 00:00:23,880
+componente y cambiarla desde adentro también.
+
+5
+00:00:24,310 --> 00:00:35,220
+Entonces, por ejemplo, aquí, en nuestro archivo js de la aplicación, digamos que también queremos agregar un botón que si hacemos clic simplemente cambia
+
+6
+00:00:35,420 --> 00:00:38,850
+uno de los nombres que usamos aquí.
+
+7
+00:00:38,920 --> 00:00:42,550
+Entonces, simplemente colocamos una leyenda del nombre del interruptor.
+
+8
+00:00:43,150 --> 00:00:47,160
+Bien, llegaremos a manejar este evento de clic y las próximas conferencias.
+
+9
+00:00:47,320 --> 00:00:55,060
+Pero antes que nada necesitamos definir estos nombres aquí de una manera no rígida.
+
+10
+00:00:55,060 --> 00:00:57,840
+En este momento está codificado en nuestro código GSX.
+
+11
+00:00:57,850 --> 00:01:04,720
+Y aquí está bien, pero si luego queremos cambiarlo, tenemos que almacenarlo en alguna variable o
+
+12
+00:01:04,720 --> 00:01:05,650
+algo así.
+
+13
+00:01:06,070 --> 00:01:12,080
+Bueno, esto en realidad es una clase y una clase tiene propiedades.
+
+14
+00:01:12,130 --> 00:01:17,190
+Esto no es solo un caso en JavaScript, sino también una hora de lenguaje de programación.
+
+15
+00:01:17,350 --> 00:01:22,790
+Puede pensar en una propiedad como una variable de una clase.
+
+16
+00:01:22,810 --> 00:01:29,300
+Entonces, en el código javascript normal, simplemente escribiría var algo igual a algún valor.
+
+17
+00:01:30,710 --> 00:01:32,650
+Esto no funciona en una clase.
+
+18
+00:01:32,810 --> 00:01:38,710
+Allí simplemente puedes escribir algo igual a algún valor.
+
+19
+00:01:38,940 --> 00:01:40,380
+Así que un poco más corto.
+
+20
+00:01:40,410 --> 00:01:48,030
+Pero al final, lo mismo podría decirse que hay una propiedad especial que puede encontrar en cualquier componente
+
+21
+00:01:48,030 --> 00:01:49,630
+que amplíe el componente.
+
+22
+00:01:49,770 --> 00:01:52,360
+Entonces no puedes hacerlo en persona.
+
+23
+00:01:52,380 --> 00:01:56,840
+Puede encontrar propiedades aquí de todos modos porque esa es una función normal.
+
+24
+00:01:56,850 --> 00:02:02,940
+lo que se trata solo funciona en componentes que se crean al extender el componente.
+
+25
+00:02:03,030 --> 00:02:07,480
+Entonces, aquí debería usar algunos constantes o algunas variables, pero de
+
+26
+00:02:07,740 --> 00:02:17,340
+Allí podemos definir un estado de nombre de propiedad especial donde se establecen y pasan props desde fuera como nombre y edad al estado
+
+27
+00:02:17,340 --> 00:02:24,900
+de componente de persona que se gestiona desde dentro de un componente y el estado es solo un nivel
+
+28
+00:02:24,900 --> 00:02:31,700
+de vía en los componentes que se usan extendiendo el componente que es importado de reaccionar
+
+29
+00:02:31,710 --> 00:02:35,480
+No es una forma de etiqueta en los componentes de función.
+
+30
+00:02:35,760 --> 00:02:43,260
+Aún así, debe usar los componentes de función tan a menudo como sea posible porque debe usar el estado con
+
+31
+00:02:43,680 --> 00:02:49,640
+cuidado porque tener estado y todos sus componentes y manipularlo desde cualquier lugar en su mezclador
+
+32
+00:02:49,650 --> 00:02:54,580
+de aplicaciones es rápidamente impredecible y difícil de administrar, especialmente a medida que crece.
+
+33
+00:02:54,660 --> 00:02:57,060
+Por supuesto, eso no significa que no deberías usarlo en absoluto.
+
+34
+00:02:57,120 --> 00:02:59,230
+Aquí tiene perfecto sentido.
+
+35
+00:02:59,310 --> 00:03:05,050
+Lo inicializamos asignando un valor y este valor es un objeto javascript.
+
+36
+00:03:05,070 --> 00:03:14,160
+De nuevo, esta es una palabra reservada y deberíamos usarla si queremos administrar bien algunos datos internos de los
+
+37
+00:03:14,250 --> 00:03:14,690
+componentes.
+
+38
+00:03:14,690 --> 00:03:22,820
+Deberías decir que ahora el estado podría tener algunas personas. Depende totalmente de ti.
+
+39
+00:03:22,830 --> 00:03:28,980
+Simplemente trato una propiedad de personas y hace un objeto javascript y esto será una matriz.
+
+40
+00:03:29,160 --> 00:03:36,210
+de estado, puede configurar una propiedad de nombre, que es un nombre que realmente puede administrar aquí.
+
+41
+00:03:36,210 --> 00:03:40,940
+Y puede configurar cualquier tipo de datos que desee en este objeto
+
+42
+00:03:40,950 --> 00:03:44,090
+Sin embargo, quiero administrar una gran variedad de personas.
+
+43
+00:03:44,370 --> 00:03:52,050
+Ahora la matriz de esta persona nuevamente es una matriz de objetos JavaScript donde cada objeto tiene un nombre.
+
+44
+00:03:52,080 --> 00:04:00,720
+Tal vez Max y H tal vez 28 una serie de aquí no una cadena a diferencia allí donde pasamos una cadena,
+
+45
+00:04:00,720 --> 00:04:03,270
+pero un número está bien desde aquí.
+
+46
+00:04:03,450 --> 00:04:07,510
+También quiero tener un número uno en tu nombre.
+
+47
+00:04:07,530 --> 00:04:11,970
+Hombre tú y 29 años y un tercero.
+
+48
+00:04:12,000 --> 00:04:19,130
+Supongo que cuatro es Stefany, que tiene 26 años.
+
+49
+00:04:19,240 --> 00:04:21,560
+Ahora este es mi estado.
+
+50
+00:04:21,640 --> 00:04:24,860
+Ahora podemos acceder a una propiedad como esta.
+
+51
+00:04:24,910 --> 00:04:32,110
+Y eso no es solo cierto para el estado, sino para cualquier propiedad en nuestro render Meffert
+
+52
+00:04:32,110 --> 00:04:41,570
+simplemente generando algo dinámico con llaves de llamada individuales, tal como aprendió y luego la palabra clave this se refiere a la clase
+
+53
+00:04:42,060 --> 00:04:45,360
+a nuestra sintaxis Yes six que estamos usando.
+
+54
+00:04:45,730 --> 00:04:52,530
+Y en nuestra clase tenemos un método de representación al que podríamos llamar que no deberíamos hacer, aunque reactivemos la deuda de los
+
+55
+00:04:52,540 --> 00:04:54,550
+Estados Unidos, pero tenemos una propiedad estatal.
+
+56
+00:04:54,640 --> 00:04:59,200
+definir tus propias propiedades pero, especialmente, una, como aprenderás en las próximas conferencias.
+
+57
+00:04:59,200 --> 00:05:00,880
+Y como dije, también puedes
+
+58
+00:05:00,880 --> 00:05:06,510
+Entonces, aquí podemos acceder a este estado y establecer la matriz de mi persona.
+
+59
+00:05:06,610 --> 00:05:12,580
+Puede haber el primer elemento usando el índice 0 y luego el nombre.
+
+60
+00:05:12,850 --> 00:05:20,080
+Entonces, en lugar de codificarlo con dificultad ahora estoy accediendo a esta propiedad en este objeto aquí en la matriz de
+
+61
+00:05:20,260 --> 00:05:22,520
+la persona en la propiedad del estado.
+
+62
+00:05:22,540 --> 00:05:29,400
+Ahora copiaré este código aquí y reemplazaré mi edad por allí.
+
+63
+00:05:29,440 --> 00:05:31,910
+Por supuesto, quiero acceder a la propiedad.
+
+64
+00:05:32,930 --> 00:05:34,920
+Y voy a replicar esto para hombre.
+
+65
+00:05:34,950 --> 00:05:37,810
+Pero tu es, por supuesto, el primer elemento.
+
+66
+00:05:37,850 --> 00:05:44,870
+El segundo elemento con el índice uno en este conjunto y para la edad de todo el elemento en exceso 1.
+
+67
+00:05:44,900 --> 00:05:51,540
+Y, por supuesto, la propiedad de la edad y para Stephanie probablemente adivinaste ese índice también.
+
+68
+00:05:51,710 --> 00:05:59,870
+Y también para el D. H. índice también y una propiedad con eso si guardamos esto y volvemos
+
+69
+00:06:00,170 --> 00:06:02,240
+a la aplicación vemos el botón que no hace nada.
+
+70
+00:06:02,420 --> 00:06:07,570
+Y vemos el mismo resultado que antes usando esta propiedad.
+
+71
+00:06:07,700 --> 00:06:09,650
+La propiedad del estado sin embargo.
+
+72
+00:06:09,650 --> 00:06:12,810
+Ahora dije que el estado sería una propiedad especial.
+
+73
+00:06:12,830 --> 00:06:21,920
+Hasta ahora no lo usamos de manera especial, aunque podemos cambiar este estado, se puede cambiar y si cambia.
+
+74
+00:06:21,950 --> 00:06:26,510
+Y eso es lo especial y solo funciona en esa propiedad estatal.
+
+75
+00:06:26,510 --> 00:06:35,880
+Si cambia, reaccionará para volver a representar nuestro dormitorio o para actualizar el dormitorio que debería decir.
+
+76
+00:06:36,230 --> 00:06:45,380
+Entonces, si cambiamos el nombre de Max, por ejemplo, esto dará lugar a que se lea "renderizado".
+
+77
+00:06:45,620 --> 00:06:51,660
+Y déjame demostrarte enseñándote cómo escuchar eventos como hacer clic en este botón.

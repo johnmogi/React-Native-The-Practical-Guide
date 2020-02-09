@@ -1,0 +1,147 @@
+1
+00:00:02,200 --> 00:00:09,730
+Na última palestra, eu verifiquei o que o gênio X é realmente e é tão importante entender isso.
+
+2
+00:00:09,990 --> 00:00:14,850
+Agora, nesta palestra, quero destacar algumas das restrições que enfrentamos.
+
+3
+00:00:14,850 --> 00:00:21,720
+Por exemplo, esse nome de nome de classe aqui James x parece ser htmln, deve-se permitir que escrevemos
+
+4
+00:00:21,720 --> 00:00:28,680
+o código HVM Elish em nossos arquivos javascript ainda, uma vez que não é um arquivo javascript e,
+
+5
+00:00:28,680 --> 00:00:36,780
+como é javascript, algumas palavras podem ser usadas CLOS, por exemplo O que usaríamos no hml normal para atribuir o acesso
+
+6
+00:00:36,780 --> 00:00:41,620
+como classe não pode ser usado porque eu reservo a palavra em javascript.
+
+7
+00:00:41,700 --> 00:00:45,360
+Nós já usamos isso aqui, a propósito, para criar uma nova classe.
+
+8
+00:00:45,360 --> 00:00:48,210
+É por isso que temos que usar o nome da classe.
+
+9
+00:00:48,210 --> 00:00:56,140
+Todos esses elementos que você pode usar aqui como Def e H são realmente gerenciados ou fornecidos pela biblioteca
+
+10
+00:00:56,160 --> 00:00:57,090
+de reação.
+
+11
+00:00:57,360 --> 00:01:04,240
+Nós não estamos usando o HVM real, vou re-acessar o texto convertendo-os nos bastidores e re-agindo,
+
+12
+00:01:04,250 --> 00:01:07,970
+achando os atributos entre aspas que devo dizer.
+
+13
+00:01:08,100 --> 00:01:13,620
+Podemos definir em todos esses elementos e não temos o atributo de classe como temos no
+
+14
+00:01:13,620 --> 00:01:14,970
+elemento comum h m.
+
+15
+00:01:15,120 --> 00:01:18,070
+Nós temos o atributo name da classe aqui.
+
+16
+00:01:18,180 --> 00:01:22,930
+Para adicionar um C é como a classe que você pode ver em nosso código final.
+
+17
+00:01:23,000 --> 00:01:27,180
+Isso é traduzido para a classe, embora não seja o nome da classe aqui.
+
+18
+00:01:27,210 --> 00:01:33,850
+Uma vez que tenha sido processado agora, uma restrição de número que enfrentamos está morta.
+
+19
+00:01:33,870 --> 00:01:35,760
+Quando devolvemos algo aqui.
+
+20
+00:01:36,030 --> 00:01:42,940
+Digamos que todos nós queremos retornar um título de número que na verdade não podemos fazer isso aqui.
+
+21
+00:01:43,140 --> 00:01:47,360
+Nossa expressão GSX deve ter um elemento raiz.
+
+22
+00:01:47,370 --> 00:01:51,670
+Agora, com o re-ato 16, esse tipo de afrouxamento.
+
+23
+00:01:52,080 --> 00:01:58,450
+E veremos as pontuações que realmente podemos retornar elementos adjacentes no final.
+
+24
+00:01:58,530 --> 00:02:06,780
+seus oponentes e quer adicionar CCS S-Class, que é responsável pelo estilo para o elemento raiz como nós fazemos aqui.
+
+25
+00:02:06,820 --> 00:02:13,170
+É uma coisa típica e uma prática recomendada típica para embrulhar tudo em um elemento raiz
+
+26
+00:02:13,170 --> 00:02:18,050
+por componente, embora isso também faça sentido, pois você geralmente deseja modelar
+
+27
+00:02:18,060 --> 00:02:23,760
+Então, você anula tudo em um único elemento raiz que você retorna.
+
+28
+00:02:23,760 --> 00:02:29,800
+E se você está se perguntando sobre esses parênteses aqui, eles são simplesmente usados ​​para que possamos subir para HVM
+
+29
+00:02:29,820 --> 00:02:36,570
+L e eu sempre digo H. M. S. Mas tenha em mente que é
+
+30
+00:02:36,570 --> 00:02:42,780
+o javascript da saída de James, para que você possa retornar este código HVM bem estruturado em várias linhas sem receber erros.
+
+31
+00:02:42,780 --> 00:02:44,830
+É por isso que usamos os parênteses.
+
+32
+00:02:45,120 --> 00:02:51,020
+Então, se eu pudesse adicionar um parágrafo aqui onde eu digo, isso realmente está funcionando.
+
+33
+00:02:51,450 --> 00:02:53,220
+E isso é próximo.
+
+34
+00:02:53,460 --> 00:02:56,450
+Agora, com isso, vemos esse parágrafo aqui também.
+
+35
+00:02:56,540 --> 00:03:02,370
+E nós examinamos algumas das restrições ou coisas a serem observadas ao usar o GSX porque,
+
+36
+00:03:02,410 --> 00:03:03,730
+novamente, é um HMO.
+
+37
+00:03:03,810 --> 00:03:07,140
+Mas, na maioria dos casos, ele funciona mesmo assim.

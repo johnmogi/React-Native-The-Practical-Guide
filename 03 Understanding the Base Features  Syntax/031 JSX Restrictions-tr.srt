@@ -1,0 +1,147 @@
+1
+00:00:02,200 --> 00:00:09,730
+Son konuşmada, dahi X'in aslında ne olduğuna bir göz attım ve bunu anlamak çok önemli.
+
+2
+00:00:09,990 --> 00:00:14,850
+Şimdi bu derste karşılaştığımız bazı kısıtlamaları vurgulamak istiyorum.
+
+3
+00:00:14,850 --> 00:00:21,720
+Örneğin, bu sınıf adı şey burada James x açıkça htmln gibi görünüyor, çünkü
+
+4
+00:00:21,720 --> 00:00:28,680
+bir javascript dosyası olmadığı halde HVM Elish kodunu bizim javascript dosyalarımızda yazmamıza izin
+
+5
+00:00:28,680 --> 00:00:36,780
+vermeliyiz ve javascript olduğundan bazı kelimeler CLOS olarak kullanılabilir normal hml'de sınıf olarak erişim atamak
+
+6
+00:00:36,780 --> 00:00:41,620
+için kullanacağımız şey, javascript'te kelimeyi ayırt ettiğim için kullanılamıyor.
+
+7
+00:00:41,700 --> 00:00:45,360
+Zaten bunu burada yeni bir sınıf yaratma yolunda kullandık.
+
+8
+00:00:45,360 --> 00:00:48,210
+Bu yüzden sınıf adını kullanmak zorundayız.
+
+9
+00:00:48,210 --> 00:00:56,140
+Burada kullanabileceğiniz Def ve H gibi unsurların hepsi tepki kitaplığı tarafından yönetiliyor veya
+
+10
+00:00:56,160 --> 00:00:57,090
+sağlanıyor.
+
+11
+00:00:57,360 --> 00:01:04,240
+Gerçek HVM'yi kullanmıyor, metin yeniden erişime sokacağım ve bunları sahnelerin arkasında
+
+12
+00:01:04,250 --> 00:01:07,970
+dönüştürüp söyleyeceğim tırnak işaretindeki nitelikleri buluyor.
+
+13
+00:01:08,100 --> 00:01:13,620
+Bütün bu unsurlar üzerinde tanımlayabiliriz ve normal h m l unsurunda olduğu gibi sınıf
+
+14
+00:01:13,620 --> 00:01:14,970
+niteliğine sahip değiliz.
+
+15
+00:01:15,120 --> 00:01:18,070
+Burada sınıf adı özniteliğine sahibiz.
+
+16
+00:01:18,180 --> 00:01:22,930
+C eklemek için, final kodumuzda görebileceğiniz kadar sınıf vardır.
+
+17
+00:01:23,000 --> 00:01:27,180
+Buraya sınıf adı gelse de, bu sınıfı tercüme eder.
+
+18
+00:01:27,210 --> 00:01:33,850
+Bir kere görüntülendiğinde karşımıza çıkan bir sayı kısıtlaması öldü.
+
+19
+00:01:33,870 --> 00:01:35,760
+Burada bir şeyler döndüğümüzde.
+
+20
+00:01:36,030 --> 00:01:42,940
+Diyelim ki hepimiz aslında burada yapamayacağımız bir sayı başlığı göndermek istiyoruz.
+
+21
+00:01:43,140 --> 00:01:47,360
+GSX ifademizin bir kök elemanı olmalıdır.
+
+22
+00:01:47,370 --> 00:01:51,670
+Şimdi yeniden hareketle 16 bu tür gevşedi.
+
+23
+00:01:52,080 --> 00:01:58,450
+Ve sonunda bitişik elemanları gerçekten geri getirebildiğimiz puanlar göreceğiz.
+
+24
+00:01:58,530 --> 00:02:06,780
+ve bu da mantıklı olmasına rağmen, kök elemanın stilinden sorumlu olan CCS S-Sınıfı'nı eklemek istiyorsunuz biz burada yapıyoruz.
+
+25
+00:02:06,820 --> 00:02:13,170
+Tipik bir şey ve bileşenleri başına bir kök unsurun içine her şeyi sarmak için
+
+26
+00:02:13,170 --> 00:02:18,050
+tipik bir en iyi uygulama tipik olarak rakiplerinizi stil etmek istediğinizden
+
+27
+00:02:18,060 --> 00:02:23,760
+Dolayısıyla genelde her şeyi geri döndüğünüz tek bir kök unsurun içine yerleştirirsiniz.
+
+28
+00:02:23,760 --> 00:02:29,800
+Ve burada bu parantezler hakkında merak ediyorsanız, bunlar sadece HVM L'ye geçebilmemiz için kullanılır ve ben
+
+29
+00:02:29,820 --> 00:02:36,570
+her zaman H'yi söylerim. M. S. Ancak, James çıkışının javascripti
+
+30
+00:02:36,570 --> 00:02:42,780
+olduğunu unutmayın; böylece, bu HVM'ye, hataları almadan çok satırlı bir şekilde yapılandırılmış tüm kodu döndürebilirsiniz.
+
+31
+00:02:42,780 --> 00:02:44,830
+Bu yüzden parantezleri kullanıyoruz.
+
+32
+00:02:45,120 --> 00:02:51,020
+Öyleyse, burada gerçekten çalıştığını söyleyen bir paragraf ekleyebilirsem.
+
+33
+00:02:51,450 --> 00:02:53,220
+Ve bu çok yakın.
+
+34
+00:02:53,460 --> 00:02:56,450
+Şimdi bununla birlikte, o paragraf da burada görüyoruz.
+
+35
+00:02:56,540 --> 00:03:02,370
+Ve GSX kullanırken dikkat etmeniz gereken kısıtlamaları veya bazı şeyleri de inceledik çünkü
+
+36
+00:03:02,410 --> 00:03:03,730
+yine bir HMO.
+
+37
+00:03:03,810 --> 00:03:07,140
+Fakat çoğu durumda aslında onun gibi çalışır.

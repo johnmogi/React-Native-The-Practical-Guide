@@ -1,0 +1,139 @@
+1
+00:00:02,160 --> 00:00:09,590
+Então, vamos mergulhar em um erro ou masoquistas no aplicativo de reação no projeto
+
+2
+00:00:09,590 --> 00:00:20,480
+que você trabalhou até agora, no manipulador alterado do nome, todos adicionam um erro no código lá onde designamos a pessoa
+
+3
+00:00:20,480 --> 00:00:21,220
+atualizada aqui.
+
+4
+00:00:21,590 --> 00:00:28,300
+Alcançamos o valor do destino do evento para obter o valor que o usuário inseriu onde eu atribuí um valor.
+
+5
+00:00:28,370 --> 00:00:35,900
+Digamos que não estamos acessando o destino do evento, que é correto, mas a entrada do Evento que está incorreta.
+
+6
+00:00:35,900 --> 00:00:37,920
+Bem, digamos que cometeu esse erro.
+
+7
+00:00:38,360 --> 00:00:42,300
+Agora, se você voltar para o aplicativo no primeiro olhar, parece funcionar.
+
+8
+00:00:42,530 --> 00:00:48,410
+Nós conversamos com a pessoa que ainda funciona, mas se começarmos a digitar nós realmente recebemos um erro.
+
+9
+00:00:48,620 --> 00:00:53,840
+E já o VOLP e o fluxo de trabalho, conseguimos uma boa exibição do erro aqui no meio.
+
+10
+00:00:53,840 --> 00:00:56,400
+Agora, vamos nos concentrar na mensagem de erro à direita.
+
+11
+00:00:56,450 --> 00:00:59,900
+Sempre percorra todo o caminho até o topo para ver sua mensagem de erro.
+
+12
+00:00:59,900 --> 00:01:05,260
+E você vê não pode ler o valor da Propriedade de indefinido.
+
+13
+00:01:05,330 --> 00:01:10,280
+Você também obteve uma dica sobre o que ocorreu no manipulador de mudança de nome.
+
+14
+00:01:10,400 --> 00:01:11,610
+Na verdade sim.
+
+15
+00:01:11,690 --> 00:01:16,200
+Linha 27 e é mostrado até melhor aqui no meio.
+
+16
+00:01:16,280 --> 00:01:19,880
+Você obtém o valor de entrada do evento destacado.
+
+17
+00:01:19,880 --> 00:01:27,080
+Então, esta linha parece estar incorreta e não há propriedade de valor em indefinido agora que simplesmente significa
+
+18
+00:01:27,500 --> 00:01:29,510
+a parte anterior ao valor.
+
+19
+00:01:29,630 --> 00:01:36,180
+Então, esta parte aqui é indefinida, o que é o caso porque não há propriedade de entrada no evento.
+
+20
+00:01:36,200 --> 00:01:39,470
+Agora você ainda precisa descobrir que o alvo está correto por conta própria.
+
+21
+00:01:39,500 --> 00:01:45,110
+Por exemplo, consultando a documentação do evento, você pode examinar a documentação do evento de
+
+22
+00:01:45,320 --> 00:01:47,080
+entrada de sexo feminino normal.
+
+23
+00:01:47,540 --> 00:01:51,590
+Mas você tem uma pista clara sobre o que deu errado e onde.
+
+24
+00:01:51,740 --> 00:02:00,440
+Agora às vezes as mensagens de erro são menos úteis do que esta é mesmo se a própria mensagem de erro é enigmática.
+
+25
+00:02:00,590 --> 00:02:07,130
+Na maioria das vezes, você deve obter um número de linha útil que permite que você volte ao seu código e
+
+26
+00:02:07,160 --> 00:02:10,400
+tente descobrir o que há de errado sobre essa linha.
+
+27
+00:02:10,430 --> 00:02:14,980
+Isso deve ser útil e deve permitir que você conserte o valor.
+
+28
+00:02:14,990 --> 00:02:19,570
+É assim que você reage nas mensagens de erro de reação.
+
+29
+00:02:19,670 --> 00:02:20,810
+Não tenha medo.
+
+30
+00:02:20,810 --> 00:02:21,920
+Não entre em pânico.
+
+31
+00:02:21,950 --> 00:02:25,400
+Muitas vezes, essas mensagens de erro são realmente úteis.
+
+32
+00:02:25,430 --> 00:02:28,480
+Você deve lê-los e você deve dar uma olhada nos números da linha.
+
+33
+00:02:28,490 --> 00:02:29,950
+Eles indicam que você.
+
+34
+00:02:30,200 --> 00:02:32,810
+E, agora, os erros lógicos.
+
+35
+00:02:32,870 --> 00:02:35,370
+Vamos dar uma olhada nestes na próxima palestra.

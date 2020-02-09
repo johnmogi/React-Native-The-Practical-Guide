@@ -1,0 +1,211 @@
+1
+00:00:02,130 --> 00:00:07,990
+Na última palestra, mencionei que temos diferentes formas de usar o aplicativo, vamos usar esse
+
+2
+00:00:07,990 --> 00:00:15,400
+botão de forma diferente e você deve seguir o que é onde temos esse botão. Eu quero estilo deste
+
+3
+00:00:15,400 --> 00:00:18,770
+botão com algo que é chamado de estilos inline.
+
+4
+00:00:18,840 --> 00:00:24,850
+Não há nada de errado em usar C-s como arquivos e classes e isso pode até ser o caminho preferido.
+
+5
+00:00:25,330 --> 00:00:32,790
+Mas o que você também vê e reage sempre é que você realmente criou seus estilos em javascript.
+
+6
+00:00:32,800 --> 00:00:34,420
+Como é que isso funciona.
+
+7
+00:00:34,800 --> 00:00:40,080
+Vamos entrar naquela função de renderização crie uma nova constante que eu chamo estilo.
+
+8
+00:00:40,090 --> 00:00:41,660
+O nome depende de você.
+
+9
+00:00:41,740 --> 00:00:43,460
+Este é um objeto javascript.
+
+10
+00:00:43,480 --> 00:00:50,800
+E como você pode estar ciente de D. C. 's como propriedades de estilo têm javascript
+
+11
+00:00:50,800 --> 00:00:59,170
+repress as anotações, por exemplo, caso de camelo de cor de fundo, em vez de um traço, porque a cor de fundo assim seria inválida.
+
+12
+00:00:59,170 --> 00:01:04,140
+Nome de propriedade Javascript, você poderia envolvê-lo entre aspas para usá-lo.
+
+13
+00:01:04,360 --> 00:01:09,850
+Eu vou usar a caixa de camelo para uma representação impressa e então eu atribuo um valor que é uma string
+
+14
+00:01:10,210 --> 00:01:11,510
+que pode ser uma cor.
+
+15
+00:01:11,530 --> 00:01:16,630
+Por exemplo, branco podemos definir a fonte para herdar.
+
+16
+00:01:16,630 --> 00:01:26,080
+borda apenas uma borda de um Sallet de um pixel e, em seguida, talvez azul e também podemos adicionar algum preenchimento.
+
+17
+00:01:26,580 --> 00:01:32,970
+Para usar o nosso fundo circundante, também podemos configurar a borda não cor da
+
+18
+00:01:32,980 --> 00:01:34,840
+Talvez 8 pixels.
+
+19
+00:01:34,840 --> 00:01:39,760
+Certifique-se de encerrar todos esses valores entre aspas porque estamos escrevendo Chalis Trottier.
+
+20
+00:01:39,880 --> 00:01:42,840
+Isso tem que ser cordas.
+
+21
+00:01:42,860 --> 00:01:49,430
+Agora eu posso ir ao botão colocar em clique em uma nova linha para tornar um pouco mais fácil de ler e adicionar
+
+22
+00:01:49,640 --> 00:01:50,720
+uma propriedade de estilo.
+
+23
+00:01:51,080 --> 00:01:58,280
+Este é realmente o atributo de estilo normal disponibilizado por J S X e estilo, como você já pode
+
+24
+00:01:58,280 --> 00:02:01,060
+ver, ele deve receber o valor dinâmico aqui.
+
+25
+00:02:01,320 --> 00:02:09,230
+Todos os EUA simplesmente passam estilo aqui referindo-se a essa constante de estilo que é definida no método de execução, do
+
+26
+00:02:09,620 --> 00:02:14,630
+qual retorna uma expressão aqui com parte, então não consigo usar coisas assim.
+
+27
+00:02:14,630 --> 00:02:16,150
+Não é uma propriedade de classe.
+
+28
+00:02:16,190 --> 00:02:23,120
+É uma variável normal ou na verdade, já que nunca mudamos essa constante desse método de renderização.
+
+29
+00:02:23,660 --> 00:02:31,840
+Vamos ver se isso tem algum efeito se salvarmos isso realmente vemos o botão parece diferente agora.
+
+30
+00:02:31,990 --> 00:02:37,750
+Podemos melhorá-lo como um pouco mais antes de tudo corrigir esse erro e ter um pixel fora de nossas
+
+31
+00:02:37,760 --> 00:02:44,880
+fronteiras para que esse estilo seja aplicado e configurando o cursor para o ponteiro para que possamos obter o ponto de Roker ou
+
+32
+00:02:44,880 --> 00:02:46,460
+quando estiver pairando sobre ele.
+
+33
+00:02:46,630 --> 00:02:47,700
+Até agora é seguro.
+
+34
+00:02:47,980 --> 00:02:52,150
+Vemos essa borda azul e vemos esse cursor novamente.
+
+35
+00:02:52,150 --> 00:02:58,780
+Agora, isso não muda no sentido horário e, na verdade, o estilo que o efeito flutuante é realmente
+
+36
+00:02:58,780 --> 00:03:00,530
+difícil ao usar estilos inline.
+
+37
+00:03:00,530 --> 00:03:05,920
+Esta é uma restrição já, mas obtive todo um módulo neste curso onde
+
+38
+00:03:05,920 --> 00:03:12,790
+mostro-lhe algumas soluções inteligentes para reelaborar componentes que realmente podem ser algo em que você pode
+
+39
+00:03:12,790 --> 00:03:13,650
+pensar muito.
+
+40
+00:03:13,660 --> 00:03:16,720
+Tenha sempre em atenção que você pode usar um arquivo C S S.
+
+41
+00:03:16,930 --> 00:03:19,310
+Em seguida, os restaurantes para encontrar aqui são globais.
+
+42
+00:03:19,330 --> 00:03:23,590
+Então, se mudarmos o botão aqui, todos os botões em nosso aplicativo completo serão alterados.
+
+43
+00:03:23,620 --> 00:03:30,940
+Portanto, pode não ser o que você quer, mas, por outro lado, você pode usar a normalidade como sintaxe ou usar
+
+44
+00:03:30,940 --> 00:03:33,250
+estilos de linha como você faz aqui.
+
+45
+00:03:33,250 --> 00:03:38,860
+Então, o estilo é dimensionado para o componente ou para o elemento que você realmente adicionou.
+
+46
+00:03:39,040 --> 00:03:44,250
+Mas você tem algumas restrições de não poder aproveitar o poder total das C-s s.
+
+47
+00:03:44,560 --> 00:03:49,870
+Como mencionei, terei um módulo completo sobre isso, porque há um caminho de ouro no meio onde
+
+48
+00:03:49,870 --> 00:03:54,460
+você pode estilos de escopo e ainda usa todos os recursos do C S S.
+
+49
+00:03:54,460 --> 00:03:55,930
+Mais sobre isso depois, por enquanto.
+
+50
+00:03:55,930 --> 00:04:00,230
+Esteja ciente de que conseguimos essas duas formas diferentes de estilo no momento.
+
+51
+00:04:00,370 --> 00:04:02,890
+Use estilos inline como fazemos aqui.
+
+52
+00:04:02,980 --> 00:04:09,980
+Sempre que desejar um estilo de estilo e certifique-se de que ele se aplica apenas a este único elemento e a não
+
+53
+00:04:10,060 --> 00:04:13,360
+nosso elemento em seu aplicativo ou mesmo no mesmo componente.

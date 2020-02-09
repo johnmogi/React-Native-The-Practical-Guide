@@ -1,0 +1,79 @@
+1
+00:00:02,340 --> 00:00:08,800
+In this module we learned a lot about conditionally outputting content and outputting lists
+
+2
+00:00:08,850 --> 00:00:12,740
+and I just want to briefly summarize this before I send you off to the assignment
+
+3
+00:00:12,740 --> 00:00:18,360
+and let you practice that because it's so crucial to get it right and to understand it.
+
+4
+00:00:18,420 --> 00:00:27,630
+We did learn two important things, that we should output content conditionally by using javascript and
+
+5
+00:00:27,630 --> 00:00:29,220
+the same for lists.
+
+6
+00:00:29,220 --> 00:00:32,910
+Everything is javascript, key takeaway.
+
+7
+00:00:33,120 --> 00:00:41,280
+You can then either do it with ternary expressions as you learned but a better approach is to simply create
+
+8
+00:00:41,280 --> 00:00:48,680
+variables which you output in your jsx you return in the end and which you adjust with if statements
+
+9
+00:00:48,690 --> 00:00:51,240
+if you want to render something conditionally.
+
+10
+00:00:51,810 --> 00:00:56,700
+And if you want to return or render a list, you use the map operator,
+
+11
+00:00:56,790 --> 00:01:03,600
+a default javascript method you can use on arrays to map your javascript array of objects or strings
+
+12
+00:01:03,630 --> 00:01:10,890
+or whatever is inside of it into an array of jsx elements and react will then pull out these elements
+
+13
+00:01:10,980 --> 00:01:13,710
+and render to the screen for you.
+
+14
+00:01:13,830 --> 00:01:19,860
+You also learned that map gives you not only the element for which it's currently executing this function
+
+15
+00:01:20,220 --> 00:01:26,820
+but also access to the index if you need that, for example, to remove an element that you should add this key
+
+16
+00:01:26,820 --> 00:01:33,420
+to let react efficiently update everything and that you have a couple of tools, as you can see here
+
+17
+00:01:33,450 --> 00:01:42,180
+for updating the name to really execute code on the element of a list on which something really happens.
+
+18
+00:01:42,300 --> 00:01:47,530
+You learn a lot of useful things here but the best way as always is to just practice it.
+
+19
+00:01:47,550 --> 00:01:52,680
+So let's move on to an assignment so that you could put all these things you just learned into practice
+
+20
+00:01:52,920 --> 00:01:53,860
+on your own.

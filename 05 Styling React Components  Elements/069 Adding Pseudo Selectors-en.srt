@@ -1,0 +1,247 @@
+1
+00:00:02,170 --> 00:00:06,880
+In the last lecture we enable css module by ejecting the configuration,
+
+2
+00:00:06,880 --> 00:00:13,410
+Fine tuning it and then importing classes from the css files and using them,
+
+3
+00:00:13,450 --> 00:00:17,410
+now let's also add pseudo selectors and media queries.
+
+4
+00:00:17,590 --> 00:00:22,880
+Pseudo selectors are important here in the app.js file where we assign a button style,
+
+5
+00:00:22,990 --> 00:00:30,190
+now we'll no longer do this inline so I'll remove the style property of the button here and I will no
+
+6
+00:00:30,190 --> 00:00:35,760
+longer set the style background color to red here and no longer set the style up like this.
+
+7
+00:00:35,860 --> 00:00:43,200
+We could do this but now I want to do it the css module style, so there we could now create a button
+
+8
+00:00:43,200 --> 00:00:51,010
+css class which we then assigned to the button or we simply create a normal css rule for
+
+9
+00:00:51,010 --> 00:00:54,430
+every button nested inside our app class,
+
+10
+00:00:54,580 --> 00:00:58,200
+we can now assign the styles we want.
+
+11
+00:00:58,210 --> 00:01:03,150
+Now this should be the styles we had before, I deleted them so I will simply try to rebuild it,
+
+12
+00:01:03,280 --> 00:01:05,000
+we had a blue border I guess,
+
+13
+00:01:05,260 --> 00:01:08,230
+let's add some padding maybe 16px,
+
+14
+00:01:08,500 --> 00:01:13,650
+let's add a background color of green
+
+15
+00:01:13,650 --> 00:01:15,490
+by default maybe
+
+16
+00:01:15,700 --> 00:01:19,200
+and let's set the font into inherit.
+
+17
+00:01:19,410 --> 00:01:28,910
+And now if we save this, already we should get this button style here because we still apply our styles
+
+18
+00:01:28,940 --> 00:01:32,030
+here no longer in line though,
+
+19
+00:01:32,030 --> 00:01:35,560
+make sure to also save app.js to really see the changes.
+
+20
+00:01:35,600 --> 00:01:42,580
+We should get this style now no longer in line but the button here is styled because it's nested below
+
+21
+00:01:42,590 --> 00:01:44,510
+our app selector here,
+
+22
+00:01:44,720 --> 00:01:49,200
+an app is this special selector applied to the outer div.
+
+23
+00:01:49,270 --> 00:01:57,250
+Now let me simply tweak the color and of course we still want to be able to set the button to red and
+
+24
+00:01:57,250 --> 00:02:01,980
+we want to be able to see us hovering over it.
+
+25
+00:02:02,360 --> 00:02:03,730
+So let me add button
+
+26
+00:02:03,860 --> 00:02:05,000
+hover,
+
+27
+00:02:05,300 --> 00:02:06,560
+nomal css code here,
+
+28
+00:02:06,560 --> 00:02:15,130
+nothing fancy and set the background color here to light green and the color to black
+
+29
+00:02:15,140 --> 00:02:16,680
+maybe,
+
+30
+00:02:16,870 --> 00:02:19,990
+and now let's add the red case.
+
+31
+00:02:20,320 --> 00:02:26,230
+Now for that I'll simply add app button red
+
+32
+00:02:26,500 --> 00:02:34,150
+So normal css rules, you style any button which has the red class, set the background color here
+
+33
+00:02:34,450 --> 00:02:39,820
+to red and now also add app button
+
+34
+00:02:39,880 --> 00:02:49,470
+red hover to set the background color to salmon and the color to black for hovered buttons with the
+
+35
+00:02:49,470 --> 00:02:50,710
+red class.
+
+36
+00:02:50,730 --> 00:02:55,740
+Now all we need to do is conditionally add the red class to this button if we need it,
+
+37
+00:02:55,740 --> 00:03:04,860
+so back in app.js, we simply need to bind the class name of the button. So we'll do this in the render
+
+38
+00:03:04,860 --> 00:03:08,770
+function of course prior to the if statement.
+
+39
+00:03:08,960 --> 00:03:17,380
+We have a default button class which is null let's say or simply an empty string,
+
+40
+00:03:17,480 --> 00:03:29,760
+then inside this if statement where I assigned persons, I set that button class equal to classes red, let's
+
+41
+00:03:29,770 --> 00:03:30,850
+see if that works,
+
+42
+00:03:30,850 --> 00:03:40,080
+if I now go down to the button and add class name and set this equal to button class.
+
+43
+00:03:40,270 --> 00:03:41,520
+Now one important note,
+
+44
+00:03:41,530 --> 00:03:46,990
+button class always needs to be a string if we assign it to class name and classes red in the end is
+
+45
+00:03:47,080 --> 00:03:55,140
+just a string created by the css loader which gives us still access to the class like this but in the end returns
+
+46
+00:03:55,230 --> 00:03:59,300
+a string with the valid css, or it is an empty string
+
+47
+00:03:59,350 --> 00:04:01,820
+if we're outside of this if condition.
+
+48
+00:04:02,180 --> 00:04:06,890
+Now let's save this, let's reload the app, hovering over it works and
+
+49
+00:04:07,000 --> 00:04:12,610
+we should add that cursor pointer thing and clicking on it also works with the red class which you
+
+50
+00:04:12,610 --> 00:04:14,150
+can see is added now.
+
+51
+00:04:14,350 --> 00:04:22,300
+So this also works for nested classes as you can see red is a class we defined only on buttons and still in
+
+52
+00:04:22,300 --> 00:04:24,100
+our javascript component,
+
+53
+00:04:24,310 --> 00:04:27,580
+we imported on that overall classes object.
+
+54
+00:04:27,910 --> 00:04:32,360
+So any css class we define in css file
+
+55
+00:04:32,390 --> 00:04:39,880
+we import with that css modules enabled, any classes defined in here even if they only apply to a
+
+56
+00:04:39,880 --> 00:04:46,030
+special sub-selector are available on the classes object
+
+57
+00:04:46,030 --> 00:04:49,720
+we're importing from that css file.
+
+58
+00:04:49,730 --> 00:04:52,910
+Now let me conclude this button thing here by now
+
+59
+00:04:52,910 --> 00:05:00,830
+again adding a cursor which is a pointer. With that, save all the files and now we get this nice pointer
+
+60
+00:05:00,830 --> 00:05:01,350
+here,
+
+61
+00:05:01,520 --> 00:05:03,660
+everything working as it should.
+
+62
+00:05:04,100 --> 00:05:06,140
+Let's next have a look at media queries.

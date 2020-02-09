@@ -1,0 +1,367 @@
+1
+00:00:02,210 --> 00:00:08,480
+We already learned a lot about the core fundamentals of react especially this jsx thing which
+
+2
+00:00:08,480 --> 00:00:14,930
+is super important to get right and to understand, but I also mentioned in the first module of the course
+
+3
+00:00:15,140 --> 00:00:21,890
+that react's all about components, you build your application with components and react as a library
+
+4
+00:00:21,890 --> 00:00:24,410
+which makes building these components so easy.
+
+5
+00:00:24,590 --> 00:00:27,590
+Well right now, we're only using one component,
+
+6
+00:00:27,620 --> 00:00:33,870
+time to change this and for this I'll add a new file in the source folder of our project.
+
+7
+00:00:33,890 --> 00:00:39,020
+I'll actually even add a new folder and I'll name it Person with a capital P.
+
+8
+00:00:39,100 --> 00:00:41,220
+This is kind of the convention react,
+
+9
+00:00:41,240 --> 00:00:48,620
+you don't have to do that but you give your components the files where you create them capital starting
+
+10
+00:00:48,620 --> 00:00:54,380
+characters and you describe what this component is basically therefore and here I want to render some
+
+11
+00:00:54,380 --> 00:01:01,490
+information about a person. Inside that person's folder which is stored in the source folder or to the
+
+12
+00:01:01,490 --> 00:01:04,120
+Person.js file,
+
+13
+00:01:04,220 --> 00:01:09,410
+again following this convention of having a capital starting character and describing what this component
+
+14
+00:01:09,410 --> 00:01:16,420
+is about. Now in there, I want to create a component and we already did this,
+
+15
+00:01:16,520 --> 00:01:23,750
+actually we got this out of the box in the app.js file by extending the component class from the
+
+16
+00:01:23,750 --> 00:01:25,580
+react library.
+
+17
+00:01:25,670 --> 00:01:31,940
+We can absolutely use this approach and it will become more important later when you learn also about state
+
+18
+00:01:32,300 --> 00:01:37,800
+which basically allows you to change your component at runtime you could say.
+
+19
+00:01:38,060 --> 00:01:43,850
+But most of the time, you should use a different form of component
+
+20
+00:01:43,850 --> 00:01:51,620
+or of creating components, a better function, a simple javascript function, because in its simplest form
+
+21
+00:01:51,950 --> 00:01:58,480
+a component is just a function which returns some jsx, some html
+
+22
+00:01:58,520 --> 00:02:03,040
+you could say. Now of course, you can create a function with a function keyword,
+
+23
+00:02:03,050 --> 00:02:08,290
+you could name a person, here with a lowercase starting character which is also this kind of convention here,
+
+24
+00:02:08,330 --> 00:02:13,970
+you could use a capital one though and then you could return some jsx here,
+
+25
+00:02:13,970 --> 00:02:16,050
+you can absolutely do that.
+
+26
+00:02:16,070 --> 00:02:22,550
+You could also use the ES5 syntax of creating a variable which holds a function which in the end
+
+27
+00:02:22,550 --> 00:02:24,570
+would result in the same.
+
+28
+00:02:25,070 --> 00:02:29,450
+But I will use ES6 in this course which I strongly recommend doing,
+
+29
+00:02:29,450 --> 00:02:32,700
+it is kind of the best practice when treating react projects,
+
+30
+00:02:32,720 --> 00:02:36,080
+it gives you access to many new and modern features.
+
+31
+00:02:36,170 --> 00:02:42,650
+Hence I will create a variable not with the var keyword but with the const word because I don't plan
+
+32
+00:02:42,650 --> 00:02:45,950
+on changing this variable effectively making it a constant
+
+33
+00:02:46,070 --> 00:02:48,410
+and hence we should mark it as such.
+
+34
+00:02:48,530 --> 00:02:51,430
+I'll name it person with a lowercase character,
+
+35
+00:02:51,730 --> 00:02:59,930
+as I said you could choose person with uppercase P but you often see the function name being all lowercase,
+
+36
+00:02:59,930 --> 00:03:06,980
+it should otherwise be the same name as your filename though or as the component name you want to use.
+
+37
+00:03:07,100 --> 00:03:12,380
+Then I will assign a value to this variable or constant to be precise
+
+38
+00:03:12,560 --> 00:03:14,330
+and this should be a function.
+
+39
+00:03:14,380 --> 00:03:18,880
+Now I could again use function here but actually I want to use the
+
+40
+00:03:18,920 --> 00:03:20,580
+ES6 function syntax,
+
+41
+00:03:20,690 --> 00:03:29,810
+this arrow function syntax, so I will say equal argument list arrow function body.
+
+42
+00:03:29,810 --> 00:03:31,310
+This is just the ES6
+
+43
+00:03:31,310 --> 00:03:35,090
+equivalent to the function created with the function keyword,
+
+44
+00:03:35,090 --> 00:03:41,480
+it holds some advantages especially when it comes to the this keyword though so I strongly recommend using
+
+45
+00:03:41,480 --> 00:03:43,520
+this syntax.
+
+46
+00:03:43,520 --> 00:03:49,970
+If this is brand new to you, now you know it and in general you might be interested in also diving into
+
+47
+00:03:49,970 --> 00:03:57,890
+some ES6 courses or learning materials, you'll simply learn about all the awesome features ES6 has
+
+48
+00:03:57,890 --> 00:04:00,140
+to offer like this one.
+
+49
+00:04:00,140 --> 00:04:01,800
+Back to the syntax though,
+
+50
+00:04:01,970 --> 00:04:08,510
+we effectively have a function here and as I said in its simplest form, a component is a function returning
+
+51
+00:04:08,510 --> 00:04:10,020
+some jsx.
+
+52
+00:04:10,010 --> 00:04:11,010
+So let's do that
+
+53
+00:04:11,240 --> 00:04:22,770
+let's return some jsx and we could simply return a paragraph here where I say I'm a person. Now
+
+54
+00:04:22,790 --> 00:04:30,970
+this alone creates a valid function which we could use as a component but we also have to do two other things.
+
+55
+00:04:30,980 --> 00:04:36,020
+Do you have an idea what we have to do?
+
+56
+00:04:36,090 --> 00:04:44,850
+For one, we need to import react because keep in mind this jsx syntax is transformed to react create
+
+57
+00:04:44,940 --> 00:04:49,220
+element and to be able to call this method,
+
+58
+00:04:49,260 --> 00:04:55,500
+we need to import react with a capital R from the react package like this,
+
+59
+00:04:55,500 --> 00:05:03,800
+so just as we do in app.js here. We don't need the component though because here we're not using
+
+60
+00:05:03,800 --> 00:05:05,830
+a class which extends component,
+
+61
+00:05:05,960 --> 00:05:08,270
+instead we're creating a function.
+
+62
+00:05:08,720 --> 00:05:14,300
+We still need to export that function though as default of this file,
+
+63
+00:05:14,300 --> 00:05:21,890
+here we export this person constant which holds this function. With that let's save the files so that
+
+64
+00:05:21,890 --> 00:05:29,360
+this dot up here disappears and we only see the cross and now we can start using this component in
+
+65
+00:05:29,450 --> 00:05:35,930
+other files of our project, namely in the only other component our root component
+
+66
+00:05:35,930 --> 00:05:40,570
+we have yet in the app.js file. There,
+
+67
+00:05:40,580 --> 00:05:45,290
+I will add an import and I will import person,
+
+68
+00:05:45,290 --> 00:05:50,420
+this name is now totally up to you but it should be the name of your components starting with a capital
+
+69
+00:05:50,420 --> 00:05:51,370
+character,
+
+70
+00:05:52,630 --> 00:06:01,210
+from dot slash because it's a relative path, the person folder.
+
+71
+00:06:01,360 --> 00:06:08,320
+So referring to this folder which is in the same path as the app.js file and there the person.js
+
+72
+00:06:08,380 --> 00:06:15,700
+file, though we can omit the .js because it's added automatically by the build workflow.
+
+73
+00:06:15,700 --> 00:06:21,140
+Now it's important that you give this as a name which starts with the uppercase character.
+
+74
+00:06:21,250 --> 00:06:26,320
+You could choose any other name, it doesn't have to be person though it makes sense to use the name of your
+
+75
+00:06:26,320 --> 00:06:34,000
+component but it should have uppercase character. Because in react, in jsx, all elements starting with
+
+76
+00:06:34,000 --> 00:06:40,740
+lowercase characters like div or h1 are reserved for the native html elements.
+
+77
+00:06:41,050 --> 00:06:47,710
+So you could create your own component which you named div with uppercase D and then react could use
+
+78
+00:06:47,710 --> 00:06:53,800
+that because it wouldn't interfere with the normal div and for the same reason, you should give your
+
+79
+00:06:53,800 --> 00:06:59,710
+person the uppercase character so that react identifies it as a custom component.
+
+80
+00:07:00,040 --> 00:07:07,150
+So let's use person here and we can either use an opening and closing tag like this or since we don't
+
+81
+00:07:07,150 --> 00:07:11,550
+nest anything between, I'll come back to that in the next lectures too,
+
+82
+00:07:11,830 --> 00:07:19,730
+you can also use a self-closing tag with slash and then the greater than sign at the end. With that, if
+
+83
+00:07:19,730 --> 00:07:20,740
+you save this file
+
+84
+00:07:20,740 --> 00:07:26,560
+too and you now go back to your application with npm start still running in the terminal,
+
+85
+00:07:26,600 --> 00:07:32,700
+you see I'm a person being rendered below our app component content.
+
+86
+00:07:32,750 --> 00:07:35,210
+This is now coming from our own component
+
+87
+00:07:35,300 --> 00:07:40,970
+and if we inspect it, we see in the end we don't see our custom element, we just see the paragraph
+
+88
+00:07:40,970 --> 00:07:45,130
+we're exporting in the function and that is actually how it should be.
+
+89
+00:07:45,620 --> 00:07:53,300
+So this is now our only component getting used, of course using it like this is already nice but what
+
+90
+00:07:53,300 --> 00:08:01,270
+exactly is the benefit of creating it like this instead of simply adding the code right into the app.js
+
+91
+00:08:01,280 --> 00:08:02,470
+file.
+
+92
+00:08:02,510 --> 00:08:07,200
+Let's do more with this component to see that benefit in the next lecture.

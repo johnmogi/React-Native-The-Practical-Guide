@@ -1,0 +1,367 @@
+1
+00:00:02,210 --> 00:00:08,480
+Özellikle haklı olmak ve anlamak için süper önemi olan bu dahi X şeyini yeniden hareket
+
+2
+00:00:08,480 --> 00:00:14,930
+etmenin çekirdek temelleri hakkında çok şey öğrendik, ancak dersin ilk modülünde reaktörün uygulamanızla oluşturduğunuz bileşenlerle
+
+3
+00:00:15,140 --> 00:00:21,890
+ilgili olduğunu da belirttim. bileşenleri oluşturabilir ve bu bileşenleri çok kolay bir şekilde inşa etmeyi sağlayan
+
+4
+00:00:21,890 --> 00:00:24,410
+bir kütüphane olarak reaksiyona girer.
+
+5
+00:00:24,590 --> 00:00:27,590
+Şimdilik sadece bir bileşen kullanıyoruz.
+
+6
+00:00:27,620 --> 00:00:33,870
+Bunu değiştirmek için zamanı ve bunun için projemin kaynak klasörüne yeni bir dosya ekleyeceğim.
+
+7
+00:00:33,890 --> 00:00:39,020
+Aslında yeni bir klasör ekleyeceğim ve başkente P olan kişiye isim vereceğim.
+
+8
+00:00:39,100 --> 00:00:41,220
+Bu tür bir konvansiyon tepki verdi.
+
+9
+00:00:41,240 --> 00:00:48,620
+Bunu yapmak zorunda değilsiniz, ancak bileşenlerini sermaye başlangıcı karakterleri oluşturduğunuz dosyalara veriyorsunuz
+
+10
+00:00:48,620 --> 00:00:54,380
+ve bu bileşenin alan olduğunu ve dolayısıyla bu kişinin
+
+11
+00:00:54,380 --> 00:01:01,490
+klasöründe saklanan bir kişi hakkında bazı bilgi vermek istiyorum. Kaynak klasörü
+
+12
+00:01:01,490 --> 00:01:04,120
+veya js dosyasını kişi.
+
+13
+00:01:04,220 --> 00:01:09,410
+Yine bir sermaye başlama karakterine sahip olma ve bu bileşenin ne
+
+14
+00:01:09,410 --> 00:01:16,420
+hakkında olduğunu açıklayan bu sözleşmeyi takiben bir bileşen oluşturmak istiyorum ve bunu zaten yapmıştık.
+
+15
+00:01:16,520 --> 00:01:23,750
+Aslında bunu, düşünce JS dosyasındaki yeniden işleme kitaplığından bileşen sınıfını
+
+16
+00:01:23,750 --> 00:01:25,580
+genişleterek kutudan çıkardık.
+
+17
+00:01:25,670 --> 00:01:31,940
+Kesinlikle bu yaklaşımı kullanabiliriz ve ileride, öğrendiğiniz çalışma zamanında bileşeninizi temel olarak değiştirmenize
+
+18
+00:01:32,300 --> 00:01:37,800
+izin veren devlet hakkında daha fazla bilgi edinmeniz daha da önem kazanacaktır.
+
+19
+00:01:38,060 --> 00:01:43,850
+Ancak çoğu zaman farklı bir bileşen biçimi kullanmanız gerekir.
+
+20
+00:01:43,850 --> 00:01:51,620
+Veya bileşenleri oluşturmak için basit bir javascript işlevi daha iyi bir işlevdir çünkü en
+
+21
+00:01:51,950 --> 00:01:58,480
+basit biçiminde bir bileşen yalnızca bazı GSX bazı HVM'yi döndüren bir işlevdir.
+
+22
+00:01:58,520 --> 00:02:03,040
+Şunu söyleyebilirsiniz: Elbette, bir işlev anahtarıyla bir işlev oluşturabilirsiniz.
+
+23
+00:02:03,050 --> 00:02:08,290
+Buraya bir kongre niteliğindeki küçük harfli bir başlangıç ​​karakteri ile birisini buraya isimlendirebilirsiniz.
+
+24
+00:02:08,330 --> 00:02:13,970
+Yine de başkent kullanabilirsin, sonra da burada bir dahi X döndürebilirsin.
+
+25
+00:02:13,970 --> 00:02:16,050
+Kesinlikle yapabilirsin.
+
+26
+00:02:16,070 --> 00:02:22,550
+Diest'i, sonunda sonuçta aynı şekilde sonuçlanacak bir işlevi olan bir değişken yaratmanın
+
+27
+00:02:22,550 --> 00:02:24,570
+beş sözdizimini de kullanabilirsiniz.
+
+28
+00:02:25,070 --> 00:02:29,450
+Ancak bunu yapmamı önerdiğim bu derste altı olarak kullanacağım.
+
+29
+00:02:29,450 --> 00:02:32,700
+Riak projelerini tedavi ederken bu en iyi uygulamadır.
+
+30
+00:02:32,720 --> 00:02:36,080
+Birçok yeni ve modern özelliklere erişmenizi sağlar.
+
+31
+00:02:36,170 --> 00:02:42,650
+Dolayısıyla, bir değişkene anahtar kelime değil, Konski sözcüğü ile davranacağım, çünkü bu değişkeni
+
+32
+00:02:42,650 --> 00:02:45,950
+etkili bir şekilde sabit tutmayı değiştirmeyi planlamıyorum.
+
+33
+00:02:46,070 --> 00:02:48,410
+Ve dolayısıyla böyle pazarlamalıyız.
+
+34
+00:02:48,530 --> 00:02:51,430
+Ona küçük harfli bir karakter adı vereceğim.
+
+35
+00:02:51,730 --> 00:02:59,930
+Dediğim gibi, kişiyi P harfi büyüklüğünde seçebilirdiniz, ancak sık sık işlev adının hepsini küçük harflerle görüyorsunuz.
+
+36
+00:02:59,930 --> 00:03:06,980
+Aksi takdirde, dosya isminizle aynı ismi veya Asti bileşen ismini kullanmak istiyorsunuz.
+
+37
+00:03:07,100 --> 00:03:12,380
+Sonra bu değişkene veya sabitin kesin olması için bir değer atayacağım.
+
+38
+00:03:12,560 --> 00:03:14,330
+Ve bu bir işlev olmalıdır.
+
+39
+00:03:14,380 --> 00:03:18,880
+Artık işlevi burada tekrar kullanabilirim, ama aslında evet olarak kullanmak istiyorum.
+
+40
+00:03:18,920 --> 00:03:20,580
+Altı işlev sözdizimi.
+
+41
+00:03:20,690 --> 00:03:29,810
+Bu ok fonksiyonu sözdizimi böylece eşit argüman listesi ok fonksiyonu vücut diyebilirim.
+
+42
+00:03:29,810 --> 00:03:31,310
+Bu sadece altı.
+
+43
+00:03:31,310 --> 00:03:35,090
+Function anahtar sözcüğüyle oluşturulan işlevle eşdeğerdir.
+
+44
+00:03:35,090 --> 00:03:41,480
+Özellikle bu anahtar kelime söz konusu olduğunda bazı avantajlar barındırıyor, bu yüzden bu sözdizimini
+
+45
+00:03:41,480 --> 00:03:43,520
+kullanmanızı şiddetle tavsiye ederim.
+
+46
+00:03:43,520 --> 00:03:49,970
+Eğer bu sizin için yeni ise, şimdi bunu biliyorsunuz ve genel olarak
+
+47
+00:03:49,970 --> 00:03:57,890
+bazılarına 6 ders ya da öğrenme materyalleri dalışı yapmak istiyorsanız, evet 6'nın bu gibi sunması
+
+48
+00:03:57,890 --> 00:04:00,140
+gereken tüm müthiş özellikleri öğreniyorsunuz.
+
+49
+00:04:00,140 --> 00:04:01,800
+Sözlüğe geri dönün.
+
+50
+00:04:01,970 --> 00:04:08,510
+Burada etkili bir işimize sahibiz ve en basit biçiminde söylediğim gibi bir bileşen, bazı J S x
+
+51
+00:04:08,510 --> 00:04:10,020
+değerini döndüren bir işlevdir.
+
+52
+00:04:10,010 --> 00:04:11,010
+O halde bunu yapalım.
+
+53
+00:04:11,240 --> 00:04:22,770
+Bazı j'leri X olarak döndürelim ve şu anda yalnızca bir kişi olduğumu söyleyen bir paragrafı burada geri getirebiliriz.
+
+54
+00:04:22,790 --> 00:04:30,970
+Bu tek başına bir bileşen olarak kullanabileceğimiz geçerli bir işlevi yaratır, ancak iki şey yapmak zorundayız.
+
+55
+00:04:30,980 --> 00:04:36,020
+Ne yapmamız gerektiğine dair bir fikriniz var mı?
+
+56
+00:04:36,090 --> 00:04:44,850
+sözdiziminin element yaratmaya tepki olarak değiştiğini ve bu yöntemi çağırmanın mümkün olduğunu unutmayın.
+
+57
+00:04:44,940 --> 00:04:49,220
+Birincisi reddetmek gerek çünkü bu GSX
+
+58
+00:04:49,260 --> 00:04:55,500
+Alınması gereken bir sermaye ile tepki vermemiz gereken şey, yeniden hareket paketinden gelmektedir.
+
+59
+00:04:55,500 --> 00:05:03,800
+Yani Abchurch'de yaptığımız gibi Evet, burada bileşen gerekmiyor çünkü burada bileşeni genişleten
+
+60
+00:05:03,800 --> 00:05:05,830
+bir sınıf kullanmıyoruz.
+
+61
+00:05:05,960 --> 00:05:08,270
+Bunun yerine bir işlev oluşturuyoruz.
+
+62
+00:05:08,720 --> 00:05:14,300
+Bu dosyanın varsayılanı olarak yine de bu işlevi dışa aktarmamız gerekiyor.
+
+63
+00:05:14,300 --> 00:05:21,890
+bu Daut'un burada görülebilmesi için takip edilmesi güvende olanını ve sadece çaprazı görüyoruz
+
+64
+00:05:21,890 --> 00:05:29,360
+ve şimdi bu bileşeni projemizin diğer yönlerinde, yani yalnızca bileşende kullanmaya başlayabiliriz kök bileşenimiz.
+
+65
+00:05:29,450 --> 00:05:35,930
+Burada bu kişiyi, bu işleve sahip olan Konstant'a ihraç ediyoruz, böylece
+
+66
+00:05:35,930 --> 00:05:40,570
+Hala Hindistan, JS'nin oraya düştüğünü düşündü.
+
+67
+00:05:40,580 --> 00:05:45,290
+Bir ithalat ekleyeceğim ve insanı ithal edeceğim.
+
+68
+00:05:45,290 --> 00:05:50,420
+Bu ad tamamen size kalmış, ancak bileşenlerinizin baş harf karakteriyle başlayan
+
+69
+00:05:50,420 --> 00:05:51,370
+adı olmalı.
+
+70
+00:05:52,630 --> 00:06:01,210
+Nokta eğik çizgiden çünkü göreli bir ödül olan kişi klasörüdür.
+
+71
+00:06:01,360 --> 00:06:08,320
+Dolayısıyla, dizüstü bilgisayar ile aynı yoldaki dis klasörüne atıfta bulunmaktan dolayı, js dosyasını
+
+72
+00:06:08,380 --> 00:06:15,700
+oluşturan kişi olsa da, J iş parçasını atlayabiliriz, çünkü iş akışı otomatik olarak eklenir.
+
+73
+00:06:15,700 --> 00:06:21,140
+Şimdi bunu büyük harfle başlayan bir ad olarak vermeniz önemlidir.
+
+74
+00:06:21,250 --> 00:06:26,320
+Birkaç bileşeni isimlendirmek için mantıklı olsa da, kişi olmak zorunda
+
+75
+00:06:26,320 --> 00:06:34,000
+kalmayan başka herhangi bir ad kullanabilirsiniz ama, çünkü GSX'de tepki olarak 1 yaşın altındaki div
+
+76
+00:06:34,000 --> 00:06:40,740
+gibi küçük harfli karakterlerle başlayan, tepki veren karakter olmalıdır. yerli HVM öğeleri.
+
+77
+00:06:41,050 --> 00:06:47,710
+Böylece, div olarak adlandırdığınız kendi bileşeninizi D harfi ile yaratabilirdiniz ve daha sonra
+
+78
+00:06:47,710 --> 00:06:53,800
+Riette bunu kullanabilirdi, çünkü normal def ile etkileşim kurmazdı ve aynı nedenle,
+
+79
+00:06:53,800 --> 00:06:59,710
+tekrar eyleme tanımlamak için kişinize büyük harf vermelisiniz. özel bir bileşen olarak.
+
+80
+00:07:00,040 --> 00:07:07,150
+kullanabiliriz ya da babamın arasında bir şey yuva yapmamamıza ya da babamıza ve sonraki derslere geri dönmemize neden olabiliriz.
+
+81
+00:07:07,150 --> 00:07:11,550
+O halde insanı burada kullanalım ve açılış ve kapanış etiketini bu şekilde
+
+82
+00:07:11,830 --> 00:07:19,730
+Ayrıca, bu sonbaharda tasarruf ettiyseniz, eğik çizginin bulunduğu bir kendiliğinden kapanış etiketini ve daha sonra büyük olanı
+
+83
+00:07:19,730 --> 00:07:20,740
+borçla imzalayabilirsiniz.
+
+84
+00:07:20,740 --> 00:07:26,560
+Q Artık NPM ile halen terminalde çalışmaya başlarken başvurunuza geri dönüyorsunuz.
+
+85
+00:07:26,600 --> 00:07:32,700
+Görüyorsunuz ki, uygulama bileşeni içeriğinin altında bir kişi olduğumu görüyorsunuz.
+
+86
+00:07:32,750 --> 00:07:35,210
+Bu artık kendi bileşenimizden geliyor.
+
+87
+00:07:35,300 --> 00:07:40,970
+Ve bunu incelersek, sonunu gördüğümüzde özel öğelerimizi görmediğimizi görürsek işe ihraç ettiğimiz
+
+88
+00:07:40,970 --> 00:07:45,130
+paragrafı görürüz ve aslında olması gerektiği anlamına geliyor.
+
+89
+00:07:45,620 --> 00:07:53,300
+Bu yüzden şu anda bizim hoşumuza giden bileşenin kullandığı tek bileşenimiz
+
+90
+00:07:53,300 --> 00:08:01,270
+şu ki bu gibi davranmanın faydası tam olarak apt nesnelerine doğru kodu
+
+91
+00:08:01,280 --> 00:08:02,470
+eklemek yerine.
+
+92
+00:08:02,510 --> 00:08:07,200
+Bir sonraki derste bu yararı görmek için bu bileşenle daha fazlasını yapalım.

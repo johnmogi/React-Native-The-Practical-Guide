@@ -1,0 +1,223 @@
+1
+00:00:02,200 --> 00:00:08,570
+Son dersimizde radyum eklendi ve düğmesini değiştirmek ve onu sahte seçici Hobert sözde
+
+2
+00:00:08,810 --> 00:00:11,190
+seçici eklemek için kullanmaya başladık.
+
+3
+00:00:11,210 --> 00:00:16,220
+Şimdi tabii ki güzel ama medya sorgularını kullanmak için radyum da kullanabiliriz.
+
+4
+00:00:16,320 --> 00:00:23,780
+Şahsın parçası yok Claassen elbette bir medya sorgusu da ekleyebiliriz, burada bizimle erkekler
+
+5
+00:00:23,780 --> 00:00:31,100
+500 piksel diyelim, o halde bizim Kişiler sınıfımızı 450 piksel genişliğe sahip olacak
+
+6
+00:00:31,100 --> 00:00:36,970
+şekilde geçersiz kıldıysak ve hiç daha uzun süreli kullanım yüzdeleri.
+
+7
+00:00:37,130 --> 00:00:38,840
+Kesinlikle yapabiliriz.
+
+8
+00:00:39,020 --> 00:00:43,490
+Ancak ICSA'yı sınıf olarak kullanmak istemediğim için bu çözümü yorumlayacağım.
+
+9
+00:00:43,520 --> 00:00:47,990
+Size bazı yerlerde ihtiyacınız olan radyumla nasıl yapılacağını göstermek istiyorum.
+
+10
+00:00:48,080 --> 00:00:54,040
+Bir bileşene kapsamlamak isterseniz veya dinamik olarak değiştirmek istiyorsanız.
+
+11
+00:00:54,250 --> 00:00:59,900
+Bu yüzden ölüler için veya yeni bir stil ekleyin ve elbette ne isterseniz istediğinizi bu sabit olarak adlandırabilirsiniz.
+
+12
+00:00:59,900 --> 00:01:08,660
+Buradaki işlerimde yine, garip görünecek ama Radium sayesinde çalışan özel
+
+13
+00:01:08,900 --> 00:01:11,030
+bir seçici kullanacağım.
+
+14
+00:01:11,120 --> 00:01:15,650
+Ve radyumla ihracatınızı kaydırmayı unutmayın, işe yaramayacağını akıllıca buluyorsunuz.
+
+15
+00:01:16,070 --> 00:01:18,180
+Şimdi acil sorgunuzu burada yazabilirsiniz.
+
+16
+00:01:18,440 --> 00:01:30,730
+Medya ana uzunluğu roman uzunluğu erkek 500 piksel ve daha sonra bir Stahl bulmak için bir javascript nesne.
+
+17
+00:01:30,880 --> 00:01:33,640
+Distill, bir javascript mülkiyet adıdır.
+
+18
+00:01:33,670 --> 00:01:35,060
+Farkına vardım süper garip.
+
+19
+00:01:35,080 --> 00:01:39,040
+Ancak bu bir dize olduğundan geçerli bir isim ve radyum bunu ayrıştırıyor.
+
+20
+00:01:39,040 --> 00:01:44,290
+Ve elbette anlıyorum çünkü yarı iyi sorgu ve sözde seçiciler arasında
+
+21
+00:01:44,290 --> 00:01:46,750
+radyumun anladığı bir şey var.
+
+22
+00:01:46,750 --> 00:01:54,820
+Şimdi burada, stili uyguladığımız elemanın genişliğini dinamik olarak büyümeyen sabit
+
+23
+00:01:54,820 --> 00:02:00,610
+genişlikte 450 piksel olarak ayarlamak istediğimizi söyleyebiliriz.
+
+24
+00:02:00,610 --> 00:02:07,510
+ayarım varsayılan olarak C'yi radyo yüzünden değil kural olarak geçersiz kılacak tarzım var.
+
+25
+00:02:07,810 --> 00:02:14,230
+Ve şimdi bunu bileşenime atadığınızda stilini atamak istiyor ve sınıfımı ekledim Ama
+
+26
+00:02:14,230 --> 00:02:15,610
+aynı zamanda sınıf
+
+27
+00:02:15,610 --> 00:02:20,120
+Şimdi, uygulamayı yeniden yüklersem veya kişileri değiştirirsem, aşağıdakileri görmeliyiz.
+
+28
+00:02:20,140 --> 00:02:27,940
+Artık gördüğünüz gibi, şimdi s gerektiren bir eklenti hatası alıyoruz. c. örneğin anahtar kareleri kullanırken
+
+29
+00:02:28,000 --> 00:02:31,000
+veya önemli medya sorgularında kullandığımız.
+
+30
+00:02:31,000 --> 00:02:34,810
+Uygulamamızı bir stil kökü bileşeninde sarmamız gerekiyor.
+
+31
+00:02:34,810 --> 00:02:42,100
+balina avcısından yapılmış bir bileşen ve radyum ile ihracatı sarmalarken yeterlidir veya ana
+
+32
+00:02:42,220 --> 00:02:50,200
+karelerle medya sorguları veya mühür animasyonları gibi Orris'i temelde dönüştürmek için sözde seçicilerdir.
+
+33
+00:02:50,200 --> 00:02:51,700
+Bu, Radium tarafından
+
+34
+00:02:51,730 --> 00:02:58,150
+Radium tarafından sağlanan özel bir bileşene tüm uygulamayı sarmamız gerekiyor.
+
+35
+00:02:58,150 --> 00:03:05,500
+Burada, dağınık radyum ithalatı ile radyumdan stil kökünü içe aktarabiliriz, burada o dosyanın varsayılan ihracatını
+
+36
+00:03:05,500 --> 00:03:11,330
+içe aktarıyoruz ve sonra adlandırılmış bir dışa aktarma stili kökü ithal ediyoruz.
+
+37
+00:03:11,680 --> 00:03:15,770
+Ve şimdi bütün başvurumuzu bununla basitçe sarmalayalım.
+
+38
+00:03:16,000 --> 00:03:26,240
+Dolayısıyla yapabileceğimiz, basitçe buraya gidebiliriz, ancak geri bildirimi özür dileriz, ve her
+
+39
+00:03:26,330 --> 00:03:34,750
+şeyi her gün sınıfın adı uygulamasıyla birlikte istediğiniz şıka sarın.
+
+40
+00:03:34,760 --> 00:03:39,400
+Şimdi bunu kaydedip, uygulamayı yeniden yüklersek bunu tekrar tıkladık.
+
+41
+00:03:39,470 --> 00:03:41,630
+Şimdi bir hata yapmadan çalışıyor.
+
+42
+00:03:41,730 --> 00:03:47,690
+Ve eğer bunu yeniden boyutlandırırsam, kutuların sadece ortada kaldıklarını görürsün, artık
+
+43
+00:03:47,690 --> 00:03:48,550
+beraberlik yapmıyorlar.
+
+44
+00:03:48,920 --> 00:03:52,440
+Ancak boyutlarının yüzde 60'ına kadar büyüyorlar.
+
+45
+00:03:52,580 --> 00:04:00,860
+Medya sorgusu eşiğinin altına girersem, şimdi 450 piksel 450 olurdu.
+
+46
+00:04:00,860 --> 00:04:08,780
+Dolayısıyla, bu eşiğin altına düşersem, temel olarak altmış yüz altmışa sadık
+
+47
+00:04:08,780 --> 00:04:09,750
+kalır.
+
+48
+00:04:09,920 --> 00:04:15,590
+Önemli 450 piksel sabit genişlikte kalacaktır.
+
+49
+00:04:15,680 --> 00:04:22,700
+Radium tarafından sağlanan bulaşık takımı kök bileşeni ile kök bileşenine tüm uygulamanızı
+
+50
+00:04:22,700 --> 00:04:29,940
+sarın; böylece, sözde seçici Sylow için medya sorguları gibi kullanabilecekleri gelişmiş özelliklere güvenle
+
+51
+00:04:29,940 --> 00:04:34,430
+erişebilirsiniz. Kullandığınız herhangi bir özelliği yapmanız gerekmez .
+
+52
+00:04:34,460 --> 00:04:40,340
+Yalancı seçiciler gibi ortam cowries gibi radyum özelliklerini kullanmayı planladığınız bir bileşeni
+
+53
+00:04:40,340 --> 00:04:41,200
+sarmanız gerekir.
+
+54
+00:04:41,240 --> 00:04:48,520
+Dışarı aktarmayı radyum paketinden aldığınız radyo işleviyle temelde sarmanız gerekiyor.
+
+55
+00:04:48,800 --> 00:04:58,310
+Radyum, sözde seçiciler ve medya sorguları gibi özellikler gibi, her iki dünyanın en iyisini elde etmenin bir yolunu
+
+56
+00:04:58,310 --> 00:05:00,740
+kullanarak stiller ve ilerlemeleri kapsamıştır.

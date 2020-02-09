@@ -1,0 +1,87 @@
+1
+00:00:02,240 --> 00:00:09,220
+Yalancı seçicileri nasıl kullanacağınızı ve yuva sınıflarını nasıl oluşturduğumuzu ve bir önceki
+
+2
+00:00:09,220 --> 00:00:12,890
+dersdeyken o sınıf nesnesine nasıl aktardığımızı öğrendik.
+
+3
+00:00:12,970 --> 00:00:15,080
+Şimdi medya sorguları ile ilgilenmek istiyoruz.
+
+4
+00:00:15,090 --> 00:00:19,350
+Ve bu, orada çanta sınıfımda yapmak istediğim bir şeydi.
+
+5
+00:00:19,420 --> 00:00:27,660
+C S S sınıfı kişiyi dış ölümüne tayin ettim ve aslında kodu önceden ekledim.
+
+6
+00:00:27,700 --> 00:00:34,630
+Güvenlik nedeniyle C S S dosyasına göre ayarlandığından 500
+
+7
+00:00:34,630 --> 00:00:43,750
+pikoden daha geniş olan yeni bir panonuz varsa ve bu kişi sınıfını
+
+8
+00:00:43,840 --> 00:00:46,140
+yine de alacaktır.
+
+9
+00:00:46,140 --> 00:00:49,270
+Buradaki Klaas'ın nesnesinde iyi.
+
+10
+00:00:49,510 --> 00:00:55,330
+Bu acil sorguda olsa bile, göreceğimiz şey, uygulamayı yeniden
+
+11
+00:00:55,330 --> 00:01:01,780
+yüklersem ve ben görüntüportunu arttırırsam burada öğrettiğim kutunun genişliği değişmez.
+
+12
+00:01:01,810 --> 00:01:04,240
+Yeterince küçükse, yalnızca değişir.
+
+13
+00:01:04,240 --> 00:01:08,180
+Orada genişliğin yüzde 60'ı olacak.
+
+14
+00:01:08,560 --> 00:01:14,890
+bu sınıf nesnesini burada CSS sınıfınızın Stahl'ları olarak Cs'nizin bir dizge
+
+15
+00:01:15,280 --> 00:01:23,320
+işine erişmesini sağlayan bir javascript nesnesi olarak düşündüğünden, elinizi sarmak için biraz zor olabilir.
+
+16
+00:01:23,470 --> 00:01:31,390
+ac benzersiz olması için düzenlenmiş bir sınıftır, böylece yalnızca birinci sınıfınızı bir şeye benzeyecektir.
+
+17
+00:01:31,960 --> 00:01:36,220
+Bu süper basitti ve Wozzeck, bu modülün
+
+18
+00:01:36,340 --> 00:01:36,810
+Kişi.
+
+19
+00:01:36,810 --> 00:01:44,380
+Belirli bir bileşende bu sınıfı kullandığınızda DC'nin kaleminin bulunduğu tek yer olduğu güvenli olmasını
+
+20
+00:01:44,380 --> 00:01:49,130
+ve emin olabilmeniz için benzersiz bir önbellek altını çizin.
+
+21
+00:01:49,240 --> 00:01:53,510
+Bulunduğunuz yerdeki başka hiçbir yerde bulaşık bezinin herhangi bir etkisi yoktur.
+
+22
+00:01:53,530 --> 00:01:56,750
+C-lerin modüller olarak düşünülmesi de budur.

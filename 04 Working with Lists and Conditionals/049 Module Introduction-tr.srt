@@ -1,0 +1,39 @@
+1
+00:00:02,430 --> 00:00:08,960
+Baskı modülündeki bu modüle, tepki vermenin temel sözdizimini öğrendik ve bileşenleri nasıl oluşturduğunuz ve J. ile nasıl çalıştıklarınız
+
+2
+00:00:08,960 --> 00:00:15,770
+için yeniden eyleme nasıl başvurduğunuzu öğrendiniz. S. X ekrana bir şey yapmak için.
+
+3
+00:00:16,130 --> 00:00:19,380
+Bu modülde bir sonraki seviyeye geçecektir.
+
+4
+00:00:19,400 --> 00:00:26,380
+DS'nin tek kıvrımlı parantezleri ile nasıl dinamik içerik çıktırabildiğimiz konusunda bir göz atmıştık zaten.
+
+5
+00:00:26,620 --> 00:00:32,090
+Bu modülde, içeriği koşullu olarak nasıl çıktırabileceğimizi de göreceğiz.
+
+6
+00:00:32,090 --> 00:00:38,750
+belirli bir bölümünü yaşınızdaki kodunu oluşturmak istiyor ve aslında veri listelerini nasıl
+
+7
+00:00:38,750 --> 00:00:46,280
+çıktırabiliriz ki böyle bir liste ve demo uygulaması zaten sahip olduğum cüzdanımız var. devlette
+
+8
+00:00:46,310 --> 00:00:53,030
+yönettiğimiz dizide sahip olduğumuz kişilerin sayısına dayanılarak dinamik olarak oluşturulabilseydik mantıklı olurdu.
+
+9
+00:00:53,030 --> 00:00:56,980
+Örneğin, belirli bir koşul doğruysa, yalnızca yurtunuzun
+
+10
+00:00:57,230 --> 00:01:01,710
+Bu modülde dikkat edilmesi gerekenlere ve bunların hepsine bir göz atalım.

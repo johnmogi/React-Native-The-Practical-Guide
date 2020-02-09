@@ -1,0 +1,39 @@
+1
+00:00:02,430 --> 00:00:08,960
+A este módulo en el módulo de prensa aprendemos la sintaxis básica de reaccionar y aprendió cómo crear aplicaciones de reactivación cómo
+
+2
+00:00:08,960 --> 00:00:15,770
+crea componentes y cómo trabaja con J. S. X para renderizar algo en la pantalla.
+
+3
+00:00:16,130 --> 00:00:19,380
+En este módulo, pasará al siguiente nivel.
+
+4
+00:00:19,400 --> 00:00:26,380
+Ya echamos un vistazo a cómo podemos producir contenido dinámico con llaves individuales DS.
+
+5
+00:00:26,620 --> 00:00:32,090
+En este módulo veremos cómo también podemos generar contenido de manera condicional.
+
+6
+00:00:32,090 --> 00:00:38,750
+de tu dormitorio con su código si una condición es cierta y cómo podemos generar listas de datos,
+
+7
+00:00:38,750 --> 00:00:46,280
+de hecho tenemos una lista y nuestra aplicación de demostración ya los bolsos que tenemos bien tendría sentido si pudiéramos
+
+8
+00:00:46,310 --> 00:00:53,030
+crearlos dinámicamente en función del número de personas que tenemos en ese conjunto que administramos en el estado.
+
+9
+00:00:53,030 --> 00:00:56,980
+Así que, por ejemplo, si solo quieres representar una parte determinada
+
+10
+00:00:57,230 --> 00:01:01,710
+Vamos a echar un vistazo a todo eso y qué debemos tener cuidado en este módulo.

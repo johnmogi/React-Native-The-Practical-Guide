@@ -1,0 +1,267 @@
+1
+00:00:02,200 --> 00:00:05,460
+Bu yüzden, bunu gerçek bir liste olarak koymadan başlayalım.
+
+2
+00:00:05,620 --> 00:00:11,510
+Bir göz atarsak, bu kişinin düzeninde devletimizin özgür unsurları olur.
+
+3
+00:00:11,560 --> 00:00:17,000
+Şimdi yine Auburn'da ya da bilmiyorsanız görebileceğiniz çerçevelerde sorun değil.
+
+4
+00:00:17,050 --> 00:00:18,530
+Zaten burada farklı.
+
+5
+00:00:18,650 --> 00:00:26,920
+Sizin gibi diğer çerçevelerde, daha önce bir yönerge yapmış olsaydınız ya da açısal bir Engy şu an için Reak'ta buna sahip değilsiniz,
+
+6
+00:00:26,920 --> 00:00:28,900
+çünkü ne olduğunu tahmin ettiniz.
+
+7
+00:00:29,120 --> 00:00:31,760
+Öğrendiğiniz gibi her şey javascript'tir.
+
+8
+00:00:32,170 --> 00:00:39,760
+ile birlikte verdiğimiz koşullu içeriğin olduğu gibi, varsayılan araçları kullanarak da listeleri ele alıyoruz.
+
+9
+00:00:39,760 --> 00:00:40,950
+Normal javascript
+
+10
+00:00:40,990 --> 00:00:45,240
+Javascript bize listelerle çalışmamızı sağlar.
+
+11
+00:00:45,340 --> 00:00:47,070
+Nasıl olur da böyle olurdu.
+
+12
+00:00:47,140 --> 00:00:55,820
+Burada bizim şahsımıza sahip olduğumuz davamızda yine GSX kodumuzda dinamik bir şey yapmak için
+
+13
+00:00:55,820 --> 00:00:58,400
+tek kıvrımlı parantez kullanacağız.
+
+14
+00:00:58,760 --> 00:01:07,220
+Ardından, şahıslarımızı devlette düzenlemeliyiz, böylece devlet kişi sadece bu diziye
+
+15
+00:01:07,220 --> 00:01:09,170
+atıfta bulunur.
+
+16
+00:01:09,170 --> 00:01:10,860
+Şimdi bu tek başına hile yapmayacak.
+
+17
+00:01:10,940 --> 00:01:15,190
+Bu bir dizi javascript nesnesi değil, kelimeleri kodlayabileceğimiz bir şey.
+
+18
+00:01:15,260 --> 00:01:18,780
+Tim, yeniden hareket etmemeyi burada anlardı.
+
+19
+00:01:19,130 --> 00:01:24,930
+Bu nedenle, geçerli olmayan bu tür javascript tür kelimelere ihtiyacımız var.
+
+20
+00:01:24,950 --> 00:01:25,460
+J.
+
+21
+00:01:25,480 --> 00:01:34,310
+X 2 geçerli J us X ve Javascript vanilla javascript, dizileri dönüştürmek için bize bir işlev sunar.
+
+22
+00:01:34,520 --> 00:01:42,500
+Harita fonksiyon haritası, sadece belirli bir dizideki her elemanı, örneğin burada bizim kişiler dizilimimiz gibi
+
+23
+00:01:42,980 --> 00:01:45,070
+başka bir şeyle eşleştirir.
+
+24
+00:01:45,320 --> 00:01:50,720
+Belirli bir dizideki her öğe üzerinde bir yöntem yürüterek bunu yapar.
+
+25
+00:01:50,720 --> 00:01:58,410
+Bu durumda bu dizideki bu yöntem veya bu işlev burada map yöntemine geçirilir.
+
+26
+00:01:58,820 --> 00:02:02,040
+Dizinin elemanını girdi olarak alır.
+
+27
+00:02:02,060 --> 00:02:05,950
+Dolayısıyla tek bir kişi bu argümanın adını size kalmış durumda.
+
+28
+00:02:05,960 --> 00:02:11,580
+Burada sadece isimsiz bir işlev yazıyorum ve aslında burada bir ok işlevi yazıyorum.
+
+29
+00:02:11,750 --> 00:02:18,590
+Bu yüzden harita metoduna iletebileceğim 6 ok işlevi garip görünüyor olabilir ancak aslında
+
+30
+00:02:18,590 --> 00:02:25,070
+vanilya javascript ESX ama javascript değil J, X böyle bir şey değil.
+
+31
+00:02:25,100 --> 00:02:28,070
+Bu yüzden tekli kıvrımlı parantez içinde.
+
+32
+00:02:28,670 --> 00:02:36,110
+her öğe olarak, her öğe üzerinde yürüttüğüm o işleve bir girdi olarak otomatik olarak verir.
+
+33
+00:02:36,170 --> 00:02:43,250
+Dolayısıyla burada anonim bir işlev olarak map yöntemine geçirdiğim bu işlevler, kişiler dizisindeki her
+
+34
+00:02:43,340 --> 00:02:45,310
+öğede yürütülür ve Javascript,
+
+35
+00:02:45,320 --> 00:02:47,250
+Bu durumda bu bizim insanımız.
+
+36
+00:02:47,270 --> 00:02:53,180
+Yine ne isterseniz isim verebilirsiniz, ancak kişi bir dizi olduğundan muhtemelen mantıklı.
+
+37
+00:02:53,570 --> 00:02:55,670
+Ve şimdi bir şeyler iade etmelisin.
+
+38
+00:02:55,910 --> 00:03:01,010
+Bu öğeyi eşlemek istediğiniz şeyi iade etmelisiniz.
+
+39
+00:03:01,010 --> 00:03:03,850
+Bu yüzden bir dizi javascript nesnesi ve kişi var.
+
+40
+00:03:03,870 --> 00:03:05,080
+Tek cisim.
+
+41
+00:03:05,090 --> 00:03:10,530
+İki nesne üç nesne nesne ve biz başka bir şey haline dönüştürmek istiyoruz.
+
+42
+00:03:10,580 --> 00:03:15,830
+Burada kullandığımız harita yöntemi basitçe yeni bir dizi döndürür.
+
+43
+00:03:16,010 --> 00:03:24,290
+Ve sadece bu yeni diziyi GSX içinde tepki gösterdiğim için basitçe bu yeni dizinin tek
+
+44
+00:03:24,290 --> 00:03:28,700
+tek öğelerini almaya ve ikisini Dom'a dönüştürmeye çalışacağım.
+
+45
+00:03:28,850 --> 00:03:31,490
+Eğer bunlar geçerlidir J us x.
+
+46
+00:03:31,520 --> 00:03:38,270
+Dolayısıyla amacımız basitçe ceria X'i buraya getirmektir; böylece kişinin dizisinin her öğesi x temsilcisinin
+
+47
+00:03:38,390 --> 00:03:41,230
+yaptığı gibi bir j içine eşleştirilir.
+
+48
+00:03:41,540 --> 00:03:49,940
+projem olarak temsil edilebileceği için onu bir kişilik bileşene eşleştirmek istiyorum ve sonra tekrar bir ad atadık.
+
+49
+00:03:49,940 --> 00:03:56,330
+Bu nedenle, burada her bir kişinin javascript nesnesi bir kişi bileşeni ve benim
+
+50
+00:03:56,480 --> 00:03:59,950
+Ve burada aldığımız kişiyi bir girdi olarak kullanabiliriz.
+
+51
+00:04:00,080 --> 00:04:07,730
+Bu nedenle, işlevsizliğin yapıldığı bireysel öğe vardır ve burada tablonun özelliği, tabii ki
+
+52
+00:04:07,730 --> 00:04:15,200
+artık x okuma işlemini kolaylaştıracak şekilde birden fazla satırda bölünebilen yaş için
+
+53
+00:04:15,200 --> 00:04:15,930
+geçerlidir.
+
+54
+00:04:16,160 --> 00:04:18,460
+Ve aslında bu.
+
+55
+00:04:18,560 --> 00:04:25,410
+Bunun üzerine diğer tüm insanlardan kurtulabilirim ve şimdilik bunları basitçe kaldıracağım.
+
+56
+00:04:25,520 --> 00:04:33,290
+bir listesini hala basacakları ve ismi değiştirmenin şimdilik işe yaramayacağı, çünkü işleyicileri kaldırdıklarından yakında ekleyecekleri olacak.
+
+57
+00:04:33,290 --> 00:04:37,040
+Ve şimdi bunun sebebi, üzerlerine tıklayan kişilerin
+
+58
+00:04:37,820 --> 00:04:44,990
+Ve sadece bu javascript dizisini hâlâ bir javascript harikasinda harekete geçirerek basitçe toplayıcılar,
+
+59
+00:04:45,050 --> 00:04:51,820
+ancak otomatik olarak çekilecek ve ekrana gelecek olan GSX nesneleri içeren bir dizi.
+
+60
+00:04:52,190 --> 00:04:59,460
+Dosyayı saklayalım ve çantalarımdan bahsedersem sonuçta göreceğiz, burada bütün cüzdanları görelim.
+
+61
+00:04:59,780 --> 00:05:06,460
+Ayrıca, zaten önemli bir mülk atamamız gerektiğini bildiğimizden yeni bir uyarı aldık.
+
+62
+00:05:06,550 --> 00:05:08,560
+Hayır, kesinlikle buna geri döneceğim.
+
+63
+00:05:08,570 --> 00:05:10,050
+Bu çok önemli.
+
+64
+00:05:10,070 --> 00:05:13,710
+Esasen çalıştığını görebiliyoruz.
+
+65
+00:05:13,760 --> 00:05:19,910
+Dizimizin başka bir şeyle eşleştirilerek bu öğe listesini oluşturuyor.
+
+66
+00:05:19,910 --> 00:05:25,610
+Şimdi bu listeye derinlemesine dalış edelim ve o anahtara ne olduğunu ve dizi değişikliklerimize
+
+67
+00:05:25,610 --> 00:05:30,390
+nasıl tepki vereceğimizi ve olay dinleyicilerimizi kullanarak bunu nasıl değiştirebildiğimizi öğrenelim.

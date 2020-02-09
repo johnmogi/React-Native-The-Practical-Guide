@@ -1,0 +1,223 @@
+1
+00:00:02,200 --> 00:00:08,570
+Na última conferência, adicionamos rádio e começamos a usá-lo para mudar o nosso botão e adicionar um
+
+2
+00:00:08,810 --> 00:00:11,190
+pseudo seletor o seletor pseudo de Hobert.
+
+3
+00:00:11,210 --> 00:00:16,220
+Agora, é claro, mas também podemos usar o rádio para usar consultas de mídia.
+
+4
+00:00:16,320 --> 00:00:23,780
+Agora, não é o componente da pessoa, temos uma pessoa Claassen, é claro, podemos facilmente adicionar uma
+
+5
+00:00:23,780 --> 00:00:31,100
+consulta de mídia aqui onde dizemos se os homens conosco, digamos 500 pixels, anulamos nossa classe Pessoa
+
+6
+00:00:31,100 --> 00:00:36,970
+para ter uma largura de 450 pixels e não maiores porcentagens de uso.
+
+7
+00:00:37,130 --> 00:00:38,840
+Podemos absolutamente fazer isso.
+
+8
+00:00:39,020 --> 00:00:43,490
+Mas vou comentar esta solução porque não quero usar a ICSA como classe.
+
+9
+00:00:43,520 --> 00:00:47,990
+Quero mostrar-lhe como fazê-lo com o rádio que você pode precisar em alguns locais.
+
+10
+00:00:48,080 --> 00:00:54,040
+Se você deseja escopo para um componente ou se deseja alterá-lo dinamicamente.
+
+11
+00:00:54,250 --> 00:00:59,900
+Então, para morrer ou adicionar um novo estilo e, claro, você pode nomear essa constante o que quiser.
+
+12
+00:00:59,900 --> 00:01:08,660
+Na minha função aqui e ali, eu também vou usar novamente um seletor especial que ficará realmente estranho, mas
+
+13
+00:01:08,900 --> 00:01:11,030
+que funciona graças ao Radium.
+
+14
+00:01:11,120 --> 00:01:15,650
+E não se esqueça de embrulhar a sua exportação com o rádio, é sábio que não funcionará.
+
+15
+00:01:16,070 --> 00:01:18,180
+E agora você pode escrever sua consulta imediata aqui.
+
+16
+00:01:18,440 --> 00:01:30,730
+Comprimento principal da mídia comprimento novo comprimento homens com 500 pixels e, em seguida, encontrar um Stahl's é um objeto javascript.
+
+17
+00:01:30,880 --> 00:01:33,640
+Distill é um nome de propriedade do javascript.
+
+18
+00:01:33,670 --> 00:01:35,060
+Eu percebo que parece super estranho.
+
+19
+00:01:35,080 --> 00:01:39,040
+Mas, como é uma string, é um nome válido e o rádio irá analisá-lo.
+
+20
+00:01:39,040 --> 00:01:44,290
+E é claro que entendi porque é uma consulta semi-boa e entre pseudo-seletores
+
+21
+00:01:44,290 --> 00:01:46,750
+é algo que o rádio entende.
+
+22
+00:01:46,750 --> 00:01:54,820
+Agora, podemos dizer que queremos definir a largura do elemento ao qual aplicamos o estilo a 450
+
+23
+00:01:54,820 --> 00:02:00,610
+pixels, de modo que a largura fixa, que não está crescendo dinamicamente.
+
+24
+00:02:00,610 --> 00:02:07,510
+meu estilo, que irá substituir a configuração da minha classe por padrão C como regras não por causa do rádio.
+
+25
+00:02:07,810 --> 00:02:14,230
+E agora, quando você atribui isso ao meu componente, deseja atribuir o estilo e eu adicionei minha classe.
+
+26
+00:02:14,230 --> 00:02:15,610
+Mas também tenho o
+
+27
+00:02:15,610 --> 00:02:20,120
+E agora devemos ver o seguinte se eu recarregar o aplicativo ou alternar as pessoas.
+
+28
+00:02:20,140 --> 00:02:27,940
+Agora, como você pode ver, agora temos um erro que o plugin requer s. c. s s s, por exemplo, ao usar
+
+29
+00:02:28,000 --> 00:02:31,000
+quadros-chave ou para nós, consultas de mídia importantes.
+
+30
+00:02:31,000 --> 00:02:34,810
+Precisamos envolver nossa aplicação em um componente raiz de estilo.
+
+31
+00:02:34,810 --> 00:02:42,100
+componente feito de baleia por Radium e enquanto o envolvimento da exportação com o rádio é suficiente
+
+32
+00:02:42,220 --> 00:02:50,200
+ou são pseudo-seletores para basicamente transformar orris selecionados como consultas de mídia ou animações de alas com quadros-chave.
+
+33
+00:02:50,200 --> 00:02:51,700
+Este é um
+
+34
+00:02:51,730 --> 00:02:58,150
+Precisamos envolver todo o aplicativo em um componente especial fornecido pelo Radium.
+
+35
+00:02:58,150 --> 00:03:05,500
+Lá, podemos simplesmente importar raiz de estilo do rádio com as importações dispersas de rádio, aqui estamos importando a
+
+36
+00:03:05,500 --> 00:03:11,330
+exportação padrão desse arquivo e depois importamos uma raiz de estilo de exportação com nome.
+
+37
+00:03:11,680 --> 00:03:15,770
+E agora podemos simplesmente envolver toda a nossa aplicação com isso.
+
+38
+00:03:16,000 --> 00:03:26,240
+Então, o que podemos fazer é que podemos simplesmente ir aqui, mas não desculpar pessoalmente a declaração de retorno e simplesmente
+
+39
+00:03:26,330 --> 00:03:34,750
+embrulhar tudo o dia inteiro com o aplicativo de nome da classe em estilo que você gostaria disso.
+
+40
+00:03:34,760 --> 00:03:39,400
+Agora, se salvarmos isso e recarregamos o aplicativo, clique novamente nisso.
+
+41
+00:03:39,470 --> 00:03:41,630
+Agora funciona sem um erro.
+
+42
+00:03:41,730 --> 00:03:47,690
+E se eu redimensionar isso, você vê as caixas apenas ficam no meio, mas não estão
+
+43
+00:03:47,690 --> 00:03:48,550
+mais desenhando.
+
+44
+00:03:48,920 --> 00:03:52,440
+Eles ainda estão crescendo para 60% do tamanho.
+
+45
+00:03:52,580 --> 00:04:00,860
+Se eu for abaixo meu limite de consulta de mídia, que era 450, agora, 500 pixels.
+
+46
+00:04:00,860 --> 00:04:08,780
+Então, se eu for abaixo desse limite, basicamente ficará com seiscentos e sessenta por cento para ir
+
+47
+00:04:08,780 --> 00:04:09,750
+acima dele.
+
+48
+00:04:09,920 --> 00:04:15,590
+Ele permanecerá na largura fixa de 450 pixels importante.
+
+49
+00:04:15,680 --> 00:04:22,700
+Envolva todo o seu aplicativo no componente raiz apenas com o componente raiz de prato fornecido pelo Radium
+
+50
+00:04:22,700 --> 00:04:29,940
+para que você possa acessar com segurança os recursos avançados para chamá-lo assim como consultas de mídia para um
+
+51
+00:04:29,940 --> 00:04:34,430
+pseudo seletor Sylow, você não precisa fazer aquilo que você usa. .
+
+52
+00:04:34,460 --> 00:04:40,340
+Você deve envolver um componente onde você planeja usar recursos de rádio como cobras de mídia como
+
+53
+00:04:40,340 --> 00:04:41,200
+pseudo seletores.
+
+54
+00:04:41,240 --> 00:04:48,520
+Você deve encerrar a exportação com a função de rádio, basicamente, que você importa do pacote de rádio.
+
+55
+00:04:48,800 --> 00:04:58,310
+Então, usando o rádio, uma maneira de obter o melhor dos estilos mundiais e avançar como recursos como seletores de
+
+56
+00:04:58,310 --> 00:05:00,740
+pseudos e consultas de mídia.

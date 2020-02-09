@@ -1,0 +1,43 @@
+1
+00:00:02,430 --> 00:00:10,650
+Welcome to this course module. We learned a lot of things about react and we already also saw some errors
+
+2
+00:00:10,740 --> 00:00:12,790
+in our react application.
+
+3
+00:00:12,880 --> 00:00:21,900
+Now no matter how good of a programmer you are, you are going to hit errors, either error messages or
+
+4
+00:00:21,900 --> 00:00:22,680
+most of the time
+
+5
+00:00:22,680 --> 00:00:25,390
+worse than that, logical errors.
+
+6
+00:00:25,470 --> 00:00:32,460
+Now in this module, I will show you how you can debug your react application, how you should read and
+
+7
+00:00:32,520 --> 00:00:35,340
+understand react error messages
+
+8
+00:00:35,400 --> 00:00:41,940
+because a lot of them are actually quite good and helpful and how you can then create a react application
+
+9
+00:00:41,940 --> 00:00:44,270
+which is error free.
+
+10
+00:00:44,700 --> 00:00:50,940
+Let's dive into this and let's learn the various techniques you have at your disposal to understand
+
+11
+00:00:50,940 --> 00:00:52,660
+and handle errors.

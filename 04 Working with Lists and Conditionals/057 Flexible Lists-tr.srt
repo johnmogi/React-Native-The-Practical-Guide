@@ -1,0 +1,375 @@
+1
+00:00:01,990 --> 00:00:08,480
+Çok işlevsellik eklediğimizi ve bu anahtar hakkında bilgi aldığımızı bilmeliyiz Buradaki uygulamamızda biraz daha
+
+2
+00:00:08,480 --> 00:00:13,970
+bulalım, çünkü biz hala bu girdiyi bulduk ki onchange işleyicisine sahip olduğumuz
+
+3
+00:00:13,970 --> 00:00:19,510
+kişiyi çalıştırmaya çalıştığımız yerden değiştirdik ve bu pervaneyi değiştirdik değer girdi olarak.
+
+4
+00:00:19,670 --> 00:00:25,290
+Ve nihayetinde amacımız, buraya yazarsak, biz sadece bunun içine yazdığımız kullanıcının ismidir.
+
+5
+00:00:25,310 --> 00:00:31,280
+Artık bir liste oluşturuyoruz ve gerçekten dinamik içeriğe sahibiz, nihai olarak bunu gerçekten dinamik bir
+
+6
+00:00:31,280 --> 00:00:31,950
+şekilde ayarlayabiliriz.
+
+7
+00:00:32,150 --> 00:00:38,830
+Dolayısıyla yapmamız gereken şey, bu change özelliği, bazı olay dinleyicilerine veya durumun
+
+8
+00:00:38,830 --> 00:00:42,850
+doğru şekilde güncellenen bazı yöntemlere işaret etmeleri yeterlidir.
+
+9
+00:00:42,920 --> 00:00:47,750
+Dolayısıyla değişmiş durumdasınız ve şimdi bize bir yöntem sunmamız gerekiyor.
+
+10
+00:00:47,990 --> 00:00:51,700
+Adı değiştiren işleyici var.
+
+11
+00:00:51,980 --> 00:00:54,820
+O halde burada kullanalım.
+
+12
+00:00:55,130 --> 00:00:57,870
+İsim değiştirme işleyicisine işaret edelim.
+
+13
+00:00:58,040 --> 00:01:05,270
+Ve şimdi burada bu isim değiştirme işleyicisi ve iki bilgi parçası olayları olay hedef değerine
+
+14
+00:01:05,330 --> 00:01:07,490
+erişmek için hala almam gerekiyor.
+
+15
+00:01:07,490 --> 00:01:12,660
+Dolayısıyla kullanıcının girdiği şey, ancak ikinci bir girdi bekliyorum.
+
+16
+00:01:12,740 --> 00:01:19,120
+Dizideki kullanıcıların kimliğini güncellemek veya dizine eklemek istiyorum.
+
+17
+00:01:19,130 --> 00:01:20,960
+Ancak şimdi kimlik atamalıyız.
+
+18
+00:01:20,960 --> 00:01:22,540
+Neden kullanmıyorsun onu.
+
+19
+00:01:23,150 --> 00:01:30,230
+Dolayısıyla, burada bu veriyi rahatça geçirmek için bu işlev sözdizimini tekrar kullanacağım.
+
+20
+00:01:30,260 --> 00:01:37,170
+Şimdi bu fonksiyon, onchange olayı üzerine idam edilen işlevdir.
+
+21
+00:01:37,220 --> 00:01:40,810
+İşte olay nesnesini, daha önce olduğu gibi alıyoruz.
+
+22
+00:01:40,810 --> 00:01:46,340
+İşveren adına değiştirilen herhangi bir işleve doğrudan atamadığımızda aldık.
+
+23
+00:01:46,340 --> 00:01:51,440
+Şimdi onu buraya getirelim, çünkü şimdi burada tanımladığımız bu isimsiz işlevi
+
+24
+00:01:51,440 --> 00:01:53,100
+çalıştıran ilk işlevdir.
+
+25
+00:01:53,210 --> 00:01:56,660
+Sonra adı değiştirme işleyicisine iletebilirim.
+
+26
+00:01:56,900 --> 00:02:00,620
+Ve ben de ona kimlik belgesini vermek istiyorum.
+
+27
+00:02:00,620 --> 00:02:04,310
+Elbette ki kişi kimliği, burada harita yönteminde olduğumuzdan mevcuttur.
+
+28
+00:02:04,340 --> 00:02:07,940
+Böylece kişiye ve dolayısıyla kimliğe x var.
+
+29
+00:02:08,600 --> 00:02:17,180
+Ve bununla şu an bu bilgileri isim değişikliği işleyicisinde kullanabiliriz ve durumu güncellemek istiyoruz.
+
+30
+00:02:17,180 --> 00:02:21,740
+Ancak elbette yalnızca girdi alanına girdiğimiz kişi içindir.
+
+31
+00:02:21,770 --> 00:02:27,230
+o kişiyi tek kişili bulmamız gerekiyor ve biz bunu kişinin bakışı
+
+32
+00:02:27,230 --> 00:02:36,080
+için devlete ulaşarak yapabiliriz ve bunu da bu kişiyi bize veren varsayılan bir javascript yöntemi olarak bulabiliriz.
+
+33
+00:02:36,090 --> 00:02:37,080
+Bu yüzden
+
+34
+00:02:37,460 --> 00:02:45,680
+Bir dizideki öğeyi bulmak için find dizini de kullanabiliriz ancak o öğenin dizinini elde edebiliriz, evet
+
+35
+00:02:45,680 --> 00:02:48,830
+dizini doğrudan bu işleve dahil edebilirdik.
+
+36
+00:02:48,830 --> 00:02:55,220
+Ben sadece bu alternatif yaklaşımın avantajlarından yararlanarak size göstermek istedim dizinindeki her öğe
+
+37
+00:02:55,220 --> 00:03:02,930
+üzerinde bu işlevi yerine getirecek olan eşleme haritası gibi bir girdi olarak işlev bulan dizin bulma
+
+38
+00:03:02,930 --> 00:03:03,670
+dizininden yararlanın.
+
+39
+00:03:03,980 --> 00:03:10,820
+Yani burada, bu argüman adının size kalmasını sağlayan bir işlevi yerine getireceğim, ancak kişi zaten
+
+40
+00:03:10,820 --> 00:03:12,940
+bir sabit tarafından alınıyor.
+
+41
+00:03:13,100 --> 00:03:16,940
+Bu kişiyi nereden buldum ve işleve götürüyorum.
+
+42
+00:03:17,240 --> 00:03:22,240
+Şimdi haritanın aksine bu öğeyi yeni bir şeyle eşleştirmem.
+
+43
+00:03:22,310 --> 00:03:27,200
+Bunun yerine aradığım kişiyi reddetmeme ya da aradığım öğe
+
+44
+00:03:27,500 --> 00:03:32,810
+bu olup olmadığına bağlı olarak doğru ya da yanlış döndürmeliyim.
+
+45
+00:03:32,840 --> 00:03:34,780
+Şimdi aradığım kişi bu.
+
+46
+00:03:34,790 --> 00:03:36,920
+Eğer P ID ise.
+
+47
+00:03:37,130 --> 00:03:39,960
+Bu yüzden şu anda baktığım tek kişi.
+
+48
+00:03:39,980 --> 00:03:44,070
+Yine bu fonksiyonun her eleman için yürütüldüğü unutulmamalıdır.
+
+49
+00:03:44,510 --> 00:03:50,570
+Eğer fikir eşitse veya bu işleve eşit olmak için bir argüman olarak kabul edilirse, doğruyu
+
+50
+00:03:50,570 --> 00:03:51,160
+döndürecektir.
+
+51
+00:03:51,320 --> 00:03:58,670
+Ardından, bir kişi dizini belki daha iyi bir isim, dizilerindeki kimliklerin eşit
+
+52
+00:03:58,670 --> 00:04:01,370
+olduğu kişinin dizinini tutacaktır.
+
+53
+00:04:01,370 --> 00:04:09,290
+Daha sonra, bu devlet görevlilerine ulaşarak ve buraya yeni getirdiğim dizinde bulunan kişi dizinindeki
+
+54
+00:04:09,290 --> 00:04:12,670
+öğeye erişerek kişinin kendisini elde edebiliyorum.
+
+55
+00:04:13,160 --> 00:04:14,730
+Şimdi de daha önce olduğu gibi.
+
+56
+00:04:14,840 --> 00:04:21,830
+bir javascript nesnesi olduğunu doğrulayabileceğiniz kişinin dizinindeki bir kişinin iyi bir uygulamadır.
+
+57
+00:04:21,830 --> 00:04:25,200
+Doğrudan devleti mutasyona geçirmek değil, burada
+
+58
+00:04:25,220 --> 00:04:32,240
+Şimdi söylediğim gibi javascript nesneleri referans türleridir, dolayısıyla bunları doğrudan değiştirmemeliyiz çünkü burada kişiye
+
+59
+00:04:32,240 --> 00:04:38,470
+ulaştığımızda sadece bir işaretçi alıyoruz ve dolayısıyla bu işaretçinin işaret ettiği orijinal
+
+60
+00:04:38,480 --> 00:04:40,290
+nesneyi mutasyona uğratacağız.
+
+61
+00:04:40,790 --> 00:04:51,140
+Bu durumda daha iyi bir yaklaşım, böyle yeni bir javascript nesnesi yaratmak ve daha sonra bu yayma operatörünü
+
+62
+00:04:51,500 --> 00:04:53,820
+getirdiğim nesnenin önünde kullanmaktır.
+
+63
+00:04:53,960 --> 00:04:59,810
+Dizi ile olduğu gibi, nesneler için her seviyede bir düzeye sahiptir ve
+
+64
+00:05:00,080 --> 00:05:05,870
+sizin tarafımıza getirdiğimiz nesnenin tüm özelliklerini burada oluşturduğumuz yeni Optik'e dağıtır.
+
+65
+00:05:06,130 --> 00:05:11,940
+Ve burada, kullanmayacağımız alternatif bir yaklaşım var, ancak yayılma operatörü olmadan
+
+66
+00:05:11,980 --> 00:05:19,000
+bunu kullanan alternatif bir yaklaşım, nesneyi ilk argüman olarak boş bir nesneyi iletirken
+
+67
+00:05:19,000 --> 00:05:25,600
+varsayılan bir javascript işlevi atamak için kullanıyor olacaktı. İkinci nesne olarak kendisine
+
+68
+00:05:25,600 --> 00:05:27,840
+atamak istediğiniz özellikleri seçin.
+
+69
+00:05:28,660 --> 00:05:30,540
+Ya da söylemem gereken ikinci argüman.
+
+70
+00:05:30,700 --> 00:05:35,560
+Dolayısıyla nesne boş bir nesneyle atanmış ve daha sonra mülkleri almak
+
+71
+00:05:35,860 --> 00:05:36,980
+istediğimiz nesne alternatiftir.
+
+72
+00:05:37,120 --> 00:05:41,920
+yayılma operatörünün daha modern bir yaklaşımını kullanmak istiyorum, kesinlikle her ikisini de kullanabilirsiniz.
+
+73
+00:05:41,920 --> 00:05:43,230
+Ancak, bunu yorumlayacağım çünkü
+
+74
+00:05:43,240 --> 00:05:46,720
+Burada daha iyi veya kötü olmasa da.
+
+75
+00:05:46,780 --> 00:05:48,700
+Yani onunla ben de insanı elde ediyorum.
+
+76
+00:05:48,700 --> 00:05:53,790
+Şimdi elbette kişinin adını güncellemek istiyorum ve bunu bir kopyam aldım çünkü yapabilirim.
+
+77
+00:05:53,800 --> 00:06:02,500
+Artık orijinal nesneyi manipüle etmiyorum ve daha önce yaptığımız gibi olay hedef adı
+
+78
+00:06:02,500 --> 00:06:04,500
+Suzy değerine ayarlayabilirim.
+
+79
+00:06:04,510 --> 00:06:12,300
+Şimdi tabii diziyi güncellemeliyim ve diziyi buraya getirdiğim bu konumda güncellemek istiyorum.
+
+80
+00:06:12,730 --> 00:06:20,500
+yüzde yüzümü, devlet kişilerine ulaşarak operatöre veya dilimle yaymak zorunda olduğum diziyi alabilirim.
+
+81
+00:06:20,710 --> 00:06:23,110
+Daha önce olduğu gibi
+
+82
+00:06:23,500 --> 00:06:31,690
+Ve şimdi bunu bir konumda güncelleyebiliriz, bir sonraki kişi şu an güncelleştirilmiş kişi olmalı.
+
+83
+00:06:31,690 --> 00:06:34,310
+Ve yine burada kopyalarla çalışıyorum.
+
+84
+00:06:34,840 --> 00:06:44,620
+Şimdi güncellenmiş bir kişinin Irais'ine sahibiz ve bu durum sonunda durumu ayarlayıp, adı değiştirdiğimiz
+
+85
+00:06:44,680 --> 00:06:52,360
+güncellenmiş kişiyle bir öğe güncellediğimiz eski dizinin bir kopyası olan cutis
+
+86
+00:06:52,360 --> 00:06:55,390
+updated persons dizisini ayarlamamızı sağlıyor.
+
+87
+00:06:55,390 --> 00:07:01,550
+Bir sürü kod ancak durumu değiştirmeden en verimli şekilde yapmanın en iyi yolu.
+
+88
+00:07:01,690 --> 00:07:08,650
+göz önüne alırsak göreceğimiz şudur: Burada tüm isimleri görmeden önce bu uyarıyı almayacağız.
+
+89
+00:07:08,710 --> 00:07:10,370
+Ve şimdi bunu
+
+90
+00:07:10,690 --> 00:07:17,680
+Ve burada yazmaya başlayabilirim ve bunları, girdinin ait olduğu nesne için güncellerim.
+
+91
+00:07:17,690 --> 00:07:21,120
+Şimdi burada gerçekten esnek bir bileşen elde ediyoruz.
+
+92
+00:07:21,220 --> 00:07:28,600
+Bu listeyi etkin bir şekilde oluşturmak ve verimli bir şekilde etkileşimde bulunmak için modern özelliklerden
+
+93
+00:07:28,660 --> 00:07:30,910
+yararlanan gerçekten esnek bir uygulama.
+
+94
+00:07:30,910 --> 00:07:32,120
+Süper önemlidir.

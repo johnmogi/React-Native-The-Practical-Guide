@@ -1,0 +1,115 @@
+1
+00:00:02,200 --> 00:00:08,590
+In the last lecture, we learned how to use props, how to receive them as an argument and output them dynamically
+
+2
+00:00:08,590 --> 00:00:10,390
+in our code.
+
+3
+00:00:10,390 --> 00:00:17,320
+Now I also want to output whatever we pass between the opening and closing tag of our custom component,
+
+4
+00:00:17,320 --> 00:00:19,960
+and this is actually super simple too.
+
+5
+00:00:20,020 --> 00:00:27,610
+There is a special prop we can access, react gives us access to it to be precise. In the person component
+
+6
+00:00:27,640 --> 00:00:29,020
+where we want to receive it
+
+7
+00:00:29,020 --> 00:00:37,360
+in the end, I will wrap my paragraph in normal parentheses so that I can write this over multiple lines
+
+8
+00:00:38,050 --> 00:00:46,540
+because I now also want to create a wrapping element simply a div and I want to wrap the paragraph
+
+9
+00:00:46,810 --> 00:00:56,280
+inside of this div and also add another element after this paragraph. This other element should also
+
+10
+00:00:56,400 --> 00:01:03,980
+be a paragraph maybe but it should be a paragraph which outputs this part
+
+11
+00:01:04,000 --> 00:01:13,610
+we pass in between. We can simply do that by using single curly braces to put something dynamic, accessing
+
+12
+00:01:13,610 --> 00:01:14,680
+props
+
+13
+00:01:14,930 --> 00:01:20,150
+and then here, the special children property.
+
+14
+00:01:20,150 --> 00:01:28,190
+This is a reserved word, we didn't pass anything as children on our persons, we only pass name and
+
+15
+00:01:28,190 --> 00:01:32,090
+age. Children refers to any elements
+
+16
+00:01:32,090 --> 00:01:38,960
+and this includes plain text as we have it here between the opening and closing tag of our component,
+
+17
+00:01:39,200 --> 00:01:43,000
+and you could nest complex hmtl code in-between too.
+
+18
+00:01:43,060 --> 00:01:49,550
+This doesn't have to be just text, could be unordered list with multiple list items, could be other react
+
+19
+00:01:49,550 --> 00:01:57,790
+components, anything can go between here. And these children are now output with this syntax,
+
+20
+00:01:57,950 --> 00:02:03,240
+of course you don't have to wrap it in a paragraph, you can use it anywhere in your jsx code,
+
+21
+00:02:03,530 --> 00:02:11,080
+and after saving this, we see my hobbies racing for Manu whereas Max and Stephanie still output the
+
+22
+00:02:11,080 --> 00:02:15,230
+other content only because we don't pass any children.
+
+23
+00:02:15,530 --> 00:02:23,610
+If we inspect it, we see that an empty paragraph is rendered though, so the paragraph's there, it's just empty
+
+24
+00:02:23,900 --> 00:02:30,680
+because props.children is basically undefined as null because we have nothing between opening and closing
+
+25
+00:02:30,680 --> 00:02:31,570
+tag.
+
+26
+00:02:32,030 --> 00:02:33,490
+This is important to know,
+
+27
+00:02:33,530 --> 00:02:40,130
+you can put your content into your component from outside,
+
+28
+00:02:40,130 --> 00:02:48,230
+not only by passing props like this but if you want to pass some structured html content also by
+
+29
+00:02:48,230 --> 00:02:54,160
+placing it between the opening and closing tag and accessing it with props.children.

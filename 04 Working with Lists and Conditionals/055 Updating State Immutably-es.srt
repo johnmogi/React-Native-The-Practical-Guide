@@ -1,0 +1,111 @@
+1
+00:00:02,190 --> 00:00:06,300
+En la última conferencia comenzamos a eliminar personas.
+
+2
+00:00:06,300 --> 00:00:11,830
+Hicimos esto al obtener acceso a todas las personas en el estado eliminando el elemento
+
+3
+00:00:11,830 --> 00:00:16,320
+que deseaba eliminar utilizando el índice de la persona y actualizando el estado.
+
+4
+00:00:16,320 --> 00:00:23,700
+El error de este enfoque es que en javascript los objetos y las matrices son tipos de referencia.
+
+5
+00:00:23,700 --> 00:00:31,860
+Así que cuando obtengo personas de mi estado como lo hago aquí, en realidad obtengo un puntero al objeto de
+
+6
+00:00:31,860 --> 00:00:35,370
+la persona original administrada por reacción al estado original.
+
+7
+00:00:35,370 --> 00:00:43,560
+Debo decir que si lo empalmo aquí, ya mutaré esta información original y, una vez que funcione sin lanzar
+
+8
+00:00:43,560 --> 00:00:47,180
+un error, no es realmente cómo debería hacerlo.
+
+9
+00:00:47,190 --> 00:00:52,850
+Esto puede llevar a aplicaciones impredecibles y definitivamente es una mala práctica.
+
+10
+00:00:52,920 --> 00:01:00,810
+Una buena práctica es crear una copia de su matriz de persistencia antes de manipularla y una forma simple
+
+11
+00:01:00,810 --> 00:01:08,430
+de hacerlo es llamando al sector de sectores sin argumentos, simplemente copia la matriz completa y devuelve una
+
+12
+00:01:08,430 --> 00:01:10,950
+nueva que luego se almacena aquí.
+
+13
+00:01:11,190 --> 00:01:18,570
+Y ahora puede editar con seguridad este nuevo y luego actualizar el estado de reacción con su nueva matriz.
+
+14
+00:01:19,400 --> 00:01:28,950
+Una alternativa a este enfoque sería usarlo, ya que seis cuentan con el operador de dispersión, simplemente puede establecer monederos iguales a
+
+15
+00:01:28,950 --> 00:01:37,400
+una nueva matriz y esta nueva matriz ahora puede usar el operador de expansión, donde los puntos libres pueden parecer
+
+16
+00:01:37,580 --> 00:01:39,540
+extraños, pero esto es javascript.
+
+17
+00:01:39,540 --> 00:01:43,650
+Operador. ¿Dónde estás ahora para llegar a las cárceles estatales?
+
+18
+00:01:43,700 --> 00:01:50,180
+Lo que hace es extender los elementos en forma de matriz en una lista de elementos que simplemente se
+
+19
+00:01:50,180 --> 00:01:56,920
+agrega a esta matriz, de modo que ahora tenemos una matriz una nueva matriz con los objetos de la matriz
+
+20
+00:01:57,170 --> 00:01:59,480
+anterior pero no la matriz misma.
+
+21
+00:01:59,720 --> 00:02:02,720
+Entonces esto es básicamente equivalente al enfoque de corte.
+
+22
+00:02:02,720 --> 00:02:04,350
+Utilice el que prefiera.
+
+23
+00:02:04,490 --> 00:02:11,060
+Este es el más moderno y verá que esta lectura opera más a menudo para el curso.
+
+24
+00:02:11,080 --> 00:02:16,050
+Con eso tenemos el mismo comportamiento que antes y no corrigimos los mensajes de error con eso.
+
+25
+00:02:16,060 --> 00:02:21,790
+Todavía funciona como antes, pero puedo decir que es el mejor enfoque para actualizar el estado.
+
+26
+00:02:21,800 --> 00:02:28,160
+Siempre debe actualizar el estado de manera inmutable para que, sin mutar el estado original, primero cree
+
+27
+00:02:28,430 --> 00:02:33,780
+una deuda de cambio de copia y luego actualice el estado con dicho estado.
+
+28
+00:02:33,830 --> 00:02:37,590
+Sin embargo, hay cosas que podemos y debemos mejorar sobre nuestra lista.

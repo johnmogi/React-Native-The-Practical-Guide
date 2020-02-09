@@ -1,0 +1,123 @@
+1
+00:00:02,250 --> 00:00:08,020
+Şimdi oku okumayı ve ok mesajlarını nasıl anlayacağınızı ve mantıksal hataları nasıl bulacağınızı öğreneceksiniz.
+
+2
+00:00:08,100 --> 00:00:13,860
+Bazen reaktör uygulamanızın halihazırdaki durumunu öğrenmek ve geliştirici
+
+3
+00:00:13,860 --> 00:00:17,500
+araçlarıyla uygunsuz olabileceğini düşünmek isteyebilirsiniz.
+
+4
+00:00:17,970 --> 00:00:24,120
+Neyse ki Chrome'a ​​ekleyebileceğiniz ve geliştirici araçlarını yeniden oynatabileceğiniz harika bir uzantı var.
+
+5
+00:00:24,120 --> 00:00:25,730
+Birlikte kuralım.
+
+6
+00:00:25,950 --> 00:00:32,760
+Yeniden hareket eden geliştirici araçları için google'ı kullanabilirsiniz ve bunları nasıl kullanacağınız hakkında daha fazla
+
+7
+00:00:32,760 --> 00:00:38,700
+bilgi edinebileceğiniz ve projeye katkıda bulunabileceğiniz veya Chrome Web mağazasına hak kazandığınız get
+
+8
+00:00:38,700 --> 00:00:39,610
+up deposunu bulacaksınız.
+
+9
+00:00:39,630 --> 00:00:39,890
+Yok hayır.
+
+10
+00:00:39,900 --> 00:00:40,400
+Telaşa gerek yok.
+
+11
+00:00:40,400 --> 00:00:42,930
+Bunlar web mağazasında ücretsiz.
+
+12
+00:00:42,930 --> 00:00:48,630
+Zaten bunları Chrome'a ​​ekledim ancak bunu yapmadıysanız Chrome'a ​​ekle'yi tıklayabilirsiniz.
+
+13
+00:00:48,630 --> 00:00:54,960
+Onları düzenledikten sonra, muhtemelen Roma'ya yeniden başlamanız gerekir ve bunlar, krom geliştirici araçlarında peşinde.
+
+14
+00:00:54,960 --> 00:00:59,210
+Yeniden hareket etmeyi seçebilirsiniz bu yeni sekme olmalıdır a.
+
+15
+00:00:59,220 --> 00:01:06,810
+Şimdi, hareket halindeyken oluşturduğunuz uygulamayı gördüğünüz gibi şimdi harika bir şey var.
+
+16
+00:01:06,870 --> 00:01:12,330
+bileşeni bileşenini veya uygulama bileşeni gibi görünen DOM öğelerini görmüyorsunuzdur.
+
+17
+00:01:12,810 --> 00:01:19,260
+Geçiş yap öğesini tıklarsanız, normal öğeler sekmesinden farklı bir şey görürsünüz, ancak
+
+18
+00:01:19,260 --> 00:01:20,670
+yalnızca bileşenleri bileşen
+
+19
+00:01:21,090 --> 00:01:26,840
+Ve alt kısmında orada da bileşen ve sahne bakın.
+
+20
+00:01:27,000 --> 00:01:29,590
+Yani uygulama bileşeni için kişinin dizisini görürsünüz.
+
+21
+00:01:29,680 --> 00:01:33,500
+Ve bir kişiyi tıklarsam kaldırırım da bu güncellenir.
+
+22
+00:01:33,510 --> 00:01:39,860
+Böylece burada devletinizin de orada değiştirebileceğini ve bir kişi bileşenini ilerlettiğini görebilirsiniz.
+
+23
+00:01:39,870 --> 00:01:47,430
+Görüyorsunuz ki bir devlete sahip değil, sahne bulunuyor ve burada hangi
+
+24
+00:01:47,700 --> 00:01:51,480
+özelliklerin vurgulanmış göründüğünden güncellemeleri vurgulayabiliyorlar.
+
+25
+00:01:51,540 --> 00:01:56,430
+Kodunuzda, örneğin bu sınıf adının eklenmesi gibi ne değişti.
+
+26
+00:01:56,430 --> 00:01:58,070
+Bu da çok güzel.
+
+27
+00:01:58,080 --> 00:02:04,650
+Uygulamanızdaki bileşenlerin durumunu hızlı bir şekilde anlamanıza ve nesnenizi değiştirmenize ve normal geliştirici
+
+28
+00:02:04,650 --> 00:02:10,560
+araçlarıyla kolayca edemediğiniz bazı görüşlere izin vermenizi sağlar; çünkü bu, işe yarayan
+
+29
+00:02:10,590 --> 00:02:11,850
+şeylerin ötesine geçer.
+
+30
+00:02:11,910 --> 00:02:15,500
+Kapağın altında neler olduğunu sahnelerin arkasında ne gösteriyor.
+
+31
+00:02:15,510 --> 00:02:16,140
+Temelde.

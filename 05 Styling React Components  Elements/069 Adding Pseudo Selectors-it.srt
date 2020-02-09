@@ -1,0 +1,247 @@
+1
+00:00:02,170 --> 00:00:06,880
+E The Last Lecture abilitiamo questo modulo espellendo la configurazione.
+
+2
+00:00:06,880 --> 00:00:13,410
+Ottimizzare e quindi importare le classi dal CSA come segue e utilizzarle.
+
+3
+00:00:13,450 --> 00:00:17,410
+Ora aggiungiamo anche pseudo selettori e media query.
+
+4
+00:00:17,590 --> 00:00:22,880
+Gli elettrodi Pseudos sono importanti qui nella caduta degli Apogei dove assegniamo uno stile di pulsante.
+
+5
+00:00:22,990 --> 00:00:30,190
+Ora non lo faremo più in linea, quindi rimuoverò la proprietà D-Star sul pulsante qui e non imposterò più il
+
+6
+00:00:30,190 --> 00:00:35,760
+colore di sfondo del negozio da leggere qui e non lo imposterò più in questo modo.
+
+7
+00:00:35,860 --> 00:00:43,200
+come stile US Marshal Così ora potremmo creare un pulsante AC Ss class che abbiamo poi assegnato
+
+8
+00:00:43,200 --> 00:00:51,010
+al pulsante o semplicemente creiamo un normale Seer come regola per ogni pulsante annidato all'interno del nostro avvolgere classe.
+
+9
+00:00:51,010 --> 00:00:54,430
+Potremmo fare questo, ma ora voglio farlo DC
+
+10
+00:00:54,580 --> 00:00:58,200
+Ora possiamo assegnare gli stili che vogliamo.
+
+11
+00:00:58,210 --> 00:01:03,150
+Ora dovrebbero essere gli stili che avevamo prima di eliminarli, quindi cercherò semplicemente di ricostruirlo.
+
+12
+00:01:03,280 --> 00:01:05,000
+Avevamo un bordo blu, immagino.
+
+13
+00:01:05,260 --> 00:01:08,230
+Aggiungiamo un po 'di riempimento forse 16 pixel.
+
+14
+00:01:08,500 --> 00:01:13,650
+Aggiungiamo un colore di sfondo di verde.
+
+15
+00:01:13,650 --> 00:01:15,490
+Di default forse.
+
+16
+00:01:15,700 --> 00:01:19,200
+E impostiamo il carattere da ereditare.
+
+17
+00:01:19,410 --> 00:01:28,910
+E ora se lo salviamo già dovremmo ottenere questo pulsante qui, perché applichiamo ancora i nostri stili.
+
+18
+00:01:28,940 --> 00:01:32,030
+Non sei più in linea però.
+
+19
+00:01:32,030 --> 00:01:35,560
+Assicurati di salvare anche l'apertura per vedere realmente le modifiche.
+
+20
+00:01:35,600 --> 00:01:42,580
+Dovremmo ottenere questo stile ora non più in linea, ma il pulsante qui è in fase di stallo perché è nidificato sotto
+
+21
+00:01:42,590 --> 00:01:44,510
+il nostro selettore di app qui.
+
+22
+00:01:44,720 --> 00:01:49,200
+Un'app è questo selettore speciale applicato al div esterno.
+
+23
+00:01:49,270 --> 00:01:57,250
+Ora permettimi di modificare semplicemente il colore e, naturalmente, vogliamo ancora essere in grado di impostare il pulsante su
+
+24
+00:01:57,250 --> 00:02:01,980
+rosso e vogliamo essere in grado di vederlo aleggiare sopra di esso.
+
+25
+00:02:02,360 --> 00:02:03,730
+Quindi lasciami aggiungere il pulsante.
+
+26
+00:02:03,860 --> 00:02:05,000
+Hover.
+
+27
+00:02:05,300 --> 00:02:06,560
+La normalità è il codice qui.
+
+28
+00:02:06,560 --> 00:02:15,130
+Niente di stravagante e imposta il colore dello sfondo qui in verde chiaro e il colore in nero.
+
+29
+00:02:15,140 --> 00:02:16,680
+Può essere.
+
+30
+00:02:16,870 --> 00:02:19,990
+E ora aggiungiamo il caso rosso.
+
+31
+00:02:20,320 --> 00:02:26,230
+Ora per quello aggiungo semplicemente il pulsante dell'app rosso.
+
+32
+00:02:26,500 --> 00:02:34,150
+classe di lettura per impostare il colore di sfondo qui da leggere e ora anche aggiungere il pulsante dell'app.
+
+33
+00:02:34,450 --> 00:02:39,820
+Quindi la normalità ha chiesto alla regola di applicare qualsiasi pulsante che ha la
+
+34
+00:02:39,880 --> 00:02:49,470
+Leggi il passaggio del mouse per impostare il colore di sfondo su Salmen e il colore sul nero per i pulsanti di Hubbard con
+
+35
+00:02:49,470 --> 00:02:50,710
+la classe rossa.
+
+36
+00:02:50,730 --> 00:02:55,740
+Ora tutto ciò che dobbiamo fare è aggiungere in modo condizionale la classe Duret a questo pulsante se ne abbiamo bisogno.
+
+37
+00:02:55,740 --> 00:03:04,860
+Quindi torna in app J. S. abbiamo semplicemente bisogno di associare il nome della classe al
+
+38
+00:03:04,860 --> 00:03:08,770
+pulsante, quindi lo faremo non è una funzione di rendering, ovviamente prima dell'istruzione.
+
+39
+00:03:08,960 --> 00:03:17,380
+Abbiamo una classe pulsante predefinita che è null diciamo o semplicemente una stringa vuota.
+
+40
+00:03:17,480 --> 00:03:29,760
+di questa istruzione se sono state assegnate agli occhi delle persone che la classe Button è uguale alle classi leggere, vediamo se funziona.
+
+41
+00:03:29,770 --> 00:03:30,850
+Quindi all'interno
+
+42
+00:03:30,850 --> 00:03:40,080
+Se ora torno al pulsante e aggiungo il nome della classe e lo impostiamo uguale alla classe del pulsante.
+
+43
+00:03:40,270 --> 00:03:41,520
+Ora una nota importante.
+
+44
+00:03:41,530 --> 00:03:46,990
+Ma la classe deve sempre essere una stringa se assegniamo un nome di classe e un thread di classe e la fine.
+
+45
+00:03:47,080 --> 00:03:55,140
+Solo una stringa creata da D. C. Il caricatore di s che ci dà ancora accesso alla
+
+46
+00:03:55,230 --> 00:03:59,300
+classe come questo ma restituisce una stringa con C S valido o è una stringa vuota.
+
+47
+00:03:59,350 --> 00:04:01,820
+Se siamo fuori da questa condizione.
+
+48
+00:04:02,180 --> 00:04:06,890
+Ora salviamolo guardiamo il sovraccarico librantesi erano x.
+
+49
+00:04:07,000 --> 00:04:12,610
+Dovremmo aggiungere che è una cosa puntatore e facendo clic su di esso funziona anche con la clausola dread che
+
+50
+00:04:12,610 --> 00:04:14,150
+puoi vedere è ora aggiunto.
+
+51
+00:04:14,350 --> 00:04:22,300
+Quindi tutto funziona per le classi annidate, come puoi vedere leggere come classe, trovare solo unbuttons e ancora
+
+52
+00:04:22,300 --> 00:04:24,100
+nel nostro componente javascript.
+
+53
+00:04:24,310 --> 00:04:27,580
+Abbiamo importato su quell'oggetto classi Oberle.
+
+54
+00:04:27,910 --> 00:04:32,360
+Quindi ogni classe C S S che definiamo in DC è la seguente.
+
+55
+00:04:32,390 --> 00:04:39,880
+Importiamo con quella C-s come moduli abilitati a tutte le classi definite qui anche se
+
+56
+00:04:39,880 --> 00:04:46,030
+si applicano solo a un sottoinsieme speciale Lechter sono disponibili sull'oggetto Colossus.
+
+57
+00:04:46,030 --> 00:04:49,720
+Stiamo importando da quel file CSSA.
+
+58
+00:04:49,730 --> 00:04:52,910
+Ora lasciatemi concludere questa cosa pulsante qui ormai.
+
+59
+00:04:52,910 --> 00:05:00,830
+Ancora una volta aggiungendo un cursore che è un puntatore con quello salva tutto il falso e ora otteniamo questo bel puntatore
+
+60
+00:05:00,830 --> 00:05:01,350
+qui.
+
+61
+00:05:01,520 --> 00:05:03,660
+Tutto funziona come dovrebbe
+
+62
+00:05:04,100 --> 00:05:06,140
+Diamo ora un'occhiata alle domande dei media.

@@ -1,0 +1,115 @@
+1
+00:00:02,200 --> 00:00:08,590
+Na última palestra, aprendemos a usar adereços para recebê-los como um argumento e exibi-los
+
+2
+00:00:08,590 --> 00:00:10,390
+dinamicamente em nosso código.
+
+3
+00:00:10,390 --> 00:00:17,320
+Agora, eu também quero produzir o que quer que possamos passar entre a etiqueta de abertura e de fechamento do nosso componente personalizado.
+
+4
+00:00:17,320 --> 00:00:19,960
+E isso é realmente super simples também.
+
+5
+00:00:20,020 --> 00:00:27,610
+Existe um suporte especial para o qual podemos acessar e nos dá acesso a ele para ser preciso no componente da pessoa
+
+6
+00:00:27,640 --> 00:00:29,020
+em que queremos recebê-lo.
+
+7
+00:00:29,020 --> 00:00:37,360
+eu quero envolver o parágrafo dentro desta div e também adicionar um elemento numérico Depois deste
+
+8
+00:00:38,050 --> 00:00:46,540
+parágrafo, cada elemento deve ser um parágrafo talvez, mas deve ser um parágrafo que produz esta parte.
+
+9
+00:00:46,810 --> 00:00:56,280
+No final, vou embrulhar o meu parágrafo em parênteses normais para que eu possa escrever isso em várias
+
+10
+00:00:56,400 --> 00:01:03,980
+linhas, porque agora eu também quero criar um elemento de embrulho simplesmente um dispositivo e
+
+11
+00:01:04,000 --> 00:01:13,610
+Passamos entre nós, podemos simplesmente fazer isso usando chaves simples para colocar algo de acessos de
+
+12
+00:01:13,610 --> 00:01:14,680
+acesso dinâmico.
+
+13
+00:01:14,930 --> 00:01:20,150
+E então, aqui, a propriedade infantil especial.
+
+14
+00:01:20,150 --> 00:01:28,190
+Esta é uma pesquisa a palavra que não passamos nada como crianças em nossas pessoas que apenas passamos
+
+15
+00:01:28,190 --> 00:01:32,090
+nome e idade crianças refere-se a qualquer elemento.
+
+16
+00:01:32,090 --> 00:01:38,960
+E isso inclui texto simples como o temos aqui entre a etiqueta de abertura e encerramento de nosso componente.
+
+17
+00:01:39,200 --> 00:01:43,000
+E você poderia aninhar o H. complexo. T. Malcourt entre dois.
+
+18
+00:01:43,060 --> 00:01:49,550
+Isso não precisa ser apenas uma cópia de texto ou uma lista ordenada com vários itens de lista
+
+19
+00:01:49,550 --> 00:01:57,790
+podem ser sobre os componentes de reação, qualquer coisa pode ir entre aqui e essas crianças agora são outpoured com esta sintaxe.
+
+20
+00:01:57,950 --> 00:02:03,240
+Claro que você não precisa envolver em um parágrafo, você pode usá-lo em qualquer lugar no seu código GSX.
+
+21
+00:02:03,530 --> 00:02:11,080
+E depois de salvar isso, vemos meus passatempos correndo para o Homem U, enquanto que Max e Stephanie ainda
+
+22
+00:02:11,080 --> 00:02:15,230
+exibem o conteúdo médio apenas porque não passamos nenhum filho.
+
+23
+00:02:15,530 --> 00:02:23,610
+veremos que o parágrafo vazio é processado, então os parágrafos lá são apenas vazios porque os filhos Propst
+
+24
+00:02:23,900 --> 00:02:30,680
+são basicamente indefinidos é nulo porque não temos nada entre abrir e fechar a tag.
+
+25
+00:02:30,680 --> 00:02:31,570
+Se inspecionarmos,
+
+26
+00:02:32,030 --> 00:02:33,490
+Isso é importante saber.
+
+27
+00:02:33,530 --> 00:02:40,130
+Você pode colocar seu conteúdo em seu componente de fora.
+
+28
+00:02:40,130 --> 00:02:48,230
+Não só passando adereços como este, mas se você quiser passar algum conteúdo estruturado h t m l, colocando-o
+
+29
+00:02:48,230 --> 00:02:54,160
+entre a etiqueta de abertura e fechamento e acessando-o com os filhos do prop.

@@ -1,0 +1,211 @@
+1
+00:00:02,850 --> 00:00:08,370
+Nós já colocamos algum trabalho em listas e nós melhoramos, por exemplo, aproveitando o índice
+
+2
+00:00:08,370 --> 00:00:15,390
+do nosso elemento para executar algum código que realmente leva em conta em qual elemento ele corre, ainda podemos
+
+3
+00:00:15,390 --> 00:00:22,320
+melhorar isso, por exemplo, cuidando deste erro, nós está ficando com a abordagem chave que está faltando a chave
+
+4
+00:00:22,320 --> 00:00:29,190
+Propp é realmente uma propriedade importante que devemos adicionar ao renderizar listas de dados e é por isso que
+
+5
+00:00:29,190 --> 00:00:31,540
+a Riak nos diz para fazê-lo.
+
+6
+00:00:31,920 --> 00:00:35,130
+Não especificamos uma propriedade chave pessoalmente.
+
+7
+00:00:35,130 --> 00:00:41,970
+Na verdade, um reimpressão de propriedade padrão espera encontrar em um elemento, não importa se é um componente
+
+8
+00:00:42,330 --> 00:00:47,210
+personalizado ou um elemento HVM padrão que você processa através de uma lista.
+
+9
+00:00:47,220 --> 00:00:57,350
+Então, basicamente, mapeando uma matriz em J como elementos x, a propriedade Diski ajuda a re-atualizar a lista de forma eficiente.
+
+10
+00:00:57,360 --> 00:01:00,980
+Considere o caso em que temos aqui que excluímos elementos da lista.
+
+11
+00:01:00,990 --> 00:01:02,650
+Claro que funciona.
+
+12
+00:01:02,730 --> 00:01:09,420
+Mas, por trás das cenas, o reator precisa descobrir o que realmente precisa se ajustar no Dom geral
+
+13
+00:01:09,420 --> 00:01:15,510
+e mergulhamos mais profundamente no que reagem exatamente em uma seção específica aqui no curso. Whero
+
+14
+00:01:15,510 --> 00:01:17,910
+lhe dá uma breve olhada nos bastidores.
+
+15
+00:01:17,910 --> 00:01:24,380
+chamar o método de renderização agora ou se realmente fosse o Dom real com o resultado do
+
+16
+00:01:24,390 --> 00:01:31,920
+método de renderização para o Dom anterior Isso tornou a compressão do futuro com o passado basicamente e para listas.
+
+17
+00:01:31,920 --> 00:01:37,380
+Mas, basicamente, o que ele faz é que ele tem algo chamado Wordle Dom, onde
+
+18
+00:01:37,380 --> 00:01:40,860
+ele compara o que seria renderizar agora, se fosse
+
+19
+00:01:40,860 --> 00:01:46,180
+É claro que precisa descobrir quais elementos mudaram e reagem não são humanos.
+
+20
+00:01:46,200 --> 00:01:52,260
+Não vê claramente como fazemos que temos três elementos distintos, com diferentes nomes sendo
+
+21
+00:01:52,860 --> 00:01:54,780
+renderizados, que eu cliquei acidentalmente.
+
+22
+00:01:54,780 --> 00:02:00,740
+Então, não vê que este é o menu do Mac e Steffanie para reagir que tem apenas um monte de componentes
+
+23
+00:02:01,170 --> 00:02:03,300
+de pessoa e não os inspeciona profundamente.
+
+24
+00:02:03,300 --> 00:02:05,170
+Isso seria super ineficiente.
+
+25
+00:02:05,670 --> 00:02:08,700
+Então, por padrão, será apenas Riera sob toda a lista.
+
+26
+00:02:08,700 --> 00:02:11,790
+E, para uma longa lista, isso é muito ineficiente.
+
+27
+00:02:11,790 --> 00:02:17,040
+É aí que devemos atribuir uma chave a uma propriedade para permitir reagir para controlar
+
+28
+00:02:17,040 --> 00:02:24,720
+os elementos individuais para que ele tenha uma propriedade clara que possa comparar entre os diferentes elementos para descobrir quais os
+
+29
+00:02:24,720 --> 00:02:26,800
+elementos que mudaram e quais não.
+
+30
+00:02:26,910 --> 00:02:31,680
+Então, eles adicionaram apenas elementos Re-Read wristy que mudaram e não a lista inteira.
+
+31
+00:02:32,040 --> 00:02:38,870
+Então, o que fazemos é atribuir chave e agora, o que designamos aqui algo único.
+
+32
+00:02:39,180 --> 00:02:45,120
+provavelmente tem alguma idéia sobre seus elementos se você obtê-los de um banco de dados ou algo assim.
+
+33
+00:02:45,120 --> 00:02:45,790
+Normalmente, você
+
+34
+00:02:45,810 --> 00:02:53,370
+As possibilidades são altas, você tem um ID ou qualquer outro identificador exclusivo e seu nome seria
+
+35
+00:02:53,370 --> 00:02:56,250
+exclusivo, mas isso não é necessariamente garantido.
+
+36
+00:02:56,250 --> 00:03:02,340
+Então, o que podemos fazer é que poderíamos usar o índice porque depois de todas as mudanças indexadas, onde cada elemento na
+
+37
+00:03:02,340 --> 00:03:02,630
+matriz.
+
+38
+00:03:02,630 --> 00:03:03,210
+Certo.
+
+39
+00:03:03,450 --> 00:03:04,110
+Está certo.
+
+40
+00:03:04,110 --> 00:03:06,920
+Mas o índice também é parte da própria lista.
+
+41
+00:03:07,020 --> 00:03:11,160
+Se a lista muda, cada elemento receberá um novo índice.
+
+42
+00:03:11,160 --> 00:03:13,740
+Pelo menos, cada elemento depois de mudar.
+
+43
+00:03:13,740 --> 00:03:19,890
+Portanto, não é uma boa chave no final, não vai realmente ajudar a reagir, então devemos realmente tentar ter
+
+44
+00:03:19,890 --> 00:03:21,010
+um identificador exclusivo.
+
+45
+00:03:21,240 --> 00:03:26,530
+E, novamente, isso é apenas dados simbólicos Dator aqui, vou simplesmente adicionar uma ID em dados reais.
+
+46
+00:03:26,550 --> 00:03:32,380
+As possibilidades são altas, você tem uma ID ID não precisa ser um número pode ser algo único.
+
+47
+00:03:32,460 --> 00:03:37,650
+Então, aqui, eu apenas estou martelando no meu teclado para obter algumas IDs únicas.
+
+48
+00:03:37,650 --> 00:03:40,040
+Agora, com isso, posso usar isso.
+
+49
+00:03:40,050 --> 00:03:48,240
+Você está com ID de pessoa para se certificar de que cada elemento possui uma resposta de chave única pode usar para comparar
+
+50
+00:03:48,240 --> 00:03:54,790
+os elementos do futuro com os elementos do passado e somente com os lugares latentes onde ele precisa atualizar.
+
+51
+00:03:55,020 --> 00:04:01,680
+Agora, se isso, se recarregarmos isso e visando as pessoas, o aviso-chave desapareceu, temos o mesmo comportamento que
+
+52
+00:04:01,680 --> 00:04:06,230
+antes e podemos inspecionar isso para ver como ele atualiza Saddam aqui.
+
+53
+00:04:06,270 --> 00:04:12,390
+Mas, nos bastidores, agora é capaz de fazer isso de uma forma mais eficiente, o que, é claro, é super importante.

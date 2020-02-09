@@ -1,0 +1,307 @@
+1
+00:00:02,320 --> 00:00:06,310
+Nelle ultime lezioni abbiamo dato un'occhiata a oggetti di scena.
+
+2
+00:00:06,340 --> 00:00:12,950
+Semplicemente un oggetto che ci dà accesso a tutti gli attributi che passiamo ai nostri componenti.
+
+3
+00:00:13,050 --> 00:00:20,530
+Ora a volte non vuoi ottenere alcune informazioni dall'esterno ma vuoi averlo dentro un
+
+4
+00:00:20,590 --> 00:00:23,880
+componente e cambiarlo anche da lì.
+
+5
+00:00:24,310 --> 00:00:35,220
+Quindi, per esempio qui nel nostro file js dell'app, diciamo che vogliamo anche aggiungere un pulsante che, se clicciamo su di esso, cambia
+
+6
+00:00:35,420 --> 00:00:38,850
+semplicemente uno dei nomi che usiamo qui.
+
+7
+00:00:38,920 --> 00:00:42,550
+Quindi, dove abbiamo semplicemente inserito una didascalia del nome dell'interruttore.
+
+8
+00:00:43,150 --> 00:00:47,160
+Bene, verremo a gestire questo evento di clic e le prossime lezioni.
+
+9
+00:00:47,320 --> 00:00:55,060
+Ma prima di tutto dobbiamo definire questi nomi qui in modo non hard.
+
+10
+00:00:55,060 --> 00:00:57,840
+In questo momento è difficile codificare nel nostro codice GSX.
+
+11
+00:00:57,850 --> 00:01:04,720
+E qui va bene, ma se in seguito vogliamo cambiarlo dobbiamo conservarlo in qualche variabile o qualcosa
+
+12
+00:01:04,720 --> 00:01:05,650
+del genere.
+
+13
+00:01:06,070 --> 00:01:12,080
+Bene, in realtà questa è una classe e una classe ha delle proprietà.
+
+14
+00:01:12,130 --> 00:01:17,190
+Questo non è solo un caso in javascript, ma è anche un'ora di linguaggio di programmazione.
+
+15
+00:01:17,350 --> 00:01:22,790
+Puoi pensare a una proprietà come a una variabile di una classe.
+
+16
+00:01:22,810 --> 00:01:29,300
+Quindi nel normale codice javascript dovresti semplicemente scrivere var qualcosa di uguale a qualche valore.
+
+17
+00:01:30,710 --> 00:01:32,650
+Questo non funziona in una classe.
+
+18
+00:01:32,810 --> 00:01:38,710
+Lì puoi semplicemente scrivere qualcosa uguale a qualche valore.
+
+19
+00:01:38,940 --> 00:01:40,380
+Quindi un po 'più breve.
+
+20
+00:01:40,410 --> 00:01:48,030
+Ma alla fine lo stesso si potrebbe dire che c'è una proprietà speciale che puoi trovare in qualsiasi componente
+
+21
+00:01:48,030 --> 00:01:49,630
+che estende il componente.
+
+22
+00:01:49,770 --> 00:01:52,360
+Quindi non puoi farlo di persona.
+
+23
+00:01:52,380 --> 00:01:56,840
+Puoi comunque trovare le proprietà qui perché è una funzione normale.
+
+24
+00:01:56,850 --> 00:02:02,940
+quello che stiamo riguardando funziona solo con componenti che vengono creati estendendo il componente.
+
+25
+00:02:03,030 --> 00:02:07,480
+Quindi qui dovresti usare alcuni costanti o alcune variabili, ma
+
+26
+00:02:07,740 --> 00:02:17,340
+Lì possiamo definire uno stato di nome di proprietà speciale dove come oggetti di scena sono impostati e passati dall'esterno come nome ed
+
+27
+00:02:17,340 --> 00:02:24,900
+età nello stato del componente persona è gestito da all'interno di un componente e lo stato è solo
+
+28
+00:02:24,900 --> 00:02:31,700
+un livello di modo nei componenti che vengono utilizzati estendendo il componente che è importato da reagire.
+
+29
+00:02:31,710 --> 00:02:35,480
+Non è un modo per i componenti funzionali.
+
+30
+00:02:35,760 --> 00:02:43,260
+Dovresti comunque utilizzare i componenti di funzione il più spesso possibile perché dovresti usare lo stato con cura perché avere
+
+31
+00:02:43,680 --> 00:02:49,640
+lo stato e tutti i componenti e manipolarlo da qualsiasi punto nel tuo mixer di app
+
+32
+00:02:49,650 --> 00:02:54,580
+diventano rapidamente imprevedibili e difficili da gestire, specialmente man mano che crescono.
+
+33
+00:02:54,660 --> 00:02:57,060
+Ovviamente questo non significa che non dovresti comunque usarlo.
+
+34
+00:02:57,120 --> 00:02:59,230
+Qui ha perfettamente senso.
+
+35
+00:02:59,310 --> 00:03:05,050
+Inizializziamo assegnando un valore e questo valore è un oggetto javascript.
+
+36
+00:03:05,070 --> 00:03:14,160
+Ancora una volta questa è una parola riservata e dovremmo usarla se vogliamo gestire bene alcuni dati interni dei
+
+37
+00:03:14,250 --> 00:03:14,690
+componenti.
+
+38
+00:03:14,690 --> 00:03:22,820
+Dovresti dirlo ora lo stato potrebbe avere delle persone Questo è totalmente a te.
+
+39
+00:03:22,830 --> 00:03:28,980
+Tratto semplicemente una proprietà di persone e fa oggetto javascript e questo sarà un array.
+
+40
+00:03:29,160 --> 00:03:36,210
+di stato che potresti impostare come proprietà del nome, che è un nome che puoi veramente gestire come vuoi.
+
+41
+00:03:36,210 --> 00:03:40,940
+E puoi impostare qualsiasi tipo di dati che desideri in questo oggetto
+
+42
+00:03:40,950 --> 00:03:44,090
+Voglio gestire una serie di persone però.
+
+43
+00:03:44,370 --> 00:03:52,050
+Ora l'array di questa persona è di nuovo una serie di oggetti javascript in cui ogni oggetto ha un nome.
+
+44
+00:03:52,080 --> 00:04:00,720
+Forse Max e H forse 28 un numero di qui non una stringa a differenza di là dove passiamo una stringa, ma
+
+45
+00:04:00,720 --> 00:04:03,270
+un numero va bene da qui.
+
+46
+00:04:03,450 --> 00:04:07,510
+Voglio anche avere un numero uno nel tuo nome.
+
+47
+00:04:07,530 --> 00:04:11,970
+Man tu e 29 anni e un terzo.
+
+48
+00:04:12,000 --> 00:04:19,130
+Avete indovinato che quattro è Stefany che ha 26 anni.
+
+49
+00:04:19,240 --> 00:04:21,560
+Questo è il mio stato
+
+50
+00:04:21,640 --> 00:04:24,860
+Ora possiamo accedere a una proprietà come questa.
+
+51
+00:04:24,910 --> 00:04:32,110
+E questo non è solo vero per lo stato, ma per qualsiasi proprietà nel nostro rendering, Meffert
+
+52
+00:04:32,110 --> 00:04:41,570
+semplicemente emettendo qualcosa di dinamico con una sola parentesi chiamata come ha imparato e poi questa parola chiave si riferisce alla classe
+
+53
+00:04:42,060 --> 00:04:45,360
+alla nostra sintassi Sì sei che stiamo usando.
+
+54
+00:04:45,730 --> 00:04:52,530
+E sulla nostra classe abbiamo un metodo di rendering che potremmo chiamare, non dovremmo farlo, ma ri-agire il debito degli Stati
+
+55
+00:04:52,540 --> 00:04:54,550
+Uniti, ma abbiamo una proprietà statale.
+
+56
+00:04:54,640 --> 00:04:59,200
+definire le tue proprietà, ma in particolare uno di essi come apprenderete durante le prossime lezioni.
+
+57
+00:04:59,200 --> 00:05:00,880
+E come ho detto, puoi anche
+
+58
+00:05:00,880 --> 00:05:06,510
+Quindi qui possiamo quindi accedere a questo stato e tutti dichiarano l'array della mia persona.
+
+59
+00:05:06,610 --> 00:05:12,580
+Potrebbe esserci il primo elemento usando l'indice 0 e quindi il nome.
+
+60
+00:05:12,850 --> 00:05:20,080
+Quindi, invece di codificarlo con difficoltà, ora sto accedendo a questa proprietà in questo oggetto qui nell'array
+
+61
+00:05:20,260 --> 00:05:22,520
+della persona sulla proprietà state.
+
+62
+00:05:22,540 --> 00:05:29,400
+Ora copierò questo codice qui e sostituirò la mia età con quella lì.
+
+63
+00:05:29,440 --> 00:05:31,910
+Ovviamente voglio accedere alla proprietà.
+
+64
+00:05:32,930 --> 00:05:34,920
+E lo replicherò per l'uomo.
+
+65
+00:05:34,950 --> 00:05:37,810
+Ma è ovviamente il primo elemento.
+
+66
+00:05:37,850 --> 00:05:44,870
+Il secondo elemento con l'indice uno in questo array e per l'età di tutto l'elemento in eccesso 1.
+
+67
+00:05:44,900 --> 00:05:51,540
+E ovviamente la proprietà dell'età e per Stephanie probabilmente hai indovinato anche quell'indice.
+
+68
+00:05:51,710 --> 00:05:59,870
+E anche per il D. H. indice anche e una proprietà con quella se salviamo questo e
+
+69
+00:06:00,170 --> 00:06:02,240
+torniamo all'applicazione vediamo il pulsante che non fa nulla.
+
+70
+00:06:02,420 --> 00:06:07,570
+E vediamo la stessa uscita di prima usando questa proprietà.
+
+71
+00:06:07,700 --> 00:06:09,650
+La proprietà dello stato però.
+
+72
+00:06:09,650 --> 00:06:12,810
+Ora ho detto che lo stato sarebbe una proprietà speciale.
+
+73
+00:06:12,830 --> 00:06:21,920
+Finora non lo usiamo in un modo speciale anche se possiamo cambiare questo stato può essere cambiato e se cambia.
+
+74
+00:06:21,950 --> 00:06:26,510
+E questa è la cosa speciale e funziona solo su quella proprietà statale.
+
+75
+00:06:26,510 --> 00:06:35,880
+Se cambia, porterà a reagire per rendere il nostro dormitorio o per aggiornare il dormitorio, dovrei dire.
+
+76
+00:06:36,230 --> 00:06:45,380
+Quindi se abbiamo cambiato il nome di Max per esempio questo porterà a questo in lettura.
+
+77
+00:06:45,620 --> 00:06:51,660
+E lascia che te lo dimostri mostrandoti come ascoltare eventi come fare clic su questo pulsante.

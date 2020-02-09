@@ -1,0 +1,367 @@
+1
+00:00:02,140 --> 00:00:08,560
+En la última conferencia, aprendes cómo configurar Stout's dinámicamente y luego aprendes que simplemente usas javascript para
+
+2
+00:00:08,560 --> 00:00:13,080
+manipular lo que sea que te ciegues a esa propiedad de estilo.
+
+3
+00:00:13,450 --> 00:00:19,230
+Ahora el nombre de la clase, por supuesto, también puede establecerse dinámicamente, como aquí para ADN.
+
+4
+00:00:19,480 --> 00:00:25,720
+Pero también podemos presentar una nueva clase para tener algo para jugar, así que podríamos, por ejemplo, decir
+
+5
+00:00:25,870 --> 00:00:28,800
+que queremos cambiar algo en nuestro código aquí.
+
+6
+00:00:28,930 --> 00:00:39,640
+Digamos que este párrafo realmente funciona dependiendo de si nuestra lista de personas tiene elementos gratuitos como
+
+7
+00:00:39,640 --> 00:00:43,740
+lo tiene al principio o al final.
+
+8
+00:00:43,810 --> 00:00:46,290
+Entonces tal vez queremos colorear el texto en rojo.
+
+9
+00:00:46,330 --> 00:00:53,440
+Así que agregaré una nueva clase que denominará Rojo normalidad normal S S clase raza que el color rojo y esto,
+
+10
+00:00:53,440 --> 00:01:00,730
+por supuesto, afectará el color del texto y tal vez incluso queremos que sea en negrita nombre o clase o crear
+
+11
+00:01:00,730 --> 00:01:02,010
+una clase llamada perno.
+
+12
+00:01:02,010 --> 00:01:07,870
+Depende de usted si estamos en un elemento dejado tan encariñado audaz.
+
+13
+00:01:07,990 --> 00:01:09,920
+Tengo que vernos como clases.
+
+14
+00:01:09,940 --> 00:01:11,850
+Estos están disponibles Clovelly.
+
+15
+00:01:11,950 --> 00:01:13,990
+Pero ahora no estoy usando ninguno.
+
+16
+00:01:14,260 --> 00:01:21,430
+o 2 o menos elementos que debería decir, girar en Rojo 1 y último en rojo y negrita.
+
+17
+00:01:21,760 --> 00:01:32,170
+Ahora quiero establecer dinámicamente el nombre de clase de este párrafo, dependiendo de la longitud de los elementos en la matriz de mi persona, debajo
+
+18
+00:01:32,170 --> 00:01:33,020
+de 2
+
+19
+00:01:33,400 --> 00:01:44,140
+Entonces, para hacer eso, por supuesto, también necesito ajustar dinámicamente las clases o el nombre de clase que establezco en este párrafo.
+
+20
+00:01:44,230 --> 00:01:50,950
+Entonces, lo que haré es crear una nueva variable aquí que todas las clases de nombre y el nombre sean
+
+21
+00:01:50,950 --> 00:01:51,800
+totalmente de usted.
+
+22
+00:01:52,030 --> 00:01:55,850
+Si al final creamos una serie de cadenas.
+
+23
+00:01:55,870 --> 00:01:58,990
+Esta es una forma de hacerlo aquí.
+
+24
+00:01:59,020 --> 00:02:05,340
+Agregaré rojo y negrita y estos son solo los nombres de clase que encontraría aquí.
+
+25
+00:02:05,340 --> 00:02:07,660
+Rojo y negrita sin el punto.
+
+26
+00:02:07,810 --> 00:02:09,170
+Solo elige el apellido.
+
+27
+00:02:09,280 --> 00:02:15,820
+Luego llamaré para mostrar aquí y mostrarlos con un espacio vacío.
+
+28
+00:02:15,820 --> 00:02:22,790
+Esto convertirá este conjunto de cadenas en una cadena que al final solo se lee en negrita.
+
+29
+00:02:22,810 --> 00:02:25,050
+Esto es lo que obtienes al final.
+
+30
+00:02:25,050 --> 00:02:30,200
+Esta es una C válida como una lista de clase, podemos asignar dos nombres de clase.
+
+31
+00:02:30,340 --> 00:02:35,530
+Y, por supuesto, podría crearlo de forma manual, pero pronto agregaré dineros dinámicamente y es por
+
+32
+00:02:35,530 --> 00:02:37,670
+eso que quiero tener una solución genérica.
+
+33
+00:02:37,930 --> 00:02:41,210
+Ahora puedo ir a este párrafo y agregar el nombre de la clase.
+
+34
+00:02:41,380 --> 00:02:45,340
+Y, por supuesto, no tengo que vincular esto a una cadena como lo hago aquí.
+
+35
+00:02:45,370 --> 00:02:51,640
+También puedo vincular esto dinámicamente con llaves de llamada única a la variable de clase que tengo, que
+
+36
+00:02:51,640 --> 00:02:56,400
+tienen en cuenta que es solo una cadena unida con un espacio vacío.
+
+37
+00:02:56,470 --> 00:03:01,620
+Si ahora guardo esto y me aseguro de que también haya guardado el archivo SS de Deepsea.
+
+38
+00:03:01,630 --> 00:03:05,100
+Ahora regresemos a la aplicación y es roja y negrita.
+
+39
+00:03:05,230 --> 00:03:08,670
+Desde el comienzo sin que toquemos a ninguna persona.
+
+40
+00:03:08,740 --> 00:03:10,800
+Eso suena un poco raro, pero ya sabes a qué me refiero.
+
+41
+00:03:10,810 --> 00:03:15,280
+Por lo tanto, se lee desde el principio porque siempre asignó estas clases.
+
+42
+00:03:15,310 --> 00:03:19,290
+Ahora podemos agregar algo de naturaleza dinámica a eso.
+
+43
+00:03:19,330 --> 00:03:24,450
+Solo queremos hacer eso si es menos de una persona lo que debería leerse.
+
+44
+00:03:24,460 --> 00:03:30,730
+Si es menos de 2 o menos e igual en realidad, y si tenemos las tres personas, no
+
+45
+00:03:30,850 --> 00:03:32,440
+se deben adjuntar estas clases.
+
+46
+00:03:32,440 --> 00:03:37,600
+Así que permítanme hacer algo más o eliminar la declaración de elección aquí y subcláusulas a una
+
+47
+00:03:37,600 --> 00:03:38,200
+matriz vacía.
+
+48
+00:03:38,710 --> 00:03:43,660
+Y luego simplemente agregaré una declaración if aquí.
+
+49
+00:03:43,990 --> 00:03:51,930
+Y si la longitud de esta persona estatal es menor o igual a 2.
+
+50
+00:03:51,960 --> 00:03:54,040
+Así que solo quedan dos o menos personas.
+
+51
+00:03:54,040 --> 00:04:01,990
+Tomaré clases si es variable y realmente dejo solo una versión ESX 6 de guerra.
+
+52
+00:04:02,000 --> 00:04:05,750
+Pero podemos usar Konst aquí porque nunca asignaré un nuevo valor.
+
+53
+00:04:06,000 --> 00:04:15,270
+Entonces, si esto es menos de dos, llamaré a push el método normal de javascript push para empujar la clase
+
+54
+00:04:15,340 --> 00:04:16,510
+ret a Dicere.
+
+55
+00:04:16,800 --> 00:04:22,750
+Entonces, en este punto del tiempo, las clases se leerán así.
+
+56
+00:04:22,790 --> 00:04:25,680
+También agregaré un número si el cheque.
+
+57
+00:04:25,880 --> 00:04:32,760
+Diré si la longitud de las personas del estado es menor o igual que uno.
+
+58
+00:04:32,940 --> 00:04:36,090
+Y tenga en cuenta que esto no es más que una condición.
+
+59
+00:04:36,090 --> 00:04:41,460
+Es solo otra declaración if o si el cheque viene después del primero porque quiero ejecutar ambos.
+
+60
+00:04:41,550 --> 00:04:48,360
+Entonces, si es incluso más pequeño o igual que uno, se extenderá nuevamente a las clases y empujará a otra clase
+
+61
+00:04:48,840 --> 00:04:50,290
+a la clase en negrita.
+
+62
+00:04:50,610 --> 00:04:57,590
+Entonces, en este punto del tiempo, las clases se leen y también son audaces.
+
+63
+00:04:57,620 --> 00:05:04,400
+Ahora, si solo tenemos dos elementos en el conjunto de personas, solo tendremos que leer y
+
+64
+00:05:04,790 --> 00:05:08,000
+omitiremos esto porque esta condición aquí será falsa.
+
+65
+00:05:08,000 --> 00:05:13,450
+Ahora tenemos una variedad de clases que pueden verse así o como esta o ser una matriz vacía.
+
+66
+00:05:13,520 --> 00:05:20,680
+Si tenemos los tres elementos, quiero asignarlos aquí y clases como esta ya no funcionarán porque ahora es
+
+67
+00:05:20,680 --> 00:05:21,530
+una matriz.
+
+68
+00:05:21,550 --> 00:05:23,720
+Sin embargo, necesitamos pasar una cadena aquí.
+
+69
+00:05:24,100 --> 00:05:28,470
+Bueno, simplemente puedo llamar mostrando con un espacio vacío en el medio.
+
+70
+00:05:28,480 --> 00:05:34,000
+Así que un personaje de espacio en blanco en clase este año cuando lo asigno, por supuesto, también podría hacer esto
+
+71
+00:05:34,000 --> 00:05:36,520
+antes de esto y almacenarlo en una nueva variable.
+
+72
+00:05:36,650 --> 00:05:43,780
+simplemente mi elección para crear nunca nada que leer y leer en negrita con un espacio en blanco en el medio.
+
+73
+00:05:43,990 --> 00:05:47,050
+Con eso ahora estoy asignando una cadena que es
+
+74
+00:05:47,500 --> 00:05:51,670
+Y ahora con eso, déjenme guardar esto y regresar si ahora vuelve a cargar.
+
+75
+00:05:51,760 --> 00:05:54,100
+Es un texto negro por defecto.
+
+76
+00:05:54,100 --> 00:05:57,030
+Ahora hablemos de las personas y eliminemos una.
+
+77
+00:05:57,190 --> 00:05:59,410
+Ahora es rojo pero no audaz.
+
+78
+00:05:59,440 --> 00:06:02,750
+Si elimino el número uno ahora se llama perno.
+
+79
+00:06:03,010 --> 00:06:09,370
+Y ahora, si has recomendado uno, sigue siendo así, obviamente muestra cómo también puedes
+
+80
+00:06:09,430 --> 00:06:11,540
+agregarlo dinámicamente y asignar clases.
+
+81
+00:06:11,710 --> 00:06:13,960
+Y no puedo enfatizar eso lo suficiente.
+
+82
+00:06:14,260 --> 00:06:16,310
+Todo es solo javascript.
+
+83
+00:06:16,330 --> 00:06:21,940
+Así que trabajas con tu matriz de clases aquí como lo haces con una matriz normal porque es una matriz
+
+84
+00:06:22,060 --> 00:06:27,760
+normal en JavaScript normal y todo lo que haces al final aquí es que tienes que asegurarte de que realmente
+
+85
+00:06:27,760 --> 00:06:31,080
+asignas una cadena como lo hacemos aquí con el método de unión
+
+86
+00:06:31,450 --> 00:06:39,040
+Y, por supuesto, puede tener la lógica que necesite para construir un conjunto de clases u obtener una cadena con las
+
+87
+00:06:39,040 --> 00:06:44,110
+clases de C-s por otros medios sin tener que unir todo lo que tenga.
+
+88
+00:06:44,170 --> 00:06:47,410
+Tal vez tome alguna entrada de usuario que es una cadena por defecto.
+
+89
+00:06:47,410 --> 00:06:53,410
+Puede asignar cualquier cosa que sea una cadena válida al nombre de la clase y luego se manejará como
+
+90
+00:06:53,440 --> 00:07:00,220
+una lista de clases C S que con suerte se encontrarán en las clases que configuró en su archivo C S S.
+
+91
+00:07:00,220 --> 00:07:05,760
+Entonces con eso aprendiste cómo convertir amygdale Asignar Stults y editarlos y asignar dinámicamente
+
+92
+00:07:05,770 --> 00:07:07,060
+una clase adicional.

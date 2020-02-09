@@ -1,0 +1,367 @@
+1
+00:00:02,140 --> 00:00:08,560
+Son dersin sonunda Stout'u dinamik olarak nasıl ayarlayacağınızı öğreneceksiniz ve o zaman bu stil
+
+2
+00:00:08,560 --> 00:00:13,080
+özelliğine körü körelttiğinizde onu değiştirmek için sadece javascript kullanmayı öğreneceksiniz.
+
+3
+00:00:13,450 --> 00:00:19,230
+Artık sınıfın adı tabii ki burada DNA gibi dinamik olarak ayarlanabilir.
+
+4
+00:00:19,480 --> 00:00:25,720
+Bununla birlikte, etrafında dolaşacak bir şeyler olması için yeni bir sınıf da başlatabiliriz, böylece örneğin
+
+5
+00:00:25,870 --> 00:00:28,800
+burada kodumuzda bir şey değiştirmek istediğimizi söyleyebiliriz.
+
+6
+00:00:28,930 --> 00:00:39,640
+Diyelim ki, bu paragrafın yaptığı işte, başlangıçta ya da son olarak sahip olduğumuz bir kişilik listesinin serbest unsurları
+
+7
+00:00:39,640 --> 00:00:43,740
+olup olmadığına bağlı olarak gerçekten çalışılıyor diyelim.
+
+8
+00:00:43,810 --> 00:00:46,290
+Bu yüzden belki kırmızıya renk verelim.
+
+9
+00:00:46,330 --> 00:00:53,440
+Bu yüzden kırmızıya normal normallik S sınıfı yarışı adını verecek yeni bir sınıf ekleyeceğim; kırmızı renk ve bu
+
+10
+00:00:53,440 --> 00:01:00,730
+tabii ki metin rengini etkileyecek ve belki bunu cesur yani ad veya sınıf yapmak ya da cıvata adlı bir
+
+11
+00:01:00,730 --> 00:01:02,010
+sınıf oluşturmak istiyoruz.
+
+12
+00:01:02,010 --> 00:01:07,870
+Eğer öyle sevimli bir şekilde cesur kalan bir unsurdaysak, sana bağlıdır.
+
+13
+00:01:07,990 --> 00:01:09,920
+Bizi sınıflar olarak görmek zorundayız.
+
+14
+00:01:09,940 --> 00:01:11,850
+Bunlar Clovelly.
+
+15
+00:01:11,950 --> 00:01:13,990
+Ama şu anda hiç birini kullanmıyorum.
+
+16
+00:01:14,260 --> 00:01:21,430
+ve koyu renkte söylemeliyim 2 veya 2 veya daha az öğe aşağıda belirtiliyor.
+
+17
+00:01:21,760 --> 00:01:32,170
+Şimdi bu paragrafın sınıf adını, kişinin dizilimindeki elemanların uzunluğuna bağlı olarak dinamik olarak ayarlamak istiyorum. Aşağıda, Kırmızı 1'de ve
+
+18
+00:01:32,170 --> 00:01:33,020
+son kırmızı
+
+19
+00:01:33,400 --> 00:01:44,140
+Bu yüzden elbette bunu yapmak için sınıfları veya bu paragrafa dinamik olarak koyduğum sınıf adını ayarlamamız gerekiyor.
+
+20
+00:01:44,230 --> 00:01:50,950
+Öyleyse yapacağım, hepsi burada isim sınıflarının hepsinin ve adının size kalmış yeni bir
+
+21
+00:01:50,950 --> 00:01:51,800
+değişken yaratması.
+
+22
+00:01:52,030 --> 00:01:55,850
+Sonunda olsaydı, dizgiler dizisi oluşturacağız.
+
+23
+00:01:55,870 --> 00:01:58,990
+Bunu yapmanın bir yolu budur.
+
+24
+00:01:59,020 --> 00:02:05,340
+Kırmızı ve cesur katacağım ve bunlar sadece burada bulacağım sınıf isimleri.
+
+25
+00:02:05,340 --> 00:02:07,660
+Kırmızı ve cesur nokta olmadan.
+
+26
+00:02:07,810 --> 00:02:09,170
+Sadece soyadını seç.
+
+27
+00:02:09,280 --> 00:02:15,820
+Ardından burada gösteri yapmaya ve boş bir alanla göstereceğim.
+
+28
+00:02:15,820 --> 00:02:22,790
+Bu, bu dizi dizgiyi sonunda yalnızca koyu okunan bir dizeye dönüştürecektir.
+
+29
+00:02:22,810 --> 00:02:25,050
+Sonunda neyi elde edersiniz.
+
+30
+00:02:25,050 --> 00:02:30,200
+Bu geçerli bir C sınıfı listesi olarak iki sınıf adı atayabiliriz.
+
+31
+00:02:30,340 --> 00:02:35,530
+Elbette bunu manuel olarak oluşturabilirim ama yakında dicere'yi dinamik olarak ekleyeceğim, bu yüzden
+
+32
+00:02:35,530 --> 00:02:37,670
+genel bir çözüm elde etmek istiyorum.
+
+33
+00:02:37,930 --> 00:02:41,210
+Şimdi bu paragrafa gidebilir ve sınıf adı ekleyebilirim.
+
+34
+00:02:41,380 --> 00:02:45,340
+Ve elbette, burada yaptığım gibi bunu bir dize bağlamak zorunda değilim.
+
+35
+00:02:45,370 --> 00:02:51,640
+Ayrıca, bunu dinamik olarak tek çağırma ayraçlarıyla, sınıf değişkenine bağlayabilirim; akılda
+
+36
+00:02:51,640 --> 00:02:56,400
+tutulması gereken, yalnızca boş bir alanla birleştirilmiş bir dizedir.
+
+37
+00:02:56,470 --> 00:03:01,620
+Şimdi bunu kaydedersem, deepsea SS dosyasını da kaydettiğinizden emin olun.
+
+38
+00:03:01,630 --> 00:03:05,100
+Şimdi başvuruya geri dönelim, kırmızı ve cesur.
+
+39
+00:03:05,230 --> 00:03:08,670
+Baştan biz hiç kimseye dokunmadan.
+
+40
+00:03:08,740 --> 00:03:10,800
+Bu biraz garip geliyor, ama ne demek istediğimi biliyorsun.
+
+41
+00:03:10,810 --> 00:03:15,280
+Bu yüzden baştan beri okunur çünkü her zaman bu sınıfları atadınız demektir.
+
+42
+00:03:15,310 --> 00:03:19,290
+Şimdi buna dinamik bir nitelik katabiliriz.
+
+43
+00:03:19,330 --> 00:03:24,450
+Bunu yapmak istiyoruz, aksi takdirde bir kişi daha okunmamalıdır.
+
+44
+00:03:24,460 --> 00:03:30,730
+2'den az veya daha az ve aslında eşitse ve bu üç sınıfın üçü de varsa,
+
+45
+00:03:30,850 --> 00:03:32,440
+bu sınıfların hiçbiri iliştirilmemelidir.
+
+46
+00:03:32,440 --> 00:03:37,600
+Bu yüzden aslında başka bir şey yapmam veya burada seçim ifadesini kaldırmamı ve boş bir diziye eklememe
+
+47
+00:03:37,600 --> 00:03:38,200
+izin ver.
+
+48
+00:03:38,710 --> 00:03:43,660
+Ve sonra burada bir if ifadesi ekleyeceğim.
+
+49
+00:03:43,990 --> 00:03:51,930
+Ve eğer bu kişinin uzunluğu 2'den küçük veya eşitse.
+
+50
+00:03:51,960 --> 00:03:54,040
+Yani sadece iki kişi kaldı.
+
+51
+00:03:54,040 --> 00:04:01,990
+Değişkenleri sınıflara alacağım ve aslında sadece ESX 6 savaş versiyonunu verelim.
+
+52
+00:04:02,000 --> 00:04:05,750
+Fakat burada Konst'i kullanabiliriz, çünkü asla yeni bir değer atamam.
+
+53
+00:04:06,000 --> 00:04:15,270
+Yani eğer bu ikiden az ise ret sınıfını Dicere üzerine itmek için normal javascript basma yöntemini
+
+54
+00:04:15,340 --> 00:04:16,510
+uygulayacağım derim.
+
+55
+00:04:16,800 --> 00:04:22,750
+Bu yüzden zamanın bu noktasında sınıflar şöyle okunacak.
+
+56
+00:04:22,790 --> 00:04:25,680
+Ayrıca kontrol edersem bir numara da ekleyeceğim.
+
+57
+00:04:25,880 --> 00:04:32,760
+Devlet adamlarının uzunluğu birinden küçük veya eşit olup olmayacağını söyleyeceğim.
+
+58
+00:04:32,940 --> 00:04:36,090
+Ve durumun başka olmadığını lütfen unutmayın.
+
+59
+00:04:36,090 --> 00:04:41,460
+Bu yalnızca başka bir deyim veya birinciden sonra kontrol ederse, çünkü ikisini de çalıştırmak istiyorum.
+
+60
+00:04:41,550 --> 00:04:48,360
+Dolayısıyla eğer bir daha küçük veya eşitse, sınıflara tekrar ulaşacak ve cesur sınıfı başka
+
+61
+00:04:48,840 --> 00:04:50,290
+bir sınıfa itecektir.
+
+62
+00:04:50,610 --> 00:04:57,590
+Bu yüzden zamanın bu noktasında sınıflar okunur ve aynı zamanda cesurdur.
+
+63
+00:04:57,620 --> 00:05:04,400
+Kişiler dizisinde yalnızca iki öğemiz varsa, okudum ve bunu atlayacağız çünkü
+
+64
+00:05:04,790 --> 00:05:08,000
+bu durum burada yanlış olacak.
+
+65
+00:05:08,000 --> 00:05:13,450
+Şimdi şu gibi görünen ya da böyle bir dizi veya boş bir dizi olabilecek bir dizi dizi var.
+
+66
+00:05:13,520 --> 00:05:20,680
+Üç öğeye de sahipsek, burada atamak isterim ve böyle sınıflar artık işe yaramaz, çünkü şimdi
+
+67
+00:05:20,680 --> 00:05:21,530
+bir dizi.
+
+68
+00:05:21,550 --> 00:05:23,720
+Yine de bir dize geçirmemiz lazım.
+
+69
+00:05:24,100 --> 00:05:28,470
+Aralarında boş bir boşluk bırakarak gösteriyi arayabilirim.
+
+70
+00:05:28,480 --> 00:05:34,000
+Bu sınıfta, bu sınıfta atadığım boşluk karakteri elbette bunu önce yapabilir ve
+
+71
+00:05:34,000 --> 00:05:36,520
+onu yeni bir değişkende saklar.
+
+72
+00:05:36,650 --> 00:05:43,780
+bir dize atamakta ve bu arada bir beyaz alanla kalın okumak veya okumak için hiçbir şey yapamam.
+
+73
+00:05:43,990 --> 00:05:47,050
+Bundan dolayı, şimdi sadece benim seçimim olan
+
+74
+00:05:47,500 --> 00:05:51,670
+Ve şimdi bunu kaydetmeme izin verin ve şimdi yeniden yüklersem geri dönün.
+
+75
+00:05:51,760 --> 00:05:54,100
+Varsayılan olarak siyah bir metin.
+
+76
+00:05:54,100 --> 00:05:57,030
+Şimdi insanlarla konuşalım ve bir tanesini çıkaralım.
+
+77
+00:05:57,190 --> 00:05:59,410
+Şimdi kırmızı ama cesur değil.
+
+78
+00:05:59,440 --> 00:06:02,750
+Şimdi bir numarayı çıkarırsam, bir cıvata denir.
+
+79
+00:06:03,010 --> 00:06:09,370
+Ve şimdi sizden birini yönlendirdiyseniz, bunun böyle kalması, açıkça, onu dinamik olarak nasıl
+
+80
+00:06:09,430 --> 00:06:11,540
+ekleyip sınıflar atayacağınızı gösterir.
+
+81
+00:06:11,710 --> 00:06:13,960
+Ve bunu yeterince vurgulamıyorum.
+
+82
+00:06:14,260 --> 00:06:16,310
+Her şey sadece javascript.
+
+83
+00:06:16,330 --> 00:06:21,940
+Normal dizgi ile normal dizide olduğu gibi burada sınıf dizinizle çalışıyorsunuz, çünkü
+
+84
+00:06:22,060 --> 00:06:27,760
+normal javascript normal bir dizidir ve burada yaptığınız tüm işlemler burada bir
+
+85
+00:06:27,760 --> 00:06:31,080
+dize atadığınızdan emin olmalısınız Birleştirme yöntemi.
+
+86
+00:06:31,450 --> 00:06:39,040
+Ve tabii ki, bir dizi sınıf oluşturmak için ihtiyacınız olan mantıka sahip olabilirsiniz ya da sahip olduğunuz
+
+87
+00:06:39,040 --> 00:06:44,110
+herşeye rağmen bir diziye katılmadan C-s s sınıflarıyla bir dize elde edebilirsiniz.
+
+88
+00:06:44,170 --> 00:06:47,410
+Belki varsayılan olarak bir dize olan bazı kullanıcı girdilerini kullanın.
+
+89
+00:06:47,410 --> 00:06:53,410
+Geçerli bir dize olan her şeyi sınıf adına atayabilirsiniz ve daha sonra C
+
+90
+00:06:53,440 --> 00:07:00,220
+S S dosyanızda kurduğunuz sınıflarla tanışacağınız C S S sınıflarının bir listesi olarak ele alınacaktır.
+
+91
+00:07:00,220 --> 00:07:05,760
+Böylece, amygdale'in Stults'u nasıl atayacağını öğrendiniz ve bunları düzenleyip dinamik olarak
+
+92
+00:07:05,770 --> 00:07:07,060
+eklenen sınıflar atadınız.

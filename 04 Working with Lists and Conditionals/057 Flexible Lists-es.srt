@@ -1,0 +1,375 @@
+1
+00:00:01,990 --> 00:00:08,480
+Sepa que le agregamos mucha funcionalidad y que hemos aprendido sobre esa clave. Vamos a encontrarle aquí en nuestra aplicación
+
+2
+00:00:08,480 --> 00:00:13,970
+un poco más, porque en la persona que todavía tenemos esa entrada donde tenemos que cambiar el
+
+3
+00:00:13,970 --> 00:00:19,510
+controlador donde intentamos ejecutar hemos cambiado esta función y también obtenemos el valor como una entrada.
+
+4
+00:00:19,670 --> 00:00:25,290
+Y al final, el objetivo es que si escribimos aquí, solo somos el nombre del usuario para el que escribimos esto.
+
+5
+00:00:25,310 --> 00:00:31,280
+Ahora que presentamos una lista y tenemos un contenido verdaderamente dinámico, podemos configurarlo de una manera
+
+6
+00:00:31,280 --> 00:00:31,950
+verdaderamente dinámica.
+
+7
+00:00:32,150 --> 00:00:38,830
+Entonces, lo que tenemos que hacer es simplemente proporcionar esta propiedad de cambio apuntando a algún detector
+
+8
+00:00:38,830 --> 00:00:42,850
+de eventos o a algún método que actualice correctamente el estado.
+
+9
+00:00:42,920 --> 00:00:47,750
+Entonces puedes cambiar y ahora tenemos que indicarnos algún método.
+
+10
+00:00:47,990 --> 00:00:51,700
+Tenemos el nombre de controlador cambiado.
+
+11
+00:00:51,980 --> 00:00:54,820
+Así que simplemente use eso aquí.
+
+12
+00:00:55,130 --> 00:00:57,870
+Señalemos el nombre del controlador modificado.
+
+13
+00:00:58,040 --> 00:01:05,270
+Y ahora, aquí en este nombre, cambio de controlador y dos elementos de información, necesito que los eventos sigan teniendo
+
+14
+00:01:05,330 --> 00:01:07,490
+acceso al valor objetivo del evento.
+
+15
+00:01:07,490 --> 00:01:12,660
+Entonces, a lo que el usuario ingresó, pero también espero una segunda entrada.
+
+16
+00:01:12,740 --> 00:01:19,120
+Quiero obtener el ID del usuario para actualizar o indexar en la matriz.
+
+17
+00:01:19,130 --> 00:01:20,960
+Pero ahora asignamos ID.
+
+18
+00:01:20,960 --> 00:01:22,540
+Por qué no usar eso
+
+19
+00:01:23,150 --> 00:01:30,230
+Por lo tanto, aquí abajo usaré nuevamente esta sintaxis de función para pasar convenientemente esos datos.
+
+20
+00:01:30,260 --> 00:01:37,170
+Ahora esta función aquí la función general es la que se ejecuta sobre el evento onchange.
+
+21
+00:01:37,220 --> 00:01:40,810
+Así que aquí es donde obtenemos el objeto del evento tal como lo hicimos antes.
+
+22
+00:01:40,810 --> 00:01:46,340
+Lo tengo cuando no asignamos ninguna función directamente en el controlador de nombre cambiado.
+
+23
+00:01:46,340 --> 00:01:51,440
+Ahora lo tenemos aquí porque ahora es la primera función que se ejecuta esta
+
+24
+00:01:51,440 --> 00:01:53,100
+función anónima que definimos aquí.
+
+25
+00:01:53,210 --> 00:01:56,660
+Luego puedo pasarlo al manejador de cambio de nombre.
+
+26
+00:01:56,900 --> 00:02:00,620
+Y también quiero pasarle una identificación personal.
+
+27
+00:02:00,620 --> 00:02:04,310
+La identificación de la persona, por supuesto, está disponible ya que estamos dentro del método de mapa aquí.
+
+28
+00:02:04,340 --> 00:02:07,940
+Así que llegamos a x a la persona y, por lo tanto, a la identificación.
+
+29
+00:02:08,600 --> 00:02:17,180
+Y con eso ahora podemos usar esa información en el controlador de cambio de nombre que queremos actualizar el estado.
+
+30
+00:02:17,180 --> 00:02:21,740
+Pero, por supuesto, solo para la persona en qué campo de entrada escribimos.
+
+31
+00:02:21,770 --> 00:02:27,230
+que encontrar a esa persona como la persona soltera y podemos hacer esto al llegar al
+
+32
+00:02:27,230 --> 00:02:36,080
+estado de la mirada de la persona y al llamar a encontrar esto de nuevo como un método de JavaScript predeterminado que nos da esta persona.
+
+33
+00:02:36,090 --> 00:02:37,080
+Así que tenemos
+
+34
+00:02:37,460 --> 00:02:45,680
+También podemos usar find index para encontrar el elemento en una matriz pero luego obtener el índice de ese elemento y sí,
+
+35
+00:02:45,680 --> 00:02:48,830
+podríamos haber pasado el índice directamente a esta función.
+
+36
+00:02:48,830 --> 00:02:55,220
+Solo quiero mostrarte este enfoque alternativo que se ha aprovechado del ID. El índice de búsqueda toma una
+
+37
+00:02:55,220 --> 00:03:02,930
+función como una entrada tal como se la asignó y, al igual que un mapa, ejecutará esta función en cada elemento de
+
+38
+00:03:02,930 --> 00:03:03,670
+la matriz.
+
+39
+00:03:03,980 --> 00:03:10,820
+Así que aquí voy a ejecutar una función donde obtengo a la persona que este nombre del argumento depende de usted, pero la
+
+40
+00:03:10,820 --> 00:03:12,940
+persona ya está tomada por una constante.
+
+41
+00:03:13,100 --> 00:03:16,940
+Donde obtengo esta persona es una entrada y luego obtengo el cuerpo de la función.
+
+42
+00:03:17,240 --> 00:03:22,240
+Ahora, a diferencia del mapa aquí, no asigno este elemento a algo nuevo.
+
+43
+00:03:22,310 --> 00:03:27,200
+En cambio, aquí tengo que volver verdadero o falso dependiendo de si desisto de la persona
+
+44
+00:03:27,500 --> 00:03:32,810
+que estaba buscando o hablando en general si este es el elemento que estaba buscando o no.
+
+45
+00:03:32,840 --> 00:03:34,780
+Ahora es la persona que estaba buscando.
+
+46
+00:03:34,790 --> 00:03:36,920
+Si P ID.
+
+47
+00:03:37,130 --> 00:03:39,960
+Entonces esta persona soltera que estoy mirando actualmente.
+
+48
+00:03:39,980 --> 00:03:44,070
+Nuevamente, tenga en cuenta que esta función se ejecuta para cada elemento y.
+
+49
+00:03:44,510 --> 00:03:50,570
+Si eso es igual a la idea o recibe como argumento a esta función, es igual que
+
+50
+00:03:50,570 --> 00:03:51,160
+devolverá verdadero.
+
+51
+00:03:51,320 --> 00:03:58,670
+Y luego, un índice de persona tal vez sea un nombre mejor que contenga el índice de la persona en su
+
+52
+00:03:58,670 --> 00:04:01,370
+matriz para la cual los ID son iguales.
+
+53
+00:04:01,370 --> 00:04:09,290
+Luego puedo obtener a la persona misma contactando a estas personas del estado y accediendo al elemento en el
+
+54
+00:04:09,290 --> 00:04:12,670
+índice de la persona que acabo de buscar.
+
+55
+00:04:13,160 --> 00:04:14,730
+Ahora igual que antes.
+
+56
+00:04:14,840 --> 00:04:21,830
+y una persona en el conjunto de la persona, ya que puede confirmar claramente que aquí hay un objeto javascript.
+
+57
+00:04:21,830 --> 00:04:25,200
+Es una buena práctica no mutar el estado directamente
+
+58
+00:04:25,220 --> 00:04:32,240
+Ahora, como te dije, los objetos javascript son tipos de referencia, por lo que no deberíamos mutarlos directamente porque solo
+
+59
+00:04:32,240 --> 00:04:38,470
+obtenemos un puntero cuando llegamos a la persona aquí y, por lo tanto, mutaríamos el objeto original
+
+60
+00:04:38,480 --> 00:04:40,290
+al que señala este puntero.
+
+61
+00:04:40,790 --> 00:04:51,140
+Entonces, el mejor enfoque es crear un nuevo objeto javascript como este y luego usar este operador de expansión frente
+
+62
+00:04:51,500 --> 00:04:53,820
+al objeto que estoy buscando.
+
+63
+00:04:53,960 --> 00:04:59,810
+Al igual que con la matriz, está en el nivel adecuado para los objetos y distribuirá
+
+64
+00:05:00,080 --> 00:05:05,870
+todas las propiedades del objeto que buscamos en esta nueva Optik que estamos creando aquí.
+
+65
+00:05:06,130 --> 00:05:11,940
+Y aquí también obtenemos un enfoque alternativo que no usaré pero el enfoque alternativo
+
+66
+00:05:11,980 --> 00:05:19,000
+que lo usa sin el operador de propagación sería usar el objeto asignar una función predeterminada de
+
+67
+00:05:19,000 --> 00:05:25,600
+javascript donde pasamos un objeto vacío como primer argumento y luego el objeto al cual propiedades
+
+68
+00:05:25,600 --> 00:05:27,840
+que desea asignar como segundo objeto.
+
+69
+00:05:28,660 --> 00:05:30,540
+O el segundo argumento que debería decir.
+
+70
+00:05:30,700 --> 00:05:35,560
+Entonces, el objeto asignado a firmar con un objeto vacío y luego el objeto del que queremos obtener las
+
+71
+00:05:35,860 --> 00:05:36,980
+propiedades es la alternativa.
+
+72
+00:05:37,120 --> 00:05:41,920
+quiero usar el enfoque más moderno del operador de propagación que puede usar absolutamente ambos.
+
+73
+00:05:41,920 --> 00:05:43,230
+Pero lo comentaré porque
+
+74
+00:05:43,240 --> 00:05:46,720
+Aunque no hay mejor o peor aquí.
+
+75
+00:05:46,780 --> 00:05:48,700
+Entonces con eso consigo a la persona.
+
+76
+00:05:48,700 --> 00:05:53,790
+Ahora quiero actualizar el nombre de la persona del curso y puedo hacerlo porque obtuve una copia.
+
+77
+00:05:53,800 --> 00:06:02,500
+No estoy manipulando el objeto original ahora y puedo establecerlo en el valor objetivo del Suzy del nombre del evento
+
+78
+00:06:02,500 --> 00:06:04,500
+tal como lo hicimos antes.
+
+79
+00:06:04,510 --> 00:06:12,300
+Ahora necesito actualizar la matriz de curso y quiero actualizar la matriz en esta posición que he obtenido aquí.
+
+80
+00:06:12,730 --> 00:06:20,500
+obtener mi porcentaje de la matriz completa que tenemos para extender el operador o dividirlo llegando a las personas del estado.
+
+81
+00:06:20,710 --> 00:06:23,110
+Así que, como antes, ahora puedo
+
+82
+00:06:23,500 --> 00:06:31,690
+Y ahora podemos actualizarlo en una posición persona persona en la próxima debería ser ahora mi persona actualizada aquí.
+
+83
+00:06:31,690 --> 00:06:34,310
+Y de nuevo, siempre estoy trabajando con copias aquí.
+
+84
+00:06:34,840 --> 00:06:44,620
+Ahora tenemos un Irais de una persona actualizada y esto finalmente nos permite establecer el estado aquí y establecerlo como un
+
+85
+00:06:44,680 --> 00:06:52,360
+conjunto actualizado de personas, que es una copia de la matriz anterior donde actualizamos un elemento con
+
+86
+00:06:52,360 --> 00:06:55,390
+la persona actualizada donde ajustamos el nombre.
+
+87
+00:06:55,390 --> 00:07:01,550
+Una gran cantidad de código, pero la mejor manera de hacerlo de la manera más eficiente sin cambiar el estado.
+
+88
+00:07:01,690 --> 00:07:08,650
+esto, lo que deberíamos ver es que ya no recibimos esa advertencia antes de ver todos los nombres aquí.
+
+89
+00:07:08,710 --> 00:07:10,370
+Y ahora si guardamos
+
+90
+00:07:10,690 --> 00:07:17,680
+Y puedo comenzar a escribir aquí y actualizarlos para su objeto al que pertenece la entrada.
+
+91
+00:07:17,690 --> 00:07:21,120
+Entonces ahora tenemos un componente verdaderamente flexible aquí.
+
+92
+00:07:21,220 --> 00:07:28,600
+Una aplicación verdaderamente flexible que aprovecha las características modernas para representar esta lista de manera eficiente e interactuar
+
+93
+00:07:28,660 --> 00:07:30,910
+con ella de manera eficiente.
+
+94
+00:07:30,910 --> 00:07:32,120
+Súper importante.

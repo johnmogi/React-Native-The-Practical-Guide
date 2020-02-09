@@ -1,0 +1,223 @@
+1
+00:00:02,220 --> 00:00:06,630
+Son dersimizde, bir anahtarla geçiş adı işleyicisini çalıştırdık.
+
+2
+00:00:06,690 --> 00:00:09,370
+Şimdi durumu tıklama üzerinde değiştirmek istiyoruz.
+
+3
+00:00:09,780 --> 00:00:18,450
+Bu konsol lock deyimini açıklayın ve buradaki devlet mülklerine ulaşan bu durumu
+
+4
+00:00:18,450 --> 00:00:19,590
+yalnızca yapabiliriz.
+
+5
+00:00:19,710 --> 00:00:22,870
+Ve bahsettiğim gibi bu yalnızca bu sözdizimini kullanırken çalışacaktır.
+
+6
+00:00:22,890 --> 00:00:29,450
+Bu sene sınıfı belirtmeyeceğini ve bu nedenle devlet mülkiyetine erişemeyeceğini biliyorum.
+
+7
+00:00:29,560 --> 00:00:39,090
+Ancak devlet görevlileri de bu şekilde çalışacak ve belki de bir kişiye erişip adını Maximillian'a tam
+
+8
+00:00:39,090 --> 00:00:41,170
+adım olarak koyacaktır.
+
+9
+00:00:41,250 --> 00:00:45,360
+Şimdi bunu kaydedelim ve bu kodu uygularsak ne olacağını görelim.
+
+10
+00:00:45,570 --> 00:00:51,300
+Zaten burada bir uyarı aldık ama şu an gözardı edelim ve Slick'in hiçbir şeyin adı değişmeyecek.
+
+11
+00:00:51,300 --> 00:00:53,110
+Mac'leri hâlâ görüyoruz.
+
+12
+00:00:53,520 --> 00:01:01,110
+Dediğim gibi, bununla ilgili bir uyarı aldık, mutasyona uğramamalıyız; bu demek oluyor ki devleti doğrudan
+
+13
+00:01:01,110 --> 00:01:02,000
+böyle değiştirmeliyiz.
+
+14
+00:01:02,160 --> 00:01:07,050
+Yeniden hareket, onu tanımayacak ve bu değişikliği kabul etmeyecek.
+
+15
+00:01:07,140 --> 00:01:09,720
+Bunu yapma.
+
+16
+00:01:09,720 --> 00:01:17,910
+Bunun yerine, özel bir yöntem olan re-act kullanın, size bununla erişebilmenizi sağlar ve daha sonra durumunu ayarlar.
+
+17
+00:01:17,910 --> 00:01:22,700
+Bu yöntemi tanımlamadık, ancak bileşeni genişlettiğimizi hatırlayın.
+
+18
+00:01:22,920 --> 00:01:29,820
+Ve bu yeniden eyleme kütüphane tarafından kullanılabilir hale getirilir ve bileşen nesnesinin set bir devlet
+
+19
+00:01:29,850 --> 00:01:30,760
+yöntemi olur.
+
+20
+00:01:31,130 --> 00:01:38,700
+Bu, bu özel devlet mülkünü burada güncellememize izin veren bir yöntemdir ve daha
+
+21
+00:01:38,790 --> 00:01:47,880
+sonra, yeniden hareketin Güncelleme ve güncellemeler olarak tanımlanmasını sağlayacaktır; Dawn, devletin bir nesneyi bir argüman
+
+22
+00:01:48,330 --> 00:01:54,290
+olarak aldığını ve burada bulduğumuz şeyleri birleştireceğimizi belirtti. mevcut durumumuzla.
+
+23
+00:01:54,300 --> 00:02:03,660
+Dolayısıyla söz konusu kişinin güncellenmiş bir diziye girdiğini duyarsam mevcut verilerle birleştirilir.
+
+24
+00:02:03,790 --> 00:02:13,630
+bir değer olan başka bir devletimiz olsaydı, yalnızca kişileri güncellersek bile buna dokunulmazdı.
+
+25
+00:02:13,630 --> 00:02:15,670
+Yani burada başka
+
+26
+00:02:15,850 --> 00:02:16,990
+Ne demek istediğimi bilmiyorum.
+
+27
+00:02:16,990 --> 00:02:17,950
+Sana göstereyim.
+
+28
+00:02:18,190 --> 00:02:26,590
+Ben kişileri kopyalayıp temelde buraya güncellemem olarak kullanmak üzere olduğum nesneye özellik
+
+29
+00:02:26,590 --> 00:02:27,550
+ekledim.
+
+30
+00:02:27,580 --> 00:02:37,240
+Bu yüzden sözü geçen devleti söylüyorum ve devletin bu yeni nesneyi benim yerim güncelleme yeriminde kullandığını
+
+31
+00:02:37,240 --> 00:02:45,410
+söyledi ilk kişiyi değiştirdiğim yerden veya belki de Stephani'yi onun yaşındaki yaşını 27'ye değiştirelim.
+
+32
+00:02:45,440 --> 00:02:54,850
+Şimdi, yeniden hareketin, bizim için ne yapacağını, devletin durumuna bakıp, hangi parçayı geçersiz kıldığımızı görelim.
+
+33
+00:02:54,850 --> 00:02:56,770
+Cüzdanları değiştiriyoruz.
+
+34
+00:02:56,860 --> 00:03:06,060
+Her devleti yok etmeyeceğim, ancak burada yeni bir Worthen'ı açıkça tanımladığımız için,
+
+35
+00:03:06,120 --> 00:03:10,340
+eski devleti yalnızca yeni devletle birleştireceğiz.
+
+36
+00:03:10,480 --> 00:03:16,020
+Ancak devletimizi el değmeden bırakacağız, çünkü burada burada hiçbir şey söylemiyoruz
+
+37
+00:03:16,040 --> 00:03:17,030
+ve atılmayacak.
+
+38
+00:03:17,050 --> 00:03:18,520
+Elbette hangisi iyi bir şey.
+
+39
+00:03:18,550 --> 00:03:23,410
+Herhangi bir değişiklik hakkında sadece küçük bir parça istediğiniz zaman devletinizle ilgili her
+
+40
+00:03:23,410 --> 00:03:25,250
+şeyi güncellemek zorunda kalmak istemezsiniz.
+
+41
+00:03:25,330 --> 00:03:32,240
+Şimdi, şimdi bu dosyayı kaydetmek ve tiap yeniden yüklersek ve geçiş adı tıklarsam
+
+42
+00:03:32,230 --> 00:03:38,360
+Max'i izlersek ve orada 26 yaşında olanı izlersek ne olacağını görelim.
+
+43
+00:03:38,550 --> 00:03:47,910
+Görüyor musunuz Maximillian ve yurt yeniden güncellendi, yineleme 27 yıl oldu çünkü tekrar yasalar çoğaltılmamızın durumunun değiştiğini
+
+44
+00:03:47,910 --> 00:03:52,500
+fark etti ve bu gerçekten özel bir şey.
+
+45
+00:03:52,530 --> 00:03:57,650
+Şafak güncelleştirmek için tepki yol birçok şey vardır.
+
+46
+00:03:57,660 --> 00:04:01,480
+Aslında yalnızca iki değişen devlet var.
+
+47
+00:04:02,040 --> 00:04:05,550
+Ve başka ne başardığını görebilirsiniz.
+
+48
+00:04:06,440 --> 00:04:08,780
+Prop biz devlet değiştiriyoruz.
+
+49
+00:04:08,810 --> 00:04:16,190
+Bu güzel fakat akılda tuttuğumuz her kişi için aslında çıktıyı tanımladığımız ve bu kişi bileşeni
+
+50
+00:04:16,640 --> 00:04:18,580
+ve orada devlet kullanmıyoruz.
+
+51
+00:04:18,740 --> 00:04:23,390
+Ve dediğim gibi, orada kullanamayız, çünkü bu bu işlev sözdizimini kullanıyor.
+
+52
+00:04:23,990 --> 00:04:27,440
+Burada sahne kullanıyor ve Obert olayı tepki veriyor.
+
+53
+00:04:27,440 --> 00:04:32,690
+Devlet değişikliği veya pervane değişikliği olup olmadığına dikkat edin.
+
+54
+00:04:32,720 --> 00:04:39,290
+Temelde zaten Dom'a işlenmiş kodu ve şimdi her şeyi yeniden okuduysa oluşturacağı
+
+55
+00:04:39,290 --> 00:04:45,290
+kodu analiz eder ve ardından mevcut Dom'u yeni durumunuzu ve pervanenizi
+
+56
+00:04:45,290 --> 00:04:53,600
+yansıtacak şekilde güncellenecek şekilde güncelleştirir yeni devlet ve aslında yeni şahısların ev sahipliği yaptığı evet.

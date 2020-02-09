@@ -1,0 +1,51 @@
+1
+00:00:02,360 --> 00:00:08,240
+Welcome to another new module, over the previous modules you learned a lot about creating components
+
+2
+00:00:08,720 --> 00:00:16,580
+and using the various react and actually native javascript features to display dynamic content, output
+
+3
+00:00:16,580 --> 00:00:20,740
+dynamic content in jsx code and much more.
+
+4
+00:00:21,110 --> 00:00:25,130
+We also briefly touched on styling react components,
+
+5
+00:00:25,340 --> 00:00:33,020
+I did it with inline styles and I showed you how to import a css file to apply these css styles,
+
+6
+00:00:33,020 --> 00:00:38,660
+I also mentioned that these weren't scoped to the components you imported it in.
+
+7
+00:00:38,670 --> 00:00:44,990
+though. In this module, I want to focus on styling react components because there's more to it than what
+
+8
+00:00:44,990 --> 00:00:46,760
+you saw thus far.
+
+9
+00:00:46,760 --> 00:00:52,020
+For one, I want to have a look at how you can dynamically adjust styles or class names
+
+10
+00:00:52,310 --> 00:00:59,480
+and I also want to show you how to work around this restriction of either using inline styles and hence
+
+11
+00:00:59,480 --> 00:01:06,350
+having scoped styles but having limitations like not being able to use media queries or pseudo selectors
+
+12
+00:01:06,620 --> 00:01:12,540
+or using css files and then having global styles. There are a couple of ways of handling this
+
+13
+00:01:12,530 --> 00:01:17,440
+and we'll dive into all of these ways of working with styles in this module.

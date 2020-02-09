@@ -1,0 +1,147 @@
+1
+00:00:02,200 --> 00:00:09,730
+Podczas ostatniego wykładu rzuciłem okiem na to, czym jest jsx i tak ważne jest zrozumienie tego.
+
+2
+00:00:09,990 --> 00:00:14,850
+W tym wykładzie chciałbym podkreślić niektóre z ograniczeń, z jakimi mamy do czynienia.
+
+3
+00:00:14,850 --> 00:00:21,720
+Na przykład ta nazwa klasy rzeczy tutaj, jsx wyraźnie wygląda jak html i powinno, powinno pozwolić
+
+4
+00:00:21,720 --> 00:00:28,680
+nam napisać kod html-ish w naszych plikach javascript, nadal ponieważ nie jest to plik javascript, a
+
+5
+00:00:28,680 --> 00:00:36,780
+ponieważ jest to javascript, niektóre słowa mogą nie używać. Na przykład klasa, której użylibyśmy w normalnym html do przypisania klasy
+
+6
+00:00:36,780 --> 00:00:41,620
+css, nie może być używana, ponieważ jest to słowo zarezerwowane w javascript, używaliśmy
+
+7
+00:00:41,700 --> 00:00:45,360
+go już tu przy okazji, aby utworzyć nową klasę.
+
+8
+00:00:45,360 --> 00:00:48,210
+Właśnie dlatego musimy używać nazwy klasy.
+
+9
+00:00:48,210 --> 00:00:56,140
+Wszystkie te elementy, które można wykorzystać tutaj, takie jak div i h1, są w rzeczywistości zarządzane
+
+10
+00:00:56,160 --> 00:00:57,090
+lub dostarczane
+
+11
+00:00:57,360 --> 00:01:04,240
+przez bibliotekę reagowania, nie używamy prawdziwych znaczników html, reagujemy je za kulisami i reagujemy
+
+12
+00:01:04,250 --> 00:01:07,970
+definiując atrybuty w cudzysłowach, które powinienem powiedzieć.
+
+13
+00:01:08,100 --> 00:01:13,620
+Możemy zdefiniować na wszystkich tych elementach i nie mamy atrybutu class, jak mamy
+
+14
+00:01:13,620 --> 00:01:14,970
+na zwykłym elemencie
+
+15
+00:01:15,120 --> 00:01:18,070
+html, mamy tutaj atrybut class name, aby
+
+16
+00:01:18,180 --> 00:01:22,930
+dodać go jako klasę css. Jak widać w naszym ostatecznym
+
+17
+00:01:23,000 --> 00:01:27,180
+kodzie, jest to przetłumaczone na klasę, ale nie jest
+
+18
+00:01:27,210 --> 00:01:33,850
+to nazwa klasy tutaj, gdy zostanie wyrenderowana. Kolejnym ograniczeniem, przed którym stoimy, jest to,
+
+19
+00:01:33,870 --> 00:01:35,760
+że kiedy zwracamy coś
+
+20
+00:01:36,030 --> 00:01:42,940
+tutaj, powiedzmy, że wszyscy chcemy zwrócić inny nagłówek, tak naprawdę nie możemy tego zrobić
+
+21
+00:01:43,140 --> 00:01:47,360
+tutaj, nasze wyrażenie jsx musi mieć jeden element główny.
+
+22
+00:01:47,370 --> 00:01:51,670
+Teraz z reakcją 16, jest to trochę rozluźnione
+
+23
+00:01:52,080 --> 00:01:58,450
+i zobaczymy w tym kursie, że faktycznie możemy zwrócić sąsiednie elementy na końcu.
+
+24
+00:01:58,530 --> 00:02:06,780
+Typową rzeczą i typową najlepszą praktyką jest zawijanie wszystkiego w jeden element główny na komponent, chociaż ma to
+
+25
+00:02:06,820 --> 00:02:13,170
+również sens, ponieważ zazwyczaj chcesz stylizować swoich przeciwników i chcesz dodać klasę css, która
+
+26
+00:02:13,170 --> 00:02:18,050
+jest odpowiedzialna za stylizację do elementu głównego, tak jak my rób
+
+27
+00:02:18,060 --> 00:02:23,760
+tutaj, więc zazwyczaj zagnieżdżasz wszystko w jednym zwróconym przez ciebie głównym elemencie.
+
+28
+00:02:23,760 --> 00:02:29,800
+A jeśli zastanawiasz się nad tymi nawiasami tutaj, są one po prostu używane,
+
+29
+00:02:29,820 --> 00:02:36,570
+abyśmy mogli napisać kod HTML i zawsze mówię html, ale pamiętaj, że to jsx, to
+
+30
+00:02:36,570 --> 00:02:42,780
+javascript, dzięki czemu możesz ten kod HTML ładnie skonstruować na wiele sposobów. linie bez
+
+31
+00:02:42,780 --> 00:02:44,830
+otrzymywania błędów, dlatego używamy nawiasów.
+
+32
+00:02:45,120 --> 00:02:51,020
+Jeśli tak, mogę dodać akapit, w którym mówię, że to naprawdę działa
+
+33
+00:02:51,450 --> 00:02:53,220
+i zamknijmy to.
+
+34
+00:02:53,460 --> 00:02:56,450
+Teraz wraz z tym widzimy również ten akapit
+
+35
+00:02:56,540 --> 00:03:02,370
+i przyglądamy się niektórym ograniczeniom lub rzeczom, na które należy zwrócić uwagę przy korzystaniu z jsx,
+
+36
+00:03:02,410 --> 00:03:03,730
+ponieważ znowu nie jest
+
+37
+00:03:03,810 --> 00:03:07,140
+to html, ale w większości przypadków działa tak jak on.

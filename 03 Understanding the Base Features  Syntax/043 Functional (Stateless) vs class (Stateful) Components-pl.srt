@@ -1,0 +1,171 @@
+1
+00:00:02,320 --> 00:00:05,490
+Podczas ostatnich wykładów dowiedzieliśmy się dużo o stanie i
+
+2
+00:00:05,500 --> 00:00:12,030
+rekwizytach, dowiedzieliśmy się, że są to jedyne dwie rzeczy, które prowadzą do poprawy twojego domu, jeśli coś się zmieni.
+
+3
+00:00:12,040 --> 00:00:19,050
+Teraz wspomniałem również, że tworząc komponent jako funkcję, tak jak robimy to dla osoby, nie możemy
+
+4
+00:00:19,090 --> 00:00:24,420
+używać stanu tam, ponieważ jest to tylko funkcja, w której zwracamy kod jsx.
+
+5
+00:00:24,430 --> 00:00:27,770
+Oczywiście możemy uruchomić inny kod przed zrobieniem tego
+
+6
+00:00:27,970 --> 00:00:34,300
+i często robisz to, jeśli chcesz przekształcić rekwizyty dla nas lub coś podobnego, ale możesz ustawić
+
+7
+00:00:34,300 --> 00:00:41,580
+właściwość stanu tutaj, nie możesz wywołać tego stanu zestawu, ponieważ nie ma rozszerzenia klasy składnik, wspomniana metoda stanu
+
+8
+00:00:41,590 --> 00:00:44,830
+nie jest znana i nie mamy żadnych metod,
+
+9
+00:00:44,890 --> 00:00:45,850
+nie ma
+
+10
+00:00:45,880 --> 00:00:46,970
+klasy, jest funkcją.
+
+11
+00:00:47,380 --> 00:00:54,730
+Nadal wspominałem, że powinieneś używać tej funkcji funkcji tak często, jak to możliwe, i
+
+12
+00:00:55,060 --> 00:00:57,880
+podkreślę to jeszcze raz, dlaczego
+
+13
+00:00:58,210 --> 00:01:00,180
+jest to tak ważne?
+
+14
+00:01:00,760 --> 00:01:09,580
+Ponieważ te proste komponenty, które są funkcjami odbierającymi rekwizyty, bardzo jasno określają, co robią, renderują
+
+15
+00:01:09,580 --> 00:01:10,420
+tylko
+
+16
+00:01:10,750 --> 00:01:13,250
+coś w domenie, są
+
+17
+00:01:13,270 --> 00:01:20,370
+dynamiczne z powodu rekwizytów, a przed wywołaniem zwrotu można dodać dodatkową logikę.
+
+18
+00:01:20,770 --> 00:01:23,080
+Ale to bardzo ważne, że
+
+19
+00:01:23,140 --> 00:01:28,570
+nie manipulują stanem twojej aplikacji. Gdy twoja aplikacja się rozwija,
+
+20
+00:01:28,570 --> 00:01:32,280
+zobaczysz, że nie jest to tak nieważne,
+
+21
+00:01:32,280 --> 00:01:34,610
+to jest naprawdę bardzo ważne.
+
+22
+00:01:34,630 --> 00:01:39,990
+Większość części aplikacji nie powinna zmieniać stanu aplikacji, powinny one po prostu
+
+23
+00:01:40,030 --> 00:01:43,770
+renderować coś w domenie. Dynamiczne, tak, ale
+
+24
+00:01:43,900 --> 00:01:48,780
+nie powinny pozwalać na zmianę stanu aplikacji.
+
+25
+00:01:48,820 --> 00:01:54,880
+Twój stan aplikacji powinien być zmieniany i obsługiwany tylko w kilku
+
+26
+00:01:54,880 --> 00:01:57,910
+wybranych komponentach zwanych również kontenerami.
+
+27
+00:01:57,910 --> 00:02:00,110
+App. js byłby takim
+
+28
+00:02:00,280 --> 00:02:06,310
+kontenerem, to po prostu inna nazwa, jest składnikiem, ale my nazywamy to kontenerem, ponieważ zawiera
+
+29
+00:02:06,310 --> 00:02:08,370
+on część naszego stanu aplikacji.
+
+30
+00:02:08,560 --> 00:02:15,580
+W naszej aplikacji demo faktycznie cały stan aplikacji. Tutaj możemy zmienić coś na temat naszej
+
+31
+00:02:15,580 --> 00:02:22,270
+aplikacji, a następnie przekazujemy te zmiany do np. Komponentu osoby, ale to wszystko.
+
+32
+00:02:22,270 --> 00:02:29,530
+Zmiana nastąpi w aplikacji. js i gdy zaczniemy budować projekt kursu, zobaczysz, że
+
+33
+00:02:29,530 --> 00:02:30,900
+używam tego wzorca.
+
+34
+00:02:31,000 --> 00:02:38,380
+Będę miał kilka komponentów, w których państwo faktycznie żyje i zostaje zmienione oraz wiele
+
+35
+00:02:38,740 --> 00:02:46,030
+komponentów, które pobierają pewne elementy, a następnie renderują coś na ekranie, ale nie będą
+
+36
+00:02:46,120 --> 00:02:47,790
+bezpośrednio manipulować państwem.
+
+37
+00:02:47,800 --> 00:02:54,970
+Nadal możesz mieć przypadki, w których być może chcesz także odsłuchać wydarzenie w składniku osoby lub
+
+38
+00:02:54,970 --> 00:02:56,670
+w jakimkolwiek innym komponencie.
+
+39
+00:02:57,100 --> 00:03:02,770
+Teraz możesz to zmienić w komponent, który rozszerza komponent, dzięki czemu możesz zdefiniować metody, które będziesz
+
+40
+00:03:02,800 --> 00:03:11,490
+wykonywał, ale może chcesz słuchać zdarzenia tutaj, ale wykonać jakąś metodę w aplikacji. js, aby zachować ten wzór
+
+41
+00:03:11,500 --> 00:03:19,990
+zmiany nazwy w aplikacji. js ale faktycznie słuchanie zdarzenia
+
+42
+00:03:19,990 --> 00:03:22,370
+w innym komponencie.
+
+43
+00:03:22,750 --> 00:03:31,470
+Przyjrzyjmy się, jak sobie z tym poradzić i zmienić stan z innego komponentu na następnym wykładzie.

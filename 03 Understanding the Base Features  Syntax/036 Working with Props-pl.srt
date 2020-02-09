@@ -1,0 +1,179 @@
+1
+00:00:02,240 --> 00:00:09,800
+Teraz, gdy wiemy, jak tworzyć treści dynamiczne, sprawmy, aby nasz komponent był konfigurowalny, elastyczny i dynamiczny.
+
+2
+00:00:10,640 --> 00:00:18,110
+W przypadku normalnych elementów HTML możemy przekazać atrybuty takie jak nazwa klasy, którą możemy dodać do dowolnego atrybutu
+
+3
+00:00:18,680 --> 00:00:19,560
+html, element
+
+4
+00:00:19,570 --> 00:00:26,150
+wejściowy również będzie miał atrybut value na przykład. Teraz dla osoby byłoby miło, gdybyśmy
+
+5
+00:00:26,150 --> 00:00:35,960
+mogli powiedzieć nazwę i może przekazać Max i wiek, a może przejść 28 i do drugiego wyszukiwania, możemy chcieć
+
+6
+00:00:35,960 --> 00:00:41,750
+przekazać Manu w wieku 29 lat i do trzeciego wyszukiwania użytkowania,
+
+7
+00:00:41,750 --> 00:00:48,120
+być może chcemy użyj Stephanie i zdaj 26 lat, to nie jest
+
+8
+00:00:48,170 --> 00:00:49,200
+moja dziewczyna
+
+9
+00:00:49,220 --> 00:00:50,140
+przy okazji.
+
+10
+00:00:50,750 --> 00:01:00,050
+Więc jeśli to zrobimy, chcemy to wydać, a może nawet chcemy to zrobić dalej i dla Manu,
+
+11
+00:01:00,050 --> 00:01:09,050
+chcemy również podzielić to w tagu otwierającym i zamykającym, a także uzyskać dodatkowe informacje, takie jak moje
+
+12
+00:01:09,560 --> 00:01:12,190
+hobby, które może być wyścigowe.
+
+13
+00:01:12,440 --> 00:01:19,400
+Teraz, gdy wszystko to ma miejsce, musimy zmienić coś w naszym komponencie osobowym, aby obsłużyć dane
+
+14
+00:01:19,640 --> 00:01:24,000
+wejściowe, ponieważ domyślnie, oczywiście, jeśli to zapiszemy i przeładujemy aplikację,
+
+15
+00:01:24,530 --> 00:01:29,020
+nasze dane wyjściowe pozostają niezmienione, ponieważ nie używamy tych informacji.
+
+16
+00:01:29,030 --> 00:01:32,500
+Jak byśmy, jak zareagowalibyśmy, co z tym zrobić?
+
+17
+00:01:33,080 --> 00:01:41,150
+Właściwie to jest w stanie przyjąć te atrybuty i daje nam dostęp do naszego elementu
+
+18
+00:01:41,570 --> 00:01:44,470
+odbierającego na obiekcie o nazwie rekwizyty.
+
+19
+00:01:44,570 --> 00:01:50,360
+Teraz właściwie to nazwa zależy od ciebie, ale otrzymasz jeden argument w
+
+20
+00:01:50,360 --> 00:01:58,040
+swojej funkcji, jeden argument, który jest domyślnie przekazywany do niego przez reagowanie, który jest obiektem ze wszystkimi
+
+21
+00:01:58,370 --> 00:02:03,500
+właściwościami tego komponentu, a właściwości oznaczają atrybuty dodawane do twojego składnik.
+
+22
+00:02:03,590 --> 00:02:10,460
+Teraz, w reakcji na ląd, nazywa się to rekwizytami, dlatego nazwałem ten argument rekwizytami i
+
+23
+00:02:10,460 --> 00:02:15,700
+zdecydowanie zalecam, aby tak zrobić, aby wszyscy inni również zrozumieli twój kod,
+
+24
+00:02:15,720 --> 00:02:18,260
+teoretycznie, możesz jednak nazwać to inaczej.
+
+25
+00:02:18,650 --> 00:02:23,720
+Teraz, gdy mamy rekwizyty, możemy uzyskać dostęp do tego imienia i wieku.
+
+26
+00:02:24,020 --> 00:02:29,410
+Moglibyśmy więc powiedzieć, że jestem, i użyję pojedynczych nawiasów klamrowych,
+
+27
+00:02:29,600 --> 00:02:35,250
+by nadać coś dynamicznego, jestem nazwą rekwizytów i mam lat.
+
+28
+00:02:35,570 --> 00:02:46,130
+Teraz tutaj trzymam klamry, ale zastępuję losowe obliczenia wiekiem rekwizytów, jestem rekwizytem i mam
+
+29
+00:02:46,130 --> 00:02:47,780
+latami rekwizyty.
+
+30
+00:02:49,250 --> 00:02:56,070
+Zapiszmy teraz to i zobaczmy, co się stanie, jeśli teraz załaduje się ponownie do naszej aplikacji, jeśli
+
+31
+00:02:56,360 --> 00:03:01,460
+nie zostanie ponownie załadowane, odśwież ręcznie. Powinieneś zobaczyć, że jestem Max i
+
+32
+00:03:01,460 --> 00:03:05,120
+20 lat, Manu i Stephanie i wszystkie wieki.
+
+33
+00:03:05,160 --> 00:03:07,580
+Więc teraz mamy najlepsze z
+
+34
+00:03:07,610 --> 00:03:15,590
+obu światów, mamy komponent wielokrotnego użytku, który ma wyraźnie zdefiniowany szablon, ale w tym miejscu używamy dynamicznej
+
+35
+00:03:15,950 --> 00:03:21,620
+zawartości, którą ustawiamy z zewnątrz w miejscu, w którym faktycznie używamy naszego komponentu.
+
+36
+00:03:21,620 --> 00:03:23,790
+To sprawia, że ​​jest to naprawdę
+
+37
+00:03:23,810 --> 00:03:28,100
+wielokrotnego użytku, pomyśl o wszystkich możliwościach, które zbadamy w tym kursie.
+
+38
+00:03:28,190 --> 00:03:32,270
+Posiadanie komponentu wejściowego, w którym możesz ustawić typ
+
+39
+00:03:32,360 --> 00:03:39,740
+z zewnątrz, mając ten komponent osoby, który może być stylizowany jak karta, aby wyprowadzać dynamiczną
+
+40
+00:03:39,740 --> 00:03:41,200
+lub inną treść
+
+41
+00:03:41,360 --> 00:03:48,920
+dla różnych osób, jest naprawdę niesamowitym światem funkcji, do których możemy uzyskać dostęp tutaj. ważny krok
+
+42
+00:03:48,950 --> 00:03:52,040
+w kierunku odbudowy świetnych i elastycznych komponentów.
+
+43
+00:03:52,040 --> 00:03:55,880
+A co z hobby?
+
+44
+00:03:55,880 --> 00:04:02,660
+Rzućmy okiem na to, jak możemy używać treści przekazywanych nie jako atrybut, ale między tagami
+
+45
+00:04:02,660 --> 00:04:05,580
+otwierającymi i zamykającymi w następnym wykładzie.

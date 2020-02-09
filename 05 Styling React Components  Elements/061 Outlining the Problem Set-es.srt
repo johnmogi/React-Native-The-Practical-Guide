@@ -1,0 +1,91 @@
+1
+00:00:02,320 --> 00:00:05,200
+Estoy de vuelta en el proyecto en el que trabajamos hasta ahora.
+
+2
+00:00:05,200 --> 00:00:07,810
+Tenemos un estilo básico allí.
+
+3
+00:00:07,810 --> 00:00:12,180
+Por ejemplo, estas tarjetas donde sacamos las personas y este botón.
+
+4
+00:00:12,310 --> 00:00:15,130
+Pero empecemos con ese botón, por ejemplo.
+
+5
+00:00:15,130 --> 00:00:18,590
+Ya tenemos un problema cuando lo tenemos.
+
+6
+00:00:18,590 --> 00:00:20,670
+No cambia ese estilo.
+
+7
+00:00:20,680 --> 00:00:28,150
+este botón que es parte de nuestro componente de aplicación lo podemos ver aquí en nuestra plantilla, que este botón
+
+8
+00:00:28,480 --> 00:00:36,810
+simplemente tiene un estilo con estilos en línea que les asignamos aquí y los configuramos antes y el método de renderización aquí.
+
+9
+00:00:36,820 --> 00:00:38,480
+El problema es que
+
+10
+00:00:38,680 --> 00:00:46,150
+Usamos javascript para crear un objeto y asignar datos a la propiedad de estilo yj como X y reaccionar nos ocupamos de configurar
+
+11
+00:00:46,150 --> 00:00:50,260
+esto en el H. T. del elemento masculino.
+
+12
+00:00:50,260 --> 00:00:54,050
+El problema es que no podemos usar pseudos Electress aquí.
+
+13
+00:00:54,160 --> 00:01:01,210
+La ventaja del estilo de Corps es solo aplicarlo a este patrón y conocer a Obert. Pero luego
+
+14
+00:01:01,210 --> 00:01:07,690
+la aplicación si tuviéramos otro botón y ya mencioné la alternativa sería darle un estilo en
+
+15
+00:01:07,690 --> 00:01:15,270
+el archivo CSS y allí podemos usar CSSA normal incluyendo pseudo selectores como Hulver, pero hacen lo que Clovelly
+
+16
+00:01:15,430 --> 00:01:22,040
+afecta a todos los botones de nuestra aplicación, incluso si se colocaron en componentes de Avro.
+
+17
+00:01:22,060 --> 00:01:28,300
+Este es el problema que se debe resolver en este monocasco. Pero además de eso, también quiero echar un
+
+18
+00:01:28,300 --> 00:01:29,550
+vistazo a otra cosa.
+
+19
+00:01:29,620 --> 00:01:33,880
+¿Qué sucede si realmente queremos cambiar el estilo de forma dinámica?
+
+20
+00:01:33,880 --> 00:01:41,480
+Comencemos con eso digamos que alternar personas este botón debe tener un color de fondo verde.
+
+21
+00:01:41,590 --> 00:01:47,450
+Si estamos a punto de mostrar personas con un clic y un color de fondo rojo.
+
+22
+00:01:47,650 --> 00:01:55,720
+Si estamos a punto de eliminar la lista de personas, veamos cómo podemos cambiar los estilos dinámicamente en la
+
+23
+00:01:55,720 --> 00:01:56,520
+próxima conferencia.

@@ -1,0 +1,419 @@
+1
+00:00:02,360 --> 00:00:06,360
+In the last lecture we created our project with create react app
+
+2
+00:00:06,450 --> 00:00:11,980
+and as I mentioned make sure that npm start, this process, is running whenever you're working on your
+
+3
+00:00:11,980 --> 00:00:13,260
+code.
+
+4
+00:00:13,290 --> 00:00:19,160
+I now open the folder which was created with Microsoft visual studio code,
+
+5
+00:00:19,200 --> 00:00:22,030
+this is the IDE I'm going to use throughout the course
+
+6
+00:00:22,200 --> 00:00:25,430
+but you can use any IDE or editor you want to use.
+
+7
+00:00:25,500 --> 00:00:31,950
+For example, also WebStorm would be an alternative or Sublime or Atom or any other editor
+
+8
+00:00:31,950 --> 00:00:33,000
+you like.
+
+9
+00:00:33,000 --> 00:00:38,850
+Now here, I install a theme and some extensions and you can find the exact configuration I'm using here
+
+10
+00:00:39,140 --> 00:00:42,170
+described in the PDF document attached to this video
+
+11
+00:00:42,210 --> 00:00:48,150
+just in case you want to use the same, but feel free to use your favorite set up. Whatever the theme and
+
+12
+00:00:48,150 --> 00:00:53,230
+set up you use, you will have the same amount of files and folders in your project.
+
+13
+00:00:53,460 --> 00:00:58,890
+So let's know walk through all the files and folders we have here. On the root level, we get a couple
+
+14
+00:00:58,890 --> 00:01:00,420
+of configuration files,
+
+15
+00:01:00,480 --> 00:01:03,010
+these lock files here can basically be ignored,
+
+16
+00:01:03,030 --> 00:01:07,800
+they're just locking in the versions of the dependencies we're using, the general dependencies
+
+17
+00:01:07,800 --> 00:01:14,250
+our project has are defined in the package.json files. And then you can see we have three dependencies
+
+18
+00:01:14,250 --> 00:01:18,360
+in this project and this was all created by create react app.
+
+19
+00:01:18,540 --> 00:01:24,720
+As you can see, we obviously import react, here I'm using a release candidate version of react 16 at
+
+20
+00:01:24,720 --> 00:01:26,520
+the point of time you're viewing this,
+
+21
+00:01:26,520 --> 00:01:32,710
+this should be released react dom it's the same and react scripts as I mentioned is a package offering
+
+22
+00:01:32,760 --> 00:01:39,900
+all this build workflow, this development server, the next generation javascript feature support and
+
+23
+00:01:39,990 --> 00:01:46,340
+all these things we're using in this project. In the package.json file, there was a couple of scripts defined,
+
+24
+00:01:46,560 --> 00:01:51,000
+you can run these scripts with npm run and then the script name.
+
+25
+00:01:51,180 --> 00:01:57,060
+The exceptions start which you can also run with npm start, the command we executed and as you can
+
+26
+00:01:57,060 --> 00:02:02,680
+see, it uses this react scripts package to then also execute some start command there,
+
+27
+00:02:02,690 --> 00:02:03,730
+that's simply a command
+
+28
+00:02:03,750 --> 00:02:08,900
+this package makes available and this command happens to start this development server,
+
+29
+00:02:08,940 --> 00:02:15,750
+watch all our code, compile our code, optimize the code and do all these things. Once you're ready for
+
+30
+00:02:15,750 --> 00:02:21,360
+deploying your app, you would run npm run build to optimize it even more, not launch the development server
+
+31
+00:02:21,570 --> 00:02:28,740
+but instead get your optimized code stored in a folder because right now you won't see your compiled
+
+32
+00:02:28,770 --> 00:02:30,090
+code anywhere here,
+
+33
+00:02:30,090 --> 00:02:31,770
+everything happens in memory.
+
+34
+00:02:31,770 --> 00:02:35,190
+But I'll come back to deploying the application later in the course.
+
+35
+00:02:35,220 --> 00:02:37,140
+So let's close this package.json file
+
+36
+00:02:37,140 --> 00:02:44,710
+for now. The node modules folder holds all the dependencies and sub-dependencies of our project,
+
+37
+00:02:44,940 --> 00:02:46,780
+this is why we have that many.
+
+38
+00:02:46,800 --> 00:02:53,130
+We only had react, react dom and react scripts but react scripts has a lot of other dependencies,
+
+39
+00:02:53,130 --> 00:02:56,550
+all these little build tools which compiled the code and so on.
+
+40
+00:02:56,760 --> 00:02:59,820
+You shouldn't edit anything into node modules folder,
+
+41
+00:02:59,850 --> 00:03:06,510
+it's generated automatically if you run npm install in your project folder and this was automatically done
+
+42
+00:03:06,570 --> 00:03:08,680
+by create react scripts.
+
+43
+00:03:08,850 --> 00:03:11,160
+The public folder is more interesting,
+
+44
+00:03:11,160 --> 00:03:16,070
+it's basically the root folder which gets served by the web server in the end, though
+
+45
+00:03:16,080 --> 00:03:23,090
+here it only holds the files we can edit, the script files are added in the source folder.
+
+46
+00:03:23,490 --> 00:03:26,580
+Here we got one important file index.html,
+
+47
+00:03:26,700 --> 00:03:30,960
+this is a normal html page and it is the single page
+
+48
+00:03:30,980 --> 00:03:32,010
+we have here.
+
+49
+00:03:32,070 --> 00:03:35,760
+We will never add more html pages in this project,
+
+50
+00:03:35,820 --> 00:03:41,950
+if you are creating a multi page project you would create multiple such projects here with create react app,
+
+51
+00:03:42,240 --> 00:03:43,630
+you wouldn't add more
+
+52
+00:03:43,650 --> 00:03:47,690
+html files here or you need your own workflow if you want to do that.
+
+53
+00:03:47,820 --> 00:03:54,820
+So this is the single page, where in the end our script files will get injected by that build workflow
+
+54
+00:03:54,840 --> 00:04:01,200
+which is why you don't see a script import here and you can edit this file but we won't write any html
+
+55
+00:04:01,200 --> 00:04:02,160
+code here.
+
+56
+00:04:02,340 --> 00:04:05,670
+I want to highlight this div here with the ID root,
+
+57
+00:04:05,700 --> 00:04:11,910
+this will become important because this will be where we actually mount our react application later
+
+58
+00:04:12,060 --> 00:04:14,160
+and we will of course work in react.
+
+59
+00:04:14,160 --> 00:04:20,880
+But if you need to add any imports to let's say other libraries, CSS libraries or want to add some
+
+60
+00:04:20,880 --> 00:04:25,170
+meta tags, you can do that here in the html file.
+
+61
+00:04:25,170 --> 00:04:26,930
+You could also add more html here
+
+62
+00:04:26,940 --> 00:04:33,480
+but again, you probably want to do this in react. The manifest.json file is there because create
+
+63
+00:04:33,480 --> 00:04:37,230
+react app gives us a progressive web app out of the box,
+
+64
+00:04:37,260 --> 00:04:43,230
+a very basic one at least and gives us this manifest.json file where we can define some meta data
+
+65
+00:04:43,230 --> 00:04:45,630
+about our application.
+
+66
+00:04:45,630 --> 00:04:48,150
+Interesting for us is this source folder,
+
+67
+00:04:48,270 --> 00:04:53,150
+here we get a couple of files and these are actually the files we will work in,
+
+68
+00:04:53,240 --> 00:04:56,310
+this is actually our react application.
+
+69
+00:04:56,580 --> 00:04:58,380
+Most important for us right now,
+
+70
+00:04:58,380 --> 00:05:06,540
+the index.js file gets access to this root element in our dom, in our html file, so the element with
+
+71
+00:05:06,540 --> 00:05:12,000
+the ID root which of course is this div we saw in the index.html file,
+
+72
+00:05:12,000 --> 00:05:20,500
+this one, and there as you can see it, it renders our react application with the render method.
+
+73
+00:05:20,850 --> 00:05:29,940
+Now here is a reference of some app object or element which we import from an app file, the extension
+
+74
+00:05:30,060 --> 00:05:36,480
+.js is left out because it's automatically added by our build workflow and if we have a look
+
+75
+00:05:36,480 --> 00:05:38,290
+at this app.js file
+
+76
+00:05:38,290 --> 00:05:45,870
+therefore, this is where we see our first and only react component we have in this starting project
+
+77
+00:05:45,870 --> 00:05:47,010
+right now.
+
+78
+00:05:47,070 --> 00:05:53,580
+Here we see some JSX and then we'll dive deeply into what we see here exactly in the next lectures.
+
+79
+00:05:53,880 --> 00:06:01,210
+For now, let's remove all the content in this wrapping div and let's simply add a h1 tag here
+
+80
+00:06:01,240 --> 00:06:12,010
+where I'll say hi I'm a react app, let's close it of course also and then let's save it,
+
+81
+00:06:12,010 --> 00:06:15,200
+that's always important, don't forget to save your files.
+
+82
+00:06:15,240 --> 00:06:21,400
+Now since you have npm start running, this will automatically trigger a recompilation
+
+83
+00:06:21,580 --> 00:06:27,130
+and it should automatically reload your page too which is why you should now see Hi I'm a react app
+
+84
+00:06:27,190 --> 00:06:28,960
+instead of the old content.
+
+85
+00:06:29,050 --> 00:06:35,380
+With that we can also removed this logo.svg file because we no longer use it in our project,
+
+86
+00:06:35,380 --> 00:06:38,850
+and now we got a bit of a leaner source folder.
+
+87
+00:06:38,860 --> 00:06:42,040
+Now what else did create react app create for us?
+
+88
+00:06:42,070 --> 00:06:48,640
+It gave us this app.css file which basically defines some stylings we use in this app.js
+
+89
+00:06:48,640 --> 00:06:52,660
+file, though I will say that these are not scoped to this file,
+
+90
+00:06:52,660 --> 00:07:00,370
+these are still global stylings and I will actually remove everything but this first app class definition
+
+91
+00:07:00,370 --> 00:07:07,240
+in that file and save it thereafter. We also get an index.css file which also applies styles
+
+92
+00:07:07,240 --> 00:07:14,540
+globally and what should be used for some general set up as here for the body of our application.
+
+93
+00:07:14,660 --> 00:07:20,020
+The registerServiceWorker.js file is as the name implies important for registering a service worker
+
+94
+00:07:20,260 --> 00:07:22,290
+which is generated automatically,
+
+95
+00:07:22,300 --> 00:07:26,490
+that's related to this progressive web app we get out of the box.
+
+96
+00:07:26,560 --> 00:07:30,180
+It will basically pre-cache our script files,
+
+97
+00:07:30,220 --> 00:07:34,160
+we don't need to configure anything there. And the test file,
+
+98
+00:07:34,290 --> 00:07:36,880
+well we'll dive into testing later in the course,
+
+99
+00:07:36,880 --> 00:07:44,380
+it basically allows us to create unit tests for the different units, for example components in our application.
+
+100
+00:07:44,410 --> 00:07:51,670
+This is the general setup and for the majority of this course, we'll work in app.js or other new components
+
+101
+00:07:51,670 --> 00:07:52,630
+we create.
+
+102
+00:07:52,630 --> 00:07:58,260
+Speaking of that, let's analyze this file, let's understand the syntax we see there,
+
+103
+00:07:58,390 --> 00:08:01,990
+let's get rid of that logo import because we remove the logo file
+
+104
+00:08:01,990 --> 00:08:08,530
+now that I see it and let's dive into JSX, what exactly that is and how we add more components to our
+
+105
+00:08:08,530 --> 00:08:09,730
+application.

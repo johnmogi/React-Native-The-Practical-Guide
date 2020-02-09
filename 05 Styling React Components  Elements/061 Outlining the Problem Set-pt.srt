@@ -1,0 +1,91 @@
+1
+00:00:02,320 --> 00:00:05,200
+Estou de volta ao projeto em que trabalhamos até agora.
+
+2
+00:00:05,200 --> 00:00:07,810
+Temos um estilo básico lá.
+
+3
+00:00:07,810 --> 00:00:12,180
+Por exemplo, estes cartões onde nós emitimos as pessoas e este botão.
+
+4
+00:00:12,310 --> 00:00:15,130
+Mas vamos começar com esse botão, por exemplo.
+
+5
+00:00:15,130 --> 00:00:18,590
+Nós já temos um problema quando o superamos.
+
+6
+00:00:18,590 --> 00:00:20,670
+Não altera esse estilo.
+
+7
+00:00:20,680 --> 00:00:28,150
+este botão, que é parte do nosso componente de aplicativo, podemos vê-lo aqui no nosso modelo, de modo que este
+
+8
+00:00:28,480 --> 00:00:36,810
+botão simplesmente tenha estilo com estilos inline, nós os atribuímos aqui e nós os configuramos anteriormente e o método de renderização aqui.
+
+9
+00:00:36,820 --> 00:00:38,480
+O problema é que
+
+10
+00:00:38,680 --> 00:00:46,150
+Usamos o javascript para criar um objeto e atribuir dados à propriedade de estilo e j como X e reagir se preocupa em configurar
+
+11
+00:00:46,150 --> 00:00:50,260
+isso no H. real. T. de elemento masculino.
+
+12
+00:00:50,260 --> 00:00:54,050
+A questão é que não podemos usar Pseudos Electress aqui.
+
+13
+00:00:54,160 --> 00:01:01,210
+A vantagem do estilo do Corps é aplicá-lo somente a esse padrão e conhecer Obert. Mas, em
+
+14
+00:01:01,210 --> 00:01:07,690
+seguida, o aplicativo se tivéssemos outro botão e já mencionei a alternativa seria o estilo no
+
+15
+00:01:07,690 --> 00:01:15,270
+arquivo CSS e podemos usar CSSA normal, incluindo pseudo seletores como Hulver, mas faz o que o Clovelly afeta
+
+16
+00:01:15,430 --> 00:01:22,040
+todos os botões em nossa aplicação, mesmo que eles tenham sido colocados nos componentes da Avro.
+
+17
+00:01:22,060 --> 00:01:28,300
+Este é o problema de definir um para lidar com este monocoque. Além disso, eu também quero dar uma
+
+18
+00:01:28,300 --> 00:01:29,550
+olhada em outra coisa.
+
+19
+00:01:29,620 --> 00:01:33,880
+E se realmente queremos mudar o estilo dinamicamente.
+
+20
+00:01:33,880 --> 00:01:41,480
+Vamos começar com isso, digamos, toggle pessoas, este botão deve ter uma cor de fundo verde.
+
+21
+00:01:41,590 --> 00:01:47,450
+Se estamos prestes a mostrar pessoas com um clique e uma cor de fundo vermelho.
+
+22
+00:01:47,650 --> 00:01:55,720
+Se estamos prestes a remover a lista de pessoas, vejamos como podemos mudar dinamicamente os estilos na
+
+23
+00:01:55,720 --> 00:01:56,520
+próxima palestra.

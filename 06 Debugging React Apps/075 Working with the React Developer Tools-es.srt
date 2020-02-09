@@ -1,0 +1,123 @@
+1
+00:00:02,250 --> 00:00:08,020
+Ahora aprenderá cómo leer y comprender los mensajes de flecha y cómo encontrar errores lógicos.
+
+2
+00:00:08,100 --> 00:00:13,860
+A veces querrás saber el estado actual de tu aplicación de reactor y, aunque es posible que
+
+3
+00:00:13,860 --> 00:00:17,500
+puedas descifrarlo con las herramientas de desarrollador, puede ser un inconveniente.
+
+4
+00:00:17,970 --> 00:00:24,120
+Afortunadamente, hay una buena extensión que puedes agregar a las herramientas para desarrolladores de Chrome d-act.
+
+5
+00:00:24,120 --> 00:00:25,730
+Vamos a instalarlo juntos.
+
+6
+00:00:25,950 --> 00:00:32,760
+Puede buscar nuevas herramientas para desarrolladores en google y encontrará el repositorio de actualizaciones donde puede obtener más información
+
+7
+00:00:32,760 --> 00:00:38,700
+sobre cómo usarlas e incluso puede contribuir al proyecto o si tiene derecho a la tienda web
+
+8
+00:00:38,700 --> 00:00:39,610
+de Chrome.
+
+9
+00:00:39,630 --> 00:00:39,890
+No.
+
+10
+00:00:39,900 --> 00:00:40,400
+Sin preocupaciones.
+
+11
+00:00:40,400 --> 00:00:42,930
+Estos son gratuitos en la tienda web.
+
+12
+00:00:42,930 --> 00:00:48,630
+Ya los agregué a Chrome, pero puedes hacer clic en agregar a Chrome si no lo has hecho.
+
+13
+00:00:48,630 --> 00:00:54,960
+Una vez que los edites, probablemente necesites reiniciar en Roma y buscarán las herramientas de desarrollo de Chrome.
+
+14
+00:00:54,960 --> 00:00:59,210
+Puede elegir volver a actuar esta nueva pestaña debe ser a.
+
+15
+00:00:59,220 --> 00:01:06,810
+Ahora hay algo genial ya que ahora ves tu aplicación de réplica cuando la creaste.
+
+16
+00:01:06,870 --> 00:01:12,330
+elementos DOM que ve sus componentes como el componente persona aquí o el componente de la aplicación.
+
+17
+00:01:12,810 --> 00:01:19,260
+Si hace clic en alternar persona, verá algo que difiere de la pestaña de elementos normales que tiene, aunque
+
+18
+00:01:19,260 --> 00:01:20,670
+no solo ve los
+
+19
+00:01:21,090 --> 00:01:26,840
+Y abajo, en la parte inferior, también se ven los accesorios y el estado de ese componente.
+
+20
+00:01:27,000 --> 00:01:29,590
+Entonces, para el componente de la aplicación, verá la matriz de la persona.
+
+21
+00:01:29,680 --> 00:01:33,500
+Y si hago clic en una persona elimínela, esto también se actualiza.
+
+22
+00:01:33,510 --> 00:01:39,860
+Entonces, aquí puede ver que su estado también puede cambiarlo y reenviar un componente de persona.
+
+23
+00:01:39,870 --> 00:01:47,430
+Usted ve que no tiene un estado, pero tiene accesorios y qué propiedades son también puede
+
+24
+00:01:47,700 --> 00:01:51,480
+resaltar las actualizaciones para que vea resaltado aquí.
+
+25
+00:01:51,540 --> 00:01:56,430
+Qué cambió en su código como la adición de este nombre de clase, por ejemplo.
+
+26
+00:01:56,430 --> 00:01:58,070
+Así que eso también es genial.
+
+27
+00:01:58,080 --> 00:02:04,650
+Le permite comprender rápidamente el estado de los componentes de su aplicación y manipularla y brindarle algunas ideas que
+
+28
+00:02:04,650 --> 00:02:10,560
+no puede obtener fácilmente con las herramientas normales de desarrollo porque eso va más allá de mostrar
+
+29
+00:02:10,590 --> 00:02:11,850
+lo que se procesó.
+
+30
+00:02:11,910 --> 00:02:15,500
+Te muestra qué hay detrás de las escenas de lo que hay debajo del capó.
+
+31
+00:02:15,510 --> 00:02:16,140
+Básicamente.

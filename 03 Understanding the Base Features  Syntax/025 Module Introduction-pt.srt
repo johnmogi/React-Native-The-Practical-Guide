@@ -1,0 +1,27 @@
+1
+00:00:02,360 --> 00:00:08,030
+Agora e nós olhamos para o que o reator e por que talvez nós queiramos usá-lo, assim como
+
+2
+00:00:08,060 --> 00:00:09,520
+matamos, construímos nossa primeira reação.
+
+3
+00:00:09,770 --> 00:00:15,280
+Vamos mergulhar em todos os conceitos de reação do núcleo e a sintaxe básica de reagir.
+
+4
+00:00:15,440 --> 00:00:20,180
+E este módulo examinará o que é preciso para criar um aplicativo real de reagem.
+
+5
+00:00:20,270 --> 00:00:25,690
+E com isso, claro, também quero dizer localmente na nossa máquina e não na caneta de código.
+
+6
+00:00:26,000 --> 00:00:30,000
+E você aprenderá quais recursos principais reagem a oferta e como você os usa.
+
+7
+00:00:30,080 --> 00:00:36,990
+Vamos mergulhar diretamente nisso e vamos aprender como montamos um Projeto de reativação local na nossa máquina.

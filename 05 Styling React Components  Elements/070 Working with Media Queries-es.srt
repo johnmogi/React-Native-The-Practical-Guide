@@ -1,0 +1,87 @@
+1
+00:00:02,240 --> 00:00:09,220
+Aprendimos cómo usar pseudo selectores y cómo hacemos incluso clases de jerarquía y aún las importamos en ese
+
+2
+00:00:09,220 --> 00:00:12,890
+objeto de clase que está en la conferencia anterior.
+
+3
+00:00:12,970 --> 00:00:15,080
+Ahora quiero ocuparme de las consultas de los medios.
+
+4
+00:00:15,090 --> 00:00:19,350
+Y eso era algo que quería hacer en mi clase de monedero allí.
+
+5
+00:00:19,420 --> 00:00:27,660
+Asigné la clase C S S a la muerte externa y de hecho ya agregué el código antes.
+
+6
+00:00:27,700 --> 00:00:34,630
+Simplemente lo comentaré en cierta normalidad, me ha pedido que consulte el ajuste de nuestra clase Person
+
+7
+00:00:34,630 --> 00:00:43,750
+con esto si tenemos una nueva placa de más de 500 píxeles porque la seguridad se ajusta al archivo C S S y
+
+8
+00:00:43,840 --> 00:00:46,140
+seguirá importando esta clase de persona.
+
+9
+00:00:46,140 --> 00:00:49,270
+Bien en el objeto de Klaas aquí.
+
+10
+00:00:49,510 --> 00:00:55,330
+Incluso si está en esa consulta inmediata, entonces lo que deberíamos ver es que si recargo la
+
+11
+00:00:55,330 --> 00:01:01,780
+aplicación y las personas aquí me enseñan si aumente la ventana gráfica, el ancho del cuadro no cambia.
+
+12
+00:01:01,810 --> 00:01:04,240
+Solo cambia si es lo suficientemente pequeño.
+
+13
+00:01:04,240 --> 00:01:08,180
+Allí será 60 por ciento del ancho.
+
+14
+00:01:08,560 --> 00:01:14,890
+difícil envolver su mano ya que este módulo simplemente piensa en este objeto de clase aquí como un
+
+15
+00:01:15,280 --> 00:01:23,320
+objeto javascript que le da acceso a un trabajo de cadena de su C como Stahl de su clase CSS pero de
+
+16
+00:01:23,470 --> 00:01:31,390
+ac como una clase que se ajustó para ser única, por lo que simplemente traducirá su primera clase a algo así como.
+
+17
+00:01:31,960 --> 00:01:36,220
+Así que eso fue súper simple y Wozzeck puede ser un poco
+
+18
+00:01:36,340 --> 00:01:36,810
+Persona.
+
+19
+00:01:36,810 --> 00:01:44,380
+Subraye alguna memoria caché única para que pueda estar seguro y seguro de que cuando usa esa clase en un componente
+
+20
+00:01:44,380 --> 00:01:49,130
+dado, ese es el único lugar donde se aplica la pluma de CC.
+
+21
+00:01:49,240 --> 00:01:53,510
+En ninguna otra parte de su aplicación, las paletas pueden tener ningún efecto.
+
+22
+00:01:53,530 --> 00:01:56,750
+Esa es la idea detrás de C-s como módulos.

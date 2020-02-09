@@ -1,0 +1,211 @@
+1
+00:00:02,850 --> 00:00:08,370
+Ya hemos puesto algo de trabajo en las listas y las hemos mejorado, por ejemplo, aprovechando
+
+2
+00:00:08,370 --> 00:00:15,390
+el índice de nuestro elemento para ejecutar algún código que realmente tenga en cuenta el elemento que ejecuta, aún podemos
+
+3
+00:00:15,390 --> 00:00:22,320
+mejorar esto, por ejemplo, al preocuparnos por este error, Estamos obteniendo el enfoque clave que le falta a la clave
+
+4
+00:00:22,320 --> 00:00:29,190
+Propp es en realidad una propiedad importante que deberíamos agregar cuando renderizamos listas de datos y es por eso que
+
+5
+00:00:29,190 --> 00:00:31,540
+Riak nos dice que lo hagamos.
+
+6
+00:00:31,920 --> 00:00:35,130
+No hemos especificado una propiedad clave en persona.
+
+7
+00:00:35,130 --> 00:00:41,970
+En realidad, se trata de una acción predeterminada que la propiedad espera encontrar en un elemento, independientemente de que sea
+
+8
+00:00:42,330 --> 00:00:47,210
+un componente personalizado o un elemento HVM predeterminado que represente a través de una lista.
+
+9
+00:00:47,220 --> 00:00:57,350
+Así que, básicamente, mapeando una matriz en J como elementos x La propiedad Diski ayuda a reactivar la lista de manera eficiente.
+
+10
+00:00:57,360 --> 00:01:00,980
+Considere el caso que tenemos aquí que borramos elementos de la lista.
+
+11
+00:01:00,990 --> 00:01:02,650
+Por supuesto que funciona
+
+12
+00:01:02,730 --> 00:01:09,420
+Pero detrás de las cámaras, reac necesita saber qué es lo que realmente necesita para ajustarse en la Dom general y
+
+13
+00:01:09,420 --> 00:01:15,510
+profundizaremos en lo que la repetición hace exactamente en una sección específica aquí en el curso. Whero le da
+
+14
+00:01:15,510 --> 00:01:17,910
+una breve mirada detrás de la escena.
+
+15
+00:01:17,910 --> 00:01:24,380
+renderizado o si realmente lo hiciera solo la Dom real con el resultado del método de renderizado
+
+16
+00:01:24,390 --> 00:01:31,920
+al Dom anterior eso lo hace hace esta compresión del futuro con el pasado básicamente y para las listas.
+
+17
+00:01:31,920 --> 00:01:37,380
+Pero básicamente lo que hace es tener algo llamado Wordle Dom donde compara lo
+
+18
+00:01:37,380 --> 00:01:40,860
+que representaría Ahora si llamara ahora al método de
+
+19
+00:01:40,860 --> 00:01:46,180
+Por supuesto, necesita descubrir qué elementos cambiaron y reaccionaron, no son humanos.
+
+20
+00:01:46,200 --> 00:01:52,260
+No vemos claramente que tengamos tres elementos distintos con nombres diferentes
+
+21
+00:01:52,860 --> 00:01:54,780
+que hice clic accidentalmente.
+
+22
+00:01:54,780 --> 00:02:00,740
+Por lo tanto, no se ve que este sea el menú de Mac y Steffanie reaccione que solo tiene un montón de
+
+23
+00:02:01,170 --> 00:02:03,300
+componentes de persona y no los inspecciona profundamente.
+
+24
+00:02:03,300 --> 00:02:05,170
+Eso sería super ineficiente.
+
+25
+00:02:05,670 --> 00:02:08,700
+Por lo tanto, solo Riera estará bajo la lista completa.
+
+26
+00:02:08,700 --> 00:02:11,790
+Y para una larga lista esto es muy ineficiente.
+
+27
+00:02:11,790 --> 00:02:17,040
+Ahí es donde deberíamos asignar una clave a una propiedad para permitir que reaccionemos reaccionemos
+
+28
+00:02:17,040 --> 00:02:24,720
+para hacer un seguimiento de los elementos individuales para que tenga una propiedad clara que pueda comparar entre los diferentes elementos para descubrir
+
+29
+00:02:24,720 --> 00:02:26,800
+qué elementos cambiaron y cuáles no.
+
+30
+00:02:26,910 --> 00:02:31,680
+Por lo tanto, solo agregaron elementos re-leídos que cambiaron y no toda la lista.
+
+31
+00:02:32,040 --> 00:02:38,870
+Entonces, lo que hacemos es asignar la clave y ahora, ¿qué le asignamos aquí algo único?
+
+32
+00:02:39,180 --> 00:02:45,120
+probable que tenga alguna idea sobre sus elementos si los obtiene de una base de datos o algo así.
+
+33
+00:02:45,120 --> 00:02:45,790
+Normalmente, es
+
+34
+00:02:45,810 --> 00:02:53,370
+Hay muchas posibilidades de que tengas una identificación o cualquier otro identificador único y tu nombre sea
+
+35
+00:02:53,370 --> 00:02:56,250
+único, pero eso no está necesariamente garantizado.
+
+36
+00:02:56,250 --> 00:03:02,340
+Entonces, lo que podríamos hacer es usar el índice porque, después de todos los cambios indexados, cada elemento del
+
+37
+00:03:02,340 --> 00:03:02,630
+conjunto.
+
+38
+00:03:02,630 --> 00:03:03,210
+Derecha.
+
+39
+00:03:03,450 --> 00:03:04,110
+Está bien.
+
+40
+00:03:04,110 --> 00:03:06,920
+Pero el índice también es parte de la lista en sí.
+
+41
+00:03:07,020 --> 00:03:11,160
+Si la lista cambia, cada elemento recibirá un nuevo índice.
+
+42
+00:03:11,160 --> 00:03:13,740
+Al menos cada elemento después de cambiar.
+
+43
+00:03:13,740 --> 00:03:19,890
+Por lo tanto, no es una buena clave, al final no ayudará realmente a reaccionar, por lo que deberíamos tratar de
+
+44
+00:03:19,890 --> 00:03:21,010
+tener un identificador único.
+
+45
+00:03:21,240 --> 00:03:26,530
+Y nuevamente, esto es solo Dummy Data Dator, aquí simplemente agregaré una ID en datos reales.
+
+46
+00:03:26,550 --> 00:03:32,380
+Hay muchas posibilidades de que tengas una ID de identificación así no tiene que ser un número, puede ser algo único.
+
+47
+00:03:32,460 --> 00:03:37,650
+Así que aquí estoy presionando mi teclado para obtener algunas ID únicas.
+
+48
+00:03:37,650 --> 00:03:40,040
+Ahora con eso puedo usar eso.
+
+49
+00:03:40,050 --> 00:03:48,240
+Estás con ID de persona para asegurarte de que cada elemento tenga una clave única que reac puede usar para comparar los
+
+50
+00:03:48,240 --> 00:03:54,790
+elementos del futuro con los elementos del pasado y solo hasta los lugares inactivos donde necesita actualizarse.
+
+51
+00:03:55,020 --> 00:04:01,680
+Ahora si eso, si volvemos a cargar esto y nos dirigimos a personas, la advertencia clave se va, obtenemos el mismo
+
+52
+00:04:01,680 --> 00:04:06,230
+comportamiento que antes y podemos inspeccionar esto para ver cómo se actualiza a Saddam aquí.
+
+53
+00:04:06,270 --> 00:04:12,390
+Pero detrás de las escenas ahora es capaz de hacer eso de una manera más eficiente que, por supuesto, es muy importante.

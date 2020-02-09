@@ -1,0 +1,375 @@
+1
+00:00:01,990 --> 00:00:08,480
+Now that we add a lot of functionality and learned about that key, let's finetune our application
+
+2
+00:00:08,480 --> 00:00:13,970
+here a bit more because in the person we still have that input where we have the onChange handler where
+
+3
+00:00:13,970 --> 00:00:19,510
+we try to execute changed this prop and also get the value as an input.
+
+4
+00:00:19,670 --> 00:00:25,290
+And in the end, the goal is that if we type here, we adjust the name of the user for which we type this.
+
+5
+00:00:25,310 --> 00:00:31,280
+Now that we render a list and have truly dynamic content we can finally set this up in a truly dynamic
+
+6
+00:00:31,280 --> 00:00:31,950
+way.
+
+7
+00:00:32,150 --> 00:00:38,830
+So what we need to do is we simply need to provide this change property pointing to some event listener
+
+8
+00:00:38,830 --> 00:00:42,850
+or to some method which correctly updates the state.
+
+9
+00:00:42,920 --> 00:00:47,750
+So here I will add changed and now we need to point us to some method,
+
+10
+00:00:47,990 --> 00:00:51,700
+we got the nameChangedHandler,
+
+11
+00:00:51,980 --> 00:00:54,820
+so let's simply use that here.
+
+12
+00:00:55,130 --> 00:00:57,870
+Let's point to the nameChangedHandler
+
+13
+00:00:58,040 --> 00:01:05,270
+and now here, in this nameChangedHandler, I need two pieces of information. I need to get the events still
+
+14
+00:01:05,330 --> 00:01:07,490
+to get access to the event target value,
+
+15
+00:01:07,490 --> 00:01:12,660
+so to what the user entered, but I also expect a second input.
+
+16
+00:01:12,740 --> 00:01:19,120
+I want to get the ID of the user to update or the index in the array,
+
+17
+00:01:19,130 --> 00:01:20,960
+but now since we assigned IDs,
+
+18
+00:01:20,960 --> 00:01:22,540
+Why not use that?
+
+19
+00:01:23,150 --> 00:01:30,230
+So therefore down here I will again use this function syntax to conveniently pass that data.
+
+20
+00:01:30,260 --> 00:01:37,170
+Now this function here, the overall function is the one which gets executed upon the onChange event.
+
+21
+00:01:37,220 --> 00:01:40,810
+So here is where we get the event object just as we before
+
+22
+00:01:40,810 --> 00:01:46,340
+got it when we didn't assign any function at all directly in the nameChangedHandler,
+
+23
+00:01:46,340 --> 00:01:51,440
+now we get it here because this is now the first function which gets executed, this anonymous function
+
+24
+00:01:51,440 --> 00:01:53,100
+we define here.
+
+25
+00:01:53,210 --> 00:01:56,660
+I can then pass it on to the nameChangedHandler
+
+26
+00:01:56,900 --> 00:02:00,620
+and I also want to pass person ID to it.
+
+27
+00:02:00,620 --> 00:02:04,310
+The person ID of course is available since we're inside the map method here,
+
+28
+00:02:04,340 --> 00:02:07,940
+So we got access to the person and hence to the ID
+
+29
+00:02:08,600 --> 00:02:17,180
+and with that we now can use that information in the nameChangedHandler. We want to update the state
+
+30
+00:02:17,180 --> 00:02:21,740
+but of course only for the person into which input field we typed.
+
+31
+00:02:21,770 --> 00:02:27,230
+So we need to find that person, the single person and we can do this by reaching out to the state, to
+
+32
+00:02:27,230 --> 00:02:36,080
+the persons there and by calling find. This again is a default javascript method which gives us this
+
+33
+00:02:36,090 --> 00:02:37,080
+person.
+
+34
+00:02:37,460 --> 00:02:45,680
+We can also use find index to find the element in an array but then get the index of that element and
+
+35
+00:02:45,680 --> 00:02:48,830
+yes we could have passed the index directly into this function,
+
+36
+00:02:48,830 --> 00:02:55,220
+I just want to show you this alternative approach taken advantage of the ID. Find index takes a function
+
+37
+00:02:55,220 --> 00:03:02,930
+as an input just as map did and just as a map, it will execute this function on every element in the
+
+38
+00:03:02,930 --> 00:03:03,670
+array.
+
+39
+00:03:03,980 --> 00:03:10,820
+So here I will execute a function where I get the person, this argument name is up to you but person
+
+40
+00:03:10,820 --> 00:03:12,940
+is already taken by a constant,
+
+41
+00:03:13,100 --> 00:03:16,940
+where I get this person as an input and then I get the function body.
+
+42
+00:03:17,240 --> 00:03:22,240
+Now unlike map here I don't map this element into something new
+
+43
+00:03:22,310 --> 00:03:27,200
+instead here I have to return true or false depending on whether this is the person I was looking for
+
+44
+00:03:27,500 --> 00:03:32,810
+or speaking generally if this is the element I was looking for or not.
+
+45
+00:03:32,840 --> 00:03:34,780
+Now it is the person I was looking for
+
+46
+00:03:34,790 --> 00:03:36,920
+if P ID,
+
+47
+00:03:37,130 --> 00:03:39,960
+So this single person I'm currently looking at.
+
+48
+00:03:39,980 --> 00:03:44,070
+Again keep in mind this function is executed for every element in this array.
+
+49
+00:03:44,510 --> 00:03:50,570
+If that is equal to the idea I receiveed as an argument to this function, that's equal that will return
+
+50
+00:03:50,570 --> 00:03:51,160
+true,
+
+51
+00:03:51,320 --> 00:03:58,670
+and then person, index maybe is a better name, will hold the index of the person in their array for
+
+52
+00:03:58,670 --> 00:04:01,370
+which the IDs are equal.
+
+53
+00:04:01,370 --> 00:04:09,290
+I can then get the person itself by reaching out to these state persons and accessing the element at
+
+54
+00:04:09,290 --> 00:04:12,670
+the person index, the index I just fetched here.
+
+55
+00:04:13,160 --> 00:04:14,730
+Now just as before,
+
+56
+00:04:14,840 --> 00:04:21,830
+it is a good practice to not mutate the state directly and a person in the person's array as you can
+
+57
+00:04:21,830 --> 00:04:25,200
+clearly confirm here is a javascript object.
+
+58
+00:04:25,220 --> 00:04:32,240
+Now as I told you javascript objects are reference types so we shouldn't mutate them directly because
+
+59
+00:04:32,240 --> 00:04:38,470
+we only get a pointer when we reach out to person here and hence we would mutate the original object
+
+60
+00:04:38,480 --> 00:04:40,290
+to which this pointer points.
+
+61
+00:04:40,790 --> 00:04:51,140
+So the better approach is to create a new javascript object like this and then use this spread operator
+
+62
+00:04:51,500 --> 00:04:53,820
+in front of the object I'm fetching.
+
+63
+00:04:53,960 --> 00:04:59,810
+Just like with the array it's also available for objects and it will distribute all the properties
+
+64
+00:05:00,080 --> 00:05:05,870
+of the object we fetch here into this new object we're creating here.
+
+65
+00:05:06,130 --> 00:05:11,940
+And here we also got an alternative approach which I won't use but the alternative approach using
+
+66
+00:05:11,980 --> 00:05:19,000
+without the spread operator would be to use object assign a default javascript function where we pass
+
+67
+00:05:19,000 --> 00:05:25,600
+an empty object as the first argument and then the object which properties you want to assign into
+
+68
+00:05:25,600 --> 00:05:27,840
+it as the second object,
+
+69
+00:05:28,660 --> 00:05:30,540
+or the second argument I should say.
+
+70
+00:05:30,700 --> 00:05:35,560
+So object assigned with an empty object and then the object of which we want to get the properties
+
+71
+00:05:35,860 --> 00:05:36,980
+is the alternative.
+
+72
+00:05:37,120 --> 00:05:41,920
+But I'll comment that out because I want to use the more modern approach of the spread operator, you
+
+73
+00:05:41,920 --> 00:05:43,230
+can absolutely use both
+
+74
+00:05:43,240 --> 00:05:46,720
+though, there is no better or worse here.
+
+75
+00:05:46,780 --> 00:05:48,700
+So with that I get the person.
+
+76
+00:05:48,700 --> 00:05:53,790
+Now I want to update the person name of course and I can do this because I got a copy,
+
+77
+00:05:53,800 --> 00:06:02,500
+I'm not manipulating the original object now and I can set it to event target.value, just as
+
+78
+00:06:02,500 --> 00:06:04,500
+we did before.
+
+79
+00:06:04,510 --> 00:06:12,300
+Now I need to update the array of course and I want to update the array at this position I fetched here.
+
+80
+00:06:12,730 --> 00:06:20,500
+So just as before I can now get my persons, the whole array with the spread operator or with slice
+
+81
+00:06:20,710 --> 00:06:23,110
+by reaching out to state persons.
+
+82
+00:06:23,500 --> 00:06:31,690
+And now I can update it at one position, persons, person index should now be my updated person here
+
+83
+00:06:31,690 --> 00:06:34,310
+and again I'm always working with copies here.
+
+84
+00:06:34,840 --> 00:06:44,620
+Now we got an updated person's array and this finally allows us to set the state here and set it to this
+
+85
+00:06:44,680 --> 00:06:52,360
+updated persons array which is a copy of the old array where we updated one element with the updated
+
+86
+00:06:52,360 --> 00:06:55,390
+person where we adjusted the name.
+
+87
+00:06:55,390 --> 00:07:01,550
+A lot of code but the best way of doing it, the most efficient way without mutating the state,
+
+88
+00:07:01,690 --> 00:07:08,650
+and now if we save this what we should see is that we no longer get that warning from before, we see
+
+89
+00:07:08,710 --> 00:07:10,370
+all the names here
+
+90
+00:07:10,690 --> 00:07:17,680
+and I can start typing here and I update them for the object to which the input belongs.
+
+91
+00:07:17,690 --> 00:07:21,120
+So now we get a truly flexible component here,
+
+92
+00:07:21,220 --> 00:07:28,600
+a truly flexible application taking advantage of modern features to render this list efficiently and
+
+93
+00:07:28,660 --> 00:07:30,910
+interact with it efficiently.
+
+94
+00:07:30,910 --> 00:07:32,120
+Super important.

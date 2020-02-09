@@ -1,0 +1,247 @@
+1
+00:00:02,170 --> 00:00:06,880
+Ve Son Konuşma, yapılandırmayı çıkartarak bu modülü etkinleştiririz.
+
+2
+00:00:06,880 --> 00:00:13,410
+İyi ayar yaparak CSA'dan sınıfları aşağıdaki gibi içe aktarmaya ve kullanmaya başlayın.
+
+3
+00:00:13,450 --> 00:00:17,410
+Şimdi de sahte seçiciler ve medya sorguları ekleyelim.
+
+4
+00:00:17,590 --> 00:00:22,880
+Burada bir düğme stili atadığımız Apogees'de sözde elektroslar önemlidir.
+
+5
+00:00:22,990 --> 00:00:30,190
+Artık bunu satır başında yapmayacağım, bu yüzden buradaki D-Star mülkünü kaldıracağım ve mağazanın arka
+
+6
+00:00:30,190 --> 00:00:35,760
+plan rengini burada okumak için ayarlamayacağım ve artık stili böyle ayarlamayacağım.
+
+7
+00:00:35,860 --> 00:00:43,200
+olarak yapmak istiyoruz. Dolayısıyla artık AC Ss sınıfı bir düğme oluşturabiliriz, böylece AC Ss sınıfı düğmeye atamış
+
+8
+00:00:43,200 --> 00:00:51,010
+olabilir veya yalnızca içinde yer alan her düğme için bir kural olarak normal bir Görgü Kuralları yaratırız. sarma sınıfı.
+
+9
+00:00:51,010 --> 00:00:54,430
+Bunu yapabilirdik, ancak şimdi DC'yi US Marshals stili
+
+10
+00:00:54,580 --> 00:00:58,200
+Artık istediğimiz stilleri atayabiliriz.
+
+11
+00:00:58,210 --> 00:01:03,150
+Şimdi bu, onları silmeden önce sahip olduğumuz stiller olmalı, böylece yeniden oluşturmaya çalışacağım.
+
+12
+00:01:03,280 --> 00:01:05,000
+Sanırım mavi bir sınır vardı.
+
+13
+00:01:05,260 --> 00:01:08,230
+Bazı dolgu belki 16 piksel ekleyelim.
+
+14
+00:01:08,500 --> 00:01:13,650
+Yeşil arka plan rengi ekleyelim.
+
+15
+00:01:13,650 --> 00:01:15,490
+Varsayılan olarak belki.
+
+16
+00:01:15,700 --> 00:01:19,200
+Ve fontu devralacak şekilde ayarlayalım.
+
+17
+00:01:19,410 --> 00:01:28,910
+Şimdi bunu kaydedersek Stolle düğmesini de almamız gerekiyor, çünkü yine de stilleri uyguluyoruz.
+
+18
+00:01:28,940 --> 00:01:32,030
+Artık hattasın değil.
+
+19
+00:01:32,030 --> 00:01:35,560
+Gerçekten değiĢiklikleri görmek için diyaframı da kaydettiğinizden emin olun.
+
+20
+00:01:35,600 --> 00:01:42,580
+Artık bu stili artık çizgiden çekmemeliyiz ancak buradaki düğme durdu çünkü uygulama
+
+21
+00:01:42,590 --> 00:01:44,510
+seçicimizin altına yerleştirilmiş.
+
+22
+00:01:44,720 --> 00:01:49,200
+Bir uygulama bu özel seçici dış div için geçerlidir.
+
+23
+00:01:49,270 --> 00:01:57,250
+Şimdi rengi ince ayar yapmama izin verin ve tabii ki hala düğmeyi kırmızıya
+
+24
+00:01:57,250 --> 00:02:01,980
+ayarlamak istiyoruz ve üzerinde gezinmeyi görebilmek istiyoruz.
+
+25
+00:02:02,360 --> 00:02:03,730
+Bu yüzden düğmeyi eklememe izin verin.
+
+26
+00:02:03,860 --> 00:02:05,000
+Vurgusu.
+
+27
+00:02:05,300 --> 00:02:06,560
+Normalcy burada bir kod.
+
+28
+00:02:06,560 --> 00:02:15,130
+Hiçbir şey fantezi ve arka plan rengini burada açık yeşil ve rengi siyah olarak ayarlayın.
+
+29
+00:02:15,140 --> 00:02:16,680
+Olabilir.
+
+30
+00:02:16,870 --> 00:02:19,990
+Ve şimdi kırmızı kutuyu ekleyelim.
+
+31
+00:02:20,320 --> 00:02:26,230
+Bunun için sadece uygulama düğmesini kırmızıya ekleyeceğim.
+
+32
+00:02:26,500 --> 00:02:34,150
+rengini ayarladığı ve şimdi uygulama düğmesini de eklediği herhangi bir düğmeyi stil istedi.
+
+33
+00:02:34,450 --> 00:02:39,820
+Bu yüzden normallik, okuma sınıfının okumak için arka plan
+
+34
+00:02:39,880 --> 00:02:49,470
+Okumak üzerine tıklayarak Salmen'e arka plan rengini ve kırmızı sınıfı olan Hubbard düğmeleri için
+
+35
+00:02:49,470 --> 00:02:50,710
+rengini ayarlayın.
+
+36
+00:02:50,730 --> 00:02:55,740
+Şimdi tek yapmamız gereken, koşulan Duret sınıfını bu düğmeye ihtiyacımız olursa eklemektir.
+
+37
+00:02:55,740 --> 00:03:04,860
+Yani uygulama J. geri. S. biz sadece sınıfın adını düğmenin dışına bağlamamız gerekecek,
+
+38
+00:03:04,860 --> 00:03:08,770
+bu yüzden yapacağız, tabiki deyimden önce elbette bir render işlevi değil.
+
+39
+00:03:08,960 --> 00:03:17,380
+Diyelim ki boş dize olan varsayılan bir düğme sınıfımız var.
+
+40
+00:03:17,480 --> 00:03:29,760
+eğer if deyimi, Button sınıfının okumaya eşdeğer okula izin verdiği kişilere göz attığımızı görelim.
+
+41
+00:03:29,770 --> 00:03:30,850
+Sonra
+
+42
+00:03:30,850 --> 00:03:40,080
+Şimdi düğmeye gidip sınıf adı ekleyin ve bunu düğme sınıfına eşit ayarlayın.
+
+43
+00:03:40,270 --> 00:03:41,520
+Şimdi önemli bir not.
+
+44
+00:03:41,530 --> 00:03:46,990
+Ancak, bir sınıf adı ve sınıfı iş parçacığı ve sonunu atarsak, sınıf her zaman bir dize olmalıdır.
+
+45
+00:03:47,080 --> 00:03:55,140
+D. tarafından yaratılan sadece bir dize. C. 'ın yükleyicisi bize yine de sınıfa erişime izin
+
+46
+00:03:55,230 --> 00:03:59,300
+veriyor ancak geçerli C Ss ile bir dize döndürüyor veya boş bir dizedir.
+
+47
+00:03:59,350 --> 00:04:01,820
+Eğer durumun dışındaysak.
+
+48
+00:04:02,180 --> 00:04:06,890
+Şimdi bunu kurtaralım, havada gezinmeye bakalım x'ydi.
+
+49
+00:04:07,000 --> 00:04:12,610
+İşaretçi bir şey olduğunu eklemeliyiz ve üzerine tıkladığınızda, görebileceğiniz kötü cümle ile şimdi
+
+50
+00:04:12,610 --> 00:04:14,150
+de işe yarıyor.
+
+51
+00:04:14,350 --> 00:04:22,300
+Böylece, sınıf olarak okunan öğeleri görebileceğiniz gibi, iç içe geçmiş sınıflar için olan bu tüm işler yalnızca unbutton'ları ve
+
+52
+00:04:22,300 --> 00:04:24,100
+hala javascript bileşenimizi buluyor.
+
+53
+00:04:24,310 --> 00:04:27,580
+Oberle sınıfları nesnesine ithal ettik.
+
+54
+00:04:27,910 --> 00:04:32,360
+Dolayısıyla, DC'de tanımladığımız herhangi bir C S S sınıfı aşağıdaki gibidir.
+
+55
+00:04:32,390 --> 00:04:39,880
+Bu C-s'ler ile modül olarak aktarıyoruz, burada Colossus nesnesinde sadece Lechter özel
+
+56
+00:04:39,880 --> 00:04:46,030
+bir altkümeye uygulansa bile, burada tanımlanan tüm sınıfları etkinleştirebiliyoruz.
+
+57
+00:04:46,030 --> 00:04:49,720
+Bu CSSA dosyasından içe aktarılıyor.
+
+58
+00:04:49,730 --> 00:04:52,910
+Şimdi, bu düğme şeyini şu ana kadar bitirmeme izin verin.
+
+59
+00:04:52,910 --> 00:05:00,830
+Yine de bir imleç olan bir işaretçi ekleyerek bunun tüm yanlışını kaydediyoruz ve şimdi bu güzel işaretçiyi burada
+
+60
+00:05:00,830 --> 00:05:01,350
+alıyoruz.
+
+61
+00:05:01,520 --> 00:05:03,660
+Her şey olması gerektiği gibi çalışıyor.
+
+62
+00:05:04,100 --> 00:05:06,140
+Şimdi medya sorgularına bir göz atalım.

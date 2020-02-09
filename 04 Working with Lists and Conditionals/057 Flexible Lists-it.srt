@@ -1,0 +1,375 @@
+1
+00:00:01,990 --> 00:00:08,480
+Sappi che aggiungiamo un sacco di funzionalità e abbiamo imparato a conoscere questa chiave. Troviamoci qui nella nostra applicazione
+
+2
+00:00:08,480 --> 00:00:13,970
+un po 'di più perché nella persona abbiamo ancora quell'input in cui dobbiamo gestire il gestore
+
+3
+00:00:13,970 --> 00:00:19,510
+onchange dove proviamo a eseguire questa modifica e anche a ottenere il valore come input.
+
+4
+00:00:19,670 --> 00:00:25,290
+E alla fine l'obiettivo è che se scriviamo qui siamo solo il nome dell'utente per il quale digitiamo questo.
+
+5
+00:00:25,310 --> 00:00:31,280
+Ora che eseguiamo il rendering di un elenco e disponiamo di contenuti veramente dinamici, possiamo finalmente configurarlo in modo
+
+6
+00:00:31,280 --> 00:00:31,950
+veramente dinamico.
+
+7
+00:00:32,150 --> 00:00:38,830
+Quindi, quello che dobbiamo fare è semplicemente fornire questa proprietà change che punta ad alcuni listener di
+
+8
+00:00:38,830 --> 00:00:42,850
+eventi o ad un metodo che aggiorna correttamente lo stato.
+
+9
+00:00:42,920 --> 00:00:47,750
+Quindi sei in grado di cambiare e ora abbiamo bisogno di indicarci un metodo.
+
+10
+00:00:47,990 --> 00:00:51,700
+Abbiamo ricevuto il nome di gestore modificato.
+
+11
+00:00:51,980 --> 00:00:54,820
+Quindi usiamolo semplicemente qui.
+
+12
+00:00:55,130 --> 00:00:57,870
+Indichiamo il nome cambiato gestore.
+
+13
+00:00:58,040 --> 00:01:05,270
+E ora, in questo nome, cambio gestore e due informazioni che ho bisogno di ottenere ancora gli eventi per ottenere
+
+14
+00:01:05,330 --> 00:01:07,490
+l'accesso al valore di destinazione dell'evento.
+
+15
+00:01:07,490 --> 00:01:12,660
+Quindi a ciò che l'utente ha inserito, ma mi aspetto anche un secondo input.
+
+16
+00:01:12,740 --> 00:01:19,120
+Voglio ottenere l'ID dell'utente da aggiornare o indicizzare nell'array.
+
+17
+00:01:19,130 --> 00:01:20,960
+Ma ora assegniamo gli ID.
+
+18
+00:01:20,960 --> 00:01:22,540
+Perché non usarlo
+
+19
+00:01:23,150 --> 00:01:30,230
+Quindi, quaggiù, userò nuovamente questa sintassi della funzione per passare comodamente i dati.
+
+20
+00:01:30,260 --> 00:01:37,170
+Ora questa funzione qui la funzione generale è quella che viene eseguita sull'evento onchange.
+
+21
+00:01:37,220 --> 00:01:40,810
+Quindi qui è dove otteniamo l'oggetto evento proprio come prima.
+
+22
+00:01:40,810 --> 00:01:46,340
+Ottenuto quando non abbiamo assegnato alcuna funzione direttamente nel gestore del nome modificato.
+
+23
+00:01:46,340 --> 00:01:51,440
+Ora lo otteniamo qui perché questa è ora la prima funzione che viene eseguita questa
+
+24
+00:01:51,440 --> 00:01:53,100
+funzione anonima che qui definiamo.
+
+25
+00:01:53,210 --> 00:01:56,660
+Posso quindi passarlo al gestore di modifica del nome.
+
+26
+00:01:56,900 --> 00:02:00,620
+E voglio anche passargli l'ID della persona.
+
+27
+00:02:00,620 --> 00:02:04,310
+L'ID della persona è ovviamente disponibile poiché siamo all'interno del metodo della mappa qui.
+
+28
+00:02:04,340 --> 00:02:07,940
+Quindi siamo arrivati ​​alla persona e quindi all'ID.
+
+29
+00:02:08,600 --> 00:02:17,180
+E con questo ora possiamo usare quelle informazioni nel gestore del cambio di nome che vogliamo aggiornare lo stato.
+
+30
+00:02:17,180 --> 00:02:21,740
+Ma ovviamente solo per la persona in cui il campo di input che abbiamo digitato.
+
+31
+00:02:21,770 --> 00:02:27,230
+bisogno di trovare quella persona la singola persona e possiamo farlo raggiungendo lo
+
+32
+00:02:27,230 --> 00:02:36,080
+stato per lo sguardo della persona e chiamando find di nuovo come un metodo javascript predefinito che ci dà questa persona.
+
+33
+00:02:36,090 --> 00:02:37,080
+Quindi abbiamo
+
+34
+00:02:37,460 --> 00:02:45,680
+Possiamo anche usare l'indice di ricerca per trovare l'elemento in una matrice, ma poi ottenere l'indice di quell'elemento e sì
+
+35
+00:02:45,680 --> 00:02:48,830
+avremmo potuto passare l'indice direttamente in questa funzione.
+
+36
+00:02:48,830 --> 00:02:55,220
+Voglio solo mostrarti che questo approccio alternativo sfruttato dall'indice di ricerca ID prende
+
+37
+00:02:55,220 --> 00:03:02,930
+una funzione come input appena mappato e, proprio come una mappa, eseguirà questa funzione su ogni
+
+38
+00:03:02,930 --> 00:03:03,670
+elemento dell'array.
+
+39
+00:03:03,980 --> 00:03:10,820
+Quindi qui eseguirò una funzione in cui ottengo la persona che questo argomento nome è a voi, ma la persona
+
+40
+00:03:10,820 --> 00:03:12,940
+è già presa da una costante.
+
+41
+00:03:13,100 --> 00:03:16,940
+Dove ottengo questa persona è un input e poi ottengo il corpo della funzione.
+
+42
+00:03:17,240 --> 00:03:22,240
+Ora a differenza della mappa qui non mappare questo elemento in qualcosa di nuovo.
+
+43
+00:03:22,310 --> 00:03:27,200
+Invece qui devo restituire il vero o il falso a seconda che si tratti della
+
+44
+00:03:27,500 --> 00:03:32,810
+persona che stavo cercando o che parlava generalmente se questo fosse l'elemento che stavo cercando o meno.
+
+45
+00:03:32,840 --> 00:03:34,780
+Ora è la persona che stavo cercando.
+
+46
+00:03:34,790 --> 00:03:36,920
+Se P ID.
+
+47
+00:03:37,130 --> 00:03:39,960
+Quindi questa singola persona che sto guardando attualmente.
+
+48
+00:03:39,980 --> 00:03:44,070
+Ancora una volta si ricorda che questa funzione viene eseguita per ogni elemento e.
+
+49
+00:03:44,510 --> 00:03:50,570
+Se questo è uguale all'idea o ricevuto come argomento a questa funzione è uguale a quello che
+
+50
+00:03:50,570 --> 00:03:51,160
+restituirà true.
+
+51
+00:03:51,320 --> 00:03:58,670
+E poi un indice persona potrebbe essere un nome migliore conterrà l'indice della persona nel proprio array
+
+52
+00:03:58,670 --> 00:04:01,370
+per cui gli ID sono uguali.
+
+53
+00:04:01,370 --> 00:04:09,290
+Posso quindi ottenere la persona stessa raggiungendo queste persone statali e accedendo all'elemento alla persona
+
+54
+00:04:09,290 --> 00:04:12,670
+indicizza l'indice che ho appena trovato qui.
+
+55
+00:04:13,160 --> 00:04:14,730
+Ora come prima.
+
+56
+00:04:14,840 --> 00:04:21,830
+e una persona nell'array della persona, poiché è possibile confermare chiaramente che si tratta di un oggetto javascript.
+
+57
+00:04:21,830 --> 00:04:25,200
+È buona norma non mutare direttamente lo stato
+
+58
+00:04:25,220 --> 00:04:32,240
+Ora, come ti ho detto, gli oggetti javascript sono tipi di riferimento, quindi non dovremmo mutarli direttamente perché
+
+59
+00:04:32,240 --> 00:04:38,470
+otteniamo un puntatore solo quando raggiungiamo la persona qui e quindi dovremmo mutare l'oggetto originale a
+
+60
+00:04:38,480 --> 00:04:40,290
+cui punta questo puntatore.
+
+61
+00:04:40,790 --> 00:04:51,140
+Quindi l'approccio migliore è quello di creare un nuovo oggetto javascript come questo e quindi utilizzare questo operatore di spread di
+
+62
+00:04:51,500 --> 00:04:53,820
+fronte all'oggetto che sto recuperando.
+
+63
+00:04:53,960 --> 00:04:59,810
+Proprio come con l'array è tutto il livello di livello per gli oggetti e distribuirà
+
+64
+00:05:00,080 --> 00:05:05,870
+tutte le proprietà dell'oggetto che recupereremo in questo nuovo Optik che stiamo creando qui.
+
+65
+00:05:06,130 --> 00:05:11,940
+E qui abbiamo anche un approccio alternativo che non userò ma l'approccio alternativo
+
+66
+00:05:11,980 --> 00:05:19,000
+che lo usa senza l'operatore di spread sarebbe di usare l'oggetto assegna una funzione javascript predefinita
+
+67
+00:05:19,000 --> 00:05:25,600
+dove passiamo un oggetto vuoto come primo argomento e poi l'oggetto a cui proprietà che
+
+68
+00:05:25,600 --> 00:05:27,840
+si desidera assegnare come secondo oggetto.
+
+69
+00:05:28,660 --> 00:05:30,540
+O il secondo argomento dovrei dire.
+
+70
+00:05:30,700 --> 00:05:35,560
+Quindi il segno assegnato oggetto con un oggetto vuoto e quindi l'oggetto di cui vogliamo ottenere
+
+71
+00:05:35,860 --> 00:05:36,980
+le proprietà è l'alternativa.
+
+72
+00:05:37,120 --> 00:05:41,920
+voglio usare l'approccio più moderno dell'operatore di diffusione che puoi assolutamente usare entrambi.
+
+73
+00:05:41,920 --> 00:05:43,230
+Ma lo commenterò perché
+
+74
+00:05:43,240 --> 00:05:46,720
+Anche se qui non c'è il meglio o il peggio.
+
+75
+00:05:46,780 --> 00:05:48,700
+Quindi con quello ottengo la persona.
+
+76
+00:05:48,700 --> 00:05:53,790
+Ora voglio aggiornare il nome della persona, naturalmente, e posso farlo perché ne ho ricevuto una copia.
+
+77
+00:05:53,800 --> 00:06:02,500
+Non sto manipolando l'oggetto originale ora e posso impostarlo sul valore Suzy del nome dell'evento
+
+78
+00:06:02,500 --> 00:06:04,500
+come abbiamo fatto prima.
+
+79
+00:06:04,510 --> 00:06:12,300
+Ora ho bisogno di aggiornare l'array ovviamente e voglio aggiornare l'array in questa posizione che ho recuperato qui.
+
+80
+00:06:12,730 --> 00:06:20,500
+la mia percentuale dell'intero array che dobbiamo distribuire operatore o con una fetta raggiungendo le persone di stato.
+
+81
+00:06:20,710 --> 00:06:23,110
+Così come prima posso ora ottenere
+
+82
+00:06:23,500 --> 00:06:31,690
+E ora possiamo aggiornarlo in una posizione in cui la persona in persona dovrebbe essere la mia persona aggiornata qui.
+
+83
+00:06:31,690 --> 00:06:34,310
+E di nuovo lavoro sempre con le copie qui.
+
+84
+00:06:34,840 --> 00:06:44,620
+Ora abbiamo gli Irais di una persona aggiornata e questo ci permette finalmente di impostare lo stato qui e impostarlo come array di
+
+85
+00:06:44,680 --> 00:06:52,360
+persone aggiornate che è una copia del vecchio array in cui abbiamo aggiornato un elemento con la persona
+
+86
+00:06:52,360 --> 00:06:55,390
+aggiornata in cui abbiamo modificato il nome.
+
+87
+00:06:55,390 --> 00:07:01,550
+Un sacco di codice ma il modo migliore di farlo nel modo più efficiente senza mutare lo stato.
+
+88
+00:07:01,690 --> 00:07:08,650
+questo, ciò che dovremmo vedere è che non riceviamo più questo avviso prima di vedere tutti i nomi qui.
+
+89
+00:07:08,710 --> 00:07:10,370
+E ora, se salviamo
+
+90
+00:07:10,690 --> 00:07:17,680
+E posso iniziare a digitare qui e aggiornarli per l'oggetto a cui appartiene l'input.
+
+91
+00:07:17,690 --> 00:07:21,120
+Quindi ora abbiamo una componente veramente flessibile qui.
+
+92
+00:07:21,220 --> 00:07:28,600
+Un'applicazione veramente flessibile che sfrutta le moderne funzionalità per rendere questo elenco efficiente e interagire
+
+93
+00:07:28,660 --> 00:07:30,910
+con esso in modo efficiente.
+
+94
+00:07:30,910 --> 00:07:32,120
+Super importante.

@@ -1,0 +1,123 @@
+1
+00:00:02,250 --> 00:00:08,020
+Teraz nauczyłeś się czytać i rozumieć komunikaty o błędach oraz znaleźć błędy logiczne.
+
+2
+00:00:08,100 --> 00:00:13,860
+Czasami chcesz znać aktualny stan swojej aplikacji reagowania i chociaż możesz to zrozumieć
+
+3
+00:00:13,860 --> 00:00:17,500
+za pomocą narzędzi programistycznych, może to być niewygodne.
+
+4
+00:00:17,970 --> 00:00:24,120
+Na szczęście istnieje fajne rozszerzenie, które możesz dodać do Chrome, reagować na narzędzia
+
+5
+00:00:24,120 --> 00:00:25,730
+programistyczne, zainstalujmy je razem.
+
+6
+00:00:25,950 --> 00:00:32,760
+Możesz po prostu google zareagować na narzędzia programistyczne, a znajdziesz tam repozytorium github, gdzie możesz dowiedzieć się więcej o
+
+7
+00:00:32,760 --> 00:00:38,700
+nich, jak z nich korzystać, a nawet możesz wnieść wkład do projektu lub po prostu przejdź do
+
+8
+00:00:38,700 --> 00:00:39,610
+sklepu internetowego Chrome.
+
+9
+00:00:39,630 --> 00:00:39,890
+Teraz,
+
+10
+00:00:39,900 --> 00:00:40,400
+nie martw
+
+11
+00:00:40,400 --> 00:00:42,930
+się, są one darmowe. W Chrome Web
+
+12
+00:00:42,930 --> 00:00:48,630
+Store dodałem je już do Chrome, ale jeśli tego nie zrobiłeś, możesz je dodać do Chrome.
+
+13
+00:00:48,630 --> 00:00:54,960
+Gdy je dodasz, prawdopodobnie będziesz musiał ponownie uruchomić Chrome, a następnie
+
+14
+00:00:54,960 --> 00:00:59,210
+w narzędziach dla programistów Chrome, możesz wybrać reakcję,
+
+15
+00:00:59,220 --> 00:01:06,810
+ta nowa karta powinna być już dostępna. Bardzo fajne jest to, że teraz widzisz swoją aplikację reagowania podczas
+
+16
+00:01:06,870 --> 00:01:12,330
+jej tworzenia, jeśli klikniesz, przełącz osobę, zobaczysz coś, co różni się od normalnej karty elementów, które masz.
+
+17
+00:01:12,810 --> 00:01:19,260
+Nie widzisz tylko elementów DOM, w których widzisz komponenty, które lubią komponent osoby tutaj
+
+18
+00:01:19,260 --> 00:01:20,670
+lub komponent aplikacji.
+
+19
+00:01:21,090 --> 00:01:26,840
+I tam, na przycisku, widzisz także podpórki i stan tego komponentu, więc jeśli chodzi o
+
+20
+00:01:27,000 --> 00:01:29,590
+komponent aplikacji, zobaczysz tablicę danej osoby i
+
+21
+00:01:29,680 --> 00:01:33,500
+jeśli kliknę osobę, usuń ją, to też jest zaktualizowane.
+
+22
+00:01:33,510 --> 00:01:39,860
+Tak więc możesz zobaczyć swój stan, możesz go także zmienić tam i dla składnika osoby, zobaczysz, że
+
+23
+00:01:39,870 --> 00:01:47,430
+nie ma stanu, ale ma rekwizyty i jakie są rekwizyty. Możesz także podświetlić aktualizacje, aby zobaczyć zaznaczone
+
+24
+00:01:47,700 --> 00:01:51,480
+tutaj, co zmieniło się w Twoim kodzie,
+
+25
+00:01:51,540 --> 00:01:56,430
+np. Dodanie tej nazwy klasy, na przykład, więc jest
+
+26
+00:01:56,430 --> 00:01:58,070
+to całkiem fajne.
+
+27
+00:01:58,080 --> 00:02:04,650
+Umożliwia szybkie zrozumienie stanu składników aplikacji i manipulowanie nią, a także daje pewne spostrzeżenia, których nie
+
+28
+00:02:04,650 --> 00:02:10,560
+można łatwo uzyskać za pomocą zwykłych narzędzi programistycznych, ponieważ wykracza to poza pokazywanie tego,
+
+29
+00:02:10,590 --> 00:02:11,850
+co zostało wyrenderowane,
+
+30
+00:02:11,910 --> 00:02:15,500
+pokazuje, co kryje się za kulisami, co właściwie jest
+
+31
+00:02:15,510 --> 00:02:16,140
+pod maską.

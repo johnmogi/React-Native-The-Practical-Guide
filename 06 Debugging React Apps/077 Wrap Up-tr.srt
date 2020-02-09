@@ -1,0 +1,43 @@
+1
+00:00:00,170 --> 00:00:06,330
+Bu modülde, mesajımızda tepki hatasını nasıl okuyabileceğimize bakmak zorundaydık, mesajımızda
+
+2
+00:00:06,330 --> 00:00:11,520
+gördüğümüz satır numaralarını daima kontrol etmemiz gerektiğinde, mesajımızı
+
+3
+00:00:11,550 --> 00:00:13,810
+şaşırtmamamız çok yararlı olabilir.
+
+4
+00:00:13,830 --> 00:00:20,610
+Ayrıca mantıksal hataları, kaynak haritaları ve kesme noktaları yerleştirebileceğiniz ve kodunuz üzerinden geçirebileceğiniz
+
+5
+00:00:20,610 --> 00:00:24,630
+krom geliştirici araçları yardımıyla nasıl ayıklayabileceğinizi öğrendiniz.
+
+6
+00:00:24,720 --> 00:00:26,880
+Ayrıca nasıl tepki verdiğinizi öğrendiniz.
+
+7
+00:00:26,880 --> 00:00:34,680
+ve özel bir hata mesajı veya bazı geri dönüş sayfası veya içeriği gösterebilen, çalışma zamanında
+
+8
+00:00:34,680 --> 00:00:41,670
+başarısız olabilecek kodu sarmak için buradaki ok sınırını nasıl kullanacağınızı öğreneceksiniz. Bunları kullanmayın.
+
+9
+00:00:41,700 --> 00:00:46,100
+Def araçlarını kullanarak uygulamanızın durumunu öğrenin ve engelleyebileceğiniz
+
+10
+00:00:46,230 --> 00:00:55,020
+Fakat tüm bu araçlarla sertleştirilmiş, güvenli ve iyi çalışan yeniden eyleme uygulamalar yaratmak için zengin bir
+
+11
+00:00:55,290 --> 00:00:57,090
+araç ayarlamanız gerekir.

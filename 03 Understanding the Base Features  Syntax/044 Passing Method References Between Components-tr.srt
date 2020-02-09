@@ -1,0 +1,339 @@
+1
+00:00:02,590 --> 00:00:08,460
+Diyelim ki, tüm değişiklikleri D. tanımladığım anahtar adı hükndler aramak istiyoruz. H. Belki de ad mükemmel seçilmedi.
+
+2
+00:00:08,460 --> 00:00:11,060
+Diyelim ki bu düğmeyi tıklattığınızda
+
+3
+00:00:11,350 --> 00:00:17,200
+veya yalnızca bu düğmeyi tıklattığınızda değil, aynı zamanda herhangi bir paragrafa
+
+4
+00:00:17,770 --> 00:00:26,050
+tıkladığınızda bir kişinin bileşeni içinde adı ve yaşı içerdiğini söyleyen bir paragraf olduğunuzu söyleyelim diyelim.
+
+5
+00:00:26,050 --> 00:00:28,860
+Şimdi bunun için kişi bileşeninde
+
+6
+00:00:29,440 --> 00:00:37,840
+tıklamaya ekleyebiliriz, ancak şimdi işleyici yöntemini arayabileceğimiz şey farklı bir sınıfta farklı bir dosyadadır.
+
+7
+00:00:37,840 --> 00:00:40,620
+Aslında bu işleyiciye bir öğemiz
+
+8
+00:00:40,900 --> 00:00:49,000
+için bir mülk olarak bir referans göndeririz ve bu hiçbir fantezi kesmek değildir.
+
+9
+00:00:49,000 --> 00:00:50,140
+Aslında bu çok yaygın bir model.
+
+10
+00:00:50,290 --> 00:00:53,330
+Her şeyden önce yeniden yapılandırılan tüm bu
+
+11
+00:00:53,810 --> 00:00:59,620
+bileşenler için birden çok satırın üzerinde olduğundan, hangi özellikleri geçtiğimizi görmek daha kolay bir
+
+12
+00:00:59,620 --> 00:01:06,460
+zamana sahip olur ve bunu tüm bileşenleri değil sadece bu kullanım ofisi için geçirmek istemediğimizi varsayalım.
+
+13
+00:01:06,550 --> 00:01:09,630
+Böylece burada Plek adını verecek yeni bir mülk ekleyeceğim ve ad tamamen size kalmış.
+
+14
+00:01:10,030 --> 00:01:17,620
+Burada bu anahtar adı işleyicisine bir referans geçireceğim.
+
+15
+00:01:18,460 --> 00:01:23,160
+Yani temel olarak burada da ne yaptım burada
+
+16
+00:01:23,410 --> 00:01:30,460
+adı işleyicisi üzerine tıkla butonuna tıklayarak bu tıklama mülküne bir referans olarak iletiyorum.
+
+17
+00:01:30,460 --> 00:01:34,740
+Ve şimdi bu tıklama mülkünü ve kişiyi J. kullanabiliriz. S. Burada, tıklamanın burada tanımlanan mülkün adı olduğu
+
+18
+00:01:35,020 --> 00:01:45,190
+için sadece pervane tıklamasını şimdi arayabilirim.
+
+19
+00:01:45,190 --> 00:01:48,310
+Ve bu, referans olarak geçtiğim bu işlevi yürütür.
+
+20
+00:01:48,610 --> 00:01:52,740
+Dolayısıyla tüm dosyaları gerçek kişi içi sohbetler
+
+21
+00:01:52,780 --> 00:02:00,460
+olarak kaydedersek, uygulamanızda elbette Stephanie'nin Maximillian N-th adını değiştirmek için bu düğmeyi tıklayabiliriz.
+
+22
+00:02:00,460 --> 00:02:05,380
+Fakat yine yeniden yüklersek, Manue ile birlikte bu paragrafı tıklayabiliriz.
+
+23
+00:02:05,590 --> 00:02:10,190
+Adın değiştiğini göreceksiniz ve yıllar önemli bir kalıbı anlamak için önemli şeyler yapıyor.
+
+24
+00:02:10,310 --> 00:02:19,120
+bir yöntem arayabilmeniz için metodları da sahne metni olarak gönderebilirsiniz.
+
+25
+00:02:19,320 --> 00:02:28,940
+Devlete doğrudan erişimi olmayan ve devlete doğrudan erişime sahip olmayan
+
+26
+00:02:29,160 --> 00:02:34,200
+başka bir bileşene devlete dönüşebilecek
+
+27
+00:02:34,200 --> 00:02:35,220
+Bu yaygın bir
+
+28
+00:02:35,220 --> 00:02:41,460
+kalıp ve uygulama bileşeni içindeki üst bileşendeki verileri değiştirmenize izin veren tıklama düzenleyicilerini geçirebileceğinizi bilmek önemlidir.
+
+29
+00:02:41,460 --> 00:02:45,150
+Bu durumda kişi bileşeni için belki hepimiz fonksiyonumuza bir değer iletmek istemiyoruz.
+
+30
+00:02:45,150 --> 00:02:55,020
+Belki de anahtar adı işleyiciniz yeni adı almalıdır, böylece burada Maximilien'i yeni ad olarak
+
+31
+00:02:55,020 --> 00:03:01,510
+kodladım ve aslında adını yeni adına eşit olarak ayarladım.
+
+32
+00:03:01,530 --> 00:03:06,730
+Şimdi bu verileri nasıl aktaracağız.
+
+33
+00:03:06,740 --> 00:03:10,390
+Bunu yapmanın iki yolu vardır.
+
+34
+00:03:10,390 --> 00:03:12,600
+Birincisi, burada bağ oluşturmanızdır.
+
+35
+00:03:12,610 --> 00:03:16,910
+Bunu sadece bağlayabilirsiniz.
+
+36
+00:03:16,960 --> 00:03:19,690
+Bu, fonksiyonun içindeki içeriği ve bu yıla bağlayanları kontrol eder.
+
+37
+00:03:19,780 --> 00:03:26,820
+Sınıfa bağlayan fonksiyonun dışında garip görünebilir, ancak javascript'teki bu sorunu ele almanın
+
+38
+00:03:26,850 --> 00:03:31,840
+tipik bir yolu olarak bunu yapmak zorunda kalmayız.
+
+39
+00:03:31,850 --> 00:03:36,110
+Ancak, bu sözdizimini kullanabiliriz çünkü ikinci argümanı bağlamak istiyoruz.
+
+40
+00:03:36,430 --> 00:03:42,340
+ve burada yeni bir isim olmalı.
+
+41
+00:03:42,610 --> 00:03:50,710
+Bu artık bizim işleve geçirilecek argümanların bir listesidir
+
+42
+00:03:50,710 --> 00:03:51,610
+Yani burada bu bir Maximillian olabilir.
+
+43
+00:03:51,790 --> 00:03:54,150
+Ve gerçekten bir fark görmek için.
+
+44
+00:03:54,410 --> 00:03:56,270
+Bu bağlama kodunu kopyalayalım
+
+45
+00:03:56,620 --> 00:04:02,290
+ve işlevi, Propp'a tıklama referansı olarak ilettiğimizde, bu yerdeki tüm bağlar.
+
+46
+00:04:02,290 --> 00:04:03,480
+Ve bunu
+
+47
+00:04:03,970 --> 00:04:11,230
+bir exclamation işaretiyle Max'e değiştirelim, böylece nereye tıkladıkıza bağlı olarak bir fark görebiliyoruz.
+
+48
+00:04:11,230 --> 00:04:13,090
+Max'a bir değişiklik olduğunu göreceksiniz.
+
+49
+00:04:13,380 --> 00:04:21,030
+Şimdi bunu BIND eklediysek ve bunu bir argüman olarak ve anahtar adı işleyicisi olarak alırsak, geçiş adını tıklarsam ve ne
+
+50
+00:04:21,040 --> 00:04:28,210
+Maximilien'e değiştirirsek ne olur diye bakalım, bu da mantıklı geliyor, çünkü bu bağlı olduğum şey ama işe yaradığını
+
+51
+00:04:28,210 --> 00:04:34,130
+doğruluyor bir argüman alıp menü paragrafını hiçbir zaman tıklamadığınızda çalışıyor ve bir ünlem işareti ile
+
+52
+00:04:34,130 --> 00:04:41,460
+Yani bu bir argümanı geçmenin bir yoludur.
+
+53
+00:04:41,480 --> 00:04:44,060
+Tek yolu bu değil.
+
+54
+00:04:44,120 --> 00:04:45,990
+İki kod snippet'inden birini burada nasıl çalıştığını göstermek için BIND ile bırakacağım.
+
+55
+00:04:46,190 --> 00:04:51,990
+Yine de alternatif bir sözdizimi göster.
+
+56
+00:04:52,070 --> 00:04:54,580
+O halde sopanın yolunun olduğu yere bağlayın.
+
+57
+00:04:54,770 --> 00:04:57,840
+Fakat şimdi size göstereceğim bu yeni sözdizimini kullanabiliriz.
+
+58
+00:04:58,010 --> 00:05:00,560
+Ayrıca burada bu
+
+59
+00:05:00,570 --> 00:05:11,510
+haber dizini tıklama üzerine farklı görünüyor, aslında hiçbir argüman almayan ok işlevi yürütmekteyim.
+
+60
+00:05:11,510 --> 00:05:13,650
+Teorik olarak bir olay nesnesi alır.
+
+61
+00:05:13,690 --> 00:05:16,070
+Bu arada.
+
+62
+00:05:16,070 --> 00:05:16,980
+Ama burada kullanmayacağım.
+
+63
+00:05:17,420 --> 00:05:18,980
+Ve daha sonra basitçe bir işlev gövdesi bu işlev çağrısını döndürdüğü için.
+
+64
+00:05:19,550 --> 00:05:27,020
+Şimdi anlamanız gereken birkaç şey var.
+
+65
+00:05:27,020 --> 00:05:29,120
+Her şeyden önce bir
+
+66
+00:05:29,120 --> 00:05:37,550
+ok işlevini kullanırken, bu, örtük olarak, okun hemen ardından gelen kodun önünde bir return anahtar kelimesi ekler.
+
+67
+00:05:37,550 --> 00:05:39,890
+Hepsi tek bir satırda yazılmışsa.
+
+68
+00:05:40,070 --> 00:05:42,230
+Alternatif olarak Raptor ve kıvırcık parantezler kullanılır ve normal işlev gövdesini yazar.
+
+69
+00:05:42,230 --> 00:05:46,730
+Bu yüzden bu döndürülür ve döndürdüğüm şey bir işlev çağrısıdır.
+
+70
+00:05:47,210 --> 00:05:51,860
+Bu yüzden parantezleri ekledim.
+
+71
+00:05:51,860 --> 00:05:54,140
+Şimdi erken bir konuşmada
+
+72
+00:05:54,410 --> 00:06:01,700
+bunu aramamalıyız demiştim ve bu doğruydu, ama işte bu hemen infaz edilmez.
+
+73
+00:06:01,700 --> 00:06:03,550
+Bunun yerine burada geçirdiğimiz,
+
+74
+00:06:03,560 --> 00:06:10,250
+bir tıklamayla çalıştırılacak ve sonuçta bu işlevin yürütülmesine neden olan anonim bir işlevdir.
+
+75
+00:06:10,250 --> 00:06:13,550
+Bu tabii ki dezavantajın idam edilmesine yol açar.
+
+76
+00:06:13,550 --> 00:06:17,900
+Bu yararlı çünkü şimdi burada Maximillian verilerimizi iki ünlem işaretiyle kolayca geçirebiliriz.
+
+77
+00:06:17,900 --> 00:06:26,270
+Belki şu ana kadar kaydedin ve tıklama geçiş adı hareket ettirin.
+
+78
+00:06:26,270 --> 00:06:31,760
+Maximillian'ı iki ünlem işareti ile görüyoruz.
+
+79
+00:06:31,760 --> 00:06:35,000
+bazı şeyleri gerçekten çok fazla render
+
+80
+00:06:35,000 --> 00:06:41,930
+edebiliyor olabilir, bu nedenle, yerine bağlama sözdizimini kullanmanız gerekmiyorsa bunu kullanmanızı önermiyorum.
+
+81
+00:06:41,930 --> 00:06:48,950
+Şimdi bu çok kullanışlı bir sözdizimi olmasına karşın, verimsiz yeniden davranma, uygulamanızda
+
+82
+00:06:48,950 --> 00:06:50,150
+Burada bırakabiliyorsanız
+
+83
+00:06:50,180 --> 00:06:56,590
+kullanabilir ve uygulamanızın boyutuna bağlı olarak bu performansın büyüklüğünü hissetmeyebilirsiniz.
+
+84
+00:06:56,660 --> 00:06:59,520
+Fakat bunun verimsiz olabileceğinin farkında olun.
+
+85
+00:06:59,780 --> 00:07:03,100
+&nbsp;

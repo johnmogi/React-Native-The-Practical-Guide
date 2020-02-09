@@ -1,0 +1,187 @@
+1
+00:00:02,170 --> 00:00:07,570
+W ostatnim wykładzie ustaliliśmy stan i powiedziałem wam, że będzie to wyjątkowe, ale tak naprawdę tego jeszcze
+
+2
+00:00:07,570 --> 00:00:08,310
+nie widzimy.
+
+3
+00:00:08,440 --> 00:00:13,990
+Wszystko, co teraz robimy, to zarządzanie naszymi danymi, a następnie dostęp do tego w naszym kodzie jsx w
+
+4
+00:00:14,000 --> 00:00:14,540
+aplikacji.
+
+5
+00:00:14,560 --> 00:00:15,880
+plik js.
+
+6
+00:00:16,340 --> 00:00:19,740
+Przejdźmy teraz do kliknięcia tego
+
+7
+00:00:19,810 --> 00:00:23,430
+przycisku, robimy to przez dodanie onClick.
+
+8
+00:00:23,440 --> 00:00:24,660
+Teraz jest to ważne, w
+
+9
+00:00:24,670 --> 00:00:31,930
+normalnym javascript i normalnym html byłoby precyzyjnie, byłoby onclick z małymi literami c. Teraz w jsx i to jest
+
+10
+00:00:31,930 --> 00:00:34,170
+naprawdę ważne, to jest
+
+11
+00:00:34,300 --> 00:00:37,180
+onClick z dużym C.
+
+12
+00:00:37,420 --> 00:00:45,580
+Nadal jednak przypisujemy jako wartość kod, który chcemy wykonać po kliknięciu, i możemy
+
+13
+00:00:45,580 --> 00:00:50,000
+użyć nawiasów klamrowych do wykonania kodu dynamicznego.
+
+14
+00:00:50,020 --> 00:00:58,240
+Teraz zazwyczaj chcesz wykonać funkcję swojej klasy, tak zwaną metodę tam, i istnieje
+
+15
+00:00:58,460 --> 00:01:06,080
+konwencja, aby nadać jej nazwę podobną do poniższej procedury obsługi nazwy przełącznika.
+
+16
+00:01:06,100 --> 00:01:12,700
+Teraz pierwsza część Switch Name zależy wyłącznie od ciebie, ale zwykle używasz tutaj handler'a, aby wskazać, że jest to
+
+17
+00:01:12,700 --> 00:01:20,110
+metoda, której nie aktywujesz, ale przypisujesz ją jako funkcję obsługi zdarzeń. Nie jest to jednak wymagane, więc możesz nazwać
+
+18
+00:01:20,110 --> 00:01:24,910
+to, co chcesz, ale dobrym zwyczajem jest nazywanie tego w
+
+19
+00:01:24,910 --> 00:01:26,260
+ten sposób.
+
+20
+00:01:27,470 --> 00:01:31,570
+Tak więc funkcja obsługi nazwy przełącznika powinna być teraz funkcją.
+
+21
+00:01:31,970 --> 00:01:38,280
+Teraz, jeśli właśnie powiedziałeś, że jest równy, w tej chwili jest to ta sama składnia co w
+
+22
+00:01:38,570 --> 00:01:43,540
+przypadku własności stanu, ale jeśli przypiszemy funkcję jako wartość, staje się ona zasadniczo metodą.
+
+23
+00:01:43,700 --> 00:01:49,390
+Nadal jest to właściwość, którą można powiedzieć, ale właściwość, która posiada funkcję, którą można wykonać. Tutaj również użyję
+
+24
+00:01:49,440 --> 00:01:53,330
+funkcji strzałki ES6, należy pamiętać,
+
+25
+00:01:53,330 --> 00:01:56,070
+że jest to
+
+26
+00:01:56,070 --> 00:02:01,610
+normalna funkcja na końcu. A teraz chcę edytować mój stan,
+
+27
+00:02:01,890 --> 00:02:05,950
+zanim to zrobimy, zobaczmy, czy możemy to nazwać pomyślnie.
+
+28
+00:02:05,950 --> 00:02:13,450
+Powiem, że kliknięto dziennik konsoli, abyśmy mogli zobaczyć coś w konsoli po kliknięciu, a ja
+
+29
+00:02:13,930 --> 00:02:22,120
+przejdę do mojego odbiornika kliknięć i pomiędzy nawiasami klamrowymi, mogę teraz uruchomić tę procedurę obsługi nazwy
+
+30
+00:02:22,750 --> 00:02:25,330
+przełącznika i nie dodawać nawiasów,
+
+31
+00:02:25,420 --> 00:02:26,890
+nie rób tego.
+
+32
+00:02:26,890 --> 00:02:33,850
+Uruchomiłoby to natychmiast, gdy zareaguje, przekazuje to do domu, ponieważ wykonujesz tę funkcję
+
+33
+00:02:33,850 --> 00:02:35,070
+z nawiasami.
+
+34
+00:02:35,380 --> 00:02:43,330
+Chcemy tylko przekazać referencję i robimy to, używając tego, a następnie odnosząc się do tej właściwości,
+
+35
+00:02:43,330 --> 00:02:46,340
+która posiada funkcję. Ważne, jeśli nie
+
+36
+00:02:46,720 --> 00:02:54,160
+używasz tej składni w zasadzie tam, gdzie przypisujesz funkcję do właściwości, którą możesz powiedzieć,
+
+37
+00:02:54,160 --> 00:03:01,030
+wystąpią błędy, jeśli spróbujesz tego użyć, ponieważ wkrótce zrobimy to w tej funkcji
+
+38
+00:03:01,030 --> 00:03:08,830
+obsługi nazwy przełącznika, ponieważ to nie odwoła się do klasy w czasie wykonywania, tylko do
+
+39
+00:03:08,830 --> 00:03:09,090
+&nbsp;
+
+40
+00:03:09,100 --> 00:03:12,370
+tego, jak to działa w javascriptie ES5.
+
+41
+00:03:12,580 --> 00:03:18,170
+Używając tej składni ES6, omijamy ten problem, który stanie się ważny później.
+
+42
+00:03:18,250 --> 00:03:25,480
+Na razie ważne, nie dodawaj tutaj nawiasów, wystarczy podać odwołanie do tej funkcji. Po tym, zapiszmy ten plik, otwórzmy teraz
+
+43
+00:03:25,480 --> 00:03:26,530
+konsolę w
+
+44
+00:03:26,710 --> 00:03:33,520
+narzędziach dla programistów i kliknij przycisk Zmień nazwę, a kliknięcie tutaj powinno
+
+45
+00:03:33,970 --> 00:03:35,750
+zostać kliknięte tutaj.
+
+46
+00:03:36,840 --> 00:03:38,480
+Teraz miło, teraz
+
+47
+00:03:38,490 --> 00:03:43,230
+zmieńmy stan, zrobimy to w następnym wykładzie.

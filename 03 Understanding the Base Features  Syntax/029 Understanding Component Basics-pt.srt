@@ -1,0 +1,275 @@
+1
+00:00:02,380 --> 00:00:07,900
+Na última palestra, passei pela estrutura de pastas criada por Create reagir.
+
+2
+00:00:08,020 --> 00:00:09,650
+E nós editamos o nosso apt.
+
+3
+00:00:09,670 --> 00:00:10,730
+JS cair.
+
+4
+00:00:10,840 --> 00:00:13,620
+Vamos agora mergulhar mais fundo no que vemos aqui.
+
+5
+00:00:13,690 --> 00:00:21,190
+Nós vemos um componente re-act como eu expliquei re-agir é tudo sobre a criação de componentes basicamente elementos HVM personalizados
+
+6
+00:00:21,400 --> 00:00:26,200
+que você poderia dizer, o que você pode usar para construir seu aplicativo.
+
+7
+00:00:26,200 --> 00:00:33,280
+Este componente do aplicativo realmente se usa no próximo arquivo js onde você o torna no lugar desse
+
+8
+00:00:33,340 --> 00:00:34,030
+elemento raiz.
+
+9
+00:00:34,210 --> 00:00:39,450
+E podemos fazer um elemento feminino envelhecido normal aqui para testar, por exemplo.
+
+10
+00:00:39,480 --> 00:00:40,240
+Isso funcionaria.
+
+11
+00:00:40,240 --> 00:00:42,570
+Isso agora não é um componente de reação.
+
+12
+00:00:42,610 --> 00:00:45,640
+Se eu salvar isso, vejo essa idade Wintec.
+
+13
+00:00:46,000 --> 00:00:49,360
+Mas é claro que não temos uma aplicação real de reação.
+
+14
+00:00:49,470 --> 00:00:55,860
+Estamos representando um elemento HVM normal, mas não estamos processando nosso próprio componente de reação.
+
+15
+00:00:55,870 --> 00:01:02,800
+Agora você pode, naturalmente, usar múltiplas reações em um renderizador e renderizar todo o código da HP que você deseja usar
+
+16
+00:01:02,860 --> 00:01:03,940
+em seu aplicativo.
+
+17
+00:01:04,030 --> 00:01:07,530
+Ainda não é assim que você criou seus aplicativos de reação.
+
+18
+00:01:07,810 --> 00:01:15,760
+Normalmente, você processa um componente raiz do componente do aplicativo, mas você pode nomeá-lo o que quiser, um
+
+19
+00:01:15,820 --> 00:01:16,840
+componente raiz.
+
+20
+00:01:16,840 --> 00:01:24,150
+No nosso caso, é o componente tiap chamado aplicativo e lá você aniquilaria todos os outros componentes.
+
+21
+00:01:24,150 --> 00:01:30,050
+Sua aplicação pode precisar e, claro, esses componentes também podem ser aninhados um ao outro.
+
+22
+00:01:30,250 --> 00:01:37,300
+Mas, até o topo, você só possui um componente raiz, pode chegar a vários nós na
+
+23
+00:01:37,330 --> 00:01:45,010
+queda do HMO e montar diferentes componentes raiz para diferentes aplicativos de reativar todos no mesmo projeto.
+
+24
+00:01:45,010 --> 00:01:47,950
+Isso seria possível, mas não é o que fazemos aqui.
+
+25
+00:01:47,980 --> 00:01:52,810
+No final, você pode simplesmente replicar o que você aprende neste curso para várias
+
+26
+00:01:52,930 --> 00:01:55,270
+aplicações em um no mesmo HTL arquivado.
+
+27
+00:01:55,540 --> 00:01:59,170
+Mas vamos manter o uso geral ou típico de reagir.
+
+28
+00:01:59,170 --> 00:02:04,450
+Nós temos esse componente de aplicativo que é encontrar um arquivo JS de pensamento profundo.
+
+29
+00:02:04,450 --> 00:02:11,140
+Aqui, vemos uma maneira de uma das duas maneiras de definir um componente de reação, criamos uma classe
+
+30
+00:02:11,140 --> 00:02:18,730
+de javascript com a palavra-chave da classe e então usamos a palavra-chave extensa para herdar desse objeto ou classe de componente.
+
+31
+00:02:18,730 --> 00:02:25,120
+Para ser preciso, o que é importado aqui da biblioteca re-act.
+
+32
+00:02:25,120 --> 00:02:33,250
+verdade, importamos duas coisas re-agir, que é responsável ou exigido para renderizar qualquer coisa ao DOM.
+
+33
+00:02:33,250 --> 00:02:34,030
+Na
+
+34
+00:02:34,030 --> 00:02:37,750
+Nós sempre precisamos importar isso em um arquivo onde nós definimos um componente.
+
+35
+00:02:38,080 --> 00:02:43,300
+E, claro, a própria classe de componentes, em breve, mostrar-lhe-ei uma maneira diferente
+
+36
+00:02:43,330 --> 00:02:44,370
+de criar componentes.
+
+37
+00:02:44,470 --> 00:02:46,800
+Agora, esta classe possui um método.
+
+38
+00:02:46,930 --> 00:02:48,130
+O método de renderização.
+
+39
+00:02:48,220 --> 00:02:54,940
+Isso precisa ter isso porque re-agir chamará esse método para renderizar algo na tela.
+
+40
+00:02:55,230 --> 00:02:57,400
+Existe um trabalho importante.
+
+41
+00:02:57,580 --> 00:03:06,370
+Todo componente de reagem tem que fazê-lo tem que retornar ou renderizar algum código HVM outro que possa ser processado
+
+42
+00:03:06,440 --> 00:03:08,240
+para Dom na tela.
+
+43
+00:03:08,470 --> 00:03:12,160
+Você pode fazer outras coisas lá para chegar à internet.
+
+44
+00:03:12,160 --> 00:03:17,320
+Alguns cálculos ouvem os eventos o que você precisa em sua aplicação.
+
+45
+00:03:17,320 --> 00:03:25,020
+Veremos tudo isso nesse curso, mas você sempre precisa renderizar algum correio HVM ao amanhecer.
+
+46
+00:03:25,030 --> 00:03:28,140
+Isso é tão importante para se lembrar.
+
+47
+00:03:28,330 --> 00:03:34,440
+Em seguida, exportamos essa classe AB como a exportação padrão desse arquivo.
+
+48
+00:03:34,510 --> 00:03:41,020
+que se você importar esse arquivo completo, você simplesmente importará esta classe porque é a exportação padrão.
+
+49
+00:03:41,020 --> 00:03:43,280
+Este recurso ESX e simplesmente significa
+
+50
+00:03:43,660 --> 00:03:50,210
+Nós utilizamos o deles no índice Jaspal onde importamos o aplicativo do arquivo do aplicativo novamente.
+
+51
+00:03:50,230 --> 00:03:56,840
+Omitido esta extensão porque é adicionado pelo nosso fluxo de trabalho de compilação automaticamente para arquivos javascript.
+
+52
+00:03:57,260 --> 00:04:02,910
+Há um nome apropriado, pois o caminho é escolhido arbitrariamente, mas normalmente você usa o nome do componente.
+
+53
+00:04:02,980 --> 00:04:08,140
+Você também usa no arquivo e, em seguida, você também usa como um nome de arquivo.
+
+54
+00:04:08,140 --> 00:04:09,320
+Uma nota lateral.
+
+55
+00:04:09,400 --> 00:04:16,890
+Você também pode ver esses componentes com Dot J como X como uma extensão de arquivo em vez de J S.
+
+56
+00:04:16,930 --> 00:04:19,970
+A razão para isso é o código aqui.
+
+57
+00:04:20,260 --> 00:04:24,410
+Eu me referi como h t m l que retornou.
+
+58
+00:04:24,760 --> 00:04:27,250
+Mas, no final, isso não é HVM L.
+
+59
+00:04:27,310 --> 00:04:32,880
+Parece sim, mas é J como X, por isso é javascript.
+
+60
+00:04:32,980 --> 00:04:39,340
+Olhando um pouco diferente e isso pode ser confuso no início, quando você está aprendendo a reagir, essa
+
+61
+00:04:39,340 --> 00:04:46,720
+pode ser uma das coisas mais confusas, realmente importante saber, é que apenas um pouco de açúcar sintático foi basicamente inventado
+
+62
+00:04:46,720 --> 00:04:52,630
+pela equipe de reagem e podemos escrever em um arquivo javascript devido ao fluxo de trabalho de
+
+63
+00:04:52,630 --> 00:04:54,330
+construção que estamos usando aqui.
+
+64
+00:04:54,340 --> 00:04:58,940
+Em geral, troncará pilotes automaticamente para validar javascript e dnt.
+
+65
+00:04:59,350 --> 00:05:07,190
+Não está conectado ao Falak que você está usando, e Dot James e Dot James Ex-Files e convenções hoje em dia é praticamente você
+
+66
+00:05:07,330 --> 00:05:12,660
+sempre usar o ponto J como falso, e é por isso que o fazemos aqui também.
+
+67
+00:05:13,030 --> 00:05:22,600
+E é simplesmente um código ou uma sintaxe que podemos usar para escrever o correio HVM entre aspas, enquanto no
+
+68
+00:05:22,660 --> 00:05:25,310
+final não escrevendo isso parece confuso.
+
+69
+00:05:25,420 --> 00:05:29,890
+Deixe-me mostrar o que isso realmente é compilado na próxima palestra.

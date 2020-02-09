@@ -1,0 +1,43 @@
+1
+00:00:02,430 --> 00:00:10,650
+Bem-vindo ao módulo do discurso, aprendemos muitas coisas sobre reagir e já vimos alguns erros em
+
+2
+00:00:10,740 --> 00:00:12,790
+nosso aplicativo de reação.
+
+3
+00:00:12,880 --> 00:00:21,900
+Agora, não importa o quão bom de um programador você é, você vai bater erros sempre com erros ou mensagens ou a maior parte
+
+4
+00:00:21,900 --> 00:00:22,680
+do tempo.
+
+5
+00:00:22,680 --> 00:00:25,390
+Pior do que esses erros lógicos.
+
+6
+00:00:25,470 --> 00:00:32,460
+Agora, neste manual, vou mostrar-lhe como você pode depurar seu aplicativo de reação como você deve ler e
+
+7
+00:00:32,520 --> 00:00:35,340
+entender as mensagens de erro de reagem.
+
+8
+00:00:35,400 --> 00:00:41,940
+bons e úteis e como você pode, então, criar um aplicativo de reação que seja livre de erros.
+
+9
+00:00:41,940 --> 00:00:44,270
+Como muitos deles são realmente muito
+
+10
+00:00:44,700 --> 00:00:50,940
+Vamos mergulhar nisso e vamos aprender as várias técnicas que você tem à sua disposição para
+
+11
+00:00:50,940 --> 00:00:52,660
+entender e lidar com erros.

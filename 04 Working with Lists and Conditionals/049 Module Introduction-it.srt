@@ -1,0 +1,39 @@
+1
+00:00:02,430 --> 00:00:08,960
+A questo modulo nel modulo di stampa impariamo la sintassi di base di reagire e hai appreso come crei le app di re-act come
+
+2
+00:00:08,960 --> 00:00:15,770
+crei i componenti e come lavori con J. S. X per rendere qualcosa sullo schermo.
+
+3
+00:00:16,130 --> 00:00:19,380
+In questo modulo lo porterai al livello successivo.
+
+4
+00:00:19,400 --> 00:00:26,380
+Abbiamo già visto come possiamo produrre contenuti dinamici con le singole parentesi graffe di DS.
+
+5
+00:00:26,620 --> 00:00:32,090
+In questo modulo vedremo come possiamo anche produrre i contenuti in modo condizionale.
+
+6
+00:00:32,090 --> 00:00:38,750
+dormitorio della tua età codice se una certa condizione è vera e come possiamo generare liste di dati
+
+7
+00:00:38,750 --> 00:00:46,280
+in realtà abbiamo un elenco di questo tipo e la nostra applicazione demo già le borse che abbiamo ci sarebbe un
+
+8
+00:00:46,310 --> 00:00:53,030
+senso se potessimo crearli dinamicamente in base al numero di persone che abbiamo in quell'array che gestiamo nello stato.
+
+9
+00:00:53,030 --> 00:00:56,980
+Quindi, per esempio, vuoi solo rendere una certa parte del tuo
+
+10
+00:00:57,230 --> 00:01:01,710
+Daremo un'occhiata a tutto ciò e a cosa fare attenzione in questo modulo.

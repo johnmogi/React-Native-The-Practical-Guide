@@ -1,0 +1,187 @@
+1
+00:00:02,170 --> 00:00:07,570
+Nell'ultima lezione abbiamo istituito lo stato e ti ho detto che sarebbe stato speciale che non lo
+
+2
+00:00:07,570 --> 00:00:08,310
+vediamo ancora.
+
+3
+00:00:08,440 --> 00:00:13,990
+Tutto quello che facciamo ora è gestire i nostri dati lì e quindi accedervi nel nostro codice GSX.
+
+4
+00:00:14,000 --> 00:00:14,540
+Sì.
+
+5
+00:00:14,560 --> 00:00:15,880
+File JS.
+
+6
+00:00:16,340 --> 00:00:19,740
+Facciamo ora clic su questo pulsante.
+
+7
+00:00:19,810 --> 00:00:23,430
+Lo facciamo aggiungendo al clic.
+
+8
+00:00:23,440 --> 00:00:24,660
+Ora questo è importante.
+
+9
+00:00:24,670 --> 00:00:31,930
+In normale javascript e normale età, per essere precisi, sarebbe a portata di click con una c minuscola ora in JS
+
+10
+00:00:31,930 --> 00:00:34,170
+X e questo è davvero importante.
+
+11
+00:00:34,300 --> 00:00:37,180
+È a portata di clic con la C maiuscola.
+
+12
+00:00:37,420 --> 00:00:45,580
+Ancora non assegniamo come valore il codice che vuoi eseguire con un clic e lì possiamo
+
+13
+00:00:45,580 --> 00:00:50,000
+usare le parentesi graffe per eseguire qualche codice dinamico.
+
+14
+00:00:50,020 --> 00:00:58,240
+Ora in genere si desidera eseguire una funzione della classe un cosiddetto metodo.
+
+15
+00:00:58,460 --> 00:01:06,080
+Ed è una convenzione da dare un nome come il seguente switch name handler forse.
+
+16
+00:01:06,100 --> 00:01:12,700
+non è necessario seguire questo modello sebbene tu possa nominalo come vuoi, ovviamente è una buona pratica chiamarlo così.
+
+17
+00:01:12,700 --> 00:01:20,110
+Ora il nome dell'interruttore della prima parte è totalmente a tua discrezione, ma in genere utilizzi il gestore qui per indicare
+
+18
+00:01:20,110 --> 00:01:24,910
+che questo è un metodo che non stai attivamente chiamando ma che stai assegnando
+
+19
+00:01:24,910 --> 00:01:26,260
+come gestore di eventi
+
+20
+00:01:27,470 --> 00:01:31,570
+Quindi il gestore del nome switch ora dovrebbe essere una funzione.
+
+21
+00:01:31,970 --> 00:01:38,280
+Ora se hai appena detto uguale ora è solo la stessa sintassi della proprietà dello stato.
+
+22
+00:01:38,570 --> 00:01:43,540
+Ma se assegniamo una funzione come valore qui diventa fondamentalmente un metodo.
+
+23
+00:01:43,700 --> 00:01:49,390
+È ancora una proprietà che potresti dire, ma una proprietà che contiene una funzione che può essere eseguita qui.
+
+24
+00:01:49,440 --> 00:01:53,330
+Usalo anche come sei frecce.
+
+25
+00:01:53,330 --> 00:01:56,070
+Tieni presente che questa è solo una funzione normale.
+
+26
+00:01:56,070 --> 00:02:01,610
+Alla fine e lì ora voglio modificare il mio stato.
+
+27
+00:02:01,890 --> 00:02:05,950
+I Furbies prima di fare questo vediamo se possiamo chiamarlo con successo.
+
+28
+00:02:05,950 --> 00:02:13,450
+Devo dire che il log di Konsole è stato raccolto in modo da poter vedere qualcosa nella console una volta cliccato.
+
+29
+00:02:13,930 --> 00:02:22,120
+Andrò al mio ascoltatore di clic e tra i braccialetti di Akali ora posso eseguire questo gestore di nomi
+
+30
+00:02:22,750 --> 00:02:25,330
+di switch e non aggiungere parentesi.
+
+31
+00:02:25,420 --> 00:02:26,890
+Non farlo.
+
+32
+00:02:26,890 --> 00:02:33,850
+immediatamente una volta che riattiva il rendering alla dom perché si esegue questa funzione con le parentesi.
+
+33
+00:02:33,850 --> 00:02:35,070
+Questo lo eseguirà
+
+34
+00:02:35,380 --> 00:02:43,330
+Vogliamo solo passare un riferimento e lo facciamo usando questo e quindi facendo riferimento a quella
+
+35
+00:02:43,330 --> 00:02:46,340
+proprietà che detiene una funzione importante.
+
+36
+00:02:46,720 --> 00:02:54,160
+Se non si utilizza la sintassi qui fondamentalmente in cui si assegna una funzione a una proprietà, si
+
+37
+00:02:54,160 --> 00:03:01,030
+potrebbe dire che si verificheranno errori se si tenta di utilizzare questo come farete presto in questo.
+
+38
+00:03:01,030 --> 00:03:08,830
+Quale funzione di gestione dei nomi in quanto ciò non si riferirà alla classe in fase di esecuzione semplicemente come
+
+39
+00:03:08,830 --> 00:03:09,090
+a.
+
+40
+00:03:09,100 --> 00:03:12,370
+Funziona in IIS 5 javascript.
+
+41
+00:03:12,580 --> 00:03:18,170
+Usando questo come 6 Sendak aggiriamo questo problema che diventerà importante in seguito.
+
+42
+00:03:18,250 --> 00:03:25,480
+Per ora importante non aggiungere parentesi qui basta passare un riferimento a questa funzione con quello che
+
+43
+00:03:25,480 --> 00:03:26,530
+salva questo file.
+
+44
+00:03:26,710 --> 00:03:33,520
+Non apriamo la console negli strumenti per sviluppatori e fai clic sul nome dell'interruttore e dovresti vedere che è stato fatto clic
+
+45
+00:03:33,970 --> 00:03:35,750
+nei tuoi strumenti di sviluppo qui.
+
+46
+00:03:36,840 --> 00:03:38,480
+Ora è bello.
+
+47
+00:03:38,490 --> 00:03:43,230
+Ora cambiamo tutti lo stato che faremo nella prossima lezione.

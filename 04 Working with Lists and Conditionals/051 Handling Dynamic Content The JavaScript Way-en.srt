@@ -1,0 +1,243 @@
+1
+00:00:02,250 --> 00:00:08,530
+In the last lecture, we learned how to render a content dynamically, conditionally I should say and that
+
+2
+00:00:08,550 --> 00:00:14,520
+we simply take advantage of the fact that everything here is javascript and that's generally the mantra
+
+3
+00:00:14,580 --> 00:00:16,240
+of react,
+
+4
+00:00:16,320 --> 00:00:18,160
+everything is javascript.
+
+5
+00:00:18,180 --> 00:00:24,600
+I also mentioned that using this ternary expression as we do here is not necessarily optimal, here
+
+6
+00:00:24,600 --> 00:00:25,700
+it's perfectly fine
+
+7
+00:00:25,710 --> 00:00:33,930
+but as our application grows and as we possibly nest conditions, it can be hard to keep track of which
+
+8
+00:00:33,930 --> 00:00:36,330
+expression is responsible for what
+
+9
+00:00:36,360 --> 00:00:39,250
+and to spot them in our jsx code.
+
+10
+00:00:39,750 --> 00:00:43,830
+So there is a cleaner solution for that which I want to show you in this lecture,
+
+11
+00:00:43,830 --> 00:00:48,290
+let me remove this curly brace and this ternary expression here
+
+12
+00:00:48,390 --> 00:00:53,480
+so that for the moment all the persons are rendered all the time again.
+
+13
+00:00:53,590 --> 00:00:59,640
+I should make sure to only remove the expression parts not the div though.
+
+14
+00:00:59,790 --> 00:01:04,270
+So with that we're back to the starting point, right now we can't toggle this.
+
+15
+00:01:04,350 --> 00:01:11,390
+Now keep in mind, everything is javascript and in the end what we're doing here with jsx is just that
+
+16
+00:01:11,390 --> 00:01:16,790
+we're returning it with the return statement in this render method.
+
+17
+00:01:16,800 --> 00:01:23,310
+Now there is one important thing to keep in mind, when react renders something to the screen, when it
+
+18
+00:01:23,310 --> 00:01:31,330
+decides that it needs to update the screen, it executes this render method and not just the return expression
+
+19
+00:01:31,390 --> 00:01:32,820
+there, everything here.
+
+20
+00:01:33,030 --> 00:01:41,640
+So everything inside the render method gets executed whenever react re-renders this component and therefore
+
+21
+00:01:42,060 --> 00:01:43,790
+we could take advantage of this,
+
+22
+00:01:43,860 --> 00:01:47,720
+we can add some code here before we return something.
+
+23
+00:01:47,730 --> 00:01:52,400
+I'll add a variable named persons here which I'll set to null.
+
+24
+00:01:52,470 --> 00:01:54,880
+Now this should be the default,
+
+25
+00:01:54,900 --> 00:01:57,650
+you could give this any other name you like,
+
+26
+00:01:57,720 --> 00:02:00,060
+then I'll add a normal if statement.
+
+27
+00:02:00,120 --> 00:02:03,150
+I can do this here because I'm not inside jsx,
+
+28
+00:02:03,180 --> 00:02:10,500
+I'm inside my normal javascript code here, and there I now want to check if this state.showPersons,
+
+29
+00:02:10,500 --> 00:02:14,740
+keep in mind showPersons is a Boolean so it's either true or false.
+
+30
+00:02:14,760 --> 00:02:17,930
+We don't need to necessarily compare it to true or false,
+
+31
+00:02:17,940 --> 00:02:26,460
+we can omit this. So now I have this check and if this is true then I want to set my persons variable
+
+32
+00:02:26,790 --> 00:02:29,850
+to some jsx code and always keep in mind,
+
+33
+00:02:29,910 --> 00:02:36,150
+I could also just set it to the result of react create element, this is just what jsx compiles to in the
+
+34
+00:02:36,140 --> 00:02:37,050
+end.
+
+35
+00:02:37,290 --> 00:02:39,390
+Now I will grab the code here,
+
+36
+00:02:39,420 --> 00:02:40,860
+My persons,
+
+37
+00:02:41,190 --> 00:02:48,300
+I will cut the div down there with the person inside and add it in here.
+
+38
+00:02:48,300 --> 00:02:50,310
+Now what I'm doing is the following,
+
+39
+00:02:50,430 --> 00:02:51,450
+By default, persons.
+
+40
+00:02:51,450 --> 00:02:52,970
+this variable, is null.
+
+41
+00:02:53,160 --> 00:02:59,800
+But if this state showPersons is true, persons actually holds this jsx code and with that I can
+
+42
+00:02:59,800 --> 00:03:05,820
+just take that persons variable and output that down here in my jsx code
+
+43
+00:03:05,820 --> 00:03:14,400
+I returned in the end. So if single curly braces I can output persons here, referring to that persons variable
+
+44
+00:03:14,610 --> 00:03:22,230
+which is even now by default or persons if showPersons is true and since render gets called whenever
+
+45
+00:03:22,320 --> 00:03:29,010
+react checks if it needs to re-render this page or this component I should say. Since this happens every time
+
+46
+00:03:29,030 --> 00:03:35,300
+a re-rendered occurs, we make sure that we always take the latest state we have into account and either
+
+47
+00:03:35,310 --> 00:03:42,090
+render nothing or the persons because keep in mind one of the two things triggering an update is a state
+
+48
+00:03:42,120 --> 00:03:43,430
+change.
+
+49
+00:03:43,500 --> 00:03:49,560
+Now with this, let me save this file and go back to the application.
+
+50
+00:03:49,570 --> 00:03:53,040
+There we go to the console, we don't see an error.
+
+51
+00:03:53,280 --> 00:03:57,410
+I can reload the page to clearly see that we are using the latest version
+
+52
+00:03:57,660 --> 00:04:03,410
+and now let me click Toggle Persons and as before, you see the same behavior.
+
+53
+00:04:03,460 --> 00:04:10,080
+We can re-toggle this but now we're using this more elegant way of kind of outsourcing this check
+
+54
+00:04:10,440 --> 00:04:16,840
+from the jsx we return to a variable we conditionally assign before returning.
+
+55
+00:04:16,920 --> 00:04:19,590
+Still in the render function though
+
+56
+00:04:19,600 --> 00:04:27,560
+but before returning this. With that, we keep the jsx we return and therefore our core template of this
+
+57
+00:04:27,560 --> 00:04:28,050
+component
+
+58
+00:04:28,050 --> 00:04:34,820
+you could say, we keep it clean and we make sure that we only have this tiny reference here,
+
+59
+00:04:34,830 --> 00:04:40,410
+persons, inside of it to either end or nothing or all the persons.
+
+60
+00:04:40,520 --> 00:04:46,470
+This is actually the preferred way of outputting conditional content and it's the way I would recommend
+
+61
+00:04:46,470 --> 00:04:46,980
+using.

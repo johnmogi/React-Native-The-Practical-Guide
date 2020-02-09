@@ -1,0 +1,291 @@
+1
+00:00:02,280 --> 00:00:05,290
+Çok şey kapladık ve burada birçok isim değiştirdik.
+
+2
+00:00:05,550 --> 00:00:14,260
+Ancak biz aslında ismimizi kendi başımıza değiştirmek istiyorsak, o zaman ki kişi bileşeninde
+
+3
+00:00:14,260 --> 00:00:23,290
+şunu da söyleyelim: burada aslında bir sayı elemanı normal bir girdi elemanıdır ve metin
+
+4
+00:00:23,290 --> 00:00:26,380
+türüdür ve kendiliğinden kapanması gerekir.
+
+5
+00:00:26,470 --> 00:00:34,680
+Şimdi orada bir şeyler yazdığımızda burada yazdıklarımızı artık ölü için yeni bir isim olarak kullanmak istiyoruz.
+
+6
+00:00:34,690 --> 00:00:43,970
+Girişteki değer her değiştirildiğinde, değişimi değiştiren özel bir etkinliği dinleyebiliriz.
+
+7
+00:00:44,650 --> 00:00:53,440
+Ve burada uygulama kovalamaca dosyamdan iletmek istediğim bazı yöntemleri çalıştırmak istemiyorum.
+
+8
+00:00:53,440 --> 00:01:01,810
+olduğu gibi bırakacağım ve bunun yerine yeni bir işleyici eklemek için tüm ad ve ad değiştirilmiş işleyici.
+
+9
+00:01:01,810 --> 00:01:04,950
+O anahtar adı işleyicisine sahibiz ve
+
+10
+00:01:05,380 --> 00:01:08,680
+Burada bir olay nesnesi almamı bekliyorum.
+
+11
+00:01:08,680 --> 00:01:14,710
+Bunu daha önce kullanmadık ama orada halen devleti değiştirmek istiyoruz.
+
+12
+00:01:14,820 --> 00:01:18,880
+Elbette teorik olarak değiştirmek isteyeceksiniz.
+
+13
+00:01:18,880 --> 00:01:24,250
+Bu yazdığımız kişinin adı veya adı var mıdır.
+
+14
+00:01:24,250 --> 00:01:31,450
+Dinamik öğelerin listesini doğru bir şekilde nasıl oluşturacağınızı öğrendikten sonra, derste daha sonra yapacağımız
+
+15
+00:01:31,480 --> 00:01:32,560
+bir şeydir.
+
+16
+00:01:32,560 --> 00:01:36,340
+Şimdilik Manue adını burada değiştireceğim.
+
+17
+00:01:36,580 --> 00:01:42,220
+Yani Max Max'de kalacak ve Stefani'deki erkekler 26 yaşını bile tutacak.
+
+18
+00:01:42,340 --> 00:01:50,410
+Fakat adamın adını değiştirmelisin ki olursa olsun, bu kişinin örneğini ben yine yazdım bu
+
+19
+00:01:50,470 --> 00:01:53,190
+daha sonra düzelteceğim bir şey.
+
+20
+00:01:53,230 --> 00:01:56,490
+Yani burada U-viraj alacağım.
+
+21
+00:01:56,620 --> 00:02:03,910
+Ve javascript olayları için bildiğiniz gibi, bu olay muhtemelen hedefin iyi
+
+22
+00:02:03,910 --> 00:02:11,280
+bir isim değeri vermediği bir hedefi vardır, ancak hedef girdiğimiz girdi olmalıdır.
+
+23
+00:02:11,470 --> 00:02:17,750
+Dolayısıyla, kullanıcının girdiği değerli bir değer özelliğine de sahip olmalı ve
+
+24
+00:02:17,770 --> 00:02:23,180
+bu nedenle bu, ad için iyi güncellenmiş bir değer üretiyor.
+
+25
+00:02:23,320 --> 00:02:27,580
+O halde, olay hedef değeri manüel olarak yeni bir ad olarak atamak istediğim şey.
+
+26
+00:02:27,640 --> 00:02:35,320
+Yine, şu an için, hangi bileşenin adının hangi girdiyi değiştireceğini işleyicim değişti,
+
+27
+00:02:35,320 --> 00:02:36,640
+işleyicim değil.
+
+28
+00:02:36,640 --> 00:02:42,680
+Şimdi oradan erişebilmek için bunu bir bileşene geçirmeliyim.
+
+29
+00:02:43,090 --> 00:02:47,830
+Ve sadece menü değiştirebildiğimden, yalnızca menü üyesine geçireceğim.
+
+30
+00:02:47,920 --> 00:02:50,730
+Tabii ki başka bir şeye götürsek de.
+
+31
+00:02:51,010 --> 00:03:01,870
+Burada sadece değişen adı değiştireceğim ve bu ismi geçip, aynı lojiği takip eden işleyiciyi, kişinin içinde
+
+32
+00:03:01,890 --> 00:03:05,460
+ileri bir tıklama olayı istedi.
+
+33
+00:03:05,500 --> 00:03:14,500
+Şimdi bu değişmiş mülk erişebilir ve sadece burada prop değişti arama veya çağırmak değil
+
+34
+00:03:14,500 --> 00:03:18,450
+parantez eklemek değil sadece başvuru geçmek.
+
+35
+00:03:18,580 --> 00:03:25,970
+Ve unutmayın ki bu aslında evet olarak bildirilen yöntem anlamına gelir evet bu isim işleyiciyi değiştirdi.
+
+36
+00:03:26,540 --> 00:03:33,410
+Olay nesnesi, normal bir javascript gibi tepki vererek kendisine otomatik olarak geçirilir.
+
+37
+00:03:33,430 --> 00:03:36,370
+Varsayılan olarak siz neredeyseniz, olay nesnesine erişebilirsiniz.
+
+38
+00:03:37,130 --> 00:03:40,050
+Bununla beraber bunu saklayalım ve neler olacağını görelim.
+
+39
+00:03:40,130 --> 00:03:46,090
+bağlıyız değişti ve isim değiştirme işleyicisine bir referansı tutuldu ve daha sonra
+
+40
+00:03:46,100 --> 00:03:53,650
+giriş öğesi olan hedefi ve daha sonra girdiğimiz hedefin değerini çıkarmak için Stiefel olay nesnesini kullandık.
+
+41
+00:03:53,690 --> 00:04:01,610
+Tüm bileşenlerin altına girişlerimiz var, ancak her tuşla gördüğünüz bir adam için bunları yazarsam birçoğu için
+
+42
+00:04:01,850 --> 00:04:07,820
+hiçbir şey olmaz, adı güncelleme el kitabında ne yazmak istersek, bunu yapmak
+
+43
+00:04:07,820 --> 00:04:10,970
+zorundayız çünkü bu Propp'a değişiklik yapmaya
+
+44
+00:04:10,970 --> 00:04:16,850
+Bu şov aslında dinamik olarak bir şeyi dinamik olarak güncelleyerek bir olay çağırıp,
+
+45
+00:04:16,850 --> 00:04:22,430
+daha önce öğrendiğimiz şeyleri olay referanslarını veya yöntem referanslarını aşağıya aktarmak gibi nasıl
+
+46
+00:04:22,430 --> 00:04:26,990
+kullanabileceğimizi ancak hepsi sadece girdileri nasıl işleyebileceğimizi gösteren iki şeydir.
+
+47
+00:04:27,530 --> 00:04:36,820
+Şimdi, adın geçerli değerini baştan itibaren girişte göreceksek iyi olurdu.
+
+48
+00:04:37,130 --> 00:04:43,760
+istediğimizde kurmak istiyoruz, bu nedenle durumu güncelleyebilmemiz için bu değişikliği yaymak istiyoruz.
+
+49
+00:04:43,760 --> 00:04:46,220
+Temelde iki yönlü bağlamayı, değiştirmek
+
+50
+00:04:46,430 --> 00:04:49,890
+Fakat aynı zamanda mevcut durumu en baştan görmek istiyoruz.
+
+51
+00:04:50,390 --> 00:04:57,070
+Bunu yapmak için pervanenin adıyla aynı değere ayarlayabilirim.
+
+52
+00:04:57,080 --> 00:04:59,210
+Sonuçta bu isimdi.
+
+53
+00:04:59,210 --> 00:05:02,160
+Ve şimdi kendi çift yönlü bağlayıcı var.
+
+54
+00:05:02,270 --> 00:05:09,350
+Değişiklikleri dinleriz, sonunda güncelleme güncellemelerini bozan ad değiştirme işleyicisine atıfta bulunan
+
+55
+00:05:09,350 --> 00:05:17,030
+değiştirme yöntemini çağırırız ve adı ve yaşı olan kişiye durumu geçirdik ve
+
+56
+00:05:17,030 --> 00:05:20,510
+adı girişin değeri olarak çıkarttık.
+
+57
+00:05:20,510 --> 00:05:24,800
+Bu artık bize başlangıçta bu değeri göstermemizi sağlar.
+
+58
+00:05:25,070 --> 00:05:31,190
+Ve burada aslında bu uyarının teorik olarak anlamlı olduğu bir uyarı
+
+59
+00:05:31,190 --> 00:05:38,910
+alıyorum çünkü burada bir onchange işleyicisi olmadan bir değer pervanesi sağlıyorsanız, burada sorunlara girersiniz,
+
+60
+00:05:38,910 --> 00:05:43,310
+çünkü kendinizi değişikliklere tepki vermeden kendinize değer vermezsiniz.
+
+61
+00:05:43,310 --> 00:05:45,730
+Dolayısıyla girişinizi kilitleyebilirsiniz.
+
+62
+00:05:45,770 --> 00:05:51,800
+Onchange'ı kaldırırsam bunu gösterebilirim Şimdi, değerleri görmeye devam edeceğiz, ancak yazı yazarsam
+
+63
+00:05:51,800 --> 00:05:55,550
+yazamayacağım çünkü değişiklikleri ele almadığım için yazamam.
+
+64
+00:05:55,670 --> 00:06:00,920
+Bu nedenle, mevcut adı yazmaya çalıştığımız her şeyi geçersiz kılarız.
+
+65
+00:06:01,340 --> 00:06:08,320
+Hata burada kalırsa onchange'i yeniden yaparsam, bu sadece yanlış alarm olur.
+
+66
+00:06:08,510 --> 00:06:14,180
+Açıkça görülebileceği gibi yazabilirim, çünkü Ahan benim değişiklikleri halledebilir.
+
+67
+00:06:14,180 --> 00:06:19,880
+Durumumu güncelleyin sahne takımımı güncelleyin ve dolayısıyla burada yapılan değişiklikleri de burada yansıtın.
+
+68
+00:06:20,060 --> 00:06:25,230
+Dolayısıyla, iki yönlü bir çalışma bağımız var ve şu anda bu ismi dinamik olarak değiştirebiliyoruz.
+
+69
+00:06:25,340 --> 00:06:31,730
+Tekrar el altında tutun çünkü Yabber girdileri ve Sukant türü için
+
+70
+00:06:31,760 --> 00:06:35,690
+mantık kurmadık, çünkü orada bu isimleri güncelleyemiyoruz.
+
+71
+00:06:35,840 --> 00:06:40,630
+Ve muhtemelen bu Ashbery girdileri için burada şikayetçi.
+
+72
+00:06:40,860 --> 00:06:47,600
+listesi oluşturmanın daha iyi bir yoluna sahip olduğumuzda şimdilik bunu yok sayabiliriz ancak bunu göz ardı edebiliriz.
+
+73
+00:06:47,690 --> 00:06:49,410
+Dinamik olarak bir öğe

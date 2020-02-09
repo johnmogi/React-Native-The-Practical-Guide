@@ -1,0 +1,223 @@
+1
+00:00:02,220 --> 00:00:06,630
+W ostatnim wykładzie wykonaliśmy switchNameHandler po jednym kliknięciu.
+
+2
+00:00:06,690 --> 00:00:09,370
+Teraz chcemy manipulować stanem za jednym kliknięciem,
+
+3
+00:00:09,780 --> 00:00:18,450
+więc skomentuj tę instrukcję logu konsoli i możemy po prostu to zrobić. state docierając do tej własności państwowej tutaj i jak już wspomniałem,
+
+4
+00:00:18,450 --> 00:00:19,590
+będzie działać tylko
+
+5
+00:00:19,710 --> 00:00:22,870
+wtedy, gdy użyje się tej składni, w przeciwnym
+
+6
+00:00:22,890 --> 00:00:29,450
+razie nie odniesie się tutaj do klasy, a zatem nie będzie w stanie osiągnąć tej właściwości
+
+7
+00:00:29,560 --> 00:00:39,090
+stanu, ale tutaj będzie działać. Więc to. stan. osoby wtedy może uzyskać dostęp do osoby pierwszej
+
+8
+00:00:39,090 --> 00:00:41,170
+i ustawić nazwę Maximillian, moje pełne imię.
+
+9
+00:00:41,250 --> 00:00:45,360
+Zachowajmy to i zobaczmy, co się stanie, jeśli wykonamy ten kod,
+
+10
+00:00:45,570 --> 00:00:51,300
+otrzymamy już ostrzeżenie, ale zignorujmy je teraz, a my klikniemy Przełącz nazwę nic się nie zmienia,
+
+11
+00:00:51,300 --> 00:00:53,110
+Wciąż będziemy widzieć Max tutaj.
+
+12
+00:00:53,520 --> 00:01:01,110
+Jak już powiedziałem, otrzymujemy ostrzeżenie na ten temat, nie powinniśmy mutować, co oznacza zmianę stanu
+
+13
+00:01:01,110 --> 00:01:02,000
+bezpośrednio w
+
+14
+00:01:02,160 --> 00:01:07,050
+ten sposób, reagowanie nie rozpozna tego i nie podejmie tej
+
+15
+00:01:07,140 --> 00:01:09,720
+zmiany, więc nie rób tego.
+
+16
+00:01:09,720 --> 00:01:17,910
+Zamiast tego użyj specjalnej metody reagowania daje ci, będziesz miał do niej dostęp, a następnie ustawiany stan,
+
+17
+00:01:17,910 --> 00:01:22,700
+nie zdefiniowaliśmy tej metody, ale pamiętaj, że rozszerzamy komponent i
+
+18
+00:01:22,920 --> 00:01:29,820
+jest to udostępniane przez bibliotekę reagowania, a obiekt składowy się dzieje mieć ustawioną metodę
+
+19
+00:01:29,850 --> 00:01:30,760
+stanu.
+
+20
+00:01:31,130 --> 00:01:38,700
+Jest to metoda, która pozwala nam aktualizować tę specjalną właściwość stanu tutaj, a następnie zapewnia, że
+
+21
+00:01:38,790 --> 00:01:47,880
+​​reaguje ona na informacje o tej aktualizacji i aktualizuje dom. Ustaw stan przyjmuje obiekt jako argument i
+
+22
+00:01:48,330 --> 00:01:54,290
+spowoduje połączenie tego, co tutaj zdefiniujemy, z naszym istniejącym stanem.
+
+23
+00:01:54,300 --> 00:02:03,660
+Jeśli więc tutaj ustawię osoby na zaktualizowaną tablicę, scalę to z istniejącymi danymi.
+
+24
+00:02:03,790 --> 00:02:13,630
+Gdybyśmy mieli tutaj jakiś inny stan, który jest jakąś inną wartością, to by się nie dotknęło, nawet
+
+25
+00:02:13,630 --> 00:02:15,670
+gdybyśmy tylko aktualizowali osoby.
+
+26
+00:02:15,850 --> 00:02:16,990
+Nie wiem, co mam na
+
+27
+00:02:16,990 --> 00:02:17,950
+myśli, pozwól, że ci pokażę.
+
+28
+00:02:18,190 --> 00:02:26,590
+Kopiuję osoby i zasadniczo dodajemy to jako właściwość do obiektu, który zamierzam wykorzystać jako moją
+
+29
+00:02:26,590 --> 00:02:27,550
+aktualizację tutaj.
+
+30
+00:02:27,580 --> 00:02:37,240
+Mówię więc, że ten stan zestawu i stanu przyjmuje ten nowy obiekt, w którym aktualizuję moje osoby,
+
+31
+00:02:37,240 --> 00:02:45,410
+gdzie zmieniam tylko pierwszą osobę, a może zmienimy także Stephanie, zmieńmy jej wiek na 27.
+
+32
+00:02:45,440 --> 00:02:54,850
+Teraz, co zrobimy, co zrobi dla nas reakcja, to spojrzy na nasz stan i zobaczy, która część tego jest nadrzędna,
+
+33
+00:02:54,850 --> 00:02:56,770
+zmieniamy ludzi, nie odrzucimy
+
+34
+00:02:56,860 --> 00:03:06,060
+innego stanu, ale po prostu połączymy stary stan z nowym. Zastąpimy osoby, ponieważ jasno określamy nową wersję osób tutaj,
+
+35
+00:03:06,120 --> 00:03:10,340
+ale pozostawiamy inne państwo nietknięte, ponieważ nie mówimy
+
+36
+00:03:10,480 --> 00:03:16,020
+tutaj nic o tym i nie odrzucimy go, co oczywiście jest
+
+37
+00:03:16,040 --> 00:03:17,030
+dobre, nie
+
+38
+00:03:17,050 --> 00:03:18,520
+t chcesz zaktualizować
+
+39
+00:03:18,550 --> 00:03:23,410
+wszystko o swoim stanie, kiedy chcesz zmienić tylko drobną rzecz
+
+40
+00:03:23,410 --> 00:03:25,250
+na ten temat.
+
+41
+00:03:25,330 --> 00:03:32,240
+A więc zobaczmy, co się stanie, jeśli zapiszemy ten plik. Jeśli teraz go zapiszemy i ponownie
+
+42
+00:03:32,230 --> 00:03:38,360
+załadujemy aplikację, kliknę nazwę przełącznika, zobacz Max i obejrzyj tam 26 lat.
+
+43
+00:03:38,550 --> 00:03:47,910
+Widzisz to? To Maximillian i 27 lat. Teraz dom został zaktualizowany, ponieważ reaguje, że
+
+44
+00:03:47,910 --> 00:03:52,500
+zmienia się stan naszej aplikacji i jest to naprawdę wyjątkowa sprawa.
+
+45
+00:03:52,530 --> 00:03:57,650
+Nie ma wielu rzeczy, które mogłyby zareagować na aktualizację domeny,
+
+46
+00:03:57,660 --> 00:04:01,480
+tak naprawdę są tylko dwa, zmieniające się stany
+
+47
+00:04:02,040 --> 00:04:05,550
+i co jeszcze można już zobaczyć w
+
+48
+00:04:06,440 --> 00:04:08,780
+akcji, rekwizyty. Zmieniamy stan, to
+
+49
+00:04:08,810 --> 00:04:16,190
+jest miłe, ale pamiętaj, że to, co faktycznie produkujemy dla każdej osoby, jest zdefiniowane w tym komponencie osoby i
+
+50
+00:04:16,640 --> 00:04:18,580
+tam nie używamy stanu i
+
+51
+00:04:18,740 --> 00:04:23,390
+jak już powiedziałem, nie możemy go tam użyć, ponieważ używa tej funkcji składni.
+
+52
+00:04:23,990 --> 00:04:27,440
+Tutaj używamy rekwizytów i to jest
+
+53
+00:04:27,440 --> 00:04:32,690
+to, na co reagują zegarki. Jeśli zmiany stanu lub rekwizyty
+
+54
+00:04:32,720 --> 00:04:39,290
+ulegną zmianie, zasadniczo analizuje kod, który już wyrenderował, do dom i kod, który
+
+55
+00:04:39,290 --> 00:04:45,290
+teraz wyrenderowałby, gdyby miał ponownie renderować wszystko. A następnie aktualizuje istniejącą domenę we wszystkich miejscach, w których musi
+
+56
+00:04:45,290 --> 00:04:53,600
+zaktualizować, aby odzwierciedlić nowy stan i rekwizyty. Nowy stan w aplikacji. Js, nowe rekwizyty osobiście. js.

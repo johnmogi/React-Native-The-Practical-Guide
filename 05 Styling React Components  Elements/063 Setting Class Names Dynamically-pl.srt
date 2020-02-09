@@ -1,0 +1,363 @@
+1
+00:00:02,140 --> 00:00:08,560
+W ostatnim wykładzie nauczysz się dynamicznie ustawiać style. W końcu nauczyłeś się, jak używać javascript do manipulowania
+
+2
+00:00:13,450 --> 00:00:19,230
+czymkolwiek, co następnie wiążesz z tą właściwością stylu. Teraz nazwa klasy oczywiście może być również ustawiona dynamicznie, jak tutaj dla
+
+3
+00:00:19,480 --> 00:00:25,720
+aplikacji, ale możemy również wprowadzić nową klasę, aby mieć coś do zabawy. Możemy więc na przykład powiedzieć, że chcemy
+
+4
+00:00:25,870 --> 00:00:28,800
+coś tutaj zmienić w naszym kodzie.
+
+5
+00:00:28,930 --> 00:00:39,640
+Powiedzmy, że ten akapit tutaj, to naprawdę działa w zależności od tego, czy nasza lista osób ma trzy elementy,
+
+6
+00:00:39,640 --> 00:00:43,740
+jak to ma na początku lub mniej.
+
+7
+00:00:43,810 --> 00:00:46,290
+Więc może chcemy kolorować tekst
+
+8
+00:00:46,330 --> 00:00:53,440
+na czerwono, więc dodam nową klasę, którą nazwałbym Red, normalne zresetowanie klasy css do koloru
+
+9
+00:00:53,440 --> 00:01:00,730
+czerwonego, co oczywiście wpłynie na kolor tekstu, a może nawet chcemy zrobić to tak odważnie, Nazwę
+
+10
+00:01:00,730 --> 00:01:02,010
+klasę, utworzę klasę
+
+11
+00:01:02,010 --> 00:01:07,870
+o nazwie pogrubioną, nazwa zależy od Ciebie, jeśli pozostaniemy przy jednym elemencie pogrubionym.
+
+12
+00:01:07,990 --> 00:01:09,920
+Dostaję dwie nowe klasy css, są
+
+13
+00:01:09,940 --> 00:01:11,850
+one dostępne na całym świecie, ale
+
+14
+00:01:11,950 --> 00:01:13,990
+w tej chwili nie używam żadnych.
+
+15
+00:01:14,260 --> 00:01:21,430
+Teraz chcę ustawić nazwę klasy tego akapitu w sposób dynamiczny, w zależności od długości
+
+16
+00:01:21,760 --> 00:01:32,170
+elementów w tablicy mojej osoby, poniżej 2 lub 2 lub mniej elementów, które powinienem powiedzieć: czerwony, 1 i mniej czerwony
+
+17
+00:01:32,170 --> 00:01:33,020
+i pogrubiony.
+
+18
+00:01:33,400 --> 00:01:44,140
+Aby to zrobić, oczywiście muszę również dynamicznie dostosowywać klasy lub nazwę klasy ustawioną do tego akapitu.
+
+19
+00:01:44,230 --> 00:01:50,950
+Zrobię więc, że utworzę tutaj nową zmienną, którą będę nazywał klasami, a nazwa zależy
+
+20
+00:01:50,950 --> 00:01:51,800
+od ciebie,
+
+21
+00:01:52,030 --> 00:01:55,850
+a ja na końcu utworzę tablicę łańcuchów.
+
+22
+00:01:55,870 --> 00:01:58,990
+Jest to jeden ze sposobów robienia tego,
+
+23
+00:01:59,020 --> 00:02:05,340
+tutaj dodaję czerwony i pogrubiony i są to tylko nazwy klas, które tu zdefiniowałem,
+
+24
+00:02:05,340 --> 00:02:07,660
+czerwone i pogrubione bez kropki,
+
+25
+00:02:07,810 --> 00:02:09,170
+tylko nazwa klasy.
+
+26
+00:02:09,280 --> 00:02:15,820
+Wezwę tutaj połączenie i dołączę do nich z pustą przestrzenią, to zmieni
+
+27
+00:02:15,820 --> 00:02:22,790
+tę tablicę ciągów w jeden ciąg, który jest na końcu po prostu odważny,
+
+28
+00:02:22,810 --> 00:02:25,050
+to właśnie otrzymamy na końcu.
+
+29
+00:02:25,050 --> 00:02:30,200
+To jest poprawna lista klas css, którą możemy przypisać do nazw klas.
+
+30
+00:02:30,340 --> 00:02:35,530
+Oczywiście mogłem to stworzyć ręcznie, ale wkrótce będę dynamicznie edytować tę tablicę,
+
+31
+00:02:35,530 --> 00:02:37,670
+dlatego chcę mieć ogólne rozwiązanie.
+
+32
+00:02:37,930 --> 00:02:41,210
+Mogę teraz przejść do tego akapitu i dodać nazwę klasy
+
+33
+00:02:41,380 --> 00:02:45,340
+i oczywiście nie muszę wiązać tego z ciągiem, tak jak tutaj.
+
+34
+00:02:45,370 --> 00:02:51,640
+Mogę również powiązać to dynamicznie za pomocą pojedynczych nawiasów klamrowych z klasą zmiennych, które
+
+35
+00:02:51,640 --> 00:02:56,400
+mam na uwadze, to tylko ciąg połączony z pustą przestrzenią.
+
+36
+00:02:56,470 --> 00:03:01,620
+Jeśli teraz to zapiszę i upewnij się, że zapisałeś też aplikację. css, teraz wróćmy do aplikacji i
+
+37
+00:03:01,630 --> 00:03:05,100
+jest czerwony i odważny, od samego początku bez
+
+38
+00:03:05,230 --> 00:03:08,670
+dotykania osób, które brzmią trochę dziwnie, ale wiesz
+
+39
+00:03:08,740 --> 00:03:10,800
+o co mi chodzi.
+
+40
+00:03:10,810 --> 00:03:15,280
+Od samego początku jest czerwony, ponieważ zawsze przypisaliśmy te klasy.
+
+41
+00:03:15,310 --> 00:03:19,290
+Teraz możemy dodać do tego trochę dynamicznej natury, chcemy to zrobić
+
+42
+00:03:19,330 --> 00:03:24,450
+tylko, jeśli jest to mniej niż jedna osoba, w innym przypadku powinna być czerwona.
+
+43
+00:03:24,460 --> 00:03:30,730
+Jeśli jest mniej niż 2 lub mniej i faktycznie jest równa, a jeśli mamy wszystkie trzy osoby, żadna z tych
+
+44
+00:03:30,850 --> 00:03:32,440
+klas nie powinna być dołączona.
+
+45
+00:03:32,440 --> 00:03:37,600
+Więc pozwól mi faktycznie zrobić coś innego, usunę tutaj instrukcję join
+
+46
+00:03:37,600 --> 00:03:38,200
+i
+
+47
+00:03:38,710 --> 00:03:43,660
+ustawię klasy na pustą tablicę, a następnie dodaję tutaj instrukcję
+
+48
+00:03:43,990 --> 00:03:51,930
+if, a jeśli tak. stan. osoby. długość jest mniejsza lub równa
+
+49
+00:03:51,960 --> 00:03:54,040
+2, więc pozostały tylko dwie
+
+50
+00:03:54,040 --> 00:04:01,990
+lub mniej osób, wezmę klasy, ta zmienna i faktycznie niech jest tylko wersją var ES6, ale możemy użyć
+
+51
+00:04:02,000 --> 00:04:05,750
+const tutaj, ponieważ nigdy nie przypisuję nowej wartości.
+
+52
+00:04:06,000 --> 00:04:15,270
+Więc jeśli jest to mniej niż dwa, wywołaję push, normalną metodę wypychania javascript, aby wypchnąć czerwoną klasę na
+
+53
+00:04:15,340 --> 00:04:16,510
+tę tablicę.
+
+54
+00:04:16,800 --> 00:04:22,750
+W tym momencie zajęcia będą czerwone.
+
+55
+00:04:22,790 --> 00:04:25,680
+Dodam też inny, jeśli sprawdzę,
+
+56
+00:04:25,880 --> 00:04:32,760
+gdzie powiem, czy stan. osoby. długość jest mniejsza lub równa 1 i
+
+57
+00:04:32,940 --> 00:04:36,090
+proszę zauważyć, że to nie jest żadna inna sytuacja, jeśli
+
+58
+00:04:36,090 --> 00:04:41,460
+warunek, to po prostu inne, jeśli instrukcja lub jeśli sprawdzanie przychodzi po pierwszym, ponieważ chcę uruchomić oba.
+
+59
+00:04:41,550 --> 00:04:48,360
+Więc jeśli jest jeszcze mniejszy lub równy niż jeden, to ponownie sięgnę po
+
+60
+00:04:48,840 --> 00:04:50,290
+klasy i popchnę
+
+61
+00:04:50,610 --> 00:04:57,590
+inną klasę, odważną klasę, więc w tym momencie zajęcia są czerwone, a także odważne.
+
+62
+00:04:57,620 --> 00:05:04,400
+Teraz, jeśli mamy tylko dwa elementy w tablicy osób, po prostu będziemy mieć kolor czerwony, a
+
+63
+00:05:04,790 --> 00:05:08,000
+pominiemy to, ponieważ ten warunek tutaj będzie fałszywy.
+
+64
+00:05:08,000 --> 00:05:13,450
+Teraz mamy szereg klas, które mogą wyglądać tak lub tak, lub
+
+65
+00:05:13,520 --> 00:05:20,680
+być pustą tablicą, jeśli mamy wszystkie trzy elementy. Więc chcę go przypisać tutaj i takie klasy już nie będą działały,
+
+66
+00:05:20,680 --> 00:05:21,530
+ponieważ teraz jest
+
+67
+00:05:21,550 --> 00:05:23,720
+to tablica, musimy jednak podać tutaj ciąg znaków.
+
+68
+00:05:24,100 --> 00:05:28,470
+Mogę po prostu wywołać join z pustym spacją pomiędzy, więc
+
+69
+00:05:28,480 --> 00:05:34,000
+biała spacja na klasach tutaj, kiedy ją przypiszę, mogłabym oczywiście zrobić to wcześniej
+
+70
+00:05:34,000 --> 00:05:36,520
+i zapisać ją w nowej zmiennej.
+
+71
+00:05:36,650 --> 00:05:43,780
+Przypisuję teraz ciąg, który jest po prostu moją połączoną tablicą, albo nic, albo po prostu czerwony albo
+
+72
+00:05:43,990 --> 00:05:47,050
+czerwony i pogrubiony z białą spacją pomiędzy.
+
+73
+00:05:47,500 --> 00:05:51,670
+A teraz pozwól mi to zapisać i wrócić, jeśli teraz zostanie ponownie
+
+74
+00:05:51,760 --> 00:05:54,100
+załadowany, domyślnie jest to czarny tekst.
+
+75
+00:05:54,100 --> 00:05:57,030
+Teraz przełączamy osoby i usuwamy jeden, teraz
+
+76
+00:05:57,190 --> 00:05:59,410
+jest czerwony, ale nie odważny.
+
+77
+00:05:59,440 --> 00:06:02,750
+Jeśli teraz usunę kolejny, to jest on również odważny, a
+
+78
+00:06:03,010 --> 00:06:09,370
+teraz, gdy usunę trzeci, pozostanie tak w oczywisty sposób. Pokazuje to, w jaki sposób można również dynamicznie
+
+79
+00:06:09,430 --> 00:06:11,540
+edytować i przypisywać klasy i
+
+80
+00:06:11,710 --> 00:06:13,960
+nie mogę tego wystarczająco podkreślić,
+
+81
+00:06:14,260 --> 00:06:16,310
+wszystko jest po prostu javascript.
+
+82
+00:06:16,330 --> 00:06:21,940
+Więc pracujesz z tablicą klas tutaj, tak jak robisz to z normalną tablicą, ponieważ jest to
+
+83
+00:06:22,060 --> 00:06:27,760
+normalna tablica w normalnym javascriptu, a wszystko, co robisz na końcu, to musisz upewnić się, że
+
+84
+00:06:27,760 --> 00:06:31,080
+faktycznie przypisujesz ciąg, tak jak robimy tutaj z metoda łączenia.
+
+85
+00:06:31,450 --> 00:06:39,040
+Oczywiście możesz mieć dowolną logikę potrzebną do skonstruowania tablicy klas lub otrzymania łańcucha z klasami css innymi
+
+86
+00:06:39,040 --> 00:06:44,110
+metodami bez łączenia się z tablicą, bez względu na to, co masz.
+
+87
+00:06:44,170 --> 00:06:47,410
+Być może domyślnie wprowadzisz dane wejściowe, które są
+
+88
+00:06:47,410 --> 00:06:53,410
+ciągiem znaków, możesz przypisać do nazwy klasy wszystko, co jest poprawnym ciągiem znaków, a następnie
+
+89
+00:06:53,440 --> 00:07:00,220
+zostanie ono potraktowane jako lista klas css, które miejmy nadzieję spełnią klasy ustawione w twoim pliku css.
+
+90
+00:07:00,220 --> 00:07:05,760
+Dzięki temu nauczyłeś się dynamicznie przypisywać style, edytować je i dynamicznie przypisywać
+
+91
+00:07:05,770 --> 00:07:07,060
+i edytować klasy.

@@ -1,0 +1,407 @@
+1
+00:00:02,610 --> 00:00:07,170
+Quindi vogliamo creare un progetto di reazione locale con locale.
+
+2
+00:00:07,170 --> 00:00:13,430
+Voglio dire che non usiamo la penna del codice ma invece avremo un progetto sulla nostra macchina in cui possiamo lavorare con
+
+3
+00:00:13,440 --> 00:00:15,600
+la nostra I. T. o editore.
+
+4
+00:00:15,600 --> 00:00:18,010
+Questo naturalmente è il modo in cui vogliamo lavorare con la reazione.
+
+5
+00:00:18,030 --> 00:00:19,810
+Vogliamo averlo sulla nostra macchina.
+
+6
+00:00:19,830 --> 00:00:21,890
+Abbiamo più funzioni disponibili qui.
+
+7
+00:00:21,930 --> 00:00:27,840
+comodo che usare un web editor e una pen code che usiamo prima o Jay Espagne che usiamo e
+
+8
+00:00:27,840 --> 00:00:33,960
+il secondo opzionale Marchal sono davvero più campi da gioco di veri e propri ambienti di lavoro per progetti reali.
+
+9
+00:00:33,960 --> 00:00:34,710
+È più
+
+10
+00:00:34,860 --> 00:00:36,990
+Quindi istituiremo un progetto locale.
+
+11
+00:00:37,140 --> 00:00:41,330
+In realtà, Andrea è molto più che importare D2.
+
+12
+00:00:41,350 --> 00:00:43,050
+Abbiamo importato e Koeppen.
+
+13
+00:00:43,200 --> 00:00:47,020
+Abbiamo bisogno di un flusso di lavoro più elaborato per progetti reali.
+
+14
+00:00:47,130 --> 00:00:51,380
+E questo è consigliato sia per applicazioni a pagina singola che per pagine multiple.
+
+15
+00:00:51,390 --> 00:00:57,300
+La domanda ovviamente è perché abbiamo bisogno di un flusso di lavoro più complesso e di come lo realizziamo.
+
+16
+00:00:57,300 --> 00:01:05,270
+Lasciatemi iniziare dal motivo per cui, durante la creazione di un'app reale, vogliamo ottimizzare il nostro codice.
+
+17
+00:01:05,280 --> 00:01:11,490
+Non ci importava di questo nel progetto demo nel primo modulo del corso sulla penna del codice,
+
+18
+00:01:11,490 --> 00:01:19,980
+ma per una grande applicazione del re-act vogliamo spedire il codice che è il più piccolo possibile e il più ottimizzato possibile, ovviamente perché
+
+19
+00:01:20,050 --> 00:01:23,400
+il debito aumenta le prestazioni di la nostra app.
+
+20
+00:01:23,400 --> 00:01:25,390
+Inoltre e questo è super importante.
+
+21
+00:01:25,470 --> 00:01:28,720
+Vogliamo utilizzare queste funzionalità javascript di prossima generazione.
+
+22
+00:01:28,770 --> 00:01:32,520
+Ti ho insegnato nell'ultimo modulo opzionale.
+
+23
+00:01:32,610 --> 00:01:37,400
+Ora vogliamo usarlo perché rende la nostra vita di sviluppatore molto più semplice.
+
+24
+00:01:37,650 --> 00:01:43,350
+che consiste nell'utilizzare tutte queste funzionalità next gen perché il codice è più snello e più facile da leggere più velocemente.
+
+25
+00:01:43,350 --> 00:01:45,970
+E questo è lo standard di fatto per il re-act
+
+26
+00:01:45,990 --> 00:01:48,980
+Meno incline agli errori e molti altri motivi.
+
+27
+00:01:49,020 --> 00:01:51,480
+Quindi dovresti davvero usare queste funzionalità.
+
+28
+00:01:51,480 --> 00:01:54,230
+Non è solo qualcosa di carino opzionale.
+
+29
+00:01:54,330 --> 00:01:56,550
+Consiglio vivamente di utilizzare queste funzionalità.
+
+30
+00:01:56,630 --> 00:02:01,560
+È considerata la migliore pratica ed è ciò che ti insegno in questo corso perché ovviamente
+
+31
+00:02:01,560 --> 00:02:03,170
+voglio insegnarti le migliori pratiche.
+
+32
+00:02:03,510 --> 00:02:09,060
+le funzionalità javascript di prossima generazione per avere un tempo più semplice per scrivere meno codice soggetto a errori.
+
+33
+00:02:09,060 --> 00:02:09,910
+Quindi vogliamo utilizzare
+
+34
+00:02:10,320 --> 00:02:16,100
+E con tutto ciò abbiamo bisogno di un flusso di lavoro che supporti queste funzionalità anche sulla penna del codice.
+
+35
+00:02:16,140 --> 00:02:22,770
+Abbiamo implicitamente fatto questo ricordare il dropdown del preprocessore in cui siamo passati a Babel che dietro le
+
+36
+00:02:22,770 --> 00:02:31,710
+quinte ha bloccato un paio di strumenti di compilazione che analizzerebbero il nostro codice e supportano J come X fa HVM L nella sintassi
+
+37
+00:02:31,710 --> 00:02:33,140
+javascript per esempio.
+
+38
+00:02:33,300 --> 00:02:35,670
+Quindi vogliamo utilizzare queste funzionalità next gen.
+
+39
+00:02:35,760 --> 00:02:43,020
+In sostanza, vogliamo essere in grado di scrivere sei o più codice e di inviare ancora il codice alla fine che
+
+40
+00:02:43,020 --> 00:02:49,710
+funziona con il maggior numero di browser possibile e non che molti browser supportino tutte queste funzionalità di prossima generazione.
+
+41
+00:02:49,710 --> 00:02:54,590
+Questo è il motivo per cui abbiamo bisogno di un flusso di lavoro audace che in realtà combini queste caratteristiche.
+
+42
+00:02:54,720 --> 00:02:57,140
+Alla fine, alla fine, vogliamo essere più produttivi.
+
+43
+00:02:57,180 --> 00:03:02,850
+Questo include funzionalità javascript di nuova generazione che spesso ci permettono di scrivere codice più condensato
+
+44
+00:03:03,180 --> 00:03:06,880
+ma include anche cose come il prefisso automatico C S S.
+
+45
+00:03:06,960 --> 00:03:13,410
+Potresti sapere che i prefissi di C S S sono una cosa per ottenere il supporto browser più ampio possibile per le
+
+46
+00:03:13,410 --> 00:03:14,850
+caratteristiche di C S S.
+
+47
+00:03:15,090 --> 00:03:17,860
+Ora l'aggiunta manuale di questi prefissi è abbastanza fastidiosa.
+
+48
+00:03:17,940 --> 00:03:19,990
+Quindi aggiungerli automaticamente è bello.
+
+49
+00:03:20,040 --> 00:03:21,560
+O pensa di brillare.
+
+50
+00:03:21,570 --> 00:03:28,740
+Quindi uno strumento che ti avverte in realtà se stai scrivendo un codice ottimale che sarebbe bello avere anche tu.
+
+51
+00:03:28,800 --> 00:03:34,990
+Non strettamente richiesto, ma una bella funzionalità e tutte queste cose dovrebbero far parte di un flusso di lavoro di build.
+
+52
+00:03:35,100 --> 00:03:41,370
+Ora per implementarli abbiamo bisogno di un paio di strumenti che consentano loro di eseguire il
+
+53
+00:03:41,370 --> 00:03:49,020
+codice per avvisarci in caso di suggerimento o per compilare il codice per il codice che gira su quanti
+
+54
+00:03:49,170 --> 00:03:57,040
+più browser possibile mentre noi come sviluppatore stiamo scrivendo codice molto moderno che non funzionerebbe da solo su molti browser.
+
+55
+00:03:57,420 --> 00:04:04,230
+scrivere questo tipo di codice è desiderabile e perché abbiamo bisogno di un flusso di lavoro di compilazione più complesso che ci
+
+56
+00:04:04,230 --> 00:04:10,350
+consenta di scrivere codice che in realtà ottimizzi il codice per noi e dimenticare il modo in cui ovviamente è rilevante.
+
+57
+00:04:11,010 --> 00:04:13,570
+Ecco perché un paio di motivi per cui
+
+58
+00:04:13,800 --> 00:04:16,210
+Come possiamo ottenere un tale flusso di lavoro.
+
+59
+00:04:16,230 --> 00:04:19,110
+Per prima cosa abbiamo bisogno di uno strumento di gestione delle dipendenze.
+
+60
+00:04:19,140 --> 00:04:25,310
+Le dipendenze sono semplicemente librerie di terze parti. I pacchetti javascript di terze parti reagiscono, ad esempio, la
+
+61
+00:04:25,330 --> 00:04:31,640
+dipendenza reagisce alla dipendenza di Dharma e anche tutti gli strumenti costruiti di cui avremo bisogno alla fine.
+
+62
+00:04:31,710 --> 00:04:32,930
+Le nostre dipendenze
+
+63
+00:04:33,120 --> 00:04:38,980
+Quindi il compilatore per il prossimo gen javascript all'attuale gen javascript è una dipendenza.
+
+64
+00:04:39,150 --> 00:04:40,860
+E useremo NPM qui.
+
+65
+00:04:40,980 --> 00:04:48,060
+Yarned sarebbe un altro strumento che potresti utilizzare, ma useremo il gestore di pacchetti del nodo NPM uno strumento che ci
+
+66
+00:04:48,390 --> 00:04:54,130
+consente solo di gestire i pacchetti e con uno standard de facto per la gestione delle dipendenze.
+
+67
+00:04:54,240 --> 00:04:57,030
+Anche su progetti di front end.
+
+68
+00:04:57,030 --> 00:05:04,960
+Oltre a questo strumento di gestione delle dipendenze abbiamo bisogno di un gestore perché vogliamo scrivere codice modulare e dividerlo su più file
+
+69
+00:05:04,960 --> 00:05:10,450
+in modo che ogni file abbia un compito chiaro un chiaro obiettivo e quindi è più
+
+70
+00:05:10,480 --> 00:05:12,540
+facile da mantenere e gestire.
+
+71
+00:05:12,850 --> 00:05:19,810
+Ma poi vogliamo assicurarci che tutto questo codice venga inserito in un paio di file alla fine, quando lo
+
+72
+00:05:19,810 --> 00:05:26,680
+spediamo perché i browser non supportano nemmeno i guasti suddivisi. I browser meno recenti almeno non lo fanno.
+
+73
+00:05:26,980 --> 00:05:33,010
+E potrebbe anche anche se lo fossero o non fossero così ottimali per fare migliaia di richieste
+
+74
+00:05:33,010 --> 00:05:35,020
+a tutti questi piccoli file focalizzati.
+
+75
+00:05:35,170 --> 00:05:40,120
+Quindi vogliamo avere quel Butler e useremo il web pack che è lo standard defacto per il raggruppamento in
+
+76
+00:05:40,120 --> 00:05:40,720
+questi giorni.
+
+77
+00:05:40,720 --> 00:05:44,250
+La cosa bella del web peg è che non è solo un fascio di file.
+
+78
+00:05:44,320 --> 00:05:50,140
+Inoltre, ci consente di applicare un paio di altri passi di costruzione prima di eseguire questo raggruppamento.
+
+79
+00:05:50,140 --> 00:05:57,370
+Ad esempio la compilation menzionata di next gen javascript che richiede una tabella individuale.
+
+80
+00:05:57,400 --> 00:06:04,420
+collegati alla configurazione del web pack in modo che facciano parte di questo bundling e ottimizzazione processi.
+
+81
+00:06:04,690 --> 00:06:12,310
+Abbiamo bisogno di un compilatore che faccia questa compilation javascript che significa la traduzione dalle moderne funzionalità per
+
+82
+00:06:12,310 --> 00:06:19,100
+funzionare che funziona su browser più vecchi e useremo i preset babbel plus che possono essere
+
+83
+00:06:19,180 --> 00:06:25,900
+Infine, alla fine, vogliamo utilizzare un server di sviluppo per testare la nostra app localmente sul nostro server di sviluppo
+
+84
+00:06:25,900 --> 00:06:32,590
+macchina, un server Web, ma uno in esecuzione sul nostro computer, potremmo aprire un file di posta HD facendo
+
+85
+00:06:32,590 --> 00:06:39,370
+doppio clic su di esso, ma userebbe il file protocollo e non emulerebbe correttamente l'app in esecuzione mentre gira su
+
+86
+00:06:39,460 --> 00:06:40,570
+un server web.
+
+87
+00:06:40,780 --> 00:06:45,300
+Quindi abbiamo bisogno di un server web e possiamo ovviamente eseguirne uno sulla nostra macchina locale.
+
+88
+00:06:45,460 --> 00:06:49,760
+Il server è quindi accessibile solo da noi, ma è tutto ciò di cui abbiamo bisogno come sviluppatore.
+
+89
+00:06:49,870 --> 00:06:55,020
+E poi possiamo davvero vedere l'app eseguita mentre verrà eseguita alla fine su un server reale.
+
+90
+00:06:55,060 --> 00:06:59,570
+Abbiamo bisogno di tutte queste cose e sembra un super complesso da configurare.
+
+91
+00:06:59,590 --> 00:07:07,000
+La cosa buona è che non ti presenterò uno strumento che creerà un progetto che supporti
+
+92
+00:07:07,000 --> 00:07:12,490
+tutte queste cose fuori dalla scatola con configurazione zero nelle prossime lezioni.
+
+93
+00:07:12,490 --> 00:07:18,010
+Installeremo questo strumento insieme ed è uno strumento creato dal team di reazione e dalla comunità.
+
+94
+00:07:18,170 --> 00:07:24,380
+E abbiamo ufficialmente raccomandato il modo di creare nuove app di reazione perché questo è il tema generale del discorso.
+
+95
+00:07:24,550 --> 00:07:32,000
+Ti insegnerò le cose nella migliore pratica e nel modo consigliato in modo che tutto il set up sia abbastanza semplice.
+
+96
+00:07:32,080 --> 00:07:38,170
+margine se vuoi ancora approfondire come funziona dietro le quinte e vuoi impostarlo da zero.
+
+97
+00:07:38,170 --> 00:07:39,610
+E come nota a
+
+98
+00:07:39,610 --> 00:07:46,030
+Ho anche ricevuto un modulo per morto verso la fine del corso, dove Boulder risponderà da
+
+99
+00:07:46,180 --> 00:07:47,560
+zero alla settimana.
+
+100
+00:07:47,560 --> 00:07:50,080
+Ora con quello sai cosa abbiamo bisogno e come.
+
+101
+00:07:50,080 --> 00:07:55,990
+Ora tuffiamoci nel debito che Toul ho menzionato e impariamo come in realtà iniziamo con un nuovo
+
+102
+00:07:55,990 --> 00:07:58,550
+progetto Riak a supporto di tutte queste funzionalità.

@@ -1,0 +1,139 @@
+1
+00:00:02,160 --> 00:00:09,590
+Przejdźmy więc do komunikatów o błędach w reakcji na aplikację. W projekcie, nad którym
+
+2
+00:00:09,590 --> 00:00:20,480
+pracowałeś dotychczas, w nazwieChangedHandler dodam błąd. W kodzie tam, gdzie przypisaliśmy osobę, zaktualizowaną osobę tutaj, docieramy do
+
+3
+00:00:20,480 --> 00:00:21,220
+wartości docelowej
+
+4
+00:00:21,590 --> 00:00:28,300
+zdarzenia, aby uzyskać wartość wprowadzoną przez użytkownika. Tutaj, do której przypisałem wartość, załóżmy,
+
+5
+00:00:28,370 --> 00:00:35,900
+że nie mamy dostępu do celu zdarzenia, który jest poprawny, ale wprowadzanie zdarzeń jest nieprawidłowe.
+
+6
+00:00:35,900 --> 00:00:37,920
+Załóżmy, że popełniliśmy ten błąd.
+
+7
+00:00:38,360 --> 00:00:42,300
+Teraz, jeśli wrócisz do aplikacji na pierwszy rzut oka, wydaje
+
+8
+00:00:42,530 --> 00:00:48,410
+się, że działa, przełączamy osobę, to nadal działa, ale jeśli zacznę pisać, faktycznie dostaniemy błąd,
+
+9
+00:00:48,620 --> 00:00:53,840
+aw naszym przepływie pracy nad rozwojem nawet w tym miejscu mamy ładny pokaz błędu.
+
+10
+00:00:53,840 --> 00:00:56,400
+Skupmy się teraz na komunikacie o
+
+11
+00:00:56,450 --> 00:00:59,900
+błędzie po prawej stronie, zawsze przewijaj do samego
+
+12
+00:00:59,900 --> 00:01:05,260
+końca, aby zobaczyć komunikat o błędzie, a tam nie można odczytać wartości właściwości niezdefiniowanej.
+
+13
+00:01:05,330 --> 00:01:10,280
+Otrzymasz również wskazówkę, gdzie doszło do tego w aplikacji
+
+14
+00:01:10,400 --> 00:01:11,610
+NameChangedHandler. js
+
+15
+00:01:11,690 --> 00:01:16,200
+linia 27, a na środku jest jeszcze
+
+16
+00:01:16,280 --> 00:01:19,880
+ładniej, dostaniesz podświetloną wartość wejściową zdarzenia.
+
+17
+00:01:19,880 --> 00:01:27,080
+Tak więc ta linia wydaje się być niepoprawna i nie ma właściwości value na undefined, teraz po prostu
+
+18
+00:01:27,500 --> 00:01:29,510
+oznacza część przed wartością, więc
+
+19
+00:01:29,630 --> 00:01:36,180
+ta część tutaj jest niezdefiniowana, co jest przypadkiem, ponieważ nie ma żadnej właściwości wejściowej na zdarzeniu.
+
+20
+00:01:36,200 --> 00:01:39,470
+Nadal musisz dowiedzieć się, że cel jest poprawny
+
+21
+00:01:39,500 --> 00:01:45,110
+sam, na przykład, patrząc na dokumentację zdarzeń, która pozwala zajrzeć do normalnej dokumentacji
+
+22
+00:01:45,320 --> 00:01:47,080
+zdarzeń wejścia html, ale
+
+23
+00:01:47,540 --> 00:01:51,590
+masz jasną wskazówkę, co poszło nie tak i gdzie.
+
+24
+00:01:51,740 --> 00:02:00,440
+Czasami komunikaty o błędach są mniej przydatne niż ten, nawet jeśli sam komunikat o błędzie jest tajemniczy.
+
+25
+00:02:00,590 --> 00:02:07,130
+W większości przypadków powinieneś uzyskać pomocny numer linii, który pozwala wrócić do kodu i spróbować dowiedzieć
+
+26
+00:02:07,160 --> 00:02:10,400
+się, co jest nie tak z tym wierszem,
+
+27
+00:02:10,430 --> 00:02:14,980
+powinno to być pomocne i powinno ci umożliwić poprawienie wartości.
+
+28
+00:02:14,990 --> 00:02:19,570
+W ten sposób reagujesz na komunikaty o błędach, nie boisz się,
+
+29
+00:02:19,670 --> 00:02:20,810
+nie wpadaj w
+
+30
+00:02:20,810 --> 00:02:21,920
+panikę, często te
+
+31
+00:02:21,950 --> 00:02:25,400
+komunikaty o błędach są naprawdę przydatne, powinieneś je
+
+32
+00:02:25,430 --> 00:02:28,480
+przeczytać i powinieneś rzucić okiem na numery
+
+33
+00:02:28,490 --> 00:02:29,950
+linii, do których prowadzą.
+
+34
+00:02:30,200 --> 00:02:32,810
+A co z błędami logicznymi?
+
+35
+00:02:32,870 --> 00:02:35,370
+Przyjrzyjmy się im w następnym wykładzie.

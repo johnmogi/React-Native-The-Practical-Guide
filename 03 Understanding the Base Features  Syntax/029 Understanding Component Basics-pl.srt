@@ -1,0 +1,275 @@
+1
+00:00:02,380 --> 00:00:07,900
+W ostatnim wykładzie przeprowadziłem cię przez strukturę folderów, która została stworzona przez aplikację create react.
+
+2
+00:00:08,020 --> 00:00:09,650
+I edytowaliśmy naszą aplikację. plik js.
+
+3
+00:00:09,670 --> 00:00:10,730
+Przejdźmy teraz głębiej
+
+4
+00:00:10,840 --> 00:00:13,620
+w to, co widzimy tutaj, widzimy składnik reagujący. Jak wyjaśniłem, reakcja polega na tworzeniu komponentów, w zasadzie niestandardowych
+
+5
+00:00:13,690 --> 00:00:21,190
+elementów html, które można powiedzieć, a które następnie można wykorzystać do skonstruowania aplikacji.
+
+6
+00:00:21,400 --> 00:00:26,200
+Ten składnik aplikacji jest faktycznie używany w indeksie. plik js, w którym renderujesz go
+
+7
+00:00:26,200 --> 00:00:33,280
+w miejsce tego elementu głównego.
+
+8
+00:00:33,340 --> 00:00:34,030
+I moglibyśmy
+
+9
+00:00:34,210 --> 00:00:39,450
+renderować normalny element html, aby przetestować na przykład, to by działało, to nie jest teraz
+
+10
+00:00:39,480 --> 00:00:40,240
+komponent reagujący.
+
+11
+00:00:40,240 --> 00:00:42,570
+Jeśli to zapiszę, widzę ten znacznik h1,
+
+12
+00:00:42,610 --> 00:00:45,640
+ale oczywiście wtedy nie mamy rzeczywistej aplikacji reagowania, renderujemy
+
+13
+00:00:46,000 --> 00:00:49,360
+normalny element html, ale nie renderujemy naszego własnego komponentu reagującego.
+
+14
+00:00:49,470 --> 00:00:55,860
+Teraz możesz oczywiście użyć wielu reakcji na render i renderować cały kod
+
+15
+00:00:55,870 --> 00:01:02,800
+HTML, który chcesz użyć w swojej aplikacji, ale tak naprawdę nie tworzysz swoich
+
+16
+00:01:02,860 --> 00:01:03,940
+aplikacji reagowania.
+
+17
+00:01:04,030 --> 00:01:07,530
+Zazwyczaj renderujesz jeden składnik główny, składnik aplikacji, ale możesz go nazwać, jak chcesz. Jeden składnik główny, w naszym przypadku jest
+
+18
+00:01:07,810 --> 00:01:15,760
+to składnik aplikacji o nazwie app, a tam
+
+19
+00:01:15,820 --> 00:01:16,840
+zagnieżdżono wszystkie
+
+20
+00:01:16,840 --> 00:01:24,150
+inne komponenty, których może potrzebować twoja aplikacja i oczywiście te komponenty mogą być również zagnieżdżone
+
+21
+00:01:24,150 --> 00:01:30,050
+w sobie nawzajem, ale aż do samego początku , masz tylko jeden składnik root. Możesz dotrzeć do wielu węzłów w pliku html i zamontować różne
+
+22
+00:01:30,250 --> 00:01:37,300
+komponenty główne dla różnych aplikacji reagowania w
+
+23
+00:01:37,330 --> 00:01:45,010
+tym samym projekcie, co byłoby możliwe, ale nie jest to to, co robimy tutaj.
+
+24
+00:01:45,010 --> 00:01:47,950
+Na koniec możesz oczywiście po prostu powielić to, czego
+
+25
+00:01:47,980 --> 00:01:52,810
+się nauczysz w tym kursie dla wielu aplikacji w jednym z tych samych plików html.
+
+26
+00:01:52,930 --> 00:01:55,270
+Ale trzymajmy się ogólnego lub typowego użycia reakcji.
+
+27
+00:01:55,540 --> 00:01:59,170
+Mamy ten komponent aplikacji, który jest zdefiniowany w aplikacji. js, widzimy jeden sposób, jeden z
+
+28
+00:01:59,170 --> 00:02:04,450
+dwóch sposobów definiowania komponentu reagującego. Tworzymy klasę javascript ze słowem kluczowym
+
+29
+00:02:04,450 --> 00:02:11,140
+class, a następnie używamy słowa kluczowego extends
+
+30
+00:02:11,140 --> 00:02:18,730
+do dziedziczenia z tego obiektu lub klasy komponentu, aby było precyzyjnie zaimportowane tutaj z biblioteki reagowania.
+
+31
+00:02:18,730 --> 00:02:25,120
+Właściwie importujemy dwie rzeczy, reagujemy, które są odpowiedzialne lub wymagane
+
+32
+00:02:25,120 --> 00:02:33,250
+do renderowania czegokolwiek, czegokolwiek do dom, zawsze musimy zaimportować to w pliku, w
+
+33
+00:02:33,250 --> 00:02:34,030
+którym
+
+34
+00:02:34,030 --> 00:02:37,750
+definiujemy komponent i oczywiście samą klasę komponentu. Wkrótce pokażę wam inny
+
+35
+00:02:38,080 --> 00:02:43,300
+sposób tworzenia komponentów.
+
+36
+00:02:43,330 --> 00:02:44,370
+Teraz ta klasa
+
+37
+00:02:44,470 --> 00:02:46,800
+ma jedną metodę - metodę renderowania.
+
+38
+00:02:46,930 --> 00:02:48,130
+Musi to mieć, ponieważ reakcja wywoła tę metodę, aby wyrenderować coś na ekranie.
+
+39
+00:02:48,220 --> 00:02:54,940
+Jest jedna ważna praca, którą musi wykonać każdy komponent
+
+40
+00:02:55,230 --> 00:02:57,400
+reagujący, musi ona
+
+41
+00:02:57,580 --> 00:03:06,370
+zwrócić lub wyrenderować kod HTML, który można wyrenderować na dom na ekranie.
+
+42
+00:03:06,440 --> 00:03:08,240
+Możesz tam także robić
+
+43
+00:03:08,470 --> 00:03:12,160
+inne rzeczy, sięgać do internetu, wykonywać obliczenia, słuchać
+
+44
+00:03:12,160 --> 00:03:17,320
+wydarzeń, czegokolwiek potrzebujesz w aplikacji, zobaczymy to wszystko w tym kursie, ale
+
+45
+00:03:17,320 --> 00:03:25,020
+zawsze musisz też renderować jakiś HTML do domu , jest to o tyle ważne, o czym należy pamiętać.
+
+46
+00:03:25,030 --> 00:03:28,140
+Następnie eksportujemy tę klasę aplikacji jako domyślny
+
+47
+00:03:28,330 --> 00:03:34,440
+eksport tego pliku, jest to funkcja ES6 i po prostu oznacza, że ​​jeśli
+
+48
+00:03:34,510 --> 00:03:41,020
+zaimportujesz ten cały plik, po prostu zaimportujesz tę klasę, ponieważ jest to domyślny eksport.
+
+49
+00:03:41,020 --> 00:03:43,280
+Używamy tego w indeksie. plik js, w którym importujemy aplikację z pliku aplikacji, ponownie
+
+50
+00:03:43,660 --> 00:03:50,210
+pomijając to rozszerzenie, ponieważ jest on dodawany automatycznie przez nasz przepływ pracy dla plików javascript.
+
+51
+00:03:50,230 --> 00:03:56,840
+Ta nazwa aplikacji jest wybierana dowolnie, ale zazwyczaj używasz nazwy komponentu, którego używasz
+
+52
+00:03:57,260 --> 00:04:02,910
+również w pliku, a następnie używasz jej również jako nazwy pliku.
+
+53
+00:04:02,980 --> 00:04:08,140
+Jedna uwaga, możesz również zobaczyć te
+
+54
+00:04:08,140 --> 00:04:09,320
+komponenty. jsx jako rozszerzenie
+
+55
+00:04:09,400 --> 00:04:16,890
+pliku zamiast js, powodem tego jest tutaj kod.
+
+56
+00:04:16,930 --> 00:04:19,970
+Odniosłem się do tego jako HTML, który jest zwracany.
+
+57
+00:04:20,260 --> 00:04:24,410
+Ale w końcu to nie jest html, wygląda na
+
+58
+00:04:24,760 --> 00:04:27,250
+to, ale to jest jsx,
+
+59
+00:04:27,310 --> 00:04:32,880
+więc to javascript wygląda trochę inaczej, i to może być mylące na
+
+60
+00:04:32,980 --> 00:04:39,340
+początku, gdy uczysz się reagować, to może być jedna z najbardziej zagmatwanych rzeczy . Ważne jest to, że jest to po prostu syntaktyczny cukier, został on w zasadzie wymyślony
+
+61
+00:04:39,340 --> 00:04:46,720
+przez zespół reagujący i możemy zapisać go w naszych
+
+62
+00:04:46,720 --> 00:04:52,630
+plikach javascript z powodu przepływu pracy, którego używamy tutaj, w zasadzie automatycznie przeniesie go
+
+63
+00:04:52,630 --> 00:04:54,330
+do poprawnego javascript w koniec.
+
+64
+00:04:54,340 --> 00:04:58,940
+Nie jest połączone z używanym rozszerzeniem, działa. js i. Pliki jsx i konwencja w dzisiejszych czasach
+
+65
+00:04:59,350 --> 00:05:07,190
+są prawie zawsze użyteczne. Pliki js, dlatego też robimy to tutaj.
+
+66
+00:05:07,330 --> 00:05:12,660
+A to po prostu kod
+
+67
+00:05:13,030 --> 00:05:22,600
+lub składnia, której możemy użyć do napisania html w cudzysłowie, a na koniec nie piszemy go. Brzmi myląco, pozwól mi pokazać, co to jest właściwie zestawione w
+
+68
+00:05:22,660 --> 00:05:25,310
+następnym wykładzie.
+
+69
+00:05:25,420 --> 00:05:29,890
+&nbsp;

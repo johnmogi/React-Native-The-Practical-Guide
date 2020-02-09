@@ -1,0 +1,667 @@
+1
+00:00:02,190 --> 00:00:08,640
+Durante le ultime lezioni apprendi su radio un pacchetto one party molto popolare che ti permette di usare
+
+2
+00:00:08,640 --> 00:00:12,780
+gli stili in linea con funzionalità come le query sui media.
+
+3
+00:00:12,780 --> 00:00:19,020
+Ora questo è un modo per esplorare gli Stahl in modo che siano in grado di modificarli facilmente e utilizzare comunque funzioni
+
+4
+00:00:19,020 --> 00:00:19,870
+come Media Corry.
+
+5
+00:00:20,010 --> 00:00:21,610
+Non è l'unico modo però.
+
+6
+00:00:21,750 --> 00:00:27,270
+Non sarebbe bello se un file C S S come la tua persona fosse SS.
+
+7
+00:00:27,270 --> 00:00:35,340
+che il file componente JSE in modo tale che qualsiasi Stahl che definiamo qui possa essere importato e assegnato
+
+8
+00:00:35,340 --> 00:00:42,450
+agli elementi di questo componente e non sovrascrive Stults e altri componenti o altre parti dell'app.
+
+9
+00:00:42,450 --> 00:00:43,130
+La persona Anche se
+
+10
+00:00:43,290 --> 00:00:50,520
+dovessimo condividere i nomi delle classi C S S, questo è effettivamente possibile ed è effettivamente possibile nel setup che usiamo qui.
+
+11
+00:00:50,520 --> 00:00:53,040
+Possiamo utilizzare una funzionalità denominata SEUS come moduli.
+
+12
+00:00:53,340 --> 00:00:56,720
+E qui voglio mostrarti come usare set.
+
+13
+00:00:56,730 --> 00:00:59,450
+Prima di tutto sbarazzati del radio.
+
+14
+00:00:59,520 --> 00:01:02,390
+Puoi comunque trovare il vecchio codice per il download allegato a questo modulo.
+
+15
+00:01:02,400 --> 00:01:06,580
+Mi libererò di questo stile impostato qui e
+
+16
+00:01:06,700 --> 00:01:13,920
+non assegnerò più una lacrima e non avvolgeremo più la mia persona con il radio.
+
+17
+00:01:13,950 --> 00:01:15,760
+Vado anche all'apertura come segue.
+
+18
+00:01:15,840 --> 00:01:18,670
+Rimuovi le mie importazioni di radio lì rimuovi il mio wrapper di root di stile. Ho il tuo intorno alla mia intera applicazione.
+
+19
+00:01:18,780 --> 00:01:29,010
+Rimuovere il wrapper del mio export laggiù per rimuovere praticamente tutte le tracce di radio e ora ho anche bisogno
+
+20
+00:01:29,070 --> 00:01:35,580
+di rimuovere la parte in cui sovrascrivo il hover o dove l'ho impostato.
+
+21
+00:01:35,580 --> 00:01:40,660
+Perché non funzionerà più senza radio.
+
+22
+00:01:40,710 --> 00:01:43,470
+Quindi siamo tornati al mondo in cui eravamo prima di aggiungere il radio.
+
+23
+00:01:43,470 --> 00:01:47,280
+Ora vogliamo gestire tutti i file C S
+
+24
+00:01:47,400 --> 00:01:55,710
+S di Frue scope e per farlo abbiamo effettivamente bisogno di modificare la configurazione del bullone del nostro progetto.
+
+25
+00:01:55,710 --> 00:01:58,910
+Ora ho accennato in precedenza al corso che stiamo
+
+26
+00:01:58,920 --> 00:02:06,540
+usando gli script di re-act di DS che questo è un pacchetto che espone l'intero flusso di lavoro di compilazione a noi
+
+27
+00:02:06,600 --> 00:02:14,550
+e che abbiamo aggiunto alla configurazione Potremmo scavare nella cartella dei moduli del nodo e cercare questo pacchetto e l'ho aggiunto lì.
+
+28
+00:02:14,550 --> 00:02:19,030
+Ma fa qualcosa che non dovresti mai fare perché
+
+29
+00:02:19,290 --> 00:02:25,530
+ogni volta che riesegui l'installazione di NPM le tue modifiche verranno sovrascritte.
+
+30
+00:02:25,530 --> 00:02:27,200
+Per fortuna c'è un comando
+
+31
+00:02:27,210 --> 00:02:34,200
+che ci dà accesso alla configurazione, anche se ognuno ha verificato che è possibile eseguire l'oggetto run NPM per convertire sostanzialmente il tuo.
+
+32
+00:02:34,200 --> 00:02:38,440
+Tutto è gestito.
+
+33
+00:02:38,520 --> 00:02:39,500
+Per me progetto in tutto è gestito per me, ma ora posso modificare il progetto di configurazione.
+
+34
+00:02:39,500 --> 00:02:46,590
+Non ci sarà una via d'uscita, ma non dovrebbe rompersi, funzionerà ancora come prima.
+
+35
+00:02:46,620 --> 00:02:52,330
+Ma puoi aggiungere una configurazione D.
+
+36
+00:02:52,470 --> 00:02:54,710
+Ovviamente questo dovrebbe essere fatto con cura
+
+37
+00:02:54,720 --> 00:03:00,650
+perché non vuoi fare una pausa adesso lo faremo insieme qui per sbloccare la funzionalità di C-s come moduli.
+
+38
+00:03:00,660 --> 00:03:04,950
+Una nota importante se si sta utilizzando bene per
+
+39
+00:03:04,950 --> 00:03:13,590
+tenere traccia delle modifiche assicurarsi di aggiungere e confermare tutte le modifiche prima di eseguire il comando di espulsione.
+
+40
+00:03:13,740 --> 00:03:15,710
+Non funzionerà diversamente.
+
+41
+00:03:15,720 --> 00:03:17,620
+Con quello dovresti aprire il terminale.
+
+42
+00:03:17,760 --> 00:03:19,770
+Anche in questo caso
+
+43
+00:03:19,800 --> 00:03:27,990
+è integrato l'ID e quindi è possibile eseguire l'espulsione di NPM qui per espellere la configurazione.
+
+44
+00:03:27,990 --> 00:03:29,310
+Ora ci viene chiesto se vogliamo farlo perché non possiamo tornare su nastro.
+
+45
+00:03:29,310 --> 00:03:33,620
+Perché.
+
+46
+00:03:33,630 --> 00:03:34,530
+E abbiamo finito.
+
+47
+00:03:34,950 --> 00:03:36,330
+E ora all'improvviso vediamo nuove cartelle nella cartella degli script e nella cartella dei conflitti.
+
+48
+00:03:36,660 --> 00:03:42,360
+sotto il cofano Babel per esempio è responsabile della compilazione di iOS 6 in E.
+
+49
+00:03:42,540 --> 00:03:48,110
+Ora la cartella degli script ha uno script per ogni comando che abbiamo nella caccia
+
+50
+00:03:48,120 --> 00:03:53,880
+al furgone dei pacchi e vieni tutti a vedere che la nostra lista di dipendenze
+
+51
+00:03:53,880 --> 00:03:59,610
+si è calmata parecchio perché ora vediamo tutte queste dipendenze di sviluppo che sono usate S. 5.
+
+52
+00:03:59,650 --> 00:04:01,990
+Non preoccuparti, non ci immergiamo profondamente in quella configurazione.
+
+53
+00:04:02,010 --> 00:04:05,270
+Non lo modificheremo.
+
+54
+00:04:05,280 --> 00:04:06,090
+Funzionerà ancora.
+
+55
+00:04:06,090 --> 00:04:07,770
+Comunque per noi interessanti nella cartella del conflitto c'è il conflitto di morte di WePay e il conflitto di Wepa.
+
+56
+00:04:07,770 --> 00:04:14,520
+Parata file dove Peg è fondamentalmente per costruire lo strumento di raggruppamento che si abitua a quale si applica.
+
+57
+00:04:14,550 --> 00:04:21,060
+Tutti i tipi di trasformazioni e ottimizzazioni sui nostri file e li raggruppa insieme
+
+58
+00:04:21,060 --> 00:04:28,050
+e, come parte di questo processo, si occupa di tutte le cadute di R C S.
+
+59
+00:04:28,050 --> 00:04:31,920
+Ricorda che ho detto che le sue specifiche web che sono
+
+60
+00:04:32,050 --> 00:04:40,170
+in grado di analizzare questo CSSA importano il nostro file javascript Bene visto che WePay è il responsabile di questa pagina web
+
+61
+00:04:40,240 --> 00:04:49,080
+è il luogo in cui ora possiamo anche regolare il modo in cui gestiamo i guasti di C e dove possiamo sbloccarlo caratteristica extra.
+
+62
+00:04:49,080 --> 00:04:53,910
+Mi riferivo all'utilizzo di C-s come moduli per i dati di conflitto di dead e web pic.
+
+63
+00:04:53,910 --> 00:04:59,730
+Il file Def scorre verso il basso fino al modulo e poi verso il basso fino al modulo in cui è possibile individuare D. C. L 'estensione di s qui dove si
+
+64
+00:04:59,760 --> 00:05:10,280
+prova per ritziest come segue.
+
+65
+00:05:10,280 --> 00:05:14,310
+Lì non usiamo questi loader s e non abbiamo bisogno di aggiungere
+
+66
+00:05:14,390 --> 00:05:19,880
+questo e non dovremmo aggiungere questo, ma modificheremo le opzioni qui per il loader s s.
+
+67
+00:05:19,880 --> 00:05:23,510
+Lì imposterò i moduli su true vedendoci come loader come uno strumento che semplicemente analizza e può parole.
+
+68
+00:05:24,050 --> 00:05:31,130
+Il nostro SPSS lo estrae e lo memorizza e la sua importazione C-s come moduli.
+
+69
+00:05:31,140 --> 00:05:37,510
+Una funzione che ti mostrerò come usare in un secondo.
+
+70
+00:05:37,520 --> 00:05:41,210
+Questa è una parte che imposta i moduli su true.
+
+71
+00:05:41,280 --> 00:05:44,780
+È inoltre necessario aggiungere un nome di identità locale con la maiuscola I e la maiuscola N.
+
+72
+00:05:44,780 --> 00:05:50,400
+ma che alla fine è importante per i tuoi stili.
+
+73
+00:05:50,900 --> 00:05:58,100
+E ora dovresti aggiungere qui la seguente stringa che potrebbe sembrare criptica
+
+74
+00:05:58,400 --> 00:06:00,600
+Le tue classi siestas perché
+
+75
+00:06:00,620 --> 00:06:07,280
+le classi ottengono nomi univoci per componente in modo che non si annullino a vicenda.
+
+76
+00:06:07,310 --> 00:06:09,460
+Qui dovresti usare parentesi quadre.
+
+77
+00:06:09,680 --> 00:06:11,840
+Il nome sarà fondamentalmente la tua s. c. s come nome della classe underscore underscore local.
+
+78
+00:06:11,840 --> 00:06:19,250
+Ciò consentirà a ac as s loader
+
+79
+00:06:19,250 --> 00:06:26,330
+di assegnarlo a un componente locale per renderlo fondamentalmente e quindi sottolineare il carattere di sottolineatura di più parentesi
+
+80
+00:06:26,330 --> 00:06:35,570
+quadre hash colon base 64 5 lo fa fondamentalmente dare un hash unico per assicurarsi di non sovrascrivere i tuoi stili attraverso il tuo applicazione.
+
+81
+00:06:35,570 --> 00:06:39,620
+Ora con quello semplicemente copiato che si trova qui e vai a de-contrastare il Propofol o scegliere Conficker Prot.
+
+82
+00:06:40,680 --> 00:06:49,260
+Lì dovresti anche cercare il caricatore C S S.
+
+83
+00:06:49,350 --> 00:06:52,770
+E vedrai che sembra un po
+
+84
+00:06:53,680 --> 00:07:00,050
+'diverso lì e sicuramente non ignorare minimizzare e la mappa di Cirus.
+
+85
+00:07:00,080 --> 00:07:00,750
+Ma dal momento che
+
+86
+00:07:00,840 --> 00:07:05,650
+ho copiato tutto dal file, sovrascriverò l'importazione di Lowder perché faceva parte dell'integrazione africana e in pratica aggiungo i monoscafi true e il mio nome di identificazione locale.
+
+87
+00:07:05,650 --> 00:07:10,900
+di lavoro di produzione perché non vogliamo perdere quella funzione quando spediamo il codice su
+
+88
+00:07:11,020 --> 00:07:17,460
+un server reale con quello assicuratevi che entrambi i file di conflitto siano salvati e sentitevi liberi di chiudili.
+
+89
+00:07:17,590 --> 00:07:23,530
+Quindi, vedremo come moduli sia per il nostro flusso di lavoro di sviluppo che per il flusso
+
+90
+00:07:23,530 --> 00:07:27,180
+Questo è tutto ciò di cui abbiamo bisogno
+
+91
+00:07:27,220 --> 00:07:33,470
+per modificare e fare attenzione a modificare qualcos'altro che potrebbe interrompere il set up qui.
+
+92
+00:07:33,480 --> 00:07:34,270
+Con quell'unica cosa
+
+93
+00:07:35,430 --> 00:07:45,030
+importante cambiata quando importiamo APS-C SS. In questo CSA sarà ora portata a DC come classi in questo CSA come caduta a questo componente in cui abbiamo importato nell'app Chiasson in Exxon-Mobile.
+
+94
+00:07:45,090 --> 00:07:52,280
+Quindi, se abbiamo un'app declinata in rosso e in grassetto, ora possiamo importarli dalla nostra C S S fall.
+
+95
+00:07:52,290 --> 00:08:00,920
+Dobbiamo anche modificare la dichiarazione di importazione per tutti i valori
+
+96
+00:08:00,960 --> 00:08:08,340
+di importazione da APS-C SS. Il nome dipende da voi.
+
+97
+00:08:08,340 --> 00:08:08,610
+Potresti chiamarlo Stout come vuoi.
+
+98
+00:08:08,610 --> 00:08:10,820
+Classi OPIC perché sarà oggetto oggetto un oggetto javascript contenente DS C come classi come proprietà.
+
+99
+00:08:10,820 --> 00:08:20,800
+Sembra una magia.
+
+100
+00:08:20,820 --> 00:08:22,380
+È un po 'come è, ma è
+
+101
+00:08:22,410 --> 00:08:30,180
+magia fatta dal caricatore C S S che ci permette tutto ciò che sostanzialmente trasforma il codice C S S nel file del nostro CS in un oggetto che possiamo usare nel file javascript.
+
+102
+00:08:30,270 --> 00:08:38,090
+Quindi ora abbiamo questa proprietà colossale.
+
+103
+00:08:38,110 --> 00:08:40,580
+Questo ci permette di andare
+
+104
+00:08:40,590 --> 00:08:49,800
+ora al punto in cui usiamo una classe come il nome di classe qui e non assegniamo più una stringa qui.
+
+105
+00:08:49,800 --> 00:08:50,940
+Ma raggiungi l'oggetto classi che stiamo importando e la loro app, per esempio.
+
+106
+00:08:51,240 --> 00:08:57,750
+Semplicemente una proprietà chiamata app.
+
+107
+00:08:57,750 --> 00:08:59,930
+Questo si riferirà a questa classe e la applicherà e i suoi stili non saranno difformi.
+
+108
+00:09:00,050 --> 00:09:05,570
+Quindi, solo quello che non prima.
+
+109
+00:09:05,610 --> 00:09:07,260
+Ma ora usando una tecnica totalmente diversa dietro le quinte.
+
+110
+00:09:07,320 --> 00:09:11,290
+Ora D. C. Come un caricatore, naturalmente, qui non c'è nessuna vera magia.
+
+111
+00:09:11,520 --> 00:09:16,160
+Invece quello che sta succedendo qui è che D. C. Il caricatore trasforma D. C. Il nome della classe S.
+
+112
+00:09:16,170 --> 00:09:22,800
+generare un C unico.
+
+113
+00:09:22,800 --> 00:09:31,050
+Impostiamo il CSS in uno unico utilizzando il modello del nome ident locale che impostiamo nel file di conflitto WePay dove essenzialmente prende
+
+114
+00:09:31,080 --> 00:09:38,330
+il nome della classe per trovare il nome del file javascript o importa la classe e qualche hash casuale per
+
+115
+00:09:38,330 --> 00:09:42,720
+Chiedi il cognome e poi memorizza semplicemente tutti questi nomi di classi univoci
+
+116
+00:09:42,720 --> 00:09:49,470
+generati in questo oggetto javascript che importi e li memorizza nelle proprietà in cui si trovano i nomi delle proprietà.
+
+117
+00:09:49,530 --> 00:09:54,760
+I tuoi C originali come nomi di classi così i valori di queste proprietà
+
+118
+00:09:54,770 --> 00:10:01,470
+come qui per l'app di Klaas sono semplicemente i nomi di classi univoci generati da C come s loader.
+
+119
+00:10:01,470 --> 00:10:05,220
+dove uniamo le nostre stringhe, la sintassi di join
+
+120
+00:10:05,370 --> 00:10:11,660
+può rimanere lì, ma non spingiamo più le stringhe semplicemente spingiamo le classi a leggere.
+
+121
+00:10:11,660 --> 00:10:20,690
+Questo è il modo in cui questo funziona dietro le quinte, ovviamente abbiamo tutti bisogno di adattare le nostre classi laggiù
+
+122
+00:10:20,690 --> 00:10:22,610
+E ci sono classi bulled che
+
+123
+00:10:23,000 --> 00:10:28,970
+si riferiscono alla A C come ha classi non come stringhe ma come proprietà su quelle classi oggetto
+
+124
+00:10:28,970 --> 00:10:36,800
+che di nuovo stiamo importando da APS-C SS Possiamo usare queste dichiarazioni di importazione per il fatto che abbiamo sbloccato SEUS come moduli.
+
+125
+00:10:36,890 --> 00:10:40,940
+Ora abbiamo un problema con il nome qui perché ho classi di classi costanti qui.
+
+126
+00:10:42,320 --> 00:10:47,510
+Quindi chiamerò queste due classi assegnate e sostituirò tutti gli usi qui con quello.
+
+127
+00:10:47,720 --> 00:10:55,070
+Anche laggiù dove lo uso in modo tale che la descrizione di
+
+128
+00:10:55,080 --> 00:11:02,530
+proprietà qui in realtà si riferisce solo alle classi che stiamo importando.
+
+129
+00:11:02,540 --> 00:11:03,330
+Lo stesso qui e qui.
+
+130
+00:11:03,410 --> 00:11:05,770
+Salviamo questo vediamo se funziona ancora se ricarichiamo l'applicazione.
+
+131
+00:11:06,290 --> 00:11:10,760
+Non sembra funzionare.
+
+132
+00:11:10,760 --> 00:11:12,380
+Controlliamo la nostra applicazione qui il giorno se non vediamo questa lezione.
+
+133
+00:11:12,380 --> 00:11:17,950
+La ragione è che non abbiamo mai riavviato il nostro server di
+
+134
+00:11:17,990 --> 00:11:23,780
+sviluppo, ma se avessimo cambiato la configurazione, come abbiamo fatto, dovevamo farlo.
+
+135
+00:11:23,780 --> 00:11:26,180
+Quindi, nella finestra del terminale in cui
+
+136
+00:11:26,210 --> 00:11:31,790
+è in esecuzione, dobbiamo uscire dal processo in esecuzione e riavviare semplicemente NPM come prima.
+
+137
+00:11:31,880 --> 00:11:34,460
+Questo dovrebbe funzionare ma ora prenderà in
+
+138
+00:11:34,460 --> 00:11:40,150
+considerazione queste nuove configurazioni e ricaricherà questa pagina una volta che è stato riavviato.
+
+139
+00:11:40,220 --> 00:11:41,990
+Ora abbiamo un errore qui
+
+140
+00:11:42,020 --> 00:11:49,040
+perché ho fatto un errore sulla configurazione dovrebbe essere basato 64 Credo di averlo detto, ma ho sbagliato a digitare.
+
+141
+00:11:49,040 --> 00:11:50,080
+Base 64 non 65.
+
+142
+00:11:50,090 --> 00:11:52,710
+Inoltre, nella configurazione del progetto, entrambi i conflitti
+
+143
+00:11:52,940 --> 00:11:59,990
+tornano al terminale in cui si esegue e le persone iniziano con il processo e si riavviano perché abbiamo modificato di nuovo l'installazione.
+
+144
+00:11:59,990 --> 00:12:05,290
+E ora ricarichiamo ancora una volta con quell'errore sono riparati.
+
+145
+00:12:05,660 --> 00:12:09,190
+Ora vedi che i vecchi stili vengono applicati.
+
+146
+00:12:09,350 --> 00:12:12,850
+Vediamo tutte le bancarelle dei quattro
+
+147
+00:12:12,930 --> 00:12:20,220
+incluso l'aggiornamento qui avanti un paragrafo ma le bancarelle per le persone sono perse.
+
+148
+00:12:20,220 --> 00:12:21,540
+Non sembrano più carte.
+
+149
+00:12:21,540 --> 00:12:23,630
+Questo è normale perché non abbiamo ancora regolato quel componente.
+
+150
+00:12:23,790 --> 00:12:26,870
+Importante per noi questo stile qui sta lavorando che assegniamo a tutta la morte.
+
+151
+00:12:27,030 --> 00:12:32,110
+E vedi quel nome strano che fondamentalmente è un nome
+
+152
+00:12:32,250 --> 00:12:38,340
+univoco perché è ancora c come quello che sta funzionando nel browser.
+
+153
+00:12:38,340 --> 00:12:39,270
+Ma avendo
+
+154
+00:12:39,270 --> 00:12:46,230
+questo nome univoco generato automaticamente solo questo div ha questa classe e anche se dovessi riutilizzare questa
+
+155
+00:12:46,230 --> 00:12:55,050
+app come Seer in qualsiasi altra parte dell'app, non avremmo lo stesso Stolley perché è collegato al componente in cui lo importiamo.
+
+156
+00:12:55,050 --> 00:12:58,870
+Quindi tutto funziona.
+
+157
+00:12:59,340 --> 00:13:00,620
+E vedi che funziona anche per la classe rossa e audace che spingiamo verso l'array.
+
+158
+00:13:00,930 --> 00:13:06,010
+Ma ora accedendovi come proprietà la persona
+
+159
+00:13:06,030 --> 00:13:12,600
+è rotta perché lì ancora importiamo una persona come questa.
+
+160
+00:13:12,600 --> 00:13:13,110
+E questo chiaramente non funziona più.
+
+161
+00:13:13,140 --> 00:13:15,000
+Abbiamo bisogno di importare Klaas dalla persona lì o qualsiasi altro nome che ti piace e ora assegnarlo come tale.
+
+162
+00:13:15,240 --> 00:13:21,710
+Quindi non una persona come una stringa, ma sono semplicemente la persona dot di Klaas che usa come sottotitoli.
+
+163
+00:13:21,720 --> 00:13:28,640
+Hai il tuo come nome dalla proprietà.
+
+164
+00:13:28,650 --> 00:13:32,850
+E con quello ora vedi che siamo tornati al vecchio set up con il nostro look di carte.
+
+165
+00:13:32,850 --> 00:13:39,830
+Ora finalmente facciamo una query sui media e abbiamo anche ripristinato il
+
+166
+00:13:39,980 --> 00:13:46,710
+lavoro con i moduli C S S lo faremo nella prossima lezione.
+
+167
+00:13:46,890 --> 00:13:47,850
+&nbsp;

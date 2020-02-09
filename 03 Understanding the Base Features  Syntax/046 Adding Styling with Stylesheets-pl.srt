@@ -1,0 +1,287 @@
+1
+00:00:02,270 --> 00:00:05,110
+Dowiedzieliśmy się już dużo o podstawach reakcji.
+
+2
+00:00:05,120 --> 00:00:10,870
+podczas ostatnich wykładów. Nasze aplikacje wciąż
+
+3
+00:00:10,870 --> 00:00:20,490
+mogą jednak korzystać z dodatkowej stylizacji. Na przykład, te elementy składowe byłyby fajne, gdyby wyglądały jak karty,
+
+4
+00:00:20,490 --> 00:00:23,800
+a zatem byłyby bardziej jak zamknięte obiekty.
+
+5
+00:00:23,840 --> 00:00:29,330
+W tej chwili nie możemy naprawdę zobaczyć różnic lub nie możemy naprawdę zobaczyć granic między tym
+
+6
+00:00:29,330 --> 00:00:30,740
+komponentem a innymi komponentami.
+
+7
+00:00:31,070 --> 00:00:35,540
+Więc komponowanie stylów jest oczywiście czymś bardzo ważnym,
+
+8
+00:00:35,750 --> 00:00:40,700
+a teraz są dwa sposoby stylizacji, które możemy zaimplementować,
+
+9
+00:00:40,700 --> 00:00:42,290
+pokażę wam oba.
+
+10
+00:00:42,500 --> 00:00:45,770
+Przede wszystkim dodajmy osobę. plik css do naszego
+
+11
+00:00:45,770 --> 00:00:51,950
+komponentu osoby i podałem to pod tą samą nazwą co plik javascript, tylko z
+
+12
+00:00:51,950 --> 00:00:53,530
+innym rozszerzeniem. Oczywiście teoretycznie
+
+13
+00:00:53,540 --> 00:00:55,850
+ta nazwa pliku należy do Ciebie.
+
+14
+00:00:56,180 --> 00:01:03,700
+Teraz jedna ważna rzecz, w zależności od tego, który kod css tu piszę, nie jest określona dla tej osoby. js component, jest
+
+15
+00:01:03,790 --> 00:01:05,900
+to globalny
+
+16
+00:01:05,890 --> 00:01:07,870
+kod css.
+
+17
+00:01:08,000 --> 00:01:12,340
+Zdefiniuję więc nową klasę css, którą nazwałbym Person z dużą literą P,
+
+18
+00:01:12,440 --> 00:01:18,950
+ale mimo to mogę ją dodać w dowolnym miejscu w mojej aplikacji, ponieważ jest globalna, ale używając mojej
+
+19
+00:01:19,190 --> 00:01:23,630
+nazwy komponentu, mogę wykluczyć niebezpieczeństwo i przypadkowego użycia go gdzie indziej .
+
+20
+00:01:23,630 --> 00:01:26,990
+Więc po prostu przypiszę to do mojej div
+
+21
+00:01:26,990 --> 00:01:32,280
+tutaj, nazwa klasy Pamiętajcie, nie klasa, nazwa klasy to osoba, osoba ciąg.
+
+22
+00:01:32,660 --> 00:01:37,820
+Teraz w pliku css mogę teraz zmienić styl, być może nadać
+
+23
+00:01:37,820 --> 00:01:46,180
+mu szerokość 60% i margines automatyczny, aby go wyśrodkować. Może też nadać mu
+
+24
+00:01:46,180 --> 00:01:58,070
+granicę bryły 1px piksela #eee, jasnoszarego i cienia pudła 0 2px 3px
+
+25
+00:01:58,160 --> 00:02:04,650
+i nieco ciemniejszego szarego i dajmy
+
+26
+00:02:04,650 --> 00:02:14,550
+mu dopełnienie 16px być może. Na koniec ustawmy tekst tak, aby wyśrodkować cały tekst na teraz, zapisz ten plik css
+
+27
+00:02:14,550 --> 00:02:16,470
+i zapisz osobę. plik js,
+
+28
+00:02:16,470 --> 00:02:19,150
+w którym przypiszę go jako klasę,
+
+29
+00:02:19,360 --> 00:02:20,910
+nic się nie dzieje.
+
+30
+00:02:20,950 --> 00:02:30,380
+Wiesz dlaczego? Cóż, ponieważ stworzyliśmy naszą klasę css w naszym pliku css, ale domyślnie
+
+31
+00:02:30,470 --> 00:02:36,970
+jest to może coś, czego nie wiesz, ponieważ niekoniecznie jest intuicyjne, ale domyślnie żaden plik nie
+
+32
+00:02:36,970 --> 00:02:42,430
+jest zawarty w twoim projekcie w kodzie tworzonym przez przepływ pracy budowania .
+
+33
+00:02:42,680 --> 00:02:47,240
+Zawsze musisz zaimportować pliki, aby dodać je do gry.
+
+34
+00:02:47,450 --> 00:02:52,390
+Dlatego importujemy komponent osoby do naszej aplikacji. plik js, a my
+
+35
+00:02:52,400 --> 00:02:55,840
+także importujemy aplikację. plik css tutaj.
+
+36
+00:02:55,960 --> 00:03:02,630
+Teraz może wyglądać dziwnie, gdyby zaimportować plik css do pliku javascript, ale dzięki pakietowi internetowemu, który
+
+37
+00:03:02,630 --> 00:03:09,290
+jest narzędziem do budowania, które jest w końcu używane przez ten pakiet skryptów do reagowania, który
+
+38
+00:03:09,290 --> 00:03:09,910
+używamy
+
+39
+00:03:10,220 --> 00:03:17,510
+tutaj domyślnie, dzięki pakietowi internetowemu możemy faktycznie zaimportować css do javascript chociaż nie będzie to naprawdę scalać
+
+40
+00:03:17,510 --> 00:03:19,180
+dwóch plików lub czegoś
+
+41
+00:03:19,250 --> 00:03:26,240
+podobnego, tylko zostanie poinformowany o tym pliku css i poradzi sobie z tym inaczej, w zasadzie zaimportuje
+
+42
+00:03:26,240 --> 00:03:28,240
+go do naszego pliku html.
+
+43
+00:03:28,460 --> 00:03:30,300
+Więc osobiście. js, dodam
+
+44
+00:03:30,440 --> 00:03:35,170
+również import do osoby z kropką. css i tutaj potrzebujesz
+
+45
+00:03:35,270 --> 00:03:37,670
+rozszerzenia pliku, możesz go
+
+46
+00:03:37,670 --> 00:03:41,130
+pominąć tylko dla plików javascript.
+
+47
+00:03:41,240 --> 00:03:44,690
+Teraz, dodając to, uświadomiłeś sobie, że jest
+
+48
+00:03:44,690 --> 00:03:52,400
+to pakiet internetowy, teraz doda go do twojego pliku html, a więc jeśli wrócisz, zobaczysz, że mamy
+
+49
+00:03:52,400 --> 00:03:54,130
+dodatkową stylizację naszych komponentów.
+
+50
+00:03:54,200 --> 00:04:01,370
+Możesz również zobaczyć, że jeśli sprawdzasz swój kod, mamy tutaj klasę osoby i jeśli przewiniesz
+
+51
+00:04:01,370 --> 00:04:04,800
+całą drogę do sekcji head tutaj, w
+
+52
+00:04:05,000 --> 00:04:13,710
+narzędziach programistycznych, widzisz, że tam, faktycznie mamy te znaczniki stylu, których nie możesz znajdź w pliku html w
+
+53
+00:04:13,710 --> 00:04:15,330
+folderze publicznym. Nie mamy
+
+54
+00:04:15,360 --> 00:04:18,180
+żadnych tagów stylu w sekcji head,
+
+55
+00:04:18,270 --> 00:04:20,970
+tylko niektóre linki do manifestu i
+
+56
+00:04:20,970 --> 00:04:24,030
+tak dalej, więc nawet do plików css.
+
+57
+00:04:24,030 --> 00:04:28,750
+Powodem tego jest to, że tekst stylu jest wstrzykiwany dynamicznie przez pakiet webowy,
+
+58
+00:04:28,760 --> 00:04:32,920
+jest to część, którą miałem na myśli, zarządzając importowanymi przez ciebie plikami.
+
+59
+00:04:33,270 --> 00:04:38,000
+I ten ostatni tag stylu powinien w rzeczywistości zawierać klasę twojej osoby,
+
+60
+00:04:38,040 --> 00:04:42,340
+a tam wyraźnie widać, że jest to normalna globalna klasa css.
+
+61
+00:04:42,420 --> 00:04:47,730
+Widać również, że automatyczne prefixowanie jest bardzo wygodne, ponieważ gwarantuje, że nie
+
+62
+00:04:47,730 --> 00:04:48,890
+musimy tego robić.
+
+63
+00:04:48,960 --> 00:04:55,650
+Możemy napisać najkrótszy możliwy lub możliwy kod CSS, który automatycznie doda go do
+
+64
+00:04:55,680 --> 00:04:58,410
+pracy w jak największej liczbie przeglądarek.
+
+65
+00:04:58,920 --> 00:05:00,550
+Więc to jest
+
+66
+00:05:00,600 --> 00:05:07,300
+styl, który ustawiliśmy, może lepiej dopasujmy go nieco, dodając tutaj górny i dolny margines.
+
+67
+00:05:07,500 --> 00:05:13,930
+Może więc ustawimy to na 16 pikseli, żebyśmy mieli trochę rozróżnienia między naszymi kartami,
+
+68
+00:05:13,980 --> 00:05:15,230
+wygląda znacznie lepiej.
+
+69
+00:05:15,510 --> 00:05:17,250
+Teraz mamy tu osoby,
+
+70
+00:05:17,460 --> 00:05:23,940
+teraz też ułóż ten przycisk i inaczej nadajmy mu styl, ponieważ wspomniałem, że istnieją dwa
+
+71
+00:05:23,940 --> 00:05:24,910
+sposoby stylizacji,
+
+72
+00:05:24,960 --> 00:05:26,580
+które znamy przynajmniej teraz.

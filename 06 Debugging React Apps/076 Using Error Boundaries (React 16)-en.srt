@@ -1,0 +1,383 @@
+1
+00:00:02,170 --> 00:00:09,100
+Thus far, you learned a lot about how to handle errors and find out what the state of your application
+
+2
+00:00:09,100 --> 00:00:09,900
+is.
+
+3
+00:00:10,060 --> 00:00:16,240
+Now sometimes, you have code which might fail at runtime and you know that but you can't guarantee that
+
+4
+00:00:16,240 --> 00:00:17,510
+it always works.
+
+5
+00:00:17,620 --> 00:00:24,100
+In this case you probably want to show a nice screen or at least a custom error message to the user.
+
+6
+00:00:24,100 --> 00:00:27,350
+Let me show you a constructed example,
+
+7
+00:00:27,680 --> 00:00:36,170
+let's say that when we render a person class, we actually have a chance of getting an error.
+
+8
+00:00:36,340 --> 00:00:46,270
+So I will create a random number with math.random and if random is greater than .7, so we get a 30
+
+9
+00:00:46,270 --> 00:00:58,240
+percent chance, then I will actually throw a new error, something went wrong and this should not be
+
+10
+00:00:58,240 --> 00:01:01,300
+in the return statement but in the function body.
+
+11
+00:01:01,300 --> 00:01:04,630
+Now with that, we should sometimes get this error,
+
+12
+00:01:04,810 --> 00:01:06,050
+let's try this out,
+
+13
+00:01:06,070 --> 00:01:11,400
+let's save this component and let's toggle persons and it immediately failed.
+
+14
+00:01:11,440 --> 00:01:16,240
+So we saw this error because we have three components we have a 30 percent chance on each component,
+
+15
+00:01:16,360 --> 00:01:17,870
+it's not that unlikely.
+
+16
+00:01:17,980 --> 00:01:20,280
+Sometimes it should succeed though
+
+17
+00:01:20,320 --> 00:01:21,440
+like in this case
+
+18
+00:01:21,790 --> 00:01:26,470
+but again, sometimes it will also fail, like here,
+
+19
+00:01:26,470 --> 00:01:28,110
+something went wrong.
+
+20
+00:01:28,120 --> 00:01:30,510
+Now of course here this is constructed
+
+21
+00:01:30,610 --> 00:01:35,770
+but in a real application, you might indeed have some code which run some operation, reaches out to some
+
+22
+00:01:35,770 --> 00:01:41,670
+web server which can definitely fail and you can't guarantee that it does not. It would
+
+23
+00:01:41,670 --> 00:01:46,970
+be nice to then at least catch this error and handle it graciously.
+
+24
+00:01:46,980 --> 00:01:47,450
+For this,
+
+25
+00:01:47,470 --> 00:01:52,480
+I will create a new component and this is a new feature which was added with react 16,
+
+26
+00:01:52,840 --> 00:01:53,980
+I'll name it
+
+27
+00:01:53,980 --> 00:01:59,690
+error boundary because you can create so-called error boundary components there.
+
+28
+00:02:00,620 --> 00:02:02,930
+I'll name it error boundary there too,
+
+29
+00:02:02,950 --> 00:02:04,470
+the name is up to you though.
+
+30
+00:02:04,690 --> 00:02:11,920
+It's called error boundary, the concept but you can name this component whatever you like. Here,
+
+31
+00:02:11,980 --> 00:02:19,570
+I will create a class error boundary and I will extend component.
+
+32
+00:02:19,720 --> 00:02:29,160
+So I need to import both react and then with a named import with curly braces component from react,
+
+33
+00:02:29,160 --> 00:02:30,750
+like that.
+
+34
+00:02:30,780 --> 00:02:36,200
+So we're creating this component just as we created the app.js component. In there
+
+35
+00:02:36,200 --> 00:02:40,120
+I want to render something and I will return something,
+
+36
+00:02:40,200 --> 00:02:48,450
+I will simply return a h1 tag where I say something went wrong, like this.
+
+37
+00:02:48,720 --> 00:02:55,170
+I only want to return this if we got an error though, so I will add state,
+
+38
+00:02:55,170 --> 00:03:05,220
+one of the reasons why we have to use a class here and set my state to has error false, I'll also
+
+39
+00:03:05,220 --> 00:03:09,250
+store error message here which is an empty string.
+
+40
+00:03:09,250 --> 00:03:12,780
+Now we can add a new property or new method I should say,
+
+41
+00:03:12,780 --> 00:03:22,990
+componentDidCatch, this is a method which receives potential error and some additional information passed
+
+42
+00:03:22,990 --> 00:03:31,100
+into it automatically by react and componentDidCatch will be executed whenever a component
+
+43
+00:03:31,120 --> 00:03:34,610
+we wrap with the error boundary throws an error,
+
+44
+00:03:34,810 --> 00:03:36,790
+I will show you how to use it in a second,
+
+45
+00:03:36,790 --> 00:03:38,880
+first of all let's complete the logic here.
+
+46
+00:03:39,370 --> 00:03:43,170
+In there I want to set the state because we now got an error.
+
+47
+00:03:43,450 --> 00:03:55,160
+I will set has error to true and I will set error message equal to the error which should be that message.
+
+48
+00:03:56,820 --> 00:04:00,870
+Now in the render method, we actually have two possible outcomes,
+
+49
+00:04:01,870 --> 00:04:06,610
+either our state has an error, in this case,
+
+50
+00:04:06,610 --> 00:04:11,430
+I want to return something went wrong or to be precise,
+
+51
+00:04:11,440 --> 00:04:14,120
+I can even render the error message.
+
+52
+00:04:14,140 --> 00:04:24,790
+So this.state.error message or in the else case I return this.props.children,
+
+53
+00:04:25,140 --> 00:04:30,480
+that's important when accessing prop's in a class component,
+
+54
+00:04:30,660 --> 00:04:36,350
+you need to add this in the front of it just as you did with state.
+
+55
+00:04:36,360 --> 00:04:41,830
+So now this.props.children is whatever we wrap inside of error boundary,
+
+56
+00:04:41,890 --> 00:04:49,710
+this should be our default case but if we get an error thrown by something we wrap inside error boundary,
+
+57
+00:04:50,360 --> 00:04:53,680
+this method here will fire and hasError will be set
+
+58
+00:04:53,690 --> 00:04:56,970
+True and hence we can return this.
+
+59
+00:04:56,980 --> 00:05:00,070
+Now let me simply export a default,
+
+60
+00:05:00,070 --> 00:05:01,810
+let me export this
+
+61
+00:05:01,840 --> 00:05:03,940
+error boundary component
+
+62
+00:05:04,300 --> 00:05:06,050
+and let's now start using it.
+
+63
+00:05:07,120 --> 00:05:12,090
+I'll use it in the app.js file and wrap my person with it,
+
+64
+00:05:12,520 --> 00:05:19,060
+so I'll import error boundary from ./errorBoundary, that folder
+
+65
+00:05:20,370 --> 00:05:28,670
+and in there the error boundary js file, without the file extension as always and let's now wrap our person
+
+66
+00:05:28,790 --> 00:05:29,570
+with it.
+
+67
+00:05:29,840 --> 00:05:34,090
+So here in the list where I returned person, there
+
+68
+00:05:34,100 --> 00:05:42,450
+I actually want to wrap it with error boundary just like that. Also
+
+69
+00:05:42,560 --> 00:05:53,100
+after the closing tag of person error boundary. Now, error boundary is a so-called higher order component,
+
+70
+00:05:53,350 --> 00:06:00,240
+it's a component which simply wraps a component with the goal of handling any errors that component
+
+71
+00:06:00,270 --> 00:06:01,170
+might throw,
+
+72
+00:06:01,390 --> 00:06:04,120
+in the case of error boundary, that's its job.
+
+73
+00:06:04,270 --> 00:06:12,010
+Now with that person wrapped with error boundary, we also have to move the key here to the error boundary
+
+74
+00:06:12,220 --> 00:06:18,990
+because this is now the outer element which we map and the key always has to be on the outer element
+
+75
+00:06:19,210 --> 00:06:24,040
+in a map method because that's the element we actually replicate.
+
+76
+00:06:24,040 --> 00:06:29,110
+Now with that let's save it and make sure all files are saved and go back to the application.
+
+77
+00:06:29,110 --> 00:06:36,790
+Now if you toggle persons until you get an error, you'll still see that error in the middle here unfortunately.
+
+78
+00:06:36,970 --> 00:06:40,090
+Now that only happens during development mode,
+
+79
+00:06:40,240 --> 00:06:46,690
+once you've built this for production and ship it to a real server, it will not overwrite your page like
+
+80
+00:06:46,690 --> 00:06:47,860
+this.
+
+81
+00:06:47,860 --> 00:06:56,000
+Instead what you will then see is you will see whatever you render inside your error boundary like the
+
+82
+00:06:56,020 --> 00:07:00,420
+error message or any other default message you have.
+
+83
+00:07:00,430 --> 00:07:06,820
+This does not mean that you should cluster your whole application with error boundaries, only use them
+
+84
+00:07:07,000 --> 00:07:08,340
+when it makes sense.
+
+85
+00:07:08,470 --> 00:07:14,550
+So basically only use them if you have some code you know that it may fail,
+
+86
+00:07:14,600 --> 00:07:21,400
+don't wrap any other code because if normal code fails, you as a developer probably made a mistake during
+
+87
+00:07:21,400 --> 00:07:22,390
+development,
+
+88
+00:07:22,690 --> 00:07:29,200
+only use error boundaries for cases where you know that it might fail and you can't control that.
+
+89
+00:07:29,200 --> 00:07:36,370
+Then this might be a nice tool for production to show a custom error message and not have the whole
+
+90
+00:07:36,370 --> 00:07:43,810
+application fail, because the react application will then actually still work fine and only the problematic
+
+91
+00:07:43,810 --> 00:07:48,120
+component will be replaced with your custom error message.
+
+92
+00:07:48,160 --> 00:07:56,020
+So error boundary is a nice tool to know, not a tool to use anywhere in your application and therefore
+
+93
+00:07:56,020 --> 00:08:01,150
+starting with the next module when we dive back into this little example project,
+
+94
+00:08:01,150 --> 00:08:04,540
+I will also remove it again to not wrap this,
+
+95
+00:08:04,540 --> 00:08:10,170
+I will also remove my custom error source here to simulate this error.
+
+96
+00:08:10,200 --> 00:08:11,830
+This is only for this module.

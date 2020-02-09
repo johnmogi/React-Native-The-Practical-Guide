@@ -1,0 +1,111 @@
+1
+00:00:02,190 --> 00:00:06,300
+Na última palestra, começamos a remover pessoas.
+
+2
+00:00:06,300 --> 00:00:11,830
+Nós fizemos isso acessando todas as pessoas no estado removendo o elemento que
+
+3
+00:00:11,830 --> 00:00:16,320
+queria removê-lo usando o índice da pessoa e atualizando o estado.
+
+4
+00:00:16,320 --> 00:00:23,700
+A falha desta abordagem é que, em objetos e arrays javascript, são tipos de referência.
+
+5
+00:00:23,700 --> 00:00:31,860
+Então, quando eu pego pessoas do meu estado como eu faço aqui, eu realmente recebo um ponteiro para o objeto
+
+6
+00:00:31,860 --> 00:00:35,370
+da pessoa original gerenciado por reagir ao estado original.
+
+7
+00:00:35,370 --> 00:00:43,560
+Eu deveria dizer que, se eu depois o encobrir aqui, eu já mudo esses dados originais e, uma vez que ele funciona, sem
+
+8
+00:00:43,560 --> 00:00:47,180
+dar um erro, não é realmente como você deveria fazê-lo.
+
+9
+00:00:47,190 --> 00:00:52,850
+Isso pode levar a aplicativos imprevisíveis e é definitivamente uma má prática.
+
+10
+00:00:52,920 --> 00:01:00,810
+Uma boa prática é criar uma cópia da sua matriz de persistência antes de manipulá-la e uma maneira simples de
+
+11
+00:01:00,810 --> 00:01:08,430
+fazer isso é chamando a fatia do método de fatia sem argumentos, simplesmente copia a matriz completa e retorna
+
+12
+00:01:08,430 --> 00:01:10,950
+uma nova que é armazenada aqui.
+
+13
+00:01:11,190 --> 00:01:18,570
+E agora você pode editar com segurança este novo e, em seguida, atualizar o estado de reação com sua nova matriz.
+
+14
+00:01:19,400 --> 00:01:28,950
+Uma alternativa a esta abordagem seria usá-lo como seis recurso do operador de propagação, você pode simplesmente definir bolsas iguais a uma
+
+15
+00:01:28,950 --> 00:01:37,400
+nova matriz e esta nova matriz agora pode usar o operador de propagação que são pontos livres podem parecer
+
+16
+00:01:37,580 --> 00:01:39,540
+estranhos, mas isso é javascript.
+
+17
+00:01:39,540 --> 00:01:43,650
+Operador Onde você agora atende as prisões estaduais.
+
+18
+00:01:43,700 --> 00:01:50,180
+O que isso faz é que ele se espalha os elementos como matriz em uma lista de elementos que
+
+19
+00:01:50,180 --> 00:01:56,920
+simplesmente são adicionados a esta matriz, de modo que agora possamos uma matriz uma nova matriz com os objetos da
+
+20
+00:01:57,170 --> 00:01:59,480
+matriz antiga, mas não a própria matriz.
+
+21
+00:01:59,720 --> 00:02:02,720
+Então, isso é basicamente equivalente à abordagem da fatia.
+
+22
+00:02:02,720 --> 00:02:04,350
+Use o que você preferir.
+
+23
+00:02:04,490 --> 00:02:11,060
+Este é o mais moderno e você verá que esta lida funciona com mais freqüência para o curso.
+
+24
+00:02:11,080 --> 00:02:16,050
+Com isso, obtemos o mesmo comportamento que antes e não corrigimos as mensagens de erro com isso.
+
+25
+00:02:16,060 --> 00:02:21,790
+Ainda funciona como antes, mas posso dizer que é a melhor abordagem de atualizar o estado.
+
+26
+00:02:21,800 --> 00:02:28,160
+Você deve sempre atualizar o estado de forma imutável, então, sem mutar o estado original, primeiro crie
+
+27
+00:02:28,430 --> 00:02:33,780
+uma dívida de alteração de cópia e depois atualize o estado com o referido estado.
+
+28
+00:02:33,830 --> 00:02:37,590
+Ainda assim, ainda há coisas que podemos e devemos melhorar com relação à nossa lista.

@@ -1,0 +1,27 @@
+1
+00:00:02,360 --> 00:00:08,030
+Ahora y echamos un vistazo a los reactores y por qué es posible que deseemos usarlos, así como hemos informado
+
+2
+00:00:08,060 --> 00:00:09,520
+que construimos nuestra primera reacción.
+
+3
+00:00:09,770 --> 00:00:15,280
+Vamos a sumergirnos en todos los conceptos de reacción central y la sintaxis básica de reaccionar.
+
+4
+00:00:15,440 --> 00:00:20,180
+Y este módulo echará un vistazo a lo que se necesita para construir una aplicación de reactivación real.
+
+5
+00:00:20,270 --> 00:00:25,690
+Y con eso, por supuesto, también me refiero localmente en nuestra máquina y no en el lápiz de códigos.
+
+6
+00:00:26,000 --> 00:00:30,000
+Y aprenderá qué características principales ofrecen y cómo las usa.
+
+7
+00:00:30,080 --> 00:00:36,990
+Vamos a profundizar en eso y aprendamos cómo configuramos un Proyecto de Rea local en nuestra máquina.

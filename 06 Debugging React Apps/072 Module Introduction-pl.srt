@@ -1,0 +1,43 @@
+1
+00:00:02,430 --> 00:00:10,650
+Witamy w tym module kursu. Nauczyliśmy się wielu rzeczy na temat reakcji i już widzieliśmy
+
+2
+00:00:10,740 --> 00:00:12,790
+błędy w naszej aplikacji reagowania.
+
+3
+00:00:12,880 --> 00:00:21,900
+Teraz, bez względu na to, jak dobry jesteś programistą, trafisz na błędy, albo komunikaty o błędach, albo
+
+4
+00:00:21,900 --> 00:00:22,680
+w
+
+5
+00:00:22,680 --> 00:00:25,390
+większości przypadków gorzej, logiczne błędy.
+
+6
+00:00:25,470 --> 00:00:32,460
+Teraz w tym module pokażę ci, jak możesz debugować swoją aplikację reagowania, jak powinieneś czytać
+
+7
+00:00:32,520 --> 00:00:35,340
+i rozumieć komunikaty o błędach reagowania,
+
+8
+00:00:35,400 --> 00:00:41,940
+ponieważ wiele z nich jest rzeczywiście całkiem dobrych i pomocnych, i jak możesz wtedy
+
+9
+00:00:41,940 --> 00:00:44,270
+stworzyć aplikację reagującą bezbłędnie .
+
+10
+00:00:44,700 --> 00:00:50,940
+Zajrzyjmy do tego i nauczmy się różnych technik, które masz do dyspozycji, aby zrozumieć i
+
+11
+00:00:50,940 --> 00:00:52,660
+poradzić sobie z błędami.

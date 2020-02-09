@@ -1,0 +1,419 @@
+1
+00:00:02,360 --> 00:00:06,360
+En la última conferencia creamos nuestro proyecto con create reaccionar.
+
+2
+00:00:06,450 --> 00:00:11,980
+Y como mencioné, asegúrese de que NPM inicie este proceso cuando esté trabajando
+
+3
+00:00:11,980 --> 00:00:13,260
+en su código.
+
+4
+00:00:13,290 --> 00:00:19,160
+Ahora abro la carpeta que se creó con Microsoft, que es código de estudio.
+
+5
+00:00:19,200 --> 00:00:22,030
+Esta es la idea que voy a usar para el curso.
+
+6
+00:00:22,200 --> 00:00:25,430
+Pero puedes usar cualquier idea o editor que quieras usar.
+
+7
+00:00:25,500 --> 00:00:31,950
+Por ejemplo, toda una tienda web y sería una alternativa o es sublime o Adam o cualquier otro editor
+
+8
+00:00:31,950 --> 00:00:33,000
+que te guste.
+
+9
+00:00:33,000 --> 00:00:38,850
+Ahora aquí instalo un tema y algunas extensiones y puede encontrar la configuración exacta que estoy usando,
+
+10
+00:00:39,140 --> 00:00:42,170
+descrita en el documento PTF adjunto a este video.
+
+11
+00:00:42,210 --> 00:00:48,150
+En caso de que quiera usar el mismo pero no dude en utilizar su configuración favorita, cualquiera que sea el
+
+12
+00:00:48,150 --> 00:00:53,230
+tema y la configuración que use, tendrá la misma cantidad de archivos y carpetas en su proyecto.
+
+13
+00:00:53,460 --> 00:00:58,890
+Entonces, veamos todos los archivos y carpetas que tenemos aquí, en el nivel raíz, obtenemos un
+
+14
+00:00:58,890 --> 00:01:00,420
+par de archivos de configuración.
+
+15
+00:01:00,480 --> 00:01:03,010
+Estos archivos de bloqueo aquí básicamente se pueden ignorar.
+
+16
+00:01:03,030 --> 00:01:07,800
+Su cofre se trabó en las palabras de las dependencias que usamos las dependencias generales.
+
+17
+00:01:07,800 --> 00:01:14,250
+Nuestros sombreros de proyecto se definen en el archivo adjunto empaquetado y allí se puede ver que tenemos tres pendencias
+
+18
+00:01:14,250 --> 00:01:18,360
+en este proyecto y todo esto fue creado por la aplicación Create re-act.
+
+19
+00:01:18,540 --> 00:01:24,720
+Como puede ver, obviamente importamos reaccionar aquí. Estoy usando una versión candidata de lanzamiento de Re-act 16 en el
+
+20
+00:01:24,720 --> 00:01:26,520
+momento en que está viendo esto.
+
+21
+00:01:26,520 --> 00:01:32,710
+Esto debería ser liberado Reactivar Dom es el mismo y volver a actuar los scripts como mencioné es un paquete
+
+22
+00:01:32,760 --> 00:01:39,900
+que ofrece todo este flujo de trabajo de compilación Este servidor de desarrollo soporta la próxima generación de características de JavaScript y
+
+23
+00:01:39,990 --> 00:01:46,340
+todas estas cosas que estamos usando en este proyecto en el paquete padre adyacente es un par de scripts definir.
+
+24
+00:01:46,560 --> 00:01:51,000
+Puede ejecutar estos scripts con NPM run y luego con el nombre del script.
+
+25
+00:01:51,180 --> 00:01:57,060
+La excepción es inicio, que también se puede ejecutar con NPM; se puede ejecutar el comando y, como
+
+26
+00:01:57,060 --> 00:02:02,680
+puede ver, utiliza este paquete de secuencias de comandos para luego ejecutar también algún comando de inicio allí.
+
+27
+00:02:02,690 --> 00:02:03,730
+Eso es simplemente un comando.
+
+28
+00:02:03,750 --> 00:02:08,900
+Este paquete hace un nivel de camino y este comando pasa a iniciar este servidor de desarrollo.
+
+29
+00:02:08,940 --> 00:02:15,750
+Mire todo nuestro código compile nuestro código optimice el código y haga todas estas cosas una vez que
+
+30
+00:02:15,750 --> 00:02:21,360
+esté listo para implementar su aplicación, ejecutará build de NPM para optimizarlo, más no lanzará
+
+31
+00:02:21,570 --> 00:02:28,740
+el servidor de voluntad de hombre, sino que almacenará su código optimizado en una carpeta porque ahora no verá
+
+32
+00:02:28,770 --> 00:02:30,090
+su código compilado aquí.
+
+33
+00:02:30,090 --> 00:02:31,770
+Todo sucede en la memoria.
+
+34
+00:02:31,770 --> 00:02:35,190
+Pero volveré a implementar la aplicación más adelante en el curso.
+
+35
+00:02:35,220 --> 00:02:37,140
+Así que cierremos esta charla de paquete que siguió Jason.
+
+36
+00:02:37,140 --> 00:02:44,710
+Por ahora, la carpeta de módulos de nodo contiene todas las dependencias y dependencias Suppe de nuestro proyecto.
+
+37
+00:02:44,940 --> 00:02:46,780
+Es por eso que tenemos tantos.
+
+38
+00:02:46,800 --> 00:02:53,130
+Solo tuvimos que reaccionar armando y volviendo a actuar los scripts, pero los scripts de repetición tienen muchas otras dependencias.
+
+39
+00:02:53,130 --> 00:02:56,550
+Todas estas pequeñas herramientas compiladas que compilaron código y demás.
+
+40
+00:02:56,760 --> 00:02:59,820
+No debe editar nada en la carpeta de módulos de nodos.
+
+41
+00:02:59,850 --> 00:03:06,510
+Se genera automáticamente si ejecuta la instalación de NPM en su carpeta de proyectos y se creó
+
+42
+00:03:06,570 --> 00:03:08,680
+automáticamente mediante scripts Crear acción.
+
+43
+00:03:08,850 --> 00:03:11,160
+La carpeta pública es más interesante.
+
+44
+00:03:11,160 --> 00:03:16,070
+Sin embargo, básicamente es la carpeta raíz que recibe el servidor web al final.
+
+45
+00:03:16,080 --> 00:03:23,090
+Aquí solo contiene los archivos que podemos editar, los archivos de script se agregan a la carpeta de origen.
+
+46
+00:03:23,490 --> 00:03:26,580
+Aquí tenemos un índice de archivo importante h t m l.
+
+47
+00:03:26,700 --> 00:03:30,960
+Esta es una página HGL normal y sigue siendo una sola página.
+
+48
+00:03:30,980 --> 00:03:32,010
+Tenemos menos
+
+49
+00:03:32,070 --> 00:03:35,760
+Nunca agregaremos más páginas HDMI en este proyecto.
+
+50
+00:03:35,820 --> 00:03:41,950
+Si está creando un proyecto de varias páginas, crearía varios proyectos de este tipo y crearía la aplicación para volver
+
+51
+00:03:42,240 --> 00:03:43,630
+a actuar, sin agregar más.
+
+52
+00:03:43,650 --> 00:03:47,690
+Tim descarga aquí o necesita su propio flujo de trabajo si quiere hacer eso.
+
+53
+00:03:47,820 --> 00:03:54,820
+Por lo tanto, es la única página donde al final nuestros archivos de script serán inyectados por ese flujo de trabajo de compilación.
+
+54
+00:03:54,840 --> 00:04:01,200
+Por eso no ve una secuencia de comandos importar aquí y puede editar este archivo, pero aquí escribiremos el
+
+55
+00:04:01,200 --> 00:04:02,160
+código HTML NEHTA.
+
+56
+00:04:02,340 --> 00:04:05,670
+Quiero destacar que es diff año con la ruta ID.
+
+57
+00:04:05,700 --> 00:04:11,910
+Esto será importante porque aquí será donde realmente montamos nuestra aplicación de reacción más tarde y,
+
+58
+00:04:12,060 --> 00:04:14,160
+por supuesto, trabajaremos y reaccionaremos.
+
+59
+00:04:14,160 --> 00:04:20,880
+Pero si necesita agregar cualquier importación, digamos bibliotecas Abwehr C-s como bibliotecas o desea agregar algunas
+
+60
+00:04:20,880 --> 00:04:25,170
+metaetiquetas, puede hacerlo ese año en el archivo de correo DHV.
+
+61
+00:04:25,170 --> 00:04:26,930
+También podría agregarle más edad aquí.
+
+62
+00:04:26,940 --> 00:04:33,480
+Pero de nuevo, probablemente quiera hacer esto para volver a actuar el manifiesto adyacente de Follett allí porque la aplicación de
+
+63
+00:04:33,480 --> 00:04:37,230
+creación de acciones nos brinda una aplicación web progresiva lista para usar.
+
+64
+00:04:37,260 --> 00:04:43,230
+nos da su manifiesto al caer adyacente donde podemos encontrar algunos metadatos sobre nuestra aplicación.
+
+65
+00:04:43,230 --> 00:04:45,630
+Una muy básica al menos y
+
+66
+00:04:45,630 --> 00:04:48,150
+Interesante para nosotros es la carpeta fuente.
+
+67
+00:04:48,270 --> 00:04:53,150
+Aquí obtenemos un par de archivos y estos son en realidad los archivos en los que trabajaremos.
+
+68
+00:04:53,240 --> 00:04:56,310
+Esta es en realidad nuestra aplicación de reacción.
+
+69
+00:04:56,580 --> 00:04:58,380
+Lo más importante para nosotros ahora mismo.
+
+70
+00:04:58,380 --> 00:05:06,540
+El siguiente archivo js obtiene acceso a este elemento raíz de nuestro Dom en nuestro archivo h chimley para que el elemento con
+
+71
+00:05:06,540 --> 00:05:12,000
+la raíz ID que por supuesto es este Def vimos en el archivo HVM índice.
+
+72
+00:05:12,000 --> 00:05:20,500
+Éste y allí, como pueden ver, representa nuestra aplicación de reactivación con el método de renderizado.
+
+73
+00:05:20,850 --> 00:05:29,940
+Ahora aquí hay una referencia de algún objeto o elemento de la aplicación que importamos desde un archivo de
+
+74
+00:05:30,060 --> 00:05:36,480
+aplicación la extensión Daut J. S. queda fuera porque se agrega automáticamente por nuestro flujo de trabajo de compilación y
+
+75
+00:05:36,480 --> 00:05:38,290
+luego echamos un vistazo a esta aplicación, pensó el archivo JS.
+
+76
+00:05:38,290 --> 00:05:45,870
+Por lo tanto, aquí es donde vemos nuestro primer y único componente de reactividad que tenemos en este proyecto inicial
+
+77
+00:05:45,870 --> 00:05:47,010
+en este momento.
+
+78
+00:05:47,070 --> 00:05:53,580
+Aquí vemos algo de GSX y se sumergirá profundamente en lo que vemos aquí exactamente en las próximas conferencias.
+
+79
+00:05:53,880 --> 00:06:01,210
+Por ahora, eliminemos todo el contenido de este div de envoltura y simplemente agreguemos una etiqueta.
+
+80
+00:06:01,240 --> 00:06:12,010
+Bien, di, hola. Soy un reaccionario en "vamos a cerrarlo" por supuesto también y luego vamos a guardarlo.
+
+81
+00:06:12,010 --> 00:06:15,200
+Eso siempre es importante, no te olvides de guardar tus archivos.
+
+82
+00:06:15,240 --> 00:06:21,400
+Ahora que tiene NPM en ejecución, esto activará automáticamente una recompilación.
+
+83
+00:06:21,580 --> 00:06:27,130
+Y también debería volver a cargar tu página automáticamente, por lo que ahora deberías ver Hola, soy una aplicación de
+
+84
+00:06:27,190 --> 00:06:28,960
+reacción en lugar del contenido anterior.
+
+85
+00:06:29,050 --> 00:06:35,380
+Con eso también podemos eliminar su logotipo, no preguntes cuál te caes porque ya no lo usamos en nuestro proyecto.
+
+86
+00:06:35,380 --> 00:06:38,850
+Y ahora tenemos una carpeta fuente más limpia.
+
+87
+00:06:38,860 --> 00:06:42,040
+Ahora, ¿qué más creó crear volver a actuar para nosotros?
+
+88
+00:06:42,070 --> 00:06:48,640
+algunos estilos que usamos en este archivo de applet jazz, aunque diré que estos no tienen alcance hasta este otoño.
+
+89
+00:06:48,640 --> 00:06:52,660
+Nos dio esta aplicación para el archivo C S S que básicamente define
+
+90
+00:06:52,660 --> 00:07:00,370
+Estos siguen siendo estilos globales y realmente eliminaré todo menos esta primera definición de clase de aplicación en ese archivo
+
+91
+00:07:00,370 --> 00:07:07,240
+y la guardaré allí después de que todos lleguemos a verla a continuación, que también aplica Stahl's globalmente
+
+92
+00:07:07,240 --> 00:07:14,540
+y para qué se debe usar es un conjunto general como su para el cuerpo de nuestra aplicación.
+
+93
+00:07:14,660 --> 00:07:20,020
+Los registros de las caídas del trabajador de servicio son como el nombre implica importante para registrar un
+
+94
+00:07:20,260 --> 00:07:22,290
+trabajador de servicio que se genera automáticamente.
+
+95
+00:07:22,300 --> 00:07:26,490
+Eso está relacionado con el Web Ebbe progresivo que obtenemos de la caja.
+
+96
+00:07:26,560 --> 00:07:30,180
+Básicamente, bloqueará nuestros archivos de script.
+
+97
+00:07:30,220 --> 00:07:34,160
+No necesitamos configurar nada allí y probar el archivo.
+
+98
+00:07:34,290 --> 00:07:36,880
+Bueno, nos sumergiremos en las pruebas más adelante en el curso.
+
+99
+00:07:36,880 --> 00:07:44,380
+Básicamente, nos permite crear pruebas unitarias para las diferentes unidades, por ejemplo, componentes en nuestra aplicación.
+
+100
+00:07:44,410 --> 00:07:51,670
+Esta es la configuración general y para la mayoría de los coords funcionará en APT o James o nuestros nuevos
+
+101
+00:07:51,670 --> 00:07:52,630
+componentes que creamos.
+
+102
+00:07:52,630 --> 00:07:58,260
+Hablando de eso, analicemos este archivo, comprendamos la sintaxis que vemos allí.
+
+103
+00:07:58,390 --> 00:08:01,990
+Deshagámonos de esa importación de logo porque eliminamos el archivo del logo.
+
+104
+00:08:01,990 --> 00:08:08,530
+veo y profundicemos en J S X, qué es exactamente y cómo agregamos más componentes a nuestra aplicación.
+
+105
+00:08:08,530 --> 00:08:09,730
+Ahora que lo

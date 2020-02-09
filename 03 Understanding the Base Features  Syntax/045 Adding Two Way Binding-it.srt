@@ -1,0 +1,291 @@
+1
+00:00:02,280 --> 00:00:05,290
+Abbiamo coperto molto e abbiamo cambiato molti nomi qui.
+
+2
+00:00:05,550 --> 00:00:14,260
+Ma se davvero volessimo cambiare il nome da soli, diciamo che nel componente persona qui
+
+3
+00:00:14,260 --> 00:00:23,290
+abbiamo anche un elemento numerico, un normale elemento di input che è di tipo text e
+
+4
+00:00:23,290 --> 00:00:26,380
+che dovrebbe essere a chiusura automatica.
+
+5
+00:00:26,470 --> 00:00:34,680
+Ora ogni volta che scriviamo qualcosa, vogliamo usare quello che scriviamo qui come un nuovo nome ora per morto.
+
+6
+00:00:34,690 --> 00:00:43,970
+Siamo in grado di ascoltare un evento speciale sul cambio in corso che verrà attivato ogni volta che cambia il valore nell'input.
+
+7
+00:00:44,650 --> 00:00:53,440
+E qui non voglio eseguire un metodo che devo passare dal mio file di inseguimento app.
+
+8
+00:00:53,440 --> 00:01:01,810
+lo lascerò così com'è e aggiungerò invece un nuovo gestore a tutti i nomi e il gestore dei nomi modificati.
+
+9
+00:01:01,810 --> 00:01:04,950
+Abbiamo ottenuto il gestore del nome dell'interruttore e
+
+10
+00:01:05,380 --> 00:01:08,680
+Mi aspetto di ottenere un oggetto evento qui.
+
+11
+00:01:08,680 --> 00:01:14,710
+Non l'abbiamo mai usato prima, ma lì voglio ancora cambiare lo stato.
+
+12
+00:01:14,820 --> 00:01:18,880
+Ovviamente, teoricamente, vorresti cambiare.
+
+13
+00:01:18,880 --> 00:01:24,250
+Indica o il nome della persona per la quale scriviamo questo.
+
+14
+00:01:24,250 --> 00:01:31,450
+Questo è qualcosa che faremo più avanti nel corso una volta che abbiamo imparato come eseguire correttamente il rendering di un elenco
+
+15
+00:01:31,480 --> 00:01:32,560
+di elementi dinamici.
+
+16
+00:01:32,560 --> 00:01:36,340
+Quindi per ora cambierò sempre il nome di Manue qui.
+
+17
+00:01:36,580 --> 00:01:42,220
+Quindi Max resterà Max e gli uomini in Stefani dovrebbero mantenere la sua età di 26 forse anche.
+
+18
+00:01:42,340 --> 00:01:50,410
+Ma uomo dovresti cambiare il suo nome, non importa in quale istanza di questo componente di persona che scrivo di nuovo,
+
+19
+00:01:50,470 --> 00:01:53,190
+questo è qualcosa che ripareremo in seguito.
+
+20
+00:01:53,230 --> 00:01:56,490
+Quindi qui otterrò un U-bend.
+
+21
+00:01:56,620 --> 00:02:03,910
+E come probabilmente saprai per eventi javascript, questo evento probabilmente ha un obiettivo che il
+
+22
+00:02:03,910 --> 00:02:11,280
+target non ha per un buon nome, ma l'obiettivo dovrebbe essere l'input in cui abbiamo digitato.
+
+23
+00:02:11,470 --> 00:02:17,750
+Quindi dovrebbe anche avere una proprietà value che è di valore inserito dall'utente
+
+24
+00:02:17,770 --> 00:02:23,180
+e quindi questo ora rappresenta un buon valore aggiornato per il nome.
+
+25
+00:02:23,320 --> 00:02:27,580
+Quindi il valore target dell'evento è ciò che voglio assegnare come nuovo nome per il manuale.
+
+26
+00:02:27,640 --> 00:02:35,320
+Di nuovo, per il momento, non importa in quale input di quale componente ho digitato il nome, il gestore modificato
+
+27
+00:02:35,320 --> 00:02:36,640
+è il mio gestore.
+
+28
+00:02:36,640 --> 00:02:42,680
+Ora ho bisogno di passare questo a un componente per poterlo accedere da lì.
+
+29
+00:02:43,090 --> 00:02:47,830
+E dato che posso cambiare solo menu, lo passerò solo alla persona del menu.
+
+30
+00:02:47,920 --> 00:02:50,730
+Sebbene potessimo passarlo a qualsiasi altro, naturalmente.
+
+31
+00:02:51,010 --> 00:03:01,870
+Qui chiamerò semplicemente questo cambiato e passerò questo gestore di nome cambiato seguendo la stessa logica richiesta per inoltrare
+
+32
+00:03:01,890 --> 00:03:05,460
+un evento click all'interno della persona.
+
+33
+00:03:05,500 --> 00:03:14,500
+Ora posso accedere a questa proprietà modificata e chiamare semplicemente prop's cambiato qui o non chiamarlo non aggiungere
+
+34
+00:03:14,500 --> 00:03:18,450
+parentesi ma semplicemente passare il riferimento ad esso.
+
+35
+00:03:18,580 --> 00:03:25,970
+E ricorda che questo si riferisce al metodo che abbiamo dichiarato in realtà sì, questo nome ha cambiato gestore.
+
+36
+00:03:26,540 --> 00:03:33,410
+L'oggetto evento verrà effettivamente passato ad esso automaticamente reagendo come un normale javascript.
+
+37
+00:03:33,430 --> 00:03:36,370
+Dove sei per impostazione predefinita accedi all'oggetto evento.
+
+38
+00:03:37,130 --> 00:03:40,050
+Con ciò salviamo questo e vediamo cosa succede.
+
+39
+00:03:40,130 --> 00:03:46,090
+che contiene un riferimento al gestore di nome cambiato e abbiamo quindi usato l'oggetto evento Stiefel per
+
+40
+00:03:46,100 --> 00:03:53,650
+estrarre il target che è l'elemento di input e quindi il valore del target che è ciò che abbiamo inserito.
+
+41
+00:03:53,690 --> 00:04:01,610
+Abbiamo input sotto tutti i componenti, ma per la maggior parte di essi non succede nulla se li digito per un uomo
+
+42
+00:04:01,850 --> 00:04:07,820
+che conosci ogni volta che digiti il ​​nome del manuale degli aggiornamenti, qualunque cosa io voglia digitare
+
+43
+00:04:07,820 --> 00:04:10,970
+lì, perché li leghiamo a quelli di Propp cambiato
+
+44
+00:04:10,970 --> 00:04:16,850
+Questo mostra in realtà due cose su come possiamo aggiornare dinamicamente qualcosa chiamando dinamicamente un evento
+
+45
+00:04:16,850 --> 00:04:22,430
+e utilizzare le cose che impariamo prima, come far passare riferimenti all'evento o riferimenti al
+
+46
+00:04:22,430 --> 00:04:26,990
+metodo, ma tutto ciò ci mostra semplicemente come possiamo gestire gli input.
+
+47
+00:04:27,530 --> 00:04:36,820
+Ora sarebbe tutto bello se vedessimo il valore corrente del nome nell'input sin dall'inizio.
+
+48
+00:04:37,130 --> 00:04:43,760
+bidirezionale quando lo cambiamo, vogliamo propagare quella modifica in modo che possiamo aggiornare lo stato.
+
+49
+00:04:43,760 --> 00:04:46,220
+Quindi, fondamentalmente, vogliamo impostare un collegamento
+
+50
+00:04:46,430 --> 00:04:49,890
+Ma vogliamo anche vedere lo stato attuale fin dall'inizio.
+
+51
+00:04:50,390 --> 00:04:57,070
+Per fare ciò posso impostare un valore uguale al nome dell'elica.
+
+52
+00:04:57,080 --> 00:04:59,210
+Questo è il nome dopo tutto.
+
+53
+00:04:59,210 --> 00:05:02,160
+E ora abbiamo il nostro sistema di binding bidirezionale.
+
+54
+00:05:02,270 --> 00:05:09,350
+Ascoltiamo i cambiamenti chiamiamo il metodo di modifica alla fine che si riferisce al gestore di modifiche
+
+55
+00:05:09,350 --> 00:05:17,030
+al nome che sconvolge gli aggiornamenti allo stato e abbiamo passato lo stato alla persona con nome ed età
+
+56
+00:05:17,030 --> 00:05:20,510
+e noi forniamo il nome come valore dell'input.
+
+57
+00:05:20,510 --> 00:05:24,800
+Questo ora ci permette di mostrare quel valore fin dall'inizio.
+
+58
+00:05:25,070 --> 00:05:31,190
+E qui in realtà ricevo un avvertimento che questo avvertimento ha un senso teorico
+
+59
+00:05:31,190 --> 00:05:38,910
+perché se fornisci un valore prop senza un gestore onchange qui ti imbatti in problemi perché stai accecando
+
+60
+00:05:38,910 --> 00:05:43,310
+il valore di una proprietà senza lasciarti reagire ai cambiamenti.
+
+61
+00:05:43,310 --> 00:05:45,730
+Quindi bloccherai il tuo input.
+
+62
+00:05:45,770 --> 00:05:51,800
+Potrei mostrare che se rimuovo onchange Ora vedi che vediamo ancora i valori, ma se scrivo non
+
+63
+00:05:51,800 --> 00:05:55,550
+accade nulla, non posso digitare perché non stiamo gestendo le modifiche.
+
+64
+00:05:55,670 --> 00:06:00,920
+Quindi abbiamo sempre la precedenza su qualsiasi cosa proviamo a digitare con il nome esistente.
+
+65
+00:06:01,340 --> 00:06:08,320
+Se reintroduco onchange anche se l'errore rimane qui che è semplicemente un falso allarme.
+
+66
+00:06:08,510 --> 00:06:14,180
+Come puoi vedere chiaramente, posso scrivere perché sono in grado di gestire le mie modifiche.
+
+67
+00:06:14,180 --> 00:06:19,880
+Aggiorna il mio stato aggiorna i miei oggetti di scena e quindi rifletti anche i miei cambiamenti nell'input qui.
+
+68
+00:06:20,060 --> 00:06:25,230
+Quindi abbiamo ottenuto un binding bidirezionale funzionante e ora siamo in grado di cambiare dinamicamente quel nome.
+
+69
+00:06:25,340 --> 00:06:31,730
+Ancora una volta tenete a mente solo il manuale, perché non abbiamo impostato la logica per gli input yabber
+
+70
+00:06:31,760 --> 00:06:35,690
+e per il tipo Sukant perché non possiamo aggiornare questi nomi lì.
+
+71
+00:06:35,840 --> 00:06:40,630
+E questo è probabilmente il motivo per cui si lamenta qui per questi input di Ashbery.
+
+72
+00:06:40,860 --> 00:06:47,600
+questo, ma lo miglioreremo una volta che avremo un modo migliore di rendere dinamicamente un elenco di elementi.
+
+73
+00:06:47,690 --> 00:06:49,410
+Per ora possiamo ignorare

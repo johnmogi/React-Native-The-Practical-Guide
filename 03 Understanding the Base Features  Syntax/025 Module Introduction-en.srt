@@ -1,0 +1,27 @@
+1
+00:00:02,360 --> 00:00:08,030
+Now that we had a look at what React is and why we might want to use it, as well as now that we built
+
+2
+00:00:08,060 --> 00:00:09,520
+our first react app,
+
+3
+00:00:09,770 --> 00:00:15,280
+let's dive into all the core react concepts and the base syntax of react.
+
+4
+00:00:15,440 --> 00:00:20,180
+In this module, we'll have a look at what it takes to build a real react app,
+
+5
+00:00:20,270 --> 00:00:25,690
+and with that of course, I also mean locally on our machine and not on codepen,
+
+6
+00:00:26,000 --> 00:00:30,000
+and you will learn which core features react offers and how you use them.
+
+7
+00:00:30,080 --> 00:00:36,990
+So let's dive right into that and let's learn how we set up a local react project on our machine.

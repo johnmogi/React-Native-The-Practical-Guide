@@ -1,0 +1,159 @@
+1
+00:00:02,200 --> 00:00:08,410
+Tak więc z problemami opisanymi w ostatnim wykładzie, dynamicznie dostosowujemy styl przycisków w zależności od
+
+2
+00:00:08,410 --> 00:00:11,580
+tego, czy zamierzamy pokazywać osoby, czy nie.
+
+3
+00:00:11,620 --> 00:00:17,920
+Teraz już obejrzeliśmy, jak możemy dynamicznie renderować treść, jak tutaj, za pomocą instrukcji if,
+
+4
+00:00:17,920 --> 00:00:25,400
+w której przechowujemy jsx w zmiennej, a następnie wyprowadzamy tę zmienną w naszym szablonie lub w naszej
+
+5
+00:00:25,400 --> 00:00:26,660
+funkcji return tutaj.
+
+6
+00:00:26,910 --> 00:00:30,910
+Teraz jak zawsze wszystko tutaj jest javascript, więc
+
+7
+00:00:31,000 --> 00:00:38,680
+jeśli przypiszemy styl do przycisku tutaj, ta część pomiędzy nawiasami klamrowymi może być dowolnym
+
+8
+00:00:38,680 --> 00:00:39,740
+wyrażeniem javascript.
+
+9
+00:00:39,940 --> 00:00:46,330
+Po pierwsze, moglibyśmy oczywiście przekazać obiekt javascript, w którym definiujemy style lub oczywiście możemy dotrzeć
+
+10
+00:00:46,330 --> 00:00:48,600
+do właściwości stylu, przepraszam, zmienna,
+
+11
+00:00:48,670 --> 00:00:51,080
+którą powinienem powiedzieć tak jak my.
+
+12
+00:00:51,160 --> 00:00:54,350
+i dlatego możemy
+
+13
+00:00:54,350 --> 00:01:03,170
+dynamicznie zmieniać tę zmienną stylu. Zasadniczo tutaj, ten stan showPersons, jeśli to prawda, oznacza to, że można zobaczyć osoby.
+
+14
+00:01:03,190 --> 00:01:10,030
+Tak jak nakreśliłem na ostatnim wykładzie przycisk powinien mieć czerwone tło, ponieważ
+
+15
+00:01:10,030 --> 00:01:12,780
+kliknięcie usunie osoby. Z drugiej strony,
+
+16
+00:01:12,910 --> 00:01:18,500
+domyślne ustawienie powinno polegać na tym, aby nie mieć białego tła, ale zielonego, a
+
+17
+00:01:18,790 --> 00:01:25,680
+być może chcemy ustawić kolor tekstu na biały, tak aby wyróżniał się on z normalną właściwością koloru.
+
+18
+00:01:25,690 --> 00:01:29,860
+Teraz, jeśli to stwierdzę, mamy zielony kolor tła,
+
+19
+00:01:29,980 --> 00:01:32,350
+jeśli go kliknę, widzimy osoby.
+
+20
+00:01:32,490 --> 00:01:37,730
+Teraz, gdy osoby są widoczne, powinno to uzyskać czerwony kolor tła.
+
+21
+00:01:37,750 --> 00:01:44,110
+To, co możemy zrobić, to w naszym stwierdzeniu, które już mamy, gdzie ustawiamy zmienną osoby, możemy
+
+22
+00:01:44,110 --> 00:01:51,810
+oczywiście zrobić więcej poza ustawieniem zmiennej tej osoby tutaj. Po wykonaniu tej czynności mogę również
+
+23
+00:01:51,820 --> 00:01:58,630
+wybrać styl i ustawić właściwość koloru tła, która wyraźnie ma obiekt
+
+24
+00:01:58,630 --> 00:02:03,640
+stylu, ustawiliśmy go tutaj na czerwono, po prostu tak.
+
+25
+00:02:03,970 --> 00:02:07,380
+Więc po prostu wchodzimy w ten obiekt stylu,
+
+26
+00:02:07,510 --> 00:02:10,900
+nie przypisujemy nowej wartości, więc wciąż jest stała,
+
+27
+00:02:11,200 --> 00:02:15,610
+ale przypisujemy nową wartość jednej z jej właściwości, kolorowi tła
+
+28
+00:02:16,060 --> 00:02:20,980
+i przy tej niewielkiej zmianie w miejscu mamy już dynamiczne stylizacja.
+
+29
+00:02:21,070 --> 00:02:22,880
+Pozwól mi ponownie załadować
+
+30
+00:02:23,050 --> 00:02:27,770
+tę aplikację, zielony przycisk, czerwony przycisk, zielony przycisk i tak dalej.
+
+31
+00:02:28,210 --> 00:02:34,870
+To pokazuje jedną kluczową rzecz, którą naprawdę musisz owinąć sobie głowę,
+
+32
+00:02:34,870 --> 00:02:36,580
+jeśli jeszcze nie,
+
+33
+00:02:36,640 --> 00:02:45,800
+wszystko jest javascript, myślę, że powiedziałem to wcześniej. Dynamicznie zmieniamy styl, gdy dynamicznie zmieniamy tę zmienną osoby,
+
+34
+00:02:46,090 --> 00:02:50,530
+tak jak zmieniamy coś dynamicznie, mówimy tu o javascript.
+
+35
+00:02:50,620 --> 00:02:56,230
+Możesz manipulować obiektem stylu dowolnym kodem javascript, który chcesz, a na koniec, kiedy go tutaj
+
+36
+00:02:56,230 --> 00:03:01,360
+powiążesz, to po prostu zastosuje to bez względu na to, jak je edytowałeś.
+
+37
+00:03:01,390 --> 00:03:06,850
+To bardzo ważne, a to pokazuje, jak możesz dynamicznie przypisywać komórki,
+
+38
+00:03:06,850 --> 00:03:09,010
+a co z nazwami klas?
+
+39
+00:03:09,040 --> 00:03:14,030
+Czy możemy też ustawić je dynamicznie, czy możemy przekazać listę nazw klas?
+
+40
+00:03:14,230 --> 00:03:18,030
+Tak, możemy i pokażę ci, jak to działa w następnym wykładzie.

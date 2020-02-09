@@ -1,0 +1,267 @@
+1
+00:00:02,200 --> 00:00:05,460
+So let's start without putting this as an actual list.
+
+2
+00:00:05,620 --> 00:00:11,510
+If we have a look, we get three elements in this person's array on our state.
+
+3
+00:00:11,560 --> 00:00:17,000
+Now again in other frameworks which you might know, if you don't, that's no problem,
+
+4
+00:00:17,050 --> 00:00:18,530
+it's different here anyways.
+
+5
+00:00:18,650 --> 00:00:26,920
+In other frameworks like in Vue, you would have a directive v-for or in Angular ngFor. Now in react
+
+6
+00:00:26,920 --> 00:00:28,900
+you don't have that because guess what?
+
+7
+00:00:29,120 --> 00:00:31,760
+Everything is javascript here as you learned.
+
+8
+00:00:32,170 --> 00:00:39,760
+Just as with conditional content which we handle here with normal javascript, we also handle lists with
+
+9
+00:00:39,760 --> 00:00:40,950
+the default tools
+
+10
+00:00:40,990 --> 00:00:45,240
+javascript gives us for working with lists.
+
+11
+00:00:45,340 --> 00:00:47,070
+How would this look like
+
+12
+00:00:47,140 --> 00:00:55,820
+in our case here where we have the persons? Well we would again use single curly braces to render something
+
+13
+00:00:55,820 --> 00:00:58,400
+dynamic within our jsx code
+
+14
+00:00:58,760 --> 00:01:07,220
+and then we want to render our persons array in the state so this.state.persons simply referring to
+
+15
+00:01:07,220 --> 00:01:09,170
+this array.
+
+16
+00:01:09,170 --> 00:01:10,860
+Now this alone won't do the trick
+
+17
+00:01:10,940 --> 00:01:15,190
+that's an array of javascript object, not something we can convert to html,
+
+18
+00:01:15,260 --> 00:01:18,780
+not something react would understand here.
+
+19
+00:01:19,130 --> 00:01:24,930
+So we need to convert this array of javascript which is not valid
+
+20
+00:01:24,950 --> 00:01:25,460
+jsx
+
+21
+00:01:25,480 --> 00:01:34,310
+to valid jsx. And javascript, vanilla javascript offers us a function to convert arrays,
+
+22
+00:01:34,520 --> 00:01:42,500
+it's the map function. Map simply maps every element in a given array such as our persons array here
+
+23
+00:01:42,980 --> 00:01:45,070
+into something else.
+
+24
+00:01:45,320 --> 00:01:50,720
+It does this by executing a method on every element in a given array
+
+25
+00:01:50,720 --> 00:01:58,410
+So on this array in this case. This method or this function is passed to the map method here,
+
+26
+00:01:58,820 --> 00:02:02,040
+It takes the element of the array as input,
+
+27
+00:02:02,060 --> 00:02:05,950
+so a single person, the name of this argument is totally up to you.
+
+28
+00:02:05,960 --> 00:02:11,580
+I'm just writing an anonymous function here and I'm actually writing an arrow function here.
+
+29
+00:02:11,750 --> 00:02:18,590
+So this is an ES6 arrow function which I pass to the map method, it might look strange but is actually
+
+30
+00:02:18,590 --> 00:02:25,070
+vanilla javascript, ES6 but javascript, not jsx, nothing like that,
+
+31
+00:02:25,100 --> 00:02:28,070
+that's why it's inside of single curly braces.
+
+32
+00:02:28,670 --> 00:02:36,110
+So this function here which I pass as an anonymous function to the map method is executed on every element
+
+33
+00:02:36,170 --> 00:02:43,250
+in the persons array and javascript automatically gives us each element as an input to that function
+
+34
+00:02:43,340 --> 00:02:45,310
+which we execute on every element.
+
+35
+00:02:45,320 --> 00:02:47,250
+So in this case it's our person,
+
+36
+00:02:47,270 --> 00:02:53,180
+again you can name whatever you want but since it is an array of persons, person probably makes sense.
+
+37
+00:02:53,570 --> 00:02:55,670
+And now you have to return something,
+
+38
+00:02:55,910 --> 00:03:01,010
+you should return what you want to map this item into.
+
+39
+00:03:01,010 --> 00:03:03,850
+So we have an array of javascript objects and persons,
+
+40
+00:03:03,870 --> 00:03:05,080
+here, one object
+
+41
+00:03:05,090 --> 00:03:10,530
+two objects, three objects and we want to convert this into something else.
+
+42
+00:03:10,580 --> 00:03:15,830
+The map method which we're using here conveniently simply returns a new array
+
+43
+00:03:16,010 --> 00:03:24,290
+and since I just print this new array like this inside jsx, react will basically just try to take the
+
+44
+00:03:24,290 --> 00:03:28,700
+individual elements of this new array and render them to the dom
+
+45
+00:03:28,850 --> 00:03:31,490
+if they are valid jsx.
+
+46
+00:03:31,520 --> 00:03:38,270
+So our goal simply is to return jsx here so that every element of the person's array gets mapped
+
+47
+00:03:38,390 --> 00:03:41,230
+into a jsx representative of it.
+
+48
+00:03:41,540 --> 00:03:49,940
+So here I want to map it into a person component in the end because each person javascript object can
+
+49
+00:03:49,940 --> 00:03:56,330
+be represented as a person component in my project here. And then we simply assign a name again
+
+50
+00:03:56,480 --> 00:03:59,950
+and here we can use the person we get as an input.
+
+51
+00:04:00,080 --> 00:04:07,730
+So the individual element for which this function is executed and there we got the name property, and the
+
+52
+00:04:07,730 --> 00:04:15,200
+same of course for the age, where it can now add this person age. I'll split this over multiple lines to make it easier
+
+53
+00:04:15,200 --> 00:04:15,930
+to read
+
+54
+00:04:16,160 --> 00:04:18,460
+and that actually is it.
+
+55
+00:04:18,560 --> 00:04:25,410
+With that, I can get rid of all the other persons and I will remove them for now simply
+
+56
+00:04:25,520 --> 00:04:33,290
+and now what this will lead to is that it will still print a list of persons, clicking on them and changing
+
+57
+00:04:33,290 --> 00:04:37,040
+the name won't work for now because I removed the handlers, we'll add them soon,
+
+58
+00:04:37,820 --> 00:04:44,990
+and it simply does this by mapping this javascript array into still a javascript array but an array
+
+59
+00:04:45,050 --> 00:04:51,820
+with jsx objects inside of it which react will automatically pull out and render to the screen.
+
+60
+00:04:52,190 --> 00:04:59,460
+Let's save the file and see the result, if I toggle my persons here we see all the persons.
+
+61
+00:04:59,780 --> 00:05:06,460
+We also get a new warning besides the one we already know that we should assign a key property,
+
+62
+00:05:06,550 --> 00:05:08,560
+now I will definitely come back to that,
+
+63
+00:05:08,570 --> 00:05:10,050
+that's super important.
+
+64
+00:05:10,070 --> 00:05:13,710
+We can already see though that basically it is working,
+
+65
+00:05:13,760 --> 00:05:19,910
+it is rendering this list of elements by mapping our array into something else.
+
+66
+00:05:19,910 --> 00:05:25,610
+Now let's dive deeper into this list thing and learn what's up with that key and how we may react to
+
+67
+00:05:25,610 --> 00:05:30,390
+changes to our array and how we may change it by using our event listeners.

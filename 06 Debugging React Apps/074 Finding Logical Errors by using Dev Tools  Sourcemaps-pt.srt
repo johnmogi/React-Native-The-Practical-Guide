@@ -1,0 +1,203 @@
+1
+00:00:02,090 --> 00:00:09,330
+E o último realmente teve uma olhada em mensagens de erro certamente importantes, mas muitas vezes você tem erros
+
+2
+00:00:09,330 --> 00:00:12,210
+lógicos que são ainda mais difíceis de detectar.
+
+3
+00:00:12,210 --> 00:00:15,830
+Você não recebe a mensagem de erro, mas de alguma forma não está funcionando.
+
+4
+00:00:16,170 --> 00:00:23,160
+Digamos o nome do manipulador alterado quando encontramos o índice de uma pessoa que queremos atualizar, que dizemos
+
+5
+00:00:23,160 --> 00:00:26,180
+que comparamos o ID do usuário com ID.
+
+6
+00:00:26,460 --> 00:00:30,570
+E isso está incorreto, uma pessoa não possui nenhuma propriedade de identificação do usuário.
+
+7
+00:00:30,570 --> 00:00:38,640
+Não vai lançar um erro, uma vez que o ID do usuário é indefinido, mas você pode comparar o achado
+
+8
+00:00:38,970 --> 00:00:42,360
+com algo que provavelmente não encontrará uma pessoa adequada.
+
+9
+00:00:42,360 --> 00:00:48,470
+Então, se eu salvar este código, é claro, repare o erro da Última Leitura.
+
+10
+00:00:48,950 --> 00:00:56,630
+Então, se eu salvar este código e voltarmos ao aplicativo se começarmos a digitar, não recebemos um erro, mas eu posso
+
+11
+00:00:56,820 --> 00:00:58,860
+digitar o quanto eu quiser.
+
+12
+00:00:58,890 --> 00:01:00,030
+Não será atualizado.
+
+13
+00:01:00,060 --> 00:01:05,370
+Eu nem vejo meu valor atualizado aqui porque quebrou a ligação de duas vias porque
+
+14
+00:01:05,370 --> 00:01:08,450
+não estou atualizando corretamente o nome dessa pessoa.
+
+15
+00:01:08,460 --> 00:01:11,200
+Agora, o que podemos fazer nesse caso.
+
+16
+00:01:11,370 --> 00:01:14,320
+Podemos caminhar pelo nosso código passo a passo.
+
+17
+00:01:14,370 --> 00:01:17,650
+Para isso eu recomendo usar as ferramentas de desenvolvimento do Chrome.
+
+18
+00:01:17,760 --> 00:01:27,630
+Lá você pode ir às fontes, toque na guia de fontes, você encontrará sua estrutura de código
+
+19
+00:01:27,630 --> 00:01:29,160
+mostrada em localhost.
+
+20
+00:01:29,160 --> 00:01:34,750
+Lá, você encontrará uma pasta de origem e você realmente encontra seu código aqui.
+
+21
+00:01:34,770 --> 00:01:39,110
+Agora, isso é possível, você também mapas de origem que são gerados.
+
+22
+00:01:39,450 --> 00:01:47,220
+Basicamente, você poderia dizer que os arquivos de tradução permitem que as ferramentas do desenvolvedor do navegador entrem em seu código
+
+23
+00:01:47,250 --> 00:01:53,730
+conforme você o escreveu e permitem que você depure esse código, mesmo que o código que é
+
+24
+00:01:54,060 --> 00:01:57,690
+enviado para o navegador será diferente e otimizado e empacotado.
+
+25
+00:01:57,800 --> 00:02:02,310
+Isso é muito legal porque você pode depurar o código que você escreveu, mesmo que não seja o código
+
+26
+00:02:02,310 --> 00:02:03,630
+que está sendo executado no navegador.
+
+27
+00:02:03,780 --> 00:02:07,210
+Então lá, sabemos que algo não está funcionando quando eu escrevo aqui.
+
+28
+00:02:07,380 --> 00:02:13,840
+E como nós escrevemos o código, sabemos que o nome mudou os manipuladores sendo despedidos quando escrevemos.
+
+29
+00:02:13,980 --> 00:02:17,300
+Então, coloque um ponto de interrupção clicando no número da linha aqui.
+
+30
+00:02:17,700 --> 00:02:19,910
+E vamos começar a digitar novamente.
+
+31
+00:02:20,670 --> 00:02:23,890
+Eu digitei um personagem e agora está fazendo uma pausa.
+
+32
+00:02:24,180 --> 00:02:29,370
+Você verá que está adicionando isso eu. e. todo o código que o substituiria novamente.
+
+33
+00:02:29,370 --> 00:02:32,260
+porque é de-evoluir o comportamento do elemento trem trem e devemos executar
+
+34
+00:02:32,520 --> 00:02:40,200
+E agora podemos usar as ferramentas normais de depuração do cromo aqui para percorrer nosso código e aqui podemos
+
+35
+00:02:40,290 --> 00:02:48,760
+entrar na próxima chamada de função para entrar nos dias encontrar a função de índice e entender o que está acontecendo lá.
+
+36
+00:02:49,870 --> 00:02:53,950
+Então, lá dentro, podemos dar uma olhada nos dados.
+
+37
+00:02:53,950 --> 00:02:57,510
+Nós temos um barco baleia lá como o objeto p.
+
+38
+00:02:57,520 --> 00:03:03,610
+Agora, vemos que isso é para Max é o objeto que está atualmente procurando com achado.
+
+39
+00:03:03,620 --> 00:03:08,580
+Em seguida, temos uma idéia de um s f a one.
+
+40
+00:03:08,710 --> 00:03:17,050
+que essa expressão aqui é indefinida e comparamos isso com uma idéia de um s f a one.
+
+41
+00:03:17,050 --> 00:03:18,210
+Nós também vemos
+
+42
+00:03:18,250 --> 00:03:26,200
+Então, isso deve corresponder a esta prisão que decidiu desde que acessamos a ID do usuário, podemos ver que ela é
+
+43
+00:03:26,640 --> 00:03:35,530
+indefinida e podemos ver claramente que a ID do usuário não é uma ID válida porque se nós passamos o mouse sobre a
+
+44
+00:03:35,530 --> 00:03:41,150
+pessoa novamente, vemos que só há ID objeto nenhum usuário id com essa informação.
+
+45
+00:03:41,380 --> 00:03:46,960
+Agora podemos sair desse processo voltar ao nosso código e corrigir nosso erro lógico.
+
+46
+00:03:47,050 --> 00:03:55,120
+Então, usar as ferramentas do depurador do cromo com mapas de origem que são gerados para você automaticamente é
+
+47
+00:03:55,120 --> 00:03:57,820
+uma característica poderosa para detectar erros lógicos.
+
+48
+00:03:57,850 --> 00:04:03,140
+Você pode caminhar seu código enquanto você se encaminha, embora esse não seja o código que está sendo executado no navegador.
+
+49
+00:04:03,310 --> 00:04:06,200
+Então, há uma ferramenta legal que você deve estar ciente.
+
+50
+00:04:06,340 --> 00:04:13,210
+Para encontrar e corrigir erros usando as ferramentas do desenvolvedor com a guia fontes onde você pode acessar seu
+
+51
+00:04:13,210 --> 00:04:15,600
+código original para mapas de origem.

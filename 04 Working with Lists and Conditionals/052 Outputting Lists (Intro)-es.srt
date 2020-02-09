@@ -1,0 +1,59 @@
+1
+00:00:02,190 --> 00:00:08,250
+En las últimas conferencias, aprendemos a generar contenido condicionalmente y que simplemente aprovechamos
+
+2
+00:00:08,250 --> 00:00:11,310
+el hecho de que todo es javascript.
+
+3
+00:00:11,310 --> 00:00:20,100
+Ahora quiero presentar mi lista de personas hasta el momento. No estamos haciendo esto de manera dinámica.
+
+4
+00:00:20,100 --> 00:00:26,000
+Tenemos un par de personas aquí en nuestro estado y esta debería ser nuestra única fuente de verdad.
+
+5
+00:00:26,010 --> 00:00:32,090
+Esta debería ser nuestra fuente de datos en aplicaciones más grandes en aplicaciones reales.
+
+6
+00:00:32,100 --> 00:00:37,010
+Esto podría estar lleno de Dedo o con datos que obtenga de un servidor.
+
+7
+00:00:37,350 --> 00:00:46,260
+Así que tenemos una gran variedad de personas pero en el Rouget como X regresamos aquí en nuestro condicional.
+
+8
+00:00:46,260 --> 00:00:53,400
+le asignamos datos manualmente a la persona diferente y nuestra matriz, por supuesto, es Super inflexible.
+
+9
+00:00:54,050 --> 00:00:56,470
+Ahora simplemente codificamos tres personas y
+
+10
+00:00:56,700 --> 00:01:04,560
+Si alguna vez cambiamos algo si agregamos una nueva persona o eliminamos una, básicamente se romperá y ni siquiera podremos dirigirnos a
+
+11
+00:01:04,560 --> 00:01:11,200
+una persona específica cuando la actualicemos como lo hacemos aquí con el manejador de cambio de clic o palabra.
+
+12
+00:01:11,210 --> 00:01:14,400
+¿Esto no funciona realmente de la forma en que debería funcionar?
+
+13
+00:01:14,520 --> 00:01:22,170
+Así que aprendamos cómo podemos superar las listas de matrices de datos básicamente y cómo también podemos interactuar con
+
+14
+00:01:22,170 --> 00:01:25,620
+ellos para actualizarlos y cambiar las matrices correctamente.
+
+15
+00:01:25,620 --> 00:01:29,500
+Y nuestro estado se enfocará en todas estas cosas en las próximas conferencias.

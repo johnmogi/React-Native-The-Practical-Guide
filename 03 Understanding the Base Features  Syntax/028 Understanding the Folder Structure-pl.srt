@@ -1,0 +1,419 @@
+1
+00:00:02,360 --> 00:00:06,360
+W ostatnim wykładzie stworzyliśmy nasz projekt z aplikacją do tworzenia reakcji i,
+
+2
+00:00:06,450 --> 00:00:11,980
+jak już wspomniałem, upewnij się, że npm start, ten proces jest uruchamiany za każdym razem, gdy
+
+3
+00:00:11,980 --> 00:00:13,260
+pracujesz nad swoim kodem.
+
+4
+00:00:13,290 --> 00:00:19,160
+Teraz otwieram folder utworzony za pomocą kodu Visual Studio Microsoftu, jest to IDE, którego
+
+5
+00:00:19,200 --> 00:00:22,030
+zamierzam użyć w trakcie kursu, ale możesz
+
+6
+00:00:22,200 --> 00:00:25,430
+użyć dowolnego IDE lub edytora, którego chcesz użyć.
+
+7
+00:00:25,500 --> 00:00:31,950
+Na przykład WebStorm może być alternatywą lub Sublime lub Atomem lub dowolnym innym edytorem, który
+
+8
+00:00:31,950 --> 00:00:33,000
+ci się podoba.
+
+9
+00:00:33,000 --> 00:00:38,850
+Teraz tutaj instaluję motyw i niektóre rozszerzenia i możesz znaleźć dokładną konfigurację, której używam, opisaną w dokumencie PDF
+
+10
+00:00:39,140 --> 00:00:42,170
+dołączonym do tego wideo, na wypadek, gdybyś chciał użyć
+
+11
+00:00:42,210 --> 00:00:48,150
+tego samego, ale możesz użyć swojej ulubionej konfiguracji . Niezależnie od użytego motywu i konfiguracji,
+
+12
+00:00:48,150 --> 00:00:53,230
+będziesz mieć taką samą ilość plików i folderów w swoim projekcie.
+
+13
+00:00:53,460 --> 00:00:58,890
+Więc poznajmy wszystkie pliki i foldery, które tutaj mamy. Na poziomie root otrzymujemy kilka plików
+
+14
+00:00:58,890 --> 00:01:00,420
+konfiguracyjnych, te pliki
+
+15
+00:01:00,480 --> 00:01:03,010
+blokad można tutaj w zasadzie zignorować,
+
+16
+00:01:03,030 --> 00:01:07,800
+po prostu blokują wersje zależności, których używamy, ogólne zależności, które nasz
+
+17
+00:01:07,800 --> 00:01:14,250
+projekt są zdefiniowane w pakiecie. pliki json. A potem widać, że mamy trzy zależności
+
+18
+00:01:14,250 --> 00:01:18,360
+w tym projekcie i wszystko to zostało stworzone przez aplikację do tworzenia reakcji.
+
+19
+00:01:18,540 --> 00:01:24,720
+Jak widać, oczywiście importujemy reakcje, tutaj używam wersji kandydującej do wydania 16 w momencie, w
+
+20
+00:01:24,720 --> 00:01:26,520
+którym to przeglądasz, to
+
+21
+00:01:26,520 --> 00:01:32,710
+powinno być wypuszczone, reaguj domem, to jest to samo i reaguj na skrypty, o których
+
+22
+00:01:32,760 --> 00:01:39,900
+wspomniałem. pakiet oferujący cały ten przepływ pracy, ten serwer rozwoju, obsługę javascript następnej generacji i wszystkie te
+
+23
+00:01:39,990 --> 00:01:46,340
+rzeczy, których używamy w tym projekcie. W paczce. plik json, było kilka zdefiniowanych skryptów,
+
+24
+00:01:46,560 --> 00:01:51,000
+możesz uruchomić te skrypty za pomocą npm run, a następnie nazwę skryptu.
+
+25
+00:01:51,180 --> 00:01:57,060
+Wyjątki zaczynają się od uruchomienia npm start, polecenia, które wykonaliśmy i jak widać, używa tego
+
+26
+00:01:57,060 --> 00:02:02,680
+pakietu skryptów reagowania, aby następnie wykonać tam polecenie startowe, to po prostu polecenie udostępnione przez
+
+27
+00:02:02,690 --> 00:02:03,730
+ten pakiet i
+
+28
+00:02:03,750 --> 00:02:08,900
+polecenie to dzieje się uruchom ten serwer programistyczny, obejrzyj cały nasz kod, skompiluj
+
+29
+00:02:08,940 --> 00:02:15,750
+nasz kod, zoptymalizuj kod i wykonaj wszystkie te czynności. Gdy będziesz gotowy do wdrożenia aplikacji, możesz
+
+30
+00:02:15,750 --> 00:02:21,360
+uruchomić npm run build, aby zoptymalizować ją jeszcze bardziej, nie uruchamiać serwera
+
+31
+00:02:21,570 --> 00:02:28,740
+programistycznego, ale zamiast tego uzyskać zoptymalizowany kod zapisany w folderze, ponieważ teraz nie zobaczysz tutaj
+
+32
+00:02:28,770 --> 00:02:30,090
+skompilowanego kodu wszystko
+
+33
+00:02:30,090 --> 00:02:31,770
+dzieje się w pamięci.
+
+34
+00:02:31,770 --> 00:02:35,190
+Ale wrócę do wdrożenia aplikacji w dalszej części kursu.
+
+35
+00:02:35,220 --> 00:02:37,140
+Więc zamknijmy ten pakiet. plik
+
+36
+00:02:37,140 --> 00:02:44,710
+json na razie. Folder modułów węzłów zawiera wszystkie zależności i zależności od naszego projektu,
+
+37
+00:02:44,940 --> 00:02:46,780
+dlatego mamy ich tak wiele.
+
+38
+00:02:46,800 --> 00:02:53,130
+Mieliśmy tylko reagować, reagować na dom i reagować na skrypty, ale reagować na skrypty mają wiele innych zależności, wszystkie
+
+39
+00:02:53,130 --> 00:02:56,550
+te małe narzędzia do kompilacji, które kompilowały kod i tak dalej.
+
+40
+00:02:56,760 --> 00:02:59,820
+Nie powinieneś edytować niczego w folderze modułów
+
+41
+00:02:59,850 --> 00:03:06,510
+węzłów, jest on generowany automatycznie, jeśli uruchomisz program npm install w folderze projektu, co zostało automatycznie
+
+42
+00:03:06,570 --> 00:03:08,680
+wykonane przez utworzenie skryptów reakcji.
+
+43
+00:03:08,850 --> 00:03:11,160
+Folder publiczny jest bardziej interesujący, jest
+
+44
+00:03:11,160 --> 00:03:16,070
+to w zasadzie folder główny, na którym serwer końcowy jest obsługiwany przez
+
+45
+00:03:16,080 --> 00:03:23,090
+serwer WWW, ale tutaj tylko pliki, które możemy edytować, pliki skryptów są dodawane w folderze źródłowym.
+
+46
+00:03:23,490 --> 00:03:26,580
+Oto jeden ważny indeks plików. html, to jest
+
+47
+00:03:26,700 --> 00:03:30,960
+normalna strona html i jest to jedyna strona, którą
+
+48
+00:03:30,980 --> 00:03:32,010
+mamy tutaj.
+
+49
+00:03:32,070 --> 00:03:35,760
+Nigdy nie dodamy więcej stron HTML w tym projekcie,
+
+50
+00:03:35,820 --> 00:03:41,950
+jeśli tworzysz projekt wielostronicowy, utworzysz tutaj wiele takich projektów z aplikacją do tworzenia reakcji, nie
+
+51
+00:03:42,240 --> 00:03:43,630
+dodasz tutaj więcej
+
+52
+00:03:43,650 --> 00:03:47,690
+plików html lub potrzebujesz własnego przepływu pracy, jeśli chcesz Zrób to.
+
+53
+00:03:47,820 --> 00:03:54,820
+Tak więc jest to pojedyncza strona, na której w końcu nasze pliki skryptowe zostaną wstrzyknięte przez ten przepływ pracy,
+
+54
+00:03:54,840 --> 00:04:01,200
+dlatego nie widzisz tu importu skryptu i możesz edytować ten plik, ale nie będziemy tutaj zapisywać żadnego
+
+55
+00:04:01,200 --> 00:04:02,160
+kodu HTML.
+
+56
+00:04:02,340 --> 00:04:05,670
+Chcę podkreślić tę div tutaj z rootem ID,
+
+57
+00:04:05,700 --> 00:04:11,910
+stanie się to ważne, ponieważ będzie to miejsce, w którym później montujemy naszą aplikację reagowania,
+
+58
+00:04:12,060 --> 00:04:14,160
+a my oczywiście będziemy reagować.
+
+59
+00:04:14,160 --> 00:04:20,880
+Ale jeśli chcesz dodać import, powiedzmy inne biblioteki, biblioteki CSS lub chcesz dodać
+
+60
+00:04:20,880 --> 00:04:25,170
+kilka metatagów, możesz to zrobić tutaj w pliku html.
+
+61
+00:04:25,170 --> 00:04:26,930
+Możesz również dodać więcej html tutaj,
+
+62
+00:04:26,940 --> 00:04:33,480
+ale znowu, prawdopodobnie chcesz to zrobić w reakcji. Manifest. Plik json istnieje, ponieważ aplikacja do
+
+63
+00:04:33,480 --> 00:04:37,230
+tworzenia reakcji daje nam progresywną aplikację internetową po wyjęciu z pudełka,
+
+64
+00:04:37,260 --> 00:04:43,230
+co najmniej bardzo podstawową i daje nam to manifest. plik json, w którym możemy zdefiniować
+
+65
+00:04:43,230 --> 00:04:45,630
+niektóre metadane dotyczące naszej aplikacji.
+
+66
+00:04:45,630 --> 00:04:48,150
+Interesującym dla nas jest ten folder
+
+67
+00:04:48,270 --> 00:04:53,150
+źródłowy, tutaj dostajemy kilka plików i są to właściwie pliki, nad którymi
+
+68
+00:04:53,240 --> 00:04:56,310
+będziemy pracować, to jest właściwie nasza aplikacja reagowania.
+
+69
+00:04:56,580 --> 00:04:58,380
+Najważniejszy dla
+
+70
+00:04:58,380 --> 00:05:06,540
+nas teraz, indeks. Plik js uzyskuje dostęp do tego elementu głównego w naszej domenie, w naszym pliku html, więc element
+
+71
+00:05:06,540 --> 00:05:12,000
+z identyfikatorem root, który oczywiście jest tym div, który widzieliśmy w indeksie. plik html, ten i
+
+72
+00:05:12,000 --> 00:05:20,500
+tam, jak widać, renderuje naszą aplikację reagującą za pomocą metody renderowania.
+
+73
+00:05:20,850 --> 00:05:29,940
+Teraz mamy referencję do jakiegoś obiektu aplikacji lub elementu, który importujemy z pliku aplikacji, rozszerzenia. js jest pominięty, ponieważ jest automatycznie dodawany przez nasz przepływ
+
+74
+00:05:30,060 --> 00:05:36,480
+pracy i jeśli przyjrzymy się tej aplikacji. W związku z tym, właśnie tutaj widzimy nasz pierwszy
+
+75
+00:05:36,480 --> 00:05:38,290
+i
+
+76
+00:05:38,290 --> 00:05:45,870
+jedyny komponent reagowania, który mamy teraz w tym projekcie początkowym.
+
+77
+00:05:45,870 --> 00:05:47,010
+Tutaj widzimy niektóre JSX, a następnie zanurkujemy głęboko w to, co widzimy tutaj dokładnie w następnych wykładach.
+
+78
+00:05:47,070 --> 00:05:53,580
+Póki co, usuńmy całą zawartość tego pakującego div, a po
+
+79
+00:05:53,880 --> 00:06:01,210
+prostu dodajmy tutaj tag h1, w którym powiem, że jestem aplikacją
+
+80
+00:06:01,240 --> 00:06:12,010
+reagowania, zamknijmy to oczywiście, a potem uratujmy to, to zawsze ważne, don Nie zapomnij zapisać swoich plików.
+
+81
+00:06:12,010 --> 00:06:15,200
+Teraz, odkąd masz już zacząć, to
+
+82
+00:06:15,240 --> 00:06:21,400
+automatycznie uruchomi ponowną kompilację i powinno automatycznie ponownie załadować twoją stronę, dlatego
+
+83
+00:06:21,580 --> 00:06:27,130
+powinieneś teraz zobaczyć Cześć Jestem aplikacją reagowania zamiast starej zawartości.
+
+84
+00:06:27,190 --> 00:06:28,960
+Dzięki temu możemy również usunąć to logo. Plik svg, ponieważ nie używamy go
+
+85
+00:06:29,050 --> 00:06:35,380
+już w naszym projekcie, a teraz mamy trochę szczuplejszego folderu źródłowego.
+
+86
+00:06:35,380 --> 00:06:38,850
+Co jeszcze stworzyła dla nas aplikacja reagowania?
+
+87
+00:06:38,860 --> 00:06:42,040
+Dała nam tę aplikację. plik css, który zasadniczo definiuje niektóre style, których używamy w tej aplikacji. Plik js, chociaż powiem, że nie
+
+88
+00:06:42,070 --> 00:06:48,640
+są one objęte zakresem
+
+89
+00:06:48,640 --> 00:06:52,660
+tego pliku, są to nadal globalne stylizacje i
+
+90
+00:06:52,660 --> 00:07:00,370
+faktycznie usunę wszystko z tej pierwszej definicji klasy aplikacji w tym pliku i zapiszę ją później. Otrzymujemy również indeks. plik css, który stosuje style na całym świecie i co powinno być używane w niektórych ogólnych konfiguracjach, jak tutaj
+
+91
+00:07:00,370 --> 00:07:07,240
+w przypadku treści naszej aplikacji.
+
+92
+00:07:07,240 --> 00:07:14,540
+Usługa registerServiceWorker. Plik js jest jak nazwa wskazuje ważne dla rejestracji pracownika usług, który jest generowany automatycznie, który jest związany
+
+93
+00:07:14,660 --> 00:07:20,020
+z tą progresywną aplikację internetową, którą
+
+94
+00:07:20,260 --> 00:07:22,290
+otrzymaliśmy po wyjęciu z pudełka.
+
+95
+00:07:22,300 --> 00:07:26,490
+Będzie to zasadniczo pre-cache naszych plików
+
+96
+00:07:26,560 --> 00:07:30,180
+skryptów, nie musimy nic tutaj konfigurować. A plik testowy, cóż, zajmiemy się testowaniem w dalszej części kursu, w
+
+97
+00:07:30,220 --> 00:07:34,160
+zasadzie pozwala nam tworzyć testy jednostkowe dla
+
+98
+00:07:34,290 --> 00:07:36,880
+różnych jednostek, na przykład komponentów w naszej aplikacji.
+
+99
+00:07:36,880 --> 00:07:44,380
+To jest ogólna konfiguracja i dla większości tego kursu będziemy pracować w aplikacji. js lub inne nowe komponenty,
+
+100
+00:07:44,410 --> 00:07:51,670
+które tworzymy.
+
+101
+00:07:51,670 --> 00:07:52,630
+Mówiąc o
+
+102
+00:07:52,630 --> 00:07:58,260
+tym, przeanalizujmy ten plik, poznajmy składnię, którą tam widzimy, pozbądźmy się tego importu
+
+103
+00:07:58,390 --> 00:08:01,990
+logo, ponieważ usuwamy teraz plik logo, który widzę, i
+
+104
+00:08:01,990 --> 00:08:08,530
+zanurzmy się w JSX, co to dokładnie jest i jak dodajemy więcej komponenty do naszej aplikacji.
+
+105
+00:08:08,530 --> 00:08:09,730
+&nbsp;

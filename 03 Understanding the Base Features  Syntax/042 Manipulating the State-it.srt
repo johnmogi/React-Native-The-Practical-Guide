@@ -1,0 +1,223 @@
+1
+00:00:02,220 --> 00:00:06,630
+Nell'ultima lezione abbiamo eseguito il cambio di gestore del nome con un clic.
+
+2
+00:00:06,690 --> 00:00:09,370
+Ora vogliamo manipolare lo stato sul clic.
+
+3
+00:00:09,780 --> 00:00:18,450
+Quindi commenta questa dichiarazione di blocco della console e potremmo semplicemente fare in modo che questo stato raggiunga questa proprietà
+
+4
+00:00:18,450 --> 00:00:19,590
+di stato qui.
+
+5
+00:00:19,710 --> 00:00:22,870
+E come ho detto questo funzionerà solo quando si utilizza questa sintassi.
+
+6
+00:00:22,890 --> 00:00:29,450
+Mi rendo conto che quest'anno non si riferirà alla classe e quindi non sarà in grado di raggiungere quella proprietà statale.
+
+7
+00:00:29,560 --> 00:00:39,090
+Ma funzionerà così le persone dello stato quindi forse accedono a una persona e danno il nome a
+
+8
+00:00:39,090 --> 00:00:41,170
+Maximillian come nome completo.
+
+9
+00:00:41,250 --> 00:00:45,360
+Salviamo questo e vediamo cosa succede se eseguiamo questo codice.
+
+10
+00:00:45,570 --> 00:00:51,300
+Abbiamo già ricevuto un avviso qui, ma per ora ignoriamolo e facciamo il nome di Slick quale non cambia nulla.
+
+11
+00:00:51,300 --> 00:00:53,110
+Vediamo ancora i Mac qui.
+
+12
+00:00:53,520 --> 00:01:01,110
+Bene, come ho detto, riceviamo un avvertimento su questo non dovremmo mutare il che significa cambiare lo stato direttamente in
+
+13
+00:01:01,110 --> 00:01:02,000
+questo modo.
+
+14
+00:01:02,160 --> 00:01:07,050
+Re-act non lo riconoscerà e non accetterà questo cambiamento.
+
+15
+00:01:07,140 --> 00:01:09,720
+Quindi non farlo.
+
+16
+00:01:09,720 --> 00:01:17,910
+Invece utilizzare un metodo speciale re-act ti dà a tutti voi di accedere a questo con questo e poi è stato impostato.
+
+17
+00:01:17,910 --> 00:01:22,700
+Non abbiamo definito questo metodo, ma ricordiamo che estendiamo il componente.
+
+18
+00:01:22,920 --> 00:01:29,820
+E questo è reso disponibile dalla libreria di re-act e l'oggetto componente ha un metodo di
+
+19
+00:01:29,850 --> 00:01:30,760
+stato impostato.
+
+20
+00:01:31,130 --> 00:01:38,700
+Questo è un metodo che ci permette di aggiornare questa proprietà statale speciale qui e garantirà quindi
+
+21
+00:01:38,790 --> 00:01:47,880
+che re-act venga a sapere come Update e aggiornamenti che Dawn ha detto che lo stato prende un oggetto come
+
+22
+00:01:48,330 --> 00:01:54,290
+argomento e uniremo tutto ciò che troviamo qui con il nostro stato esistente.
+
+23
+00:01:54,300 --> 00:02:03,660
+Quindi, se ascolto la persona suddetta a un array aggiornato, si fonderà con i dati esistenti.
+
+24
+00:02:03,790 --> 00:02:13,630
+altro stato qui che è un altro valore, questo non verrebbe toccato anche se aggiorniamo solo le persone.
+
+25
+00:02:13,630 --> 00:02:15,670
+Quindi se avessimo un
+
+26
+00:02:15,850 --> 00:02:16,990
+Non è chiaro cosa intendo.
+
+27
+00:02:16,990 --> 00:02:17,950
+Lascia che ti mostri.
+
+28
+00:02:18,190 --> 00:02:26,590
+Sto copiando persone e fondamentalmente aggiungendo questo come una proprietà nell'oggetto che sto per utilizzare come mio
+
+29
+00:02:26,590 --> 00:02:27,550
+aggiornamento qui.
+
+30
+00:02:27,580 --> 00:02:37,240
+Quindi sto dicendo questo stato detto e detto stato prende questo nuovo oggetto dove aggiorno il mio è dove cambio
+
+31
+00:02:37,240 --> 00:02:45,410
+solo la prima persona o forse anche cambiamo Stephani, cambiamo la sua età di 27 anni.
+
+32
+00:02:45,440 --> 00:02:54,850
+Ora quello che faremo quello che il re-act farà per noi è guardare al nostro stato e vedere quale parte di essa sta scavalcando.
+
+33
+00:02:54,850 --> 00:02:56,770
+Stiamo cambiando le borse.
+
+34
+00:02:56,860 --> 00:03:06,060
+Non scarterà ogni stato ma semplicemente fonderà il vecchio stato con quello nuovo sovrascriverà i perusi poiché
+
+35
+00:03:06,120 --> 00:03:10,340
+definiamo chiaramente una nuova Worthen delle persone qui.
+
+36
+00:03:10,480 --> 00:03:16,020
+Ma lasceremo intatto il nostro stato perché non stiamo dicendo nulla al riguardo e
+
+37
+00:03:16,040 --> 00:03:17,030
+non verrà scartato.
+
+38
+00:03:17,050 --> 00:03:18,520
+Che naturalmente è una buona cosa.
+
+39
+00:03:18,550 --> 00:03:23,410
+Non vuoi dover aggiornare tutto sul tuo stato ogni volta che vuoi
+
+40
+00:03:23,410 --> 00:03:25,250
+cambiare solo un piccolo frammento.
+
+41
+00:03:25,330 --> 00:03:32,240
+Vediamo ora cosa succede se salviamo questo file se lo salviamo adesso e ricarichiamo tiap
+
+42
+00:03:32,230 --> 00:03:38,360
+e faccio clic su switch name watch Max e guardo i 26 anni laggiù.
+
+43
+00:03:38,550 --> 00:03:47,910
+Vedete che è Maximillian e 27 anni il dormitorio è stato aggiornato perché re-act ha riconosciuto che lo stato della
+
+44
+00:03:47,910 --> 00:03:52,500
+nostra replica cambia e questa è davvero una cosa speciale.
+
+45
+00:03:52,530 --> 00:03:57,650
+Ci sono molte cose che portano a reagire per aggiornare l'alba.
+
+46
+00:03:57,660 --> 00:04:01,480
+In realtà ci sono solo due cambiamenti di stato.
+
+47
+00:04:02,040 --> 00:04:05,550
+E cos'altro potresti già vederlo in azione.
+
+48
+00:04:06,440 --> 00:04:08,780
+Propiamo cambiamo stato.
+
+49
+00:04:08,810 --> 00:04:16,190
+È carino, ma tieni presente che cosa produciamo effettivamente per ogni persona è definito e questo componente di persona e
+
+50
+00:04:16,640 --> 00:04:18,580
+lì non usiamo lo stato.
+
+51
+00:04:18,740 --> 00:04:23,390
+E come ho detto, non possiamo usarlo lì perché questo utilizza questa sintassi della funzione.
+
+52
+00:04:23,990 --> 00:04:27,440
+Qui usiamo i puntelli e questa è la reazione di Obert.
+
+53
+00:04:27,440 --> 00:04:32,690
+Fai attenzione ai cambiamenti di stato o alle modifiche dell'elica.
+
+54
+00:04:32,720 --> 00:04:39,290
+Fondamentalmente analizza per codificarlo già reso al Dom e il codice che ora renderà se fosse Re-Read
+
+55
+00:04:39,290 --> 00:04:45,290
+per tutto e quindi aggiornerà il Dom esistente in tutti i punti in cui deve essere
+
+56
+00:04:45,290 --> 00:04:53,600
+aggiornato per riflettere il tuo nuovo stato e il suo prop nuovo stato e in realtà ha nuovi puntelli di persona si.

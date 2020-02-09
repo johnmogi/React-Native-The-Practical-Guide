@@ -1,0 +1,139 @@
+1
+00:00:02,160 --> 00:00:09,590
+Así que sumergámonos en el error o los masoquistas en la aplicación de reactivación en el proyecto en
+
+2
+00:00:09,590 --> 00:00:20,480
+el que trabajó hasta ahora en el nombre de controlador cambiado. Agregue un error en el código allí donde asignamos a la persona la persona actualizada
+
+3
+00:00:20,480 --> 00:00:21,220
+aquí.
+
+4
+00:00:21,590 --> 00:00:28,300
+Nos acercamos al valor objetivo del evento para obtener el valor que el usuario ingresó donde asigné un valor.
+
+5
+00:00:28,370 --> 00:00:35,900
+Digamos que no estamos accediendo al objetivo del evento que es correcto, sino a la entrada del evento que es incorrecta.
+
+6
+00:00:35,900 --> 00:00:37,920
+Bueno, digamos que cometiste este error.
+
+7
+00:00:38,360 --> 00:00:42,300
+Ahora, si vuelve a la aplicación en el primer vistazo, parece funcionar.
+
+8
+00:00:42,530 --> 00:00:48,410
+Hablamos con la persona que todavía funciona, pero si comenzamos a escribir, en realidad obtenemos un error.
+
+9
+00:00:48,620 --> 00:00:53,840
+Y ya con VOLP y flujo de trabajo, incluso obtenemos una buena muestra del error aquí en el medio.
+
+10
+00:00:53,840 --> 00:00:56,400
+Ahora centrémonos en el mensaje de error a la derecha.
+
+11
+00:00:56,450 --> 00:00:59,900
+Siempre desplácese hacia arriba hasta la parte superior para ver su mensaje de error.
+
+12
+00:00:59,900 --> 00:01:05,260
+Y ahí ves que no se puede leer Valor de propiedad de indefinido.
+
+13
+00:01:05,330 --> 00:01:10,280
+También obtienes una pista de dónde ocurrió esto en el cambio de nombre del controlador.
+
+14
+00:01:10,400 --> 00:01:11,610
+Actualmente, si.
+
+15
+00:01:11,690 --> 00:01:16,200
+Línea 27 y se muestra aún mejor aquí en el medio.
+
+16
+00:01:16,280 --> 00:01:19,880
+Obtienes el valor de entrada del evento resaltado.
+
+17
+00:01:19,880 --> 00:01:27,080
+Entonces esta línea parece ser incorrecta y no hay una propiedad de valor en undefined ahora que simplemente significa
+
+18
+00:01:27,500 --> 00:01:29,510
+la parte anterior al valor.
+
+19
+00:01:29,630 --> 00:01:36,180
+Entonces esta parte aquí no está definida, que es el caso porque no hay propiedad de entrada en el evento.
+
+20
+00:01:36,200 --> 00:01:39,470
+Ahora todavía necesita descubrir que el objetivo es correcto por su cuenta.
+
+21
+00:01:39,500 --> 00:01:45,110
+Por ejemplo, si observa la documentación del evento, puede ver la documentación del evento
+
+22
+00:01:45,320 --> 00:01:47,080
+de entrada femenino envejecido normal.
+
+23
+00:01:47,540 --> 00:01:51,590
+Pero obtienes una pista clara sobre qué salió mal y dónde.
+
+24
+00:01:51,740 --> 00:02:00,440
+Ahora, a veces los mensajes de error son menos útiles que este, incluso si el mensaje de error en sí es críptico.
+
+25
+00:02:00,590 --> 00:02:07,130
+La mayoría de las veces debe obtener un número de línea útil que le permita regresar a su código
+
+26
+00:02:07,160 --> 00:02:10,400
+y tratar de averiguar qué pasa con esta línea.
+
+27
+00:02:10,430 --> 00:02:14,980
+Esto debería ser útil y debería permitirle corregir el valor.
+
+28
+00:02:14,990 --> 00:02:19,570
+Así es como reaccionas en los mensajes de error de reacción.
+
+29
+00:02:19,670 --> 00:02:20,810
+No tengas miedo
+
+30
+00:02:20,810 --> 00:02:21,920
+No entres en pánico
+
+31
+00:02:21,950 --> 00:02:25,400
+A menudo, estos mensajes de error son realmente útiles.
+
+32
+00:02:25,430 --> 00:02:28,480
+Debes leerlos y deberías echar un vistazo a los números de línea.
+
+33
+00:02:28,490 --> 00:02:29,950
+Ellos te apuntan a.
+
+34
+00:02:30,200 --> 00:02:32,810
+Ahora bien, ¿qué pasa con los errores lógicos?
+
+35
+00:02:32,870 --> 00:02:35,370
+Echemos un vistazo a estos en la próxima conferencia.

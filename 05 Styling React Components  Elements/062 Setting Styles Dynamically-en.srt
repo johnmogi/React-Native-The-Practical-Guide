@@ -1,0 +1,159 @@
+1
+00:00:02,200 --> 00:00:08,410
+So with the problems I outlined in the last lecture, let's dynamically adjust the button style depending on
+
+2
+00:00:08,410 --> 00:00:11,580
+whether we're about to show persons or not.
+
+3
+00:00:11,620 --> 00:00:17,920
+Now we already had a look at how we can dynamically render content like here with the if statement where
+
+4
+00:00:17,920 --> 00:00:25,400
+we store some jsx in a variable and then output that variable in our template or in our return function
+
+5
+00:00:25,400 --> 00:00:26,660
+here I should say.
+
+6
+00:00:26,910 --> 00:00:30,910
+Now as always everything here is javascript
+
+7
+00:00:31,000 --> 00:00:38,680
+so if we assign a style to the button here, this part between the curly braces can be any javascript
+
+8
+00:00:38,680 --> 00:00:39,740
+expression.
+
+9
+00:00:39,940 --> 00:00:46,330
+For one, we could of course pass a javascript object here where we define the styles or we can of course
+
+10
+00:00:46,330 --> 00:00:48,600
+reach out to the style property,
+
+11
+00:00:48,670 --> 00:00:51,080
+excuse me, variable I should say as we do.
+
+12
+00:00:51,160 --> 00:00:54,350
+and we could adjust this style variable dynamically
+
+13
+00:00:54,350 --> 00:01:03,170
+therefore. Basically here, this state showPersons, if this is true this means persons can be seen.
+
+14
+00:01:03,190 --> 00:01:10,030
+So as I outlined in the last lecture the button should then have a red background because a click will
+
+15
+00:01:10,030 --> 00:01:12,780
+remove the persons. On the other hand,
+
+16
+00:01:12,910 --> 00:01:18,500
+the default setup should be to not have a white background color but a green one
+
+17
+00:01:18,790 --> 00:01:25,680
+and maybe we want to set the text color to white so that it does stand out with the normal color property.
+
+18
+00:01:25,690 --> 00:01:29,860
+Now if I state this, we have a green background color,
+
+19
+00:01:29,980 --> 00:01:32,350
+if I click on it, we see the persons.
+
+20
+00:01:32,490 --> 00:01:37,730
+Now that the persons are visible though, this should get a red background color.
+
+21
+00:01:37,750 --> 00:01:44,110
+So what we can do is in our if statement which we already have where we set a person's variable, we can
+
+22
+00:01:44,110 --> 00:01:51,810
+of course do more besides setting this person's variable here. After doing that,
+
+23
+00:01:51,820 --> 00:01:58,630
+I can also reach out to style and set the background color property which the style object clearly has,
+
+24
+00:01:58,630 --> 00:02:03,640
+we set it up here to red of course, simply like that.
+
+25
+00:02:03,970 --> 00:02:07,380
+So we simply get into this style object,
+
+26
+00:02:07,510 --> 00:02:10,900
+we don't assign a new value so it's still a constant
+
+27
+00:02:11,200 --> 00:02:15,610
+but we assign a new value to one of its properties, to the background color
+
+28
+00:02:16,060 --> 00:02:20,980
+and with this tiny change in place, we already got dynamic styling.
+
+29
+00:02:21,070 --> 00:02:22,880
+Let me reload this application,
+
+30
+00:02:23,050 --> 00:02:27,770
+green button, red button, green button and so on.
+
+31
+00:02:28,210 --> 00:02:34,870
+So this shows one crucial thing which you really have to wrap your head around if you haven't already,
+
+32
+00:02:34,870 --> 00:02:36,580
+everything is javascript,
+
+33
+00:02:36,640 --> 00:02:45,800
+I guess I said this before. We change the style dynamically just as we change this variable persons dynamically
+
+34
+00:02:46,090 --> 00:02:50,530
+just as we change anything dynamically, we're talking about javascript here.
+
+35
+00:02:50,620 --> 00:02:56,230
+You can manipulate the style object with any javascript code you want and in the end when you then bind
+
+36
+00:02:56,230 --> 00:03:01,360
+it here, it will simply apply this no matter how you edited it.
+
+37
+00:03:01,390 --> 00:03:06,850
+This is a crucial take away and this shows you how you can dynamically assign cells,
+
+38
+00:03:06,850 --> 00:03:09,010
+now what about class names though?
+
+39
+00:03:09,040 --> 00:03:14,030
+Can we also set these dynamically, can we pass a list of class names?
+
+40
+00:03:14,230 --> 00:03:18,030
+Yes we can and I will show you how it works in the next lecture.

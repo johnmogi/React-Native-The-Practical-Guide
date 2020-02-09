@@ -1,0 +1,159 @@
+1
+00:00:02,200 --> 00:00:08,410
+Quindi, se il problema è delineato in L'ultima conferenza, regoliamo dinamicamente lo stile in sospeso sul Weber
+
+2
+00:00:08,410 --> 00:00:11,580
+che stiamo per mostrare o meno alle persone.
+
+3
+00:00:11,620 --> 00:00:17,920
+Ora abbiamo già visto come possiamo rendere dinamicamente il contenuto come qui con lo stato e dove
+
+4
+00:00:17,920 --> 00:00:25,400
+immagazziniamo alcuni GSX in una variabile e poi emettiamo quella variabile nel nostro modello o nella nostra funzione di ritorno
+
+5
+00:00:25,400 --> 00:00:26,660
+o dovrei dire.
+
+6
+00:00:26,910 --> 00:00:30,910
+Ora come sempre tutto qui è javascript.
+
+7
+00:00:31,000 --> 00:00:38,680
+Quindi se assegniamo uno stile al pulsante qui questa parte tra le parentesi graffe Cauley può essere qualsiasi
+
+8
+00:00:38,680 --> 00:00:39,740
+espressione javascript.
+
+9
+00:00:39,940 --> 00:00:46,330
+Per uno potremmo naturalmente passare qui un oggetto javascript dove definiamo gli stili o possiamo
+
+10
+00:00:46,330 --> 00:00:48,600
+naturalmente raggiungere la proprietà dello stile.
+
+11
+00:00:48,670 --> 00:00:51,080
+Scusami variabile dovrei dire come facciamo noi.
+
+12
+00:00:51,160 --> 00:00:54,350
+E potremmo regolare dinamicamente questa variabile di stile.
+
+13
+00:00:54,350 --> 00:01:03,170
+Quindi fondamentalmente qui questo stato mostra persistenza se questo è vero questo significa che Pearse può essere visto.
+
+14
+00:01:03,190 --> 00:01:10,030
+Quindi, come ho sottolineato nell'ultima lezione, il pulsante dovrebbe avere uno sfondo rosso perché un
+
+15
+00:01:10,030 --> 00:01:12,780
+clic rimuoverà le persone dall'altra parte.
+
+16
+00:01:12,910 --> 00:01:18,500
+L'impostazione predefinita dovrebbe essere quella di non avere un colore di sfondo bianco ma uno verde.
+
+17
+00:01:18,790 --> 00:01:25,680
+E forse vogliamo impostare il colore del testo in bianco in modo che si distingua con la normale proprietà del colore.
+
+18
+00:01:25,690 --> 00:01:29,860
+Ora se ho dichiarato questo abbiamo un colore di sfondo verde.
+
+19
+00:01:29,980 --> 00:01:32,350
+Se clicco su di esso vediamo la persona.
+
+20
+00:01:32,490 --> 00:01:37,730
+Ora che le persone sono vincibili anche se questo dovrebbe avere un colore di sfondo rosso.
+
+21
+00:01:37,750 --> 00:01:44,110
+Quindi ciò che possiamo fare è nella nostra dichiarazione IF che abbiamo già dove impostiamo
+
+22
+00:01:44,110 --> 00:01:51,810
+la variabile di una persona, possiamo ovviamente fare di più oltre a impostare qui la variabile di questa persona.
+
+23
+00:01:51,820 --> 00:01:58,630
+Posso anche raggiungere lo stile e impostare la proprietà del colore di sfondo che l'oggetto stile ha chiaramente.
+
+24
+00:01:58,630 --> 00:02:03,640
+Lo impostiamo qui per leggere, ovviamente, semplicemente così.
+
+25
+00:02:03,970 --> 00:02:07,380
+Quindi entriamo semplicemente in questo oggetto di stile.
+
+26
+00:02:07,510 --> 00:02:10,900
+Non assegniamo un nuovo valore quindi è sempre una costante.
+
+27
+00:02:11,200 --> 00:02:15,610
+Ma assegniamo un nuovo valore a una delle sue proprietà al colore di sfondo.
+
+28
+00:02:16,060 --> 00:02:20,980
+E con questo piccolo cambiamento sul posto abbiamo già uno stile dinamico.
+
+29
+00:02:21,070 --> 00:02:22,880
+Lascia che ti ricarichi questa applicazione.
+
+30
+00:02:23,050 --> 00:02:27,770
+Pulsante verde pulsante rosso pulsante verde e così via.
+
+31
+00:02:28,210 --> 00:02:34,870
+Quindi questo mostra una cosa cruciale che devi davvero girare intorno alla testa se non lo hai già fatto.
+
+32
+00:02:34,870 --> 00:02:36,580
+Tutto è javascript.
+
+33
+00:02:36,640 --> 00:02:45,800
+Credo di averlo detto prima di cambiare lo stile in modo dinamico così come cambiamo dinamicamente queste persone variabili proprio mentre
+
+34
+00:02:46,090 --> 00:02:50,530
+cambiamo qualcosa in modo dinamico stiamo parlando di javascript qui.
+
+35
+00:02:50,620 --> 00:02:56,230
+Puoi manipolare l'oggetto stile con qualsiasi codice javascript che vuoi e alla fine
+
+36
+00:02:56,230 --> 00:03:01,360
+quando lo leghi qui verrà semplicemente applicato come non lo hai modificato.
+
+37
+00:03:01,390 --> 00:03:06,850
+Questo è un take away cruciale e questo ti mostra come puoi assegnare dinamicamente le celle.
+
+38
+00:03:06,850 --> 00:03:09,010
+Ora, per quanto riguarda i nomi delle classi.
+
+39
+00:03:09,040 --> 00:03:14,030
+Possiamo anche impostarli dinamicamente, possiamo passare una lista di nomi di classi.
+
+40
+00:03:14,230 --> 00:03:18,030
+Sì, possiamo e ti mostrerò come funziona nella prossima lezione.

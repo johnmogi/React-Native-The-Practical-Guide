@@ -1,0 +1,263 @@
+1
+00:00:02,150 --> 00:00:06,920
+Nell'ultima lezione ti ho guidato attraverso questa componente e in generale come è strutturata.
+
+2
+00:00:07,020 --> 00:00:08,610
+Ora approfondiamoci su questo.
+
+3
+00:00:08,680 --> 00:00:17,160
+La cosa del GSX per questo commento è questa serratura qui, quindi non è più usata e tornerò qualcos'altro. Posso usare
+
+4
+00:00:17,730 --> 00:00:23,310
+l'oggetto re-act che stiamo importando qui e chiamare un metodo su di esso.
+
+5
+00:00:23,370 --> 00:00:30,690
+Vero elemento Yate questo rifugio di tutti i motivi per cui dobbiamo importare agiamo perché questo codice qui non è ancora
+
+6
+00:00:31,050 --> 00:00:33,720
+stato compilato per quello che stiamo scrivendo qui.
+
+7
+00:00:33,810 --> 00:00:40,260
+se non vediamo che l'elemento creativo è un metodo e prende argomenti liberi richiede in
+
+8
+00:00:40,260 --> 00:00:48,240
+realtà una quantità infinita di argomenti, ma almeno per me il primo è l'elemento che vogliamo rendere al DOM.
+
+9
+00:00:48,240 --> 00:00:48,840
+Anche
+
+10
+00:00:48,840 --> 00:00:54,580
+Questo potrebbe essere un disco di morte può essere un normale elemento maschile H-G come un div.
+
+11
+00:00:54,660 --> 00:00:58,980
+Potrebbe anche essere il tuo componente se ne hai uno un po 'qui.
+
+12
+00:00:59,160 --> 00:01:04,860
+Non lo facciamo perché siamo all'interno di un componente, ma non possiamo renderizzare il rendering di qualsiasi componente
+
+13
+00:01:04,860 --> 00:01:08,390
+audio che stiamo importando, ma non abbiamo un componente del genere.
+
+14
+00:01:08,400 --> 00:01:13,000
+Il secondo argomento è fondamentalmente la configurazione per questo.
+
+15
+00:01:13,350 --> 00:01:20,460
+E lì passeremmo un oggetto javascript Desire's facoltativo potremo tutti passare null e lo faremo
+
+16
+00:01:20,460 --> 00:01:23,140
+per ora perché non voglio configurarlo.
+
+17
+00:01:23,280 --> 00:01:30,510
+Il terzo argomento qui è quindi qualsiasi numero di bambini e potremmo avere più argomenti
+
+18
+00:01:30,510 --> 00:01:31,820
+separati da Hamas.
+
+19
+00:01:31,890 --> 00:01:35,980
+I bambini significano ciò che è annidato all'interno di questa morte.
+
+20
+00:01:36,060 --> 00:01:39,450
+Ora in questo caso vuoi Nasta h un elemento.
+
+21
+00:01:39,720 --> 00:01:49,650
+Proviamo con l'aggiunta dell'età 1 e poi come argomento numero aggiungiamo questo testo qui con più punti esclamativi e sfogliamo qui le
+
+22
+00:01:49,650 --> 00:01:56,310
+virgolette con il backslash in modo che possiamo identificare che questo è stato reso
+
+23
+00:01:56,310 --> 00:01:58,570
+dal metodo degli elementi discreti.
+
+24
+00:01:59,410 --> 00:02:05,450
+Ora con questo fammi salvare questo codice creare un elemento con quattro argomenti div. se vedi una croce qui e nessun punto e poi torniamo alla nostra applicazione.
+
+25
+00:02:05,500 --> 00:02:13,270
+Ora l'età 1 e il testo assicurati di salvare il file nel codice di Visual Studio che vedi salvato
+
+26
+00:02:13,270 --> 00:02:19,300
+Qui vediamo H-1.
+
+27
+00:02:19,300 --> 00:02:21,210
+Ciao, sono pronto a reagire
+
+28
+00:02:21,440 --> 00:02:23,610
+E se ispezioniamo questo negli strumenti
+
+29
+00:02:23,650 --> 00:02:28,840
+per sviluppatori in Chrome sei nel mio caso che consiglio vivamente di utilizzare.
+
+30
+00:02:28,840 --> 00:02:29,600
+Vedrai iniziare un div con due nodi di testo all'interno di un'estremità.
+
+31
+00:02:29,770 --> 00:02:34,330
+Ciao, sono un'app reattore, quindi non abbiamo reso l'aiuto.
+
+32
+00:02:34,390 --> 00:02:37,340
+di età è interpretato come testo.
+
+33
+00:02:37,360 --> 00:02:45,370
+Un elemento che abbiamo reso testo e questo è in realtà il comportamento predefinito 1 anno
+
+34
+00:02:45,370 --> 00:02:46,010
+Non è reso come elemento se vuoi rendere un altro elemento all'interno del diff.
+
+35
+00:02:46,120 --> 00:02:52,510
+Quello che dobbiamo fare è sostituire questo codice qui con un romanzo
+
+36
+00:02:52,750 --> 00:03:00,580
+chiamato a reagire creare elemento per creare un nuovo elemento HVM l alla fine.
+
+37
+00:03:00,580 --> 00:03:03,290
+Qui passiamo ora una configurazione quindi null s e quindi il testo che vuoi rendere.
+
+38
+00:03:03,310 --> 00:03:10,900
+Quindi eccoci a mescolare e dire che funziona ora.
+
+39
+00:03:10,900 --> 00:03:15,800
+Ora se salviamo questo file e torniamo all'applicazione vediamo che una sola tecnologia funziona.
+
+40
+00:03:15,810 --> 00:03:21,690
+Ora possiamo anche vederlo se lo ispezioniamo negli strumenti di sviluppo.
+
+41
+00:03:21,690 --> 00:03:25,640
+Otteniamo un avvolgimento della morte.
+
+42
+00:03:25,780 --> 00:03:27,460
+H un tag.
+
+43
+00:03:27,490 --> 00:03:29,900
+Ora quello che non vediamo è
+
+44
+00:03:29,950 --> 00:03:38,290
+lo stile C S S che viene applicato perché non vediamo la classe aggiunta nel nostro J è il codice X.
+
+45
+00:03:39,190 --> 00:03:40,770
+Abbiamo aggiunto una classe C S S con il nome della classe non con la classe.
+
+46
+00:03:40,780 --> 00:03:45,640
+A proposito, dai il nome al modo in cui tornerò sul perché usiamo il nome
+
+47
+00:03:45,640 --> 00:03:51,680
+della classe nella prossima lezione, così abbiamo avuto il nome della classe nella nostra chiamata di elemento commerciale.
+
+48
+00:03:51,690 --> 00:03:55,850
+Semplicemente non passiamo null come configurazione ma un oggetto javascript.
+
+49
+00:03:55,920 --> 00:04:01,020
+E lì possiamo definire il nome della classe e assegnare qualsiasi classe C S S che vogliamo aggiungere.
+
+50
+00:04:01,530 --> 00:04:07,470
+Ad esempio nella stessa classe ci stiamo applicando qui.
+
+51
+00:04:07,620 --> 00:04:11,930
+Ora abbiamo salvato questo file di nuovo che si ricarica
+
+52
+00:04:12,770 --> 00:04:20,710
+e ora vediamo lo stile aggiornato con il testo centrale che vediamo questi CEO come classe applicata qui
+
+53
+00:04:20,710 --> 00:04:28,210
+il giorno di due giorni è molto importante per capire il codice che abbiamo appena scritto qui
+
+54
+00:04:28,210 --> 00:04:36,910
+con re-act create elemento e l'elemento nidificato di ricreazione è l'equivalente esatto di questo codice GSX X ed è in
+
+55
+00:04:36,940 --> 00:04:45,310
+realtà a ciò che questo codice qui verrà compilato da uno dei tanti strumenti creati che usiamo fuori dalla scatola.
+
+56
+00:04:45,340 --> 00:04:46,960
+useremo una volta che è stato compilato.
+
+57
+00:04:46,960 --> 00:04:54,160
+In questo progetto è il motivo per cui abbiamo bisogno di importare re-act anche se non lo usiamo affatto quando si utilizza questa sintassi, perché dietro le quinte lo
+
+58
+00:04:54,160 --> 00:04:59,720
+Naturalmente scrivere il codice in questo modo creerà un
+
+59
+00:05:00,010 --> 00:05:07,180
+elemento davvero ingombrante, specialmente quando aggiungi e annidi sempre più elementi.
+
+60
+00:05:07,180 --> 00:05:10,000
+Questo è il motivo per cui in genere non utilizziamo questo codice.
+
+61
+00:05:10,000 --> 00:05:12,910
+Ma invece questo codice che abbiamo iniziato con questo è il motivo per cui usiamo j come X. Ma è molto importante capire gli
+
+62
+00:05:13,210 --> 00:05:19,930
+interni e capire a cosa viene compilato.
+
+63
+00:05:19,930 --> 00:05:24,080
+E anche il più importante di tutti capisce che mentre sembra che non lo sia.
+
+64
+00:05:24,130 --> 00:05:31,090
+Questo è javascript alla fine.
+
+65
+00:05:31,090 --> 00:05:33,370
+Viene compilato per questo codice.
+
+66
+00:05:33,400 --> 00:05:35,960
+&nbsp;

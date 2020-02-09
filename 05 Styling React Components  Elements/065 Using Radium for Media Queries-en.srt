@@ -1,0 +1,223 @@
+1
+00:00:02,200 --> 00:00:08,570
+In the last lecture we added radium and started using it to change our button and add a pseudo selector,
+
+2
+00:00:08,810 --> 00:00:11,190
+the hover pseudo selector.
+
+3
+00:00:11,210 --> 00:00:16,220
+Now that's of course nice but we can also use radium to use media queries.
+
+4
+00:00:16,320 --> 00:00:23,780
+Now I'll do this in a person component, there we have a person class and we could of course easily add a media
+
+5
+00:00:23,780 --> 00:00:31,100
+query here where we say if the min-width is let's say 500px, then we overwrite our person class to
+
+6
+00:00:31,100 --> 00:00:36,970
+have a width of 450px  and no longer use percentages.
+
+7
+00:00:37,130 --> 00:00:38,840
+We could absolutely do that
+
+8
+00:00:39,020 --> 00:00:43,490
+but I will comment this solution out because I don't want to use my css class,
+
+9
+00:00:43,520 --> 00:00:47,990
+I want to show you how to do it with radium which you might need in some occasions
+
+10
+00:00:48,080 --> 00:00:54,040
+if you want to scope it to a component or if you want to change it dynamically.
+
+11
+00:00:54,250 --> 00:00:59,900
+So for that, I'll add a new style and of course you can name this constant whatever you want
+
+12
+00:00:59,900 --> 00:01:08,660
+in my function here and there, I now again will use a special selector which will look really strange
+
+13
+00:01:08,900 --> 00:01:11,030
+but which works thanks to radium
+
+14
+00:01:11,120 --> 00:01:15,650
+and don't forget to wrap your export with radium down there, otherwise it won't work
+
+15
+00:01:16,070 --> 00:01:18,180
+and now you can write your media query here.
+
+16
+00:01:18,440 --> 00:01:30,730
+@media (min-width: 500px) and then define the styles as a javascript object.
+
+17
+00:01:30,880 --> 00:01:33,640
+This still is a javascript property name and
+
+18
+00:01:33,670 --> 00:01:35,060
+I know this looks super weird
+
+19
+00:01:35,080 --> 00:01:39,040
+but since it's a string, it's a valid name and radium will parse it
+
+20
+00:01:39,040 --> 00:01:44,290
+and of course understand it because it's a media query and among pseudo selectors, it is something
+
+21
+00:01:44,290 --> 00:01:46,750
+radium understands.
+
+22
+00:01:46,750 --> 00:01:54,820
+Now here we could say that we want to set the width of the element to which we apply the style to 450
+
+23
+00:01:54,820 --> 00:02:00,610
+px, so fixed width which is not growing dynamically.
+
+24
+00:02:00,610 --> 00:02:07,510
+And now I want to assign this to my component here, I want to assign the style and I do have my class added
+
+25
+00:02:07,810 --> 00:02:14,230
+but I also have my style which will overwrite my class setting, by default css rules not because of
+
+26
+00:02:14,230 --> 00:02:15,610
+radium.
+
+27
+00:02:15,610 --> 00:02:20,120
+And now we should see the following if I reload the application or toggle the persons,
+
+28
+00:02:20,140 --> 00:02:27,940
+now as you can see we now get an error that plugin requiring addCSS for example when using keyframes
+
+29
+00:02:28,000 --> 00:02:31,000
+or for us important media queries,
+
+30
+00:02:31,000 --> 00:02:34,810
+we need to wrap our application in a style root component.
+
+31
+00:02:34,810 --> 00:02:42,100
+This is a component made available by Radium and whilst wrapping the export with radium is enough
+
+32
+00:02:42,220 --> 00:02:50,200
+for its pseudo selectors, for basically transforming selectors like media queries or other animations
+
+33
+00:02:50,200 --> 00:02:51,700
+with keyframes,
+
+34
+00:02:51,730 --> 00:02:58,150
+we need to wrap the entire application in a special component provided by Radium.
+
+35
+00:02:58,150 --> 00:03:05,500
+There, we can simply import style root from radium with this first radium import here, we're importing
+
+36
+00:03:05,500 --> 00:03:11,330
+the default export of that file and then we import a named export style root
+
+37
+00:03:11,680 --> 00:03:15,770
+and now we can simply wrap our whole application with that.
+
+38
+00:03:16,000 --> 00:03:26,240
+So what we can do is we can simply go here, oops not in person, sorry, the return statement and simply wrap
+
+39
+00:03:26,330 --> 00:03:34,750
+everything, the whole div with the class name app into style root like this.
+
+40
+00:03:34,760 --> 00:03:39,400
+Now if we save this and we reload the application, I clicked this again,
+
+41
+00:03:39,470 --> 00:03:41,630
+now it works without an error,
+
+42
+00:03:41,730 --> 00:03:47,690
+and if I resize this you see the boxes are only staying in the middle but they're not growing in width
+
+43
+00:03:47,690 --> 00:03:48,550
+anymore,
+
+44
+00:03:48,920 --> 00:03:52,440
+they are growing to 60 percent of the size though
+
+45
+00:03:52,580 --> 00:04:00,860
+if I go below my media query threshold which was 500px.
+
+46
+00:04:00,860 --> 00:04:08,780
+So there if I go below that threshold, it will basically stick to 60 percent, if I go
+
+47
+00:04:08,780 --> 00:04:09,750
+above it,
+
+48
+00:04:09,920 --> 00:04:15,590
+it will stay at the fixed width of 450px. Important,
+
+49
+00:04:15,680 --> 00:04:22,700
+wrap your entire application in the root component only there with the style root component provided
+
+50
+00:04:22,700 --> 00:04:29,940
+by radium, so that you can safely access advanced features to call it like this, like media queries. For
+
+51
+00:04:29,940 --> 00:04:34,430
+pseudo selector alone, you don't need to do that whichever feature you use,
+
+52
+00:04:34,460 --> 00:04:40,340
+you have to wrap a component where you plan on using radium features like media queries, like pseudo
+
+53
+00:04:40,340 --> 00:04:41,200
+selectors,
+
+54
+00:04:41,240 --> 00:04:48,520
+you have to wrap the export with the radium function basically which you import from the radium package.
+
+55
+00:04:48,800 --> 00:04:58,310
+So using radium, one way of getting the best of both worlds scoped styles and advance css features like
+
+56
+00:04:58,310 --> 00:05:00,740
+pseudos selectors and media queries.

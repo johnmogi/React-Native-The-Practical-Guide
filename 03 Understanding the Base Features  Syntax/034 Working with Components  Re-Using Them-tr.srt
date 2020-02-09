@@ -1,0 +1,79 @@
+1
+00:00:02,170 --> 00:00:07,400
+Son dersimizde, kendi bileşenimiz olan kişi bileşenini oluşturduk.
+
+2
+00:00:07,400 --> 00:00:10,640
+Asıl soru bunun en büyük avantajı.
+
+3
+00:00:11,060 --> 00:00:19,020
+Bileşenler harika çünkü kodumuzu her dosyaya odaklayabilir ve bu sayede daha sürdürülebilir hale getirebiliriz.
+
+4
+00:00:19,070 --> 00:00:26,690
+Her şeyi, büyük uygulamalar için kalabalık hale getirebilen bölüm js dosyasına koymayın ve bu bileşen
+
+5
+00:00:26,990 --> 00:00:30,110
+aynı zamanda yeniden kullanılabilir ve yapılandırılabilir.
+
+6
+00:00:30,290 --> 00:00:34,460
+Parçayı yeniden yapılandırmak için geri dönüş yapmak oldukça kolaydır.
+
+7
+00:00:34,700 --> 00:00:38,510
+İstediğimiz kadar kopyalayıp yapıştırabiliriz.
+
+8
+00:00:38,510 --> 00:00:46,010
+çıktıyı birden çok kez alıyoruz ve bu, uygulamanızın herhangi bir yerinde onu tekrar kullanmanın süper kolay bir yoludur.
+
+9
+00:00:46,010 --> 00:00:50,510
+Belki üç kez ve bunu basitçe yaparak ve dosyayı kaydederek,
+
+10
+00:00:50,720 --> 00:00:57,160
+Ve uygulamanız giderek daha fazla bileşen içeriyorsa Bu, tüm bu bileşenleri oluşturmak için süper kolay
+
+11
+00:00:57,160 --> 00:01:01,350
+hale getirecek ve bunları kullanmamız gereken her yerde kullanacaktı.
+
+12
+00:01:01,400 --> 00:01:02,190
+Laboratuarımızda.
+
+13
+00:01:02,330 --> 00:01:06,190
+Bu artık etkin bir şekilde özel HVM erkek unsurumuzdur.
+
+14
+00:01:06,830 --> 00:01:12,230
+Bunu yapmadan önce de yapılandırabiliriz.
+
+15
+00:01:12,380 --> 00:01:17,900
+Harekete geçirme kodumuzla ilgili başka şeyler de göstelelim, çünkü şimdi hepsi hala statik.
+
+16
+00:01:18,050 --> 00:01:23,730
+Özel bileşenimiz var, ancak orada yine de sadece bazı statik HDMI var.
+
+17
+00:01:23,750 --> 00:01:27,230
+Sonunda bazı HMO içeriğini metinleyeceğim.
+
+18
+00:01:27,230 --> 00:01:35,810
+Şimdiki halde, GSX kodunuzun dinamik olması gereken şablonlarınız uygulamanızın durumuna veya bazı kullanıcı girdilerine
+
+19
+00:01:35,810 --> 00:01:39,250
+bağlı olarak farklı şeyler çıktı olmalıdır.
+
+20
+00:01:39,470 --> 00:01:45,490
+Şimdi bunu ders için çok şey yapacağız ancak bir sonraki dersin temellerini atalım.

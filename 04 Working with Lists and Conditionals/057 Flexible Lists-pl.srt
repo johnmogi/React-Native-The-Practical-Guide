@@ -1,0 +1,375 @@
+1
+00:00:01,990 --> 00:00:08,480
+Teraz, gdy dodaliśmy wiele funkcjonalności i dowiedzieliśmy się o tym kluczu, dopracujmy naszą aplikację tutaj nieco
+
+2
+00:00:08,480 --> 00:00:13,970
+bardziej, ponieważ w osobie wciąż mamy to wejście, w którym mamy procedurę obsługi
+
+3
+00:00:13,970 --> 00:00:19,510
+OnChange, gdzie staramy się wykonać zmianę tego wniosku, a także uzyskać wartość jako wejście.
+
+4
+00:00:19,670 --> 00:00:25,290
+Ostatecznie celem jest to, że jeśli wpiszesz tutaj, dostosowujemy nazwę użytkownika, dla którego to wpisujemy.
+
+5
+00:00:25,310 --> 00:00:31,280
+Teraz, gdy wyświetlamy listę i mamy naprawdę dynamiczną zawartość, możemy ją ostatecznie ustawić w prawdziwie
+
+6
+00:00:31,280 --> 00:00:31,950
+dynamiczny sposób.
+
+7
+00:00:32,150 --> 00:00:38,830
+Musimy więc po prostu podać właściwość zmiany wskazującą na detektor zdarzeń
+
+8
+00:00:38,830 --> 00:00:42,850
+lub metodę, która poprawnie aktualizuje stan.
+
+9
+00:00:42,920 --> 00:00:47,750
+Tutaj dodam zmiany i teraz musimy wskazać nam
+
+10
+00:00:47,990 --> 00:00:51,700
+jakąś metodę, mamy nazwęChangedHandler, więc po
+
+11
+00:00:51,980 --> 00:00:54,820
+prostu użyjmy jej tutaj.
+
+12
+00:00:55,130 --> 00:00:57,870
+Wskażmy na nazwęChangedHandler, a teraz
+
+13
+00:00:58,040 --> 00:01:05,270
+tutaj, w tym NameChangedHandler, potrzebuję dwóch informacji. Muszę uzyskać zdarzenia nadal, aby uzyskać dostęp do
+
+14
+00:01:05,330 --> 00:01:07,490
+wartości docelowej zdarzenia, a więc
+
+15
+00:01:07,490 --> 00:01:12,660
+do tego, co użytkownik wprowadził, ale oczekuję również drugiego wejścia.
+
+16
+00:01:12,740 --> 00:01:19,120
+Chcę uzyskać identyfikator użytkownika do zaktualizowania lub indeks w tablicy, ale teraz, ponieważ mamy
+
+17
+00:01:19,130 --> 00:01:20,960
+przypisane identyfikatory, dlaczego nie
+
+18
+00:01:20,960 --> 00:01:22,540
+skorzystać z tego?
+
+19
+00:01:23,150 --> 00:01:30,230
+Dlatego tutaj ponownie użyję tej składni funkcji, aby wygodnie przekazywać te dane.
+
+20
+00:01:30,260 --> 00:01:37,170
+Teraz ta funkcja tutaj, ogólna funkcja jest tą, która zostanie wykonana po zdarzeniu onChange.
+
+21
+00:01:37,220 --> 00:01:40,810
+Tutaj mamy obiekt zdarzenia tak jak wcześniej,
+
+22
+00:01:40,810 --> 00:01:46,340
+kiedy nie przypisaliśmy żadnej funkcji bezpośrednio w nazwieChangedHandler, teraz otrzymujemy go
+
+23
+00:01:46,340 --> 00:01:51,440
+tutaj, ponieważ jest to teraz pierwsza funkcja, która zostaje wykonana, ta
+
+24
+00:01:51,440 --> 00:01:53,100
+anonimowa funkcja zdefiniuj tutaj.
+
+25
+00:01:53,210 --> 00:01:56,660
+Mogę następnie przekazać go do nameChangedHandler
+
+26
+00:01:56,900 --> 00:02:00,620
+i również chcę przekazać identyfikator osoby.
+
+27
+00:02:00,620 --> 00:02:04,310
+Identyfikator osoby oczywiście jest dostępny, ponieważ znajdujemy się tutaj w
+
+28
+00:02:04,340 --> 00:02:07,940
+metodzie mapy, więc mamy dostęp do osoby, a tym samym
+
+29
+00:02:08,600 --> 00:02:17,180
+do identyfikatora i dzięki temu możemy teraz użyć tej informacji w nazwieChangedHandler. Chcemy zaktualizować stan, ale oczywiście tylko
+
+30
+00:02:17,180 --> 00:02:21,740
+dla osoby, do której wpisaliśmy wpisane pole.
+
+31
+00:02:21,770 --> 00:02:27,230
+Musimy więc znaleźć tę osobę, jedyną osobę i możemy to zrobić, docierając
+
+32
+00:02:27,230 --> 00:02:36,080
+do państwa, do osób tam przebywających i przez wywoływanie znaleziska. To znowu jest domyślna metoda javascript, która daje nam
+
+33
+00:02:36,090 --> 00:02:37,080
+tę osobę.
+
+34
+00:02:37,460 --> 00:02:45,680
+Możemy również użyć indeksu find, aby znaleźć element w tablicy, ale następnie uzyskać indeks tego elementu i tak, możemy
+
+35
+00:02:45,680 --> 00:02:48,830
+przekazać indeks bezpośrednio do tej funkcji, po
+
+36
+00:02:48,830 --> 00:02:55,220
+prostu chcę pokazać ci alternatywne podejście wykorzystujące ID. Znajdź indeks przyjmuje funkcję jako dane wejściowe,
+
+37
+00:02:55,220 --> 00:03:02,930
+tak jak zrobiła to mapa i podobnie jak mapa, wykona tę funkcję dla każdego elementu w
+
+38
+00:03:02,930 --> 00:03:03,670
+tablicy.
+
+39
+00:03:03,980 --> 00:03:10,820
+Więc tutaj wykonam funkcję, w której dostaję osobę, ta nazwa argumentu zależy od ciebie, ale osoba jest już
+
+40
+00:03:10,820 --> 00:03:12,940
+zajęta przez stałą, gdzie dostaję
+
+41
+00:03:13,100 --> 00:03:16,940
+tę osobę jako dane wejściowe, a następnie dostaję ciało funkcji.
+
+42
+00:03:17,240 --> 00:03:22,240
+Teraz, w przeciwieństwie do mapy, nie zamieniam tego elementu w coś nowego, zamiast
+
+43
+00:03:22,310 --> 00:03:27,200
+tego muszę zwrócić wartość true lub false w zależności od tego, czy jest
+
+44
+00:03:27,500 --> 00:03:32,810
+to osoba, której szukałem, czy ogólnie mówiąc, czy jest to element, którego szukałem, czy nie.
+
+45
+00:03:32,840 --> 00:03:34,780
+Teraz jest to osoba, której
+
+46
+00:03:34,790 --> 00:03:36,920
+szukałem, jeśli P ID, więc
+
+47
+00:03:37,130 --> 00:03:39,960
+ta jedna osoba, na którą patrzę obecnie.
+
+48
+00:03:39,980 --> 00:03:44,070
+Ponownie należy pamiętać, że ta funkcja jest wykonywana dla każdego elementu w tej tablicy.
+
+49
+00:03:44,510 --> 00:03:50,570
+Jeśli to jest równe idei, którą otrzymałem jako argument do tej funkcji, to jest
+
+50
+00:03:50,570 --> 00:03:51,160
+równe,
+
+51
+00:03:51,320 --> 00:03:58,670
+że zwróci true, a wtedy osoba, indeks może być lepszą nazwą, pomieści indeks osoby w jej tablicy,
+
+52
+00:03:58,670 --> 00:04:01,370
+dla której ID są równe .
+
+53
+00:04:01,370 --> 00:04:09,290
+Mogę wtedy zdobyć tę osobę, kontaktując się z tymi osobami stanu i uzyskując dostęp do elementu na
+
+54
+00:04:09,290 --> 00:04:12,670
+indeksie osoby, indeks, który właśnie tutaj ściągnąłem.
+
+55
+00:04:13,160 --> 00:04:14,730
+Podobnie jak poprzednio,
+
+56
+00:04:14,840 --> 00:04:21,830
+dobrą praktyką jest nie mutować stanu bezpośrednio i osoby w tablicy osoby, ponieważ
+
+57
+00:04:21,830 --> 00:04:25,200
+możesz wyraźnie potwierdzić tutaj obiekt javascript.
+
+58
+00:04:25,220 --> 00:04:32,240
+Teraz, jak już mówiłem, obiekty javascript są typami referencyjnymi, więc nie powinniśmy ich bezpośrednio modyfikować, ponieważ
+
+59
+00:04:32,240 --> 00:04:38,470
+otrzymujemy wskaźnik tylko wtedy, gdy dotrzemy tutaj do osoby i dlatego zmutujemy oryginalny obiekt,
+
+60
+00:04:38,480 --> 00:04:40,290
+na który wskazuje ten wskaźnik.
+
+61
+00:04:40,790 --> 00:04:51,140
+Tak więc lepszym rozwiązaniem jest utworzenie nowego obiektu javascript, takiego jak ten, a następnie użycie tego operatora rozprzestrzeniania
+
+62
+00:04:51,500 --> 00:04:53,820
+przed obiektem, który pobieram.
+
+63
+00:04:53,960 --> 00:04:59,810
+Podobnie jak w przypadku tablicy, jest ona również dostępna dla obiektów i będzie
+
+64
+00:05:00,080 --> 00:05:05,870
+dystrybuować wszystkie właściwości obiektu, który pobieramy, do tego nowego obiektu, który tutaj tworzymy.
+
+65
+00:05:06,130 --> 00:05:11,940
+I tutaj mamy alternatywne podejście, którego nie użyję, ale alternatywne podejście
+
+66
+00:05:11,980 --> 00:05:19,000
+bez operatora rozprzestrzeniania byłoby użycie obiektu przypisać domyślną funkcję javascript, gdzie przekazujemy pusty
+
+67
+00:05:19,000 --> 00:05:25,600
+obiekt jako pierwszy argument, a następnie obiekt, którego właściwości chcę przypisać do niego
+
+68
+00:05:25,600 --> 00:05:27,840
+drugi obiekt lub drugi
+
+69
+00:05:28,660 --> 00:05:30,540
+argument, który powinienem powiedzieć.
+
+70
+00:05:30,700 --> 00:05:35,560
+Zatem obiektem jest przypisany obiekt pusty, a następnie obiekt, który chcemy
+
+71
+00:05:35,860 --> 00:05:36,980
+uzyskać właściwości.
+
+72
+00:05:37,120 --> 00:05:41,920
+Ale skomentuję to, ponieważ chcę korzystać z bardziej nowoczesnego podejścia operatora rozprzestrzeniania,
+
+73
+00:05:41,920 --> 00:05:43,230
+można absolutnie używać
+
+74
+00:05:43,240 --> 00:05:46,720
+obu, nie ma tu nic lepszego ani gorszego.
+
+75
+00:05:46,780 --> 00:05:48,700
+Tak więc otrzymuję tę osobę.
+
+76
+00:05:48,700 --> 00:05:53,790
+Teraz chcę zaktualizować imię osoby oczywiście i mogę to zrobić, ponieważ mam kopię,
+
+77
+00:05:53,800 --> 00:06:02,500
+nie manipuluję teraz oryginalnym obiektem i mogę ustawić go na cel zdarzenia. wartości, tak jak
+
+78
+00:06:02,500 --> 00:06:04,500
+wcześniej.
+
+79
+00:06:04,510 --> 00:06:12,300
+Teraz muszę zaktualizować tablicę oczywiście i chcę zaktualizować tablicę w tej pozycji, którą tu ściągnąłem.
+
+80
+00:06:12,730 --> 00:06:20,500
+Tak jak poprzednio mogę teraz pozyskać moje osoby, całą tablicę z operatorem rozprzestrzeniania się lub plastrem,
+
+81
+00:06:20,710 --> 00:06:23,110
+docierając do osób z państwem.
+
+82
+00:06:23,500 --> 00:06:31,690
+A teraz mogę go zaktualizować na jednej pozycji, osoby, indeks osoby powinny być teraz moją zaktualizowaną osobą tu i
+
+83
+00:06:31,690 --> 00:06:34,310
+znowu, zawsze pracuję z kopiami tutaj.
+
+84
+00:06:34,840 --> 00:06:44,620
+Teraz mamy zaktualizowaną tablicę osób, co w końcu pozwala nam ustawić stan tutaj i ustawić ją na tę
+
+85
+00:06:44,680 --> 00:06:52,360
+zaktualizowaną tablicę osób, która jest kopią starej tablicy, w której zaktualizowaliśmy jeden element o
+
+86
+00:06:52,360 --> 00:06:55,390
+zaktualizowaną osobę, w której zmieniliśmy nazwę.
+
+87
+00:06:55,390 --> 00:07:01,550
+Dużo kodu, ale najlepszy sposób robienia tego, najefektywniejszy sposób bez mutowania stanu, a teraz
+
+88
+00:07:01,690 --> 00:07:08,650
+jeśli uratujemy to, co powinniśmy zobaczyć, to to, że nie otrzymujemy już tego ostrzeżenia z góry,
+
+89
+00:07:08,710 --> 00:07:10,370
+widzimy tu wszystkie imiona
+
+90
+00:07:10,690 --> 00:07:17,680
+i nazwiska można zacząć pisać tutaj i aktualizuję je dla obiektu, do którego należy wejście.
+
+91
+00:07:17,690 --> 00:07:21,120
+Tak więc teraz otrzymujemy naprawdę elastyczny
+
+92
+00:07:21,220 --> 00:07:28,600
+komponent, prawdziwie elastyczną aplikację wykorzystującą nowoczesne funkcje w celu sprawnego renderowania tej listy i
+
+93
+00:07:28,660 --> 00:07:30,910
+efektywnej interakcji z nią.
+
+94
+00:07:30,910 --> 00:07:32,120
+Super ważne.

@@ -1,0 +1,211 @@
+1
+00:00:02,130 --> 00:00:07,990
+In the last lecture I mentioned that we have different ways of styling the application, let's style this
+
+2
+00:00:07,990 --> 00:00:15,400
+button differently. In the app.js file which is where we have that button I want to style this
+
+3
+00:00:15,400 --> 00:00:18,770
+button with something which is called inline styles.
+
+4
+00:00:18,840 --> 00:00:24,850
+There is nothing wrong with using css files and classes and this might even be the preferred way
+
+5
+00:00:25,330 --> 00:00:32,790
+but what you also often see in react apps is that you actually design your styles in javascript.
+
+6
+00:00:32,800 --> 00:00:34,420
+How does this work?
+
+7
+00:00:34,800 --> 00:00:40,080
+Let's go into that render function, create a new constant which I'll name style,
+
+8
+00:00:40,090 --> 00:00:41,660
+the name is up to you.
+
+9
+00:00:41,740 --> 00:00:43,460
+This is a javascript object
+
+10
+00:00:43,480 --> 00:00:50,800
+and as you might be aware the css style properties have javascript representations, for example
+
+11
+00:00:50,800 --> 00:00:59,170
+backgroundColor, camel case instead of a dash because background-color like this would be invalid
+
+12
+00:00:59,170 --> 00:01:04,140
+javascript property name, you could wrap it in quotation marks to use it though.
+
+13
+00:01:04,360 --> 00:01:09,850
+I'll use the camel case representation though and then I assign a value which is string
+
+14
+00:01:10,210 --> 00:01:11,510
+which can be a color,
+
+15
+00:01:11,530 --> 00:01:16,630
+for example white. We can also set the font to inherit
+
+16
+00:01:16,630 --> 00:01:26,080
+to use our surrounding font, we can also set up border, not border color, just a border of 1px solid
+
+17
+00:01:26,580 --> 00:01:32,970
+and then maybe blue and we could also add some padding,
+
+18
+00:01:32,980 --> 00:01:34,840
+maybe 8px,
+
+19
+00:01:34,840 --> 00:01:39,760
+make sure to wrap all these values in quotation marks because we are writing javascript here,
+
+20
+00:01:39,880 --> 00:01:42,840
+this have to be strings.
+
+21
+00:01:42,860 --> 00:01:49,430
+Now I can go to the button, put onClick into a new line to make this a bit easier to read and add a style
+
+22
+00:01:49,640 --> 00:01:50,720
+property.
+
+23
+00:01:51,080 --> 00:01:58,280
+This is actually the normal style attribute made available by jsx and style as you can already see
+
+24
+00:01:58,280 --> 00:02:01,060
+showed to receive a dynamic value here.
+
+25
+00:02:01,320 --> 00:02:09,230
+I'll have simply pass style here referring to this style constant which is defined in the render method
+
+26
+00:02:09,620 --> 00:02:14,630
+of which this return expression here is part, so I can't just use style like this,
+
+27
+00:02:14,630 --> 00:02:16,150
+it's not a class property,
+
+28
+00:02:16,190 --> 00:02:23,120
+it's a normal variable or actually since we never change it constant of this render method.
+
+29
+00:02:23,660 --> 00:02:31,840
+Let's see if this has any effect if we save this, we indeed see the button looks different now.
+
+30
+00:02:31,990 --> 00:02:37,750
+We can improve this a bit more by first of all fixing this error and have 1px off our borders
+
+31
+00:02:37,760 --> 00:02:44,880
+so that this style gets applied to and setting the cursor to pointer so that we get is pointer cursor
+
+32
+00:02:44,880 --> 00:02:46,460
+when hovering over it.
+
+33
+00:02:46,630 --> 00:02:47,700
+Right now, let's save this,
+
+34
+00:02:47,980 --> 00:02:52,150
+we see that blue border and we see that cursor again.
+
+35
+00:02:52,150 --> 00:02:58,780
+Now it doesn't change up on hovering and actually styling that hover effect is pretty hard when using
+
+36
+00:02:58,780 --> 00:03:00,530
+inline styles.
+
+37
+00:03:00,530 --> 00:03:05,920
+This is one restriction already but I got a whole module in this course where I show you some clever
+
+38
+00:03:05,920 --> 00:03:12,790
+solutions to styling react components which really can be something you can put a lot of thought into
+
+39
+00:03:12,790 --> 00:03:13,650
+it.
+
+40
+00:03:13,660 --> 00:03:16,720
+Always be aware, you can use a css file
+
+41
+00:03:16,930 --> 00:03:19,310
+Then the styles to find here are global.
+
+42
+00:03:19,330 --> 00:03:23,590
+So if we change button here, all the buttons in our whole app will be changed,
+
+43
+00:03:23,620 --> 00:03:30,940
+So this might not be what you want but on the other hand you can use the normal css syntax or you use
+
+44
+00:03:30,940 --> 00:03:33,250
+inline styles as you do here.
+
+45
+00:03:33,250 --> 00:03:38,860
+Then the styling is scoped to the component or to the element you actually add it to,
+
+46
+00:03:39,040 --> 00:03:44,250
+but you have some restrictions of not being able to leverage the full power of css.
+
+47
+00:03:44,560 --> 00:03:49,870
+As I mentioned, I'll have a full module about this because there is a golden way in the middle where
+
+48
+00:03:49,870 --> 00:03:54,460
+you can scope styles and still use all the css features,
+
+49
+00:03:54,460 --> 00:03:55,930
+more about this later. For now
+
+50
+00:03:55,930 --> 00:04:00,230
+be aware that we got these two different ways of styling at the moment,
+
+51
+00:04:00,370 --> 00:04:02,890
+use inline styles as we do here
+
+52
+00:04:02,980 --> 00:04:09,980
+whenever you want a scope to style and make sure it only applies to this single element and to no other
+
+53
+00:04:10,060 --> 00:04:13,360
+element in your app or even in the same component.

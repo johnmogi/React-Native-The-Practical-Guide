@@ -1,0 +1,51 @@
+1
+00:00:02,360 --> 00:00:08,240
+Benvenuto in un altro nuovo modulo rispetto ai moduli precedenti, imparerai molto sulla creazione
+
+2
+00:00:08,720 --> 00:00:16,580
+di componenti e sull'utilizzo delle varie funzionalità di javascript native e di reazione per visualizzare contenuti dinamici di output
+
+3
+00:00:16,580 --> 00:00:20,740
+di contenuti dinamici nel codice JS X e molto altro.
+
+4
+00:00:21,110 --> 00:00:25,130
+Abbiamo anche brevemente toccato i componenti di styling re-act.
+
+5
+00:00:25,340 --> 00:00:33,020
+L'ho fatto con gli stili inline e ti ho mostrato come importare un file C S S per applicare questi stili CSSA.
+
+6
+00:00:33,020 --> 00:00:38,660
+Ho anche detto che questi non erano mirati ai componenti in cui l'hai importato.
+
+7
+00:00:38,670 --> 00:00:44,990
+Anche se in questa marcia voglio concentrarmi sullo styling dei componenti re-act perché c'è dell'altro rispetto
+
+8
+00:00:44,990 --> 00:00:46,760
+a ciò che risolverai finora.
+
+9
+00:00:46,760 --> 00:00:52,020
+Per uno voglio dare un'occhiata a come è possibile regolare dinamicamente stili o nomi di classi.
+
+10
+00:00:52,310 --> 00:00:59,480
+E voglio anche mostrarvi come aggirare questa restrizione di usare sempre gli stili in linea e quindi avere degli ambiti
+
+11
+00:00:59,480 --> 00:01:06,350
+con scope ma avere limitazioni come non essere in grado di usare media query o pseudo selettori o usare Seer
+
+12
+00:01:06,620 --> 00:01:12,540
+come file e che avendo Stahl globale ci sono un paio di modi per gestire questo e
+
+13
+00:01:12,530 --> 00:01:17,440
+ci tufferemo in tutti questi modi di lavorare con i solidi in questo modulo.

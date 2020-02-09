@@ -1,0 +1,275 @@
+1
+00:00:02,380 --> 00:00:07,900
+In the last lecture, I walked you through the folder structure which was created by create react app
+
+2
+00:00:08,020 --> 00:00:09,650
+And we edited our app
+
+3
+00:00:09,670 --> 00:00:10,730
+.js file.
+
+4
+00:00:10,840 --> 00:00:13,620
+Let's now dive deeper into what we see here,
+
+5
+00:00:13,690 --> 00:00:21,190
+we see a react component. As I explained, react is all about creating components, basically custom html
+
+6
+00:00:21,400 --> 00:00:26,200
+elements you could say, which you can then use to construct your application.
+
+7
+00:00:26,200 --> 00:00:33,280
+This app component actually gets used in the index.js file where you render it into the place of this root
+
+8
+00:00:33,340 --> 00:00:34,030
+element.
+
+9
+00:00:34,210 --> 00:00:39,450
+And we could render a normal html element here to test for example,
+
+10
+00:00:39,480 --> 00:00:40,240
+this would work,
+
+11
+00:00:40,240 --> 00:00:42,570
+this is now no react component.
+
+12
+00:00:42,610 --> 00:00:45,640
+If I save this, I see this h1 tag
+
+13
+00:00:46,000 --> 00:00:49,360
+but of course then we have no real react application,
+
+14
+00:00:49,470 --> 00:00:55,860
+we're rendering a normal html element but we're not rendering our own react component.
+
+15
+00:00:55,870 --> 00:01:02,800
+Now you could of course use multiple react on renders and render all the html code you want to use
+
+16
+00:01:02,860 --> 00:01:03,940
+in your app,
+
+17
+00:01:04,030 --> 00:01:07,530
+that's not really how you create your react apps though.
+
+18
+00:01:07,810 --> 00:01:15,760
+Typically, you render one root component, the app component but you can name it whatever you want. One
+
+19
+00:01:15,820 --> 00:01:16,840
+root component,
+
+20
+00:01:16,840 --> 00:01:24,150
+in our case it is the app component named app, and in there you would nest all the other components
+
+21
+00:01:24,150 --> 00:01:30,050
+your application might need and of course these components can then also be nested into each other
+
+22
+00:01:30,250 --> 00:01:37,300
+but all the way up to the top, you only have one root component. You could reach out to multiple nodes
+
+23
+00:01:37,330 --> 00:01:45,010
+in your html file and mount different root components for different react apps all in the same project,
+
+24
+00:01:45,010 --> 00:01:47,950
+that would be possible but it's not what we do here.
+
+25
+00:01:47,980 --> 00:01:52,810
+In the end, you can of course simply replicate what you learn in this course for multiple applications
+
+26
+00:01:52,930 --> 00:01:55,270
+in one of the same html files.
+
+27
+00:01:55,540 --> 00:01:59,170
+But let's stick to the general or typical usage of react.
+
+28
+00:01:59,170 --> 00:02:04,450
+We have this app component which is defined in the app.js file,
+
+29
+00:02:04,450 --> 00:02:11,140
+here we see one way, one of two ways of defining a react component. We create a javascript class with
+
+30
+00:02:11,140 --> 00:02:18,730
+the class keyword and then we use the extends keyword to inherit from this component object or class
+
+31
+00:02:18,730 --> 00:02:25,120
+to be precise which is imported up here from the react library.
+
+32
+00:02:25,120 --> 00:02:33,250
+Actually we import two things, react which is responsible or required for rendering anything, anything
+
+33
+00:02:33,250 --> 00:02:34,030
+to the dom,
+
+34
+00:02:34,030 --> 00:02:37,750
+we always need to import that in a file where we define a component,
+
+35
+00:02:38,080 --> 00:02:43,300
+and of course the component class itself. I will soon show you a different way of creating components
+
+36
+00:02:43,330 --> 00:02:44,370
+though.
+
+37
+00:02:44,470 --> 00:02:46,800
+Now this class has one method,
+
+38
+00:02:46,930 --> 00:02:48,130
+the render method.
+
+39
+00:02:48,220 --> 00:02:54,940
+It needs to have that because react will call this method to render something to the screen.
+
+40
+00:02:55,230 --> 00:02:57,400
+There is one important job
+
+41
+00:02:57,580 --> 00:03:06,370
+every react component has to do, it has to return or render some html code which can be rendered
+
+42
+00:03:06,440 --> 00:03:08,240
+to the dom to the screen.
+
+43
+00:03:08,470 --> 00:03:12,160
+You can do other things in there too, reach out to the internet,
+
+44
+00:03:12,160 --> 00:03:17,320
+do some calculations, listen to events, whatever you need in your application
+
+45
+00:03:17,320 --> 00:03:25,020
+we will see all of that in that course but you always also need to render some html to the dom,
+
+46
+00:03:25,030 --> 00:03:28,140
+this is so important to keep in mind.
+
+47
+00:03:28,330 --> 00:03:34,440
+We then export this app class as the default export of this file,
+
+48
+00:03:34,510 --> 00:03:41,020
+this is an ES6 feature and simply means if you import this whole file, you'll simply import this class
+
+49
+00:03:41,020 --> 00:03:43,280
+because it's the default export.
+
+50
+00:03:43,660 --> 00:03:50,210
+We do use this in the index.js file where we import app from the app file, again
+
+51
+00:03:50,230 --> 00:03:56,840
+omitting this extension because it's added by our build workflow automatically for javascript files.
+
+52
+00:03:57,260 --> 00:04:02,910
+This app name here by the way is chosen arbitrarily but typically you use the name of the component
+
+53
+00:04:02,980 --> 00:04:08,140
+you also use in the file and then you also use as a file name.
+
+54
+00:04:08,140 --> 00:04:09,320
+One side note,
+
+55
+00:04:09,400 --> 00:04:16,890
+you might also see these components with .jsx as a file extension instead of js,
+
+56
+00:04:16,930 --> 00:04:19,970
+the reason for this is code here.
+
+57
+00:04:20,260 --> 00:04:24,410
+I referred to it as html which is returned.
+
+58
+00:04:24,760 --> 00:04:27,250
+But in the end, this is not html,
+
+59
+00:04:27,310 --> 00:04:32,880
+it looks like it but it is jsx so it is javascript
+
+60
+00:04:32,980 --> 00:04:39,340
+looking a bit different, and this can be confusing at first when you are learning react, this might be
+
+61
+00:04:39,340 --> 00:04:46,720
+one of the most confusing things actually. Important to know is this is just some syntactical sugar, it was
+
+62
+00:04:46,720 --> 00:04:52,630
+basically invented by the react team and we can write it in our javascript files because of the build
+
+63
+00:04:52,630 --> 00:04:54,330
+workflow we're using here,
+
+64
+00:04:54,340 --> 00:04:58,940
+it will basically automatically transpile it to valid javascript in the end.
+
+65
+00:04:59,350 --> 00:05:07,190
+It's not connected to the file extension you're using, it works in .js and .jsx files and the convention
+
+66
+00:05:07,330 --> 00:05:12,660
+nowadays is pretty much to always use .js files which is why we do it here too.
+
+67
+00:05:13,030 --> 00:05:22,600
+And it simply is code or a syntax we can use to write html in quotation marks whilst in the end
+
+68
+00:05:22,660 --> 00:05:25,310
+not writing it. Sounds confusing,
+
+69
+00:05:25,420 --> 00:05:29,890
+let me show you what this actually is compiled to in the next lecture.

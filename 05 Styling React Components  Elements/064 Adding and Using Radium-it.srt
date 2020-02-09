@@ -1,0 +1,355 @@
+1
+00:00:02,200 --> 00:00:07,840
+Così ora che hai imparato come impostare dinamicamente stili e classi Torniamo alle limitazioni degli stili
+
+2
+00:00:07,900 --> 00:00:11,790
+inline e impariamo le cose più importanti per noi al momento.
+
+3
+00:00:11,890 --> 00:00:20,500
+Il fatto che non possiamo assegnare uno stile Hubner per il nostro pulsante habere che in C è come si creerebbe semplicemente con
+
+4
+00:00:20,860 --> 00:00:27,340
+Colin habere è uno pseudo-selettore che significa che si tratta di un selettore basato su un selettore di
+
+5
+00:00:27,370 --> 00:00:29,680
+indirizzi indicato da questi due punti.
+
+6
+00:00:29,780 --> 00:00:37,720
+Ora non possiamo assegnarlo nella nostra attuale applicazione, abbiamo il nostro oggetto javascript di stile in cui assegniamo
+
+7
+00:00:37,720 --> 00:00:41,860
+o creiamo alcuni stili per il pulsante ma Harbor.
+
+8
+00:00:41,940 --> 00:00:43,510
+Sì, come lo sistemeremo qui, giusto?
+
+9
+00:00:43,510 --> 00:00:45,680
+Il passaggio del mouse non è di proprietà dei viandanti.
+
+10
+00:00:46,120 --> 00:00:52,670
+Quindi potremmo sistemarlo naturalmente con lo styling, ma poi è il file C Ss ma ho già detto che
+
+11
+00:00:52,690 --> 00:00:58,390
+dishtowel non sarebbe stato applicato solo a questo componente e tutti i pulsanti e la nostra applicazione
+
+12
+00:00:58,390 --> 00:00:59,440
+otterrebbero lo stile.
+
+13
+00:00:59,440 --> 00:01:07,600
+Sì, potremmo aggirare questo problema con alcuni ID o classi di CSS unici, ma avere la possibilità
+
+14
+00:01:07,600 --> 00:01:14,830
+di usare questo DS inline qui può anche essere bello perché, come già facciamo, puoi
+
+15
+00:01:14,830 --> 00:01:22,600
+modificarli nel tuo codice perché tutto è javascript quindi sarebbe bello se potessimo effettivamente usare pseudo
+
+16
+00:01:22,780 --> 00:01:23,680
+selettori e media.
+
+17
+00:01:23,720 --> 00:01:28,610
+Dove sono i nostri normali stili in linea javascript.
+
+18
+00:01:28,720 --> 00:01:35,620
+E per impostazione predefinita ovviamente non è possibile, ma possiamo aggiungere un pacchetto di terze parti che è
+
+19
+00:01:35,830 --> 00:01:38,800
+piuttosto popolare per aggiungere disfunzionalità alla nostra applicazione.
+
+20
+00:01:38,920 --> 00:01:40,610
+Quindi facciamolo.
+
+21
+00:01:40,660 --> 00:01:43,500
+Per questo abbiamo bisogno di installare un nuovo pacchetto.
+
+22
+00:01:43,540 --> 00:01:49,740
+E qui apro il mio normale terminale sul mio Mac o su Windows sarebbe il prompt dei comandi.
+
+23
+00:01:49,840 --> 00:01:53,970
+Questo è solo un terminale integrato in Microsoft nel codice dello studio visivo.
+
+24
+00:01:54,010 --> 00:01:59,200
+È inoltre possibile aprire le opzioni di Overdye visualizzare il terminale integrato.
+
+25
+00:01:59,200 --> 00:02:02,590
+Ora questo è lo stesso interno che hai sulla tua macchina.
+
+26
+00:02:02,590 --> 00:02:08,590
+Se accedete normalmente ma navigate automaticamente nella cartella del progetto e lì installerò
+
+27
+00:02:08,590 --> 00:02:11,320
+un pacchetto con l'installazione di NPM.
+
+28
+00:02:11,350 --> 00:02:19,030
+Aggiungerò il dash dash save per salvare anche una voce nel pacchetto dot Jason in modo tale da correggere anche il numero del lavoro
+
+29
+00:02:19,030 --> 00:02:21,310
+e possiamo facilmente condividere il nostro progetto.
+
+30
+00:02:21,610 --> 00:02:23,950
+E poi il pacchetto si chiama radio.
+
+31
+00:02:23,950 --> 00:02:30,070
+Basta premere Invio ORA e questo scaricherà e aggiungerà questo pacchetto al progetto in modo che possiamo
+
+32
+00:02:30,100 --> 00:02:31,300
+iniziare a usarlo.
+
+33
+00:02:31,300 --> 00:02:39,730
+Radium è un pacchetto popolare per re-act che ci permette di usare gli stili in linea con pseudo selettori e
+
+34
+00:02:39,730 --> 00:02:40,770
+media query.
+
+35
+00:02:40,780 --> 00:02:42,820
+Quindi fantastico.
+
+36
+00:02:42,820 --> 00:02:49,180
+Ora che è installato possiamo chiudere di nuovo il terminale e possiamo iniziare a usarlo ora per iniziare
+
+37
+00:02:49,180 --> 00:02:49,700
+a usarlo.
+
+38
+00:02:49,700 --> 00:02:53,530
+Per prima cosa dobbiamo importarlo in seguito, vogliamo usarlo.
+
+39
+00:02:53,530 --> 00:02:56,430
+E questo potrebbe essere uno qualsiasi dei tuoi difetti potrebbe essere ricapitolato Sì.
+
+40
+00:02:56,470 --> 00:02:59,420
+La caduta potrebbe essere la persona di Faltu, naturalmente.
+
+41
+00:02:59,620 --> 00:03:06,730
+Lavoriamo nell'asfalto perché c'è un pulsante in cui voglio aggiungere uno stato di Hubbard
+
+42
+00:03:06,730 --> 00:03:08,230
+per poterlo fare.
+
+43
+00:03:08,270 --> 00:03:11,220
+Prima di tutto devo importare il radio.
+
+44
+00:03:11,290 --> 00:03:16,070
+Quindi la dichiarazione di importazione La tua posizione non ha importanza, ma dovrebbe essere nella parte superiore del file.
+
+45
+00:03:16,230 --> 00:03:19,690
+Tutto in ordine di radio dal radio.
+
+46
+00:03:19,690 --> 00:03:21,520
+Questa è la sintassi che puoi usare.
+
+47
+00:03:21,640 --> 00:03:28,520
+Ora con quello importato puoi scorrere fino in fondo dove esporti la tua app e lì puoi chiamare
+
+48
+00:03:28,520 --> 00:03:33,090
+il radio come una funzione e avvolgere la tua app con esso.
+
+49
+00:03:33,110 --> 00:03:35,940
+Ora è chiamato un componente di ordine superiore.
+
+50
+00:03:35,990 --> 00:03:39,230
+Qualcosa formeremo tutti il ​​nostro progetto di corso più tardi.
+
+51
+00:03:39,440 --> 00:03:45,860
+Potrebbe sembrare super-fantasioso, ma alla fine è solo un componente che avvolge il
+
+52
+00:03:45,860 --> 00:03:48,580
+tuo componente aggiungendo alcune funzionalità extra.
+
+53
+00:03:48,650 --> 00:03:54,260
+In questo caso una sintassi aggiuntiva che analizzerà i tuoi stili e comprenderà alcune funzionalità extra che
+
+54
+00:03:54,260 --> 00:03:55,910
+ora puoi iniziare a utilizzare.
+
+55
+00:03:56,000 --> 00:04:04,160
+È possibile utilizzarlo su entrambi i componenti creati con CLOS ed estendere componenti e componenti funzionali.
+
+56
+00:04:04,250 --> 00:04:13,680
+Quindi, se aggiungiamo il radio importando il radio dal radio, possiamo esportare qui anche il radio.
+
+57
+00:04:13,750 --> 00:04:15,700
+Entrambe le opere.
+
+58
+00:04:15,940 --> 00:04:22,930
+Ora con quello aggiunto Possiamo iniziare ad aggiungere o utilizzare alcune nuove funzionalità e ovviamente lo facciamo nel nostro stile perché
+
+59
+00:04:23,110 --> 00:04:25,560
+il radio è interamente dedicato agli stili.
+
+60
+00:04:25,570 --> 00:04:29,590
+Ecco uno stile che verrà assegnato al modello alla fine.
+
+61
+00:04:29,950 --> 00:04:37,780
+Voglio aggiungere un hobby o uno stile e con il radium aggiunto e confezionando la tua
+
+62
+00:04:37,780 --> 00:04:44,210
+esportazione puoi semplicemente aggiungere un nuovo puntello. Cita il punto colon martello o qualsiasi altro pseudo selettore.
+
+63
+00:04:44,260 --> 00:04:46,720
+Sono supportati tutti gli pseudo selettori.
+
+64
+00:04:46,780 --> 00:04:52,000
+proprietà javascript come stringhe o se non hai un carattere non valido in loro.
+
+65
+00:04:52,000 --> 00:04:58,840
+Hai bisogno di racchiuderli tra virgolette perché poiché hanno iniziato con i due punti non sono validi nomi di
+
+66
+00:04:58,840 --> 00:05:03,160
+proprietà javascript come stringhe come sono, anche se sai che puoi creare
+
+67
+00:05:03,250 --> 00:05:06,890
+Proprio come abbiamo fatto prima, come tutte queste proprietà di Obert.
+
+68
+00:05:07,420 --> 00:05:13,020
+Ora il valore è semplicemente il tuo set di stili per lo stato habor.
+
+69
+00:05:13,120 --> 00:05:22,180
+Quindi anomic oggetto javascript dove ora imposterò il colore di sfondo in verde chiaro per il pulsante verde e
+
+70
+00:05:22,810 --> 00:05:25,590
+il colore del testo in nero.
+
+71
+00:05:25,590 --> 00:05:36,100
+Forse, inoltre, sovrascriverò ovviamente il passaggio del mouse laggiù dove sovrascrivo il mio colore di sfondo lì, semplicemente definirò lo
+
+72
+00:05:36,190 --> 00:05:41,650
+stile e ora non è punto, perché è una stringa.
+
+73
+00:05:41,650 --> 00:05:44,320
+Abbiamo bisogno di usare parentesi quadre.
+
+74
+00:05:44,420 --> 00:05:53,000
+Quindi qui assegniamo un nuovo valore a un nuovo oggetto javascript dove usiamo il testo rosso e
+
+75
+00:05:53,000 --> 00:05:54,620
+nero come questo.
+
+76
+00:05:54,620 --> 00:06:02,600
+Con questo stiamo usando una funzione di radio in grado di assegnare una proprietà che è un SEUS valido
+
+77
+00:06:02,600 --> 00:06:03,640
+come pseudo-selettore.
+
+78
+00:06:03,890 --> 00:06:07,760
+E approfittando del radio per farlo funzionare ancora.
+
+79
+00:06:07,850 --> 00:06:13,220
+Ora se salvi questo e tutti gli altri file e ricarichi la tua applicazione
+
+80
+00:06:13,220 --> 00:06:22,320
+se passi il mouse sopra il putten vedi lo stile di modifica anche per il pulsante rosso, anche se non lo sovrascrive in rosso.
+
+81
+00:06:22,350 --> 00:06:24,090
+Quindi proviamo un colore diverso.
+
+82
+00:06:26,570 --> 00:06:27,760
+Salamon funziona.
+
+83
+00:06:27,790 --> 00:06:32,740
+Quindi il rosso chiaro non esisteva, ma se ho cambiato in SOLMAN ora funziona anche.
+
+84
+00:06:33,220 --> 00:06:36,570
+Quindi questo è abbastanza bello perché ora hai il meglio di entrambi i mondi.
+
+85
+00:06:36,670 --> 00:06:41,620
+Hai i normali selettori di pseudo CSO Puoi aggiungere e hai ancora degli stili con
+
+86
+00:06:41,620 --> 00:06:45,980
+ambito che puoi facilmente modificare dal tuo codice javascript, come puoi vedere qui.
+
+87
+00:06:46,060 --> 00:06:50,750
+Ora il radio non ti limita ad usare pseudo selettori come abbiamo fatto noi.
+
+88
+00:06:51,010 --> 00:06:53,120
+Puoi anche aggiungere query multimediali.
+
+89
+00:06:53,260 --> 00:06:58,470
+Facciamo forse questo nel componente persona e facciamolo nella prossima lezione.

@@ -1,0 +1,263 @@
+1
+00:00:02,150 --> 00:00:06,920
+W ostatnim wykładzie przeprowadziłem cię przez ten komponent i jak ogólnie jest zorganizowany.
+
+2
+00:00:07,020 --> 00:00:08,610
+Teraz zanurzmy
+
+3
+00:00:08,680 --> 00:00:17,160
+się głębiej w tę rzecz jsx. W tym celu skomentuję ten blok tutaj, aby nie był
+
+4
+00:00:17,730 --> 00:00:23,310
+już używany i zwrócę coś innego, mogę użyć obiektu reakcji, który tutaj importujemy i
+
+5
+00:00:23,370 --> 00:00:30,690
+wywołać na nim metodę, utworzyć element, przez sposób jest również powodem, dla którego musimy importować reagować, ponieważ ten
+
+6
+00:00:31,050 --> 00:00:33,720
+kod tutaj nie jest jeszcze skompilowany do
+
+7
+00:00:33,810 --> 00:00:40,260
+tego, co tu piszemy, chociaż tego nie widzimy. Utwórz element jest metodą i przyjmuje trzy argumenty,
+
+8
+00:00:40,260 --> 00:00:48,240
+w rzeczywistości zajmuje nieskończoną liczbę argumentów, ale co najmniej trzy. Pierwszym z nich jest element, który chcemy renderować do
+
+9
+00:00:48,240 --> 00:00:48,840
+domingu,
+
+10
+00:00:48,840 --> 00:00:54,580
+może to być element div, może to być normalny element html, taki jak
+
+11
+00:00:54,660 --> 00:00:58,980
+div, może to być także własny komponent, jeśli taki istnieje.
+
+12
+00:00:59,160 --> 00:01:04,860
+Nie robimy tego, ponieważ jesteśmy w komponencie, którego nie możemy renderować, możemy renderować każdy
+
+13
+00:01:04,860 --> 00:01:08,390
+inny komponent, który importujemy, ale nie mamy takiego komponentu.
+
+14
+00:01:08,400 --> 00:01:13,000
+Drugi argument jest w zasadzie konfiguracją dla tego i tam,
+
+15
+00:01:13,350 --> 00:01:20,460
+przekazalibyśmy obiekt javascript, jest to opcjonalne, możemy również przekazać wartość null, a zrobimy to na
+
+16
+00:01:20,460 --> 00:01:23,140
+razie, ponieważ nie chcę tego konfigurować.
+
+17
+00:01:23,280 --> 00:01:30,510
+Trzeci argument tutaj to dowolna ilość dzieci i możemy mieć wiele argumentów
+
+18
+00:01:30,510 --> 00:01:31,820
+oddzielonych przecinkami.
+
+19
+00:01:31,890 --> 00:01:35,980
+Dzieci oznaczają to, co jest zagnieżdżone w tym dziale,
+
+20
+00:01:36,060 --> 00:01:39,450
+teraz w tym przypadku chcemy zagnieździć element h1.
+
+21
+00:01:39,720 --> 00:01:49,650
+Spróbujmy, dodając h1, a następnie jako kolejny argument, dodajmy tutaj ten tekst z wieloma wykrzyknikami i odejdźmy od tego
+
+22
+00:01:49,650 --> 00:01:56,310
+cudzysłowu z odwrotnym ukośnikiem, abyśmy mogli stwierdzić, że zostało to wykonane za pomocą
+
+23
+00:01:56,310 --> 00:01:58,570
+tej metody elementu create.
+
+24
+00:01:59,410 --> 00:02:05,450
+Teraz z tym, pozwól mi zapisać ten kod, utwórz element z czterema argumentami, div,
+
+25
+00:02:05,500 --> 00:02:13,270
+null, h1 i tekstem, upewnij się, że zapiszesz plik w kodzie visual studio, zobaczysz, że jest on zapisany,
+
+26
+00:02:13,270 --> 00:02:19,300
+jeśli zobaczysz krzyż tutaj i nie kropka, a następnie wróćmy do naszej aplikacji.
+
+27
+00:02:19,300 --> 00:02:21,210
+Tutaj widzimy h1, Cześć Reaguję
+
+28
+00:02:21,440 --> 00:02:23,610
+na aplikację i jeśli sprawdzimy
+
+29
+00:02:23,650 --> 00:02:28,840
+to w narzędziach programistycznych, w Chrome tutaj w moim przypadku, który gorąco
+
+30
+00:02:28,840 --> 00:02:29,600
+polecam, zobaczysz,
+
+31
+00:02:29,770 --> 00:02:34,330
+że dostaniemy div z dwoma węzłami tekstowymi wewnątrz, h1 i Hi
+
+32
+00:02:34,390 --> 00:02:37,340
+Jestem aplikacją reagowania. Tak więc nie
+
+33
+00:02:37,360 --> 00:02:45,370
+wyrenderowaliśmy elementu h1, wyrenderowaliśmy tekst i jest to zachowanie domyślne, h1 tutaj jest interpretowane
+
+34
+00:02:45,370 --> 00:02:46,010
+jako
+
+35
+00:02:46,120 --> 00:02:52,510
+tekst, nie jest renderowane jako element. Jeśli chcemy renderować kolejny element wewnątrz
+
+36
+00:02:52,750 --> 00:03:00,580
+div, musimy zastąpić ten kod innym wywołaniem, aby zareagować element create, aby utworzyć nowy
+
+37
+00:03:00,580 --> 00:03:03,290
+element html na końcu.
+
+38
+00:03:03,310 --> 00:03:10,900
+Tutaj przekazujemy teraz h1, a następnie null jako konfigurację, a następnie tekst, który chcemy renderować,
+
+39
+00:03:10,900 --> 00:03:15,800
+więc tutaj pomieszmy to i powiedzmy, że teraz to działa.
+
+40
+00:03:15,810 --> 00:03:21,690
+Teraz, jeśli zapiszemy ten plik i wrócimy do aplikacji, zobaczymy znacznik h1,
+
+41
+00:03:21,690 --> 00:03:25,640
+czy teraz to działa. Możemy to również zobaczyć, jeśli sprawdzimy
+
+42
+00:03:25,780 --> 00:03:27,460
+to w narzędziach programistycznych, otrzymamy
+
+43
+00:03:27,490 --> 00:03:29,900
+element div zawinięty w znacznik h1.
+
+44
+00:03:29,950 --> 00:03:38,290
+Teraz nie widzimy, aby styl css został zastosowany, ponieważ nie widzimy dodawania klasy,
+
+45
+00:03:39,190 --> 00:03:40,770
+w naszym
+
+46
+00:03:40,780 --> 00:03:45,640
+kodzie jsx dodaliśmy klasę css z nazwą klasy,
+
+47
+00:03:45,640 --> 00:03:51,680
+a nie klasą. Wrócę do tego, dlaczego używamy nazwy klasy w następnym wykładzie. Więc dodamy nazwę klasy,
+
+48
+00:03:51,690 --> 00:03:55,850
+w naszym wywołaniu elementu create, po prostu nie
+
+49
+00:03:55,920 --> 00:04:01,020
+przekazalibyśmy null jako konfiguracji, ale obiekt javascript, i tam możemy
+
+50
+00:04:01,530 --> 00:04:07,470
+zdefiniować nazwę klasy i przypisać dowolne klasy css, które chcemy dodać,
+
+51
+00:04:07,620 --> 00:04:11,930
+na przykład app, ta sama klasa aplikujemy tutaj.
+
+52
+00:04:12,770 --> 00:04:20,710
+Teraz zapisujemy ten plik ponownie, ładuje się on i widzimy teraz zaktualizowaną stylizację z tekstem środkowym, widzimy, że
+
+53
+00:04:20,710 --> 00:04:28,210
+te klasy css są również stosowane tutaj na div. To jest bardzo ważne, aby zrozumieć, kod,
+
+54
+00:04:28,210 --> 00:04:36,910
+który właśnie tutaj napisaliśmy, z reagującym elementem create, a zagnieżdżony element create elementu jest dokładnym odpowiednikiem
+
+55
+00:04:36,940 --> 00:04:45,310
+tego kodu jsx i tak naprawdę do tego kodu ten zostanie skompilowany przez jeden z
+
+56
+00:04:45,340 --> 00:04:46,960
+wielu narzędzi do
+
+57
+00:04:46,960 --> 00:04:54,160
+budowania wyjdź z pudełka w tym projekcie. Jest to powód, dla którego musimy zaimportować reakcję, nawet jeśli
+
+58
+00:04:54,160 --> 00:04:59,720
+w ogóle jej nie używamy, gdy używamy tej składni, ponieważ za kulisami użyjemy jej po skompilowaniu.
+
+59
+00:05:00,010 --> 00:05:07,180
+Oczywiście napisanie kodu takiego z elementem create jest naprawdę kłopotliwe, szczególnie gdy dodajesz i
+
+60
+00:05:07,180 --> 00:05:10,000
+zagnieżdżasz coraz więcej elementów, dlatego
+
+61
+00:05:10,000 --> 00:05:12,910
+zazwyczaj nie używamy tego kodu, ale
+
+62
+00:05:13,210 --> 00:05:19,930
+zamiast tego, ten kod zaczynamy od. To jest powód, dla którego używamy jsx,
+
+63
+00:05:19,930 --> 00:05:24,080
+ale bardzo ważne jest, aby zrozumieć wewnętrzne i zrozumieć,
+
+64
+00:05:24,130 --> 00:05:31,090
+co to kompiluje, a także, co najważniejsze, zrozumieć, że chociaż wygląda jak html, to nie jest.
+
+65
+00:05:31,090 --> 00:05:33,370
+To jest javascript na końcu,
+
+66
+00:05:33,400 --> 00:05:35,960
+zostaje skompilowany do tego kodu.

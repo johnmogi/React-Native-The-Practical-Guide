@@ -1,0 +1,39 @@
+1
+00:00:02,430 --> 00:00:08,960
+Welcome to this module. In the previous module, we learned the base syntax of react and you learned how you create
+
+2
+00:00:08,960 --> 00:00:15,770
+react apps, how you create components and how you work with jsx to render something to the screen.
+
+3
+00:00:16,130 --> 00:00:19,380
+In this module, we'll take it to the next level.
+
+4
+00:00:19,400 --> 00:00:26,380
+We already had a look at how we can output dynamic content with these single curly braces.
+
+5
+00:00:26,620 --> 00:00:32,090
+In this module we'll have a look how we can also output content conditionally,
+
+6
+00:00:32,090 --> 00:00:38,750
+so for example, that you only want to render a certain part of your dom, of your html code if a certain
+
+7
+00:00:38,750 --> 00:00:46,280
+condition is true and how we can output lists of data. We actually do have such a list in our demo application
+
+8
+00:00:46,310 --> 00:00:53,030
+already, the persons we have there, well it would make sense if we could create them dynamically based on
+
+9
+00:00:53,030 --> 00:00:56,980
+the number of persons we have in that array we manage in the state.
+
+10
+00:00:57,230 --> 00:01:01,710
+We'll have a look at all of that and what to watch out for in this module.

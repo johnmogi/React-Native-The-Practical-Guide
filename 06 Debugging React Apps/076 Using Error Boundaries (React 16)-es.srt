@@ -1,0 +1,383 @@
+1
+00:00:02,170 --> 00:00:09,100
+Hasta ahora, aprenderá mucho sobre cómo manejar los errores y descubrirá cuál es el estado de
+
+2
+00:00:09,100 --> 00:00:09,900
+su aplicación.
+
+3
+00:00:10,060 --> 00:00:16,240
+Ahora, a veces tiene un código que puede fallar en el tiempo de ejecución y lo sabe, pero no puede
+
+4
+00:00:16,240 --> 00:00:17,510
+garantizar que siempre funcione.
+
+5
+00:00:17,620 --> 00:00:24,100
+En este caso, es probable que desee mostrar una buena pantalla o, al menos, un mensaje de error personalizado para el usuario.
+
+6
+00:00:24,100 --> 00:00:27,350
+Déjame mostrarte un ejemplo construido.
+
+7
+00:00:27,680 --> 00:00:36,170
+Bueno, digamos que cuando rendimos una clase de persona realmente tenemos la posibilidad de obtener un error.
+
+8
+00:00:36,340 --> 00:00:46,270
+nuevo error o algo salió mal y esto no debería estar en la declaración de devolución sino en la función cuerpo.
+
+9
+00:00:46,270 --> 00:00:58,240
+Así que crearé un número aleatorio con matemática aleatoria y si el azar es mayor que los puntos 7, así que tenemos un 30 por
+
+10
+00:00:58,240 --> 00:01:01,300
+ciento de posibilidades, entonces lanzaré un
+
+11
+00:01:01,300 --> 00:01:04,630
+Ahora con eso, a veces deberíamos obtener este error.
+
+12
+00:01:04,810 --> 00:01:06,050
+Probemos esto.
+
+13
+00:01:06,070 --> 00:01:11,400
+Ahorremos este componente y hablemos de personas y eso fracasó de inmediato.
+
+14
+00:01:11,440 --> 00:01:16,240
+Entonces, vimos este error porque tenemos tres componentes, tenemos un 40 por ciento de posibilidades en cada componente.
+
+15
+00:01:16,360 --> 00:01:17,870
+No es tan improbable.
+
+16
+00:01:17,980 --> 00:01:20,280
+A veces debería tener éxito sin embargo.
+
+17
+00:01:20,320 --> 00:01:21,440
+Como en este caso.
+
+18
+00:01:21,790 --> 00:01:26,470
+Pero a veces también falla como aquí.
+
+19
+00:01:26,470 --> 00:01:28,110
+Algo salió mal.
+
+20
+00:01:28,120 --> 00:01:30,510
+Ahora, por supuesto, aquí está construido.
+
+21
+00:01:30,610 --> 00:01:35,770
+Pero en una aplicación real es posible que tenga algún código que ejecute alguna operación
+
+22
+00:01:35,770 --> 00:01:41,670
+que llegue a algún servidor web que definitivamente puede fallar y no puede garantizar que no tenga qué.
+
+23
+00:01:41,670 --> 00:01:46,970
+Sé amable para, al menos, captar este error y manejarlo amablemente.
+
+24
+00:01:46,980 --> 00:01:47,450
+Florida's
+
+25
+00:01:47,470 --> 00:01:52,480
+Crearé un nuevo componente y esta es una nueva característica que se agregó con Re-act 16.
+
+26
+00:01:52,840 --> 00:01:53,980
+Lo nombraré.
+
+27
+00:01:53,980 --> 00:01:59,690
+Error o límite porque puede crear allí los llamados componentes de límite árabe.
+
+28
+00:02:00,620 --> 00:02:02,930
+Lo llamaré límite árabe allí también.
+
+29
+00:02:02,950 --> 00:02:04,470
+El nombre depende de ti, sin embargo.
+
+30
+00:02:04,690 --> 00:02:11,920
+Se llama límite aerodinámico del concepto, pero puedes nombrar este componente como quieras aquí.
+
+31
+00:02:11,980 --> 00:02:19,570
+Crearé un error de clase o un límite y ampliaré el componente.
+
+32
+00:02:19,720 --> 00:02:29,160
+importar ambas reacciones y luego, con un componente implorado con llaves incluidas, reaccionar de esa manera.
+
+33
+00:02:29,160 --> 00:02:30,750
+Así que necesito
+
+34
+00:02:30,780 --> 00:02:36,200
+Así que tratamos este componente justo cuando creamos el componente de apertura allí.
+
+35
+00:02:36,200 --> 00:02:40,120
+Quiero renderizar algo y devolveré algo.
+
+36
+00:02:40,200 --> 00:02:48,450
+Simplemente regresaré a la edad de 1 etiqueta donde dije que algo salió mal así.
+
+37
+00:02:48,720 --> 00:02:55,170
+Solo quiero devolver esto si recibimos un error, así que agregaré el estado.
+
+38
+00:02:55,170 --> 00:03:05,220
+Una de las razones por las que tenemos que usar una clase aquí y configurar mi estado como "error" o "falso" o "todo" para almacenar
+
+39
+00:03:05,220 --> 00:03:09,250
+aquí un mensaje de error que es una cadena vacía.
+
+40
+00:03:09,250 --> 00:03:12,780
+Ahora podemos agregar una nueva propiedad o un nuevo método que debería decir.
+
+41
+00:03:12,780 --> 00:03:22,990
+El componente capturó Methot, que recibe un error potencial y parte de la información adicional pasa
+
+42
+00:03:22,990 --> 00:03:31,100
+automáticamente a Reacción, y Capone se capturará cada vez que se componga.
+
+43
+00:03:31,120 --> 00:03:34,610
+Nos envolvemos con el error congelado del límite de flecha.
+
+44
+00:03:34,810 --> 00:03:36,790
+Te mostraré cómo usarlo en un segundo.
+
+45
+00:03:36,790 --> 00:03:38,880
+Antes que nada completemos la lógica aquí.
+
+46
+00:03:39,370 --> 00:03:43,170
+Allí quiero establecer el estado porque ahora tenemos un error.
+
+47
+00:03:43,450 --> 00:03:55,160
+Estableceré que el error es demasiado verdadero y estableceré un mensaje de error igual al error, que debería ser ese mensaje ahora en el método
+
+48
+00:03:56,820 --> 00:04:00,870
+de renderizado, en realidad tenemos dos resultados posibles.
+
+49
+00:04:01,870 --> 00:04:06,610
+Alguna vez nuestro estado tiene un error en este caso.
+
+50
+00:04:06,610 --> 00:04:11,430
+Quiero devolver algo salió mal o para ser preciso.
+
+51
+00:04:11,440 --> 00:04:14,120
+Ni siquiera puedo mostrar el mensaje de error.
+
+52
+00:04:14,140 --> 00:04:24,790
+Entonces, este mensaje de error de estado o en el caso else devuelvo los hijos de este accesorio.
+
+53
+00:04:25,140 --> 00:04:30,480
+Eso es importante cuando se accede a prop's en un componente de clase.
+
+54
+00:04:30,660 --> 00:04:36,350
+Debe agregar esto en la parte frontal de la misma tal como lo hizo con el estado.
+
+55
+00:04:36,360 --> 00:04:41,830
+Entonces, esto indica que los niños son lo que sea que envolvemos dentro del límite erro.
+
+56
+00:04:41,890 --> 00:04:49,710
+un error o lo lanzamos por algo, lo envolvemos dentro del límite árabe, lo desenmascaremos, se disparará y se habrá establecido un error.
+
+57
+00:04:50,360 --> 00:04:53,680
+Este debería ser nuestro caso por defecto, pero si obtenemos
+
+58
+00:04:53,690 --> 00:04:56,970
+Es cierto y, por lo tanto, podemos devolver esto.
+
+59
+00:04:56,980 --> 00:05:00,070
+Ahora déjame simplemente exportar un valor predeterminado.
+
+60
+00:05:00,070 --> 00:05:01,810
+Déjame exportar esto.
+
+61
+00:05:01,840 --> 00:05:03,940
+Error o componente de límite.
+
+62
+00:05:04,300 --> 00:05:06,050
+Y comencemos a usarlo.
+
+63
+00:05:07,120 --> 00:05:12,090
+Usaré la caída de NEAP Jr y envolveré a mi persona con ella.
+
+64
+00:05:12,520 --> 00:05:19,060
+Así que importe el error o el límite desde la flecha de barra de puntos o limite esa carpeta.
+
+65
+00:05:20,370 --> 00:05:28,670
+Y allí el límite de Jarius cae sin la extensión de archivo como siempre y ahora envolvemos a nuestra persona
+
+66
+00:05:28,790 --> 00:05:29,570
+con él.
+
+67
+00:05:29,840 --> 00:05:34,090
+Así que aquí está la lista donde volví a la persona allí.
+
+68
+00:05:34,100 --> 00:05:42,450
+De hecho, quiero envolverlo con aire o límite al igual que det también.
+
+69
+00:05:42,560 --> 00:05:53,100
+Después de la etiqueta de cierre de error de persona o límite ahora el límite de error es un componente llamado de orden superior.
+
+70
+00:05:53,350 --> 00:06:00,240
+Es un componente que simplemente envuelve un componente con el objetivo de manejar cualquier error que el componente
+
+71
+00:06:00,270 --> 00:06:01,170
+pueda arrojar.
+
+72
+00:06:01,390 --> 00:06:04,120
+En el caso de un límite de error, ese es su trabajo.
+
+73
+00:06:04,270 --> 00:06:12,010
+Ahora con esa persona envuelta con un límite árabe también tenemos que movernos a la clave aquí Límite de flecha de Judy
+
+74
+00:06:12,220 --> 00:06:18,990
+porque este es ahora el elemento externo que mapeamos y la clave siempre tiene que estar en el elemento externo
+
+75
+00:06:19,210 --> 00:06:24,040
+en un método de mapa porque ese es el elemento que realmente reproducir exactamente.
+
+76
+00:06:24,040 --> 00:06:29,110
+Ahora con eso, aseguremos que todos los archivos se guarden y regresemos a la aplicación.
+
+77
+00:06:29,110 --> 00:06:36,790
+Ahora, si hablas con personas hasta que obtengas un error, todavía verás ese error en el medio desafortunadamente aquí.
+
+78
+00:06:36,970 --> 00:06:40,090
+Ahora eso solo sucede durante el modo de desarrollo.
+
+79
+00:06:40,240 --> 00:06:46,690
+Una vez que haya creado esto para la producción y lo envíe a un servidor real, no sobrescribirá su
+
+80
+00:06:46,690 --> 00:06:47,860
+página de esta manera.
+
+81
+00:06:47,860 --> 00:06:56,000
+En su lugar, lo que verá es que verá lo que represente dentro de su límite de error, como
+
+82
+00:06:56,020 --> 00:07:00,420
+el mensaje de error o cualquier otro mensaje predeterminado que tenga.
+
+83
+00:07:00,430 --> 00:07:06,820
+Esto no significa que deba agrupar toda la aplicación con límites de error, solo utilícelos
+
+84
+00:07:07,000 --> 00:07:08,340
+cuando tenga sentido.
+
+85
+00:07:08,470 --> 00:07:14,550
+Así que, básicamente, utilízalos solo si tienes algún código que sabes que puede fallar.
+
+86
+00:07:14,600 --> 00:07:21,400
+No ajuste ningún código Avro porque si el código normal falla, como desarrollador probablemente cometió un error
+
+87
+00:07:21,400 --> 00:07:22,390
+durante el desarrollo.
+
+88
+00:07:22,690 --> 00:07:29,200
+Solo use límites árabes para casos en los que sabe que podría fallar y no puede controlar eso.
+
+89
+00:07:29,200 --> 00:07:36,370
+Entonces esta podría ser una buena herramienta para que la producción muestre un mensaje de error personalizado
+
+90
+00:07:36,370 --> 00:07:43,810
+y no haga que falle toda la aplicación porque la aplicación de reactivación seguirá funcionando bien y solo
+
+91
+00:07:43,810 --> 00:07:48,120
+el componente problemático será reemplazado por su mensaje de error personalizado.
+
+92
+00:07:48,160 --> 00:07:56,020
+Así que aerodinámico es una buena herramienta para saber que no es una herramienta para usar en ninguna parte de la aplicación y, por
+
+93
+00:07:56,020 --> 00:08:01,150
+lo tanto, comenzar con el siguiente módulo cuando volvamos a este proyecto de resolución de Lileks.
+
+94
+00:08:01,150 --> 00:08:04,540
+También lo eliminaré nuevamente para no envolver esto.
+
+95
+00:08:04,540 --> 00:08:10,170
+También eliminaré mi error personalizado o fuente aquí para simular este error.
+
+96
+00:08:10,200 --> 00:08:11,830
+Esto es solo para este módulo.

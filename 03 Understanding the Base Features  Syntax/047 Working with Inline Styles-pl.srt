@@ -1,0 +1,211 @@
+1
+00:00:02,130 --> 00:00:07,990
+W ostatnim wykładzie wspomniałem, że mamy różne sposoby stylizacji aplikacji, więc
+
+2
+00:00:07,990 --> 00:00:15,400
+ułóżmy ten przycisk inaczej. W aplikacji. plik js, w którym mamy ten przycisk
+
+3
+00:00:15,400 --> 00:00:18,770
+Chcę nadać temu przyciskowi styl, który nazywa się stylami wewnętrznymi.
+
+4
+00:00:18,840 --> 00:00:24,850
+Nie ma nic złego w korzystaniu z plików css i klas, a to może być
+
+5
+00:00:25,330 --> 00:00:32,790
+nawet preferowany sposób, ale to, co często widzisz w aplikacjach reagowania, to to, że projektujesz style w javascript.
+
+6
+00:00:32,800 --> 00:00:34,420
+Jak to działa?
+
+7
+00:00:34,800 --> 00:00:40,080
+Przejdźmy do tej funkcji renderowania, stwórz nową stałą, którą nazwę styl, nazwa
+
+8
+00:00:40,090 --> 00:00:41,660
+zależy od Ciebie.
+
+9
+00:00:41,740 --> 00:00:43,460
+To jest obiekt
+
+10
+00:00:43,480 --> 00:00:50,800
+javascript i jak możesz być świadomy właściwości stylu css mają reprezentacje javascript, na
+
+11
+00:00:50,800 --> 00:00:59,170
+przykład backgroundColor, wielbłąda zamiast deskryptora, ponieważ kolor tła taki jak ten byłby nieprawidłową nazwą właściwości
+
+12
+00:00:59,170 --> 00:01:04,140
+javascript, mógłbyś zawinąć ją w cudzysłowy do użyj go jednak.
+
+13
+00:01:04,360 --> 00:01:09,850
+Będę używał reprezentacji wielbłądów, a następnie przypisuję wartość, która jest łańcuchem,
+
+14
+00:01:10,210 --> 00:01:11,510
+który może być
+
+15
+00:01:11,530 --> 00:01:16,630
+kolorem, na przykład białym. Możemy także ustawić czcionkę, aby
+
+16
+00:01:16,630 --> 00:01:26,080
+dziedziczyła, aby użyć naszej otaczającej czcionki, możemy również ustawić obramowanie, a nie kolor obramowania, po prostu obramowanie o
+
+17
+00:01:26,580 --> 00:01:32,970
+wielkości 1px, a następnie być może niebieskie, a także dodać dopełnienie, może
+
+18
+00:01:32,980 --> 00:01:34,840
+8px, upewnij się, że
+
+19
+00:01:34,840 --> 00:01:39,760
+zawijamy wszystkie te wartości w cudzysłowach, ponieważ piszemy tutaj
+
+20
+00:01:39,880 --> 00:01:42,840
+javascript, to muszą być ciągi.
+
+21
+00:01:42,860 --> 00:01:49,430
+Teraz mogę przejść do przycisku, umieścić go w nowej linii, aby nieco łatwiej było odczytać i
+
+22
+00:01:49,640 --> 00:01:50,720
+dodać właściwość stylu.
+
+23
+00:01:51,080 --> 00:01:58,280
+Jest to właściwie normalny atrybut stylu udostępniany przez jsx i styl, jak już widać,
+
+24
+00:01:58,280 --> 00:02:01,060
+pokazał, aby otrzymać tu wartość dynamiczną.
+
+25
+00:02:01,320 --> 00:02:09,230
+Po prostu przekażę tutaj styl odnoszący się do tej stałej stylu, która jest zdefiniowana w metodzie renderowania, której częścią
+
+26
+00:02:09,620 --> 00:02:14,630
+jest to wyrażenie zwrotne, więc nie mogę po prostu użyć takiego stylu,
+
+27
+00:02:14,630 --> 00:02:16,150
+to nie jest właściwość
+
+28
+00:02:16,190 --> 00:02:23,120
+klasy, to normalna zmienna lub faktycznie, ponieważ nigdy nie zmienimy jej stałej tej metody renderowania.
+
+29
+00:02:23,660 --> 00:02:31,840
+Zobaczmy, czy to ma jakiś wpływ, jeśli to zapiszemy, rzeczywiście widzimy, że przycisk wygląda teraz inaczej.
+
+30
+00:02:31,990 --> 00:02:37,750
+Możemy poprawić to nieco bardziej, przede wszystkim naprawiając ten błąd i 1px poza
+
+31
+00:02:37,760 --> 00:02:44,880
+naszymi granicami, aby ten styl został zastosowany i ustawiając kursor na wskaźnik, abyśmy dostali kursor wskaźnika
+
+32
+00:02:44,880 --> 00:02:46,460
+po najechaniu na niego.
+
+33
+00:02:46,630 --> 00:02:47,700
+Teraz, zapiszmy
+
+34
+00:02:47,980 --> 00:02:52,150
+to, widzimy tę niebieską granicę i znów widzimy kursor.
+
+35
+00:02:52,150 --> 00:02:58,780
+Teraz nie zmienia się po najechaniu i właściwie stylizacji, która powoduje, że efekt hover jest dość trudny,
+
+36
+00:02:58,780 --> 00:03:00,530
+gdy używasz stylów wbudowanych.
+
+37
+00:03:00,530 --> 00:03:05,920
+Jest to już jedno ograniczenie, ale mam cały moduł na tym kursie, w którym
+
+38
+00:03:05,920 --> 00:03:12,790
+pokazuję kilka sprytnych rozwiązań do stylizacji elementów reagujących, które naprawdę mogą być czymś, co można włożyć w to
+
+39
+00:03:12,790 --> 00:03:13,650
+wiele uwagi.
+
+40
+00:03:13,660 --> 00:03:16,720
+Zawsze pamiętaj, możesz użyć pliku css Następnie
+
+41
+00:03:16,930 --> 00:03:19,310
+style, które tu znajdziesz, są globalne.
+
+42
+00:03:19,330 --> 00:03:23,590
+Więc jeśli zmienimy przycisk tutaj, wszystkie przyciski w naszej całej aplikacji
+
+43
+00:03:23,620 --> 00:03:30,940
+zostaną zmienione, więc może nie być to, co chcesz, ale z drugiej strony możesz użyć normalnej składni css
+
+44
+00:03:30,940 --> 00:03:33,250
+lub użyć wbudowanych stylów jak tutaj.
+
+45
+00:03:33,250 --> 00:03:38,860
+Następnie styl jest dopasowany do komponentu lub elementu, do którego go
+
+46
+00:03:39,040 --> 00:03:44,250
+dodajesz, ale masz pewne ograniczenia, które uniemożliwiają wykorzystanie pełnej mocy css.
+
+47
+00:03:44,560 --> 00:03:49,870
+Jak już wspomniałem, będę miał pełen moduł na ten temat, ponieważ istnieje złoty środek w środku,
+
+48
+00:03:49,870 --> 00:03:54,460
+w którym można zakres style i nadal korzystać ze wszystkich funkcji css, więcej o
+
+49
+00:03:54,460 --> 00:03:55,930
+tym później. Na razie
+
+50
+00:03:55,930 --> 00:04:00,230
+pamiętaj, że obecnie mamy do dyspozycji te dwa różne sposoby stylizacji,
+
+51
+00:04:00,370 --> 00:04:02,890
+użyj stylów wbudowanych tak jak tutaj,
+
+52
+00:04:02,980 --> 00:04:09,980
+gdy chcesz dopasować zakres i upewnić się, że dotyczy on tylko tego pojedynczego elementu i nie ma w
+
+53
+00:04:10,060 --> 00:04:13,360
+nim żadnego innego elementu. nawet w tym samym komponencie.

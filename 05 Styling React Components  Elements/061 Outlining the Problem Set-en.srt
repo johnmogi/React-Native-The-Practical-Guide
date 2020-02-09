@@ -1,0 +1,91 @@
+1
+00:00:02,320 --> 00:00:05,200
+I'm back in the project we worked on thus far.
+
+2
+00:00:05,200 --> 00:00:07,810
+We get some basic styling in there,
+
+3
+00:00:07,810 --> 00:00:12,180
+for example these cards where we output the persons and this button.
+
+4
+00:00:12,310 --> 00:00:15,130
+But let's start with that button for example,
+
+5
+00:00:15,130 --> 00:00:18,590
+we already have one issue, when we hover over it,
+
+6
+00:00:18,590 --> 00:00:20,670
+it doesn't change that style.
+
+7
+00:00:20,680 --> 00:00:28,150
+The problem is that this button which is part of our app component we can see it here in our template
+
+8
+00:00:28,480 --> 00:00:36,810
+there, that this button simply is styled with inline styles, we assign them here and we set them up earlier
+
+9
+00:00:36,820 --> 00:00:38,480
+in the render method here.
+
+10
+00:00:38,680 --> 00:00:46,150
+We use javascript to create an object and assigned that to the style property and jsx and react takes
+
+11
+00:00:46,150 --> 00:00:50,260
+care about setting this on the actual html element.
+
+12
+00:00:50,260 --> 00:00:54,050
+The issue is we can't use pseudos selectors here.
+
+13
+00:00:54,160 --> 00:01:01,210
+The advantage of course is the styling is only applied to this button and to no other button in the
+
+14
+00:01:01,210 --> 00:01:07,690
+application if we had another button. And I already mentioned the alternative would be to style it in
+
+15
+00:01:07,690 --> 00:01:15,270
+the css file and there we can use normal css including pseudo selectors like hover but this would then
+
+16
+00:01:15,430 --> 00:01:22,040
+globally affect all buttons in our application, even if they were placed in other components.
+
+17
+00:01:22,060 --> 00:01:28,300
+This the problem set I want to deal with in this module but besides that, I also want to have a look
+
+18
+00:01:28,300 --> 00:01:29,550
+at something else.
+
+19
+00:01:29,620 --> 00:01:33,880
+What if we actually want to change styling dynamically?
+
+20
+00:01:33,880 --> 00:01:41,480
+Let's start with that, let's say Toggle Persons, this button should have a green background color
+
+21
+00:01:41,590 --> 00:01:47,450
+if we are about to show persons with a click and a red background color
+
+22
+00:01:47,650 --> 00:01:55,720
+if we are about to remove the person list. Let's see how we can dynamically change styles in the next
+
+23
+00:01:55,720 --> 00:01:56,520
+lecture.

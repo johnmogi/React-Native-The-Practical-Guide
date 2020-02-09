@@ -1,0 +1,147 @@
+1
+00:00:02,200 --> 00:00:09,730
+In the last lecture, I had a look at what jsx actually is and it's so important to understand this.
+
+2
+00:00:09,990 --> 00:00:14,850
+Now in this lecture, I want to highlight some of the restrictions we face.
+
+3
+00:00:14,850 --> 00:00:21,720
+For example this class name thing here, jsx clearly looks like html and it should, it should allow
+
+4
+00:00:21,720 --> 00:00:28,680
+us to write html-ish code in our javascript files, still since it isn't a javascript file and since
+
+5
+00:00:28,680 --> 00:00:36,780
+it is javascript, some words can't be used. Class for example, which we would use in normal html to assign
+
+6
+00:00:36,780 --> 00:00:41,620
+a css class can't be used because it's a reserved word in javascript,
+
+7
+00:00:41,700 --> 00:00:45,360
+we already used it here by the way, to create a new class.
+
+8
+00:00:45,360 --> 00:00:48,210
+This is why we have to use class name.
+
+9
+00:00:48,210 --> 00:00:56,140
+All these elements you can use here like div and h1 are actually managed or provided by the react
+
+10
+00:00:56,160 --> 00:00:57,090
+library,
+
+11
+00:00:57,360 --> 00:01:04,240
+we are not using the real html tags, react is converting them behind the scenes and react defines
+
+12
+00:01:04,250 --> 00:01:07,970
+the attributes in quotation marks I should say.
+
+13
+00:01:08,100 --> 00:01:13,620
+We can define on all these elements and we don't have the class attribute as we have on the regular
+
+14
+00:01:13,620 --> 00:01:14,970
+html element,
+
+15
+00:01:15,120 --> 00:01:18,070
+we have the class name attribute here
+
+16
+00:01:18,180 --> 00:01:22,930
+To add as css class. As you can see in our final code,
+
+17
+00:01:23,000 --> 00:01:27,180
+this is translated to class though, it's not class name here
+
+18
+00:01:27,210 --> 00:01:33,850
+once it has been rendered. Now another restriction we face is that
+
+19
+00:01:33,870 --> 00:01:35,760
+when we return something here,
+
+20
+00:01:36,030 --> 00:01:42,940
+let's say we all want to return another heading, we actually can't do this here,
+
+21
+00:01:43,140 --> 00:01:47,360
+our jsx expression must have one root element.
+
+22
+00:01:47,370 --> 00:01:51,670
+Now with react 16, this is kind of loosened
+
+23
+00:01:52,080 --> 00:01:58,450
+and we will see in this course that we can actually return adjacent elements in the end.
+
+24
+00:01:58,530 --> 00:02:06,780
+It is a typical thing and a typical best practice to wrap everything into one root element per component
+
+25
+00:02:06,820 --> 00:02:13,170
+though this also makes sense since you typically want to style your opponents and want to add the css class
+
+26
+00:02:13,170 --> 00:02:18,050
+which is responsible for styling to the root element as we do here,
+
+27
+00:02:18,060 --> 00:02:23,760
+so typically you nest everything in one single root element you return.
+
+28
+00:02:23,760 --> 00:02:29,800
+And if you're wondering about these parentheses here, these are simply used so that we can write the html
+
+29
+00:02:29,820 --> 00:02:36,570
+and I'm always saying html but keep in mind it's jsx, it's javascript so that you can return
+
+30
+00:02:36,570 --> 00:02:42,780
+this html code nicely structured across multiple lines without receiving errors,
+
+31
+00:02:42,780 --> 00:02:44,830
+this is why we use the parentheses.
+
+32
+00:02:45,120 --> 00:02:51,020
+So if that, I could add a paragraph here where I say this is really working
+
+33
+00:02:51,450 --> 00:02:53,220
+and let's close it too.
+
+34
+00:02:53,460 --> 00:02:56,450
+Now with that, we see that paragraph here too,
+
+35
+00:02:56,540 --> 00:03:02,370
+and we have a look at some of the restrictions or things to watch out when using jsx because again it
+
+36
+00:03:02,410 --> 00:03:03,730
+isn't html
+
+37
+00:03:03,810 --> 00:03:07,140
+but in most cases, it actually works just like it.

@@ -1,0 +1,23 @@
+1
+00:00:02,360 --> 00:00:08,030
+Teraz, gdy przyjrzeliśmy się temu, czym jest React i dlaczego warto z niego skorzystać, a
+
+2
+00:00:08,060 --> 00:00:09,520
+także teraz, gdy zbudowaliśmy
+
+3
+00:00:09,770 --> 00:00:15,280
+naszą pierwszą aplikację reagowania, zagłębimy się we wszystkie podstawowe koncepcje reagowania i podstawową składnię reakcji.
+
+4
+00:00:15,440 --> 00:00:20,180
+W tym module przyjrzymy się, co trzeba zrobić, aby zbudować prawdziwą aplikację reagowania, i oczywiście mam na myśli lokalnie na naszej maszynie,
+
+5
+00:00:26,000 --> 00:00:30,000
+a nie na codepen, i dowiesz się, które podstawowe funkcje reagują na oferty i jak z nich korzystasz.
+
+6
+00:00:30,080 --> 00:00:36,990
+Przejdźmy teraz do tego i nauczmy się, jak skonfigurować lokalny projekt reagowania na naszej maszynie.

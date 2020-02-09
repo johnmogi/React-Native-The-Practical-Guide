@@ -1,0 +1,91 @@
+1
+00:00:02,320 --> 00:00:05,200
+Sono tornato nel progetto a cui abbiamo lavorato fino ad ora.
+
+2
+00:00:05,200 --> 00:00:07,810
+Abbiamo uno stile di base qui.
+
+3
+00:00:07,810 --> 00:00:12,180
+Ad esempio queste carte in cui emettiamo le persone e questo pulsante.
+
+4
+00:00:12,310 --> 00:00:15,130
+Ma iniziamo con quel pulsante, per esempio.
+
+5
+00:00:15,130 --> 00:00:18,590
+Abbiamo già un problema quando ce l'abbiamo.
+
+6
+00:00:18,590 --> 00:00:20,670
+Non cambia questo stile.
+
+7
+00:00:20,680 --> 00:00:28,150
+questo pulsante, che fa parte del nostro componente dell'app, lo possiamo vedere qui nel nostro modello lì che questo pulsante
+
+8
+00:00:28,480 --> 00:00:36,810
+è semplicemente in stile con gli stili incorporati che li assegniamo qui e li impostiamo in precedenza e il metodo di rendering qui.
+
+9
+00:00:36,820 --> 00:00:38,480
+Il problema è che
+
+10
+00:00:38,680 --> 00:00:46,150
+Usiamo javascript per creare un oggetto e assegnare dati alla proprietà di stile e j come X e reagire si preoccupa
+
+11
+00:00:46,150 --> 00:00:50,260
+di impostarlo sull'H reale. T. di elemento maschile.
+
+12
+00:00:50,260 --> 00:00:54,050
+Il problema è che non possiamo usare pseudos Electress qui.
+
+13
+00:00:54,160 --> 00:01:01,210
+Il vantaggio dello stile di Corps è applicato solo a questo modello e per conoscere Obert Ma poi
+
+14
+00:01:01,210 --> 00:01:07,690
+l'applicazione se avessimo un altro pulsante e ho già detto che l'alternativa sarebbe quella di ridimensionarlo
+
+15
+00:01:07,690 --> 00:01:15,270
+nel file CSS e lì possiamo usare il normale CSSA incluso lo pseudo selettori come Hulver ma fa quello
+
+16
+00:01:15,430 --> 00:01:22,040
+che Clovelly influenza tutti i pulsanti nella nostra applicazione anche se sono stati inseriti in componenti Avro.
+
+17
+00:01:22,060 --> 00:01:28,300
+Questo problema ha creato un problema con questo monoscafo. Ma oltre a questo voglio anche dare
+
+18
+00:01:28,300 --> 00:01:29,550
+un'occhiata a qualcos'altro.
+
+19
+00:01:29,620 --> 00:01:33,880
+Cosa succede se in realtà vogliamo cambiare lo stile in modo dinamico.
+
+20
+00:01:33,880 --> 00:01:41,480
+Iniziamo con quello diciamo alternativamente persone questo pulsante dovrebbe avere un colore di sfondo verde.
+
+21
+00:01:41,590 --> 00:01:47,450
+Se stiamo per mostrare persone con un clic e un colore di sfondo rosso.
+
+22
+00:01:47,650 --> 00:01:55,720
+Se stiamo per rimuovere la lista delle persone vediamo come possiamo cambiare gli stili dinamicamente nella
+
+23
+00:01:55,720 --> 00:01:56,520
+prossima lezione.

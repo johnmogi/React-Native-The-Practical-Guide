@@ -1,0 +1,211 @@
+1
+00:00:02,130 --> 00:00:07,990
+Nell'ultima conferenza ho accennato al fatto che abbiamo diversi modi di acconciare l'applicazione, quindi modifichiamo
+
+2
+00:00:07,990 --> 00:00:15,400
+questo pulsante in modo diverso e devi solo seguire quale è il pulsante in cui voglio applicare questo pulsante
+
+3
+00:00:15,400 --> 00:00:18,770
+con qualcosa che è chiamato stili in linea.
+
+4
+00:00:18,840 --> 00:00:24,850
+Non c'è niente di sbagliato nell'usare C-s come file e classi e questo potrebbe persino essere il modo preferito.
+
+5
+00:00:25,330 --> 00:00:32,790
+Ma ciò che vedi spesso anche tu e riattivi le app è che in realtà stai progettando i tuoi stili in javascript.
+
+6
+00:00:32,800 --> 00:00:34,420
+Come funziona.
+
+7
+00:00:34,800 --> 00:00:40,080
+Entriamo in quella funzione di rendering creare una nuova costante che chiamerò stile.
+
+8
+00:00:40,090 --> 00:00:41,660
+Il nome spetta a te.
+
+9
+00:00:41,740 --> 00:00:43,460
+Questo è un oggetto javascript.
+
+10
+00:00:43,480 --> 00:00:50,800
+E come potresti essere consapevole D. C. Come proprietà di stile, le annotazioni di javascript
+
+11
+00:00:50,800 --> 00:00:59,170
+repress, ad esempio il caso di cammello a colori di sfondo, non vengono trattate come un trattino perché il colore di sfondo come questo non sarebbe valido.
+
+12
+00:00:59,170 --> 00:01:04,140
+Nome della proprietà Javascript che potresti racchiudere tra virgolette per utilizzarlo.
+
+13
+00:01:04,360 --> 00:01:09,850
+Userò la custodia del cammello per una rappresentazione stampata e poi assegnerò un valore che è una stringa che
+
+14
+00:01:10,210 --> 00:01:11,510
+può essere un colore.
+
+15
+00:01:11,530 --> 00:01:16,630
+Ad esempio, bianco, possiamo impostare tutti i font da ereditare.
+
+16
+00:01:16,630 --> 00:01:26,080
+border con un bordo di un pixel Sallet e quindi forse blu e potremmo anche aggiungere un po 'di padding.
+
+17
+00:01:26,580 --> 00:01:32,970
+Per utilizzare il nostro fondo circostante possiamo anche impostare un colore non border
+
+18
+00:01:32,980 --> 00:01:34,840
+Forse 8 pixel.
+
+19
+00:01:34,840 --> 00:01:39,760
+Assicurati di racchiudere tutti questi valori tra virgolette perché stiamo scrivendo Chalis Trottier.
+
+20
+00:01:39,880 --> 00:01:42,840
+Questo deve essere stringhe.
+
+21
+00:01:42,860 --> 00:01:49,430
+Ora posso andare al pulsante messo su clic in una nuova riga per renderlo un po 'più facile da leggere e aggiungere
+
+22
+00:01:49,640 --> 00:01:50,720
+una proprietà di stile.
+
+23
+00:01:51,080 --> 00:01:58,280
+Questo è in realtà il normale attributo di stile reso disponibile da J S X e lo stile come puoi
+
+24
+00:01:58,280 --> 00:02:01,060
+già vedere dovrebbe ricevere un valore dinamico qui.
+
+25
+00:02:01,320 --> 00:02:09,230
+Tutti gli Stati Uniti semplicemente passano lo stile qui riferendosi a questa costante di stile che è definita nel metodo run there di
+
+26
+00:02:09,620 --> 00:02:14,630
+cui restituisce un'espressione qui con una parte, quindi non posso usare solo cose come questa.
+
+27
+00:02:14,630 --> 00:02:16,150
+Non è una proprietà di classe.
+
+28
+00:02:16,190 --> 00:02:23,120
+È una variabile normale o in realtà poiché non cambiamo mai quella costante di questo metodo di rendering.
+
+29
+00:02:23,660 --> 00:02:31,840
+Vediamo se questo ha un qualche effetto se salviamo questo effettivamente vediamo il pulsante sembra diverso ora.
+
+30
+00:02:31,990 --> 00:02:37,750
+Possiamo migliorare un po 'di più risolvendo innanzitutto questo errore e avere un pixel fuori dai nostri bordi
+
+31
+00:02:37,760 --> 00:02:44,880
+in modo che questo stile venga applicato e impostando il cursore sul puntatore in modo da ottenere il punto Roker o il passaggio
+
+32
+00:02:44,880 --> 00:02:46,460
+del mouse su di esso.
+
+33
+00:02:46,630 --> 00:02:47,700
+Ormai è al sicuro.
+
+34
+00:02:47,980 --> 00:02:52,150
+Vediamo quel bordo blu e vediamo di nuovo quel cursore.
+
+35
+00:02:52,150 --> 00:02:58,780
+Ora non cambia in hovering e in effetti lo styling dell'effetto hover è davvero difficile quando si
+
+36
+00:02:58,780 --> 00:03:00,530
+usano gli stili in linea.
+
+37
+00:03:00,530 --> 00:03:05,920
+Questa è già una restrizione, ma ho ottenuto un intero modulo in questo corso in cui
+
+38
+00:03:05,920 --> 00:03:12,790
+vi mostrerò alcune soluzioni intelligenti per lo styling dei componenti di re-act che possono davvero essere qualcosa su cui potete
+
+39
+00:03:12,790 --> 00:03:13,650
+riflettere molto.
+
+40
+00:03:13,660 --> 00:03:16,720
+Tieni sempre presente che puoi utilizzare un file C S S.
+
+41
+00:03:16,930 --> 00:03:19,310
+Quindi gli strofinacci da cucina qui sono globali.
+
+42
+00:03:19,330 --> 00:03:23,590
+Quindi se cambiamo pulsante qui tutti i pulsanti nella nostra intera app verranno modificati.
+
+43
+00:03:23,620 --> 00:03:30,940
+Quindi potrebbe non essere quello che vuoi ma d'altra parte puoi usare la normalità come sintassi o usi gli
+
+44
+00:03:30,940 --> 00:03:33,250
+stili in linea come fai qui.
+
+45
+00:03:33,250 --> 00:03:38,860
+Quindi lo stile ha ambito per il componente o per l'elemento che hai effettivamente aggiunto.
+
+46
+00:03:39,040 --> 00:03:44,250
+Ma hai alcune restrizioni di non essere in grado di sfruttare tutta la potenza di C-s.
+
+47
+00:03:44,560 --> 00:03:49,870
+Come ho detto, avrò un modulo completo su questo perché c'è un modo dorato nel mezzo in cui è
+
+48
+00:03:49,870 --> 00:03:54,460
+possibile utilizzare gli stili di scope e utilizzare ancora tutte le funzionalità di C S S.
+
+49
+00:03:54,460 --> 00:03:55,930
+Maggiori informazioni su questo più tardi per ora.
+
+50
+00:03:55,930 --> 00:04:00,230
+Essere consapevoli del fatto che abbiamo questi due diversi modi di styling al momento.
+
+51
+00:04:00,370 --> 00:04:02,890
+Usa gli stili in linea come facciamo qui.
+
+52
+00:04:02,980 --> 00:04:09,980
+Ogni volta che vuoi che uno scope venga applicato allo stile e assicurati che si applichi solo a questo singolo elemento e non
+
+53
+00:04:10,060 --> 00:04:13,360
+al nostro elemento nella tua app o persino nello stesso componente.

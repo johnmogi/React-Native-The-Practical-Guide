@@ -1,0 +1,199 @@
+1
+00:00:02,090 --> 00:00:09,330
+Podczas ostatniego wykładu przyjrzeliśmy się komunikatom o błędach, na pewno ważnym, ale często mamy błędy logiczne,
+
+2
+00:00:09,330 --> 00:00:12,210
+które są jeszcze trudniejsze do wykrycia.
+
+3
+00:00:12,210 --> 00:00:15,830
+Nie otrzymujesz komunikatu o błędzie, ale jakoś nie działa.
+
+4
+00:00:16,170 --> 00:00:23,160
+Powiedzmy, że nameChangedHandler, kiedy znajdujemy indeks osoby, którą chcemy zaktualizować, załóżmy, że porównujemy
+
+5
+00:00:23,160 --> 00:00:26,180
+identyfikator użytkownika z ID, a to
+
+6
+00:00:26,460 --> 00:00:30,570
+jest nieprawidłowe, osoba nie ma właściwości identyfikatora użytkownika.
+
+7
+00:00:30,570 --> 00:00:38,640
+Nie spowoduje to jednak błędu, ponieważ identyfikator użytkownika jest niezdefiniowany, ale możesz porównać niezdefiniowane z
+
+8
+00:00:38,970 --> 00:00:42,360
+czymś, co prawdopodobnie nie znajdzie odpowiedniej osoby.
+
+9
+00:00:42,360 --> 00:00:48,470
+Więc jeśli zapiszę ten kod, oczywiście naprawiłem błąd z ostatniego wykładu, więc jeśli
+
+10
+00:00:48,950 --> 00:00:56,630
+zapiszę ten kod i wrócimy do aplikacji, jeśli teraz zaczniemy pisać, nie otrzymamy błędu, ale mogę wpisz
+
+11
+00:00:56,820 --> 00:00:58,860
+tyle, ile chcę, to
+
+12
+00:00:58,890 --> 00:01:00,030
+się nie
+
+13
+00:01:00,060 --> 00:01:05,370
+zaktualizuje, nie widzę tu nawet mojej zaktualizowanej wartości, ponieważ złamałem dwukierunkowe powiązanie,
+
+14
+00:01:05,370 --> 00:01:08,450
+ponieważ nie poprawiam poprawnie nazwy tej osoby.
+
+15
+00:01:08,460 --> 00:01:11,200
+Co możemy teraz zrobić w takim przypadku?
+
+16
+00:01:11,370 --> 00:01:14,320
+Możemy poruszać się po naszym kodzie krok
+
+17
+00:01:14,370 --> 00:01:17,650
+po kroku, dlatego zalecam używanie narzędzi programistycznych Chrome.
+
+18
+00:01:17,760 --> 00:01:27,630
+Tam możesz przejść do zakładki źródeł, w zakładce źródeł znajdziesz swoją strukturę kodu pokazaną pod
+
+19
+00:01:27,630 --> 00:01:29,160
+localhost, tam
+
+20
+00:01:29,160 --> 00:01:34,750
+znajdziesz folder źródłowy, a tu znajdziesz swój kod.
+
+21
+00:01:34,770 --> 00:01:39,110
+Teraz jest to możliwe z powodu generowanych map źródłowych.
+
+22
+00:01:39,450 --> 00:01:47,220
+Zasadniczo można powiedzieć pliki tłumaczeniowe, które pozwalają narzędziom deweloperskim przeglądarki wejść do twojego kodu
+
+23
+00:01:47,250 --> 00:01:53,730
+podczas pisania i pozwolić na debugowanie tego kodu, mimo że kod wysyłany
+
+24
+00:01:54,060 --> 00:01:57,690
+do przeglądarki będzie inny, zoptymalizowany i spakowany.
+
+25
+00:01:57,800 --> 00:02:02,310
+Jest to całkiem fajne, ponieważ możesz debugować kod, który napisałeś, nawet jeśli nie jest to
+
+26
+00:02:02,310 --> 00:02:03,630
+kod działający w przeglądarce.
+
+27
+00:02:03,780 --> 00:02:07,210
+W tym miejscu wiemy, że coś nie
+
+28
+00:02:07,380 --> 00:02:13,840
+działa, kiedy wpisuję kod i wiemy, że nazwaChangedHandler jest uruchamiana podczas pisania.
+
+29
+00:02:13,980 --> 00:02:17,300
+Ustawmy punkt przerwania, klikając tutaj nowy numer
+
+30
+00:02:17,700 --> 00:02:19,910
+linii i zacznijmy pisać ponownie.
+
+31
+00:02:20,670 --> 00:02:23,890
+Napisałem jedną postać, która teraz wstrzymuje to, zobaczysz, że
+
+32
+00:02:24,180 --> 00:02:29,370
+dodaje to i ponieważ jest to domyślne zachowanie elementu html i nie wykonaliśmy całego
+
+33
+00:02:29,370 --> 00:02:32,260
+kodu, który mógłby go nadpisać, i teraz możemy
+
+34
+00:02:32,520 --> 00:02:40,200
+użyć zwykłego debuggera chrome narzędzia tutaj, aby przejść przez nasz kod. I tutaj możemy przejść do następnego
+
+35
+00:02:40,290 --> 00:02:48,760
+wywołania funkcji, aby wejść do funkcji szukania indeksu i zrozumieć, co się tam dzieje.
+
+36
+00:02:49,870 --> 00:02:53,950
+Więc teraz w środku możemy spojrzeć na dane, które
+
+37
+00:02:53,950 --> 00:02:57,510
+mamy tam dostępne, takie jak obiekt p.
+
+38
+00:02:57,520 --> 00:03:03,610
+Teraz widzimy, że jest to dla Max, jest to obiekt, który
+
+39
+00:03:03,620 --> 00:03:08,580
+aktualnie przegląda z indeksem find i mamy pomysł asfa1.
+
+40
+00:03:08,710 --> 00:03:17,050
+Widzimy również, że to wyrażenie jest tutaj niezdefiniowane i porównaliśmy je do identyfikatora asfa1 Więc jeśli to powinno
+
+41
+00:03:18,250 --> 00:03:26,200
+pasować do tej osoby, która ma ten identyfikator, ponieważ mamy dostęp do ID użytkownika, widzimy, że jest on
+
+42
+00:03:26,640 --> 00:03:35,530
+niezdefiniowany i wyraźnie widzimy, że ten identyfikator użytkownika jest niepoprawny identyfikator, ponieważ po ponownym najechaniu myszą na tę osobę widzimy
+
+43
+00:03:35,530 --> 00:03:41,150
+tylko obiekt ID, brak identyfikatora użytkownika. Dzięki tym informacjom możemy teraz zakończyć
+
+44
+00:03:41,380 --> 00:03:46,960
+ten proces, powrócić do naszego kodu i naprawić nasz logiczny błąd.
+
+45
+00:03:47,050 --> 00:03:55,120
+Tak więc automatyczne korzystanie z narzędzi do debugowania chrome z generowanymi automatycznie mapami źródłowymi jest potężną
+
+46
+00:03:55,120 --> 00:03:57,820
+funkcją do wykrywania błędów logicznych.
+
+47
+00:03:57,850 --> 00:04:03,140
+Możesz pisać swój kod w trakcie pisania, nawet jeśli nie jest to kod uruchomiony w przeglądarce.
+
+48
+00:04:03,310 --> 00:04:06,200
+To świetne narzędzie, które powinieneś
+
+49
+00:04:06,340 --> 00:04:13,210
+znać, aby znaleźć i naprawić błędy. Korzystanie z narzędzi programistycznych na karcie Źródła, do których można uzyskać
+
+50
+00:04:13,210 --> 00:04:15,600
+dostęp do oryginalnego kodu z powodu map źródłowych.

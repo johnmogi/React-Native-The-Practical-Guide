@@ -1,0 +1,407 @@
+1
+00:00:02,610 --> 00:00:07,170
+Dlatego chcemy stworzyć lokalny projekt reagowania. Z lokalnym, mam na myśli, że
+
+2
+00:00:07,170 --> 00:00:13,430
+nie używamy codepen, ale zamiast tego będziemy mieli projekt na naszej maszynie, gdzie będziemy mogli pracować
+
+3
+00:00:13,440 --> 00:00:15,600
+z naszym własnym IDE lub edytorem.
+
+4
+00:00:15,600 --> 00:00:18,010
+Jest to oczywiście sposób, w jaki chcemy
+
+5
+00:00:18,030 --> 00:00:19,810
+pracować, reagować, chcemy mieć go
+
+6
+00:00:19,830 --> 00:00:21,890
+na naszej maszynie, mamy tam więcej
+
+7
+00:00:21,930 --> 00:00:27,840
+dostępnych funkcji, jest to wygodniejsze niż użycie edytora stron internetowych i kodeku używanego wcześniej lub JSBin,
+
+8
+00:00:27,840 --> 00:00:33,960
+z którego korzystaliśmy opcjonalny drugi moduł to naprawdę więcej placów zabaw niż prawdziwe środowisko pracy dla prawdziwych
+
+9
+00:00:33,960 --> 00:00:34,710
+projektów.
+
+10
+00:00:34,860 --> 00:00:36,990
+Dlatego utworzymy projekt lokalny, a
+
+11
+00:00:37,140 --> 00:00:41,330
+reakcja to coś więcej niż tylko import dwóch plików.
+
+12
+00:00:41,350 --> 00:00:43,050
+importowaliśmy w codepen.
+
+13
+00:00:43,200 --> 00:00:47,020
+Potrzebujemy bardziej skomplikowanego przepływu pracy dla prawdziwych projektów i
+
+14
+00:00:47,130 --> 00:00:51,380
+jest to zalecane zarówno dla aplikacji pojedynczych, jak i wielostronicowych.
+
+15
+00:00:51,390 --> 00:00:57,300
+Pytanie brzmi oczywiście, dlaczego potrzebujemy bardziej skomplikowanego przepływu pracy i jak możemy go osiągnąć?
+
+16
+00:00:57,300 --> 00:01:05,270
+Zacznę od tego, dlaczego podczas budowania prawdziwej aplikacji chcemy zoptymalizować nasz kod.
+
+17
+00:01:05,280 --> 00:01:11,490
+Nie przejmowaliśmy się tym w projekcie demonstracyjnym w pierwszym module kursu na codepen, ale
+
+18
+00:01:11,490 --> 00:01:19,980
+dla dużej aplikacji reagowania, chcemy przesłać kod, który jest tak mały, jak to tylko możliwe i zoptymalizowany, jak to
+
+19
+00:01:20,050 --> 00:01:23,400
+możliwe, oczywiście, ponieważ to zwiększa wydajność nasza aplikacja.
+
+20
+00:01:23,400 --> 00:01:25,390
+Dodatkowo i to jest bardzo
+
+21
+00:01:25,470 --> 00:01:28,720
+ważne, chcemy wykorzystać te funkcje javascript następnej generacji,
+
+22
+00:01:28,770 --> 00:01:32,520
+o których uczyłem cię w ostatnim opcjonalnym module.
+
+23
+00:01:32,610 --> 00:01:37,400
+Teraz chcemy tego użyć, ponieważ znacznie ułatwia nam życie jako programisty, a
+
+24
+00:01:37,650 --> 00:01:43,350
+to jest faktyczny standard reagowania, który polega na wykorzystaniu wszystkich następnych funkcji genów, ponieważ kod
+
+25
+00:01:43,350 --> 00:01:45,970
+jest szczuplejszy, łatwiejszy do odczytania, szybszy, mniej
+
+26
+00:01:45,990 --> 00:01:48,980
+podatny na błędy i wiele innych powodów.
+
+27
+00:01:49,020 --> 00:01:51,480
+Więc naprawdę powinieneś używać tych funkcji, nie
+
+28
+00:01:51,480 --> 00:01:54,230
+jest to tylko coś fajnego, opcjonalne, zdecydowanie polecam
+
+29
+00:01:54,330 --> 00:01:56,550
+używanie tych funkcji, jest to uważane
+
+30
+00:01:56,630 --> 00:02:01,560
+za najlepszą praktykę i właśnie tego uczę cię w tym kursie, ponieważ oczywiście chcę
+
+31
+00:02:01,560 --> 00:02:03,170
+cię nauczyć najlepszych praktyk.
+
+32
+00:02:03,510 --> 00:02:09,060
+Chcemy więc korzystać z funkcji javascript następnej generacji, aby mieć łatwiejszy czas na napisanie
+
+33
+00:02:09,060 --> 00:02:09,910
+kodu podatnego
+
+34
+00:02:10,320 --> 00:02:16,100
+na błędy, a przy tym wszystkim potrzebujemy przepływu pracy, który obsługuje te funkcje, nawet w
+
+35
+00:02:16,140 --> 00:02:22,770
+przypadku kodu pośredniego, który to zrobił. Pamiętasz listę preprocesorów, w której przełączyliśmy się na Babel? To za kulisami odblokowało
+
+36
+00:02:22,770 --> 00:02:31,710
+parę narzędzi do kompilacji, które analizowałyby nasz kod i wspierały JSX, na przykład ten kod HTML
+
+37
+00:02:31,710 --> 00:02:33,140
+w składni javascript.
+
+38
+00:02:33,300 --> 00:02:35,670
+Chcemy więc wykorzystać te funkcje
+
+39
+00:02:35,760 --> 00:02:43,020
+genów, w zasadzie chcemy mieć możliwość napisania kodu ES6 lub wyższego i nadal dostarczać kod, który
+
+40
+00:02:43,020 --> 00:02:49,710
+działa na jak największej liczbie przeglądarek, a nie wiele przeglądarek obsługuje wszystkie te funkcje następnej generacji.
+
+41
+00:02:49,710 --> 00:02:54,590
+Dlatego potrzebujemy przepływu pracy, który faktycznie kompiluje te funkcje.
+
+42
+00:02:54,720 --> 00:02:57,140
+Na koniec chcemy być bardziej produktywni,
+
+43
+00:02:57,180 --> 00:03:02,850
+włączając w to funkcje javascript następnej generacji, które często pozwalają nam pisać bardziej skondensowany
+
+44
+00:03:03,180 --> 00:03:06,880
+kod, ale także takie rzeczy jak automatyczne prefiksowanie CSS.
+
+45
+00:03:06,960 --> 00:03:13,410
+Być może wiesz, że prefiksy CSS są rzeczą, aby osiągnąć jak najszerszą obsługę przeglądarek
+
+46
+00:03:13,410 --> 00:03:14,850
+dla funkcji CSS.
+
+47
+00:03:15,090 --> 00:03:17,860
+Teraz ręczne dodawanie tych prefiksów jest dość irytujące,
+
+48
+00:03:17,940 --> 00:03:19,990
+więc ich automatyczne dodawanie jest miłe.
+
+49
+00:03:20,040 --> 00:03:21,560
+Lub rozważyć linting,
+
+50
+00:03:21,570 --> 00:03:28,740
+więc narzędzie, które faktycznie ostrzega, jeśli piszesz sub-optymalny kod, który byłby miły, aby mieć również, nie
+
+51
+00:03:28,800 --> 00:03:34,990
+jest ściśle wymagane, ale miła funkcja i wszystkie te rzeczy powinny być częścią workflow budowy.
+
+52
+00:03:35,100 --> 00:03:41,370
+Teraz, aby je zaimplementować, potrzebujemy kilku narzędzi, które pozwolą im uruchomić nasz kod, aby
+
+53
+00:03:41,370 --> 00:03:49,020
+ostrzec nas w przypadku lintingu lub skompilować kod do kodu, który działa na jak największej liczbie przeglądarek, podczas
+
+54
+00:03:49,170 --> 00:03:57,040
+gdy my jako programista. pisanie bardzo nowoczesnego kodu, który sam w sobie nie działałby w tak wielu przeglądarkach.
+
+55
+00:03:57,420 --> 00:04:04,230
+Oto dlaczego, z kilku powodów, dla których pisanie tego rodzaju kodu jest pożądane i dlaczego potrzebujemy bardziej złożonego
+
+56
+00:04:04,230 --> 00:04:10,350
+procesu tworzenia kompilacji, który faktycznie pozwala nam napisać ten kod, który faktycznie optymalizuje kod dla nas,
+
+57
+00:04:11,010 --> 00:04:13,570
+a do tego, jak oczywiście Jest istotna.
+
+58
+00:04:13,800 --> 00:04:16,210
+Jak możemy osiągnąć taki przepływ pracy?
+
+59
+00:04:16,230 --> 00:04:19,110
+Przede wszystkim potrzebujemy narzędzia do zarządzania zależnościami, zależności są
+
+60
+00:04:19,140 --> 00:04:25,310
+po prostu bibliotekami stron trzecich, pakietami javascript stron trzecich. React na przykład to zależność, reakcja
+
+61
+00:04:25,330 --> 00:04:31,640
+dom jest zależnością, a także wszystkie wbudowane narzędzia, których będziemy potrzebować na
+
+62
+00:04:31,710 --> 00:04:32,930
+końcu, to zależności.
+
+63
+00:04:33,120 --> 00:04:38,980
+Tak więc kompilator dla następnego gen javascript do aktualnego gen javascript, to jest zależność.
+
+64
+00:04:39,150 --> 00:04:40,860
+I użyjemy tutaj npm,
+
+65
+00:04:40,980 --> 00:04:48,060
+przędza będzie kolejnym narzędziem, którego możesz użyć, ale użyjemy menedżera pakietów węzła npm, narzędzia, które
+
+66
+00:04:48,390 --> 00:04:54,130
+pozwala nam tylko zarządzać pakietami i który jest tylko standardem defacto do
+
+67
+00:04:54,240 --> 00:04:57,030
+zarządzania zależnościami również na frontowych projektach.
+
+68
+00:04:57,030 --> 00:05:04,960
+Poza tym narzędziem do zarządzania zależnościami potrzebujemy pakietu pakującego, ponieważ chcemy pisać kod modułowy i dzielić go na wiele
+
+69
+00:05:04,960 --> 00:05:10,450
+plików, tak aby każdy plik miał jasne zadanie, wyraźne skupienie, a zatem jest
+
+70
+00:05:10,480 --> 00:05:12,540
+łatwiejszy w utrzymaniu i zarządzaniu.
+
+71
+00:05:12,850 --> 00:05:19,810
+Ale wtedy chcemy się upewnić, że cały ten kod zostanie dołączony do kilku plików w końcu, gdy
+
+72
+00:05:19,810 --> 00:05:26,680
+go wyślemy, ponieważ przeglądarki nie obsługują nawet plików podzielonych, starsze przeglądarki przynajmniej nie robią, a może również
+
+73
+00:05:26,980 --> 00:05:33,010
+nawet jeśli by to poparli, nie jest tak optymalne, aby wysyłać tysiące próśb do wszystkich
+
+74
+00:05:33,010 --> 00:05:35,020
+tych małych, skupionych plików.
+
+75
+00:05:35,170 --> 00:05:40,120
+Dlatego chcemy mieć tego bundlera, a użyjemy webpacka, który jest standardem defacto do łączenia w
+
+76
+00:05:40,120 --> 00:05:40,720
+te dni.
+
+77
+00:05:40,720 --> 00:05:44,250
+Fajną rzeczą w pakiecie internetowym jest to, że
+
+78
+00:05:44,320 --> 00:05:50,140
+nie tylko pakuje pliki, ale pozwala również na zastosowanie kilku innych kroków kompilacji,
+
+79
+00:05:50,140 --> 00:05:57,370
+zanim zrobi to sprzedaż pakietowa, na przykład wspomniana kompilacja następnego generatora javascript, która wymaga innego narzędzia, Babel.
+
+80
+00:05:57,400 --> 00:06:04,420
+Potrzebujemy kompilatora, który wykonuje tę kompilację javascript, co oznacza tłumaczenie z nowoczesnych funkcji na
+
+81
+00:06:04,690 --> 00:06:12,310
+obejścia, które działa również na starszych przeglądarkach, a my użyjemy Babel oraz ustawień wstępnych, które
+
+82
+00:06:12,310 --> 00:06:19,100
+można podłączyć do konfiguracji webpacka, aby stanowiły część tej sprzedaży pakietowej i optymalizacji proces.
+
+83
+00:06:19,180 --> 00:06:25,900
+I na koniec chcemy używać serwera programistycznego do testowania naszej aplikacji lokalnie na naszym komputerze, serwer programistyczny
+
+84
+00:06:25,900 --> 00:06:32,590
+to serwer WWW, ale działający na naszym komputerze. Możemy otworzyć plik HTML, klikając go dwukrotnie,
+
+85
+00:06:32,590 --> 00:06:39,370
+ale użyjemy tego protokołu plików i nie będzie poprawnie emulować aplikacji uruchomionej na
+
+86
+00:06:39,460 --> 00:06:40,570
+serwerze internetowym.
+
+87
+00:06:40,780 --> 00:06:45,300
+Potrzebujemy więc serwera WWW i możemy oczywiście uruchomić go na naszym lokalnym komputerze.
+
+88
+00:06:45,460 --> 00:06:49,760
+Serwer jest wtedy dostępny tylko dla nas, ale to wszystko, czego potrzebujemy jako
+
+89
+00:06:49,870 --> 00:06:55,020
+programista, i tam naprawdę możemy zobaczyć uruchamianie aplikacji, ponieważ będzie ona działać na prawdziwym serwerze.
+
+90
+00:06:55,060 --> 00:06:59,570
+Potrzebujemy tych wszystkich rzeczy i wydaje się, że to bardzo
+
+91
+00:06:59,590 --> 00:07:07,000
+skomplikowane w konfiguracji, dobra jest to, że nie. Przedstawię ci narzędzie, które stworzy projekt wspierający wszystkie
+
+92
+00:07:07,000 --> 00:07:12,490
+te rzeczy po wyjęciu z pudełka z zerową konfiguracją w następnych wykładach.
+
+93
+00:07:12,490 --> 00:07:18,010
+Zainstalujemy to narzędzie razem i jest to narzędzie stworzone przez zespół reagujący i
+
+94
+00:07:18,170 --> 00:07:24,380
+społeczność oraz oficjalnie zalecany sposób tworzenia nowych aplikacji reagowania, ponieważ jest to ogólny temat tego
+
+95
+00:07:24,550 --> 00:07:32,000
+kursu, nauczę cię rzeczy w najlepszej praktyce i zalecanym sposobie , więc wszystkie ustawienia są dość łatwe.
+
+96
+00:07:32,080 --> 00:07:38,170
+I na marginesie, jeśli nadal chcesz zagłębić się w to, jak działa to za kulisami i
+
+97
+00:07:38,170 --> 00:07:39,610
+chcesz je skonfigurować od
+
+98
+00:07:39,610 --> 00:07:46,030
+zera, to dostałem również moduł do tego pod koniec kursu, na którym zbudujesz aplikację reagowania, Reakcja na
+
+99
+00:07:46,180 --> 00:07:47,560
+projekt od zera.
+
+100
+00:07:47,560 --> 00:07:50,080
+Teraz, wiesz, czego potrzebujemy i jak,
+
+101
+00:07:50,080 --> 00:07:55,990
+teraz zagłębimy się w to narzędzie, o którym wspomniałem, i nauczmy się, jak zacząć nowy
+
+102
+00:07:55,990 --> 00:07:58,550
+projekt reagowania, wspierający wszystkie te funkcje.

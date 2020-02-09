@@ -1,0 +1,87 @@
+1
+00:00:02,240 --> 00:00:09,220
+We learned how to use pseudo selectors and how we may even nest classes and still import them on that
+
+2
+00:00:09,220 --> 00:00:12,890
+class object here in the previous lecture.
+
+3
+00:00:12,970 --> 00:00:15,080
+Now I want to take care about media queries
+
+4
+00:00:15,090 --> 00:00:19,350
+and that was something I wanted to do in my person class. There
+
+5
+00:00:19,420 --> 00:00:27,660
+I assign the person css class to the outer div and I actually already added the code earlier.
+
+6
+00:00:27,700 --> 00:00:34,630
+I will simply comment it in, some normal css media query adjusting our Person class with this
+
+7
+00:00:34,630 --> 00:00:43,750
+width if we have a viewport being broader than 500px. You can save this adjusted css file and
+
+8
+00:00:43,840 --> 00:00:46,140
+it will still import this person class
+
+9
+00:00:46,140 --> 00:00:49,270
+fine on this classes object here,
+
+10
+00:00:49,510 --> 00:00:55,330
+even if it's wrapped inside a media query. So what we should see is that if I reload the application and I
+
+11
+00:00:55,330 --> 00:01:01,780
+toggle my persons here, if I increase the viewport the width of the boxes doesn't change,
+
+12
+00:01:01,810 --> 00:01:04,240
+it only changes if it's small enough,
+
+13
+00:01:04,240 --> 00:01:08,180
+there it will be 60 percent of the width.
+
+14
+00:01:08,560 --> 00:01:14,890
+So that was super simple and what can be kind of challenging to wrap your head around css module,
+
+15
+00:01:15,280 --> 00:01:23,320
+simply think about this classes object here as a javascript object which gives you access to a string
+
+16
+00:01:23,470 --> 00:01:31,390
+version of your css styles, of your css class but of a css class which was adjusted to be unique.
+
+17
+00:01:31,960 --> 00:01:36,220
+So it will simply just translate your person class to something like.
+
+18
+00:01:36,340 --> 00:01:36,810
+Person_
+
+19
+00:01:36,810 --> 00:01:44,380
+some unique cache, so that you can be safe and sure that when you use that class in a given
+
+20
+00:01:44,380 --> 00:01:49,130
+component, that's the only place where the css styles apply.
+
+21
+00:01:49,240 --> 00:01:53,510
+No where else in your application can these styles have any effect,
+
+22
+00:01:53,530 --> 00:01:56,750
+that's the idea behind css modules.

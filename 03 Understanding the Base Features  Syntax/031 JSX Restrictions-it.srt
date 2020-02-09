@@ -1,0 +1,147 @@
+1
+00:00:02,200 --> 00:00:09,730
+Nell'ultima conferenza ho dato un'occhiata a cosa sia veramente il genio X ed è così importante capirlo.
+
+2
+00:00:09,990 --> 00:00:14,850
+Ora in questa conferenza voglio evidenziare alcune delle restrizioni che dobbiamo affrontare.
+
+3
+00:00:14,850 --> 00:00:21,720
+Ad esempio questo nome di classe qui James x sembra chiaramente htmln dovrebbe dovrebbe permetterci di scrivere
+
+4
+00:00:21,720 --> 00:00:28,680
+il codice HVM Elish nei nostri file javascript ancora visto che non è un file javascript e
+
+5
+00:00:28,680 --> 00:00:36,780
+siccome è javascript alcune parole possono essere usate CLOS per esempio che useremmo in hml normale per assegnare l'accesso in
+
+6
+00:00:36,780 --> 00:00:41,620
+quanto la classe non può essere utilizzata perché riservo la parola in javascript.
+
+7
+00:00:41,700 --> 00:00:45,360
+La usiamo già qui per creare una nuova classe.
+
+8
+00:00:45,360 --> 00:00:48,210
+Questo è il motivo per cui dobbiamo usare il nome della classe.
+
+9
+00:00:48,210 --> 00:00:56,140
+Tutti questi elementi che puoi usare qui come Def e H uno sono effettivamente gestiti o forniti dalla biblioteca
+
+10
+00:00:56,160 --> 00:00:57,090
+di reazione.
+
+11
+00:00:57,360 --> 00:01:04,240
+Non usiamo il vero HVM. Riesco a riattivare il testo convertendoli dietro le quinte e riattivo
+
+12
+00:01:04,250 --> 00:01:07,970
+il ritrovamento degli attributi tra virgolette che dovrei dire.
+
+13
+00:01:08,100 --> 00:01:13,620
+Possiamo definire su tutti questi elementi e non abbiamo l'attributo class come abbiamo sull'elemento
+
+14
+00:01:13,620 --> 00:01:14,970
+hm l regolare.
+
+15
+00:01:15,120 --> 00:01:18,070
+Abbiamo qui l'attributo del nome della classe.
+
+16
+00:01:18,180 --> 00:01:22,930
+Aggiungere una C è di classe come puoi vedere nel nostro codice finale.
+
+17
+00:01:23,000 --> 00:01:27,180
+Questo è tradotto in classe anche se non è il nome della classe qui.
+
+18
+00:01:27,210 --> 00:01:33,850
+Una volta che è stato reso ora una restrizione numerica che abbiamo di fronte è morta.
+
+19
+00:01:33,870 --> 00:01:35,760
+Quando restituiamo qualcosa qui.
+
+20
+00:01:36,030 --> 00:01:42,940
+Diciamo che vogliamo tutti restituire un'intestazione numero in realtà non possiamo farlo qui.
+
+21
+00:01:43,140 --> 00:01:47,360
+La nostra espressione GSX deve avere un elemento radice.
+
+22
+00:01:47,370 --> 00:01:51,670
+Ora con il re-act 16 questo tipo di allentamento.
+
+23
+00:01:52,080 --> 00:01:58,450
+E vedremo i punteggi che possiamo effettivamente restituire elementi adiacenti alla fine.
+
+24
+00:01:58,530 --> 00:02:06,780
+desidera personalizzare gli avversari e si desidera aggiungere CCS S-Class, che è responsabile dello stile per l'elemento radice come facciamo qui.
+
+25
+00:02:06,820 --> 00:02:13,170
+È una cosa tipica e una tipica best practice per racchiudere tutto in un unico elemento radice
+
+26
+00:02:13,170 --> 00:02:18,050
+per componente, anche se questo ha anche senso dato che in genere si
+
+27
+00:02:18,060 --> 00:02:23,760
+Quindi in genere si annida tutto in un singolo elemento radice che si restituisce.
+
+28
+00:02:23,760 --> 00:02:29,800
+E se ti stai interrogando su queste parentesi qui queste sono semplicemente usate in modo che possiamo salire a HVM
+
+29
+00:02:29,820 --> 00:02:36,570
+L e sto sempre dicendo H. M. S. Ma tieni a mente che è
+
+30
+00:02:36,570 --> 00:02:42,780
+il javascript di James exit in modo che tu possa restituire questo HVM tutto il codice ben strutturato su più linee senza ricevere errori.
+
+31
+00:02:42,780 --> 00:02:44,830
+Questo è il motivo per cui usiamo le parentesi.
+
+32
+00:02:45,120 --> 00:02:51,020
+Quindi se potessi aggiungere un paragrafo qui dove dico questo funziona davvero.
+
+33
+00:02:51,450 --> 00:02:53,220
+E questo è vicino.
+
+34
+00:02:53,460 --> 00:02:56,450
+Ora con quello vediamo anche quel paragrafo qui.
+
+35
+00:02:56,540 --> 00:03:02,370
+E abbiamo dato un'occhiata ad alcune delle restrizioni o cose a cui prestare attenzione quando si utilizza GSX perché ancora
+
+36
+00:03:02,410 --> 00:03:03,730
+una volta è un HMO.
+
+37
+00:03:03,810 --> 00:03:07,140
+Ma nella maggior parte dei casi funziona davvero così.

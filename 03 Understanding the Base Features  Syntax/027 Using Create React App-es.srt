@@ -1,0 +1,279 @@
+1
+00:00:02,350 --> 00:00:08,310
+En la última conferencia, destaqué por qué queremos configurar un proyecto que nos brinda algunas
+
+2
+00:00:08,310 --> 00:00:11,520
+características adicionales que facilitan nuestra vida como desarrollador.
+
+3
+00:00:11,520 --> 00:00:15,990
+Ahora, como también mencioné, hay una herramienta que crea un proyecto así para nosotros.
+
+4
+00:00:16,080 --> 00:00:21,990
+Se llama aplicación True Yage y simplemente puede buscar en google para encontrar un enlace a su
+
+5
+00:00:22,160 --> 00:00:23,450
+repositorio oficial de obtención.
+
+6
+00:00:23,490 --> 00:00:28,970
+Como dije, básicamente lo mantiene Facebook o una comunidad en Facebook.
+
+7
+00:00:29,160 --> 00:00:37,350
+Por lo tanto, es la herramienta recomendada oficialmente para crear proyectos de reactivación en esa media página válida, encontrará
+
+8
+00:00:37,350 --> 00:00:43,280
+instrucciones de instalación y una explicación detallada sobre lo que hace y cómo funciona.
+
+9
+00:00:43,290 --> 00:00:44,900
+Siéntase libre de leerlo.
+
+10
+00:00:44,910 --> 00:00:49,160
+Pero, por supuesto, todos vamos a aprender todo sobre eso a lo largo de este curso.
+
+11
+00:00:49,160 --> 00:00:51,650
+Comencemos con el aislamiento.
+
+12
+00:00:51,660 --> 00:00:59,880
+Lo instalamos globalmente con NPM y NPM simplemente señala que el administrador de paquetes es una herramienta que se obtiene
+
+13
+00:00:59,880 --> 00:01:07,150
+automáticamente al instalar el nodo J. S. lo que hace que sea más fácil administrar paquetes de terceros El paquete de javascript de
+
+14
+00:01:07,220 --> 00:01:15,660
+Obert al final y crea la repetición, es solo un paquete para usar NPM, necesita instalar el nodo J. S. que puedes descargar e instalar
+
+15
+00:01:15,660 --> 00:01:17,820
+desde el nodo.
+
+16
+00:01:17,850 --> 00:01:19,670
+J. S. punto org.
+
+17
+00:01:19,740 --> 00:01:23,540
+Ahora ahí deberías elegir la última versión 8. 5.
+
+18
+00:01:23,550 --> 00:01:30,030
+En mi caso, tú estás. Pero si enfrentas problemas con esa vieja prueba, ¿dónde está el 6? 2 11 o cualquiera que sea la pregunta
+
+19
+00:01:30,060 --> 00:01:31,920
+de soporte a largo plazo.
+
+20
+00:01:31,920 --> 00:01:36,500
+En tu caso, cuando estás viendo esta página ahora no te preocupes.
+
+21
+00:01:36,740 --> 00:01:39,860
+No vamos a escribir ningún código de nota aquí.
+
+22
+00:01:39,860 --> 00:01:40,970
+No necesitas saber
+
+23
+00:01:40,990 --> 00:01:48,980
+Nota J. S. solo necesitábamos usar su gestor de paquetes y también para
+
+24
+00:01:48,980 --> 00:01:51,570
+este servidor de desarrollo que se generará automáticamente para nosotros.
+
+25
+00:01:51,680 --> 00:01:57,410
+Simplemente haga clic en estos botones para descargar y no perseguir y girará hacia arriba y Spolar a través
+
+26
+00:01:57,410 --> 00:01:58,580
+del cual podrá caminar.
+
+27
+00:01:58,580 --> 00:02:04,730
+Una vez que termine la instalación, podrá ejecutar el comando NPM aquí en su máquina.
+
+28
+00:02:04,730 --> 00:02:10,820
+Así que hagámoslo juntos en el próximo paso para instalar create reac AB a través de NPM.
+
+29
+00:02:10,940 --> 00:02:18,680
+Debería ir a la terminal o al símbolo del sistema de su máquina y allí puede superar la instalación de NPM.
+
+30
+00:02:18,680 --> 00:02:26,500
+crear una aplicación de palabra una vez con guiones entre las palabras y luego dash g esta bandera al final y puestos
+
+31
+00:02:26,520 --> 00:02:33,680
+y Clovelly en nuestra máquina para que podamos ejecutarlo en cualquier lugar de la máquina que, por supuesto, es lo
+
+32
+00:02:33,680 --> 00:02:38,510
+que queremos hacer porque queremos poder crear nuevos proyectos de Riak donde queramos.
+
+33
+00:02:38,510 --> 00:02:42,700
+Este es un bote de ballenas ya que instalamos el nodo para
+
+34
+00:02:42,710 --> 00:02:49,610
+Ahora, en Mac y Linux, puede necesitar agregar un pseudo en frente de todo eso para obtener los permisos correctos
+
+35
+00:02:49,610 --> 00:02:50,980
+de ejecutar este comando.
+
+36
+00:02:51,170 --> 00:02:57,950
+Y si lo hace, probablemente se le pida su contraseña ahora una vez que la ingresó.
+
+37
+00:02:57,980 --> 00:02:59,330
+Y nuevamente esto no es requerido.
+
+38
+00:02:59,330 --> 00:03:04,100
+En Windows, instalará create reaccionar en su máquina.
+
+39
+00:03:04,100 --> 00:03:09,170
+Una vez que esto haya terminado, puede comenzar a crear nuevos proyectos de Riak con él.
+
+40
+00:03:09,170 --> 00:03:15,000
+se puede encontrar en esta página de inicio que te enseñé anteriormente, pero por supuesto se ejecutará en conjunto.
+
+41
+00:03:15,000 --> 00:03:16,000
+El comando también
+
+42
+00:03:16,250 --> 00:03:18,700
+Simplemente ejecutará la aplicación Yate reaccionar.
+
+43
+00:03:18,740 --> 00:03:25,040
+Así que el nombre del paquete al final y luego el nombre de la aplicación será el nombre de
+
+44
+00:03:25,040 --> 00:03:31,400
+la carpeta que crea la palabra configuración predeterminada y se colocarán muchos archivos de inicio y nombraré y volveré
+
+45
+00:03:31,620 --> 00:03:33,540
+a actuar la guía completa.
+
+46
+00:03:33,540 --> 00:03:36,150
+Pero puedes ponerle el nombre que quieras.
+
+47
+00:03:36,320 --> 00:03:42,930
+Presione enter y esto creará automáticamente la carpeta e instalará todas las dependencias que necesite.
+
+48
+00:03:43,160 --> 00:03:51,200
+para acceder a Dom y volver a actuar en los scripts, que es un paquete que agrupa todas estas herramientas diferentes.
+
+49
+00:03:51,260 --> 00:03:54,570
+Como puede ver aquí, ya se está actuando nuevamente
+
+50
+00:03:54,620 --> 00:04:01,500
+Me refería a la diapositiva en la última conferencia una vez que finalizó esta configuración, puede navegar en esta
+
+51
+00:04:01,510 --> 00:04:06,340
+carpeta recién creada con CD y luego el nombre del proyecto que eligió.
+
+52
+00:04:06,340 --> 00:04:11,740
+En mi caso, vuelva a actuar la guía completa y luego simplemente ejecute el inicio de NPM.
+
+53
+00:04:11,860 --> 00:04:17,590
+Ahora, para mí, está mostrando inicio de hilos y todos estos comandos de hilados porque tengo una yarda instalada
+
+54
+00:04:17,590 --> 00:04:20,140
+como alternativa a la NPM, pero no la necesitas.
+
+55
+00:04:20,140 --> 00:04:27,840
+Simplemente puede ejecutar el inicio de NPM y ahora se ejecutará el servidor de desarrollo y se abrirá una nueva página.
+
+56
+00:04:27,850 --> 00:04:30,660
+Ya esta página aquí.
+
+57
+00:04:30,950 --> 00:04:32,470
+Esta es la página de inicio.
+
+58
+00:04:32,470 --> 00:04:33,890
+Este proyecto te da.
+
+59
+00:04:33,940 --> 00:04:35,510
+Es básicamente un punto de partida.
+
+60
+00:04:35,500 --> 00:04:40,650
+Comenzaremos editándolo más adelante y siempre debe mantener este proceso.
+
+61
+00:04:40,660 --> 00:04:43,600
+Empezaste con NPM empezar a correr.
+
+62
+00:04:43,660 --> 00:04:50,610
+Estos son los desarrollos a los que me refiero que cargan su aplicación en el navegador para simular su ejecución como
+
+63
+00:04:50,650 --> 00:04:56,490
+en una página web real y volver a cargar la página cada vez que cambie de código.
+
+64
+00:04:56,500 --> 00:05:00,640
+También puede encontrar la dirección donde la está sirviendo aquí en la terminal.
+
+65
+00:05:00,640 --> 00:05:02,590
+Por lo tanto, siempre mantenga este proceso en ejecución.
+
+66
+00:05:02,590 --> 00:05:04,600
+Si está trabajando en su aplicación.
+
+67
+00:05:04,810 --> 00:05:07,970
+Si desea cerrarlo, siempre puede hacerlo con CON-TROLL C. Pero entonces no podrás volver a visitar esta página aquí.
+
+68
+00:05:08,050 --> 00:05:11,630
+Ahora con eso tenemos nuestro proyecto configurado.
+
+69
+00:05:12,070 --> 00:05:14,730
+Echemos un vistazo a lo que hay dentro y lo que se creó para nosotros en la próxima conferencia.
+
+70
+00:05:14,860 --> 00:05:20,430
+&nbsp;

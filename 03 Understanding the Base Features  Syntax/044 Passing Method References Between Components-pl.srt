@@ -1,0 +1,339 @@
+1
+00:00:02,590 --> 00:00:08,460
+Powiedzmy, że chcemy nazwać switchNameHändler, który rozpoznałem, zmienia też wiek, więc może
+
+2
+00:00:08,460 --> 00:00:11,060
+nazwa nie została wybrana perfekcyjnie.
+
+3
+00:00:11,350 --> 00:00:17,200
+Powiedzmy, że chcemy to nazwać nie po kliknięciu tego przycisku tutaj lub nie
+
+4
+00:00:17,770 --> 00:00:26,050
+tylko po kliknięciu tego przycisku, ale powiedzmy też, gdy klikniesz tutaj dowolny akapit, akapit, który może powiedzieć, że zawiera
+
+5
+00:00:26,050 --> 00:00:28,860
+imię i wiek w komponencie osoby.
+
+6
+00:00:29,440 --> 00:00:37,840
+Teraz, w komponencie osoby, możemy dodać onClick, ale co teraz? Nie możemy nazwać tej metody obsługi w
+
+7
+00:00:37,840 --> 00:00:40,620
+innym pliku w innej klasie.
+
+8
+00:00:40,900 --> 00:00:49,000
+Właściwie możemy przekazać odniesienie do tego programu obsługi jako własności do naszego komponentu, a to nie
+
+9
+00:00:49,000 --> 00:00:50,140
+jest wyszukane
+
+10
+00:00:50,290 --> 00:00:53,330
+narzędzie, to jest bardzo powszechny wzorzec.
+
+11
+00:00:53,810 --> 00:00:59,620
+Najpierw zrestrukturyzuję to w wielu liniach dla wszystkich tych komponentów, abyśmy mogli
+
+12
+00:00:59,620 --> 00:01:06,460
+łatwiej zorientować się, które właściwości przechodzimy, a następnie powiedzmy, że nie chcę tego przekazywać dla
+
+13
+00:01:06,550 --> 00:01:09,630
+innych komponentów, ale tylko dla tego użycia
+
+14
+00:01:10,030 --> 00:01:17,620
+z tego, więc tutaj dodam nową właściwość, którą nazwałbym kliknięciem, a nazwa zależy całkowicie od Ciebie.
+
+15
+00:01:18,460 --> 00:01:23,160
+Tutaj przekażę odnośnik do tego switchNameHandler.
+
+16
+00:01:23,410 --> 00:01:30,460
+Więc w zasadzie to, co również zrobiłem tutaj, to switchNameHandler po kliknięciu przycisku, tutaj
+
+17
+00:01:30,460 --> 00:01:34,740
+przekazuję to jako odniesienie do tej właściwości kliknięcia.
+
+18
+00:01:35,020 --> 00:01:45,190
+Teraz możemy użyć tej właściwości kliknięcia osobiście. js. Teraz mogę po prostu wywoływać rekwizyty klikając, ponieważ
+
+19
+00:01:45,190 --> 00:01:48,310
+kliknięcie jest nazwą właściwości, którą tu zdefiniowałem,
+
+20
+00:01:48,610 --> 00:01:52,740
+a to spowoduje wykonanie tej funkcji, którą przekazuję jako odniesienie.
+
+21
+00:01:52,780 --> 00:02:00,460
+Więc jeśli zapiszemy wszystkie aplikacje plików. js i osoba. js, powinniśmy zobaczyć, że w naszej aplikacji
+
+22
+00:02:00,460 --> 00:02:05,380
+możemy oczywiście kliknąć ten przycisk, aby zmienić nazwę Maximillian i wiek Stephanie.
+
+23
+00:02:05,590 --> 00:02:10,190
+Ale jeśli ponownie załaduję, możemy również kliknąć ten akapit z
+
+24
+00:02:10,310 --> 00:02:19,120
+Manu tutaj, zobaczysz także, że zmieniło nazwę i lata. To jest coś ważnego do zrozumienia, ważny wzorzec, możesz
+
+25
+00:02:19,320 --> 00:02:28,940
+przekazywać metody także jako rekwizyty, dzięki czemu możesz wywołać metodę, która może zmienić stan w innym komponencie, który nie ma
+
+26
+00:02:29,160 --> 00:02:34,200
+bezpośredniego dostępu do stanu i który nie powinien mieć bezpośredniego dostęp
+
+27
+00:02:34,200 --> 00:02:35,220
+do państwa.
+
+28
+00:02:35,220 --> 00:02:41,460
+Jest to powszechny wzorzec i ważne jest, aby wiedzieć, że możesz przekazać procedury
+
+29
+00:02:41,460 --> 00:02:45,150
+obsługi kliknięć, które umożliwiają zmianę danych w komponencie
+
+30
+00:02:45,150 --> 00:02:55,020
+nadrzędnym, w komponencie aplikacji w tym przypadku dla komponentu osoby. Być może chcemy również przekazać wartość naszej funkcji, może
+
+31
+00:02:55,020 --> 00:03:01,510
+tutaj switchNameHandler powinien otrzymać nową nazwę, tak że tutaj, gdzie na stałe
+
+32
+00:03:01,530 --> 00:03:06,730
+zakodowałem Maximilien, tak naprawdę ustawiłem nazwę równą nowej nazwie.
+
+33
+00:03:06,740 --> 00:03:10,390
+Jak przekazujemy te dane?
+
+34
+00:03:10,390 --> 00:03:12,600
+Są na to dwa sposoby:
+
+35
+00:03:12,610 --> 00:03:16,910
+po pierwsze wywołujesz bind, tutaj możesz to po prostu powiązać,
+
+36
+00:03:16,960 --> 00:03:19,690
+to kontroluje to, do czego odwołuje
+
+37
+00:03:19,780 --> 00:03:26,820
+się funkcja wewnątrz funkcji i przez powiązanie go z tym tutaj poza funkcją, do której go
+
+38
+00:03:26,850 --> 00:03:31,840
+wiążymy. klasa może wyglądać dziwnie, ale jest typowym sposobem radzenia sobie
+
+39
+00:03:31,850 --> 00:03:36,110
+z tym problemem w javascript, nie musielibyśmy tego jednak robić.
+
+40
+00:03:36,430 --> 00:03:42,340
+Ale możemy użyć tej składni, ponieważ chcę również przekazać drugi argument do wiązania.
+
+41
+00:03:42,610 --> 00:03:50,710
+To jest teraz lista argumentów, które w rzeczywistości zostaną przekazane do naszej funkcji i tutaj powinno to być
+
+42
+00:03:50,710 --> 00:03:51,610
+nowe imię,
+
+43
+00:03:51,790 --> 00:03:54,150
+więc tutaj może to być
+
+44
+00:03:54,410 --> 00:03:56,270
+Maximillian i naprawdę zobaczyć
+
+45
+00:03:56,620 --> 00:04:02,290
+różnicę, skopiujmy ten kod bindowania i załóżmy go tutaj kiedy przekazujemy tę funkcję
+
+46
+00:04:02,290 --> 00:04:03,480
+jako odniesienie do
+
+47
+00:04:03,970 --> 00:04:11,230
+rekwizytu kliknięcia i zmieńmy ją na Max z wykrzyknikiem tutaj, abyśmy mogli zobaczyć różnicę w zależności
+
+48
+00:04:11,230 --> 00:04:13,090
+od tego, gdzie kliknęliśmy.
+
+49
+00:04:13,380 --> 00:04:21,030
+Jeśli teraz zapiszemy to z dodanym bindem, a to otrzymamy jako argument i switchNameHandler, zobaczmy, co się stanie,
+
+50
+00:04:21,040 --> 00:04:28,210
+jeśli kliknę opcję Zmień nazwę i nadal będę zmieniać to na Maximilien, co ma sens, ponieważ to
+
+51
+00:04:28,210 --> 00:04:34,130
+jest to, do czego go przypisuję, ale działa potwierdzając że działa z otrzymaniem argumentu
+
+52
+00:04:34,130 --> 00:04:41,460
+i jeśli kliknę na akapicie I'm Manu, zobaczysz, że zmienia się on na Max z wykrzyknikiem.
+
+53
+00:04:41,480 --> 00:04:44,060
+Więc jest to sposób na przekazanie
+
+54
+00:04:44,120 --> 00:04:45,990
+argumentu, nie jest to
+
+55
+00:04:46,190 --> 00:04:51,990
+jedyny sposób, zostawię jeden z dwóch fragmentów kodu tutaj z bindem, aby pokazać, jak
+
+56
+00:04:52,070 --> 00:04:54,580
+to działa, pokażę ci alternatywną składnię.
+
+57
+00:04:54,770 --> 00:04:57,840
+Opuszczę więc tutaj, gdzie przekazujemy
+
+58
+00:04:58,010 --> 00:05:00,560
+go jako rekwizyty, ale
+
+59
+00:05:00,570 --> 00:05:11,510
+moglibyśmy użyć tej nowej składni, którą wam teraz pokażę. Ta składnia wiadomości wygląda inaczej, tutaj na onClick I rzeczywiście wykonać funkcję strzałki,
+
+60
+00:05:11,510 --> 00:05:13,650
+która nie bierze żadnych argumentów,
+
+61
+00:05:13,690 --> 00:05:16,070
+chociaż teoretycznie otrzymałby obiekt zdarzenia
+
+62
+00:05:16,070 --> 00:05:16,980
+przy okazji.
+
+63
+00:05:17,420 --> 00:05:18,980
+ale nie użyję
+
+64
+00:05:19,550 --> 00:05:27,020
+tego tutaj, a potem po prostu jako funkcja zwraca to wywołanie funkcji.
+
+65
+00:05:27,020 --> 00:05:29,120
+Oto kilka rzeczy, które musisz
+
+66
+00:05:29,120 --> 00:05:37,550
+zrozumieć, przede wszystkim, gdy używasz funkcji strzałki, to domyślnie dodaje słowo kluczowe return przed kodem, który pojawia się bezpośrednio
+
+67
+00:05:37,550 --> 00:05:39,890
+po strzale, jeśli wszystko jest
+
+68
+00:05:40,070 --> 00:05:42,230
+napisane w jednym wierszu.
+
+69
+00:05:42,230 --> 00:05:46,730
+Alternatywą jest zawinięcie tego w nawiasy klamrowe i napisanie normalnego ciała funkcyjnego.
+
+70
+00:05:47,210 --> 00:05:51,860
+Więc to się zwraca i to, co zwracam, to
+
+71
+00:05:51,860 --> 00:05:54,140
+wywołanie funkcji, dlatego dodałem nawiasy.
+
+72
+00:05:54,410 --> 00:06:01,700
+Teraz we wcześniejszym wykładzie powiedziałem, że nie powinieneś tego nazywać, ale to nie
+
+73
+00:06:01,700 --> 00:06:03,550
+jest natychmiast wykonywane.
+
+74
+00:06:03,560 --> 00:06:10,250
+Zamiast tego przekazujemy tutaj anonimową funkcję, która zostanie wykonana po kliknięciu,
+
+75
+00:06:10,250 --> 00:06:13,550
+a następnie zwróci wynik tej funkcji.
+
+76
+00:06:13,550 --> 00:06:17,900
+Co oczywiście prowadzi do wykonania tej funkcji.
+
+77
+00:06:17,900 --> 00:06:26,270
+Jest to użyteczne, ponieważ teraz możemy łatwo przekazać nasze dane, Maximillian,
+
+78
+00:06:26,270 --> 00:06:31,760
+z dwoma wykrzyknikami. Jeśli teraz zapiszę to i kliknę
+
+79
+00:06:31,760 --> 00:06:35,000
+opcję Zmień nazwę, widzimy Maximilliana z dwoma wykrzyknikami.
+
+80
+00:06:35,000 --> 00:06:41,930
+Teraz jest to bardzo wygodna składnia, ale może być nieefektywna, reagowanie może
+
+81
+00:06:41,930 --> 00:06:48,950
+ponownie renderować pewne rzeczy w twojej aplikacji, więc niekoniecznie polecam używanie tego, jeśli
+
+82
+00:06:48,950 --> 00:06:50,150
+nie musisz,
+
+83
+00:06:50,180 --> 00:06:56,590
+użyj składni bindowania, jeśli możesz . Nadal pozostawiam go tutaj, możesz go użyć i w zależności
+
+84
+00:06:56,660 --> 00:06:59,520
+od rozmiaru twojej aplikacji możesz nie odczuć tak dużego
+
+85
+00:06:59,780 --> 00:07:03,100
+uderzenia wydajności, ale pamiętaj, że może to być nieefektywne.

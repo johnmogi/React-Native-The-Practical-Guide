@@ -1,0 +1,383 @@
+1
+00:00:02,170 --> 00:00:09,100
+Do tej pory dowiedziałeś się dużo o tym, jak radzić sobie z błędami i dowiedzieć się, jaki jest stan
+
+2
+00:00:09,100 --> 00:00:09,900
+twojej aplikacji.
+
+3
+00:00:10,060 --> 00:00:16,240
+Czasami masz kod, który może zawieść w czasie wykonywania i wiesz o tym, ale nie możesz zagwarantować,
+
+4
+00:00:16,240 --> 00:00:17,510
+że zawsze działa.
+
+5
+00:00:17,620 --> 00:00:24,100
+W tym przypadku prawdopodobnie chcesz pokazać użytkownikowi fajny ekran lub co najmniej niestandardowy komunikat o błędzie.
+
+6
+00:00:24,100 --> 00:00:27,350
+Pozwól, że pokażę ci skonstruowany
+
+7
+00:00:27,680 --> 00:00:36,170
+przykład, powiedzmy, że kiedy wyrenderujemy klasę osoby, faktycznie mamy szansę na błąd.
+
+8
+00:00:36,340 --> 00:00:46,270
+Tak więc utworzę losową liczbę z matematyką. losowe i jeśli losowe jest większe niż. 7, więc dostajemy 30 procentową
+
+9
+00:00:46,270 --> 00:00:58,240
+szansę, wtedy faktycznie rzucę nowy błąd, coś poszło nie tak i nie powinno to być w instrukcji return,
+
+10
+00:00:58,240 --> 00:01:01,300
+ale w ciele funkcji.
+
+11
+00:01:01,300 --> 00:01:04,630
+Teraz z tym czasem powinniśmy otrzymać
+
+12
+00:01:04,810 --> 00:01:06,050
+ten błąd,
+
+13
+00:01:06,070 --> 00:01:11,400
+spróbujmy tego, oszczędzajmy ten komponent i przełączajmy osoby i natychmiast zawiedzie.
+
+14
+00:01:11,440 --> 00:01:16,240
+Więc widzieliśmy ten błąd, ponieważ mamy trzy komponenty, które mamy 30 procent szans na każdy komponent,
+
+15
+00:01:16,360 --> 00:01:17,870
+nie jest to mało prawdopodobne.
+
+16
+00:01:17,980 --> 00:01:20,280
+Czasami powinno się to udać,
+
+17
+00:01:20,320 --> 00:01:21,440
+ale tak jak
+
+18
+00:01:21,790 --> 00:01:26,470
+w tym przypadku, ale czasami też się nie uda, jak tutaj,
+
+19
+00:01:26,470 --> 00:01:28,110
+coś poszło nie tak.
+
+20
+00:01:28,120 --> 00:01:30,510
+Teraz oczywiście jest to skonstruowane, ale w prawdziwej
+
+21
+00:01:30,610 --> 00:01:35,770
+aplikacji, może rzeczywiście masz jakiś kod, który uruchamia jakąś operację, dociera do jakiegoś serwera WWW, który na pewno
+
+22
+00:01:35,770 --> 00:01:41,670
+może zawieść i nie możesz zagwarantować, że tak się nie stanie. Byłoby miło wtedy przynajmniej
+
+23
+00:01:41,670 --> 00:01:46,970
+uchwycić ten błąd i traktować go łaskawie.
+
+24
+00:01:46,980 --> 00:01:47,450
+W
+
+25
+00:01:47,470 --> 00:01:52,480
+tym celu utworzę nowy komponent i jest to nowa funkcja, która została
+
+26
+00:01:52,840 --> 00:01:53,980
+dodana z reakcją
+
+27
+00:01:53,980 --> 00:01:59,690
+16, nazwę ją granicą błędu, ponieważ można tam tworzyć tak zwane komponenty granicy błędu.
+
+28
+00:02:00,620 --> 00:02:02,930
+Tam też określę granicę błędu,
+
+29
+00:02:02,950 --> 00:02:04,470
+nazwa zależy od ciebie.
+
+30
+00:02:04,690 --> 00:02:11,920
+Nazywa się to granicą błędu, ale możesz nazwać ten komponent, jak tylko chcesz. Tutaj utworzę granicę
+
+31
+00:02:11,980 --> 00:02:19,570
+błędów klasowych i będę rozszerzać komponent.
+
+32
+00:02:19,720 --> 00:02:29,160
+Muszę więc zaimportować zarówno reagować, jak i nazwany import z komponentem
+
+33
+00:02:29,160 --> 00:02:30,750
+nawiasów klamrowych.
+
+34
+00:02:30,780 --> 00:02:36,200
+Dlatego tworzymy ten komponent dokładnie tak, jak stworzyliśmy aplikację. składnik js. Tam chcę renderować
+
+35
+00:02:36,200 --> 00:02:40,120
+coś, a ja coś zwrócę, po
+
+36
+00:02:40,200 --> 00:02:48,450
+prostu zwrócę znacznik h1, w którym mówię, że coś poszło nie tak, jak to.
+
+37
+00:02:48,720 --> 00:02:55,170
+Chcę tylko zwrócić to, jeśli mamy błąd, więc dodam stan, jeden z
+
+38
+00:02:55,170 --> 00:03:05,220
+powodów, dla których musimy użyć klasy tutaj i ustawić mój stan, aby miał błąd fałszywy, będę również przechowywać komunikat
+
+39
+00:03:05,220 --> 00:03:09,250
+o błędzie, który jest tutaj pusty ciąg.
+
+40
+00:03:09,250 --> 00:03:12,780
+Teraz możemy dodać nową właściwość lub
+
+41
+00:03:12,780 --> 00:03:22,990
+nową metodę, którą powinienem powiedzieć, componentDidCatch, jest to metoda, która otrzymuje potencjalny błąd i niektóre dodatkowe informacje przekazywane do
+
+42
+00:03:22,990 --> 00:03:31,100
+niego automatycznie przez reagowanie, a componentDidCatch zostanie wykonane, gdy komponent, który zawijamy z granicą błędu,
+
+43
+00:03:31,120 --> 00:03:34,610
+wyrzuci błąd, pokażę ci, jak go
+
+44
+00:03:34,810 --> 00:03:36,790
+użyć w sekundę, przede
+
+45
+00:03:36,790 --> 00:03:38,880
+wszystkim wypełnijmy logikę tutaj.
+
+46
+00:03:39,370 --> 00:03:43,170
+Tam chcę ustawić stan, ponieważ mamy teraz błąd.
+
+47
+00:03:43,450 --> 00:03:55,160
+Ustawię ma błąd na true i ustawię komunikat o błędzie równy błędowi, który powinien być tym komunikatem.
+
+48
+00:03:56,820 --> 00:04:00,870
+Teraz w metodzie renderowania mamy dwa możliwe wyniki,
+
+49
+00:04:01,870 --> 00:04:06,610
+albo nasz stan zawiera błąd, w tym przypadku chcę
+
+50
+00:04:06,610 --> 00:04:11,430
+zwrócić coś poszło nie tak, albo być precyzyjnym, mogę
+
+51
+00:04:11,440 --> 00:04:14,120
+nawet wyrenderować komunikat o błędzie.
+
+52
+00:04:14,140 --> 00:04:24,790
+Więc to. stan. komunikat o błędzie lub w innym przypadku zwracam to. rekwizyty. dzieci, to ważne
+
+53
+00:04:25,140 --> 00:04:30,480
+przy dostępie do wniosku w komponencie klasy, musisz dodać
+
+54
+00:04:30,660 --> 00:04:36,350
+to z przodu, tak jak zrobiłeś to ze stanem.
+
+55
+00:04:36,360 --> 00:04:41,830
+Więc teraz to. rekwizyty. dzieci są czymkolwiek, co zawijamy
+
+56
+00:04:41,890 --> 00:04:49,710
+w granicach błędu, to powinien być nasz domyślny przypadek, ale jeśli dostaniemy błąd wyrzucony przez coś, co zawijamy w granicach
+
+57
+00:04:50,360 --> 00:04:53,680
+błędu, ta metoda zostanie uruchomiona, a parametr hasError zostanie
+
+58
+00:04:53,690 --> 00:04:56,970
+ustawiony na True, a więc możemy to zwrócić.
+
+59
+00:04:56,980 --> 00:05:00,070
+Teraz pozwól mi po prostu wyeksportować domyślną,
+
+60
+00:05:00,070 --> 00:05:01,810
+pozwól mi wyeksportować ten
+
+61
+00:05:01,840 --> 00:05:03,940
+komponent granicy błędu i zacznijmy
+
+62
+00:05:04,300 --> 00:05:06,050
+go teraz używać.
+
+63
+00:05:07,120 --> 00:05:12,090
+Użyję go w aplikacji. js i zapakuj moją
+
+64
+00:05:12,520 --> 00:05:19,060
+osobę, więc zaimportuję granicę błędu. / errorBoundary, ten folder i tam
+
+65
+00:05:20,370 --> 00:05:28,670
+plik z błędem granicy js, bez rozszerzenia pliku jak zawsze, a teraz zawińmy naszą
+
+66
+00:05:28,790 --> 00:05:29,570
+osobę.
+
+67
+00:05:29,840 --> 00:05:34,090
+Więc tutaj na liście, na której zwróciłem osobę, naprawdę
+
+68
+00:05:34,100 --> 00:05:42,450
+chcę ją zawinąć z granicą błędu właśnie tak. Również po zamykającym
+
+69
+00:05:42,560 --> 00:05:53,100
+znaczniku granicy błędu osoby. Granica błędu jest tak zwanym komponentem wyższego rzędu, jest to komponent,
+
+70
+00:05:53,350 --> 00:06:00,240
+który po prostu opakowuje komponent w celu obsługi wszelkich błędów, które komponent może wyrzucić,
+
+71
+00:06:00,270 --> 00:06:01,170
+w przypadku
+
+72
+00:06:01,390 --> 00:06:04,120
+granicy błędu, to jego zadanie.
+
+73
+00:06:04,270 --> 00:06:12,010
+Teraz z tą osobą owiniętą granicą błędu, musimy również przenieść klucz tutaj do granicy błędu, ponieważ
+
+74
+00:06:12,220 --> 00:06:18,990
+jest to teraz element zewnętrzny, który mapujemy i klucz zawsze musi być na zewnętrznym
+
+75
+00:06:19,210 --> 00:06:24,040
+elemencie w metodzie mapy, ponieważ jest to element w rzeczywistości replikujemy.
+
+76
+00:06:24,040 --> 00:06:29,110
+Teraz zróbmy to i upewnijmy się, że wszystkie pliki są zapisane i wróć do aplikacji.
+
+77
+00:06:29,110 --> 00:06:36,790
+Teraz, jeśli przełączasz osoby, dopóki nie pojawi się błąd, nadal będziesz widzieć ten błąd w środku, niestety.
+
+78
+00:06:36,970 --> 00:06:40,090
+Teraz dzieje się tak tylko w trakcie programowania,
+
+79
+00:06:40,240 --> 00:06:46,690
+gdy już to zrobisz do produkcji i wyślesz na prawdziwy serwer, nie zastąpi on twojej strony
+
+80
+00:06:46,690 --> 00:06:47,860
+w ten sposób.
+
+81
+00:06:47,860 --> 00:06:56,000
+Zamiast tego zobaczysz, co zobaczysz w granicach błędu, jak komunikat o błędzie
+
+82
+00:06:56,020 --> 00:07:00,420
+lub inną domyślną wiadomość, którą masz.
+
+83
+00:07:00,430 --> 00:07:06,820
+Nie oznacza to, że powinieneś skupić całą aplikację z granicami błędów, używaj ich tylko wtedy, gdy
+
+84
+00:07:07,000 --> 00:07:08,340
+ma to sens.
+
+85
+00:07:08,470 --> 00:07:14,550
+Zasadniczo używaj ich tylko, jeśli masz jakiś kod, który wiesz, że może zawieść, nie zawijaj
+
+86
+00:07:14,600 --> 00:07:21,400
+żadnego innego kodu, ponieważ jeśli normalny kod się nie powiedzie, jako programista prawdopodobnie popełniłeś błąd podczas
+
+87
+00:07:21,400 --> 00:07:22,390
+programowania, używaj
+
+88
+00:07:22,690 --> 00:07:29,200
+tylko granic błędów w przypadkach, w których wiesz że może zawieść i nie możesz tego kontrolować.
+
+89
+00:07:29,200 --> 00:07:36,370
+To może być dobre narzędzie do produkcji, aby pokazać niestandardowy komunikat o błędzie
+
+90
+00:07:36,370 --> 00:07:43,810
+i nie ma awarii całej aplikacji, ponieważ wtedy aplikacja będzie działała poprawnie, a tylko
+
+91
+00:07:43,810 --> 00:07:48,120
+problematyczny komponent zostanie zastąpiony niestandardowym komunikatem o błędzie.
+
+92
+00:07:48,160 --> 00:07:56,020
+Granica błędu jest więc dobrym narzędziem do poznania, a nie narzędziem do użycia w dowolnym miejscu
+
+93
+00:07:56,020 --> 00:08:01,150
+aplikacji, a zatem począwszy od następnego modułu, kiedy zanurkujemy w tym
+
+94
+00:08:01,150 --> 00:08:04,540
+małym przykładowym projekcie, usunę go również, aby
+
+95
+00:08:04,540 --> 00:08:10,170
+go nie zawinąć. usuń moje źródło błędów niestandardowych, aby zasymulować ten błąd.
+
+96
+00:08:10,200 --> 00:08:11,830
+Dotyczy to tylko tego modułu.

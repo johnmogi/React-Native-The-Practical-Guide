@@ -1,0 +1,87 @@
+1
+00:00:02,240 --> 00:00:09,220
+Aprendemos a usar pseudo seletores e como fazemos aulas de ninho e ainda as importamos nesse
+
+2
+00:00:09,220 --> 00:00:12,890
+objeto de classe que você está na palestra anterior.
+
+3
+00:00:12,970 --> 00:00:15,080
+Agora, queira cuidar das consultas da mídia.
+
+4
+00:00:15,090 --> 00:00:19,350
+E isso era algo que eu queria fazer na minha bolsa de classe lá.
+
+5
+00:00:19,420 --> 00:00:27,660
+Eu atribuí a pessoa C S S classe para a morte externa e eu realmente já adicionei o código anteriormente.
+
+6
+00:00:27,700 --> 00:00:34,630
+Eu simplesmente comentarei isso em algum normal. Pediu-me para consultar o ajuste de nossa classe Pessoa com isso,
+
+7
+00:00:34,630 --> 00:00:43,750
+se tivermos uma nova placa que seja mais ampla que 500 pixels porque a segurança é ajustada ao arquivo C S S e
+
+8
+00:00:43,840 --> 00:00:46,140
+ainda importará essa classe de pessoa.
+
+9
+00:00:46,140 --> 00:00:49,270
+Tudo bem no objeto deste Klaas aqui.
+
+10
+00:00:49,510 --> 00:00:55,330
+Mesmo que seja nessa consulta imediata, então o que devemos ver é que, se eu recarregar
+
+11
+00:00:55,330 --> 00:01:01,780
+o aplicativo e ensinando por pessoas aqui se eu aumentar a viewport, a largura da caixa não muda.
+
+12
+00:01:01,810 --> 00:01:04,240
+Isso só muda se for pequeno o suficiente.
+
+13
+00:01:04,240 --> 00:01:08,180
+Lá, haverá 60% da largura.
+
+14
+00:01:08,560 --> 00:01:14,890
+desafiador para envolver sua mão enquanto este módulo simplesmente pensa sobre este objeto de classe aqui como
+
+15
+00:01:15,280 --> 00:01:23,320
+um objeto javascript que lhe dá acesso a um trabalho de string de seu Cs como Stahl's de sua classe CSS, mas
+
+16
+00:01:23,470 --> 00:01:31,390
+de ac como uma classe que foi ajustada para ser única, então simplesmente irá traduzir sua primeira classe para algo parecido.
+
+17
+00:01:31,960 --> 00:01:36,220
+Então, isso foi super simples e Wozzeck pode ser um pouco
+
+18
+00:01:36,340 --> 00:01:36,810
+Pessoa.
+
+19
+00:01:36,810 --> 00:01:44,380
+Ressalte um cache exclusivo para que você possa estar seguro e com certeza que, quando você usa essa classe em
+
+20
+00:01:44,380 --> 00:01:49,130
+um determinado componente, esse é o único lugar onde DC tem uma caneta.
+
+21
+00:01:49,240 --> 00:01:53,510
+Em nenhum outro lugar em sua aplicação, as pratos de prato podem ter algum efeito.
+
+22
+00:01:53,530 --> 00:01:56,750
+Essa é a idéia por trás do C-s como módulos.

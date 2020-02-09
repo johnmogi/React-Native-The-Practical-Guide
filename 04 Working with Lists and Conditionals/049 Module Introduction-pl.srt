@@ -1,0 +1,39 @@
+1
+00:00:02,430 --> 00:00:08,960
+Witamy w tym module. W poprzednim module poznaliśmy podstawową składnię reakcji i nauczyłeś
+
+2
+00:00:08,960 --> 00:00:15,770
+się, jak tworzyć aplikacje reagowania, jak komponować komponenty i jak pracować z jsx, aby renderować coś na ekranie.
+
+3
+00:00:16,130 --> 00:00:19,380
+W tym module przejdziemy do następnego poziomu.
+
+4
+00:00:19,400 --> 00:00:26,380
+Już obejrzeliśmy, jak możemy wyprowadzać zawartość dynamiczną za pomocą tych pojedynczych nawiasów klamrowych.
+
+5
+00:00:26,620 --> 00:00:32,090
+W tym module dowiemy się, jak możemy również dostarczać treści warunkowo, na
+
+6
+00:00:32,090 --> 00:00:38,750
+przykład, że chcemy renderować tylko pewną część twojej domeny, twojego kodu html, jeśli pewien warunek
+
+7
+00:00:38,750 --> 00:00:46,280
+jest prawdziwy i jak możemy wyprowadzać listy danych. Właściwie mamy już taką listę w naszej aplikacji demo,
+
+8
+00:00:46,310 --> 00:00:53,030
+osoby, które tam mamy, więc miałoby sens, gdybyśmy mogli je tworzyć dynamicznie w oparciu o liczbę
+
+9
+00:00:53,030 --> 00:00:56,980
+osób, które mamy w tej macierzy, którą zarządzamy w państwie.
+
+10
+00:00:57,230 --> 00:01:01,710
+Przyjrzymy się temu wszystkiemu i na co zwrócić uwagę w tym module.

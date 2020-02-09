@@ -1,0 +1,279 @@
+1
+00:00:02,350 --> 00:00:08,310
+In the last lecture I highlighted why we want to set up a project which gives us some additional features
+
+2
+00:00:08,310 --> 00:00:11,520
+which make our life as a developer easier.
+
+3
+00:00:11,520 --> 00:00:15,990
+Now as I also mentioned, there is a tool which creates such a project for us,
+
+4
+00:00:16,080 --> 00:00:21,990
+it's called create react app and you can simply google for it to find a link to its official github
+
+5
+00:00:22,160 --> 00:00:23,450
+repository.
+
+6
+00:00:23,490 --> 00:00:28,970
+As I said, it's maintained by basically Facebook or a community around Facebook,
+
+7
+00:00:29,160 --> 00:00:37,350
+So it's the officially recommended tool for creating react projects. On that github page, you will
+
+8
+00:00:37,350 --> 00:00:43,280
+find installation instructions and a detailed explanation about what it does and how it works.
+
+9
+00:00:43,290 --> 00:00:44,900
+Feel free to read through that
+
+10
+00:00:44,910 --> 00:00:49,160
+but of course we're also going to learn all about that throughout this course.
+
+11
+00:00:49,160 --> 00:00:51,650
+So let's start with the installation.
+
+12
+00:00:51,660 --> 00:00:59,880
+We install it globally with npm and npm is simply node's package manager, a tool you automatically get
+
+13
+00:00:59,880 --> 00:01:07,150
+when installing nodejs which makes it easier to manage third party packages, other javascript packages
+
+14
+00:01:07,220 --> 00:01:15,660
+in the end and create react app is just such a package. To use npm, you need to install nodejs which
+
+15
+00:01:15,660 --> 00:01:17,820
+you can download and install from node
+
+16
+00:01:17,850 --> 00:01:19,670
+js.org.
+
+17
+00:01:19,740 --> 00:01:23,540
+Now there you should pick the latest version 8.5
+
+18
+00:01:23,550 --> 00:01:30,030
+in my case here, but if you're facing any issues with that, also try out version 6.11 or whatever
+
+19
+00:01:30,060 --> 00:01:31,920
+the long term support version is
+
+20
+00:01:31,920 --> 00:01:36,500
+in your case when you're viewing this page. Now no worries,
+
+21
+00:01:36,740 --> 00:01:39,860
+we're not going to write any nodejs code here,
+
+22
+00:01:39,860 --> 00:01:40,970
+you don't need to know
+
+23
+00:01:40,990 --> 00:01:48,980
+nodejs. We only needed to use its package manager and also for this development server which will
+
+24
+00:01:48,980 --> 00:01:51,570
+be spun up for us automatically.
+
+25
+00:01:51,680 --> 00:01:57,410
+So simply click these buttons, download nodejs and it will spin up an installer through which you
+
+26
+00:01:57,410 --> 00:01:58,580
+can walk.
+
+27
+00:01:58,580 --> 00:02:04,730
+Once you did finish the installation you should be able to run the npm command here on your machine,
+
+28
+00:02:04,730 --> 00:02:10,820
+so let's do this together in the next step. To install create react app through npm,
+
+29
+00:02:10,940 --> 00:02:18,680
+you should go into the terminal or command prompt of your machine and there you can now run npm install,
+
+30
+00:02:18,680 --> 00:02:26,500
+this is available since we installed node, then create-react-app, one word with dashes between the
+
+31
+00:02:26,520 --> 00:02:33,680
+the words and then -g. This flag at the end installs globally on our machine so that
+
+32
+00:02:33,680 --> 00:02:38,510
+we can run it anywhere on the machine, which of course is what we want to do because we want to be able
+
+33
+00:02:38,510 --> 00:02:42,700
+to create new react projects wherever we want.
+
+34
+00:02:42,710 --> 00:02:49,610
+Now on Mac and Linux, you might need to add a sudo in front of all of that to get the right permissions
+
+35
+00:02:49,610 --> 00:02:50,980
+of running this command,
+
+36
+00:02:51,170 --> 00:02:57,950
+and if you do add it, you're probably prompted for your password too. Now once you did enter it
+
+37
+00:02:57,980 --> 00:02:59,330
+and again this is not required
+
+38
+00:02:59,330 --> 00:03:04,100
+on Windows, you will install create react app on your machine.
+
+39
+00:03:04,100 --> 00:03:09,170
+Once this is finished, you can start creating new react projects with it.
+
+40
+00:03:09,170 --> 00:03:15,000
+The command can also be found on this github page I showed you earlier here but we'll of course run
+
+41
+00:03:15,000 --> 00:03:16,000
+it together.
+
+42
+00:03:16,250 --> 00:03:18,700
+You'll simply run create-react-app,
+
+43
+00:03:18,740 --> 00:03:25,040
+So the package name in the end and then the name of the app, this will be the name of the folder which gets
+
+44
+00:03:25,040 --> 00:03:31,400
+created, where the default configuration and a lot of starting files will be placed in. I will name it
+
+45
+00:03:31,620 --> 00:03:33,540
+react-complete-guide
+
+46
+00:03:33,540 --> 00:03:36,150
+but you can name it whatever you want.
+
+47
+00:03:36,320 --> 00:03:42,930
+Hit enter and this will automatically create the folder and install all the dependencies it needs.
+
+48
+00:03:43,160 --> 00:03:51,200
+As you can see here already that is react itself, react dom to access the dom and react scripts which
+
+49
+00:03:51,260 --> 00:03:54,570
+is a package bundling all these different tools
+
+50
+00:03:54,620 --> 00:04:01,500
+I was referring to on the slide in the last lecture. Once this set up finish, you can navigate into
+
+51
+00:04:01,510 --> 00:04:06,340
+this newly created folder with cd and then the name of the project you chose,
+
+52
+00:04:06,340 --> 00:04:11,740
+in my case react-complete-guide, and then there simply run npm start.
+
+53
+00:04:11,860 --> 00:04:17,590
+Now for me it's showing yarn start and all these yarn commands because I have yarn installed, an
+
+54
+00:04:17,590 --> 00:04:20,140
+alternative to npm, but you don't need that,
+
+55
+00:04:20,140 --> 00:04:27,840
+you can just run npm start and this will now spin up a development server and open new page
+
+56
+00:04:27,850 --> 00:04:30,660
+already, this page here.
+
+57
+00:04:30,950 --> 00:04:32,470
+This is the starting page
+
+58
+00:04:32,470 --> 00:04:33,890
+this project gives you,
+
+59
+00:04:33,940 --> 00:04:35,510
+it is basically the starting point,
+
+60
+00:04:35,500 --> 00:04:40,650
+we will start editing it later on. And you should always keep this process,
+
+61
+00:04:40,660 --> 00:04:43,600
+You started with npm start running.
+
+62
+00:04:43,660 --> 00:04:50,610
+This is the development server I was referring to which loads your application on the browser, simulates it
+
+63
+00:04:50,650 --> 00:04:56,490
+to run as on a real web page and reloads the page whenever you change the code,
+
+64
+00:04:56,500 --> 00:05:00,640
+you can also find the address where it is serving it here in the terminal.
+
+65
+00:05:00,640 --> 00:05:02,590
+So always keep this process running
+
+66
+00:05:02,590 --> 00:05:04,600
+if you are working on your application.
+
+67
+00:05:04,810 --> 00:05:07,970
+If you want to close it you can always do this with Ctrl+C
+
+68
+00:05:08,050 --> 00:05:11,630
+but then you will not be able to visit this page here again.
+
+69
+00:05:12,070 --> 00:05:14,730
+Now with that, we got our project set up,
+
+70
+00:05:14,860 --> 00:05:20,430
+let's now have a look at what's inside there and what was created for us in the next lecture.

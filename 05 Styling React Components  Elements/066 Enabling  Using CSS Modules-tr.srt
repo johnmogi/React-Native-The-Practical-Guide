@@ -1,0 +1,667 @@
+1
+00:00:02,190 --> 00:00:08,640
+Son derslerde radyum hakkında, medya sorguları gibi özellikler ile satır içi stilleri kullanmanıza
+
+2
+00:00:08,640 --> 00:00:12,780
+izin veren çok popüler bir parti paketi öğreneceksiniz.
+
+3
+00:00:12,780 --> 00:00:19,020
+Şimdi, Stahl'ınızın bunları kolayca düzenleyebildiğini ve hala Media Corry gibi özellikleri kullanabileceğinizi belirlemenin
+
+4
+00:00:19,020 --> 00:00:19,870
+bir yoludur.
+
+5
+00:00:20,010 --> 00:00:21,610
+Tek yolu bu değil.
+
+6
+00:00:21,750 --> 00:00:27,270
+Senin gibi bir C SS dosyası, SS'nin kapsamı genişletilebilirse, harika olmaz mıydı.
+
+7
+00:00:27,270 --> 00:00:35,340
+bileşeninin dosyaladığı kişi, burada Stahl'ın tanımladığımız herhangi bir dosyayı içe aktarabilir ve bu bileşendeki
+
+8
+00:00:35,340 --> 00:00:42,450
+öğelere atanabilir ve Stults ve diğer bileşenleri veya uygulamanın diğer bölümlerini geçersiz kılmaz.
+
+9
+00:00:42,450 --> 00:00:43,130
+JSE C
+
+10
+00:00:43,290 --> 00:00:50,520
+S S sınıflarının adlarını paylaşsak bile aslında bu mümkündür ve burada kullandığımız kurulumda aslında mümkündür.
+
+11
+00:00:50,520 --> 00:00:53,040
+SEUS adlı bir özelliği modüller olarak kullanabiliriz.
+
+12
+00:00:53,340 --> 00:00:56,720
+Ve burada seti nasıl kullanacağınızı göstermek istiyorum.
+
+13
+00:00:56,730 --> 00:00:59,450
+Öncelikle radyumdan kurtulun.
+
+14
+00:00:59,520 --> 00:01:02,390
+Yine de, bu modüle eklenmiş indirmek için eski kodu bulabilirsin.
+
+15
+00:01:02,400 --> 00:01:06,580
+Burada kurulmuş olan bu stilden kurtulacağım
+
+16
+00:01:06,700 --> 00:01:13,920
+ve artık gözyaşı atamıyorum ve artık radyumla ihracatımı sarmalamayacağım.
+
+17
+00:01:13,950 --> 00:01:15,760
+Ben de diyaframa aşağıdaki şekilde gideceğim.
+
+18
+00:01:15,840 --> 00:01:18,670
+Radyum ithalatlarımı kaldırın orada uyguladığım uygulamamın etrafında bulunan stil kök sarmalayıcıyı kaldırın.
+
+19
+00:01:18,780 --> 00:01:29,010
+Temel olarak tüm radyum izlerini kaldırmak için ihracatımın sarmalayıcıyı kaldırın ve şimdi fareyle
+
+20
+00:01:29,070 --> 00:01:35,580
+üzerine yazdığım veya nerede ayarladığım kısmı kaldırmam gerekiyor.
+
+21
+00:01:35,580 --> 00:01:40,660
+Çünkü artık radyum olmadan çalışacak.
+
+22
+00:01:40,710 --> 00:01:43,470
+Radyum eklenmeden önce bulunduğumuz dünyaya geri döndük.
+
+23
+00:01:43,470 --> 00:01:47,280
+Şimdi Frue'nun C S S dosyalarını kapsadığı
+
+24
+00:01:47,400 --> 00:01:55,710
+her şeyi ele almak ve bunu yapmak için aslında projemizin cıvata konfigürasyonunu değiştirmemiz gerekiyor.
+
+25
+00:01:55,710 --> 00:01:58,910
+Şimdi dersin başında, DS yeniden aktarılan
+
+26
+00:01:58,920 --> 00:02:06,540
+komut dosyalarını kullandığımızı ve bunun tüm yapı iş akışını bize açıklayan bir paket
+
+27
+00:02:06,600 --> 00:02:14,550
+olduğunu ve düğüm modülleri klasörüne girip bu paketi arayabildiğimiz yapılandırmaya eklendiğinden bahsettik. orada ekledi.
+
+28
+00:02:14,550 --> 00:02:19,030
+Ancak asla yapmamalısınız çünkü
+
+29
+00:02:19,290 --> 00:02:25,530
+NPM'yi yeniden kurduğunuzda değişikliklerin üzerine yazılır.
+
+30
+00:02:25,530 --> 00:02:27,200
+Neyse ki yapılandırma erişimini
+
+31
+00:02:27,210 --> 00:02:34,200
+bize sağlayan bir komut var, ancak her biri NPM'yi çalıştırabiliyor ve temelde dönüştürme nesnesini çalıştırabiliyor.
+
+32
+00:02:34,200 --> 00:02:38,440
+Her şey yönetiliyor.
+
+33
+00:02:38,520 --> 00:02:39,500
+Benim için projeye her şeyin içine yönetiliyor ancak yapılandırma projesini şimdi düzenleyebilirim.
+
+34
+00:02:39,500 --> 00:02:46,590
+Geri dönüş yolu yoktur, ancak kırılmaması gerekir, daha önce yaptığı gibi çalışmaya devam edecektir.
+
+35
+00:02:46,620 --> 00:02:52,330
+Ancak daha sonra bir D yapılandırması ekleyebilirsiniz.
+
+36
+00:02:52,470 --> 00:02:54,710
+Tabii ki bu özenle yapılmalıdır,
+
+37
+00:02:54,720 --> 00:03:00,650
+çünkü bir ara vermenizi istemiyorsunuz, şimdi C-s'nin özelliklerini modüller olarak açmak için birlikte yapacağız.
+
+38
+00:03:00,660 --> 00:03:04,950
+Değişikliklerinizi izlemek için iyiyi kullanıyorsanız bir
+
+39
+00:03:04,950 --> 00:03:13,590
+önemli not, eject komutunu çalıştırmadan önce tüm değişiklikleri eklediğinizden ve tamamladığınızdan emin olun.
+
+40
+00:03:13,740 --> 00:03:15,710
+Aksi takdirde çalışmaz.
+
+41
+00:03:15,720 --> 00:03:17,620
+Bununla terminali açmalısın.
+
+42
+00:03:17,760 --> 00:03:19,770
+Yine bu ID
+
+43
+00:03:19,800 --> 00:03:27,990
+ye entegre olanıdır ve sonra konfigürasyonu çıkarmak için burayı çıkarın.
+
+44
+00:03:27,990 --> 00:03:29,310
+Şimdi bunu yapmak isteyip istemediğimiz soruluyor çünkü kasete geri dönemiyoruz.
+
+45
+00:03:29,310 --> 00:03:33,620
+Niye ya.
+
+46
+00:03:33,630 --> 00:03:34,530
+Ve işimiz bitti.
+
+47
+00:03:34,950 --> 00:03:36,330
+Ve şimdi birdenbire, yeni klasörler, komut dosyaları klasörü ve çakışmayan klasörü görüyoruz.
+
+48
+00:03:36,660 --> 00:03:42,360
+kullanılan bu geliştirme bağımlılıklarını görüyoruz örneğin, iOS 6'yı E.'e derlemekten sorumludur.
+
+49
+00:03:42,540 --> 00:03:48,110
+Şimdi scripts klasörü, paket kamyon kovalamacında sahip olduğumuz her komut için
+
+50
+00:03:48,120 --> 00:03:53,880
+bir tane komut dosyası içeriyor ve bağımlılıkların listesini oldukça fazla sessizleştiğini
+
+51
+00:03:53,880 --> 00:03:59,610
+görmek için sizi düşürüyoruz, şimdi şimdi tüm bunları baba Babel'in altında S. 5.
+
+52
+00:03:59,650 --> 00:04:01,990
+Hiçbir endişe, bu konfigürasyona derinlemesine dalmayacağız.
+
+53
+00:04:02,010 --> 00:04:05,270
+Çimdiklemeyeceğiz.
+
+54
+00:04:05,280 --> 00:04:06,090
+Hâlâ çalışacak.
+
+55
+00:04:06,090 --> 00:04:07,770
+Ancak bizim için çatışma klasöründe ilginç olan WePay ölüm çatışması ve Wepa çatışması.
+
+56
+00:04:07,770 --> 00:04:14,520
+Parata dosyası, Peg'in temelde uygun olduğu paketleme aracını inşa etmektir.
+
+57
+00:04:14,550 --> 00:04:21,060
+Dosyalarımızdaki her türlü dönüştürme ve iyileştirme, bunları bir araya getirir
+
+58
+00:04:21,060 --> 00:04:28,050
+ve bu sürecin bir parçası olarak R C S düşer.
+
+59
+00:04:28,050 --> 00:04:31,920
+Unutmayın ki, bu CSSA'yı ayrıştırabilen web
+
+60
+00:04:32,050 --> 00:04:40,170
+spesifikasyonunun javascript dosyamızı içe aktaracağını söylediler. WePay bu web sitesinin sorumlusu olduğundan, şimdi
+
+61
+00:04:40,240 --> 00:04:49,080
+Cs hatalarını işleme şeklimizi de ayarlayabildiğimiz yerdir ve burada bunun kilidini açabiliriz ekstra özellik.
+
+62
+00:04:49,080 --> 00:04:53,910
+C-s'yi ölü ve web pic çakışma verileri için modüller olarak kullanmaktan bahsediyordum.
+
+63
+00:04:53,910 --> 00:04:59,730
+Def dosyasına gidip modüle, sonra da D noktasını bulabileceğiniz modüle gidiyoruz. C. ritziest için test ettiğiniz
+
+64
+00:04:59,760 --> 00:05:10,280
+burada aşağıdaki gibidir.
+
+65
+00:05:10,280 --> 00:05:14,310
+Burada bu yükleyiciyi kullanmıyoruz ve onu eklemek
+
+66
+00:05:14,390 --> 00:05:19,880
+zorunda değiliz ve bunu eklememeliyiz, ancak burada yükleyicinin seçeneklerini değiştireceğiz.
+
+67
+00:05:19,880 --> 00:05:23,510
+Orada modülleri doğru olarak ayarlayacağım ve bizi yalnızca yükleyiciyi ayrıştıran ve kelimeler diyebilecek bir araç olarak görüyorum.
+
+68
+00:05:24,050 --> 00:05:31,130
+Bizim SPSS özü ve deposu ve onun ithal C-s modülleri olarak.
+
+69
+00:05:31,140 --> 00:05:37,510
+Bir özellikte size saniyede nasıl kullanılacağını göstereceğim.
+
+70
+00:05:37,520 --> 00:05:41,210
+Bu, modüllerin doğru olarak ayarlanmasının bir parçasıdır.
+
+71
+00:05:41,280 --> 00:05:44,780
+Ayrıca, s ve büyük harf büyüklüğüne sahip bir yerel kimlik adı eklemeniz gerekir.
+
+72
+00:05:44,780 --> 00:05:50,400
+için önemli olan aşağıdaki dizeyi eklemelisiniz.
+
+73
+00:05:50,900 --> 00:05:58,100
+Ve şimdi şu cryptic görünebilir ama sonunda stiliniz
+
+74
+00:05:58,400 --> 00:06:00,600
+Sizin siestas sınıflarınız, çünkü
+
+75
+00:06:00,620 --> 00:06:07,280
+sınıflar bileşen başına benzersiz adlar alıyorlar, böylece birbirlerini uygulama genelinde geçersiz kılmıyorlar.
+
+76
+00:06:07,310 --> 00:06:09,460
+Burada köşeli ayraçları kullanmalısınız.
+
+77
+00:06:09,680 --> 00:06:11,840
+Adı temelde senin olacak. c. s sınıf adı altçizgi olarak alt çizgi yerel olarak.
+
+78
+00:06:11,840 --> 00:06:19,250
+Bu, ac yükleyicisinin yerel bir bileşene
+
+79
+00:06:19,250 --> 00:06:26,330
+temel olarak kapsamı atamak üzere atamasını ve daha sonra köşeli ayraçların altını çizerek daha fazla köşeli ayraçları
+
+80
+00:06:26,330 --> 00:06:35,570
+karma kolon tabanını belirtir. 64 5 temel olarak genelinde stillerinin üzerine yazmadığınızdan emin olmak için benzersiz bir karma değer verir. uygulama.
+
+81
+00:06:35,570 --> 00:06:39,620
+Şimdi, sadece burada kurulan kopyalanmış ve çatışma Propofol gidin veya Conficker Prot almak seçin.
+
+82
+00:06:40,680 --> 00:06:49,260
+Orada da C S S yükleyicisi araması yapmalısınız.
+
+83
+00:06:49,350 --> 00:06:52,770
+Ve burada biraz farklı göründüğünü
+
+84
+00:06:53,680 --> 00:07:00,050
+ve en aza indirgemek ve Cirus haritasını geçersiz kılmadığını göreceksiniz.
+
+85
+00:07:00,080 --> 00:07:00,750
+Ancak her şeyi
+
+86
+00:07:00,840 --> 00:07:05,650
+dosyadan kopyaladığımdan beri Lowder's ithalinin üzerine yazacağım, çünkü bu Afrika entegrasyonunun bir parçasıydı ve temel olarak monohull'leri true ve yerel ident adımı ekledi.
+
+87
+00:07:05,650 --> 00:07:10,900
+olarak göreceğiz, çünkü gerçek bir sunucuda kodu gönderirken bu özelliği
+
+88
+00:07:11,020 --> 00:07:17,460
+kaybetmek istemiyoruz, bu da her iki çakışma dosyasının kaydedildiğinden ve çekinmeden onları kapatın.
+
+89
+00:07:17,590 --> 00:07:23,530
+Dolayısıyla hem gelişme iş akışımız hem de üretim iş akışımız için modüller
+
+90
+00:07:23,530 --> 00:07:27,180
+Düzenlememiz gereken her şey budur ve
+
+91
+00:07:27,220 --> 00:07:33,470
+burada ayarlarınızı bozabileceğiniz başka bir şey düzenlemeye dikkat edin.
+
+92
+00:07:33,480 --> 00:07:34,270
+APS-C SS'yi
+
+93
+00:07:35,430 --> 00:07:45,030
+içe aktardığımızda önemli bir şey değişti Şu anda aslında bu CSA'daki sınıflar olarak DC'yi kapsayacak ve Chiasson'un Exxon-Mobile uygulamasına içe aktardığımız bu bileşene düşecek.
+
+94
+00:07:45,090 --> 00:07:52,280
+Bu yüzden eğer burada kırmızı ve cesur bir uygulama varsa, şimdi bunları C S S sonbaharından içe aktarabiliriz.
+
+95
+00:07:52,290 --> 00:08:00,920
+Bu ithalat beyannamesinin APS-C SS'den ithal edilen tüm
+
+96
+00:08:00,960 --> 00:08:08,340
+Klaas'lar için çimdiklenmesi gerekiyor, isminiz size aittir.
+
+97
+00:08:08,340 --> 00:08:08,610
+İstediğiniz her şeyi Stout olarak adlandırabilirsiniz.
+
+98
+00:08:08,610 --> 00:08:10,820
+OPIC sınıfları, nesne nesnesi olacak sınıflara özellik olarak DS C içeren bir javascript nesnesi olacağı için.
+
+99
+00:08:10,820 --> 00:08:20,800
+Sihir gibi geliyor.
+
+100
+00:08:20,820 --> 00:08:22,380
+Bu tür ama sihirli
+
+101
+00:08:22,410 --> 00:08:30,180
+CS s yükleyicisi tarafından yapılan her şey temel olarak CS dosyamızdaki C S S kodunu javascript dosyasında kullanabileceğimiz bir nesneye dönüştüren sihirdir.
+
+102
+00:08:30,270 --> 00:08:38,090
+Şimdi de bu muazzam mülkümüz var.
+
+103
+00:08:38,110 --> 00:08:40,580
+Bu, sınıf ismi gibi
+
+104
+00:08:40,590 --> 00:08:49,800
+bir sınıfı kullandığımız yere gitmemize izin veriyor ve artık burada bir dizge atamamıza izin veriyor.
+
+105
+00:08:49,800 --> 00:08:50,940
+Ancak, içe aktardığınız sınıflar nesnesine ve bunların uygulamalarına ulaşın.
+
+106
+00:08:51,240 --> 00:08:57,750
+Sadece app adlı bir mülk.
+
+107
+00:08:57,750 --> 00:08:59,930
+Bu, bu sınıfa atıfta bulunacak ve onu ve stillerini fark ettirmek için uygulayacaktır.
+
+108
+00:09:00,050 --> 00:09:05,570
+Yani daha önce hiç yapmamıştım.
+
+109
+00:09:05,610 --> 00:09:07,260
+Ancak şimdi perde arkasında tamamen farklı bir teknik kullanıyor.
+
+110
+00:09:07,320 --> 00:09:11,290
+Şimdi D. C. elbette yükleyici olarak burada gerçek bir büyü yapmaz.
+
+111
+00:09:11,520 --> 00:09:16,160
+Bunun yerine burada olan şey D. C. 'ın yükleyici D.'yi dönüştürür. C. 's sınıfı adı.
+
+112
+00:09:16,170 --> 00:09:22,800
+Cs oluşturmak için.
+
+113
+00:09:22,800 --> 00:09:31,050
+CSS'yi, WePay çatışma dosyasında ayarladığımız yerel kimlik adı desenini kullanarak benzersiz bir koda düşürdük, burada sınıf ismini javascript dosyasının
+
+114
+00:09:31,080 --> 00:09:38,330
+dosya adını bulmak için alıyor ya da sınıfı ve bazı rastgele karmayı içe aktarıyorsunuz benzersiz bir
+
+115
+00:09:38,330 --> 00:09:42,720
+Son adı sor ve sonra yalnızca ithal ettiğin bu
+
+116
+00:09:42,720 --> 00:09:49,470
+javascript nesnesinde oluşturulan tüm benzersiz sınıf adlarını depolar ve mülk adlarının bulunduğu mülklerde saklar.
+
+117
+00:09:49,530 --> 00:09:54,760
+Özgün C'nizi sınıf isimleri olarak kullanın, böylece burada Klaas'ın uygulaması
+
+118
+00:09:54,770 --> 00:10:01,470
+gibi bu özelliklerin değerleri yalnızca C tarafından yükleyici olarak üretilen benzersiz sınıf isimleridir.
+
+119
+00:10:01,470 --> 00:10:05,220
+dizilimimize katılıyoruz, orada birleşim sözdizimi
+
+120
+00:10:05,370 --> 00:10:11,660
+var ancak artık sınıfları okumaya zorlayan dizeleri zorlamıyoruz.
+
+121
+00:10:11,660 --> 00:10:20,690
+Sahnelerin arkasında böyle çalışır, tabii ki hepimiz sınıflarımızı ayarlamamız gerekiyor, burada
+
+122
+00:10:20,690 --> 00:10:22,610
+Ve sınıflar olarak değil
+
+123
+00:10:23,000 --> 00:10:28,970
+dizeler olarak sınıflara sahip olmakla birlikte yine APS-C SS'den ithal ettiğimiz sınıf nesneleri
+
+124
+00:10:28,970 --> 00:10:36,800
+gibi A C'ye atıfta bulunan sınıflar var. Bu ithalat ifadesini SEUS'u modüller olarak açtığımız gerçeğinden dolayı kullanabiliriz.
+
+125
+00:10:36,890 --> 00:10:40,940
+Şimdi burada bir isim sorunu var çünkü sabit sınıf sınıflarımız var.
+
+126
+00:10:42,320 --> 00:10:47,510
+Bu yüzden bu iki atanmış sınıfları adlandıracağım ve burada tüm kullanışların yerini alacağım.
+
+127
+00:10:47,720 --> 00:10:55,070
+Ayrıca buradaki mülkiyetin açıklanmasının yalnızca gerçekten
+
+128
+00:10:55,080 --> 00:11:02,530
+ithal edeceğim sınıfları belirttiği için onu kullanıyorum.
+
+129
+00:11:02,540 --> 00:11:03,330
+Aynı burada ve burada.
+
+130
+00:11:03,410 --> 00:11:05,770
+Kaydetmeyelim, uygulamayı tekrar yüklersek hala çalışıp çalışmayacağını görelim.
+
+131
+00:11:06,290 --> 00:11:10,760
+İşe yaramıyor gibi görünüyor.
+
+132
+00:11:10,760 --> 00:11:12,380
+Bugün bu sınıfa gelmezsek başvurumuzu inceleyeceğiz.
+
+133
+00:11:12,380 --> 00:11:17,950
+Bunun nedeni, geliştirme sunucumuzun hiçbir zaman başlatılmadığımız,
+
+134
+00:11:17,990 --> 00:11:23,780
+ancak yaptığımız gibi yapılandırmayı değiştirdiysek bunu yapmak zorundayız.
+
+135
+00:11:23,780 --> 00:11:26,180
+Yani terminal penceresinde bu işlem nerede
+
+136
+00:11:26,210 --> 00:11:31,790
+çalışıyor ve basitçe daha önce olduğu gibi NPM başlatma işlemini durdurmak zorunda kalıyoruz.
+
+137
+00:11:31,880 --> 00:11:34,460
+Bu işe yaramalı ama şimdi bu
+
+138
+00:11:34,460 --> 00:11:40,150
+yeni konfigürasyonu hesaba katacak ve bu sayfayı yeniden başlattıktan sonra yeniden yükleyecektir.
+
+139
+00:11:40,220 --> 00:11:41,990
+Şimdi bir hata
+
+140
+00:11:42,020 --> 00:11:49,040
+edindik çünkü konfigürasyonda bir hata yapmış olmalı 64 olmalıydı sanırım dedim ama yanlış yazmıştım.
+
+141
+00:11:49,040 --> 00:11:50,080
+Taban 64 değil 65.
+
+142
+00:11:50,090 --> 00:11:52,710
+Ayrıca proj yapılandırmasında, her iki çakışmayı
+
+143
+00:11:52,940 --> 00:11:59,990
+da çalıştırdığınız terminale geri döndürürsünüz ve kullanıcılar süreci başlatır ve yeniden başlatırız çünkü kurulumu yeniden değiştirdik.
+
+144
+00:11:59,990 --> 00:12:05,290
+Ve şimdi bu hata bir kez daha yeniden yüklenelim sabit.
+
+145
+00:12:05,660 --> 00:12:09,190
+Artık eski stillerin uygulandığını görüyorsunuz.
+
+146
+00:12:09,350 --> 00:12:12,850
+Güncellemeyi de içeren dördüncü bölümdeki tüm
+
+147
+00:12:12,930 --> 00:12:20,220
+tezgahları bir paragraf olarak ileri sürüyoruz ancak insanlar için tezgahlar kayboluyor.
+
+148
+00:12:20,220 --> 00:12:21,540
+Artık kart gibi görünmüyorlar.
+
+149
+00:12:21,540 --> 00:12:23,630
+Şimdi bu normal çünkü bu bileşeni henüz ayarlamadık.
+
+150
+00:12:23,790 --> 00:12:26,870
+Burada bizim için önemli olan bu stil, bütün ölüme verdiğimiz çalışmadır.
+
+151
+00:12:27,030 --> 00:12:32,110
+Ve o tuhaf ismi temelde benzersiz bir
+
+152
+00:12:32,250 --> 00:12:38,340
+isim olarak görüyorsunuz, çünkü tarayıcıda hala çalışıyor c.
+
+153
+00:12:38,340 --> 00:12:39,270
+Ancak, otomatik
+
+154
+00:12:39,270 --> 00:12:46,230
+olarak oluşturulan benzersiz adları vererek bu sınıfın yalnızca bu sınıfı vardır ve uygulamanın herhangi bir yerindeki bu
+
+155
+00:12:46,230 --> 00:12:55,050
+uygulama Seer'ın sınıfı olarak yeniden kullanılması durumunda olsanız bile, aynı Stolley'i elde etmemize izin veriyoruz, çünkü Stomley'i içe aktardığımız bileşene kapsarız.
+
+156
+00:12:55,050 --> 00:12:58,870
+Bu yüzden hepsi çalışıyor.
+
+157
+00:12:59,340 --> 00:13:00,620
+Ve gördüğün gibi, diziye sokacağımız kırmızı ve cesur sınıf için de işe yarıyor.
+
+158
+00:13:00,930 --> 00:13:06,010
+Fakat şimdi buna mülk olarak erişerek kişi
+
+159
+00:13:06,030 --> 00:13:12,600
+kırıldı çünkü hala böyle bir insanı ithal ediyoruz.
+
+160
+00:13:12,600 --> 00:13:13,110
+Ve bu açıkça artık işe yaramıyor.
+
+161
+00:13:13,140 --> 00:13:15,000
+Klaas'ı oradaki insanlardan ya da beğendiğiniz diğer isimlerden almalısınız ve şimdi böyle bir isim atayın.
+
+162
+00:13:15,240 --> 00:13:21,710
+Yani kişi bir tel olarak değil ama sadece Klaas'ın nokta üyesi olarak kullanılıyor.
+
+163
+00:13:21,720 --> 00:13:28,640
+Mülkünüzden sizin adınız var.
+
+164
+00:13:28,650 --> 00:13:32,850
+Ve şimdi gördüğün gibi, kart takımımızla eski gruba geri döndük.
+
+165
+00:13:32,850 --> 00:13:39,830
+Şimdi nihayet medya sorgulamasını yapalım ve bir sonraki derste bunu
+
+166
+00:13:39,980 --> 00:13:46,710
+yapacağımız C S S modülleri ile işi çok fazla düzeltmeliyiz.
+
+167
+00:13:46,890 --> 00:13:47,850
+&nbsp;

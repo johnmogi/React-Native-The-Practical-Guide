@@ -1,0 +1,267 @@
+1
+00:00:02,200 --> 00:00:05,460
+Así que comencemos sin poner esto como una lista real.
+
+2
+00:00:05,620 --> 00:00:11,510
+Si echamos un vistazo, obtenemos elementos gratuitos en la matriz de esta persona en nuestro estado.
+
+3
+00:00:11,560 --> 00:00:17,000
+Ahora de nuevo en Auburn o frameworks que tal vez sepas si no es así, no hay problema.
+
+4
+00:00:17,050 --> 00:00:18,530
+Es diferente aquí de todos modos.
+
+5
+00:00:18,650 --> 00:00:26,920
+En otros marcos como en ti, tendrías una directiva anterior o una Engy angular por ahora, en la que no
+
+6
+00:00:26,920 --> 00:00:28,900
+tienes eso porque adivina qué.
+
+7
+00:00:29,120 --> 00:00:31,760
+Todo es javascript aquí mientras aprendiste.
+
+8
+00:00:32,170 --> 00:00:39,760
+con el contenido condicional que aquí manejamos con javascript normal, también manejamos las listas con las herramientas predeterminadas.
+
+9
+00:00:39,760 --> 00:00:40,950
+Al igual que
+
+10
+00:00:40,990 --> 00:00:45,240
+Javascript nos da para trabajar con listas.
+
+11
+00:00:45,340 --> 00:00:47,070
+¿Cómo se vería esto?
+
+12
+00:00:47,140 --> 00:00:55,820
+En nuestro caso, aquí, donde tenemos el bien de la persona, volveríamos a usar llaves para ofrecer algo dinámico
+
+13
+00:00:55,820 --> 00:00:58,400
+dentro de nuestro código GSX.
+
+14
+00:00:58,760 --> 00:01:07,220
+Y luego queremos renderizar a nuestro conjunto de personas en el estado, de modo que este estado haga referencia
+
+15
+00:01:07,220 --> 00:01:09,170
+simplemente a este conjunto.
+
+16
+00:01:09,170 --> 00:01:10,860
+Ahora esto solo no hará el truco.
+
+17
+00:01:10,940 --> 00:01:15,190
+Esa es una matriz de objetos javascript, no es algo a lo que podamos codificar palabras.
+
+18
+00:01:15,260 --> 00:01:18,780
+Tim L no algo que volvería a entender lo entendería aquí.
+
+19
+00:01:19,130 --> 00:01:24,930
+Entonces, necesitamos palabras amables esta serie de javascript que no es válida.
+
+20
+00:01:24,950 --> 00:01:25,460
+J.
+
+21
+00:01:25,480 --> 00:01:34,310
+X 2 valid J us X y Javascript vanilla javascript nos ofrece una función para convertir matrices.
+
+22
+00:01:34,520 --> 00:01:42,500
+Es el mapa de función del mapa simplemente asigna cada elemento de una matriz determinada, como nuestra matriz de
+
+23
+00:01:42,980 --> 00:01:45,070
+personas aquí en otra cosa.
+
+24
+00:01:45,320 --> 00:01:50,720
+Lo hace al ejecutar un método en cada elemento de una matriz determinada.
+
+25
+00:01:50,720 --> 00:01:58,410
+Entonces, en este conjunto, en este caso, este método o esta función se pasa al método del mapa aquí.
+
+26
+00:01:58,820 --> 00:02:02,040
+Toma el elemento de la matriz como entrada.
+
+27
+00:02:02,060 --> 00:02:05,950
+Entonces, una sola persona, el nombre de este argumento depende totalmente de usted.
+
+28
+00:02:05,960 --> 00:02:11,580
+Estoy escribiendo una función anónima aquí y estoy escribiendo una función de flecha aquí.
+
+29
+00:02:11,750 --> 00:02:18,590
+Entonces, esta es una función de 6 flechas que paso al método de mapa puede parecer extraña,
+
+30
+00:02:18,590 --> 00:02:25,070
+pero en realidad es vainilla javascript ESX, pero javascript no J es X nada de eso.
+
+31
+00:02:25,100 --> 00:02:28,070
+Es por eso que está dentro de llaves individuales.
+
+32
+00:02:28,670 --> 00:02:36,110
+personas y Javascript automáticamente proporciona cada elemento como una entrada a esa función que ejecutamos en cada elemento.
+
+33
+00:02:36,170 --> 00:02:43,250
+Así que esta función que paso como una función anónima al método de mapa se ejecuta en cada
+
+34
+00:02:43,340 --> 00:02:45,310
+elemento de la matriz de
+
+35
+00:02:45,320 --> 00:02:47,250
+Entonces en este caso es nuestra persona.
+
+36
+00:02:47,270 --> 00:02:53,180
+Nuevamente puedes nombrar lo que quieras pero dado que es una variedad de personas, la persona probablemente tenga sentido.
+
+37
+00:02:53,570 --> 00:02:55,670
+Y ahora tienes que devolver algo.
+
+38
+00:02:55,910 --> 00:03:01,010
+Debes devolver en qué quieres asignar este objeto.
+
+39
+00:03:01,010 --> 00:03:03,850
+Entonces tenemos una variedad de objetos y personas javascript.
+
+40
+00:03:03,870 --> 00:03:05,080
+Tu único objeto.
+
+41
+00:03:05,090 --> 00:03:10,530
+Dos objetos tres objetos y queremos convertir esto en algo más.
+
+42
+00:03:10,580 --> 00:03:15,830
+El método de mapa que estamos usando aquí convenientemente simplemente devuelve una nueva matriz.
+
+43
+00:03:16,010 --> 00:03:24,290
+Y como acabo de imprimir esta nueva matriz como esta dentro de GSX reaccionamos, básicamente intentaremos tomar los
+
+44
+00:03:24,290 --> 00:03:28,700
+elementos individuales de esta nueva matriz y renderizarlos a Dom.
+
+45
+00:03:28,850 --> 00:03:31,490
+Si son válidos J us x.
+
+46
+00:03:31,520 --> 00:03:38,270
+Así que nuestro objetivo simplemente es devolver Ceria X aquí para que cada elemento de la matriz de la persona se
+
+47
+00:03:38,390 --> 00:03:41,230
+mapee en una j como lo hizo x representante.
+
+48
+00:03:41,540 --> 00:03:49,940
+objeto javascript puede representarse como un componente de persona y mi proyecto aquí, y luego simplemente le asignamos un nombre nuevamente.
+
+49
+00:03:49,940 --> 00:03:56,330
+Así que aquí quiero asignarlo a un componente de persona al final porque cada persona, el
+
+50
+00:03:56,480 --> 00:03:59,950
+Y aquí podemos usar a la persona que recibimos como entrada.
+
+51
+00:04:00,080 --> 00:04:07,730
+Entonces el elemento individual para el cual se ejecuta la disfunción y ahí obtuvimos la propiedad de nombre al mismo
+
+52
+00:04:07,730 --> 00:04:15,200
+tiempo para la edad en que ahora puede x edad dividir en varias líneas para que sea más fácil
+
+53
+00:04:15,200 --> 00:04:15,930
+de leer.
+
+54
+00:04:16,160 --> 00:04:18,460
+Y eso es realmente.
+
+55
+00:04:18,560 --> 00:04:25,410
+Con eso puedo deshacerme de todas las demás personas y las eliminaré por ahora simplemente.
+
+56
+00:04:25,520 --> 00:04:33,290
+una lista de personas haciendo clic en ellas y cambiar el nombre no funcionará por el momento, ya que se eliminarán y los manejadores las agregarán pronto.
+
+57
+00:04:33,290 --> 00:04:37,040
+Y ahora, a lo que esto conducirá es a que aún se imprimirá
+
+58
+00:04:37,820 --> 00:04:44,990
+Y se trata simplemente de pluviós mapeando esta matriz de Javascript en una gran javascript, pero una matriz con
+
+59
+00:04:45,050 --> 00:04:51,820
+objetos GSX dentro de ella, que volverá a actuar se extraerá automáticamente y se presentará en la pantalla.
+
+60
+00:04:52,190 --> 00:04:59,460
+Guardemos el archivo y veamos el resultado si hablo de mis bolsos aquí vemos todos los bolsos.
+
+61
+00:04:59,780 --> 00:05:06,460
+También recibimos una nueva advertencia además de la que ya sabemos que deberíamos asignar una propiedad clave.
+
+62
+00:05:06,550 --> 00:05:08,560
+No, definitivamente volveré a eso.
+
+63
+00:05:08,570 --> 00:05:10,050
+Eso es súper importante.
+
+64
+00:05:10,070 --> 00:05:13,710
+Sin embargo, ya podemos ver que básicamente está funcionando.
+
+65
+00:05:13,760 --> 00:05:19,910
+Está renderizando esta lista de elementos asignando nuestra matriz a otra cosa.
+
+66
+00:05:19,910 --> 00:05:25,610
+Ahora profundicemos en esta lista y aprendamos qué pasa con esa clave y cómo podemos reaccionar a
+
+67
+00:05:25,610 --> 00:05:30,390
+los cambios en nuestra matriz y cómo podemos cambiarla utilizando nuestros oyentes de eventos.

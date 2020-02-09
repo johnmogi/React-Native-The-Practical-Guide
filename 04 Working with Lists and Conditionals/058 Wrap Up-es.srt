@@ -1,0 +1,79 @@
+1
+00:00:02,340 --> 00:00:08,800
+En este módulo aprendemos mucho sobre la salida condicional de contenido y listas de salida.
+
+2
+00:00:08,850 --> 00:00:12,740
+Y solo quiero resumir brevemente como antes, te envío a la tarea.
+
+3
+00:00:12,740 --> 00:00:18,360
+Te permite practicar eso porque es muy importante hacerlo bien y entenderlo.
+
+4
+00:00:18,420 --> 00:00:27,630
+Aprendimos dos cosas importantes que debemos dar salida al contenido de forma condicional mediante el uso de JavaScript y lo
+
+5
+00:00:27,630 --> 00:00:29,220
+mismo para las listas.
+
+6
+00:00:29,220 --> 00:00:32,910
+Todo es javascript clave para llevar.
+
+7
+00:00:33,120 --> 00:00:41,280
+ternarias como aprendió, pero un mejor enfoque es simplemente crear variables que genere en su GSX que devuelve
+
+8
+00:00:41,280 --> 00:00:48,680
+al final y con las que está solo si las declaraciones si desea representar algo condicionalmente.
+
+9
+00:00:48,690 --> 00:00:51,240
+A continuación, puede hacerlo con expresiones
+
+10
+00:00:51,810 --> 00:00:56,700
+Y si quiere devolver o presentar una lista, ¿usa el operador de mapa?
+
+11
+00:00:56,790 --> 00:01:03,600
+Un método predeterminado de javascript que puede usar en arreglos para mapear su conjunto de objetos o cadenas de javascript
+
+12
+00:01:03,630 --> 00:01:10,890
+o lo que se encuentre dentro de una matriz de elementos JS X y volver a actuar, luego extraerá estos elementos
+
+13
+00:01:10,980 --> 00:01:13,710
+y los renderizará en la pantalla por usted.
+
+14
+00:01:13,830 --> 00:01:19,860
+si lo necesita, por ejemplo, para eliminar un elemento que debe agregar es la clave para retener
+
+15
+00:01:20,220 --> 00:01:26,820
+la acción y actualizarlo de manera eficiente. tenga un par de herramientas como puede ver aquí para actualizar el
+
+16
+00:01:26,820 --> 00:01:33,420
+nombre y ejecutar realmente el código en el elemento de una lista en la que realmente sucede algo.
+
+17
+00:01:33,450 --> 00:01:42,180
+También aprendió que el mapa le proporciona no solo el elemento para el que está ejecutando actualmente esta función, sino que también sale del índice
+
+18
+00:01:42,300 --> 00:01:47,530
+Aquí aprendes muchas cosas útiles, pero la mejor manera, como siempre, es simplemente practicarlo.
+
+19
+00:01:47,550 --> 00:01:52,680
+Pasemos a una tarea para que pueda poner en práctica todo lo que acaba
+
+20
+00:01:52,920 --> 00:01:53,860
+de aprender.

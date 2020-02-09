@@ -1,0 +1,367 @@
+1
+00:00:02,140 --> 00:00:08,560
+In the last lecture you learn how to set styles dynamically. In the end, you learned you simply use javascript
+
+2
+00:00:08,560 --> 00:00:13,080
+to manipulate whatever you then bind to that style property.
+
+3
+00:00:13,450 --> 00:00:19,230
+Now class name of course also can be set dynamically, like here for the app
+
+4
+00:00:19,480 --> 00:00:25,720
+but we can also introduce a new class to have something to play around. So we could for example say that
+
+5
+00:00:25,870 --> 00:00:28,800
+we want to change something in our code here.
+
+6
+00:00:28,930 --> 00:00:39,640
+Let's say this paragraph here, this is really working depending on whether our list of persons has three
+
+7
+00:00:39,640 --> 00:00:43,740
+elements as it does have at the beginning or less.
+
+8
+00:00:43,810 --> 00:00:46,290
+So maybe we want to color the text red
+
+9
+00:00:46,330 --> 00:00:53,440
+so I will add a new class which I'll name Red, normal css class reset to color red and
+
+10
+00:00:53,440 --> 00:01:00,730
+this will of course affect the text color, and maybe we even want to make it bold so I'll name a class, I'll
+
+11
+00:01:00,730 --> 00:01:02,010
+create a class named bold,
+
+12
+00:01:02,010 --> 00:01:07,870
+the name is up to you if we are at one element left so font-weight bold.
+
+13
+00:01:07,990 --> 00:01:09,920
+I get two new css classes,
+
+14
+00:01:09,940 --> 00:01:11,850
+these are available globally
+
+15
+00:01:11,950 --> 00:01:13,990
+but right now I'm not using any.
+
+16
+00:01:14,260 --> 00:01:21,430
+I now want to set the class name of this paragraph dynamically depending on the length of the elements
+
+17
+00:01:21,760 --> 00:01:32,170
+in my person's array here, below 2 or 2 or less elements I should say turn it red, 1 and less red and
+
+18
+00:01:32,170 --> 00:01:33,020
+bold.
+
+19
+00:01:33,400 --> 00:01:44,140
+So to do that, I of course also need to adjust the classes or the class name I set to this paragraph dynamically.
+
+20
+00:01:44,230 --> 00:01:50,950
+So what I'll do is I'll create a new variable here which I'll name classes and the name is totally up
+
+21
+00:01:50,950 --> 00:01:51,800
+to you,
+
+22
+00:01:52,030 --> 00:01:55,850
+where I in the end will create an array of strings.
+
+23
+00:01:55,870 --> 00:01:58,990
+This is one way of doing that, here
+
+24
+00:01:59,020 --> 00:02:05,340
+I will add red and bold and these are just the class names I defined here,
+
+25
+00:02:05,340 --> 00:02:07,660
+red and bold without the dot,
+
+26
+00:02:07,810 --> 00:02:09,170
+just the class name.
+
+27
+00:02:09,280 --> 00:02:15,820
+I will then call join here and join them with an empty space,
+
+28
+00:02:15,820 --> 00:02:22,790
+this will turn this array of strings into one string which is in the end just red bold,
+
+29
+00:02:22,810 --> 00:02:25,050
+this is what we'll get in the end.
+
+30
+00:02:25,050 --> 00:02:30,200
+This is a valid css class list we can assign to class names.
+
+31
+00:02:30,340 --> 00:02:35,530
+And of course I could've create it this manually but I will soon edit this array dynamically which is why
+
+32
+00:02:35,530 --> 00:02:37,670
+I want to have a generic solution.
+
+33
+00:02:37,930 --> 00:02:41,210
+I can now go to this paragraph and add class name
+
+34
+00:02:41,380 --> 00:02:45,340
+and of course I don't have to bind this to a string as I do here.
+
+35
+00:02:45,370 --> 00:02:51,640
+I can also bind this dynamically with single curly braces to the classes variable I have which keep in
+
+36
+00:02:51,640 --> 00:02:56,400
+mind is just a string joined with an empty space.
+
+37
+00:02:56,470 --> 00:03:01,620
+If I now save this and make sure you also saved the app.css file,
+
+38
+00:03:01,630 --> 00:03:05,100
+now let's go back to the application and it's red and bold,
+
+39
+00:03:05,230 --> 00:03:08,670
+right from the start without us touching any persons
+
+40
+00:03:08,740 --> 00:03:10,800
+that sounds a bit weird but you know what I mean.
+
+41
+00:03:10,810 --> 00:03:15,280
+So it's red right from the start because we've always assigned these classes.
+
+42
+00:03:15,310 --> 00:03:19,290
+Now we can add some dynamic nature to that,
+
+43
+00:03:19,330 --> 00:03:24,450
+we only want to do that if it's less than one person, otherwise should be red.
+
+44
+00:03:24,460 --> 00:03:30,730
+If it's less than 2 or less and equal actually and if we have all three persons, none of these classes
+
+45
+00:03:30,850 --> 00:03:32,440
+should be attached.
+
+46
+00:03:32,440 --> 00:03:37,600
+So let me actually do something else, I'll remove the join statement here and set classes to an empty
+
+47
+00:03:37,600 --> 00:03:38,200
+array
+
+48
+00:03:38,710 --> 00:03:43,660
+and then I will simply add an if statement here
+
+49
+00:03:43,990 --> 00:03:51,930
+and if this.state.persons.length is smaller or equal than 2,
+
+50
+00:03:51,960 --> 00:03:54,040
+So only two or less persons left,
+
+51
+00:03:54,040 --> 00:04:01,990
+I will take classes, this variable and actually let is just ES6 version of var
+
+52
+00:04:02,000 --> 00:04:05,750
+but we can use const here because I'm never assigning a new value.
+
+53
+00:04:06,000 --> 00:04:15,270
+So if this is less than two, I will call push, the normal javascript push method to push the red class
+
+54
+00:04:15,340 --> 00:04:16,510
+onto this array.
+
+55
+00:04:16,800 --> 00:04:22,750
+So at this point of time, classes will be red like this.
+
+56
+00:04:22,790 --> 00:04:25,680
+I also will add another if check where
+
+57
+00:04:25,880 --> 00:04:32,760
+I will say if state.persons.length is smaller or equal than one
+
+58
+00:04:32,940 --> 00:04:36,090
+and please note, this is no else if condition,
+
+59
+00:04:36,090 --> 00:04:41,460
+it's just another if statement or if check coming after the first one because I want to run both.
+
+60
+00:04:41,550 --> 00:04:48,360
+So if it's even smaller or equal than one, then I will reach out to classes again and push another class,
+
+61
+00:04:48,840 --> 00:04:50,290
+the bold class,
+
+62
+00:04:50,610 --> 00:04:57,590
+so at this point of time classes is red and it's also bold.
+
+63
+00:04:57,620 --> 00:05:04,400
+Now if we have only two elements in the persons array, we will just have red and we will skip this because
+
+64
+00:05:04,790 --> 00:05:08,000
+this condition here will be false.
+
+65
+00:05:08,000 --> 00:05:13,450
+Now we've got an array of classes which might look like this or like this or be an empty array
+
+66
+00:05:13,520 --> 00:05:20,680
+if we have all three elements. So I want to assign it here and classes like this won't work anymore because
+
+67
+00:05:20,680 --> 00:05:21,530
+now it's an array,
+
+68
+00:05:21,550 --> 00:05:23,720
+we need to pass a string here though.
+
+69
+00:05:24,100 --> 00:05:28,470
+Well I can simply call join with an empty space in between,
+
+70
+00:05:28,480 --> 00:05:34,000
+so a whitespace character on classes here when I assign it, I could of course also do this prior to
+
+71
+00:05:34,000 --> 00:05:36,520
+this and store it in a new variable.
+
+72
+00:05:36,650 --> 00:05:43,780
+With that, I'm now assigning a string which is simply my joined array, either nothing, either just red
+
+73
+00:05:43,990 --> 00:05:47,050
+or red and bold with a white space in between.
+
+74
+00:05:47,500 --> 00:05:51,670
+And now with that let me save this and go back, if it now reloads,
+
+75
+00:05:51,760 --> 00:05:54,100
+it's a black text by default.
+
+76
+00:05:54,100 --> 00:05:57,030
+Now let's toggle the persons and let's remove one,
+
+77
+00:05:57,190 --> 00:05:59,410
+now it's red but not bold.
+
+78
+00:05:59,440 --> 00:06:02,750
+If I remove another one now it's also bold
+
+79
+00:06:03,010 --> 00:06:09,370
+and now if I've removed a third one it stays like this obviously. This is showing how you can also dynamically
+
+80
+00:06:09,430 --> 00:06:11,540
+edit and assign classes
+
+81
+00:06:11,710 --> 00:06:13,960
+and I can't emphasize it enough,
+
+82
+00:06:14,260 --> 00:06:16,310
+everything is just javascript.
+
+83
+00:06:16,330 --> 00:06:21,940
+So you work with your array of classes here as you do with a normal array because it is a normal array
+
+84
+00:06:22,060 --> 00:06:27,760
+in normal javascript and all you do in the end here is you have to make sure that you actually assign
+
+85
+00:06:27,760 --> 00:06:31,080
+a string as we do here with the join method.
+
+86
+00:06:31,450 --> 00:06:39,040
+And of course you could have whatever logic you need to construct an array of classes or get a string
+
+87
+00:06:39,040 --> 00:06:44,110
+with css classes by other means without joining an array, whatever you have.
+
+88
+00:06:44,170 --> 00:06:47,410
+Maybe take some user input which is a string by default,
+
+89
+00:06:47,410 --> 00:06:53,410
+you can assign anything which is a valid string to class name and it will then be handled as a list
+
+90
+00:06:53,440 --> 00:07:00,220
+of css classes which hopefully meet the classes you set up in your css file.
+
+91
+00:07:00,220 --> 00:07:05,760
+So with that you learned how to dynamically assign styles, edit them and dynamically assign and
+
+92
+00:07:05,770 --> 00:07:07,060
+edit classes.

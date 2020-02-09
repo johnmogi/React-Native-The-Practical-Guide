@@ -1,0 +1,123 @@
+1
+00:00:02,250 --> 00:00:08,020
+Ora imparerai come leggere e capire i messaggi freccia e come trovare errori logici.
+
+2
+00:00:08,100 --> 00:00:13,860
+A volte vuoi conoscere lo stato attuale della tua app per reattori e mentre potresti essere in
+
+3
+00:00:13,860 --> 00:00:17,500
+grado di capirlo con gli strumenti di sviluppo, può essere sconveniente.
+
+4
+00:00:17,970 --> 00:00:24,120
+Per fortuna c'è un'estensione interessante che puoi aggiungere agli strumenti per sviluppatori di re-act di Chrome.
+
+5
+00:00:24,120 --> 00:00:25,730
+Installiamolo insieme
+
+6
+00:00:25,950 --> 00:00:32,760
+Puoi google per riattivare gli strumenti per sviluppatori e troverai il repository get up in cui puoi imparare di
+
+7
+00:00:32,760 --> 00:00:38,700
+più su come utilizzarli e puoi persino contribuire al progetto o hai avuto diritto allo store di
+
+8
+00:00:38,700 --> 00:00:39,610
+Chrome Web.
+
+9
+00:00:39,630 --> 00:00:39,890
+No.
+
+10
+00:00:39,900 --> 00:00:40,400
+Nessun problema.
+
+11
+00:00:40,400 --> 00:00:42,930
+Questi sono gratuiti nel negozio web.
+
+12
+00:00:42,930 --> 00:00:48,630
+Li ho già aggiunti a Chrome ma puoi fare clic su aggiungi a Chrome se non lo hai fatto.
+
+13
+00:00:48,630 --> 00:00:54,960
+Una volta che li hai modificati, probabilmente devi riavviare a Roma e loro cercano gli strumenti di sviluppo di Chrome.
+
+14
+00:00:54,960 --> 00:00:59,210
+È possibile scegliere di recitare questa nuova scheda dovrebbe essere un.
+
+15
+00:00:59,220 --> 00:01:06,810
+Ora c'è una cosa interessante ora che vedi la tua app di re-act mentre la hai creata.
+
+16
+00:01:06,870 --> 00:01:12,330
+gli elementi DOM che vedi i tuoi componenti come il componente persona qui o il componente app.
+
+17
+00:01:12,810 --> 00:01:19,260
+Se fai clic su Attiva / disattiva persona vedi qualcosa che differisce dalla normale scheda degli elementi che hai, anche
+
+18
+00:01:19,260 --> 00:01:20,670
+se non vedi solo
+
+19
+00:01:21,090 --> 00:01:26,840
+E laggiù in basso vedi anche oggetti di scena e lo stato di quel componente.
+
+20
+00:01:27,000 --> 00:01:29,590
+Quindi per il componente dell'app vedi l'array della persona.
+
+21
+00:01:29,680 --> 00:01:33,500
+E se faccio clic su una persona rimuoverlo, anche questo viene aggiornato.
+
+22
+00:01:33,510 --> 00:01:39,860
+Quindi qui puoi vedere il tuo stato può anche cambiarlo lì e inoltrare un componente persona.
+
+23
+00:01:39,870 --> 00:01:47,430
+Si vede che non ha uno stato ma ha oggetti di scena e quali proprietà sono in grado di
+
+24
+00:01:47,700 --> 00:01:51,480
+evidenziare gli aggiornamenti in modo da vedere qui evidenziato.
+
+25
+00:01:51,540 --> 00:01:56,430
+Cosa è cambiato nel tuo codice come l'aggiunta di questo nome di classe, ad esempio.
+
+26
+00:01:56,430 --> 00:01:58,070
+Quindi è anche bello.
+
+27
+00:01:58,080 --> 00:02:04,650
+Ti consente di comprendere rapidamente lo stato dei componenti della tua app e di manipolarlo e fornirti alcune informazioni che
+
+28
+00:02:04,650 --> 00:02:10,560
+non puoi facilmente ottenere con i normali strumenti di sviluppo, perché ciò va oltre la visualizzazione di ciò
+
+29
+00:02:10,590 --> 00:02:11,850
+che è stato reso.
+
+30
+00:02:11,910 --> 00:02:15,500
+Ti mostra cosa c'è dietro le quinte che cosa c'è sotto il cofano.
+
+31
+00:02:15,510 --> 00:02:16,140
+Fondamentalmente.

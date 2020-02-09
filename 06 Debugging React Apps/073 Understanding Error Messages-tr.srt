@@ -1,0 +1,139 @@
+1
+00:00:02,160 --> 00:00:09,590
+O halde şimdiye kadar üzerinde çalıştığınız projede tekrar eyleme başvuru hatası
+
+2
+00:00:09,590 --> 00:00:20,480
+veya mazoşist olarak dalış yapalım adında değiştiren işleyicinin tümü burada güncellenmiş kişiyi kişiye atadığımız kodda bir hata
+
+3
+00:00:20,480 --> 00:00:21,220
+ekleyin.
+
+4
+00:00:21,590 --> 00:00:28,300
+Bir değeri atadığımda kullanıcının girdiği değeri elde etmek için olay hedef değerine ulaşırız.
+
+5
+00:00:28,370 --> 00:00:35,900
+Diyelim ki, doğru olan etkinlik hedefine değil, yanlış Olay girdisine erişiyoruz.
+
+6
+00:00:35,900 --> 00:00:37,920
+Diyelim ki siz bu hatayı yaptınız.
+
+7
+00:00:38,360 --> 00:00:42,300
+İlk görünüşe geri dönerseniz işe yarıyor gibi görünüyor.
+
+8
+00:00:42,530 --> 00:00:48,410
+Halen çalışmakta olan kişiyle konuşuruz ancak yazmaya başlarsak, aslında bir hata alırız.
+
+9
+00:00:48,620 --> 00:00:53,840
+Ve zaten VOLP ve iş akışı biz ortada hata burada güzel bir görüntü almak bile.
+
+10
+00:00:53,840 --> 00:00:56,400
+Şimdi sağdaki hata mesajına odaklanalım.
+
+11
+00:00:56,450 --> 00:00:59,900
+Hata mesajınızı görmek için daima en üste kaydırın.
+
+12
+00:00:59,900 --> 00:01:05,260
+Ve orada tanımsız mal değerini okuyamıyor görüyorsun.
+
+13
+00:01:05,330 --> 00:01:10,280
+Ayrıca adı değiştiren işleyicinin nerede oluştuğuna dair bir ipucu da alırsınız.
+
+14
+00:01:10,400 --> 00:01:11,610
+Aslında evet.
+
+15
+00:01:11,690 --> 00:01:16,200
+Hat 27 ve ortada daha da güzel görünüyor.
+
+16
+00:01:16,280 --> 00:01:19,880
+Vurgulanan olay giriş değerini alırsınız.
+
+17
+00:01:19,880 --> 00:01:27,080
+Dolayısıyla bu satır yanlış gibi görünüyor ve artık değerden önce olan kısmı ifade eden tanımsız
+
+18
+00:01:27,500 --> 00:01:29,510
+bir değer özelliği yok.
+
+19
+00:01:29,630 --> 00:01:36,180
+Dolayısıyla burada bu bölüm tanımlanmamıştır, çünkü olay bu konuyla ilgili girdi özelliği bulunmamaktadır.
+
+20
+00:01:36,200 --> 00:01:39,470
+Artık hedefin kendi başınıza doğru olduğunu anlamanız gerekiyor.
+
+21
+00:01:39,500 --> 00:01:45,110
+Örneğin olay dokümantasyonuna bakarak normal yaşlı kadın girişi
+
+22
+00:01:45,320 --> 00:01:47,080
+olay belgelerine bakabilirsiniz.
+
+23
+00:01:47,540 --> 00:01:51,590
+Ancak neyin yanlış gittiğini ve nereden gittiğini net bir şekilde anlıyor musunuz.
+
+24
+00:01:51,740 --> 00:02:00,440
+Şimdi bazen hata mesajları, hata mesajının kendisi şifreliyse bile bu durumdan daha az yardımcı olur.
+
+25
+00:02:00,590 --> 00:02:07,130
+Çoğu zaman, kodunuza geri dönüp bu satırın hatalı olduğunu bulmaya çalışan
+
+26
+00:02:07,160 --> 00:02:10,400
+yararlı bir satır numarası almalısınız.
+
+27
+00:02:10,430 --> 00:02:14,980
+Bu faydalı olmalı ve değeri düzeltmenize izin vermelisiniz.
+
+28
+00:02:14,990 --> 00:02:19,570
+Bu, tepki hata mesajlarında nasıl tepki verdiğinizdir.
+
+29
+00:02:19,670 --> 00:02:20,810
+Korkmayın.
+
+30
+00:02:20,810 --> 00:02:21,920
+Panik yapma.
+
+31
+00:02:21,950 --> 00:02:25,400
+Çoğu zaman bu hata mesajları gerçekten yararlıdır.
+
+32
+00:02:25,430 --> 00:02:28,480
+Onları okumalı ve satır numaralarına bir göz atmalısınız.
+
+33
+00:02:28,490 --> 00:02:29,950
+Sana işaret ediyorlar.
+
+34
+00:02:30,200 --> 00:02:32,810
+Ancak mantıksal hatalar ne olacaktı.
+
+35
+00:02:32,870 --> 00:02:35,370
+Bir sonraki dersimizde bunlara bir göz atalım.

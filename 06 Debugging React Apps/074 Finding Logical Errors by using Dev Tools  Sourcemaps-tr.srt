@@ -1,0 +1,203 @@
+1
+00:00:02,090 --> 00:00:09,330
+Ve sonuncusu aslında hata mesajlarına bir göz attı, ancak çoğunlukla daha
+
+2
+00:00:09,330 --> 00:00:12,210
+zor olan mantıksal hatalarınız oldu.
+
+3
+00:00:12,210 --> 00:00:15,830
+Hata mesajını almazsınız, ancak bir şekilde çalışmıyor.
+
+4
+00:00:16,170 --> 00:00:23,160
+Kullanıcı kimliği ile kimliğini karşılaştırdığımızı söylemek üzere güncellemek istediğimiz birinin dizinini
+
+5
+00:00:23,160 --> 00:00:26,180
+bulduğumuzda, ad işleyiciyi değiştirdiğini varsayalım.
+
+6
+00:00:26,460 --> 00:00:30,570
+Ve bu yanlış bir kişinin kullanıcı kimliği özelliği yoktur.
+
+7
+00:00:30,570 --> 00:00:38,640
+Kullanıcı kimliği tanımlanmadığı için bir hata atmaz; ancak bulma işlemini, muhtemelen uygun bir
+
+8
+00:00:38,970 --> 00:00:42,360
+kişiyi bulamayacağınız bir şeyle karşılaştırabilirsiniz.
+
+9
+00:00:42,360 --> 00:00:48,470
+Dolayısıyla bu kodu tabii ki kaydedersem hatayı Son Derece'den düzeltebilirim.
+
+10
+00:00:48,950 --> 00:00:56,630
+Bu kodu kaydedersem ve şimdi yazmaya başlarsak uygulamaya dönersek bir hata almazsın ama
+
+11
+00:00:56,820 --> 00:00:58,860
+istediğim kadar yazabilirim.
+
+12
+00:00:58,890 --> 00:01:00,030
+Güncelleme olmaz.
+
+13
+00:01:00,060 --> 00:01:05,370
+Güncelleştirilmiş değerimi burada görmüyorum çünkü bu kişinin adını doğru bir şekilde
+
+14
+00:01:05,370 --> 00:01:08,450
+güncellemediğim için iki yönlü bağlamda kırdı.
+
+15
+00:01:08,460 --> 00:01:11,200
+Şimdi böyle bir durumda ne yapabiliriz.
+
+16
+00:01:11,370 --> 00:01:14,320
+Kodumuzu adım adım ilerleyebiliriz.
+
+17
+00:01:14,370 --> 00:01:17,650
+Bunun için krom geliştirici araçlarını kullanmanızı öneririm.
+
+18
+00:01:17,760 --> 00:01:27,630
+Orada kaynaklar sekmesine giderek, localhost altında gösterilen kod yapınızı
+
+19
+00:01:27,630 --> 00:01:29,160
+bulacaksınız.
+
+20
+00:01:29,160 --> 00:01:34,750
+Orada bir kaynak klasör bulacaksınız ve aslında kodunuzu burada buluyorsunuz.
+
+21
+00:01:34,770 --> 00:01:39,110
+Şimdi bu üretilen kaynak haritaları için olasıdır.
+
+22
+00:01:39,450 --> 00:01:47,220
+Temel olarak, tarayıcı geliştirici araçlarının yazdıkça kodunuza gitmesini ve tarayıcıya gönderilen kodun farklı
+
+23
+00:01:47,250 --> 00:01:53,730
+olacağı ve optimize edilmiş ve paketlenmiş olmasına rağmen bu kodu ayıklamanıza
+
+24
+00:01:54,060 --> 00:01:57,690
+izin veren çeviri dosyaları diyebilirsiniz.
+
+25
+00:01:57,800 --> 00:02:02,310
+Tarayıcıda çalıştırılan kod olmasa da yazmış olduğunuz kodu ayıklayabildiğiniz
+
+26
+00:02:02,310 --> 00:02:03,630
+için oldukça güzel.
+
+27
+00:02:03,780 --> 00:02:07,210
+Burada yazarken bir şeylerin işe yaramadığını biliyoruz.
+
+28
+00:02:07,380 --> 00:02:13,840
+Ve kodu yazdıkça, isim yazarsak işleyicilerin deşifre edildiğini biliyoruz.
+
+29
+00:02:13,980 --> 00:02:17,300
+Bu yüzden, burada satır numarasını tıklayarak bir kesme noktası koyalım.
+
+30
+00:02:17,700 --> 00:02:19,910
+Ve tekrar yazmaya başlayalım.
+
+31
+00:02:20,670 --> 00:02:23,890
+Bir karakter yazdım ve şimdi bu durdu.
+
+32
+00:02:24,180 --> 00:02:29,370
+Bunu eklediğini göreceksin i. e. kılacak tüm kodu uygulamak zorundayız.
+
+33
+00:02:29,370 --> 00:02:32,260
+çünkü tremero unsurunun davranışı değişir ve bunu tekrar geçersiz
+
+34
+00:02:32,520 --> 00:02:40,200
+Ve şimdi kodumuzu incelemek için normal krom hata ayıklayıcı araçlarını kullanabiliriz ve burada bir
+
+35
+00:02:40,290 --> 00:02:48,760
+sonraki işlev çağrısına geçerek dizin fonksiyonu bulma günlerine adım atabilir ve orada neler olduğunu anlayabiliriz.
+
+36
+00:02:49,870 --> 00:02:53,950
+Şimdi içeride verilere bakabiliriz.
+
+37
+00:02:53,950 --> 00:02:57,510
+Orada paleosu gibi bir deniz teki var.
+
+38
+00:02:57,520 --> 00:03:03,610
+Şimdi bunun, Max'in şu anda find ile bakmakta olduğu nesne için olduğunu görüyoruz.
+
+39
+00:03:03,620 --> 00:03:08,580
+Sonra bir tane hakkında bir fikrimiz var.
+
+40
+00:03:08,710 --> 00:03:17,050
+bu ifadenin tanımlanmamış olduğunu görüyoruz ve bunu bir s f a fikri ile karşılaştıracağız.
+
+41
+00:03:17,050 --> 00:03:18,210
+Ayrıca burada
+
+42
+00:03:18,250 --> 00:03:26,200
+Dolayısıyla, bu, kullanıcı kimliklerine eriştiğimizden beri kararlaştırılan bu hapishaneyle eşleşmeliydi, bu kişinin tanımsız olduğunu görebiliyoruz
+
+43
+00:03:26,640 --> 00:03:35,530
+ve bu kullanıcı kimliğinin geçerli bir kimlik olmadığını görebiliyoruz, çünkü kişinin üzerine gelip duruyoruz, orada yalnızca
+
+44
+00:03:35,530 --> 00:03:41,150
+kimliği nesne yok kullanıcı olduğunu göreceğiz id nesne bu bilgiyle.
+
+45
+00:03:41,380 --> 00:03:46,960
+Artık bu modülden çıkarak kodumuza geri dönebilir ve mantıksal hatamızı düzeltebiliriz.
+
+46
+00:03:47,050 --> 00:03:55,120
+Dolayısıyla sizin için otomatik olarak oluşturulan kaynak haritaları içeren krom hata ayıklayıcı araçlarını kullanmak mantıksal hataları
+
+47
+00:03:55,120 --> 00:03:57,820
+tespit etmek için güçlü bir özelliktir.
+
+48
+00:03:57,850 --> 00:04:03,140
+Tarayıcıda çalıştırılan kod olmasa da, yol kenarı boyunca kodunuzu yürütebilirsiniz.
+
+49
+00:04:03,310 --> 00:04:06,200
+Dolayısıyla dikkat etmeniz gereken harika bir araç var.
+
+50
+00:04:06,340 --> 00:04:13,210
+Özgün kodunuza kaynak haritalarına erişebileceğiniz kaynaklar sekmesindeki geliştirici araçlarını kullanarak hataları
+
+51
+00:04:13,210 --> 00:04:15,600
+bulmak ve düzeltmek için.

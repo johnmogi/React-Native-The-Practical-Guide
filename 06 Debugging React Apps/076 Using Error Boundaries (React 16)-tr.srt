@@ -1,0 +1,383 @@
+1
+00:00:02,170 --> 00:00:09,100
+Buraya kadar, hataları nasıl ele alacağınız ve uygulamanızın durumunun ne olduğuyla ilgili çok
+
+2
+00:00:09,100 --> 00:00:09,900
+şey öğreneceksiniz.
+
+3
+00:00:10,060 --> 00:00:16,240
+Şimdi bazen çalışma zamanında başarısız olabilecek kodunuz var ve bunu biliyorsunuz, ancak her zaman
+
+4
+00:00:16,240 --> 00:00:17,510
+çalıştığını garanti edemezsiniz.
+
+5
+00:00:17,620 --> 00:00:24,100
+Bu durumda muhtemelen kullanıcıya güzel bir ekran veya en azından özel bir hata mesajı göstermek istersiniz.
+
+6
+00:00:24,100 --> 00:00:27,350
+Size örneği inşa etmeme izin verin.
+
+7
+00:00:27,680 --> 00:00:36,170
+Diyelim ki bir kişi sınıfını oluştururken gerçekte bir hata alma şansımız olduğunu söyleyelim.
+
+8
+00:00:36,340 --> 00:00:46,270
+hata atacağım veya bir şeyler ters gitti ve bu return deyiminde değil işlevinde olmalı vücut.
+
+9
+00:00:46,270 --> 00:00:58,240
+Bu yüzden matematik rastgele rastgele bir sayı oluşturacağım ve eğer rasgele nokta 7'den büyükse yüzde 30 şans elde edeceğim,
+
+10
+00:00:58,240 --> 00:01:01,300
+o zaman aslında yeni bir
+
+11
+00:01:01,300 --> 00:01:04,630
+Şimdi bazen bu hatayı almalıyız.
+
+12
+00:01:04,810 --> 00:01:06,050
+Bunu deneyelim.
+
+13
+00:01:06,070 --> 00:01:11,400
+Bu bileşeni kurtaralım ve insanlar hakkında konuşalım ve hemen başarısız olsun.
+
+14
+00:01:11,440 --> 00:01:16,240
+Bu nedenle, bu hatayı gördük çünkü üç bileşene sahibiz, her bileşen için yüzde 40 şansımız var.
+
+15
+00:01:16,360 --> 00:01:17,870
+Olması pek olası değil.
+
+16
+00:01:17,980 --> 00:01:20,280
+Bazen olsa başarılı olmalı.
+
+17
+00:01:20,320 --> 00:01:21,440
+Bu davada olduğu gibi.
+
+18
+00:01:21,790 --> 00:01:26,470
+Fakat yine bazen burada da başarısız olacak.
+
+19
+00:01:26,470 --> 00:01:28,110
+Bir şeyler yanlış gitti.
+
+20
+00:01:28,120 --> 00:01:30,510
+Şimdi elbette bu inşa edilmiş.
+
+21
+00:01:30,610 --> 00:01:35,770
+Ancak gerçek bir uygulamada kesinlikle bazı işlemleri başarıyla gerçekleştirebilecek bazı web sunucularına
+
+22
+00:01:35,770 --> 00:01:41,670
+erişen bazı kodları çalıştıran bazı kodunuz olabilir ve bunun ne olmadığını garanti edemezsiniz.
+
+23
+00:01:41,670 --> 00:01:46,970
+En azından bu hatayı yakalamak için güzel ol ve nezaketle kullan.
+
+24
+00:01:46,980 --> 00:01:47,450
+Florida en.
+
+25
+00:01:47,470 --> 00:01:52,480
+Yeni bir bileşen oluşturacağım ve bu, yeniden hareket 16 ile eklenen yeni bir özelliktir.
+
+26
+00:01:52,840 --> 00:01:53,980
+Adını vereceğim.
+
+27
+00:01:53,980 --> 00:01:59,690
+Hata veya sınır, çünkü burada Arap sınır bileşenleri oluşturabilirsiniz.
+
+28
+00:02:00,620 --> 00:02:02,930
+Ben de ona Arap sınırı diyeceğim.
+
+29
+00:02:02,950 --> 00:02:04,470
+Adı sana kalmış.
+
+30
+00:02:04,690 --> 00:02:11,920
+Buna Aero sınır kavramı deniyor ancak burada ne gibi isterseniz bu bileşene isim verebilirsiniz.
+
+31
+00:02:11,980 --> 00:02:19,570
+Bir sınıf hatası veya sınır oluşturacağım ve bileşeni genişleteceğim.
+
+32
+00:02:19,720 --> 00:02:29,160
+tepki vermem gerekiyor hem de sonra tepki vermesi için kıvırcık parantez bileşenlerinden oluşan bir adla göndermeliyim.
+
+33
+00:02:29,160 --> 00:02:30,750
+Bu yüzden, hem
+
+34
+00:02:30,780 --> 00:02:36,200
+Böylece, oradaki diyafram bileşeni oluşturduğumuz gibi bu bileşeni de tedavi ediyoruz.
+
+35
+00:02:36,200 --> 00:02:40,120
+Bir şeyler göstermek istiyorum ve bir şey iade edeceğim.
+
+36
+00:02:40,200 --> 00:02:48,450
+Tek bir şey tersine döndüğümü söyleyince 1 yaşında geri döneceğim.
+
+37
+00:02:48,720 --> 00:02:55,170
+Durumunu ekleyeceğim halde bir hata aldıysam sadece bunu geri vermek isterim.
+
+38
+00:02:55,170 --> 00:03:05,220
+Bir sınıfı burada kullanmamızın ve devletimizi ayarlamamızın nedenlerinden biri de boş veya yanlış bir dize olan hata mesajını burada
+
+39
+00:03:05,220 --> 00:03:09,250
+saklamak için hata veya yanlış veya hepsine sahiptir.
+
+40
+00:03:09,250 --> 00:03:12,780
+Şimdi, söylemem gereken yeni bir mülk veya yeni yöntem ekleyebiliriz.
+
+41
+00:03:12,780 --> 00:03:22,990
+Potansiyel bir hata alan Methot, Bileşen tarafından yakalanır ve bazı ek bilgiler
+
+42
+00:03:22,990 --> 00:03:31,100
+otomatik olarak tepki ile iletilir ve Capone yakaladığında bileşene getirilir.
+
+43
+00:03:31,120 --> 00:03:34,610
+Dondurulmuş ok sınırıyla kaydırıyoruz.
+
+44
+00:03:34,810 --> 00:03:36,790
+Sana bir saniye içinde nasıl kullanılacağını göstereceğim.
+
+45
+00:03:36,790 --> 00:03:38,880
+Öncelikle burada mantığı tamamlayalım.
+
+46
+00:03:39,370 --> 00:03:43,170
+Orada bir devlet kurmak istiyorum çünkü şimdi bir hata aldım.
+
+47
+00:03:43,450 --> 00:03:55,160
+Belirleyeceğim hata çok doğrudur ve hata mesajını, şu anda render yönteminde o mesaj olması gereken hataya eşit
+
+48
+00:03:56,820 --> 00:04:00,870
+ayarlarım. Aslında iki olası sonuç var.
+
+49
+00:04:01,870 --> 00:04:06,610
+Bu davada hiçbir devletimizin hatası yok.
+
+50
+00:04:06,610 --> 00:04:11,430
+Bir şeyleri yanlış döndürmek ya da kesin olmak için geri vermek istiyorum.
+
+51
+00:04:11,440 --> 00:04:14,120
+Hata mesajını bile oluşturamıyorum.
+
+52
+00:04:14,140 --> 00:04:24,790
+Yani bu durum hata mesajı veya başka bir durumda bu pervane çocuklarımı geri veriyorum.
+
+53
+00:04:25,140 --> 00:04:30,480
+Bir püf noktasına erişirken bu önemlidir.
+
+54
+00:04:30,660 --> 00:04:36,350
+Bunu devlette yaptığınız gibi önüne eklemeniz gerekiyor.
+
+55
+00:04:36,360 --> 00:04:41,830
+Dolayısıyla bu çocukları, ero sınırının içine koyduklarımızın ne istediğini soruyor.
+
+56
+00:04:41,890 --> 00:04:49,710
+hata alırsak ya da Arap sınırını sardığımız bir şey tarafından atılmış olursak ateş edersin ve erro ayarlanacaktır.
+
+57
+00:04:50,360 --> 00:04:53,680
+Bu varsayılan durumumuz olmalı ama eğer bir
+
+58
+00:04:53,690 --> 00:04:56,970
+Doğru ve dolayısıyla bunu geri verebiliriz.
+
+59
+00:04:56,980 --> 00:05:00,070
+Şimdi bir varsayılan değeri vermeme izin ver.
+
+60
+00:05:00,070 --> 00:05:01,810
+Bırak vereyim.
+
+61
+00:05:01,840 --> 00:05:03,940
+Hata veya sınır bileşeni.
+
+62
+00:05:04,300 --> 00:05:06,050
+Ve şimdi onu kullanmaya başlayalım.
+
+63
+00:05:07,120 --> 00:05:12,090
+NEAP Jr'nin düşüşünü kullanacağım ve şahsımı onunla saracağım.
+
+64
+00:05:12,520 --> 00:05:19,060
+Bu nedenle, nokta çizgi oku veya sınırı bu klasöre gelen hatayı veya sınırı içe aktarın.
+
+65
+00:05:20,370 --> 00:05:28,670
+Ve orada Jarius sınırı, dosya uzantısı olmaksızın her zaman olduğu gibi düşüyor ve şimdi de şahsımızı
+
+66
+00:05:28,790 --> 00:05:29,570
+onunla saralım.
+
+67
+00:05:29,840 --> 00:05:34,090
+Yani burada, oraya ben döndüğüm liste var.
+
+68
+00:05:34,100 --> 00:05:42,450
+Aslında det gibi hava veya sınır ile sarmak istiyorum.
+
+69
+00:05:42,560 --> 00:05:53,100
+Kişi hatası veya sınırın kapanış etiketinden sonra artık hata sınırı, yüksek sipariş bileşeni olarak adlandırılır.
+
+70
+00:05:53,350 --> 00:06:00,240
+Bileşeni, bileşeni atabileceği tüm hataları işleme amacı ile basitçe bir bileşeni saran
+
+71
+00:06:00,270 --> 00:06:01,170
+bir bileşen.
+
+72
+00:06:01,390 --> 00:06:04,120
+Hata sınırında bu onun işidir.
+
+73
+00:06:04,270 --> 00:06:12,010
+Şimdi Arap sınırıyla kaplı olan kişi ile Judy ok sınırı anahtarına da geçmeliyiz çünkü
+
+74
+00:06:12,220 --> 00:06:18,990
+şimdi eşlemediğimiz dış öğedir ve anahtar her zaman bir harita yönteminde dış
+
+75
+00:06:19,210 --> 00:06:24,040
+öğenin üzerinde olmalı, çünkü aslında o eleman bu tekrarlamak.
+
+76
+00:06:24,040 --> 00:06:29,110
+Şimdi tüm dosyaların kaydedildiğinden ve uygulamaya geri döndüğünden emin olalım.
+
+77
+00:06:29,110 --> 00:06:36,790
+Artık bir hata bulana kadar insanlarla konuşursanız ortada bu hatayı maalesef göreceksiniz.
+
+78
+00:06:36,970 --> 00:06:40,090
+Şimdi sadece geliştirme modunda olur.
+
+79
+00:06:40,240 --> 00:06:46,690
+Bunu üretime hazırladıktan ve gerçek bir sunucuya gönderdikten sonra, sayfanızın
+
+80
+00:06:46,690 --> 00:06:47,860
+üzerine yazmaz.
+
+81
+00:06:47,860 --> 00:06:56,000
+Bunun yerine ne göreceksiniz, hata sınırı içinde oluşturduğunuz her şeyi, hata iletisi veya
+
+82
+00:06:56,020 --> 00:07:00,420
+sahip olduğunuz diğer varsayılan iletiler gibi göreceksiniz.
+
+83
+00:07:00,430 --> 00:07:06,820
+Bu, hata sınırlarıyla tüm uygulamanızı küme etmeniz gerektiğini anlamaz, yalnızca mantıklı olduğunda
+
+84
+00:07:07,000 --> 00:07:08,340
+bunları kullanın.
+
+85
+00:07:08,470 --> 00:07:14,550
+Temelde sadece bazı kodlarınız varsa başarısız olabileceğini bildiğinizde bunları kullanın.
+
+86
+00:07:14,600 --> 00:07:21,400
+Herhangi bir Avro kodunu sarmayın çünkü normal kod, bir geliştiricinin geliştirme sırasında muhtemelen hata yapması halinde
+
+87
+00:07:21,400 --> 00:07:22,390
+başarısız olursa.
+
+88
+00:07:22,690 --> 00:07:29,200
+Başarısız olabileceğini bildiğiniz durumlarda Arap sınırlarını kullanın ve bunu kontrol edemezsiniz.
+
+89
+00:07:29,200 --> 00:07:36,370
+Sonra bu özel bir hata mesajı göstermek için üretim için güzel bir araç olabilir
+
+90
+00:07:36,370 --> 00:07:43,810
+ve tüm uygulama başarısız olmaz çünkü yeniden aktör uygulaması daha sonra gerçekten iyi çalışacaktır ve
+
+91
+00:07:43,810 --> 00:07:48,120
+yalnızca sorunlu bileşen sizin özel hata mesajınızla değiştirilecektir.
+
+92
+00:07:48,160 --> 00:07:56,020
+Bu nedenle, aero sınırı, uygulamanızda herhangi bir yerde kullanılamayacak bir araç olmadığını bilmek için güzel bir araçtır ve
+
+93
+00:07:56,020 --> 00:08:01,150
+bu nedenle, bu Lileks'in projeyi çözdüğümüzde bir sonraki modül ile başlayalım.
+
+94
+00:08:01,150 --> 00:08:04,540
+Bunu sarmamamak için tekrar kaldıracağım.
+
+95
+00:08:04,540 --> 00:08:10,170
+Bu hatayı simüle etmek için özel hata veya kaynağımı da burada kaldıracağım.
+
+96
+00:08:10,200 --> 00:08:11,830
+Bu sadece bu modül için.

@@ -1,0 +1,419 @@
+1
+00:00:02,360 --> 00:00:06,360
+Nell'ultima lezione abbiamo creato il nostro progetto con la creazione di reagire.
+
+2
+00:00:06,450 --> 00:00:11,980
+E come ho detto, assicurati che NPM avvenga che questo processo è in esecuzione ogni volta che stai
+
+3
+00:00:11,980 --> 00:00:13,260
+lavorando al tuo codice.
+
+4
+00:00:13,290 --> 00:00:19,160
+Ora apro la cartella creata con Microsoft, che è il codice dello studio.
+
+5
+00:00:19,200 --> 00:00:22,030
+Questa è l'idea che userò per il corso.
+
+6
+00:00:22,200 --> 00:00:25,430
+Ma puoi usare qualsiasi idea o editor che vuoi usare.
+
+7
+00:00:25,500 --> 00:00:31,950
+Ad esempio tutto un web store e sarebbe un'alternativa o sublime o Adam o qualsiasi altro editor
+
+8
+00:00:31,950 --> 00:00:33,000
+che ti piace.
+
+9
+00:00:33,000 --> 00:00:38,850
+Ora qui installo un tema e alcune estensioni e puoi trovare la configurazione esatta che sto usando
+
+10
+00:00:39,140 --> 00:00:42,170
+come descritto nel documento PTF allegato a questo video.
+
+11
+00:00:42,210 --> 00:00:48,150
+Nel caso in cui si desideri utilizzare lo stesso, ma si senta libero di utilizzare il proprio set preferito indipendentemente dal
+
+12
+00:00:48,150 --> 00:00:53,230
+tema e dalla configurazione che si utilizza, si avrà la stessa quantità di file e cartelle nel progetto.
+
+13
+00:00:53,460 --> 00:00:58,890
+Sappiamo quindi di conoscere tutti i file e le cartelle che abbiamo qui a livello di root ottenendo un
+
+14
+00:00:58,890 --> 00:01:00,420
+paio di file di configurazione.
+
+15
+00:01:00,480 --> 00:01:03,010
+Questi file di blocco qui possono fondamentalmente essere ignorati.
+
+16
+00:01:03,030 --> 00:01:07,800
+Con il petto bloccato nelle parole delle dipendenze stiamo usando le dipendenze generali.
+
+17
+00:01:07,800 --> 00:01:14,250
+I nostri cappelli di progetto sono definiti nel file adiacente pacchettizzato e lì puoi vedere che abbiamo tre la pendenza
+
+18
+00:01:14,250 --> 00:01:18,360
+in questo progetto e tutto questo è stato creato dall'app Crea re-act.
+
+19
+00:01:18,540 --> 00:01:24,720
+Come puoi vedere, ovviamente, l'importazione reagisce qui. Sto usando una versione candidata al rilascio di re-act 16 nel momento
+
+20
+00:01:24,720 --> 00:01:26,520
+in cui stai visualizzando questo.
+
+21
+00:01:26,520 --> 00:01:32,710
+Deve essere rilasciato re-act Dom è lo stesso e riattivare gli script come ho detto è un pacchetto
+
+22
+00:01:32,760 --> 00:01:39,900
+che offre tutto questo flusso di lavoro di questo server di sviluppo, il supporto delle funzionalità javascript di prossima generazione e
+
+23
+00:01:39,990 --> 00:01:46,340
+tutte le cose che stiamo usando in questo progetto nel pacchetto padre adiacente è un paio di script definiscono.
+
+24
+00:01:46,560 --> 00:01:51,000
+È possibile eseguire questi script con l'esecuzione di NPM e quindi il nome dello script.
+
+25
+00:01:51,180 --> 00:01:57,060
+L'eccezione è l'inizio che puoi anche eseguire con NPM. Avvia il comando da eseguire e come puoi
+
+26
+00:01:57,060 --> 00:02:02,680
+vedere usa questo pacchetto di script di riattivazione per eseguire anche lì qualche comando di avvio.
+
+27
+00:02:02,690 --> 00:02:03,730
+Questo è semplicemente un comando.
+
+28
+00:02:03,750 --> 00:02:08,900
+Questo pacchetto fa un passo livello e questo comando avviene per avviare questo server di sviluppo.
+
+29
+00:02:08,940 --> 00:02:15,750
+Guarda tutto il nostro codice compila il nostro codice ottimizza il codice e fai tutte queste cose una volta che sei
+
+30
+00:02:15,750 --> 00:02:21,360
+pronto per la distribuzione della tua app eseguirai NPM run build per ottimizzarlo non più lancerai la volontà
+
+31
+00:02:21,570 --> 00:02:28,740
+di man server ma invece otterrai il tuo codice ottimizzato memorizzato una cartella perché in questo momento non vedrai il tuo codice compilato
+
+32
+00:02:28,770 --> 00:02:30,090
+da nessuna parte qui.
+
+33
+00:02:30,090 --> 00:02:31,770
+Tutto succede in memoria.
+
+34
+00:02:31,770 --> 00:02:35,190
+Ma tornerò a distribuire l'applicazione più avanti nel corso.
+
+35
+00:02:35,220 --> 00:02:37,140
+Quindi chiudiamo questo colloquio con Jason.
+
+36
+00:02:37,140 --> 00:02:44,710
+Per ora la cartella dei moduli del nodo contiene tutte le dipendenze e le dipendenze Suppe del nostro progetto.
+
+37
+00:02:44,940 --> 00:02:46,780
+Questo è il motivo per cui ne abbiamo tanti.
+
+38
+00:02:46,800 --> 00:02:53,130
+Dovevamo solo reagire e riattivare gli script, ma gli script di re-act hanno un sacco di altre dipendenze.
+
+39
+00:02:53,130 --> 00:02:56,550
+Tutti questi piccoli strumenti che hanno compilato il codice e così via.
+
+40
+00:02:56,760 --> 00:02:59,820
+Non dovresti modificare nulla nella cartella dei moduli del nodo.
+
+41
+00:02:59,850 --> 00:03:06,510
+Viene generato automaticamente se si esegue l'installazione di NPM nella cartella del progetto ed è stato eseguito
+
+42
+00:03:06,570 --> 00:03:08,680
+automaticamente da Crea script re-act.
+
+43
+00:03:08,850 --> 00:03:11,160
+La cartella pubblica è più interessante.
+
+44
+00:03:11,160 --> 00:03:16,070
+È fondamentalmente la cartella radice che viene comunque servita dal server web.
+
+45
+00:03:16,080 --> 00:03:23,090
+Qui contiene solo i file che possiamo modificare i file di script vengono aggiunti nella cartella di origine.
+
+46
+00:03:23,490 --> 00:03:26,580
+Qui abbiamo ottenuto un indice di file importante h t m l.
+
+47
+00:03:26,700 --> 00:03:30,960
+Questa è una normale pagina HGL ed è ancora una singola pagina.
+
+48
+00:03:30,980 --> 00:03:32,010
+Ne abbiamo di meno.
+
+49
+00:03:32,070 --> 00:03:35,760
+Non aggiungeremo mai più pagine HDMI in questo progetto.
+
+50
+00:03:35,820 --> 00:03:41,950
+Se stai creando un progetto a più pagine, creerai più progetti di questo tipo per creare app di re-act che
+
+51
+00:03:42,240 --> 00:03:43,630
+non aggiungerei di più.
+
+52
+00:03:43,650 --> 00:03:47,690
+Scontri di Tim qui o hai bisogno del tuo flusso di lavoro se vuoi farlo.
+
+53
+00:03:47,820 --> 00:03:54,820
+Quindi è la singola pagina in cui alla fine i file di script verranno iniettati da quel flusso di lavoro di generazione.
+
+54
+00:03:54,840 --> 00:04:01,200
+Ecco perché non vedi uno script import qui e puoi modificare questo file, ma qui scriveremo il
+
+55
+00:04:01,200 --> 00:04:02,160
+codice HTML NEHTA.
+
+56
+00:04:02,340 --> 00:04:05,670
+Voglio evidenziare l'anno diff con la route ID.
+
+57
+00:04:05,700 --> 00:04:11,910
+Questo diventerà importante perché questo sarà il momento in cui effettivamente monteremo la nostra applicazione di reazione più
+
+58
+00:04:12,060 --> 00:04:14,160
+tardi e naturalmente lavoreremo e reagiremo.
+
+59
+00:04:14,160 --> 00:04:20,880
+Ma se hai bisogno di aggiungere qualsiasi importazione per dire le librerie Abwehr C-s come librerie o vuoi
+
+60
+00:04:20,880 --> 00:04:25,170
+aggiungere alcuni meta tag puoi fare quell'anno nel file di posta DHV.
+
+61
+00:04:25,170 --> 00:04:26,930
+Potresti anche aggiungere più anni invecchiando qui.
+
+62
+00:04:26,940 --> 00:04:33,480
+Ma di nuovo probabilmente vorrai farlo in riedizione del manifest adiacente Follett lì perché creare un'app
+
+63
+00:04:33,480 --> 00:04:37,230
+di re-act ci regala un'app Web progressiva pronta all'uso.
+
+64
+00:04:37,260 --> 00:04:43,230
+dà il suo manifesto adiacente all'autunno dove possiamo trovare alcuni metadati sulla nostra applicazione.
+
+65
+00:04:43,230 --> 00:04:45,630
+Almeno uno di base e ci
+
+66
+00:04:45,630 --> 00:04:48,150
+Interessante per noi è la cartella di origine.
+
+67
+00:04:48,270 --> 00:04:53,150
+Qui otteniamo un paio di file e questi sono in realtà i file su cui lavoreremo.
+
+68
+00:04:53,240 --> 00:04:56,310
+Questa è in realtà la nostra applicazione di reazione.
+
+69
+00:04:56,580 --> 00:04:58,380
+Più importante per noi adesso.
+
+70
+00:04:58,380 --> 00:05:06,540
+Il prossimo file js ottiene l'accesso a questo elemento radice del nostro Dom nel nostro file h chimley così l'elemento con la
+
+71
+00:05:06,540 --> 00:05:12,000
+radice dell'ID che, naturalmente, è questa Def che abbiamo visto nel file indice HVM.
+
+72
+00:05:12,000 --> 00:05:20,500
+Questo e là come puoi vedere rende la nostra applicazione re-act con il metodo render.
+
+73
+00:05:20,850 --> 00:05:29,940
+Ora ecco un riferimento di qualche oggetto o elemento dell'app che importiamo da un file
+
+74
+00:05:30,060 --> 00:05:36,480
+app l'estensione Daut J. S. viene escluso perché viene aggiunto automaticamente dal nostro flusso di lavoro di build
+
+75
+00:05:36,480 --> 00:05:38,290
+e quindi diamo un'occhiata a questa app pensata come file JS.
+
+76
+00:05:38,290 --> 00:05:45,870
+Quindi è qui che vediamo la nostra prima e unica componente di re-act che abbiamo in questo progetto
+
+77
+00:05:45,870 --> 00:05:47,010
+iniziale proprio ora.
+
+78
+00:05:47,070 --> 00:05:53,580
+Qui vediamo alcuni GSX e si immergerà profondamente in ciò che vediamo qui esattamente nelle prossime lezioni.
+
+79
+00:05:53,880 --> 00:06:01,210
+Per ora rimuoviamo tutto il contenuto in questo div wrapping e aggiungiamo semplicemente un tag.
+
+80
+00:06:01,240 --> 00:06:12,010
+Il tuo ben dire Ciao, sono un reagente, chiudiamolo ovviamente e poi salviamolo.
+
+81
+00:06:12,010 --> 00:06:15,200
+È sempre importante non dimenticare di salvare i tuoi file.
+
+82
+00:06:15,240 --> 00:06:21,400
+Da quando hai avviato NPM, questo attiverà automaticamente una ricompilazione.
+
+83
+00:06:21,580 --> 00:06:27,130
+E dovrebbe ricaricare automaticamente anche la tua pagina e questo è il motivo per cui ora dovresti vedere Ciao, io sono
+
+84
+00:06:27,190 --> 00:06:28,960
+un'app di reazione invece del vecchio contenuto.
+
+85
+00:06:29,050 --> 00:06:35,380
+Con ciò possiamo anche rimuovere il suo logo, non chiederlo a chi cadi perché non lo usiamo più nel nostro progetto.
+
+86
+00:06:35,380 --> 00:06:38,850
+E ora abbiamo un po 'di una cartella sorgente pulita.
+
+87
+00:06:38,860 --> 00:06:42,040
+Ora cos'altro ha creato il re-act per noi.
+
+88
+00:06:42,070 --> 00:06:48,640
+definisce alcuni stili che usiamo in questo file jazz applet, anche se dirò che non sono previsti per questo autunno.
+
+89
+00:06:48,640 --> 00:06:52,660
+Ci ha dato questa app verso il file C S S che sostanzialmente
+
+90
+00:06:52,660 --> 00:07:00,370
+Questi sono ancora stili globali e in realtà rimuoverò tutto tranne questa prima definizione della classe di app in quel file
+
+91
+00:07:00,370 --> 00:07:07,240
+e la salverò dopo che tutti ci saremo arrivati ​​dopo ci vediamo che cade anche Stahl a livello globale
+
+92
+00:07:07,240 --> 00:07:14,540
+e quello che dovrebbe essere usato è un insieme generale come il tuo per il corpo della nostra applicazione.
+
+93
+00:07:14,660 --> 00:07:20,020
+Registra le interruzioni di lavoro del lavoratore di servizio è come il nome implica importante per la registrazione di un
+
+94
+00:07:20,260 --> 00:07:22,290
+lavoratore di servizio che viene generato automaticamente.
+
+95
+00:07:22,300 --> 00:07:26,490
+Questo è legato al progressivo Web Ebbe che otteniamo fuori dagli schemi.
+
+96
+00:07:26,560 --> 00:07:30,180
+Praticamente interromperà i nostri file di script.
+
+97
+00:07:30,220 --> 00:07:34,160
+Non abbiamo bisogno di configurare nulla lì e testare il file.
+
+98
+00:07:34,290 --> 00:07:36,880
+Bene, ci immergeremo nei test più avanti nel corso.
+
+99
+00:07:36,880 --> 00:07:44,380
+Fondamentalmente ci consente di creare test unitari per le diverse unità, ad esempio componenti nella nostra applicazione.
+
+100
+00:07:44,410 --> 00:07:51,670
+Questa è la configurazione generale e per la maggior parte delle coords funzionerà in APT o James o nei nostri nuovi
+
+101
+00:07:51,670 --> 00:07:52,630
+componenti che creiamo.
+
+102
+00:07:52,630 --> 00:07:58,260
+Parlando di analizzare questo file, capiamo la sintassi che vediamo lì.
+
+103
+00:07:58,390 --> 00:08:01,990
+Liberiamoci dall'importazione del logo perché rimuoviamo il file del logo.
+
+104
+00:08:01,990 --> 00:08:08,530
+e tuffiamoci in J S X che cos'è esattamente e in che modo aggiungiamo più componenti alla nostra applicazione.
+
+105
+00:08:08,530 --> 00:08:09,730
+Ora che lo vedo

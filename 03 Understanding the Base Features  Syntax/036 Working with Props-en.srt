@@ -1,0 +1,179 @@
+1
+00:00:02,240 --> 00:00:09,800
+Now that we know how to output dynamic content, let's make our component configurable, flexible and dynamic.
+
+2
+00:00:10,640 --> 00:00:18,110
+For normal html elements, we can pass attributes like class name which we can add to any html attribute,
+
+3
+00:00:18,680 --> 00:00:19,560
+input element
+
+4
+00:00:19,570 --> 00:00:26,150
+also would have the value attribute for example. Now for person would be nice if we could say name
+
+5
+00:00:26,150 --> 00:00:35,960
+and maybe pass Max and age and maybe pass 28 and for the second use search, we maybe want to pass
+
+6
+00:00:35,960 --> 00:00:41,750
+Manu and the age of 29 and for the third use search,
+
+7
+00:00:41,750 --> 00:00:48,120
+we maybe want to use Stephanie and pass an age of 26,
+
+8
+00:00:48,170 --> 00:00:49,200
+that's not my girlfriend
+
+9
+00:00:49,220 --> 00:00:50,140
+by the way.
+
+10
+00:00:50,750 --> 00:01:00,050
+So if we do that, we want to output this and maybe we even want to take it further and for Manu, we also
+
+11
+00:01:00,050 --> 00:01:09,050
+want to split this in the opening and closing tag and also output some additional information like my hobbies
+
+12
+00:01:09,560 --> 00:01:12,190
+which could be racing.
+
+13
+00:01:12,440 --> 00:01:19,400
+Now with all of that in place, we have to change something in our person component to handle that input,
+
+14
+00:01:19,640 --> 00:01:24,000
+because by default of course if we save this and we reload the app
+
+15
+00:01:24,530 --> 00:01:29,020
+our output is unchanged because we're not using this information.
+
+16
+00:01:29,030 --> 00:01:32,500
+How would we, how would react know what to do with that?
+
+17
+00:01:33,080 --> 00:01:41,150
+Well it actually is able to take these attributes and gives us access inside our receiving component
+
+18
+00:01:41,570 --> 00:01:44,470
+on object named props.
+
+19
+00:01:44,570 --> 00:01:50,360
+Now actually the name here is up to you but you will receive one argument in your function, one argument
+
+20
+00:01:50,360 --> 00:01:58,040
+which is passed into it by default by react which is an object with all the properties of this component
+
+21
+00:01:58,370 --> 00:02:03,500
+and properties means the attributes you add on your component.
+
+22
+00:02:03,590 --> 00:02:10,460
+Now in react land this is referred to as props which is why I named this argument props and I strongly
+
+23
+00:02:10,460 --> 00:02:15,700
+recommend doing so so that everyone else understands your code too, theoretically,
+
+24
+00:02:15,720 --> 00:02:18,260
+you're free to name this differently though.
+
+25
+00:02:18,650 --> 00:02:23,720
+So now that we have props, we can get access to that name and age thing.
+
+26
+00:02:24,020 --> 00:02:29,410
+So we could say I am and I'll use single curly braces to put something dynamic,
+
+27
+00:02:29,600 --> 00:02:35,250
+I am prop's name and I am years old.
+
+28
+00:02:35,570 --> 00:02:46,130
+Now here, I will keep the curly braces but replace the random calculation with props age, I'm props name
+
+29
+00:02:46,130 --> 00:02:47,780
+and I'm props years old.
+
+30
+00:02:49,250 --> 00:02:56,070
+Let's now save this and let's see what happens if this now reloads in our application,
+
+31
+00:02:56,360 --> 00:03:01,460
+if it doesn't reload, reload manually. You should see I'm Max and 20 years old,
+
+32
+00:03:01,460 --> 00:03:05,120
+Manu and Stephanie and all the ages.
+
+33
+00:03:05,160 --> 00:03:07,580
+So now we're having the best of both worlds,
+
+34
+00:03:07,610 --> 00:03:15,590
+we have a reusable component which has a clearly defined template but in there, we use dynamic content
+
+35
+00:03:15,950 --> 00:03:21,620
+which we set from outside in the place where we actually use our component.
+
+36
+00:03:21,620 --> 00:03:23,790
+This makes it really reusable,
+
+37
+00:03:23,810 --> 00:03:28,100
+think about all the possibilities which we will also explore in this course.
+
+38
+00:03:28,190 --> 00:03:32,270
+Having an input component where you can set the type from outside,
+
+39
+00:03:32,360 --> 00:03:39,740
+having this person component which might be styled like a card to output dynamic or different content
+
+40
+00:03:39,740 --> 00:03:41,200
+for the different persons,
+
+41
+00:03:41,360 --> 00:03:48,920
+that is truly an amazing world of features we can access here and it's one important step towards rebuilding
+
+42
+00:03:48,950 --> 00:03:52,040
+great and flexible components.
+
+43
+00:03:52,040 --> 00:03:55,880
+What about the hobbies here though?
+
+44
+00:03:55,880 --> 00:04:02,660
+Let's have a look at how we can use content which is passed not as an attribute but between the opening
+
+45
+00:04:02,660 --> 00:04:05,580
+and closing tags in the next lecture.

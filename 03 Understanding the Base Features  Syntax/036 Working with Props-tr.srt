@@ -1,0 +1,179 @@
+1
+00:00:02,240 --> 00:00:09,800
+Artık dinamik içeriği nasıl çıktıracağımızızı biliyoruz. Bileşeni normal HVM öğeleri için esnek ve
+
+2
+00:00:10,640 --> 00:00:18,110
+dinamik yapalım, herhangi bir yaş kadın öznitelik girdi öğesine ekleyebileceğimiz sınıf adı gibi
+
+3
+00:00:18,680 --> 00:00:19,560
+özellikleri geçirebiliriz.
+
+4
+00:00:19,570 --> 00:00:26,150
+Örneğin değer diyebilir, belki de Max ve yaş ve belki de 28
+
+5
+00:00:26,150 --> 00:00:35,960
+geçerseniz, şimdi de değer değeri özelliğine sahip oluruz, çünkü SEC, belki de geçmek isteyebileceğimiz bir arama kullanır.
+
+6
+00:00:35,960 --> 00:00:41,750
+Adam sen 29 yaşında ve ileri ferde arama sona erdirmek sona erer.
+
+7
+00:00:41,750 --> 00:00:48,120
+Belki Stephanie'yi kullanmak ve 26 yaşını geçmek istiyoruz.
+
+8
+00:00:48,170 --> 00:00:49,200
+Bu benim kız arkadaşım değil.
+
+9
+00:00:49,220 --> 00:00:50,140
+Bu arada.
+
+10
+00:00:50,750 --> 00:01:00,050
+Bunu yaptığımız takdirde bu çıktıyı almak isteriz ve belki bunu sonsuza kadar almak isteriz ve siz
+
+11
+00:01:00,050 --> 00:01:09,050
+erkekler için bunu açılış ve kapanış etiketinde bölmek ve ayrıca hobilerimiz gibi yarışabilecek bazı ek
+
+12
+00:01:09,560 --> 00:01:12,190
+bilgiler de vermek istiyoruz.
+
+13
+00:01:12,440 --> 00:01:19,400
+Şimdi, yerinde olanların hepsiyle birlikte, veri girişi işlemek için kişi bileşenimizdeki bir şeyi değiştirmeliyiz
+
+14
+00:01:19,640 --> 00:01:24,000
+çünkü varsayılan olarak elbette kaydedersek uygulamayı yeniden yükleyeceğiz.
+
+15
+00:01:24,530 --> 00:01:29,020
+Çıktılarımız değişmedi çünkü bu bilgileri kullanmıyoruz.
+
+16
+00:01:29,030 --> 00:01:32,500
+Bununla ne yapacağımızı nasıl tepki vereceğiz bilelim.
+
+17
+00:01:33,080 --> 00:01:41,150
+Gerçekten de bu nitelikleri alabiliyor ve istemler adlı nesne üzerindeki alıcı bileşenimiz
+
+18
+00:01:41,570 --> 00:01:44,470
+içinde bize erişim sağlıyor.
+
+19
+00:01:44,570 --> 00:01:50,360
+Aslında aslında burada verilen isim size ait olmakla birlikte, işlevinizde bir argümanı
+
+20
+00:01:50,360 --> 00:01:58,040
+bir argüman alırsınız ve bu argüman varsayılan olarak bu bileşenin tüm özellikleri içeren bir nesne
+
+21
+00:01:58,370 --> 00:02:03,500
+olan tepki ile geçirilir ve özellikler bileşene eklediğiniz niteliklerdir .
+
+22
+00:02:03,590 --> 00:02:10,460
+Şimdi yeniden hareket topraklarında bu prop olarak adlandırılır, bu yüzden bu argümana sahne ad koydum ve bunu herkesin
+
+23
+00:02:10,460 --> 00:02:15,700
+radikal bir şekilde yapması için kodu herkesin anlayacağı şekilde yapmanızı şiddetle tavsiye ederim.
+
+24
+00:02:15,720 --> 00:02:18,260
+Buna rağmen farklı bir şekilde isim vermek özgürsün.
+
+25
+00:02:18,650 --> 00:02:23,720
+Artık o sahaya sahip olduğumuza göre o isim ve yaş şeylerine erişebiliriz.
+
+26
+00:02:24,020 --> 00:02:29,410
+Bu yüzden ben olduğumu söyleyebiliriz ve şimdi dinamik bir şeyler koymak için eski kıvırcık parantezleri görüyorsunuz.
+
+27
+00:02:29,600 --> 00:02:35,250
+Ben pervane adı ve ben yaşındayım.
+
+28
+00:02:35,570 --> 00:02:46,130
+Şimdi burada kıvırcık parantezleri tutacağım, ancak rasgele hesaplamayı pervanenin h ı probs adıyla değiştireceğim ve ben
+
+29
+00:02:46,130 --> 00:02:47,780
+de kervan'ın yaşındayım.
+
+30
+00:02:49,250 --> 00:02:56,070
+Şimdi bunu kurtaralım ve şimdi başvurumuzu yeniden yüklersem ne olacağını görelim.
+
+31
+00:02:56,360 --> 00:03:01,460
+Eğer elle sıkışmazsa, I-Max ve 20 yaşında olduğunu görmelisiniz.
+
+32
+00:03:01,460 --> 00:03:05,120
+Sen ve Stephanie ile her yaştan görüşürüz.
+
+33
+00:03:05,160 --> 00:03:07,580
+Şimdi her iki dünyanın en iyisini alıyoruz.
+
+34
+00:03:07,610 --> 00:03:15,590
+Açıkça tanımlanmış bir şablona sahip yeniden kullanılabilir bir bileşene sahibiz ancak burada,
+
+35
+00:03:15,950 --> 00:03:21,620
+bileşenimizi gerçekten kullandığımız yerde dışardan ayarladığımız dinamik içeriği kullanıyoruz.
+
+36
+00:03:21,620 --> 00:03:23,790
+Bu, onu gerçekten kullanışlı kılar.
+
+37
+00:03:23,810 --> 00:03:28,100
+Bu derste de keşfedeceğimiz tüm olasılıkları düşünün.
+
+38
+00:03:28,190 --> 00:03:32,270
+Dışarıdan türü ayarlayabileceğiniz bir giriş bileşenine sahip olmak.
+
+39
+00:03:32,360 --> 00:03:39,740
+Farklı cezaevlerinde dinamik veya farklı içerik üretmek için bir kart gibi tasarlanmış olabilecek bu kişi
+
+40
+00:03:39,740 --> 00:03:41,200
+bileşene sahip olmak.
+
+41
+00:03:41,360 --> 00:03:48,920
+Buraya gerçekten erişebildiğimiz şaşırtıcı bir dünya dünyası bu ve büyük ve esnek bileşenleri yeniden
+
+42
+00:03:48,950 --> 00:03:52,040
+inşa etmek için önemli bir adım.
+
+43
+00:03:52,040 --> 00:03:55,880
+Ya hobi burada olsa gerek.
+
+44
+00:03:55,880 --> 00:04:02,660
+Bir konferans niteliğinde olan, ancak bir nitelik olarak değil, bir sonraki dersin başlama ve kapanış
+
+45
+00:04:02,660 --> 00:04:05,580
+vergisi arasında nasıl geçebileceğimizi bir göz atalım.

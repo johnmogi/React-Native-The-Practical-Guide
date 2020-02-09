@@ -1,0 +1,171 @@
+1
+00:00:02,320 --> 00:00:05,490
+Son derslerde devlet ve sahne hakkında çok şey öğreneceğiz.
+
+2
+00:00:05,500 --> 00:00:12,030
+Bunların, bir şey değişirse yurt yükseltmek için tepki veren yalnızca iki şey olduğunu öğrendik.
+
+3
+00:00:12,040 --> 00:00:19,050
+Şimdi, bir kişi için yaptığımız gibi bir bileşen olarak bir işlev oluştururken de ölü olarak bahsetmiştim.
+
+4
+00:00:19,090 --> 00:00:24,420
+Burada devlet kullanamayız, çünkü yalnızca bir GSX kodu döndürdüğümüz bir işlevdir.
+
+5
+00:00:24,430 --> 00:00:27,770
+Verilenlerden önce Albert kodunu çalıştırabiliriz.
+
+6
+00:00:27,970 --> 00:00:34,300
+Ayrıca, sahanızı bizim için ya da bunun gibi bir şey haline dönüştürmeniz gerekiyorsa bunu sık
+
+7
+00:00:34,300 --> 00:00:41,580
+sık yaparsınız, ancak burada devlet niteliği ayarlayabilirsiniz, çünkü sınıfı genişleten bir bileşen olmadığı için bu ayarlama durumu diyebilirsiniz.
+
+8
+00:00:41,590 --> 00:00:44,830
+Bahsedilen Devlet haritalama bilinmiyor ve zaten yöntemimiz yok.
+
+9
+00:00:44,890 --> 00:00:45,850
+Bu bir sınıf değil.
+
+10
+00:00:45,880 --> 00:00:46,970
+Bu bir işlevdir.
+
+11
+00:00:47,380 --> 00:00:54,730
+Ve yine de, bileşenlerin bu işlev formunu olabildiğince sık kullanmanız gerektiğini belirttim.
+
+12
+00:00:55,060 --> 00:00:57,880
+Ve bunu bir kez daha vurgulayacağım.
+
+13
+00:00:58,210 --> 00:01:00,180
+Bu neden bu kadar önemli.
+
+14
+00:01:00,760 --> 00:01:09,580
+Çünkü sadece sahne alıyormuş gibi işlev gören basit bileşenler, yaptıklarıyla ilgili çok
+
+15
+00:01:09,580 --> 00:01:10,420
+net.
+
+16
+00:01:10,750 --> 00:01:13,250
+Onlar sadece DOM'a bir şey katarlar.
+
+17
+00:01:13,270 --> 00:01:20,370
+Sahne nedeniyle dinamiktirler ve dönüşü çağırmadan önce ek mantık ekleyebilirsiniz.
+
+18
+00:01:20,770 --> 00:01:23,080
+Ama bu çok önemli.
+
+19
+00:01:23,140 --> 00:01:28,570
+Uygulama büyüdükçe uygulama durumunuzu değiştirmezler.
+
+20
+00:01:28,570 --> 00:01:32,280
+Bunun çok önemsiz olmadığını göreceksiniz.
+
+21
+00:01:32,280 --> 00:01:34,610
+Bu gerçekten çok önemli.
+
+22
+00:01:34,630 --> 00:01:39,990
+Uygulamanızın büyük bir kısmı uygulama durumunu değiştirmemelidir.
+
+23
+00:01:40,030 --> 00:01:43,770
+DOM dinamiklerine bir şeyler göstermeliler.
+
+24
+00:01:43,900 --> 00:01:48,780
+Evet, ancak uygulama durumunuzu değiştirmenize izin vermemelidirler.
+
+25
+00:01:48,820 --> 00:01:54,880
+Başvuru haliniz yalnızca birkaç seçilen bileşende değiştirilmeli ve ele alınmalıdır.
+
+26
+00:01:54,880 --> 00:01:57,910
+Konteyner olarak da anılır.
+
+27
+00:01:57,910 --> 00:02:00,110
+Aslında böyle bir konteyner olurdu.
+
+28
+00:02:00,280 --> 00:02:06,310
+Bu yalnızca bir bileşen adıdır, ancak uygulama durumumuzun bir kısmını içerdiğinden
+
+29
+00:02:06,310 --> 00:02:08,370
+onu konteyner olarak anıyoruz.
+
+30
+00:02:08,560 --> 00:02:15,580
+Demo uygulamamızda aslında tüm uygulamanın durumunu burada uygulamanızla ilgili bir şeyler değiştirebiliriz
+
+31
+00:02:15,580 --> 00:02:22,270
+ve bu değişiklikleri örneğin kişi bileşeni haline getireceğiz ancak hepsi bu kadar.
+
+32
+00:02:22,270 --> 00:02:29,530
+Evet olur ve ders projesini oluşturmaya başladıktan sonra bu deseni kullandığımı göreceksiniz.
+
+33
+00:02:29,530 --> 00:02:30,900
+Değişiklik Diyafram
+
+34
+00:02:31,000 --> 00:02:38,380
+Devletin yaşadığı ve değiştiği birkaç bileşene ve bazı girdileri alıp yalnızca
+
+35
+00:02:38,740 --> 00:02:46,030
+ekrana bir şey işleyen ancak devletin doğrudan işleyemeyeceği çok sayıda bileşene
+
+36
+00:02:46,120 --> 00:02:47,790
+sahip olacağım.
+
+37
+00:02:47,800 --> 00:02:54,970
+Yine de, kişi bileşeninde veya başka bir bileşende bir olayı dinlemek istediğiniz
+
+38
+00:02:54,970 --> 00:02:56,670
+tüm durumlarda olabilir.
+
+39
+00:02:57,100 --> 00:03:02,770
+bir olayı dinlemek istiyorsun, fakat aslında evet içinde bazı
+
+40
+00:03:02,800 --> 00:03:11,490
+yöntemleri uygulayarak adı değiştirme modelini sürdürebilirsiniz aslında evet ama aslında dar komponentteki olayı dinliyor.
+
+41
+00:03:11,500 --> 00:03:19,990
+Şimdi tabii ki bunu bileşenini genişleten bir bileşene dönüştürebilirsin, böylece yürüttüğün yöntemleri bulabilirsin
+
+42
+00:03:19,990 --> 00:03:22,370
+ama belki burada herhangi
+
+43
+00:03:22,750 --> 00:03:31,470
+Bir sonraki dersimizde bunu nasıl ele alacağımızıza ve sayı bileşeninden bir devletin nasıl değiştiğine bir göz atalım.

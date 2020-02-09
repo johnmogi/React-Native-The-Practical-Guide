@@ -1,0 +1,43 @@
+1
+00:00:00,170 --> 00:00:06,330
+In questo modulo abbiamo dovuto osservare come possiamo reagire all'errore. Il nostro messaggio qui è che possono essere abbastanza
+
+2
+00:00:06,330 --> 00:00:11,520
+utili che non dovremmo rimanere scioccati se li vediamo e che dovremmo sempre controllare i numeri
+
+3
+00:00:11,550 --> 00:00:13,810
+di linea che vediamo nei messaggi.
+
+4
+00:00:13,830 --> 00:00:20,610
+Hai anche imparato come eseguire il debug degli errori logici senza l'aiuto delle mappe di origine e degli strumenti di sviluppo di Chrome
+
+5
+00:00:20,610 --> 00:00:24,630
+in cui puoi posizionare i punti di interruzione e andare oltre il tuo codice.
+
+6
+00:00:24,720 --> 00:00:26,880
+Hai anche imparato a usare reagisci.
+
+7
+00:00:26,880 --> 00:00:34,680
+imparerai come usare il limite della freccia qui per avvolgere il codice che potrebbe fallire in fase di esecuzione che puoi
+
+8
+00:00:34,680 --> 00:00:41,670
+impedire e quindi mostrare un messaggio di errore personalizzato o qualche pagina di riserva o contenuto t usarli
+
+9
+00:00:41,700 --> 00:00:46,100
+Strumenti Def per ottenere informazioni dettagliate sullo stato della tua applicazione e
+
+10
+00:00:46,230 --> 00:00:55,020
+Ma con tutti questi strumenti dovresti avere un ricco set di strumenti per creare applicazioni re-act consolidate,
+
+11
+00:00:55,290 --> 00:00:57,090
+sicure e ben funzionanti.

@@ -1,0 +1,499 @@
+1
+00:00:02,130 --> 00:00:09,760
+Yani orada gerçek Evet dosyam döndüm ve öğrendim render yöntemi orada
+
+2
+00:00:09,850 --> 00:00:14,450
+Bileşen Nesnesine uzatarak bir bileşen oluştururken kullanılır.
+
+3
+00:00:14,470 --> 00:00:23,800
+Üç kişiye çıktı ve açıkça bir liste var, çünkü buradaki
+
+4
+00:00:23,800 --> 00:00:26,350
+durumumuz Pearse'un yönetiminde.
+
+5
+00:00:26,460 --> 00:00:33,900
+Bunu bir liste olarak vermek mantıklı olacaktır, ancak içeri girmeden önce, koşullu
+
+6
+00:00:33,940 --> 00:00:42,880
+olarak içeriği çıkarmaya başlayalım. İlk önce bu düğmeyi tıkladığımızda isimleri şimdi yapmak istediğimiz gibi
+
+7
+00:00:42,910 --> 00:00:44,300
+değiştirmek istemiyoruz.
+
+8
+00:00:44,530 --> 00:00:52,810
+Bunun yerine, burada bulunduğumuz kişileri göstermek veya gizlemek istiyoruz diyelim.
+
+9
+00:00:53,140 --> 00:01:00,610
+Bunun için, örneğin, tüm bu kişileri, diyelim ki, sonunda bu cihazı gösterebileceğimiz veya gizleyebileceğimiz bir
+
+10
+00:01:00,610 --> 00:01:06,550
+günde sarabiliyoruz ve böylece günü herkesin saklamaya çalıştığı düşüncesi gün ışığına çıkan
+
+11
+00:01:06,550 --> 00:01:09,680
+her şeyi gösterebiliyor ve gizleyebiliyoruz. bira.
+
+12
+00:01:10,030 --> 00:01:11,680
+İşte bu ilk adım.
+
+13
+00:01:12,160 --> 00:01:21,690
+İkinci adım şu: Kişinin işleyicisini değiştirmek için bu İşaretçinin adını değiştirmemiz gerekiyor ve artık
+
+14
+00:01:22,510 --> 00:01:26,190
+bu yöntemi bir argüman olarak geçemeyeceğiz.
+
+15
+00:01:26,200 --> 00:01:32,740
+Şimdi bununla birlikte, bir sayı işlev çağrısı döndüren bir işlev kullanmamakla birlikte eski sözdizimine geri döneceğim,
+
+16
+00:01:32,740 --> 00:01:39,550
+ancak yalnızca bir başvuru geçirmeyi biliyorum Altamonte true Yate, geçiş işleci adında bir yöntem kullandığını biliyorum.
+
+17
+00:01:39,850 --> 00:01:42,670
+Bu yüzden render yönteminin üst kısmına ekleyeceğim.
+
+18
+00:01:42,970 --> 00:01:49,570
+Ve her iki sözdizimini buradaki sözdizimi gibi kullanabiliriz; buradaki bir yöntemi ele alacağız, burada bu
+
+19
+00:01:49,600 --> 00:01:52,130
+anahtar sözcüğünü kullanmak istiyorsak problem yaşayacağız.
+
+20
+00:01:52,390 --> 00:02:00,010
+Ve burada bu yöntemi yurtta havalandırılan bir havalandırma üzerine çağıracağımız için bu gerçek sorunlara yol açacaktır.
+
+21
+00:02:00,070 --> 00:02:05,370
+Sabol, bir mala bir ok işlevi atamak için Iverson vergisini görüyorsunuz.
+
+22
+00:02:05,410 --> 00:02:07,280
+Eninde sonunda bir yöntem yaratacaktır.
+
+23
+00:02:07,330 --> 00:02:14,440
+Sadece farklı bir sözdizimi ve javascript'lerin içeriklerinden dolayı bu, bu yöntem içindeki bu
+
+24
+00:02:14,500 --> 00:02:21,310
+anahtar kelimenin her zaman her koşulda sadece sınıfına döndüğünden emin olmanızı sağlar.
+
+25
+00:02:21,310 --> 00:02:24,250
+Bu yüzden şimdi bunu kullanmanızı öneririm.
+
+26
+00:02:24,250 --> 00:02:31,600
+Şimdi, bu Dave'mizin içerisindeki kişilerle birlikte göstermek isteyen sitelerin sonunda
+
+27
+00:02:31,600 --> 00:02:34,140
+bazı mülkleri hedeflemek istiyoruz.
+
+28
+00:02:34,510 --> 00:02:41,320
+Bu yüzden öncelikle devletime gidip bir mülk sahibi adı ekleyip kişilere tabii ki size kalmış
+
+29
+00:02:41,320 --> 00:02:42,260
+isimleri göstereceğim.
+
+30
+00:02:42,550 --> 00:02:45,280
+Ve başlangıçta yanlış yapacağım.
+
+31
+00:02:45,280 --> 00:02:52,690
+Şimdi eğer yanlışsa, günahlarının karşısına çıkmanızı istemiyorum ve bunu şimdi dinamik olarak nasıl yapabiliriz.
+
+32
+00:02:53,290 --> 00:03:01,210
+da gelecekte evet, artık ölüme ilişkin bir talimat verecektik;
+
+33
+00:03:01,210 --> 00:03:07,580
+Ölüme gidebiliriz ve bir melek gibi çerçevelerde ya
+
+34
+00:03:07,780 --> 00:03:10,580
+Şimdi yeniden hareket farklı işliyor burada.
+
+35
+00:03:10,630 --> 00:03:18,280
+Her zaman unutmayın, javascript ile çalışıyoruz ancak yalnızca burada HVM'ye benzeyebilir ancak J
+
+36
+00:03:18,280 --> 00:03:19,140
+x'dir.
+
+37
+00:03:19,240 --> 00:03:23,750
+Sadece yeniden yaratma unsuru için sözdizimsel şekerdir.
+
+38
+00:03:23,920 --> 00:03:27,980
+Sonuçta burada javascript kodu var.
+
+39
+00:03:28,420 --> 00:03:35,860
+Bu nedenle, bunu dinamik olarak oluşturmak istersek javascript kodu ile çalışabileceğimizden onunla çalışabiliriz.
+
+40
+00:03:35,860 --> 00:03:43,600
+işareti içine alabiliriz, bütün div, kişileri dış div değil inisiyatifle sarıyor.
+
+41
+00:03:43,600 --> 00:03:44,850
+Tek tırnak
+
+42
+00:03:45,160 --> 00:03:50,640
+Ve şimdi tırnak işaretleri arasında ular ve javascript ifadeler yazabilirsiniz.
+
+43
+00:03:50,830 --> 00:03:55,470
+Bu yalnızca iki artı iki ya da dört devlete ulaşmada geçerli değil.
+
+44
+00:03:55,600 --> 00:04:01,490
+Ayrıca, her ifadeye bir dönüş ekleyerek içeriği koşullu hale getirebilirsiniz.
+
+45
+00:04:01,930 --> 00:04:10,150
+Burada yapamayacağınız şey bir if deyimiyse, o zaman böyle görünen bir şey if
+
+46
+00:04:10,150 --> 00:04:15,510
+bloğunun içindeki farkı buraya taşımak için doğru çözüm olacaktır.
+
+47
+00:04:15,700 --> 00:04:17,020
+Ancak bu işe yaramıyor.
+
+48
+00:04:17,110 --> 00:04:24,150
+Aslında, bu dinamik söz diziminin bir parçası olarak basit cümlelerle blok cümleleri kullanamazsınız.
+
+49
+00:04:24,190 --> 00:04:27,720
+Böylece açma ve kapama tekli arama parantezi arasına.
+
+50
+00:04:27,940 --> 00:04:33,640
+Bunun gibi bir blok kullanmak işe yaramayacak, ancak üçlü bir ifade kullanabiliriz.
+
+51
+00:04:33,670 --> 00:04:37,710
+Bu durumun kişilere gösterilip gösterilmediğini basitçe kontrol edebiliriz.
+
+52
+00:04:37,750 --> 00:04:40,470
+Bunun bir boolean olduğunu unutmayın.
+
+53
+00:04:40,660 --> 00:04:44,990
+İlk başta yanlış koyuyoruz.
+
+54
+00:04:45,110 --> 00:04:52,730
+Dolayısıyla bu bize doğru veya yanlış verir ve varsayılan bir javascript yapısı olan her ifadeyi çevirmez.
+
+55
+00:04:52,730 --> 00:04:59,330
+Bu durumu bir soru işareti ekleyerek kontrol eder ve bu doğruysa ne yapacağınıza karar veririz.
+
+56
+00:04:59,570 --> 00:05:03,110
+Doğruysa bu sevgileri üretmek istiyoruz.
+
+57
+00:05:03,800 --> 00:05:07,470
+Şu anda bölüm bir soru işareti sundu.
+
+58
+00:05:07,550 --> 00:05:10,470
+Yani bu def çözülür.
+
+59
+00:05:10,610 --> 00:05:18,350
+Eğer bu doğruysa, else kutusu da bir iki nokta üst üste ekleyerek ve daha sonra ne yapmak istediğimizi tanımlamamız gerekir.
+
+60
+00:05:18,410 --> 00:05:23,850
+Doğru değilse, bu boşluk yalnızca bir şey göstermemek demektir.
+
+61
+00:05:23,870 --> 00:05:27,530
+Bu, ilk kullanışınızda süper kafa karıştırıcı görünüyor olabilir.
+
+62
+00:05:27,530 --> 00:05:29,670
+Bunun farkındayım.
+
+63
+00:05:29,780 --> 00:05:37,610
+Dolayısıyla burada ihtiyaç duyduğumuz ve burada yapmakta olduğumuz şey, burada yazdığımız şeylerin dnt
+
+64
+00:05:37,670 --> 00:05:44,960
+javascript'inde olması ve javascript ifadelerinin JS X'e tekli çağırma ayraçlarıyla bölünebilmesi gerçeğinden yararlanmaktır.
+
+65
+00:05:44,960 --> 00:05:52,820
+Bu, tabii ki herhangi bir javascript mülküne erişebildiğimiz anlamına gelir ve bir ifadeyle bizim ifademizi kullandığımızı öğrenirsiniz.
+
+66
+00:05:52,820 --> 00:06:00,650
+Yine bu, varsayılan bir javascript yapısıdır ve üçlü bir ifade bazı koşullarla yaratılmıştır.
+
+67
+00:06:00,650 --> 00:06:02,500
+Bu bir mülk olmak zorunda değildir.
+
+68
+00:06:02,510 --> 00:06:05,140
+Ayrıca, bunun doğru olup olmadığını görmek için bir kontrol olabilir.
+
+69
+00:06:05,270 --> 00:06:08,400
+Fakat bu bir Boolean olduğundan otomatik olarak doğrudur veya yanlıştır.
+
+70
+00:06:08,450 --> 00:06:15,980
+Ancak bu, gerçek durumumuzda ne yapılacağından çekimizi ayırmak için bir soru işaretiyle birlikte
+
+71
+00:06:15,980 --> 00:06:16,950
+belet olurdu.
+
+72
+00:06:17,060 --> 00:06:19,070
+Ve bu burada bir parça yok.
+
+73
+00:06:19,070 --> 00:06:22,560
+Şimdi daha önce ona h yazmadığımızı unutmayın.
+
+74
+00:06:22,620 --> 00:06:23,620
+Şerefe x.
+
+75
+00:06:23,780 --> 00:06:28,350
+Sonunda biz re-act create elemanı çağırıyoruz.
+
+76
+00:06:28,550 --> 00:06:32,340
+Bu durum doğruysa, açıkça söylemiyoruz.
+
+77
+00:06:32,510 --> 00:06:34,030
+Bu içeriği hazırlıyoruz.
+
+78
+00:06:34,070 --> 00:06:40,080
+Ancak, tepki verecek bir kod sözcüğünün perde arkasında yaratma öğesinin olduğunu öğrendiniz ve sonra Altes
+
+79
+00:06:40,080 --> 00:06:43,460
+koşulunu iki nokta üst üste ile ayrılmış halde aldık.
+
+80
+00:06:43,460 --> 00:06:49,040
+Bu, burada kontrol doğru değilse basitçe anlamına gelir.
+
+81
+00:06:49,520 --> 00:06:51,380
+O zaman bunu.
+
+82
+00:06:51,380 --> 00:06:55,420
+Ve burada hiçbir şey çalıştırmadığımız için NULL döndürüyoruz.
+
+83
+00:06:55,430 --> 00:07:00,620
+Temel olarak, boşa çıkartan hiçbir şeyi vermeyeceğimiz anlamına gelir ve bu hiçbir şey değildir.
+
+84
+00:07:00,620 --> 00:07:02,910
+Bunu tekrar okuyabilirsiniz.
+
+85
+00:07:02,960 --> 00:07:09,560
+Süper tuhaf görünebilir ancak, javascriptin yeniden hareketin nasıl işlediği konusuna başınızı sardıktan sonra mükemmel
+
+86
+00:07:09,590 --> 00:07:10,810
+mantıklı görünür.
+
+87
+00:07:10,910 --> 00:07:13,820
+Hepsi javascript.
+
+88
+00:07:13,820 --> 00:07:16,410
+Şimdi bununla mantığımı tamamlayalım.
+
+89
+00:07:16,540 --> 00:07:24,510
+Geçiş yapan kişinin işleyicisinin doğru bir şekilde devlete geçtiğinden emin olarak, yalnızca Konst'u ayarlayamayız.
+
+90
+00:07:24,620 --> 00:07:26,820
+Şov orada yeni bir sabit yaratıyor mu?
+
+91
+00:07:26,840 --> 00:07:29,660
+Bu devlet hangi kişilere gösteriyor.
+
+92
+00:07:29,690 --> 00:07:36,250
+Geçerli durumdan beri bu doğru ya da yanlış ve daha sonra durumu ayarlamak için bu ayar aşamasını diyoruz.
+
+93
+00:07:36,560 --> 00:07:42,990
+Ve şimdi burada şov insanlarını şovun neyine eşit olarak ayarlıyoruz.
+
+94
+00:07:43,000 --> 00:07:50,240
+Önünde ünlem işareti ekleyerek sadece kelime denir Das göstermek doğruysa, yanlış sebat
+
+95
+00:07:50,240 --> 00:07:52,120
+göstermek söyledi dedi.
+
+96
+00:07:52,310 --> 00:08:00,280
+devlet şahısları ortalama devlet sadece dokunulmaz re-act güncellenmiş şovun kişinin değerini bu eyalete birleştirir.
+
+97
+00:08:00,280 --> 00:08:07,480
+Eğer veriler yanlış gösteriyorsa, göstermek kalıcılığı doğruya ve tekrar önemlisi de devletle
+
+98
+00:08:07,480 --> 00:08:15,610
+birleştiğini söylerdi devletle devlet arasında bir nesne bulunduğunu belirtiriz, yalnızca şov kişileri belirterek tüm
+
+99
+00:08:15,760 --> 00:08:20,770
+devletin şov kişileri ile değiştirileceği anlamına gelmez sadece eski
+
+100
+00:08:20,770 --> 00:08:25,110
+Burada babam yerinde olan biteni takip ediyor.
+
+101
+00:08:25,270 --> 00:08:32,530
+Bu tekliften tasarruf edebilmeli ve UÖM başlangıcının çalışıp çalışmadığından emin olmalı ve
+
+102
+00:08:32,530 --> 00:08:34,820
+orada çalışan uygulamanıza yönelmeliyiz.
+
+103
+00:08:34,840 --> 00:08:39,130
+Anahtar adını tıklarsanız şimdi kişileri görürsünüz.
+
+104
+00:08:39,310 --> 00:08:44,590
+bir şekilde bağlanmaya hazırlanmadığı için, zaten ölü değer kaybettik uyarısına ulaştık.
+
+105
+00:08:44,590 --> 00:08:46,870
+Bu insanlardan bazılarının aslında yanlış
+
+106
+00:08:46,930 --> 00:08:48,540
+Burada olsa da onu görmezden gelebiliriz.
+
+107
+00:08:48,580 --> 00:08:51,670
+Aslında burada olsun iyi bir şey.
+
+108
+00:08:51,700 --> 00:08:56,520
+Ölü yeniden hareketin değerleri daha önce gizlemediğini açıkça gösteriyor.
+
+109
+00:08:56,710 --> 00:08:59,890
+Aksi taktirde, bu uyarıyı baştan almış olurdu.
+
+110
+00:08:59,890 --> 00:09:01,900
+Sayfayı yeniden yüklediğimizde anlamıyoruz.
+
+111
+00:09:02,080 --> 00:09:03,900
+Bunu yalnızca düğmeyi tıkladıktan sonra alıyoruz.
+
+112
+00:09:04,000 --> 00:09:11,010
+Bu durumda, reaktör gerçekten yalnızca tekrar tıklamak için koşulumuz doğru olduğunda bu unsurları oluşturuyor.
+
+113
+00:09:11,320 --> 00:09:12,810
+Gizlendi.
+
+114
+00:09:13,110 --> 00:09:16,800
+Şimdi şafak inceleyerek de bunu onaylayabilirim.
+
+115
+00:09:17,100 --> 00:09:23,430
+Bir kök elemana haritaya daha yakından bakarsak onu görürüz, ancak alttaki ve
+
+116
+00:09:23,430 --> 00:09:25,720
+alttaki hiçbir şey yoktur.
+
+117
+00:09:25,860 --> 00:09:27,570
+Şimdi sağda bir yer izledim.
+
+118
+00:09:27,570 --> 00:09:34,260
+Burada gördüğün düğmeyi tıkladığımızda, bunun yanıp söndüğünü gördüm; bu, bu, yeni gün bizimkilerle.
+
+119
+00:09:34,260 --> 00:09:40,360
+Durum gerçekten doğru olduğunda, gerçekten Dom render'a eklendi.
+
+120
+00:09:40,410 --> 00:09:43,300
+Bunun nasıl işlediği ve tepki verdiği.
+
+121
+00:09:43,380 --> 00:09:49,960
+Şimdi kişileri değiştirmek için bu düğmenin başlığını güncelleyeceğim, ancak bu sadece kozmetik bir değişiklik.
+
+122
+00:09:50,130 --> 00:09:57,720
+Zaten çalışma koşullu bir kontrolümüz var, ancak işte böyle şartlar yazıyor ancak GSX
+
+123
+00:09:57,720 --> 00:10:00,360
+kodunu karıştırmaya da neden olabilir.
+
+124
+00:10:00,360 --> 00:10:07,350
+Muhtemelen çok sayıda iç içe geçmiş çekleriniz varsa, bir sonraki dersin buna bir alternatif
+
+125
+00:10:07,350 --> 00:10:08,010
+göstereceğim.

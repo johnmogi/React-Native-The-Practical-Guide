@@ -1,0 +1,51 @@
+1
+00:00:02,360 --> 00:00:08,240
+Bienvenido a otro módulo nuevo sobre los módulos anteriores. Aprenderá mucho sobre la creación
+
+2
+00:00:08,720 --> 00:00:16,580
+de componentes y el uso de las distintas características Javascript reactivas y nativas para mostrar el contenido dinámico
+
+3
+00:00:16,580 --> 00:00:20,740
+de contenido dinámico en código JS X y mucho más.
+
+4
+00:00:21,110 --> 00:00:25,130
+También abordamos brevemente los componentes del diseño de estilo.
+
+5
+00:00:25,340 --> 00:00:33,020
+Lo hice con estilos en línea y le mostré cómo importar un archivo C S S para aplicar estos estilos CSSA.
+
+6
+00:00:33,020 --> 00:00:38,660
+También mencioné que estos no tenían un alcance para los componentes en los que lo importó.
+
+7
+00:00:38,670 --> 00:00:44,990
+Aunque en esta marcha quiero enfocarme en el diseño de los componentes de reacción porque hay más que
+
+8
+00:00:44,990 --> 00:00:46,760
+lo que resuelves hasta ahora.
+
+9
+00:00:46,760 --> 00:00:52,020
+Para empezar, quiero ver cómo se pueden ajustar dinámicamente los estilos o los nombres de las clases.
+
+10
+00:00:52,310 --> 00:00:59,480
+Y también quiero mostrarte cómo evitar esta restricción de usar estilos en línea y por lo tanto tener estilos de
+
+11
+00:00:59,480 --> 00:01:06,350
+ámbito pero tener limitaciones como no poder usar consultas de medios o pseudo selectores o usar los archivos de
+
+12
+00:01:06,620 --> 00:01:12,540
+Seer como archivos y que tener Stahl globales hay un Un par de formas de manejar esto
+
+13
+00:01:12,530 --> 00:01:17,440
+y nos sumergiremos en todas estas formas de trabajar con sólidos en este módulo.

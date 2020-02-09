@@ -1,0 +1,263 @@
+1
+00:00:02,150 --> 00:00:06,920
+En la última conferencia, lo guié por este componente y, en general, por qué está estructurado.
+
+2
+00:00:07,020 --> 00:00:08,610
+Ahora profundicemos en esto.
+
+3
+00:00:08,680 --> 00:00:17,160
+Algo de GSX para este comentario saca este candado aquí para que no se use más y le devolveré algo más. Puedo usar el
+
+4
+00:00:17,730 --> 00:00:23,310
+objeto de volver a actuar que estamos importando aquí y llamar un método sobre él.
+
+5
+00:00:23,370 --> 00:00:30,690
+Elemento True Yate esto oculta todas las razones por las que tenemos que importar, actuamos porque este código aquí aún no
+
+6
+00:00:31,050 --> 00:00:33,720
+está compilado con lo que estamos escribiendo aquí.
+
+7
+00:00:33,810 --> 00:00:40,260
+no vemos ese elemento creativo, el método a toma argumentos gratuitos en realidad requiere una
+
+8
+00:00:40,260 --> 00:00:48,240
+cantidad infinita de argumentos, pero al menos para mí el primero es el elemento que queremos representar en el DOM.
+
+9
+00:00:48,240 --> 00:00:48,840
+Aunque
+
+10
+00:00:48,840 --> 00:00:54,580
+Esto podría ser un disco de muerte. Puede ser un elemento masculino H-G normal como un div.
+
+11
+00:00:54,660 --> 00:00:58,980
+También podría ser tu propio componente si tienes uno aquí.
+
+12
+00:00:59,160 --> 00:01:04,860
+Sin embargo, no lo hacemos porque estamos dentro de un componente que no podemos representar que pudiéramos representar cualquier
+
+13
+00:01:04,860 --> 00:01:08,390
+componente de audio que estamos importando, pero no tenemos dicho componente.
+
+14
+00:01:08,400 --> 00:01:13,000
+El segundo argumento es básicamente la configuración para esto.
+
+15
+00:01:13,350 --> 00:01:20,460
+Y allí pasaríamos un objeto de JavaScript Desire's opcional Todos podemos pasar null y haremos esto
+
+16
+00:01:20,460 --> 00:01:23,140
+por ahora porque no quiero configurarlo.
+
+17
+00:01:23,280 --> 00:01:30,510
+El tercer argumento aquí es cualquier cantidad de niños y podríamos tener múltiples argumentos
+
+18
+00:01:30,510 --> 00:01:31,820
+separados por Hamas.
+
+19
+00:01:31,890 --> 00:01:35,980
+Los niños significan lo que está anidado dentro de esta muerte.
+
+20
+00:01:36,060 --> 00:01:39,450
+Ahora, en este caso, quiere Nasta un elemento.
+
+21
+00:01:39,720 --> 00:01:49,650
+Probemos añadiendo edad 1 y luego como argumento numérico agreguemos aquí este texto con múltiples signos de admiración y escaparemos aquí de esta
+
+22
+00:01:49,650 --> 00:01:56,310
+comilla con la barra inclinada invertida para que podamos identificar que esto fue representado por
+
+23
+00:01:56,310 --> 00:01:58,570
+un método de elemento discreto.
+
+24
+00:01:59,410 --> 00:02:05,450
+Ahora con eso déjame guardar este código crear elemento con cuatro argumentos div. que se guarda si ve una cruz aquí y sin punto y luego regresemos a nuestra aplicación.
+
+25
+00:02:05,500 --> 00:02:13,270
+Ahora, con 1 año de edad y el texto, asegúrese de guardar el archivo en el código de Visual Studio que ve
+
+26
+00:02:13,270 --> 00:02:19,300
+Aquí vemos H-1.
+
+27
+00:02:19,300 --> 00:02:21,210
+Hola, estoy reaccionando a.
+
+28
+00:02:21,440 --> 00:02:23,610
+Y si inspeccionamos esto en
+
+29
+00:02:23,650 --> 00:02:28,840
+las herramientas de desarrollador en Chrome, estás en mi caso, que recomiendo usar.
+
+30
+00:02:28,840 --> 00:02:29,600
+Verás comenzar un div con dos nodos de texto dentro de un extremo.
+
+31
+00:02:29,770 --> 00:02:34,330
+Hola, soy una aplicación de reactor, así que no prestamos ayuda.
+
+32
+00:02:34,390 --> 00:02:37,340
+de edad se interpreta como texto.
+
+33
+00:02:37,360 --> 00:02:45,370
+Un elemento que representamos el texto y este es en realidad el comportamiento predeterminado de 1 año
+
+34
+00:02:45,370 --> 00:02:46,010
+No se representa como elemento si desea representar otro elemento dentro del diff.
+
+35
+00:02:46,120 --> 00:02:52,510
+Lo que tenemos que hacer es reemplazar este código aquí con una
+
+36
+00:02:52,750 --> 00:03:00,580
+novela llamada a reaccionar crear elemento para crear un nuevo elemento HVM l al final.
+
+37
+00:03:00,580 --> 00:03:03,290
+Aquí ahora pasamos h una configuración entonces nula y luego el texto que desea representar.
+
+38
+00:03:03,310 --> 00:03:10,900
+Entonces, vamos a mezclar esto y decir que esto funciona ahora.
+
+39
+00:03:10,900 --> 00:03:15,800
+Ahora, si guardamos este archivo y volvemos a la aplicación, vemos que una tecnología lo hace.
+
+40
+00:03:15,810 --> 00:03:21,690
+Ahora también podemos ver esto si inspeccionamos eso en las herramientas de desarrollo.
+
+41
+00:03:21,690 --> 00:03:25,640
+Obtenemos un envoltorio mortal.
+
+42
+00:03:25,780 --> 00:03:27,460
+H una etiqueta.
+
+43
+00:03:27,490 --> 00:03:29,900
+Ahora lo que no vemos es
+
+44
+00:03:29,950 --> 00:03:38,290
+que se aplica el estilo C S S porque no vemos que se agregue la clase en nuestro código J es X.
+
+45
+00:03:39,190 --> 00:03:40,770
+Agregamos una clase C S S con el nombre de clase no con clase.
+
+46
+00:03:40,780 --> 00:03:45,640
+Por cierto nombre, por cierto volveré a por qué usamos el nombre de la
+
+47
+00:03:45,640 --> 00:03:51,680
+clase en la próxima conferencia, así que tuvimos el nombre de clase en nuestra llamada al elemento comercial.
+
+48
+00:03:51,690 --> 00:03:55,850
+Simplemente no pasaríamos nulo como configuración, sino un objeto javascript.
+
+49
+00:03:55,920 --> 00:04:01,020
+Y allí podemos definir el nombre de la clase y asignar cualquier clase de C S S que deseemos agregar.
+
+50
+00:04:01,530 --> 00:04:07,470
+Por ejemplo, en la misma clase que estamos aplicando aquí.
+
+51
+00:04:07,620 --> 00:04:11,930
+Ahora guardamos este archivo nuevamente, volvemos a cargar y ahora
+
+52
+00:04:12,770 --> 00:04:20,710
+vemos el estilo actualizado con el texto central. Vemos que estos CEOs como clase que se aplica aquí el
+
+53
+00:04:20,710 --> 00:04:28,210
+día de dos días es muy importante para entender el código que acabamos de escribir aquí con volver
+
+54
+00:04:28,210 --> 00:04:36,910
+a crear. elemento y el elemento de recreación anidado es el equivalente exacto de este código GSX X y de hecho
+
+55
+00:04:36,940 --> 00:04:45,310
+es a lo que este código se compilará con una de las muchas herramientas integradas que obtenemos de fábrica.
+
+56
+00:04:45,340 --> 00:04:46,960
+usaremos una vez que esté compilada.
+
+57
+00:04:46,960 --> 00:04:54,160
+En este proyecto, es la razón por la que necesitamos importar la repetición aunque no la estemos utilizando al usar esta sintaxis porque detrás de escena la
+
+58
+00:04:54,160 --> 00:04:59,720
+Por supuesto, escribir el código de esta manera creará un elemento
+
+59
+00:05:00,010 --> 00:05:07,180
+es realmente engorroso, especialmente a medida que agrega y anida más y más elementos.
+
+60
+00:05:07,180 --> 00:05:10,000
+Es por eso que normalmente no usamos este código.
+
+61
+00:05:10,000 --> 00:05:12,910
+Pero en cambio este código que comenzamos con esto es la razón por la cual usamos j como X. Pero es muy importante comprender las partes
+
+62
+00:05:13,210 --> 00:05:19,930
+internas y comprender a qué se debe esta compilación.
+
+63
+00:05:19,930 --> 00:05:24,080
+Y lo más importante de todo es que entiendo que si bien parece que no lo es.
+
+64
+00:05:24,130 --> 00:05:31,090
+Esto es javascript al final.
+
+65
+00:05:31,090 --> 00:05:33,370
+Se compila a este código.
+
+66
+00:05:33,400 --> 00:05:35,960
+&nbsp;

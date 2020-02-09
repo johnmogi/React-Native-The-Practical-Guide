@@ -1,0 +1,123 @@
+1
+00:00:02,180 --> 00:00:05,620
+Na última leitura, replicamos o componente de pessoa.
+
+2
+00:00:05,790 --> 00:00:11,350
+Vamos agora mergulhar na nossa colocação de algum conteúdo dinâmico em reagir.
+
+3
+00:00:11,550 --> 00:00:18,240
+Até agora, sempre codificamos alguns elementos femininos e sempre estou falando H. T. Homem, você sabe que é X
+
+4
+00:00:18,240 --> 00:00:19,600
+apenas porque parece HDMI.
+
+5
+00:00:19,610 --> 00:00:23,020
+Estou dizendo que acaba texto entre eles.
+
+6
+00:00:23,370 --> 00:00:36,150
+Agora, digamos que queremos dizer que eu sou uma pessoa e eu tenho X anos, mas X deve ser realmente um número aleatório.
+
+7
+00:00:36,180 --> 00:00:37,910
+Agora podemos simplesmente fazer isso.
+
+8
+00:00:38,010 --> 00:00:48,420
+X com Marth aleatório para obter um número aleatório entre 0 e 1 talvez multiplique estes com 30.
+
+9
+00:00:48,590 --> 00:00:49,670
+Podemos substituir
+
+10
+00:00:50,130 --> 00:00:57,620
+E também use o piso Moff para rodar para baixo.
+
+11
+00:00:58,800 --> 00:01:07,790
+Agora, se fizermos isso e salvar esse código. Bem, vemos esse resultado como um texto que faz sentido
+
+12
+00:01:07,790 --> 00:01:11,350
+como reagir para executar isso como JavaScript.
+
+13
+00:01:11,390 --> 00:01:18,870
+Afinal, talvez desejemos emiti-lo como um texto se tivermos algum conteúdo dinâmico em nossas prisões.
+
+14
+00:01:18,880 --> 00:01:26,700
+X parte que queremos executar como código JavaScript e não interpretar como texto.
+
+15
+00:01:27,080 --> 00:01:34,910
+Temos que embrulhá-lo em chaves simples e curly, então vamos embrulhar isso em uma única chamada, o aparelho em frente do
+
+16
+00:01:34,910 --> 00:01:38,430
+meu andar e um após os parênteses de fechamento.
+
+17
+00:01:38,900 --> 00:01:47,410
+Agora, se salvarmos, vamos recarregar. Vejamos que eu sou Siro nove e vinte anos e, se
+
+18
+00:01:47,440 --> 00:01:51,700
+recarregarmos novamente, vemos valores diferentes porque é aleatório.
+
+19
+00:01:51,820 --> 00:01:59,890
+Agora isso é super importante, porque agora mostra-nos que podemos produzir conteúdo dinâmico como parte
+
+20
+00:01:59,890 --> 00:02:01,870
+do nosso conteúdo GSX.
+
+21
+00:02:02,350 --> 00:02:07,680
+Não podemos definir a classe de javascript lá ou algo assim.
+
+22
+00:02:07,960 --> 00:02:11,300
+Podemos executar expressões de uma linha.
+
+23
+00:02:11,350 --> 00:02:18,140
+Expressões simples curtas como simples cálculos ou chamadas de função aqui, que é importante, a propósito.
+
+24
+00:02:18,280 --> 00:02:23,540
+Eu poderia chamar uma função aqui e essa função Por que, então, faça coisas mais complexas.
+
+25
+00:02:23,560 --> 00:02:31,720
+Nós realmente nos veremos chamando funções uma vez que adicionamos manipuladores de eventos agora que puderam produzir
+
+26
+00:02:31,720 --> 00:02:32,830
+conteúdo dinâmico.
+
+27
+00:02:32,830 --> 00:02:40,270
+Por que não levamos para o próximo nível e tornamos o nosso componente mais dinâmico para que possamos deixar
+
+28
+00:02:40,300 --> 00:02:48,490
+a produção de algum conteúdo genérico, como números pessoais e aleatórios, e, em vez disso, fazer alguma outra coisa passar alguma
+
+29
+00:02:48,550 --> 00:02:49,490
+configuração do laptop.
+
+30
+00:02:49,510 --> 00:02:57,790
+JS arquivo talvez alguns HVM out atributos que passamos pessoa para configurar o que queremos a saída para
+
+31
+00:02:57,800 --> 00:03:00,000
+cada uso do componente pessoa.

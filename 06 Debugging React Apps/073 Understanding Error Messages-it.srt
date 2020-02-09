@@ -1,0 +1,139 @@
+1
+00:00:02,160 --> 00:00:09,590
+Quindi immergetevi nell'errore o masochisti nell'applicazione di re-act nel progetto su cui avete lavorato
+
+2
+00:00:09,590 --> 00:00:20,480
+fino ad ora nel gestore del nome cambiato, aggiungendo tutti un errore nel codice lì dove abbiamo assegnato la persona aggiornata
+
+3
+00:00:20,480 --> 00:00:21,220
+qui.
+
+4
+00:00:21,590 --> 00:00:28,300
+Raggiungiamo il valore target dell'evento per ottenere il valore inserito dall'utente in cui ho assegnato un valore.
+
+5
+00:00:28,370 --> 00:00:35,900
+Diciamo che non stiamo accedendo al target dell'evento che è corretto ma l'input dell'evento che non è corretto.
+
+6
+00:00:35,900 --> 00:00:37,920
+Beh diciamo che hai commesso questo errore.
+
+7
+00:00:38,360 --> 00:00:42,300
+Ora, se torni all'applicazione al primo sguardo, sembra funzionare.
+
+8
+00:00:42,530 --> 00:00:48,410
+Parliamo con la persona che funziona ancora, ma se iniziamo a digitare, abbiamo effettivamente un errore.
+
+9
+00:00:48,620 --> 00:00:53,840
+E già VOLP e flusso di lavoro abbiamo anche una buona visualizzazione dell'errore qui nel mezzo.
+
+10
+00:00:53,840 --> 00:00:56,400
+Ora concentriamoci sul messaggio di errore a destra.
+
+11
+00:00:56,450 --> 00:00:59,900
+Scorri sempre verso l'alto per vedere il tuo messaggio di errore.
+
+12
+00:00:59,900 --> 00:01:05,260
+E lì vedi che non puoi leggere il valore della proprietà di undefined.
+
+13
+00:01:05,330 --> 00:01:10,280
+Hai anche un suggerimento su dove questo si è verificato nel gestore cambiato nome.
+
+14
+00:01:10,400 --> 00:01:11,610
+Attualmente si.
+
+15
+00:01:11,690 --> 00:01:16,200
+Linea 27 e viene visualizzato ancora più bello qui nel mezzo.
+
+16
+00:01:16,280 --> 00:01:19,880
+Viene visualizzato il valore di input dell'evento evidenziato.
+
+17
+00:01:19,880 --> 00:01:27,080
+Quindi questa linea sembra essere errata e non esiste alcuna proprietà value su undefined ora che indica semplicemente
+
+18
+00:01:27,500 --> 00:01:29,510
+la parte precedente al valore.
+
+19
+00:01:29,630 --> 00:01:36,180
+Quindi questa parte qui non è definita, il che è il caso perché non c'è alcuna proprietà di input sull'evento.
+
+20
+00:01:36,200 --> 00:01:39,470
+Ora hai ancora bisogno di capire che il bersaglio è corretto da solo.
+
+21
+00:01:39,500 --> 00:01:45,110
+Ad esempio, esaminando la documentazione dell'evento, è possibile consultare la normale documentazione relativa agli eventi di input
+
+22
+00:01:45,320 --> 00:01:47,080
+per donne di età avanzata.
+
+23
+00:01:47,540 --> 00:01:51,590
+Ma hai una chiara idea di cosa è andato storto e dove.
+
+24
+00:01:51,740 --> 00:02:00,440
+Ora a volte i messaggi di errore sono meno utili di questo anche se il messaggio di errore stesso è criptico.
+
+25
+00:02:00,590 --> 00:02:07,130
+La maggior parte delle volte dovresti ottenere un numero di riga utile che ti consente di tornare nel tuo codice e
+
+26
+00:02:07,160 --> 00:02:10,400
+provare a scoprire cosa c'è che non va su questa linea.
+
+27
+00:02:10,430 --> 00:02:14,980
+Questo dovrebbe essere utile e dovrebbe consentire di fissare il valore.
+
+28
+00:02:14,990 --> 00:02:19,570
+Questo è il modo in cui reagisci reagendo ai messaggi di errore.
+
+29
+00:02:19,670 --> 00:02:20,810
+Non avere paura
+
+30
+00:02:20,810 --> 00:02:21,920
+Non farti prendere dal panico.
+
+31
+00:02:21,950 --> 00:02:25,400
+Spesso questi messaggi di errore sono davvero utili.
+
+32
+00:02:25,430 --> 00:02:28,480
+Dovresti leggerli e dovresti dare un'occhiata ai numeri di riga.
+
+33
+00:02:28,490 --> 00:02:29,950
+Ti indicano.
+
+34
+00:02:30,200 --> 00:02:32,810
+Ora, per quanto riguarda gli errori logici.
+
+35
+00:02:32,870 --> 00:02:35,370
+Diamo un'occhiata a questi nella prossima lezione.

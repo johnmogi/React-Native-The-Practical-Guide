@@ -1,0 +1,499 @@
+1
+00:00:02,130 --> 00:00:09,760
+Więc wróciłem do aplikacji. plik js. Tam, w metodzie renderowania, której
+
+2
+00:00:09,850 --> 00:00:14,450
+się nauczyłeś, jest używany podczas tworzenia komponentu przez
+
+3
+00:00:14,470 --> 00:00:23,800
+rozszerzenie obiektu komponentu, tam wyprowadzamy trzy osoby i jest to oczywiście rodzaj listy, ponieważ mamy tutaj również
+
+4
+00:00:23,800 --> 00:00:26,350
+osoby zarządzane w naszym stanie.
+
+5
+00:00:26,460 --> 00:00:33,900
+Miałoby to sens, aby wypisać to jako listę, ale zanim się na to
+
+6
+00:00:33,940 --> 00:00:42,880
+zanurkniemy, zagłębimy się najpierw w przekazywanie treści warunkowo. Powiedzmy, że po kliknięciu tego przycisku tak naprawdę
+
+7
+00:00:42,910 --> 00:00:44,300
+nie chcemy zmieniać
+
+8
+00:00:44,530 --> 00:00:52,810
+nazw tak jak teraz, ale powiedzmy, że chcemy pokazać lub ukryć osoby, które mamy tutaj.
+
+9
+00:00:53,140 --> 00:01:00,610
+W tym celu możemy na przykład zawinąć wszystkie te osoby w div, powiedzmy, aby w końcu pokazać lub ukryć
+
+10
+00:01:00,610 --> 00:01:06,550
+ten div, a także automatycznie pokazać i ukryć wszystko, co znajduje się wewnątrz div, to
+
+11
+00:01:06,550 --> 00:01:09,680
+jest pomysł na zawijanie wszystkich osób div.
+
+12
+00:01:10,030 --> 00:01:11,680
+To pierwszy krok,
+
+13
+00:01:12,160 --> 00:01:21,690
+drugi krok polega na tym, że musimy zmienić tę metodę, nazwać ją togglePersonsHandler i nie będziemy
+
+14
+00:01:22,510 --> 00:01:26,190
+już przekazywać argumentów do tej metody.
+
+15
+00:01:26,200 --> 00:01:32,740
+Teraz powrócę do starej składni nieużywania funkcji, która zwraca inne wywołanie
+
+16
+00:01:32,740 --> 00:01:39,550
+funkcji, ale tylko przekazuje referencję. Muszę również utworzyć metodę o nazwie togglePersonsHandler, więc
+
+17
+00:01:39,850 --> 00:01:42,670
+dodam ją tutaj powyżej metody renderowania
+
+18
+00:01:42,970 --> 00:01:49,570
+i możemy użyć obu składni, tutaj ta składnia stworzy metodę, tutaj będziemy mieli problemy, jeśli
+
+19
+00:01:49,600 --> 00:01:52,130
+chcemy użyć tego słowa kluczowego chociaż
+
+20
+00:01:52,390 --> 00:02:00,010
+i skoro nazwiemy tę metodę tutaj po zdarzeniu wystrzelonym w domenie, doprowadziłoby to do prawdziwych problemów.
+
+21
+00:02:00,070 --> 00:02:05,370
+Tak więc użyję drugiej składni przypisywania funkcji strzałki do właściwości, utworzy ona
+
+22
+00:02:05,410 --> 00:02:07,280
+również metodę na końcu,
+
+23
+00:02:07,330 --> 00:02:14,440
+jest to po prostu inna składnia i ze względu na wewnętrzne cechy javascripta upewnia się, że
+
+24
+00:02:14,500 --> 00:02:21,310
+to, to słowo kluczowe w tym metoda zawsze w każdych okolicznościach wraca do tej klasy,
+
+25
+00:02:21,310 --> 00:02:24,250
+więc polecam używanie tego. Teraz, w tym
+
+26
+00:02:24,250 --> 00:02:31,600
+miejscu, chcę teraz zmienić jakąś własność, która w końcu zdecyduje, czy kiedykolwiek chcemy wyświetlić tego diva
+
+27
+00:02:31,600 --> 00:02:34,140
+z osobami w środku, czy nie.
+
+28
+00:02:34,510 --> 00:02:41,320
+Przede wszystkim przejdę do mojego stanu i dodasz właściwość, nazwę ją, pokaż, Panie, nazwa oczywiście zależy
+
+29
+00:02:41,320 --> 00:02:42,260
+od ciebie
+
+30
+00:02:42,550 --> 00:02:45,280
+i na początku ustawię ją jako fałszywą.
+
+31
+00:02:45,280 --> 00:02:52,690
+Teraz, jeśli jest to fałsz, nie chcę pokazywać osób i jak możemy teraz renderować to dynamicznie?
+
+32
+00:02:53,290 --> 00:03:01,210
+Cóż, możemy przejść do div iw innych strukturach, jak w Angular lub w Vuejs, teraz umieścimy dyrektywę
+
+33
+00:03:01,210 --> 00:03:07,580
+na temat tego div, na przykład w Vuejs, jeśli wiesz, że mamy v-if.
+
+34
+00:03:07,780 --> 00:03:10,580
+Teraz reagujcie na różne prace, tutaj
+
+35
+00:03:10,630 --> 00:03:18,280
+zawsze miejcie na uwadze, że pracujemy tylko z javascriptem, może to wyglądać jak html tutaj, ale to
+
+36
+00:03:18,280 --> 00:03:19,140
+jest jsx,
+
+37
+00:03:19,240 --> 00:03:23,750
+to jest po prostu syntaktyczny cukier dla reeact create element,
+
+38
+00:03:23,920 --> 00:03:27,980
+więc w końcu tutaj mamy kod javascript, stąd możemy
+
+39
+00:03:28,420 --> 00:03:35,860
+z nim pracować, ponieważ możemy pracować z kodem javascript. Jeśli chcemy renderować to dynamicznie, możemy
+
+40
+00:03:35,860 --> 00:03:43,600
+zamknąć go w pojedynczym cudzysłowie, cały div opakowujący osoby, a nie zewnętrzny div,
+
+41
+00:03:43,600 --> 00:03:44,850
+wewnętrzny div.
+
+42
+00:03:45,160 --> 00:03:50,640
+A teraz między wyuczonymi cudzysłowami możesz pisać wyrażenia javascript.
+
+43
+00:03:50,830 --> 00:03:55,470
+Dotyczy to nie tylko dwóch plus dwa lub
+
+44
+00:03:55,600 --> 00:04:01,490
+osiągnięcia stanu, ale możesz także renderować treść warunkowo, dodając potrójne wyrażenie.
+
+45
+00:04:01,930 --> 00:04:10,150
+To, czego nie możesz tutaj zrobić, to dodać instrukcję if, jeśli coś jest czymś, co wygląda na to, że
+
+46
+00:04:10,150 --> 00:04:15,510
+byłoby właściwym rozwiązaniem, aby po prostu przenieść element div wewnątrz bloku if, ale
+
+47
+00:04:15,700 --> 00:04:17,020
+to nie działa.
+
+48
+00:04:17,110 --> 00:04:24,150
+W rzeczywistości możesz używać tylko prostych instrukcji, żadnych instrukcji blokowych jako części tej dynamicznej składni.
+
+49
+00:04:24,190 --> 00:04:27,720
+Tak więc między otwarciem i zamknięciem pojedynczego nawiasu klamrowego.
+
+50
+00:04:27,940 --> 00:04:33,640
+Więc użycie bloku if nie zadziała, ale możemy użyć potrójnego
+
+51
+00:04:33,670 --> 00:04:37,710
+wyrażenia, możemy po prostu sprawdzić, czy ten
+
+52
+00:04:37,750 --> 00:04:40,470
+stan showPersons, należy pamiętać, że
+
+53
+00:04:40,660 --> 00:04:44,990
+jest to boolean, początkowo przypisujemy wartość false.
+
+54
+00:04:45,110 --> 00:04:52,730
+To da nam prawdę lub fałsz, a teraz potrójne wyrażenie, które jest domyślnym konstruktem javascript, sprawdza
+
+55
+00:04:52,730 --> 00:04:59,330
+ten warunek, dodając znak zapytania, a następnie decydujemy, co zrobić, jeśli jest to prawdą.
+
+56
+00:04:59,570 --> 00:05:03,110
+Cóż, jeśli to prawda, chcemy wyprowadzić
+
+57
+00:05:03,800 --> 00:05:07,470
+ten div, więc teraz część po
+
+58
+00:05:07,550 --> 00:05:10,470
+znaku zapytania, więc ten div,
+
+59
+00:05:10,610 --> 00:05:18,350
+zostaje wykonany, jeśli to prawda. Musimy również zdefiniować inny przypadek, dodając dwukropek, a następnie to, co
+
+60
+00:05:18,410 --> 00:05:23,850
+chcemy zrobić, jeśli nie jest prawdą, jest to zero, które po prostu oznacza brak renderowania.
+
+61
+00:05:23,870 --> 00:05:27,530
+Może to wyglądać na bardzo mylące przy pierwszym
+
+62
+00:05:27,530 --> 00:05:29,670
+użyciu, wiem o tym.
+
+63
+00:05:29,780 --> 00:05:37,610
+Więc jaki będzie cel końcowy, to po prostu skorzystamy z faktu, że wszystko, co
+
+64
+00:05:37,670 --> 00:05:44,960
+tutaj piszemy, jest na końcu javascript i możemy wstawić wyrażenia javascript do jsx
+
+65
+00:05:44,960 --> 00:05:52,820
+z pojedynczymi nawiasami klamrowymi, nauczyłeś się tego. Oznacza to, że możemy oczywiście uzyskać dostęp do dowolnej właściwości javascript i
+
+66
+00:05:52,820 --> 00:06:00,650
+używać jej w potrójnym wyrażeniu, ponownie jest to domyślna konstrukcja języka javascript. Trójskładnikowe wyrażenie jest tworzone przez pewien warunek, nie musi to
+
+67
+00:06:00,650 --> 00:06:02,500
+być właściwość, może to być
+
+68
+00:06:02,510 --> 00:06:05,140
+również sprawdzanie, gdy zobaczymy, czy to prawda.
+
+69
+00:06:05,270 --> 00:06:08,400
+Ale ponieważ jest to wartość logiczna, jest
+
+70
+00:06:08,450 --> 00:06:15,980
+ona automatycznie prawdą lub fałszem, ale jest również ważna. Następnie mamy znak zapytania, aby oddzielić naszą kontrolę od tego, co zrobić,
+
+71
+00:06:15,980 --> 00:06:16,950
+jeśli jest prawdziwa,
+
+72
+00:06:17,060 --> 00:06:19,070
+a to jest ta część tutaj.
+
+73
+00:06:19,070 --> 00:06:22,560
+Teraz pamiętaj, że nie piszemy tutaj html,
+
+74
+00:06:22,620 --> 00:06:23,620
+to jest
+
+75
+00:06:23,780 --> 00:06:28,350
+jsx, więc na koniec wywołujemy reagować na element create, jeśli
+
+76
+00:06:28,550 --> 00:06:32,340
+ten warunek jest prawdziwy. Nie nazywamy tego wyraźnie,
+
+77
+00:06:32,510 --> 00:06:34,030
+renderujemy te treści.
+
+78
+00:06:34,070 --> 00:06:40,080
+Ale nauczyłeś się, że jest to przekształcane, by reagować tworząc element za kulisami. A następnie mamy
+
+79
+00:06:40,080 --> 00:06:43,460
+warunek else oddzielony dwukropkiem.
+
+80
+00:06:43,460 --> 00:06:49,040
+Oznacza to po prostu, że jeśli ta kontrola nie jest
+
+81
+00:06:49,520 --> 00:06:51,380
+prawdziwa, zrób to.
+
+82
+00:06:51,380 --> 00:06:55,420
+A ponieważ po prostu niczego tu nie wykonujemy, zwracamy wartość zerową.
+
+83
+00:06:55,430 --> 00:07:00,620
+Zasadniczo oznacza to, że nie wyrenderujemy niczego, co spowoduje brak wartości null i to jest nic.
+
+84
+00:07:00,620 --> 00:07:02,910
+W ten sposób możesz to
+
+85
+00:07:02,960 --> 00:07:09,560
+przeczytać, znowu może wyglądać bardzo dziwnie, ale ma to sens, gdy tylko otoczysz głową o
+
+86
+00:07:09,590 --> 00:07:10,810
+tym, jak javascript,
+
+87
+00:07:10,910 --> 00:07:13,820
+jak właściwie reaguje, to wszystko javascript.
+
+88
+00:07:13,820 --> 00:07:16,410
+Teraz z tym zakończmy naszą
+
+89
+00:07:16,540 --> 00:07:24,510
+logikę, upewniając się, że przełącznik osoby obsługującej poprawnie przełącza stan, abyśmy mogli po prostu ustawić const
+
+90
+00:07:24,620 --> 00:07:26,820
+doesShow utworzyć nową stałą w
+
+91
+00:07:26,840 --> 00:07:29,660
+tym, Który jest ten stan showPersons.
+
+92
+00:07:29,690 --> 00:07:36,250
+Jest to prawda lub fałsz, jest to stan bieżący, a następnie nazywamy ten stan
+
+93
+00:07:36,560 --> 00:07:42,990
+zestawu, aby dostosować stan, a teraz po prostu ustawiamy showPersons jako równy temu, co
+
+94
+00:07:43,000 --> 00:07:50,240
+nie jest ShowShow, dodając przed nim wykrzyknik. To po prostu konwertuje, jeśli doesshow jest prawdziwe, ustawi
+
+95
+00:07:50,240 --> 00:07:52,120
+wartość showPersons na false, jeśli
+
+96
+00:07:52,310 --> 00:08:00,280
+doesshow będzie fałszywe, ustawi ona wartość showPersons na true. I znowu ważne, że zostanie
+
+97
+00:08:00,280 --> 00:08:07,480
+scalony z innym państwem. Ustaw stan z obiektem, w którym ustawiamy tylko showPersons,
+
+98
+00:08:07,480 --> 00:08:15,610
+nie oznacza, że ​​cały stan zostaje zastąpiony tylko przez showPerson, stare osoby stanu, inny stan po prostu nie jest dotykany,
+
+99
+00:08:15,760 --> 00:08:20,770
+reaguje scala zaktualizowaną wartość showPersons dla nas w ten stan, to jest
+
+100
+00:08:20,770 --> 00:08:25,110
+to, co dzieje się tutaj. Teraz z tym, powinniśmy być
+
+101
+00:08:25,270 --> 00:08:32,530
+w stanie zapisać ten kod i upewnić się, że npm start jest uruchomiony, a następnie udać się
+
+102
+00:08:32,530 --> 00:08:34,820
+do uruchomionej aplikacji. Tam,
+
+103
+00:08:34,840 --> 00:08:39,130
+jeśli klikniesz Zmień nazwę, zobaczysz osoby.
+
+104
+00:08:39,310 --> 00:08:44,590
+Otrzymujemy ostrzeżenie, które straciliśmy już na wartości, ponieważ niektóre z tych osób nie były
+
+105
+00:08:44,590 --> 00:08:46,870
+skonfigurowane tak, by wiązały się niepoprawnie,
+
+106
+00:08:46,930 --> 00:08:48,540
+ale możemy to zignorować tutaj.
+
+107
+00:08:48,580 --> 00:08:51,670
+Właściwie to nawet dobrze się tu dostaliśmy,
+
+108
+00:08:51,700 --> 00:08:56,520
+to wyraźnie pokazuje nam, że reakcja nie ukrywała wcześniej wartości, w
+
+109
+00:08:56,710 --> 00:08:59,890
+przeciwnym razie na samym początku otrzymalibyśmy to ostrzeżenie.
+
+110
+00:08:59,890 --> 00:09:01,900
+Kiedy przeładujesz stronę, której nie dostaniemy,
+
+111
+00:09:02,080 --> 00:09:03,900
+otrzymamy ją dopiero po kliknięciu przycisku.
+
+112
+00:09:04,000 --> 00:09:11,010
+Reakcja naprawdę tylko renderuje te elementy, gdy nasz warunek jest prawdziwy. Jeśli kliknę ponownie, jest
+
+113
+00:09:11,320 --> 00:09:12,810
+ukryty.
+
+114
+00:09:13,110 --> 00:09:16,800
+Teraz mogę to również potwierdzić, sprawdzając dom, jeśli
+
+115
+00:09:17,100 --> 00:09:23,430
+przyjrzymy się bliżej elementowi głównemu w aplikacji, widzimy ten przycisk tutaj i poniżej
+
+116
+00:09:23,430 --> 00:09:25,720
+przycisku, nie ma absolutnie nic.
+
+117
+00:09:25,860 --> 00:09:27,570
+Teraz obejrzyj tę
+
+118
+00:09:27,570 --> 00:09:34,260
+część po prawej stronie, gdy kliknę przycisk. Widziałeś, jak ten mężczyzna mrugnął, to jest
+
+119
+00:09:34,260 --> 00:09:40,360
+ten nowy div z naszymi osobami, został dodany, oddany domowi, gdy warunek był prawdziwy.
+
+120
+00:09:40,410 --> 00:09:43,300
+Działa to w taki sposób, że
+
+121
+00:09:43,380 --> 00:09:49,960
+zareaguję, a teraz po prostu zaktualizuję podpis tego przycisku, aby togglePersons, ale to
+
+122
+00:09:50,130 --> 00:09:57,720
+tylko kosmetyczna zmiana, mamy już działającą kontrolę warunkową. Teraz takie warianty jak to działa, ale mogą
+
+123
+00:09:57,720 --> 00:10:00,360
+również prowadzić do mylącego kodu jsx,
+
+124
+00:10:00,360 --> 00:10:07,350
+jeśli masz dużo potencjalnie nawet zagnieżdżonych czeków, więc pokażę ci alternatywę do tego w następnym
+
+125
+00:10:07,350 --> 00:10:08,010
+wykładzie.

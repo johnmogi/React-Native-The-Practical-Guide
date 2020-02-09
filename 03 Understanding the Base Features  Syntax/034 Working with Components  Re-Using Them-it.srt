@@ -1,0 +1,79 @@
+1
+00:00:02,170 --> 00:00:07,400
+Nell'ultima lezione creiamo il nostro componente personale.
+
+2
+00:00:07,400 --> 00:00:10,640
+La domanda è qual è il grande vantaggio di questo.
+
+3
+00:00:11,060 --> 00:00:19,020
+I componenti sono fantastici perché possiamo focalizzare il nostro codice in ogni file e quindi renderlo molto più gestibile.
+
+4
+00:00:19,070 --> 00:00:26,690
+Non inserire tutto nel file js del capitolo che può essere davvero affollato per le app più grandi
+
+5
+00:00:26,990 --> 00:00:30,110
+e questo componente è anche riutilizzabile e configurabile.
+
+6
+00:00:30,290 --> 00:00:34,460
+Nessun ritorno alla riconfigurazione della parte è abbastanza semplice.
+
+7
+00:00:34,700 --> 00:00:38,510
+Possiamo semplicemente copiare e incollare tutte le volte che vogliamo.
+
+8
+00:00:38,510 --> 00:00:46,010
+file otteniamo l'output più volte e questo è un modo super facile di riutilizzarlo ovunque nella nostra applicazione.
+
+9
+00:00:46,010 --> 00:00:50,510
+Forse tre volte e semplicemente facendo questo e salvando quel
+
+10
+00:00:50,720 --> 00:00:57,160
+E se la nostra applicazione conterrebbe sempre più componenti Questo renderebbe estremamente facile crearlo con tutti
+
+11
+00:00:57,160 --> 00:01:01,350
+questi componenti e usarli ovunque ci sia bisogno di utilizzarli.
+
+12
+00:01:01,400 --> 00:01:02,190
+Nel nostro laboratorio
+
+13
+00:01:02,330 --> 00:01:06,190
+Questo è ora efficacemente il nostro elemento maschile HVM personalizzato.
+
+14
+00:01:06,830 --> 00:01:12,230
+Possiamo anche configurarlo prima di farlo.
+
+15
+00:01:12,380 --> 00:01:17,900
+Mostriamo qualcos'altro sul nostro codice di re-act perché al momento è tutto statico.
+
+16
+00:01:18,050 --> 00:01:23,730
+Abbiamo il nostro componente personalizzato ma in là abbiamo ancora solo un po 'di HDMI statico.
+
+17
+00:01:23,750 --> 00:01:27,230
+Invierò alcuni contenuti HMO alla fine.
+
+18
+00:01:27,230 --> 00:01:35,810
+Spesso i tuoi modelli, il tuo codice GSX dovrebbe essere dinamico, dovrebbe generare cose diverse a seconda dello stato
+
+19
+00:01:35,810 --> 00:01:39,250
+della tua applicazione o su qualche input dell'utente.
+
+20
+00:01:39,470 --> 00:01:45,490
+Ora lo faremo molto per il corso, ma gettiamo le basi per questo nella prossima lezione.

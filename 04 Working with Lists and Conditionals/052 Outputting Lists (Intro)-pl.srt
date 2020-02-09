@@ -1,0 +1,59 @@
+1
+00:00:02,190 --> 00:00:08,250
+Podczas ostatnich wykładów nauczyliśmy się, jak tworzyć treści w sposób warunkowy i po
+
+2
+00:00:08,250 --> 00:00:11,310
+prostu wykorzystujemy fakt, że wszystko jest javascript.
+
+3
+00:00:11,310 --> 00:00:20,100
+Teraz chcę oddać moją listę osób, do tej pory tak naprawdę nie robimy tego w dynamiczny sposób.
+
+4
+00:00:20,100 --> 00:00:26,000
+Mamy tutaj kilka osób w naszym stanie i powinno to być nasze jedyne źródło prawdy.
+
+5
+00:00:26,010 --> 00:00:32,090
+To powinno być nasze źródło danych w większych aplikacjach, w rzeczywistych aplikacjach
+
+6
+00:00:32,100 --> 00:00:37,010
+może być wypełniane danymi lub danymi pobieranymi z serwera.
+
+7
+00:00:37,350 --> 00:00:46,260
+Mamy tutaj szereg osób, ale w jsx, który teraz zwracamy tutaj, w naszym trybie warunkowym, po prostu na
+
+8
+00:00:46,260 --> 00:00:53,400
+stałe utworzyliśmy trzy osoby i ręcznie przypisaliśmy dane do różnych osób z naszej tablicy,
+
+9
+00:00:54,050 --> 00:00:56,470
+co oczywiście jest bardzo nieelastyczne.
+
+10
+00:00:56,700 --> 00:01:04,560
+Jeśli kiedykolwiek coś zmienimy, jeśli dodamy nową osobę lub ją usuniemy, będzie to w zasadzie zepsuło się i nie będziemy w
+
+11
+00:01:04,560 --> 00:01:11,200
+stanie adresować konkretnej osoby podczas jej aktualizacji, tak jak robimy to tutaj za pomocą kliknięcia lub zmienionego komunikatu.
+
+12
+00:01:11,210 --> 00:01:14,400
+To wszystko nie działa tak, jak powinno działać,
+
+13
+00:01:14,520 --> 00:01:22,170
+więc nauczmy się, w jaki sposób możemy generować listy danych, tablice, a także w jaki sposób możemy również wchodzić
+
+14
+00:01:22,170 --> 00:01:25,620
+w interakcje z nimi, aktualizować je i poprawnie zmieniać
+
+15
+00:01:25,620 --> 00:01:29,500
+tablice w naszym stanie. Skupimy się na tych wszystkich rzeczach podczas kolejnych wykładów.

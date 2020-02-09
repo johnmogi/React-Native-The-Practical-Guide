@@ -1,0 +1,27 @@
+1
+00:00:02,360 --> 00:00:08,030
+Şimdi ve biz, reaktörün ne olduğunu ve neden onu kullanmak isteyebileceğimizi, ilk
+
+2
+00:00:08,060 --> 00:00:09,520
+reaksiyonumuzu yaptığımızı anlaştılar.
+
+3
+00:00:09,770 --> 00:00:15,280
+Bütün çekirdek tepki kavramlarını ve reaksiyonun temel sözdizimini inceleyelim.
+
+4
+00:00:15,440 --> 00:00:20,180
+Ve bu modül, gerçek bir yeniden eylem uygulaması oluşturmak için neye ihtiyaç duyduğuna bir göz atacaktır.
+
+5
+00:00:20,270 --> 00:00:25,690
+Ve elbette ki makinemde de yerel olarak ve kod kaleminde değil de demek istedim.
+
+6
+00:00:26,000 --> 00:00:30,000
+Ve hangi temel özelliklerin yeniden teklif ettiğini ve bunları nasıl kullandığını öğreneceksiniz.
+
+7
+00:00:30,080 --> 00:00:36,990
+Bunun içine dalalım ve makinemizde yerel reac Projesi'ni nasıl kurduğumuzu öğrenelim.

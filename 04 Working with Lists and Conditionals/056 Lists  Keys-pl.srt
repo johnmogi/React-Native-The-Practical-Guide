@@ -1,0 +1,211 @@
+1
+00:00:02,850 --> 00:00:08,370
+Umieściliśmy już trochę pracy na listach i poprawiliśmy je, na przykład korzystając z indeksu naszego elementu, aby
+
+2
+00:00:08,370 --> 00:00:15,390
+uruchomić jakiś kod, który naprawdę bierze pod uwagę element, który uruchamia. Nadal możemy to poprawić,
+
+3
+00:00:15,390 --> 00:00:22,320
+na przykład, dbając o ten błąd, który
+
+4
+00:00:22,320 --> 00:00:29,190
+otrzymujemy z brakującym kluczem. Kluczowa podpora jest w rzeczywistości ważną własnością, którą powinniśmy dodać podczas renderowania
+
+5
+00:00:29,190 --> 00:00:31,540
+list danych i dlatego reaguje nam na to.
+
+6
+00:00:31,920 --> 00:00:35,130
+Nie określiliśmy osobiście właściwości klucza, tak naprawdę
+
+7
+00:00:35,130 --> 00:00:41,970
+jest to właściwość domyślna, której reagowanie oczekuje od elementu, niezależnie od tego, czy jest to
+
+8
+00:00:42,330 --> 00:00:47,210
+komponent niestandardowy czy domyślny element HTML, który renderujesz na liście,
+
+9
+00:00:47,220 --> 00:00:57,350
+a więc po prostu przez odwzorowanie tablicy na elementy jsx . Ta kluczowa właściwość pomaga w skutecznym aktualizowaniu listy.
+
+10
+00:00:57,360 --> 00:01:00,980
+Rozważmy tutaj przypadek, w którym usuwamy elementy z listy,
+
+11
+00:01:00,990 --> 00:01:02,650
+oczywiście że działa, ale
+
+12
+00:01:02,730 --> 00:01:09,420
+za kulisami reagujemy potrzebami, aby dowiedzieć się, co właściwie musi zmienić w ogólnej domenie, a my
+
+13
+00:01:09,420 --> 00:01:15,510
+zagłębimy się głębiej w to, co dokładnie reaguje w konkretna sekcja tutaj w trakcie, gdzie
+
+14
+00:01:15,510 --> 00:01:17,910
+dam ci krótkie spojrzenie za kulisami.
+
+15
+00:01:17,910 --> 00:01:24,380
+Ale w zasadzie to, co robi, ma coś, co nazywa się wirtualną domeną, gdzie porównuje
+
+16
+00:01:24,390 --> 00:01:31,920
+to, co teraz wyrenderowałoby, gdyby miało teraz wywołać metodę renderowania, albo, gdyby rzeczywiście dopasowało rzeczywisty dom z wynikiem
+
+17
+00:01:31,920 --> 00:01:37,380
+metody renderowania do poprzedniego domu. to wyszło. Zasadniczo robi to kompresję
+
+18
+00:01:37,380 --> 00:01:40,860
+przyszłości z przeszłością. A jeśli chodzi o
+
+19
+00:01:40,860 --> 00:01:46,180
+listy, to oczywiście trzeba się dowiedzieć, które elementy się zmieniły, a reakcja
+
+20
+00:01:46,200 --> 00:01:52,260
+nie jest człowiekiem, nie widać tego wyraźnie, ponieważ mamy trzy odrębne elementy o różnych
+
+21
+00:01:52,860 --> 00:01:54,780
+nazwach, które przypadkowo kliknąłem.
+
+22
+00:01:54,780 --> 00:02:00,740
+Więc nie widzi, że to Max, Manu i Stephanie, reagują, ma tylko garść składowych
+
+23
+00:02:01,170 --> 00:02:03,300
+i nie sprawdza ich głęboko,
+
+24
+00:02:03,300 --> 00:02:05,170
+co byłoby super nieskuteczne.
+
+25
+00:02:05,670 --> 00:02:08,700
+Domyślnie po prostu ponownie wyświetli całą listę,
+
+26
+00:02:08,700 --> 00:02:11,790
+a dla długiej listy jest to bardzo
+
+27
+00:02:11,790 --> 00:02:17,040
+nieefektywne, dlatego powinniśmy przypisać właściwość kluczową, aby umożliwić reagowanie w celu śledzenia
+
+28
+00:02:17,040 --> 00:02:24,720
+poszczególnych elementów, tak aby miała wyraźną właściwość, którą może porównaj różne elementy, aby dowiedzieć się, które elementy
+
+29
+00:02:24,720 --> 00:02:26,800
+się zmieniły, a które nie.
+
+30
+00:02:26,910 --> 00:02:31,680
+Tak, że ponownie renderuje elementy, które się zmieniły, a nie całą listę.
+
+31
+00:02:32,040 --> 00:02:38,870
+Więc to, co robimy, to przypisujemy klucz, a teraz co tutaj przypiszemy? Coś wyjątkowego.
+
+32
+00:02:39,180 --> 00:02:45,120
+Zwykle masz pewną identyfikację swoich elementów, jeśli otrzymasz je z bazy danych
+
+33
+00:02:45,120 --> 00:02:45,790
+lub
+
+34
+00:02:45,810 --> 00:02:53,370
+czegoś podobnego, istnieje duża szansa, że ​​masz identyfikator lub inny unikalny identyfikator, a Twoje imię
+
+35
+00:02:53,370 --> 00:02:56,250
+będzie unikalne, ale niekoniecznie jest gwarantowane.
+
+36
+00:02:56,250 --> 00:03:02,340
+Więc moglibyśmy użyć indeksu, ponieważ po wszystkich zmianach indeksu dla każdego elementu w
+
+37
+00:03:02,340 --> 00:03:02,630
+tablicy,
+
+38
+00:03:02,630 --> 00:03:03,210
+prawda?
+
+39
+00:03:03,450 --> 00:03:04,110
+Zgadza się,
+
+40
+00:03:04,110 --> 00:03:06,920
+ale indeks jest również częścią samej listy.
+
+41
+00:03:07,020 --> 00:03:11,160
+Jeśli lista się zmieni, każdy element otrzyma nowy indeks
+
+42
+00:03:11,160 --> 00:03:13,740
+przynajmniej po każdym elemencie po zmianie.
+
+43
+00:03:13,740 --> 00:03:19,890
+Indeks nie jest więc dobrym kluczem, ostatecznie nie pomoże zareagować. Powinniśmy więc spróbować mieć niepowtarzalny identyfikator i znowu, ponieważ
+
+44
+00:03:19,890 --> 00:03:21,010
+jest to po
+
+45
+00:03:21,240 --> 00:03:26,530
+prostu fikcyjne dane, tutaj po prostu dodaję identyfikator. W prawdziwych danych szanse
+
+46
+00:03:26,550 --> 00:03:32,380
+są wysokie, masz taki identyfikator. Identyfikator nie musi być liczbą, może być
+
+47
+00:03:32,460 --> 00:03:37,650
+czymś wyjątkowym, więc tutaj po prostu wbijam na klawiaturę, aby uzyskać unikalne identyfikatory.
+
+48
+00:03:37,650 --> 00:03:40,040
+Teraz mogę użyć tego tutaj z
+
+49
+00:03:40,050 --> 00:03:48,240
+identyfikatorem osoby, aby upewnić się, że każdy element ma unikalny klucz reagowania, który może posłużyć do porównania elementów przyszłości
+
+50
+00:03:48,240 --> 00:03:54,790
+z elementami przeszłości i tylko zaktualizować dom w miejscach, w których musi go zaktualizować .
+
+51
+00:03:55,020 --> 00:04:01,680
+Teraz, jeśli to przeładujemy i przełączymy osoby, kluczowe ostrzeżenie zniknie. Otrzymujemy takie samo zachowanie jak poprzednio i
+
+52
+00:04:01,680 --> 00:04:06,230
+możemy sprawdzić to, aby zobaczyć, jak aktualizuje dom tutaj.
+
+53
+00:04:06,270 --> 00:04:12,390
+Ale za kulisami można to teraz zrobić w bardziej efektywny sposób, co oczywiście jest bardzo ważne.

@@ -1,0 +1,291 @@
+1
+00:00:02,280 --> 00:00:05,290
+Wiele omówiliśmy i zmieniliśmy tutaj wiele nazw.
+
+2
+00:00:05,550 --> 00:00:14,260
+Ale co, jeśli naprawdę chcemy zmienić nazwę na własną rękę. Powiedzmy więc, że w komponencie osoby
+
+3
+00:00:14,260 --> 00:00:23,290
+tutaj mamy również inny element, normalny element wejściowy, który jest tekstem typu i
+
+4
+00:00:23,290 --> 00:00:26,380
+to wszystko, powinien być samozamykający.
+
+5
+00:00:26,470 --> 00:00:34,680
+Teraz, gdy coś wpiszemy, chcemy użyć tego, co tutaj wpisujemy, jako nowej nazwy,
+
+6
+00:00:34,690 --> 00:00:43,970
+teraz możemy posłuchać specjalnego wydarzenia na Zmień. onChange zostanie uruchomiony, gdy zmieni się wartość w tym wejściu.
+
+7
+00:00:44,650 --> 00:00:53,440
+I tutaj, chcę wykonać pewną metodę, którą muszę przekazać z mojej aplikacji. plik js.
+
+8
+00:00:53,440 --> 00:01:01,810
+Dostaliśmy to switchNameHandler i zostawię go bez zmian, a zamiast tego dodam
+
+9
+00:01:01,810 --> 00:01:04,950
+nowy handler, nazwijmy go nameChangedHandler.
+
+10
+00:01:05,380 --> 00:01:08,680
+Spodziewam się dostać obiekt zdarzenia tutaj,
+
+11
+00:01:08,680 --> 00:01:14,710
+nie używaliśmy go wcześniej, ale tam, nadal chcę zmienić stan.
+
+12
+00:01:14,820 --> 00:01:18,880
+Teraz oczywiście teoretycznie chciałbyś się zmienić.
+
+13
+00:01:18,880 --> 00:01:24,250
+stan lub imię osoby, dla której ją wpisujemy.
+
+14
+00:01:24,250 --> 00:01:31,450
+To jest coś, co zrobimy później w trakcie, gdy nauczyliśmy się poprawnie renderować listę
+
+15
+00:01:31,480 --> 00:01:32,560
+elementów dynamicznych.
+
+16
+00:01:32,560 --> 00:01:36,340
+Więc na razie zawsze będę zmieniał imię Manu tutaj.
+
+17
+00:01:36,580 --> 00:01:42,220
+Więc Max pozostanie Maxem, a Stephanie powinna zachować wiek 26 lat,
+
+18
+00:01:42,340 --> 00:01:50,410
+ale Manu powinien zmienić nazwę, bez względu na to, w którym przypadku tego komponentu osoby, którą
+
+19
+00:01:50,470 --> 00:01:53,190
+wpisuję, znowu to naprawimy później.
+
+20
+00:01:53,230 --> 00:01:56,490
+Więc tutaj dostanę zdarzenie i jak można się
+
+21
+00:01:56,620 --> 00:02:03,910
+dowiedzieć o zdarzeniach javascript, to wydarzenie prawdopodobnie ma cel. Cel nie tworzy dobrej wartości nazwy,
+
+22
+00:02:03,910 --> 00:02:11,280
+ale cel powinien być wprowadzonym przez nas wpisem, więc powinien on również
+
+23
+00:02:11,470 --> 00:02:17,750
+mieć wartość value, która jest wartością wprowadzoną przez użytkownika, a
+
+24
+00:02:17,770 --> 00:02:23,180
+zatem teraz zapewnia dobrą zaktualizowaną wartość dla imienia.
+
+25
+00:02:23,320 --> 00:02:27,580
+Więc wartość docelowa zdarzenia jest tym, co chcę przypisać jako nową nazwę Manu, ponownie
+
+26
+00:02:27,640 --> 00:02:35,320
+na razie bez względu na to, z którego wejścia wpisałem wpisany komponent. nameChangedHandler to mój program obsługi, teraz
+
+27
+00:02:35,320 --> 00:02:36,640
+muszę przekazać
+
+28
+00:02:36,640 --> 00:02:42,680
+go do komponentu, aby móc uzyskać do niego dostęp.
+
+29
+00:02:43,090 --> 00:02:47,830
+A ponieważ mogę zmienić tylko Manu, przekazuję go tylko
+
+30
+00:02:47,920 --> 00:02:50,730
+Manu, choć oczywiście możemy przekazać to
+
+31
+00:02:51,010 --> 00:03:01,870
+innemu, oczywiście, tutaj po prostu nazwę to zmienione i przekażę to. nameChangedHandler zgodnie z tą samą logiką, co w
+
+32
+00:03:01,890 --> 00:03:05,460
+przypadku zdarzenia kliknięcia. Wewnątrz osoby
+
+33
+00:03:05,500 --> 00:03:14,500
+mogę teraz uzyskać do niej dostęp. Zmieniona własność i po prostu wywołaj zmienione rekwizyty tutaj lub nie dzwoń, nie dodawaj
+
+34
+00:03:14,500 --> 00:03:18,450
+nawiasów, ale po prostu przekazuj odwołanie do niego i pamiętaj, że odnosi
+
+35
+00:03:18,580 --> 00:03:25,970
+się to do metody, którą zadeklarowaliśmy w aplikacji. js, to. nameChangedHandler.
+
+36
+00:03:26,540 --> 00:03:33,410
+Obiekt zdarzenia zostanie automatycznie przekazany do niego automatycznie, reagując jak normalny javascript.
+
+37
+00:03:33,430 --> 00:03:36,370
+gdzie zawsze domyślnie uzyskujesz dostęp do obiektu zdarzenia.
+
+38
+00:03:37,130 --> 00:03:40,050
+Po tym, uratujmy to i zobaczmy, co się stanie.
+
+39
+00:03:40,130 --> 00:03:46,090
+Mamy dane wejściowe poniżej wszystkich komponentów, ale dla większości z nich nic się nie dzieje, jeśli je wpisuję, ale w przypadku
+
+40
+00:03:46,100 --> 00:03:53,650
+Manu widzisz, za każdym naciśnięciem klawisza nazwa aktualizacji, Manuel, cokolwiek bym tam napisał. Dzieje się tak, ponieważ przywiązujemy
+
+41
+00:03:53,690 --> 00:04:01,610
+się do Zmień na te podpory. zmieniony, który zawiera odwołanie do nameChangedHandler, a następnie
+
+42
+00:04:01,850 --> 00:04:07,820
+użyliśmy domyślnego obiektu zdarzenia do wyodrębnienia celu, który jest elementem wejściowym,
+
+43
+00:04:07,820 --> 00:04:10,970
+a następnie wartości celu, który wprowadziliśmy.
+
+44
+00:04:10,970 --> 00:04:16,850
+To pokazuje nam dwie rzeczy, jak możemy dynamicznie aktualizować coś, dynamicznie wywoływać zdarzenie i wykorzystywać
+
+45
+00:04:16,850 --> 00:04:22,430
+rzeczy, których się uczymy wcześniej, jak przekazywanie referencji zdarzeń lub odniesień do metod, które
+
+46
+00:04:22,430 --> 00:04:26,990
+powinienem powiedzieć, ale pokazuje nam również, jak możemy obsłużyć dane wejściowe.
+
+47
+00:04:27,530 --> 00:04:36,820
+Teraz byłoby również miło, gdybyśmy od razu widzieli aktualną wartość nazwy na wejściu.
+
+48
+00:04:37,130 --> 00:04:43,760
+Zasadniczo chcemy więc ustanowić dwukierunkowe powiązanie, kiedy to zmienimy, chcemy propagować tę zmianę, abyśmy
+
+49
+00:04:43,760 --> 00:04:46,220
+mogli zaktualizować stan, ale chcemy
+
+50
+00:04:46,430 --> 00:04:49,890
+też od samego początku zobaczyć obecny stan.
+
+51
+00:04:50,390 --> 00:04:57,070
+Aby to zrobić, mogę ustawić wartość równą nazwie podpory, to jest
+
+52
+00:04:57,080 --> 00:04:59,210
+nazwa mimo wszystko.
+
+53
+00:04:59,210 --> 00:05:02,160
+Teraz mamy własną, wiążącą konfigurację,
+
+54
+00:05:02,270 --> 00:05:09,350
+słuchamy zmian, wywołujemy w końcu metodę change, która odnosi się do nameChangedHandler,
+
+55
+00:05:09,350 --> 00:05:17,030
+która aktualizuje stan i przekazaliśmy stan osobie z imieniem i wiekiem, a my
+
+56
+00:05:17,030 --> 00:05:20,510
+wyprowadzamy nazwa jako wartość wejścia.
+
+57
+00:05:20,510 --> 00:05:24,800
+To teraz pozwala nam pokazać tę wartość już na
+
+58
+00:05:25,070 --> 00:05:31,190
+samym początku i tutaj dostaję ostrzeżenie, to ostrzeżenie teoretycznie ma sens, ponieważ
+
+59
+00:05:31,190 --> 00:05:38,910
+jeśli podasz wartość prop bez instrukcji onChange tutaj, faktycznie napotkasz problemy, ponieważ wiążisz wartość do
+
+60
+00:05:38,910 --> 00:05:43,310
+nieruchomości, nie pozwalając sobie na reakcję na zmiany, dlatego
+
+61
+00:05:43,310 --> 00:05:45,730
+zablokowałbyś swoje dane wejściowe, mógłbym
+
+62
+00:05:45,770 --> 00:05:51,800
+to pokazać, jeśli usunę na zmianę. Teraz widzimy, że nadal widzimy wartości, ale jeśli
+
+63
+00:05:51,800 --> 00:05:55,550
+tam wpiszesz, nic się nie dzieje, nie mogę pisać, ponieważ
+
+64
+00:05:55,670 --> 00:06:00,920
+nie obsługujemy zmian, więc zawsze nadpisujemy cokolwiek próbujemy wpisywać z istniejącą nazwą wniosku.
+
+65
+00:06:01,340 --> 00:06:08,320
+Jeśli jednak ponownie wprowadzę zmiany, błąd pozostanie tutaj, co jest po prostu fałszywym alarmem, ponieważ wyraźnie widać,
+
+66
+00:06:08,510 --> 00:06:14,180
+nie mogę wpisać, ponieważ nie jestem w stanie obsłużyć moich zmian, zaktualizować mojego stanu,
+
+67
+00:06:14,180 --> 00:06:19,880
+zaktualizować moich rekwizytów i tym samym odzwierciedlić moje zmiany w tu też wejście.
+
+68
+00:06:20,060 --> 00:06:25,230
+Mamy więc działającą dwukierunkową oprawę i możemy teraz dynamicznie zmieniać tę nazwę.
+
+69
+00:06:25,340 --> 00:06:31,730
+Znowu pamiętajmy tylko o Manu, ponieważ nie ustanowiliśmy logiki dla innych danych wejściowych, dlatego nie
+
+70
+00:06:31,760 --> 00:06:35,690
+możemy tam wpisać, ponieważ nie możemy tam ich aktualizować.
+
+71
+00:06:35,840 --> 00:06:40,630
+I prawdopodobnie dlatego narzeka tutaj na te inne dane.
+
+72
+00:06:40,860 --> 00:06:47,600
+Na razie możemy to zignorować, ale poprawimy to, gdy mamy lepszy sposób dynamicznego
+
+73
+00:06:47,690 --> 00:06:49,410
+renderowania listy elementów.

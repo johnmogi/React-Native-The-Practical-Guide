@@ -1,0 +1,355 @@
+1
+00:00:02,200 --> 00:00:07,840
+Dinamik olarak stilleri ve sınıfları nasıl ayarlayabileceğinizi öğrendiniz şimdi satır içi stillerin sınırlamaları
+
+2
+00:00:07,900 --> 00:00:11,790
+için şu anda bizim için en önemli olanı öğrenelim.
+
+3
+00:00:11,890 --> 00:00:20,500
+C düğmesinde Colin habere ile basitçe yaratacağımız düğme habere için bir Hubner stili atayamamız, sözde seçicidir,
+
+4
+00:00:20,860 --> 00:00:27,340
+bu da sözü edilen iki nokta işaretiyle belirtilen bazı adres seçicisine dayanan
+
+5
+00:00:27,370 --> 00:00:29,680
+bir seçici anlamına gelir.
+
+6
+00:00:29,780 --> 00:00:37,720
+Şimdi bunu mevcut uygulamanıza atayamıyoruz, harici harfler için bazı stiller atadığımız
+
+7
+00:00:37,720 --> 00:00:41,860
+veya oluşturduğumuz stil javascript nesnemiz var.
+
+8
+00:00:41,940 --> 00:00:43,510
+Evet, buraya nasıl ayarlayabiliriz.
+
+9
+00:00:43,510 --> 00:00:45,680
+Hover, mülkiyet olarak oiers değildir.
+
+10
+00:00:46,120 --> 00:00:52,670
+Bu yüzden tabii ki stil ayarlayarak düzeltebiliriz ancak daha sonra C Ss dosyasıdır ancak daha önce
+
+11
+00:00:52,690 --> 00:00:58,390
+bulaşık bezinin yalnızca bu bileşene kapsam dışı kalacağından ve tüm düğmelerin ve uygulamanızın stil
+
+12
+00:00:58,390 --> 00:00:59,440
+alacağından bahsedilmiştik.
+
+13
+00:00:59,440 --> 00:01:07,600
+Evet, bazı benzersiz css kimlikleri veya sınıfları ile bu konuda çalışabiliriz, ancak bu DS satır içi
+
+14
+00:01:07,600 --> 00:01:14,830
+stillerini kullanma imkânına sahip olmak da burada oldukça havalı olabilir çünkü zaten yaptıklarımız gibi,
+
+15
+00:01:14,830 --> 00:01:22,600
+herşey javascript olduğu için kodunuzda düzenleyebilirsiniz, bu da güzel olurdu eğer gerçekten sahte seçiciler ve
+
+16
+00:01:22,780 --> 00:01:23,680
+medya kullanabilirsek.
+
+17
+00:01:23,720 --> 00:01:28,610
+Normal javascript satır içi stillerimiz nerede.
+
+18
+00:01:28,720 --> 00:01:35,620
+Varsayılan olarak tabii ki mümkün değil, ancak uygulamanıza disfonksiyon eklemek için oldukça popüler
+
+19
+00:01:35,830 --> 00:01:38,800
+olan bir üçüncü taraf paket ekleyebiliriz.
+
+20
+00:01:38,920 --> 00:01:40,610
+Bu yüzden sadece şunu yapalım.
+
+21
+00:01:40,660 --> 00:01:43,500
+Bunun için yeni bir paket yüklememiz lazım.
+
+22
+00:01:43,540 --> 00:01:49,740
+Ve burada normal terminalini Mac'imde açarım veya Windows'ta komut istemi olur.
+
+23
+00:01:49,840 --> 00:01:53,970
+Bu, Microsoft'a görsel stüdyo koduyla entegre edilmiş bir terminaldir.
+
+24
+00:01:54,010 --> 00:01:59,200
+Ayrıca, overdye seçeneklerini açarak entegre terminali görüntüleyebilirsiniz.
+
+25
+00:01:59,200 --> 00:02:02,590
+Şimdi, makinenizdeki aynı dahili budur.
+
+26
+00:02:02,590 --> 00:02:08,590
+Normal olarak erişiyorsanız, ancak proje klasörünüze otomatik olarak giderseniz, şimdi NPM
+
+27
+00:02:08,590 --> 00:02:11,320
+kurulumu ile bir paket yükleyeceğim.
+
+28
+00:02:11,350 --> 00:02:19,030
+Ayrıca Jason paketindeki bir girdiyi kaydetmek için tire çizgi kaydını da ekleyeceğiz, böylece iş numarasını
+
+29
+00:02:19,030 --> 00:02:21,310
+da düzeltip projemizi kolayca paylaşabileceğim.
+
+30
+00:02:21,610 --> 00:02:23,950
+Ve sonra pakete radium denir.
+
+31
+00:02:23,950 --> 00:02:30,070
+Basitçe ŞİMDİ ŞİMDİ'ye basın; bu, indirip, bu paketi projeye ekleyerek
+
+32
+00:02:30,100 --> 00:02:31,300
+kullanmaya başlayabiliriz.
+
+33
+00:02:31,300 --> 00:02:39,730
+Radium, sahte seçiciler ve medya sorgularıyla satır içi stilleri kullanmamıza izin veren yeniden işleme için popüler
+
+34
+00:02:39,730 --> 00:02:40,770
+bir pakettir.
+
+35
+00:02:40,780 --> 00:02:42,820
+Çok harika
+
+36
+00:02:42,820 --> 00:02:49,180
+Kurulduğundan beri terminali tekrar kapatabiliriz ve onu kullanmaya başlamak için şimdi kullanmaya
+
+37
+00:02:49,180 --> 00:02:49,700
+başlayabiliriz.
+
+38
+00:02:49,700 --> 00:02:53,530
+Her şeyden önce biz onu kullanmak istiyoruz takip ithal etmek zorundayız.
+
+39
+00:02:53,530 --> 00:02:56,430
+Ve bu sizin hatalarınızdan herhangi biri olabilir recaptcha Evet olabilir.
+
+40
+00:02:56,470 --> 00:02:59,420
+Düşüş elbette ki Faltu olabilir.
+
+41
+00:02:59,620 --> 00:03:06,730
+Asfaltta çalışalım, çünkü bunu yapabilmek için bir Hubbard devleti eklemek istediğim bir
+
+42
+00:03:06,730 --> 00:03:08,230
+düğme var.
+
+43
+00:03:08,270 --> 00:03:11,220
+Öncelikle radyum ithal etmek istiyorum.
+
+44
+00:03:11,290 --> 00:03:16,070
+Yani ithalat deyimi Konumunuz önemli değil ancak dosyanın üst kısmında olmalıdır.
+
+45
+00:03:16,230 --> 00:03:19,690
+Radyumdan gelen tüm radyumlar için.
+
+46
+00:03:19,690 --> 00:03:21,520
+Kullanabileceğiniz sözdizimi budur.
+
+47
+00:03:21,640 --> 00:03:28,520
+Şimdi ithal edilenle Uygulamanızı nereye indirdiğinize kadar ilerleyebilirsiniz ve orada radyum'u
+
+48
+00:03:28,520 --> 00:03:33,090
+bir işlev olarak arayabilir ve uygulamanızı onunla sarabilirsiniz.
+
+49
+00:03:33,110 --> 00:03:35,940
+Buna şimdi daha yüksek dereceli bir bileşen deniyor.
+
+50
+00:03:35,990 --> 00:03:39,230
+Bir şey daha sonra kurs projemizi eğiteceğiz.
+
+51
+00:03:39,440 --> 00:03:45,860
+Süper fantezi görünebilir, ancak sonunda, bileşeni sarmalayan bir bileşen, ekstra işlevsellik
+
+52
+00:03:45,860 --> 00:03:48,580
+enjekte ederek tür ekler.
+
+53
+00:03:48,650 --> 00:03:54,260
+Bu durumda, stillerinizi ayrıştıran ve kullanmaya başlayabileceğiniz bazı ekstra özellikleri anlamak için
+
+54
+00:03:54,260 --> 00:03:55,910
+ekstra bazı sözdizimi.
+
+55
+00:03:56,000 --> 00:04:04,160
+Bunu CLOS ile oluşturulan her iki bileşen üzerinde de kullanabilirsiniz ve bileşenleri ve işlevsel bileşenleri genişletir.
+
+56
+00:04:04,250 --> 00:04:13,680
+Radyumdan radyum ithal ederek radyum eklersek, burada radyum da verebiliriz.
+
+57
+00:04:13,750 --> 00:04:15,700
+Her iki eser de.
+
+58
+00:04:15,940 --> 00:04:22,930
+Şimdi eklediğimizle Yeni özellikler ekleyerek veya kullanmaya başlayabiliriz ve bunu tabii ki stilimizde yapacağız çünkü
+
+59
+00:04:23,110 --> 00:04:25,560
+radyum tamamen stiller ile ilgilidir.
+
+60
+00:04:25,570 --> 00:04:29,590
+İşte sonuçta desene tayin edilecek bir stil.
+
+61
+00:04:29,950 --> 00:04:37,780
+Bir hobi veya stil eklemek istiyorum ve radyum eklenmiş ve dışa aktarmayı
+
+62
+00:04:37,780 --> 00:04:44,210
+sarmalarsanız yeni bir pervane ekleyebilirsiniz. Tırnak işareti iki nokta üst üste çekiç veya başka bir sözde selektör.
+
+63
+00:04:44,260 --> 00:04:46,720
+Tüm sözde seçiciler desteklenmektedir.
+
+64
+00:04:46,780 --> 00:04:52,000
+dizeler olarak oluşturabileceğinizi bildiğiniz gibi veya içinde geçersiz bir karakteriniz yoksa onlar.
+
+65
+00:04:52,000 --> 00:04:58,840
+Gerçi tırnak işareti içine almanız gerekir, çünkü iki nokta üstü ile başlamış oldukları için geçerli
+
+66
+00:04:58,840 --> 00:05:03,160
+javascript mülk adlarını dizeler olarak kullanmazlar, ancak javascript özelliklerini
+
+67
+00:05:03,250 --> 00:05:06,890
+Daha önce yaptığımız gibi tüm bu Obert mülklerinden hoşlanıyor.
+
+68
+00:05:07,420 --> 00:05:13,020
+Artık değer, habor devleti için stil setiniz.
+
+69
+00:05:13,120 --> 00:05:22,180
+Anomik javascript nesnesi, şimdi arka plan rengini yeşil düğmeye açık yeşil,
+
+70
+00:05:22,810 --> 00:05:25,590
+siyahın metnin rengini belirleyeceğim.
+
+71
+00:05:25,590 --> 00:05:36,100
+Belki ve ben de orada üst üste yazı yazacağım orada oradaki arka plan rengini geçersiz kılacağım orada stilini
+
+72
+00:05:36,190 --> 00:05:41,650
+ayarlayacağım ve şimdi bir nokta olduğu için nokta koymayacağım.
+
+73
+00:05:41,650 --> 00:05:44,320
+Köşeli köşeli parantez kullanmamız gerekiyor.
+
+74
+00:05:44,420 --> 00:05:53,000
+Böylece burada, açık kırmızı ve siyah metinleri kullandığımız yeni bir javascript nesnesi yeni
+
+75
+00:05:53,000 --> 00:05:54,620
+bir değer atadık.
+
+76
+00:05:54,620 --> 00:06:02,600
+Bununla, sahte seçici olarak geçerli bir SEUS olan bir mülk tayin edebilen bir radyum
+
+77
+00:06:02,600 --> 00:06:03,640
+özelliğini kullanıyoruz.
+
+78
+00:06:03,890 --> 00:06:07,760
+Ve hala işe yaramak için radyumdan yararlanarak.
+
+79
+00:06:07,850 --> 00:06:13,220
+Şimdi bu dosyayı ve diğer dosyaları kaydederseniz ve uygulamanızı
+
+80
+00:06:13,220 --> 00:06:22,320
+yeniden yüklerseniz, kırmızı rengin üzerine yazmasa da kırmızı düğme için de değişiklik stilini görürsünüz.
+
+81
+00:06:22,350 --> 00:06:24,090
+Bu yüzden farklı bir renk deneyelim.
+
+82
+00:06:26,570 --> 00:06:27,760
+Salamon işe yarıyor.
+
+83
+00:06:27,790 --> 00:06:32,740
+Yani açık kırmızı mevcut değildi, ancak şimdi SOLMAN'a geçseydim de işe yarıyor.
+
+84
+00:06:33,220 --> 00:06:36,570
+Dolayısıyla bu oldukça hoş, çünkü şimdi her iki dünyanın en iyisine sahipsiniz.
+
+85
+00:06:36,670 --> 00:06:41,620
+Normal STK sahte seçicilerine sahip olursunuz ve ekleyebileceğiniz halde, burada
+
+86
+00:06:41,620 --> 00:06:45,980
+gördüğünüz gibi, javascript kodunuzdan kolayca düzenleyebileceğiniz kapsam stillerinizdedir.
+
+87
+00:06:46,060 --> 00:06:50,750
+Artık radyum sizi sahte seçiciler kullanmamıza izin vermez.
+
+88
+00:06:51,010 --> 00:06:53,120
+Medya sorguları da ekleyebilirsiniz.
+
+89
+00:06:53,260 --> 00:06:58,470
+Belki bunu kişi bileşeninde yapalım ve bir sonraki derste bunu yapalım.

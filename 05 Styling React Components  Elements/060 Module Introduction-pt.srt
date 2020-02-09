@@ -1,0 +1,51 @@
+1
+00:00:02,360 --> 00:00:08,240
+Bem-vindo a outro novo módulo em relação aos módulos anteriores, você aprenderá muito sobre a
+
+2
+00:00:08,720 --> 00:00:16,580
+criação de componentes e o uso dos vários recursos de reação e, na verdade, de recursos nativos para exibir conteúdo
+
+3
+00:00:16,580 --> 00:00:20,740
+dinâmico de conteúdo dinâmico no código JS X e muito mais.
+
+4
+00:00:21,110 --> 00:00:25,130
+Também tocamos brevemente os componentes re-agir.
+
+5
+00:00:25,340 --> 00:00:33,020
+Eu fiz isso com estilos inline e eu mostrei como importar um arquivo C S S para aplicar esses estilos CSSA.
+
+6
+00:00:33,020 --> 00:00:38,660
+Eu também mencionei que estes não estavam incluídos nos componentes em que você o importou.
+
+7
+00:00:38,670 --> 00:00:44,990
+Embora neste março eu quero me concentrar no estilo de re-agir porque há mais do que o
+
+8
+00:00:44,990 --> 00:00:46,760
+que você resolve até agora.
+
+9
+00:00:46,760 --> 00:00:52,020
+Por um lado, eu quero dar uma olhada em como você pode ajustar dinamicamente estilos ou nomes de classes.
+
+10
+00:00:52,310 --> 00:00:59,480
+E eu também quero mostrar-lhe como resolver esta restrição de usar estilos em linha e, portanto, ter estilos de
+
+11
+00:00:59,480 --> 00:01:06,350
+escopo, mas ter limitações, como não poder usar consultas de mídia ou pseudo seletores ou usar o Seer's
+
+12
+00:01:06,620 --> 00:01:12,540
+como arquivos e que ter um Stahl global existe Algumas maneiras de lidar com isso
+
+13
+00:01:12,530 --> 00:01:17,440
+e vamos mergulhar em todas essas formas de trabalhar com sólidos neste módulo.

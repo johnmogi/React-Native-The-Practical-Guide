@@ -1,0 +1,171 @@
+1
+00:00:02,320 --> 00:00:05,490
+Nelle ultime lezioni impariamo molto su stato e oggetti di scena.
+
+2
+00:00:05,500 --> 00:00:12,030
+Abbiamo appreso che queste sono le uniche due cose che portano a reagire per aggiornare il tuo dormitorio se qualcosa è cambiato.
+
+3
+00:00:12,040 --> 00:00:19,050
+Ora ho anche menzionato dead quando creo un componente come una funzione che facciamo per una persona.
+
+4
+00:00:19,090 --> 00:00:24,420
+Non possiamo usare lo stato in là perché è solo una funzione in cui restituiamo del codice GSX.
+
+5
+00:00:24,430 --> 00:00:27,770
+Garantito che potremmo eseguire il codice Albert prima di farlo.
+
+6
+00:00:27,970 --> 00:00:34,300
+E lo fai spesso se hai bisogno di trasformare i tuoi oggetti di scena per noi o qualcosa del genere
+
+7
+00:00:34,300 --> 00:00:41,580
+ma puoi impostare una proprietà di stato qui puoi chiamare questo stato impostato perché non è un componente di estensione di classe.
+
+8
+00:00:41,590 --> 00:00:44,830
+La suddetta mappatura dello Stato non è nota e non abbiamo comunque metodi.
+
+9
+00:00:44,890 --> 00:00:45,850
+Non è una classe.
+
+10
+00:00:45,880 --> 00:00:46,970
+È una funzione
+
+11
+00:00:47,380 --> 00:00:54,730
+E ancora ho detto che dovresti usare questa forma di funzione dei componenti il ​​più spesso possibile.
+
+12
+00:00:55,060 --> 00:00:57,880
+E sottolineerò che qui ancora una volta.
+
+13
+00:00:58,210 --> 00:01:00,180
+Perché è così importante.
+
+14
+00:01:00,760 --> 00:01:09,580
+Perché questi semplici componenti che sono solo funzioni che ricevono oggetti di scena sono molto chiari su quello
+
+15
+00:01:09,580 --> 00:01:10,420
+che fanno.
+
+16
+00:01:10,750 --> 00:01:13,250
+Rendono solo qualcosa al DOM.
+
+17
+00:01:13,270 --> 00:01:20,370
+Sono dinamici a causa di oggetti di scena ed è possibile aggiungere qualche logica aggiuntiva prima di chiamare il ritorno.
+
+18
+00:01:20,770 --> 00:01:23,080
+Ma è molto importante.
+
+19
+00:01:23,140 --> 00:01:28,570
+Non manipolano lo stato dell'applicazione man mano che l'applicazione cresce.
+
+20
+00:01:28,570 --> 00:01:32,280
+Vedrai che non è così poco importante.
+
+21
+00:01:32,280 --> 00:01:34,610
+Questo è davvero molto importante.
+
+22
+00:01:34,630 --> 00:01:39,990
+La maggior parte delle parti dell'applicazione non dovrebbe modificare lo stato dell'applicazione.
+
+23
+00:01:40,030 --> 00:01:43,770
+Dovrebbero solo rendere qualcosa alla dinamica DOM.
+
+24
+00:01:43,900 --> 00:01:48,780
+Sì, ma non dovrebbero consentire di modificare lo stato dell'applicazione.
+
+25
+00:01:48,820 --> 00:01:54,880
+Gli stati dell'applicazione devono essere modificati e gestiti solo in alcuni componenti selezionati.
+
+26
+00:01:54,880 --> 00:01:57,910
+Indicato anche come contenitori.
+
+27
+00:01:57,910 --> 00:02:00,110
+In realtà come sarebbe un tale contenitore.
+
+28
+00:02:00,280 --> 00:02:06,310
+Questo è solo un altro nome, è un componente ma ci riferiamo ad esso come contenitore perché contiene
+
+29
+00:02:06,310 --> 00:02:08,370
+una parte del nostro stato dell'applicazione.
+
+30
+00:02:08,560 --> 00:02:15,580
+Nella nostra applicazione dimostrativa in realtà tutto lo stato delle applicazioni qui possiamo cambiare qualcosa sulla nostra app
+
+31
+00:02:15,580 --> 00:02:22,270
+e quindi dovremmo passare queste modifiche fino ad esempio al componente persona, ma il gioco è fatto.
+
+32
+00:02:22,270 --> 00:02:29,530
+in Aperture Sì e una volta che iniziamo a costruire il progetto del corso, mi vedrai usare questo schema.
+
+33
+00:02:29,530 --> 00:02:30,900
+Il cambiamento avviene
+
+34
+00:02:31,000 --> 00:02:38,380
+Avrò alcuni componenti in cui lo stato effettivamente vive e viene modificato e molti componenti
+
+35
+00:02:38,740 --> 00:02:46,030
+che prendono alcuni input e quindi semplicemente rendono qualcosa sullo schermo ma che non manipoleranno
+
+36
+00:02:46,120 --> 00:02:47,790
+direttamente lo stato.
+
+37
+00:02:47,800 --> 00:02:54,970
+Tuttavia potresti avere casi in cui forse tutti voi volete ascoltare un evento nel componente persona o
+
+38
+00:02:54,970 --> 00:02:56,670
+in qualsiasi altro componente.
+
+39
+00:02:57,100 --> 00:03:02,770
+ascoltare qualsiasi evento qui, ma esegui qualche metodo in realtà sì in modo
+
+40
+00:03:02,800 --> 00:03:11,490
+da poter mantenere quel modello di modifica del nome in realtà sì, ma in realtà ascoltando l'evento nel componente stretto.
+
+41
+00:03:11,500 --> 00:03:19,990
+Ora ovviamente puoi trasformare questo in un componente che estende il componente in modo da poter trovare i metodi
+
+42
+00:03:19,990 --> 00:03:22,370
+che esegui ma forse vuoi
+
+43
+00:03:22,750 --> 00:03:31,470
+Diamo un'occhiata a come possiamo gestire questo e cambiare uno stato da un componente numero nella prossima lezione.

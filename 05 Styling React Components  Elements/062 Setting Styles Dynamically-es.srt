@@ -1,0 +1,159 @@
+1
+00:00:02,200 --> 00:00:08,410
+Entonces, si el conjunto de problemas esbozado en The Last Lecture vamos a ajustar dinámicamente el estilo del pendiente en el Weber
+
+2
+00:00:08,410 --> 00:00:11,580
+que estamos a punto de mostrar a las personas o no.
+
+3
+00:00:11,620 --> 00:00:17,920
+Ahora ya hemos visto cómo podemos representar dinámicamente contenido como aquí con el estado y dónde almacenamos
+
+4
+00:00:17,920 --> 00:00:25,400
+algo de GSX en una variable y luego emitimos esa variable en nuestra plantilla o en nuestra función de retorno,
+
+5
+00:00:25,400 --> 00:00:26,660
+o debería decir.
+
+6
+00:00:26,910 --> 00:00:30,910
+Ahora como siempre todo aquí es javascript.
+
+7
+00:00:31,000 --> 00:00:38,680
+Entonces, si asignamos un estilo al botón aquí, esta parte entre las llaves de Cauley puede ser cualquier
+
+8
+00:00:38,680 --> 00:00:39,740
+expresión de javascript.
+
+9
+00:00:39,940 --> 00:00:46,330
+Por supuesto, podríamos pasar un objeto javascript aquí donde definimos los estilos o podemos, por supuesto,
+
+10
+00:00:46,330 --> 00:00:48,600
+llegar a la propiedad de estilo.
+
+11
+00:00:48,670 --> 00:00:51,080
+Disculpe la variable, debería decir lo que hacemos.
+
+12
+00:00:51,160 --> 00:00:54,350
+Y podríamos ajustar esta variable de estilo dinámicamente.
+
+13
+00:00:54,350 --> 00:01:03,170
+Por lo tanto, básicamente aquí este estado muestra persistencia si esto es cierto, esto significa que se puede ver el de Pearse.
+
+14
+00:01:03,190 --> 00:01:10,030
+Entonces, tal como lo describí en la última conferencia, el botón debería tener un fondo rojo porque un clic
+
+15
+00:01:10,030 --> 00:01:12,780
+eliminará a las personas en el otro lado.
+
+16
+00:01:12,910 --> 00:01:18,500
+La configuración predeterminada debe ser no tener un color de fondo blanco, sino uno verde.
+
+17
+00:01:18,790 --> 00:01:25,680
+Y tal vez queremos establecer el color del texto en blanco para que se destaque con la propiedad de color normal.
+
+18
+00:01:25,690 --> 00:01:29,860
+Ahora si dije esto, tenemos un color de fondo verde.
+
+19
+00:01:29,980 --> 00:01:32,350
+Si hago clic en él, veo el de la persona.
+
+20
+00:01:32,490 --> 00:01:37,730
+Ahora que las personas son ganables, esto debería tener un color de fondo rojo.
+
+21
+00:01:37,750 --> 00:01:44,110
+Entonces, lo que podemos hacer es en nuestra declaración IF, que ya tenemos donde establecemos la variable
+
+22
+00:01:44,110 --> 00:01:51,810
+de una persona; por supuesto, podemos hacer más cosas además de establecer la variable de esta persona aquí para hacer eso.
+
+23
+00:01:51,820 --> 00:01:58,630
+También puedo extenderme para diseñar y establecer la propiedad de color de fondo que tiene claramente el objeto de estilo.
+
+24
+00:01:58,630 --> 00:02:03,640
+Lo configuramos aquí para leer, por supuesto, simplemente así.
+
+25
+00:02:03,970 --> 00:02:07,380
+Entonces, simplemente nos metemos en este objeto de estilo.
+
+26
+00:02:07,510 --> 00:02:10,900
+No asignamos un valor nuevo, por lo que sigue siendo una constante.
+
+27
+00:02:11,200 --> 00:02:15,610
+Pero asignamos un nuevo valor a una de sus propiedades al color de fondo.
+
+28
+00:02:16,060 --> 00:02:20,980
+Y con este pequeño cambio en su lugar, ya tenemos un estilo dinámico.
+
+29
+00:02:21,070 --> 00:02:22,880
+Déjame volver a cargar esta aplicación.
+
+30
+00:02:23,050 --> 00:02:27,770
+Botón verde botón rojo botón verde y así sucesivamente.
+
+31
+00:02:28,210 --> 00:02:34,870
+Entonces, esto muestra una cosa crucial en la que realmente tienes que entender si aún no lo hiciste.
+
+32
+00:02:34,870 --> 00:02:36,580
+Todo es javascript
+
+33
+00:02:36,640 --> 00:02:45,800
+Supongo que dije esto antes de cambiar dinámicamente el estilo de la misma forma en que cambiamos dinámicamente a las personas de esta variable, así
+
+34
+00:02:46,090 --> 00:02:50,530
+como cambiamos cualquier cosa de forma dinámica, estamos hablando de javascript aquí.
+
+35
+00:02:50,620 --> 00:02:56,230
+Puede manipular el objeto de estilo con cualquier código de JavaScript que desee y,
+
+36
+00:02:56,230 --> 00:03:01,360
+al final, cuando lo enlace aquí simplemente se aplicará como lo edite.
+
+37
+00:03:01,390 --> 00:03:06,850
+Este es un take-out crucial y esto le muestra cómo puede asignar dinámicamente celdas.
+
+38
+00:03:06,850 --> 00:03:09,010
+Ahora bien, ¿qué pasa con los nombres de clase?
+
+39
+00:03:09,040 --> 00:03:14,030
+¿Podemos también configurar estos dinámicamente podemos pasar una lista de nombres de clase.
+
+40
+00:03:14,230 --> 00:03:18,030
+Sí, podemos y te mostraré cómo funciona en la próxima conferencia.

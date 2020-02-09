@@ -1,0 +1,39 @@
+1
+00:00:02,430 --> 00:00:08,960
+Para este módulo no módulo de imprensa, aprendemos a sintaxe básica de reagir e você aprendeu como você cria aplicativos de reagem em como
+
+2
+00:00:08,960 --> 00:00:15,770
+você cria componentes e como você trabalha com J. S. X para renderizar algo na tela.
+
+3
+00:00:16,130 --> 00:00:19,380
+Neste módulo o levará ao próximo nível.
+
+4
+00:00:19,400 --> 00:00:26,380
+Nós já tínhamos uma olhada em como podemos produzir conteúdo dinâmico com chaves DS simples.
+
+5
+00:00:26,620 --> 00:00:32,090
+Neste módulo, veremos como também podemos produzir conteúdo de forma condicional.
+
+6
+00:00:32,090 --> 00:00:38,750
+do seu dormitório da sua idade, ele codifique se uma determinada condição é verdadeira e como podemos produzir
+
+7
+00:00:38,750 --> 00:00:46,280
+listas de dados, na verdade, temos uma lista e nossa demo já são as bolsas que temos Bem, haveria sentido
+
+8
+00:00:46,310 --> 00:00:53,030
+se pudéssemos criá-los dinamicamente com base no número de pessoas que temos naquela matriz que administramos no estado.
+
+9
+00:00:53,030 --> 00:00:56,980
+Então, por exemplo, que você só quer renderizar uma determinada parte
+
+10
+00:00:57,230 --> 00:01:01,710
+Vamos dar uma olhada em tudo isso e no que se deve observar neste módulo.

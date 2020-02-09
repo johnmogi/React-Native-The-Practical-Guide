@@ -1,0 +1,122 @@
+1
+00:00:02,180 --> 00:00:05,620
+In the last lecture, we replicated the person component,
+
+2
+00:00:05,790 --> 00:00:11,350
+let's now dive into outputting some dynamic content in react.
+
+3
+00:00:11,550 --> 00:00:18,240
+Thus far we always hardcoded some html elements and I'm always saying html, you know it's jsx just
+
+4
+00:00:18,240 --> 00:00:19,600
+because it looks like html
+
+5
+00:00:19,610 --> 00:00:23,020
+I'm saying that, and some text in between.
+
+6
+00:00:23,370 --> 00:00:36,150
+Now let's say we want to say I'm a person and I am X years old but X should actually be a random number,
+
+7
+00:00:36,180 --> 00:00:37,910
+now we can simply do that.
+
+8
+00:00:38,010 --> 00:00:48,420
+We can replace X with Math.random to get a random number between 0 and 1, maybe multiply these with
+
+9
+00:00:48,590 --> 00:00:49,670
+
+10
+00:00:50,130 --> 00:00:57,620
+and also use Math.floor to round it down.
+
+11
+00:00:58,800 --> 00:01:07,790
+Now if we do this and save that code, well we see this output as a text, which makes sense. How would react
+
+12
+00:01:07,790 --> 00:01:11,350
+know to execute this as javaScript,
+
+13
+00:01:11,390 --> 00:01:18,870
+after all, maybe we want to output it as a text. If we have some dynamic content in our jsx
+
+14
+00:01:18,880 --> 00:01:26,700
+part which we want to run as javaScript code and not interpret as text,
+
+15
+00:01:27,080 --> 00:01:34,910
+we have to wrap it in single curly braces. So let's wrap this in single curly braces, one in front
+
+16
+00:01:34,910 --> 00:01:38,430
+of Math.floor and one after the closing parentheses.
+
+17
+00:01:38,900 --> 00:01:47,410
+Now if we save this, let's us reload, we see I'm 0, 9 and 20 years old and if we reload this again,
+
+18
+00:01:47,440 --> 00:01:51,700
+we see different values because it's random.
+
+19
+00:01:51,820 --> 00:01:59,890
+Now this is super important because this now shows us that we can output dynamic content as part of
+
+20
+00:01:59,890 --> 00:02:01,870
+our jsx content,
+
+21
+00:02:02,350 --> 00:02:07,680
+we can't define javascript class in there or anything like that.
+
+22
+00:02:07,960 --> 00:02:11,300
+We can execute one line expressions,
+
+23
+00:02:11,350 --> 00:02:18,140
+short simple expressions like simple calculations or function calls here, that is important by the way.
+
+24
+00:02:18,280 --> 00:02:23,540
+I could call a function here and this function might then do more complex stuff.
+
+25
+00:02:23,560 --> 00:02:31,720
+We'll actually see us calling functions once we add event handlers. Now that we're able to output dynamic
+
+26
+00:02:31,720 --> 00:02:32,830
+content,
+
+27
+00:02:32,830 --> 00:02:40,270
+why don't we take it to the next level and make our component more dynamic so that we can leave outputting
+
+28
+00:02:40,300 --> 00:02:48,490
+some generic content like person and random number and instead do something else, pass some configuration
+
+29
+00:02:48,550 --> 00:02:49,490
+from the app.js
+
+30
+00:02:49,510 --> 00:02:57,790
+file, maybe some html attributes we passed to person to configure what we want the output for each
+
+31
+00:02:57,800 --> 00:03:00,000
+usage of the person component.

@@ -1,0 +1,407 @@
+1
+00:00:02,610 --> 00:00:07,170
+Dolayısıyla yerel reac projesini yerelle kurmak istiyoruz.
+
+2
+00:00:07,170 --> 00:00:13,430
+Yani kod kalemi kullanmıyoruz, bunun yerine kendi makinemizde kendi I ile çalışabileceğimiz bir
+
+3
+00:00:13,440 --> 00:00:15,600
+proje var. T. veya editör.
+
+4
+00:00:15,600 --> 00:00:18,010
+Bu elbette tepki vermek istediğimiz yol.
+
+5
+00:00:18,030 --> 00:00:19,810
+Makinemize almak istiyoruz.
+
+6
+00:00:19,830 --> 00:00:21,890
+Orada daha fazla özellik var.
+
+7
+00:00:21,930 --> 00:00:27,840
+kullandığımız bazı web editörlerini ve kod kalemlerini kullanmaktan ya da kullandığımız Jay Espagne ve isteğe bağlı
+
+8
+00:00:27,840 --> 00:00:33,960
+ikinci Marchal'ı gerçek projeler için gerçek çalışma ortamlarından çok daha fazla oyun alanı kullanmaktan daha elverişli.
+
+9
+00:00:33,960 --> 00:00:34,710
+Daha önce
+
+10
+00:00:34,860 --> 00:00:36,990
+Böylece yerel bir proje hazırlayacağız.
+
+11
+00:00:37,140 --> 00:00:41,330
+Andrea aslında D2'yi ithal etmekten daha fazlası.
+
+12
+00:00:41,350 --> 00:00:43,050
+Biz ithal ve Koeppen.
+
+13
+00:00:43,200 --> 00:00:47,020
+Gerçek projeler için daha ayrıntılı bir iş akışına ihtiyacımız var.
+
+14
+00:00:47,130 --> 00:00:51,380
+Ve bu hem tek sayfa hem çok sayfalı uygulamalar için önerilir.
+
+15
+00:00:51,390 --> 00:00:57,300
+Elbette ki soru daha karmaşık bir iş akışına neden ihtiyacımız var ve bunu nasıl başaracağız.
+
+16
+00:00:57,300 --> 00:01:05,270
+Neden gerçek bir uygulama oluştururken kodumuzu gerçekten optimize etmek istediğimizden başlayalım.
+
+17
+00:01:05,280 --> 00:01:11,490
+İlk kez kod kaleminde ders modülündeki demo projesinde umursamadık, ancak büyük
+
+18
+00:01:11,490 --> 00:01:19,980
+bir yeniden-eyleme başvuru için mümkün olan en küçük ve olabildiğince optimize edilmiş kodu gçlendirmek istiyoruz
+
+19
+00:01:20,050 --> 00:01:23,400
+çünkü borç performansı arttırıyor. bizim uygulamanız.
+
+20
+00:01:23,400 --> 00:01:25,390
+Ek olarak, bu çok önemli.
+
+21
+00:01:25,470 --> 00:01:28,720
+Bu yeni nesil javascript özelliklerini kullanmak istiyoruz.
+
+22
+00:01:28,770 --> 00:01:32,520
+Son isteğe bağlı modülde size öğrendim.
+
+23
+00:01:32,610 --> 00:01:37,400
+Şimdi bunu kullanmak istiyoruz çünkü hayatımızı bir geliştirici olarak daha kolay hale getiriyor.
+
+24
+00:01:37,650 --> 00:01:43,350
+ve daha kolay olması nedeniyle, bu yeni nesil özellikleri kullanmak için yeniden davranma için fiili standarttır.
+
+25
+00:01:43,350 --> 00:01:45,970
+Ve kod, daha hızlı okunması daha yalın
+
+26
+00:01:45,990 --> 00:01:48,980
+Daha az hata eğilimli ve daha birçok nedeni.
+
+27
+00:01:49,020 --> 00:01:51,480
+Bu yüzden gerçekten bu özellikleri kullanmalısınız.
+
+28
+00:01:51,480 --> 00:01:54,230
+İsteğe bağlı güzel bir şey değil.
+
+29
+00:01:54,330 --> 00:01:56,550
+Bu özellikleri kullanmanızı şiddetle tavsiye ederim.
+
+30
+00:01:56,630 --> 00:02:01,560
+Bu en iyi uygulama olarak düşünülür ve açıkçası size en iyi uygulamaları öğretmek istediğim için bu
+
+31
+00:02:01,560 --> 00:02:03,170
+derste size öğrettiğim şey budur.
+
+32
+00:02:03,510 --> 00:02:09,060
+hata eğilimli kod yazmak için daha kolay bir zamana sahip olmak için yeni nesil javascript özelliklerini kullanmak istiyoruz.
+
+33
+00:02:09,060 --> 00:02:09,910
+Dolayısıyla, daha az
+
+34
+00:02:10,320 --> 00:02:16,100
+Ve hepsiyle birlikte bu özellikleri kod kaleminde bile destekleyen bir iş akışına ihtiyacımız var.
+
+35
+00:02:16,140 --> 00:02:22,770
+Sahnelerin arkasında, kodumuzu çözümleyecek ve örneğin Javascript sözdiziminde HVM L'yi
+
+36
+00:02:22,770 --> 00:02:31,710
+yapar gibi J'yi destekleyecek birkaç yapı araçları kilitli Babil'e geçiş yaptığımız önişlemci açılır listesini
+
+37
+00:02:31,710 --> 00:02:33,140
+saklı tuttuk.
+
+38
+00:02:33,300 --> 00:02:35,670
+Bu yüzden bir sonraki nesil özellikleri kullanmak istiyoruz.
+
+39
+00:02:35,760 --> 00:02:43,020
+Esasen, altı veya daha fazla kod yazabilmeyi ve hala mümkün olduğunca çok tarayıcıda
+
+40
+00:02:43,020 --> 00:02:49,710
+çalışan kodları gönderilmesini ve birçok tarayıcının bu yeni özelliklerin tümünü desteklememesini istiyoruz.
+
+41
+00:02:49,710 --> 00:02:54,590
+Bu yüzden, aslında bu özellikleri birleştiren cesur bir iş akışına ihtiyacımız var.
+
+42
+00:02:54,720 --> 00:02:57,140
+Sonunda sonunda daha üretken olmak istiyoruz.
+
+43
+00:02:57,180 --> 00:03:02,850
+Buna sıklıkla daha yoğun kod yazmamıza izin veren yeni nesil javascript özellikleri dahildir ancak aynı zamanda
+
+44
+00:03:03,180 --> 00:03:06,880
+C S S otomatik ön ekleme gibi şeyleri de içerir.
+
+45
+00:03:06,960 --> 00:03:13,410
+C S S önekleri, C S S özellikleri için mümkün olan en geniş tarayıcı desteğini elde etmek için
+
+46
+00:03:13,410 --> 00:03:14,850
+bir şey olduğunun farkındasınızdır.
+
+47
+00:03:15,090 --> 00:03:17,860
+Şimdi bu önekleri manuel olarak eklemek oldukça sinir bozucu.
+
+48
+00:03:17,940 --> 00:03:19,990
+Dolayısıyla bunları otomatik olarak eklemek güzel.
+
+49
+00:03:20,040 --> 00:03:21,560
+Ya da parıltısını düşünün.
+
+50
+00:03:21,570 --> 00:03:28,740
+Bu yüzden, çok olması güzel olacak bazı en iyi kod yazıyorsanız, aslında sizi uyaran bir araç.
+
+51
+00:03:28,800 --> 00:03:34,990
+Kesinlikle gerekli değil, güzel bir özelliktir ve bütün bunlar bir yapı iş akışının bir parçası olmalıdır.
+
+52
+00:03:35,100 --> 00:03:41,370
+Şimdi onları orada uygulamak için, bizi ipucu durumunda bizi uyarması veya kodunu,
+
+53
+00:03:41,370 --> 00:03:49,020
+mümkün olduğunca çok tarayıcıda çalışan kod için derleyip geliştirici olarak yazarken, kodumuzun üzerinde çalıştırmasına izin
+
+54
+00:03:49,170 --> 00:03:57,040
+veren birkaç araça ihtiyacımız var. çok modern kod bu kendi başına pek çok tarayıcıda çalışmazdı.
+
+55
+00:03:57,420 --> 00:04:04,230
+yazmamızın birkaç nedeni var ve neden gerçekten kodumuzu bizim için en iyi duruma getiren ve tabi ki
+
+56
+00:04:04,230 --> 00:04:10,350
+dersin alakalı olduğunu unutan kod yazmamızı sağlayan daha karmaşık bir yapı iş akışına ihtiyacımız var.
+
+57
+00:04:11,010 --> 00:04:13,570
+Bu nedenle, bu tür bir kod
+
+58
+00:04:13,800 --> 00:04:16,210
+Böyle bir iş akışını nasıl başaracağız.
+
+59
+00:04:16,230 --> 00:04:19,110
+İlk önce bir bağımlılık yönetim aracına ihtiyacımız var.
+
+60
+00:04:19,140 --> 00:04:25,310
+Bağımlılıklar sadece üçüncü parti kütüphaneleri olan üçüncü parti javascript paketleridir; örneğin
+
+61
+00:04:25,330 --> 00:04:31,640
+bağımlılık Dharma'nın bağımlılığı ve sonunda ihtiyaç duyacağımız tüm dahili araçlara tepki verir.
+
+62
+00:04:31,710 --> 00:04:32,930
+Bağımlılıklarımız.
+
+63
+00:04:33,120 --> 00:04:38,980
+Yani sonraki nesil javascript için derleyici şu anki gen javascriptine bağımlılıktır.
+
+64
+00:04:39,150 --> 00:04:40,860
+Ve NPM'yi burada kullanacağız.
+
+65
+00:04:40,980 --> 00:04:48,060
+İplik, kullanabileceğiniz bir başka araç olabilir, ancak NPM düğümünün paket yöneticisini yalnızca paketleri yönetmemize ve
+
+66
+00:04:48,390 --> 00:04:54,130
+bağımlılıkları yönetmek için yalnızca bir gerçek dışıyla kullanmamıza izin veren bir araç kullanacağız.
+
+67
+00:04:54,240 --> 00:04:57,030
+Ayrıca ön uç projelerde.
+
+68
+00:04:57,030 --> 00:05:04,960
+Bu bağımlılık yönetim aracının yanında, bir işleyiciye ihtiyacımız var, çünkü modüler kod yazmak ve birden çok dosyaya ayırmak istiyoruz,
+
+69
+00:05:04,960 --> 00:05:10,450
+böylece her dosyanın açık bir göreve net bir odaklanması ve bu nedenle korumak
+
+70
+00:05:10,480 --> 00:05:12,540
+ve yönetmek bizim için daha kolaydır.
+
+71
+00:05:12,850 --> 00:05:19,810
+Ancak tarayıcılar, en azından eski tarayıcıların yapmadığı arızaları bile
+
+72
+00:05:19,810 --> 00:05:26,680
+desteklemediği için, bu kodun bir kaç dosyaya paketlenmesini sağlamalıyız.
+
+73
+00:05:26,980 --> 00:05:33,010
+Tüm bu küçük odaklı dosyalara binlerce istekte bulunmak için en uygun olanı yaptıkları veya
+
+74
+00:05:33,010 --> 00:05:35,020
+etmemiş olsaydılar da olabilirdi.
+
+75
+00:05:35,170 --> 00:05:40,120
+Bu yüzden Butler'ı almak istiyoruz ve bu günleri paketlemek için defacto standart olan web
+
+76
+00:05:40,120 --> 00:05:40,720
+paketi kullanacağız.
+
+77
+00:05:40,720 --> 00:05:44,250
+Web bağlantısında serin olan şey sadece dosyaların paketlenmesi değil.
+
+78
+00:05:44,320 --> 00:05:50,140
+Ayrıca, bu paketlemeden önce birkaç diğer oluşturma adımını uygulamamıza izin verir.
+
+79
+00:05:50,140 --> 00:05:57,370
+Örneğin, bir sonraki gen javascriptinin bahsedilen derlemesi, bireysel tablo gerektirir.
+
+80
+00:05:57,400 --> 00:06:04,420
+için web paket yapılandırmasına dahil olabilecek babbel artı ön ayarlarını kullanacağız. süreci.
+
+81
+00:06:04,690 --> 00:06:12,310
+Bu javascript derlemesini yapan, tümü eski tarayıcılarda çalışan modern özelliklerden çevirme anlamına gelen
+
+82
+00:06:12,310 --> 00:06:19,100
+bir derleyiciya ihtiyaç duyuyoruz ve bu paketleme ve optimizasyonun bir parçası oldukları
+
+83
+00:06:19,180 --> 00:06:25,900
+Ve son olarak, makinemizi geliştirme sunucumuzda yerel olarak uygulamamızı test etmek için bir geliştirme
+
+84
+00:06:25,900 --> 00:06:32,590
+sunucusu kullanmak istiyoruz, ancak bir web sunucusu ama makinede çalışan bir çift, tıklayarak bir
+
+85
+00:06:32,590 --> 00:06:39,370
+HD mail dosyası açabiliyordu; protokolünü kullanır ve bir web sunucusunda çalışan uygulamanın doğru şekilde
+
+86
+00:06:39,460 --> 00:06:40,570
+taklit edilmez.
+
+87
+00:06:40,780 --> 00:06:45,300
+Dolayısıyla bir web sunucusuna ihtiyacımız var ve tabii ki yerel makineden bir tane çalıştırabiliriz.
+
+88
+00:06:45,460 --> 00:06:49,760
+Sunucu daha sonra yalnızca tarafımızdan erişilebilir, ancak bir geliştirici olarak ihtiyacımız olan bu.
+
+89
+00:06:49,870 --> 00:06:55,020
+Ardından, uygulamanın gerçek bir sunucuda sonunda çalışacağı için uygulamanın gerçekten çalıştığını görebiliriz.
+
+90
+00:06:55,060 --> 00:06:59,570
+Bütün bunlara ihtiyacımız var ve kurulması gereken süper komplekse benziyor.
+
+91
+00:06:59,590 --> 00:07:07,000
+Önemli olan, sana size bütün konularda bir sıfır yapılandırmayla gelecek derslerde
+
+92
+00:07:07,000 --> 00:07:12,490
+destek olacak bir proje yaratacak bir araç sunmam değil.
+
+93
+00:07:12,490 --> 00:07:18,010
+Bu aracı birlikte kuracağız ve tepki ekibi ve topluluğu tarafından oluşturulan bir araçtır.
+
+94
+00:07:18,170 --> 00:07:24,380
+Ve resmi olarak yeni tepki uygulamaları oluşturma yolunu öneriyoruz çünkü söylemin genel teması budur.
+
+95
+00:07:24,550 --> 00:07:32,000
+Sana şeyleri en iyi uygulamada öğreteceğim ve önerilen yol böylece tüm kurulum oldukça kolay.
+
+96
+00:07:32,080 --> 00:07:38,170
+not olarak hala sahnelerin arkasında nasıl çalışır dalış etmek isterseniz ve bunu sıfırdan yapmak istiyorsanız.
+
+97
+00:07:38,170 --> 00:07:39,610
+Ve bir yan
+
+98
+00:07:39,610 --> 00:07:46,030
+Ayrıca, Boulder'ın haftada bir kez sıfırdan bir projeye tepki verecek olan dersin sonuna doğru ölü bir
+
+99
+00:07:46,180 --> 00:07:47,560
+modül de var.
+
+100
+00:07:47,560 --> 00:07:50,080
+Şimdi bununla neye ihtiyacımız olduğunu ve nasıl olduğunu biliyorsun.
+
+101
+00:07:50,080 --> 00:07:55,990
+Şimdi, bahsettiğim Toul'a borcumuza girelim ve tüm bu özellikleri destekleyen yeni bir
+
+102
+00:07:55,990 --> 00:07:58,550
+Riak projesine nasıl başlandığımızı öğrenelim.

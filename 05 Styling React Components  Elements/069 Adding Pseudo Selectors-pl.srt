@@ -1,0 +1,247 @@
+1
+00:00:02,170 --> 00:00:06,880
+W ostatnim wykładzie włączamy moduł css wysuwając konfigurację, precyzyjnie
+
+2
+00:00:06,880 --> 00:00:13,410
+ją dostrajając, a następnie importując klasy z plików css i używając ich, teraz
+
+3
+00:00:13,450 --> 00:00:17,410
+dodajmy również pseudo selektory i zapytania o media.
+
+4
+00:00:17,590 --> 00:00:22,880
+Pseudo selektory są ważne tutaj w aplikacji. Plik js, w którym przypiszemy styl
+
+5
+00:00:22,990 --> 00:00:30,190
+przycisku, teraz nie będziemy już tego wstawiać, więc usuniemy właściwość stylu przycisku tutaj i nie będę już
+
+6
+00:00:30,190 --> 00:00:35,760
+ustawiał koloru tła stylu na czerwony tutaj i nie ustawiam już stylu lubię to.
+
+7
+00:00:35,860 --> 00:00:43,200
+Moglibyśmy to zrobić, ale teraz chcę to zrobić w stylu modułu css, więc możemy teraz
+
+8
+00:00:43,200 --> 00:00:51,010
+stworzyć klasę css przycisku, którą następnie przypisaliśmy do przycisku lub po prostu tworzymy normalną regułę css
+
+9
+00:00:51,010 --> 00:00:54,430
+dla każdego przycisku zagnieżdżonego wewnątrz naszej klasy
+
+10
+00:00:54,580 --> 00:00:58,200
+aplikacji, możemy teraz przypisać style, które chcemy.
+
+11
+00:00:58,210 --> 00:01:03,150
+Teraz powinny to być style, które mieliśmy wcześniej, usunąłem
+
+12
+00:01:03,280 --> 00:01:05,000
+je, więc po
+
+13
+00:01:05,260 --> 00:01:08,230
+prostu spróbuję je przebudować, mieliśmy,
+
+14
+00:01:08,500 --> 00:01:13,650
+jak sądzę, niebieską ramkę, dodajmy dopełnienie może 16px, dodajmy
+
+15
+00:01:13,650 --> 00:01:15,490
+kolor tła zieleni
+
+16
+00:01:15,700 --> 00:01:19,200
+domyślnie może i ustawmy czcionka do dziedziczenia.
+
+17
+00:01:19,410 --> 00:01:28,910
+A teraz, jeśli to uratujemy, już teraz powinniśmy uzyskać ten styl przycisku, ponieważ nadal stosujemy nasze style tutaj, ale
+
+18
+00:01:28,940 --> 00:01:32,030
+już nie w linii, pamiętaj również
+
+19
+00:01:32,030 --> 00:01:35,560
+o zapisaniu aplikacji. js, aby naprawdę zobaczyć zmiany.
+
+20
+00:01:35,600 --> 00:01:42,580
+Powinniśmy teraz uzyskać ten styl już nie w linii, ale przycisk tutaj jest stylizowany, ponieważ jest
+
+21
+00:01:42,590 --> 00:01:44,510
+zagnieżdżony poniżej selektora aplikacji
+
+22
+00:01:44,720 --> 00:01:49,200
+tutaj, aplikacja jest to specjalny selektor zastosowany do zewnętrznego div.
+
+23
+00:01:49,270 --> 00:01:57,250
+Teraz pozwól mi po prostu zmienić kolor i oczywiście nadal chcemy ustawić czerwony przycisk,
+
+24
+00:01:57,250 --> 00:02:01,980
+a my chcemy widzieć, jak się nad nim kręci.
+
+25
+00:02:02,360 --> 00:02:03,730
+Więc pozwól
+
+26
+00:02:03,860 --> 00:02:05,000
+mi dodać
+
+27
+00:02:05,300 --> 00:02:06,560
+hover przycisku,
+
+28
+00:02:06,560 --> 00:02:15,130
+nomalny kod css tutaj, nic nadzwyczajnego i ustawić kolor tła tutaj na jasnozielony i kolor
+
+29
+00:02:15,140 --> 00:02:16,680
+na czarny może,
+
+30
+00:02:16,870 --> 00:02:19,990
+a teraz dodajmy czerwoną skrzynkę.
+
+31
+00:02:20,320 --> 00:02:26,230
+Teraz po prostu dodaję czerwony przycisk aplikacji Więc normalne reguły
+
+32
+00:02:26,500 --> 00:02:34,150
+css, stylujesz dowolny przycisk, który ma czerwoną klasę, ustaw kolor tła tutaj
+
+33
+00:02:34,450 --> 00:02:39,820
+na czerwony, a teraz również dodaj czerwony przycisk na
+
+34
+00:02:39,880 --> 00:02:49,470
+przycisku aplikacji, aby ustawić kolor tła dla łososia i kolor czarny dla zawieszonych przycisków z
+
+35
+00:02:49,470 --> 00:02:50,710
+czerwoną klasą.
+
+36
+00:02:50,730 --> 00:02:55,740
+Teraz wszystko, co musimy zrobić, to warunkowo dodać czerwoną klasę do tego
+
+37
+00:02:55,740 --> 00:03:04,860
+przycisku, jeśli tego potrzebujemy, więc wróć do aplikacji. js, musimy po prostu powiązać nazwę klasy przycisku. Zrobimy to w funkcji
+
+38
+00:03:04,860 --> 00:03:08,770
+renderowania oczywiście przed instrukcją if.
+
+39
+00:03:08,960 --> 00:03:17,380
+Mamy domyślną klasę przycisków, która ma wartość null, powiedzmy lub po prostu pusty
+
+40
+00:03:17,480 --> 00:03:29,760
+ciąg znaków, następnie wewnątrz instrukcji if, gdzie przypisałem osoby, ustawiłem klasę przycisków równą klasom czerwonym, zobaczmy, czy to działa,
+
+41
+00:03:29,770 --> 00:03:30,850
+czy teraz
+
+42
+00:03:30,850 --> 00:03:40,080
+idę do i dodaj nazwę klasy i ustaw ją jako równą klasie przycisku.
+
+43
+00:03:40,270 --> 00:03:41,520
+Teraz jedna ważna
+
+44
+00:03:41,530 --> 00:03:46,990
+uwaga, klasa button zawsze musi być łańcuchem, jeśli przypiszemy ją do nazwy klasy, a klasy
+
+45
+00:03:47,080 --> 00:03:55,140
+czerwone na końcu to tylko ciąg stworzony przez program ładujący css, który daje nam wciąż dostęp do klasy takiej jak ta, ale
+
+46
+00:03:55,230 --> 00:03:59,300
+na końcu zwraca ciąg znaków z poprawnym css, lub jest pustym
+
+47
+00:03:59,350 --> 00:04:01,820
+łańcuchem, jeśli znajdujemy się poza tym warunkiem.
+
+48
+00:04:02,180 --> 00:04:06,890
+Teraz, zapiszmy to, załadujmy ponownie aplikację, najechanie na nią działa, a my
+
+49
+00:04:07,000 --> 00:04:12,610
+powinniśmy dodać, że rzecz kursora i kliknięcie na nią działa również z czerwoną klasą,
+
+50
+00:04:12,610 --> 00:04:14,150
+którą można teraz zobaczyć.
+
+51
+00:04:14,350 --> 00:04:22,300
+Tak więc działa to również dla klas zagnieżdżonych, ponieważ widać czerwoną klasę, którą zdefiniowaliśmy tylko na przyciskach
+
+52
+00:04:22,300 --> 00:04:24,100
+i nadal w naszym
+
+53
+00:04:24,310 --> 00:04:27,580
+składniku javascript, zaimportowaliśmy ten ogólny obiekt klasy.
+
+54
+00:04:27,910 --> 00:04:32,360
+Tak więc każda klasa css, którą definiujemy w
+
+55
+00:04:32,390 --> 00:04:39,880
+pliku css, importujemy z włączonymi modułami css, wszystkie zdefiniowane tu klasy, nawet jeśli
+
+56
+00:04:39,880 --> 00:04:46,030
+dotyczą tylko specjalnego selektora podrzędnego, są dostępne w obiekcie klasy,
+
+57
+00:04:46,030 --> 00:04:49,720
+który importujemy z tego pliku css.
+
+58
+00:04:49,730 --> 00:04:52,910
+Teraz pozwól mi zakończyć tę rzecz
+
+59
+00:04:52,910 --> 00:05:00,830
+przycisku tutaj, dodając ponownie kursor, który jest wskaźnikiem. Mając to na uwadze, zapisz wszystkie pliki, a teraz otrzymujemy ten
+
+60
+00:05:00,830 --> 00:05:01,350
+ładny
+
+61
+00:05:01,520 --> 00:05:03,660
+wskaźnik, wszystko działa tak, jak powinno.
+
+62
+00:05:04,100 --> 00:05:06,140
+Przyjrzyjmy się teraz zapytaniom o media.

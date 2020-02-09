@@ -1,0 +1,171 @@
+1
+00:00:02,320 --> 00:00:05,490
+In the last lectures, we learned a lot about state and props,
+
+2
+00:00:05,500 --> 00:00:12,030
+we learned that these are the only two things which lead react to upgrade your dom if something changed.
+
+3
+00:00:12,040 --> 00:00:19,050
+Now I also mentioned that when creating a component as a function, as we do for a person,
+
+4
+00:00:19,090 --> 00:00:24,420
+we can't use state in there because it's just a function where we return some jsx code.
+
+5
+00:00:24,430 --> 00:00:27,770
+Granted we could run other code before doing that
+
+6
+00:00:27,970 --> 00:00:34,300
+and you often do that if you need to transform your props for us or something like that but you can
+
+7
+00:00:34,300 --> 00:00:41,580
+set up a state property here, you can't call this set state because it's no class extending component,
+
+8
+00:00:41,590 --> 00:00:44,830
+the said state method is not known and we don't have methods anyways,
+
+9
+00:00:44,890 --> 00:00:45,850
+it's no class,
+
+10
+00:00:45,880 --> 00:00:46,970
+it's a function.
+
+11
+00:00:47,380 --> 00:00:54,730
+And still, I mentioned that you should use this function form of components as often as possible,
+
+12
+00:00:55,060 --> 00:00:57,880
+and I will emphasize it here one more time,
+
+13
+00:00:58,210 --> 00:01:00,180
+why is this so important?
+
+14
+00:01:00,760 --> 00:01:09,580
+Because these simple components which are just functions receiving props are very clear about what they
+
+15
+00:01:09,580 --> 00:01:10,420
+do,
+
+16
+00:01:10,750 --> 00:01:13,250
+they only render something to the dom,
+
+17
+00:01:13,270 --> 00:01:20,370
+they are dynamic because of props and you can add some additional logic prior to calling return.
+
+18
+00:01:20,770 --> 00:01:23,080
+But and that's super important,
+
+19
+00:01:23,140 --> 00:01:28,570
+they don't manipulate your application state. As your application grows,
+
+20
+00:01:28,570 --> 00:01:32,280
+you will see that this is not so unimportant,
+
+21
+00:01:32,280 --> 00:01:34,610
+this is actually really important.
+
+22
+00:01:34,630 --> 00:01:39,990
+Most parts of your application shouldn't change the application state,
+
+23
+00:01:40,030 --> 00:01:43,770
+they should just render something to the dom. Dynamic,
+
+24
+00:01:43,900 --> 00:01:48,780
+yes but they shouldn't allow you to change your application state.
+
+25
+00:01:48,820 --> 00:01:54,880
+Your application state should only be changed and handled in a few selected components
+
+26
+00:01:54,880 --> 00:01:57,910
+also referred to as containers.
+
+27
+00:01:57,910 --> 00:02:00,110
+App.js would be such a container,
+
+28
+00:02:00,280 --> 00:02:06,310
+that's just another name, it is a component but we refer to it as container because it contains some
+
+29
+00:02:06,310 --> 00:02:08,370
+part of our application state.
+
+30
+00:02:08,560 --> 00:02:15,580
+In our demo application actually all of the application state. Here we can change something about our
+
+31
+00:02:15,580 --> 00:02:22,270
+app and would then we pass these changes down to for example the person component but that's it.
+
+32
+00:02:22,270 --> 00:02:29,530
+The change happens in app.js and once we start building the course project you will see me use
+
+33
+00:02:29,530 --> 00:02:30,900
+this pattern.
+
+34
+00:02:31,000 --> 00:02:38,380
+I will have a few components where the state actually lives and gets changed and a lot of components
+
+35
+00:02:38,740 --> 00:02:46,030
+which take some inputs and then just render something to the screen but which won't directly manipulate
+
+36
+00:02:46,120 --> 00:02:47,790
+the state.
+
+37
+00:02:47,800 --> 00:02:54,970
+Still you might have cases where maybe you also want to listen to an event in the person component or
+
+38
+00:02:54,970 --> 00:02:56,670
+in any other component.
+
+39
+00:02:57,100 --> 00:03:02,770
+Now of course you could turn this into a component which extends component so that you can define methods
+
+40
+00:03:02,800 --> 00:03:11,490
+which you will execute but maybe you want to listen to an event here but execute some method in app.js
+
+41
+00:03:11,500 --> 00:03:19,990
+so that you can keep that pattern of changing the name in app.js but actually listening to
+
+42
+00:03:19,990 --> 00:03:22,370
+the event in another component.
+
+43
+00:03:22,750 --> 00:03:31,470
+Let's have a look at how we can handle this and change a state from another component in the next lecture.

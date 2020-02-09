@@ -1,0 +1,43 @@
+1
+00:00:02,430 --> 00:00:10,650
+Benvenuti nel modulo discourse abbiamo imparato molte cose sulla reazione e abbiamo già visto alcuni errori nella
+
+2
+00:00:10,740 --> 00:00:12,790
+nostra applicazione di re-act.
+
+3
+00:00:12,880 --> 00:00:21,900
+Ora, a prescindere da quanto sei bravo in un programmatore, otterrai errori o messaggi o la maggior parte
+
+4
+00:00:21,900 --> 00:00:22,680
+delle volte.
+
+5
+00:00:22,680 --> 00:00:25,390
+Peggio di quegli errori logici.
+
+6
+00:00:25,470 --> 00:00:32,460
+Ora in questo manuale ti mostrerò come puoi eseguire il debug della tua applicazione di re-act come dovresti
+
+7
+00:00:32,520 --> 00:00:35,340
+leggere e capire i messaggi di errore.
+
+8
+00:00:35,400 --> 00:00:41,940
+realtà abbastanza buoni e utili e come è possibile creare un'applicazione di re-act che sia priva di errori.
+
+9
+00:00:41,940 --> 00:00:44,270
+Poiché molti di questi sono in
+
+10
+00:00:44,700 --> 00:00:50,940
+Entriamo in questo e impariamo le varie tecniche che hai a disposizione per capire
+
+11
+00:00:50,940 --> 00:00:52,660
+e gestire gli errori.

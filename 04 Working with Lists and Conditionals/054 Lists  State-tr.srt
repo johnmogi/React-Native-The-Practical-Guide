@@ -1,0 +1,215 @@
+1
+00:00:02,170 --> 00:00:09,830
+Bir diziyi GSX öğeleri içeren bir diziye eşleyerek bir liste koyarak başladığımız son konuyu sonlandırın.
+
+2
+00:00:09,910 --> 00:00:13,230
+Ve bu, listeleri çıkarma ve tepki göstermenin ortak kalıbıdır.
+
+3
+00:00:13,420 --> 00:00:17,760
+Her şey javascript olduğu için sadece javascript'i kullanırsınız.
+
+4
+00:00:17,770 --> 00:00:20,250
+Artık yeterince söyleyemem.
+
+5
+00:00:20,410 --> 00:00:22,980
+Hâlâ iyileştirilecek bazı şeyler var.
+
+6
+00:00:22,990 --> 00:00:25,630
+Mesela, elde ettiğimiz anahtar uyarı var.
+
+7
+00:00:25,700 --> 00:00:27,400
+Buna yakında geri geleceğim.
+
+8
+00:00:27,550 --> 00:00:32,900
+Ancak bunu yapmadan önce, bu diziyi gerçekten nasıl düzenleyebildiğimizi görelim.
+
+9
+00:00:33,370 --> 00:00:37,050
+Ve bunun için yeni bir toplama dinleyicisi eklememe izin verin.
+
+10
+00:00:37,330 --> 00:00:44,140
+Kişi bileşenlerimizin içinde aslında ilk paragrafta zaten bir tıklama dinleyicisi var
+
+11
+00:00:44,140 --> 00:00:49,150
+ve oradaki değişimden önce bu tıklama istemini yürütüyoruz.
+
+12
+00:00:49,150 --> 00:00:52,700
+Daha sonra anahtar adı işleyicisi olarak adlandırdık.
+
+13
+00:00:53,020 --> 00:00:55,090
+Şimdi bu yöntemi kaldıracağım.
+
+14
+00:00:55,180 --> 00:00:58,320
+Başvurumda herhangi bir yerden artık çağırmıyorum.
+
+15
+00:00:58,540 --> 00:01:01,080
+Bunun yerine yeni bir işleyici eklemek istiyorum.
+
+16
+00:01:01,190 --> 00:01:03,930
+Kişi sileneğini sildim.
+
+17
+00:01:03,940 --> 00:01:08,450
+Ve burada ne yapacağını tahmin edebiliyor olabilirsiniz.
+
+18
+00:01:08,530 --> 00:01:15,040
+Kişi dizilimimden birisini silmek istiyorum ve bu kişinin ilk paragrafını tıklattığımda
+
+19
+00:01:15,040 --> 00:01:16,490
+bunu yürütmek istiyorum.
+
+20
+00:01:16,600 --> 00:01:20,650
+Yani orada bir tıklama Propp bir yöntem olarak yürütülür.
+
+21
+00:01:20,830 --> 00:01:28,000
+Bu yüzden bir iş arkadaşım Propp'u tıklama yakınında çantamda eklemeliyim ve oradaki kurşun
+
+22
+00:01:28,030 --> 00:01:30,230
+kişi işleyicisine referans vermeliyim.
+
+23
+00:01:30,280 --> 00:01:36,580
+Şimdi, kişiyi tıkladığımda bu yöntemi yürütmek istiyorum ve elbette dağıtımı silmek istiyorum.
+
+24
+00:01:36,580 --> 00:01:42,340
+namak listesinin çıktığından beri hangi durumda ilk hangisini bilmediğimi bilmeliyim, şimdilik bilemiyorum.
+
+25
+00:01:42,340 --> 00:01:43,700
+Şimdi bunun için
+
+26
+00:01:43,810 --> 00:01:48,730
+İyi olan şey, bu harita yöntemi de ikinci bir argümanı ortaya çıkarmasıdır.
+
+27
+00:01:48,940 --> 00:01:55,960
+Şimdiye dek kullandığım kişinin yanında ikinci bir argüman da ekleyebilir veya
+
+28
+00:01:56,050 --> 00:02:04,120
+alabilirim dizindeki dizini söylemeliyim ve altı ok iş parçanızda birden fazla argüman kullanırsanız,
+
+29
+00:02:04,120 --> 00:02:07,480
+argümanları parantez içinde sarmanız gerekecektir. .
+
+30
+00:02:07,480 --> 00:02:09,640
+Bu indeksi ücretsiz alıyoruz.
+
+31
+00:02:09,650 --> 00:02:15,280
+Otomatik olarak geçti ve silme kişi işleyicisine geçirmek istiyorum.
+
+32
+00:02:15,490 --> 00:02:23,430
+ok işlevi olarak yürüttüğüm sözdizimini kullanacağım ve dolayısıyla şimdi bu dizini geçirebileceğim.
+
+33
+00:02:23,440 --> 00:02:24,430
+Buradaki
+
+34
+00:02:24,430 --> 00:02:28,670
+Alternatif bu virgül endeksini bağlar.
+
+35
+00:02:29,290 --> 00:02:32,920
+Şimdi bunu silme kişi işleyicisinde alabiliriz.
+
+36
+00:02:33,010 --> 00:02:42,010
+Elbette, kişi dizini almaya hazır olmam gerekiyor ve şimdi durumumu buna göre güncellemek
+
+37
+00:02:42,010 --> 00:02:43,840
+için burayı kullanabilirim.
+
+38
+00:02:43,840 --> 00:02:51,250
+Her şeyden önce tüm kişileri ele alacağım, böylece bu devlet kişilerine ulaşacağım ve o
+
+39
+00:02:51,250 --> 00:02:54,820
+kişinin dizisinin yeni bir versiyonunu yaratmak istiyorum.
+
+40
+00:02:54,820 --> 00:03:02,420
+Sadece kişileri birbirine eklemeye çağırmak istiyorum ve bir kişiyi dizine eklemeye ve bir elemanı birleştirmeye başlamak istiyorum.
+
+41
+00:03:02,440 --> 00:03:10,570
+Bu sadece diziden bir unsuru kaldırır ve bundan sonra bu belirlenmiş durumu çağırabilir
+
+42
+00:03:10,840 --> 00:03:18,120
+ve insanlara, güncellenen bir içeriğe sahip kişileri bir element ekleyerek ayarlayabilirim.
+
+43
+00:03:18,340 --> 00:03:21,190
+Ve durumda bir sabiti nasıl düzenleyebileceğimi merak ediyorsun.
+
+44
+00:03:21,190 --> 00:03:27,970
+Sabite yeni bir değer atamamış olabilmek için diziler ve nesneler referans türleridir.
+
+45
+00:03:27,970 --> 00:03:29,960
+Sadece bir işaretçi tutuyor.
+
+46
+00:03:29,980 --> 00:03:32,480
+Sadece işaret eden unsuru değiştirdim.
+
+47
+00:03:32,500 --> 00:03:35,840
+Ancak bu sadece bazı genel javascript bilgisi.
+
+48
+00:03:35,980 --> 00:03:41,590
+Böylece, kişilerin Devletini, yeni kişilere D güncellenmiş kişilere ayarladık.
+
+49
+00:03:41,590 --> 00:03:44,650
+Ve bu yaklaşımın yakında düzelteceğim bir kusur var.
+
+50
+00:03:44,950 --> 00:03:46,400
+Ama deneyelim.
+
+51
+00:03:46,540 --> 00:03:53,660
+Bu dosyayı kaydetmeme izin verin ve kişilere geçiş yapalım ve daha önce olduğu gibi aynı uyarıları alalım.
+
+52
+00:03:53,860 --> 00:03:57,870
+Çalıştığı görüldüğü gibi paragrafı tıklayalım.
+
+53
+00:03:57,880 --> 00:04:03,910
+Artık kişileri ve tam olarak tıkladığınız menüyü veya maks.
+
+54
+00:04:03,940 --> 00:04:10,300
+Bununla birlikte, bu yaklaşımın bir kusurunun olduğunu ve bir sonraki dersin bu kusuruna daha derinlemesine dalacağım dedim.

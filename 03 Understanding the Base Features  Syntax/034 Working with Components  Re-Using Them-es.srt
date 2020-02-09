@@ -1,0 +1,79 @@
+1
+00:00:02,170 --> 00:00:07,400
+En la última conferencia creamos nuestro propio componente, el componente persona.
+
+2
+00:00:07,400 --> 00:00:10,640
+La pregunta es, ¿cuál es la gran ventaja de esto?
+
+3
+00:00:11,060 --> 00:00:19,020
+Los componentes son asombrosos porque podemos enfocar nuestro código en cada archivo y, por lo tanto, hacerlo mucho más fácil de mantener.
+
+4
+00:00:19,070 --> 00:00:26,690
+No poner todo en el archivo js del capítulo que realmente puede estar lleno de aplicaciones más grandes
+
+5
+00:00:26,990 --> 00:00:30,110
+y este componente también es reutilizable y configurable.
+
+6
+00:00:30,290 --> 00:00:34,460
+No hay vuelta atrás para configurar partes reutilizando es bastante simple.
+
+7
+00:00:34,700 --> 00:00:38,510
+Simplemente podemos copiar y pegar tantas veces como queramos.
+
+8
+00:00:38,510 --> 00:00:46,010
+obtenemos la salida varias veces y esa es una manera súper fácil de reutilizarlo en cualquier parte de nuestra aplicación.
+
+9
+00:00:46,010 --> 00:00:50,510
+Tal vez tres veces y simplemente haciendo esto y guardando ese archivo
+
+10
+00:00:50,720 --> 00:00:57,160
+Y si nuestra aplicación contuviera más y más componentes Esto haría que fuera muy fácil construirlo
+
+11
+00:00:57,160 --> 00:01:01,350
+con todos estos componentes y usarlos donde sea que necesitemos usarlos.
+
+12
+00:01:01,400 --> 00:01:02,190
+En nuestro laboratorio
+
+13
+00:01:02,330 --> 00:01:06,190
+Este es ahora nuestro elemento masculino HVM personalizado.
+
+14
+00:01:06,830 --> 00:01:12,230
+También podemos configurarlo antes de que hagamos eso.
+
+15
+00:01:12,380 --> 00:01:17,900
+Vamos a mostrar algo más sobre nuestro código de reactivación porque ahora todo está estático.
+
+16
+00:01:18,050 --> 00:01:23,730
+Tenemos nuestro componente personalizado pero todavía tenemos algunos HDMI estáticos.
+
+17
+00:01:23,750 --> 00:01:27,230
+Voy a enviar un texto al contenido de HMO al final.
+
+18
+00:01:27,230 --> 00:01:35,810
+Ahora, a menudo, las plantillas en las que su código GSX debe ser dinámico deberían producir diferentes cosas dependiendo del estado
+
+19
+00:01:35,810 --> 00:01:39,250
+de su aplicación o de alguna entrada del usuario.
+
+20
+00:01:39,470 --> 00:01:45,490
+Ahora haremos mucho por el curso, pero establezcamos las bases para eso en la próxima conferencia.

@@ -1,0 +1,79 @@
+1
+00:00:02,170 --> 00:00:07,400
+W ostatnim wykładzie stworzyliśmy własny komponent, składnik osobowy.
+
+2
+00:00:07,400 --> 00:00:10,640
+Pytanie, jaka jest tego duża zaleta?
+
+3
+00:00:11,060 --> 00:00:19,020
+Komponenty są niesamowite, ponieważ możemy skupić nasz kod w każdym pliku, a tym samym sprawić, że będzie on
+
+4
+00:00:19,070 --> 00:00:26,690
+dużo łatwiejszy w utrzymaniu. Nie umieszczamy wszystkiego w aplikacji. Plik js, który naprawdę może być zatłoczony dla większych aplikacji,
+
+5
+00:00:26,990 --> 00:00:30,110
+a ten komponent jest również wielokrotnego użytku i konfigurowalny.
+
+6
+00:00:30,290 --> 00:00:34,460
+Teraz wrócę do konfiguracji części, ponowne użycie jest dość proste,
+
+7
+00:00:34,700 --> 00:00:38,510
+możemy po prostu skopiować i wkleić je tak często, jak
+
+8
+00:00:38,510 --> 00:00:46,010
+chcemy, może trzy razy i po prostu robiąc to i zapisując ten plik, otrzymujemy wynik wielokrotnie i to bardzo
+
+9
+00:00:46,010 --> 00:00:50,510
+łatwy sposób ponownego użycia go w dowolnym miejscu w naszej aplikacji.
+
+10
+00:00:50,720 --> 00:00:57,160
+A gdyby nasza aplikacja zawierała coraz więcej komponentów, bardzo łatwo byłoby zbudować ją z tych wszystkich
+
+11
+00:00:57,160 --> 00:01:01,350
+składników i używać ich wszędzie tam, gdzie potrzebujemy ich używać
+
+12
+00:01:01,400 --> 00:01:02,190
+w naszej
+
+13
+00:01:02,330 --> 00:01:06,190
+aplikacji, teraz jest to faktycznie nasz niestandardowy element html.
+
+14
+00:01:06,830 --> 00:01:12,230
+Możemy to również skonfigurować, ale zanim to zrobimy, zmieńmy coś jeszcze
+
+15
+00:01:12,380 --> 00:01:17,900
+na temat naszego kodu reakcji, ponieważ teraz wszystko jest statyczne, mamy
+
+16
+00:01:18,050 --> 00:01:23,730
+nasz niestandardowy komponent, ale wciąż mamy po prostu trochę statycznego tekstu
+
+17
+00:01:23,750 --> 00:01:27,230
+HTML, trochę treści HTML na końcu .
+
+18
+00:01:27,230 --> 00:01:35,810
+Teraz często szablony, kod jsx powinny być dynamiczne, powinny wyprowadzać różne rzeczy w zależności od stanu
+
+19
+00:01:35,810 --> 00:01:39,250
+aplikacji lub wprowadzania danych przez użytkownika.
+
+20
+00:01:39,470 --> 00:01:45,490
+Teraz zrobimy to dużo na kursie, ale załóżmy podstawy tego w następnym wykładzie.

@@ -1,0 +1,87 @@
+1
+00:00:02,240 --> 00:00:09,220
+Nauczyliśmy się używać pseudo selektorów i jak zagnieżdżać klasy i nadal importować je
+
+2
+00:00:09,220 --> 00:00:12,890
+na tym obiekcie klasy w poprzednim wykładzie.
+
+3
+00:00:12,970 --> 00:00:15,080
+Teraz chcę zadbać o zapytania o media i to
+
+4
+00:00:15,090 --> 00:00:19,350
+było coś, co chciałem zrobić w klasie mojej osoby. Tam przypiszę klasę
+
+5
+00:00:19,420 --> 00:00:27,660
+css osoby do zewnętrznego div i faktycznie dodałem już kod wcześniej.
+
+6
+00:00:27,700 --> 00:00:34,630
+Po prostu skomentuję to, zwykłe zapytanie o media css, dostosowujące naszą klasę Person
+
+7
+00:00:34,630 --> 00:00:43,750
+do tej szerokości, jeśli szerokość ekranu przekracza 500 pikseli. Możesz zapisać poprawiony plik css i nadal będzie importować
+
+8
+00:00:43,840 --> 00:00:46,140
+tę klasę osoby dobrze
+
+9
+00:00:46,140 --> 00:00:49,270
+na tym obiekcie klasy, nawet jeśli
+
+10
+00:00:49,510 --> 00:00:55,330
+jest zawijany wewnątrz zapytania o media. Powinniśmy więc zobaczyć, że jeśli przeładuję
+
+11
+00:00:55,330 --> 00:01:01,780
+aplikację i przełączę tutaj moje osoby, jeśli zwiększę obszar wyświetlania, szerokość pól się nie
+
+12
+00:01:01,810 --> 00:01:04,240
+zmieni, zmieni się tylko wtedy,
+
+13
+00:01:04,240 --> 00:01:08,180
+gdy jest wystarczająco mała, tam będzie 60 procent szerokość.
+
+14
+00:01:08,560 --> 00:01:14,890
+To było super proste i może być trochę trudnym do objęcia głowy modułem
+
+15
+00:01:15,280 --> 00:01:23,320
+css, po prostu pomyśl o tym obiekcie klasy tutaj jako obiekcie javascript, który daje ci dostęp do
+
+16
+00:01:23,470 --> 00:01:31,390
+wersji string twoich stylów css, twojej klasy css ale z klasa css, która została dostosowana do wyjątkowości.
+
+17
+00:01:31,960 --> 00:01:36,220
+Więc po prostu przetłumaczysz swoją klasę osoby na coś podobnego.
+
+18
+00:01:36,340 --> 00:01:36,810
+Person_
+
+19
+00:01:36,810 --> 00:01:44,380
+some unique cache, dzięki czemu możesz być bezpieczny i pewny, że gdy używasz tej klasy w danym
+
+20
+00:01:44,380 --> 00:01:49,130
+komponencie, jest to jedyne miejsce, w którym stosowane są style CSS.
+
+21
+00:01:49,240 --> 00:01:53,510
+Nie gdzie indziej w twojej aplikacji mogą te style mieć jakikolwiek
+
+22
+00:01:53,530 --> 00:01:56,750
+efekt, to jest idea stojąca za modułami css.

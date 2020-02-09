@@ -1,0 +1,267 @@
+1
+00:00:02,200 --> 00:00:05,460
+Zacznijmy więc od pominięcia tej faktycznej listy.
+
+2
+00:00:05,620 --> 00:00:11,510
+Jeśli spojrzymy, otrzymamy trzy elementy w tablicy tej osoby na naszym stanie.
+
+3
+00:00:11,560 --> 00:00:17,000
+Teraz znowu w innych strukturach, które możesz znać, jeśli tego nie robisz, nie ma problemu, tutaj
+
+4
+00:00:17,050 --> 00:00:18,530
+i tak jest inaczej.
+
+5
+00:00:18,650 --> 00:00:26,920
+W innych strukturach, takich jak w Vue, miałbyś dyrektywę v-for lub in Angular ngFor. Teraz reagujesz, nie masz tego,
+
+6
+00:00:26,920 --> 00:00:28,900
+bo zgadnij co?
+
+7
+00:00:29,120 --> 00:00:31,760
+Wszystko jest javascript tutaj, jak się nauczyłeś.
+
+8
+00:00:32,170 --> 00:00:39,760
+Podobnie jak w przypadku zawartości warunkowej, którą obsługujemy tutaj z normalnym javascriptem, obsługujemy również listy
+
+9
+00:00:39,760 --> 00:00:40,950
+z domyślnymi
+
+10
+00:00:40,990 --> 00:00:45,240
+narzędziami, które javascript zapewnia nam do pracy z listami.
+
+11
+00:00:45,340 --> 00:00:47,070
+Jak by to
+
+12
+00:00:47,140 --> 00:00:55,820
+wyglądało w naszym przypadku tutaj, gdzie mamy osoby? Cóż, ponownie używalibyśmy pojedynczych nawiasów klamrowych, aby renderować coś dynamicznego
+
+13
+00:00:55,820 --> 00:00:58,400
+w naszym kodzie jsx, a następnie
+
+14
+00:00:58,760 --> 00:01:07,220
+chcemy renderować tablice osób w stanie tak. stan. osoby po prostu odnoszące się
+
+15
+00:01:07,220 --> 00:01:09,170
+do tej tablicy.
+
+16
+00:01:09,170 --> 00:01:10,860
+Teraz to samo nie
+
+17
+00:01:10,940 --> 00:01:15,190
+załatwi sprawy, która jest zbiorem obiektów javascript, a nie czymś, co
+
+18
+00:01:15,260 --> 00:01:18,780
+możemy przekonwertować na html, a nie coś, co zareaguje tutaj.
+
+19
+00:01:19,130 --> 00:01:24,930
+Musimy więc przekonwertować tę tablicę javascript, która nie
+
+20
+00:01:24,950 --> 00:01:25,460
+jest
+
+21
+00:01:25,480 --> 00:01:34,310
+prawidłowym jsx na poprawny jsx. I javascript, vanilla javascript oferuje nam funkcję
+
+22
+00:01:34,520 --> 00:01:42,500
+konwertowania tablic, jest to funkcja map. Mapa po prostu odwzorowuje każdy element z danej tablicy, na przykład
+
+23
+00:01:42,980 --> 00:01:45,070
+naszą tablicę osób, na coś innego.
+
+24
+00:01:45,320 --> 00:01:50,720
+Robi to, wykonując metodę dla każdego elementu w danej tablicy,
+
+25
+00:01:50,720 --> 00:01:58,410
+więc na tej tablicy w tym przypadku. Ta metoda lub ta funkcja jest przekazywana do metody
+
+26
+00:01:58,820 --> 00:02:02,040
+mapy tutaj, pobiera element tablicy jako dane wejściowe,
+
+27
+00:02:02,060 --> 00:02:05,950
+więc jedna osoba, nazwa tego argumentu zależy całkowicie od Ciebie.
+
+28
+00:02:05,960 --> 00:02:11,580
+Po prostu piszę anonimową funkcję tutaj i faktycznie piszę tu funkcję strzałki.
+
+29
+00:02:11,750 --> 00:02:18,590
+Jest to więc funkcja strzałki ES6, którą przechodzę do metody mapowania, może wyglądać dziwnie, ale
+
+30
+00:02:18,590 --> 00:02:25,070
+jest to właściwie vanilla javascript, ES6, ale javascript, a nie jsx, nic takiego, dlatego
+
+31
+00:02:25,100 --> 00:02:28,070
+znajduje się wewnątrz pojedynczych nawiasów klamrowych.
+
+32
+00:02:28,670 --> 00:02:36,110
+Tak więc ta funkcja, którą przekazuję jako anonimową funkcję do metody mapy, jest wykonywana na każdym elemencie
+
+33
+00:02:36,170 --> 00:02:43,250
+w tablicy osób, a javascript automatycznie podaje nam każdy element jako dane wejściowe do funkcji, którą
+
+34
+00:02:43,340 --> 00:02:45,310
+wykonujemy na każdym elemencie.
+
+35
+00:02:45,320 --> 00:02:47,250
+Więc w tym przypadku to
+
+36
+00:02:47,270 --> 00:02:53,180
+nasza osoba, znowu możesz nazwać, co chcesz, ale ponieważ jest to szereg osób, osoba prawdopodobnie ma sens.
+
+37
+00:02:53,570 --> 00:02:55,670
+A teraz musisz coś
+
+38
+00:02:55,910 --> 00:03:01,010
+zwrócić, powinieneś zwrócić to, na co chcesz zmapować ten element.
+
+39
+00:03:01,010 --> 00:03:03,850
+Mamy zatem szereg obiektów javascript i osób,
+
+40
+00:03:03,870 --> 00:03:05,080
+tutaj jeden obiekt
+
+41
+00:03:05,090 --> 00:03:10,530
+to dwa obiekty, trzy obiekty i chcemy go przekonwertować na coś innego.
+
+42
+00:03:10,580 --> 00:03:15,830
+Metoda mapy, której tutaj używamy, po prostu zwraca nową tablicę, a
+
+43
+00:03:16,010 --> 00:03:24,290
+ponieważ po prostu wypisuję tę nową tablicę w ten sposób wewnątrz jsx, reagowanie będzie po prostu próbować
+
+44
+00:03:24,290 --> 00:03:28,700
+wziąć poszczególne elementy tej nowej tablicy i renderować je
+
+45
+00:03:28,850 --> 00:03:31,490
+do domingu, jeśli są prawidłowe jsx.
+
+46
+00:03:31,520 --> 00:03:38,270
+Więc naszym celem jest po prostu zwrócić jsx tutaj, aby każdy element tablicy danej osoby
+
+47
+00:03:38,390 --> 00:03:41,230
+został zmapowany na przedstawiciela jsx tego.
+
+48
+00:03:41,540 --> 00:03:49,940
+Tak więc chcę umieścić go w końcu w komponencie osoby, ponieważ obiekt javascript każdej osoby może być tutaj
+
+49
+00:03:49,940 --> 00:03:56,330
+reprezentowany jako komponent osoby w moim projekcie. A potem po prostu przypiszemy nazwę ponownie i
+
+50
+00:03:56,480 --> 00:03:59,950
+tutaj możemy użyć osoby, którą otrzymamy jako dane wejściowe.
+
+51
+00:04:00,080 --> 00:04:07,730
+Tak więc pojedynczy element, dla którego ta funkcja jest wykonywana i tam mamy własność nazwy, i to oczywiście oczywiście
+
+52
+00:04:07,730 --> 00:04:15,200
+dla wieku, w którym może teraz dodać wiek tej osoby. Podzielę to na wiele linii, aby ułatwić
+
+53
+00:04:15,200 --> 00:04:15,930
+czytanie
+
+54
+00:04:16,160 --> 00:04:18,460
+i to w rzeczywistości jest.
+
+55
+00:04:18,560 --> 00:04:25,410
+Dzięki temu mogę pozbyć się wszystkich innych osób i usunę je na razie, a teraz
+
+56
+00:04:25,520 --> 00:04:33,290
+to, co doprowadzi do tego, że nadal będzie drukować listę osób, klikając na nie i zmiana nazwy
+
+57
+00:04:33,290 --> 00:04:37,040
+nie będzie działać dla teraz, ponieważ usunąłem procedury
+
+58
+00:04:37,820 --> 00:04:44,990
+obsługi, dodamy je wkrótce i po prostu robi to poprzez mapowanie tablicy javascript na tablicę
+
+59
+00:04:45,050 --> 00:04:51,820
+javascript, ale tablica zawierająca obiekty jsx, które reagują, automatycznie wyciągnie i wyrenderuje na ekranie.
+
+60
+00:04:52,190 --> 00:04:59,460
+Zapiszmy plik i zobacz wynik, jeśli przełączę moje osoby tutaj, widzimy wszystkie osoby.
+
+61
+00:04:59,780 --> 00:05:06,460
+Otrzymujemy również nowe ostrzeżenie oprócz tego, o którym już wiemy, że powinniśmy przypisać kluczową właściwość, teraz
+
+62
+00:05:06,550 --> 00:05:08,560
+na pewno wrócę do tego,
+
+63
+00:05:08,570 --> 00:05:10,050
+to jest bardzo ważne.
+
+64
+00:05:10,070 --> 00:05:13,710
+Już widzimy, że w zasadzie działa,
+
+65
+00:05:13,760 --> 00:05:19,910
+renderuje tę listę elementów, mapując naszą tablicę na coś innego.
+
+66
+00:05:19,910 --> 00:05:25,610
+Teraz zagłębmy się w tę listę i dowiedzmy się, co dzieje się z tym kluczem i jak możemy
+
+67
+00:05:25,610 --> 00:05:30,390
+zareagować na zmiany w naszej tablicy i jak możemy to zmienić za pomocą naszych detektorów zdarzeń.

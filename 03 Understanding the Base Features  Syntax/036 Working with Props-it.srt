@@ -1,0 +1,179 @@
+1
+00:00:02,240 --> 00:00:09,800
+Ora che sappiamo come generare contenuti dinamici rendiamo flessibile la nostra componente configurabile e dinamica per i normali elementi
+
+2
+00:00:10,640 --> 00:00:18,110
+HVM, possiamo passare attributi come il nome della classe che possiamo aggiungere a qualsiasi elemento di input di attributo
+
+3
+00:00:18,680 --> 00:00:19,560
+female age.
+
+4
+00:00:19,570 --> 00:00:26,150
+Tutto ciò che avrebbe attributo de-value per esempio ora per persona sarebbe bello se si potesse
+
+5
+00:00:26,150 --> 00:00:35,960
+dire il nome e magari passare Max e l'età e forse il 28 e per la SEC usare la ricerca che forse vogliamo passare.
+
+6
+00:00:35,960 --> 00:00:41,750
+Man che finisci l'età di 29 anni e in avanti usi la ricerca.
+
+7
+00:00:41,750 --> 00:00:48,120
+Forse vorremmo usare Stephanie e superare i 26 anni.
+
+8
+00:00:48,170 --> 00:00:49,200
+Questa non è la mia ragazza.
+
+9
+00:00:49,220 --> 00:00:50,140
+A proposito.
+
+10
+00:00:50,750 --> 00:01:00,050
+Quindi, se lo facciamo, vogliamo produrre questo e forse vogliamo prenderlo per sempre e per gli uomini anche noi
+
+11
+00:01:00,050 --> 00:01:09,050
+vogliamo dividerlo nel tag di apertura e di chiusura e anche inserire alcune informazioni aggiuntive come i miei
+
+12
+00:01:09,560 --> 00:01:12,190
+hobby che potrebbero essere in competizione.
+
+13
+00:01:12,440 --> 00:01:19,400
+Ora, con tutto ciò che è in atto, dobbiamo modificare qualcosa nel componente della nostra persona per gestire
+
+14
+00:01:19,640 --> 00:01:24,000
+l'immissione dei dati, perché di default, naturalmente, se salviamo questo, ricarichiamo l'app.
+
+15
+00:01:24,530 --> 00:01:29,020
+Il nostro output è invariato perché non stiamo usando queste informazioni.
+
+16
+00:01:29,030 --> 00:01:32,500
+Come potremmo reagire come sappiamo cosa fare con quello.
+
+17
+00:01:33,080 --> 00:01:41,150
+Beh, in realtà è in grado di prendere questi attributi e ci dà accesso all'interno del nostro
+
+18
+00:01:41,570 --> 00:01:44,470
+componente di ricezione sull'oggetto chiamato prompt.
+
+19
+00:01:44,570 --> 00:01:50,360
+Ora in realtà il nome qui dipende da te, ma riceverai un argomento nella tua
+
+20
+00:01:50,360 --> 00:01:58,040
+funzione un argomento che viene passato in esso per impostazione predefinita reagendo che è un oggetto con tutte le proprietà
+
+21
+00:01:58,370 --> 00:02:03,500
+di questo componente e proprietà indica gli attributi che aggiungi sul componente .
+
+22
+00:02:03,590 --> 00:02:10,460
+Ora nella terra del re-act ci si riferisce a ciò che è prop, ed è per questo che ho chiamato questo argomento prop
+
+23
+00:02:10,460 --> 00:02:15,700
+e consiglio vivamente di farlo in modo che tutti gli altri comprendano il codice da fare radicalmente.
+
+24
+00:02:15,720 --> 00:02:18,260
+Sei libero di nominarlo diversamente però.
+
+25
+00:02:18,650 --> 00:02:23,720
+Quindi ora che abbiamo gli oggetti di scena, possiamo ottenere l'accesso a quel nome e all'età.
+
+26
+00:02:24,020 --> 00:02:29,410
+Quindi potremmo dire che sono e ora vedi le vecchie parentesi graffe per mettere qualcosa di dinamico.
+
+27
+00:02:29,600 --> 00:02:35,250
+Sono il nome del prop e ho anni.
+
+28
+00:02:35,570 --> 00:02:46,130
+Ora qui terrò le parentesi graffe ma sostituirò il calcolo casuale con il nome dell'hit di I'm prob e
+
+29
+00:02:46,130 --> 00:02:47,780
+io ho anni.
+
+30
+00:02:49,250 --> 00:02:56,070
+Ora salviamo questo e vediamo cosa succede se questo ora ricarica la nostra applicazione.
+
+31
+00:02:56,360 --> 00:03:01,460
+Se non soffia la ricarica manualmente dovresti vedere I-Max e 20 anni.
+
+32
+00:03:01,460 --> 00:03:05,120
+Amico tu e Stephanie e tutti i secoli.
+
+33
+00:03:05,160 --> 00:03:07,580
+Quindi ora stiamo avendo il meglio di entrambi i mondi.
+
+34
+00:03:07,610 --> 00:03:15,590
+Abbiamo un componente riutilizzabile che ha un modello chiaramente definito, ma in esso utilizziamo contenuti dinamici che
+
+35
+00:03:15,950 --> 00:03:21,620
+vengono impostati dall'esterno nel luogo in cui effettivamente utilizziamo il nostro componente.
+
+36
+00:03:21,620 --> 00:03:23,790
+Questo lo rende davvero riutilizzabile.
+
+37
+00:03:23,810 --> 00:03:28,100
+Pensa a tutte le possibilità che esploreremo anche in questo corso.
+
+38
+00:03:28,190 --> 00:03:32,270
+Avere un componente di input in cui è possibile impostare il tipo dall'esterno.
+
+39
+00:03:32,360 --> 00:03:39,740
+Avere questo componente persona che potrebbe essere stilizzato come una carta per produrre contenuti dinamici o diversi per
+
+40
+00:03:39,740 --> 00:03:41,200
+le diverse prigioni.
+
+41
+00:03:41,360 --> 00:03:48,920
+Questo è veramente un fantastico mondo di funzionalità a cui possiamo accedere qui ed è un passo importante
+
+42
+00:03:48,950 --> 00:03:52,040
+verso la ricostruzione di componenti grandi e flessibili.
+
+43
+00:03:52,040 --> 00:03:55,880
+Che dire dell'hobby è qui però.
+
+44
+00:03:55,880 --> 00:04:02,660
+Diamo un'occhiata a come possiamo usare contemned che viene passato non come un attributo ma tra la tassa di
+
+45
+00:04:02,660 --> 00:04:05,580
+apertura e quella di chiusura nella prossima lezione.

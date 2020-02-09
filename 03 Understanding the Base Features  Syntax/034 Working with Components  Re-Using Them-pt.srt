@@ -1,0 +1,79 @@
+1
+00:00:02,170 --> 00:00:07,400
+Na última conferência, criamos nosso próprio componente, o componente pessoa.
+
+2
+00:00:07,400 --> 00:00:10,640
+A questão é qual é a grande vantagem disso.
+
+3
+00:00:11,060 --> 00:00:19,020
+Os componentes são incríveis porque podemos concentrar nosso código em cada arquivo e, portanto, torná-lo muito mais sustentável.
+
+4
+00:00:19,070 --> 00:00:26,690
+Não coloque tudo no arquivo do capítulo js, ​​que realmente pode ser lotado para aplicativos maiores e
+
+5
+00:00:26,990 --> 00:00:30,110
+esse componente também é reutilizável e configurável.
+
+6
+00:00:30,290 --> 00:00:34,460
+Nenhum retorno para configurar a reutilização de peças é bastante simples.
+
+7
+00:00:34,700 --> 00:00:38,510
+Nós podemos simplesmente copiar e colar sempre que quisermos.
+
+8
+00:00:38,510 --> 00:00:46,010
+o resultado várias vezes e essa é uma maneira super fácil de reutilizá-lo em qualquer lugar em nossa aplicação.
+
+9
+00:00:46,010 --> 00:00:50,510
+Talvez três vezes e simplesmente fazendo isso e salvando esse arquivo, obtemos
+
+10
+00:00:50,720 --> 00:00:57,160
+E se o nosso aplicativo contiver mais e mais componentes, isso tornaria extremamente fácil criá-lo com
+
+11
+00:00:57,160 --> 00:01:01,350
+todos esses componentes e usá-los onde quer que precisemos usar.
+
+12
+00:01:01,400 --> 00:01:02,190
+Em nosso laboratório.
+
+13
+00:01:02,330 --> 00:01:06,190
+Isso agora é efetivamente nosso elemento masculino HVM personalizado.
+
+14
+00:01:06,830 --> 00:01:12,230
+Nós também podemos configurá-lo antes de fazer isso.
+
+15
+00:01:12,380 --> 00:01:17,900
+Vamos mostrar outra coisa sobre o nosso código de re-atuação, porque agora é tudo estático ainda.
+
+16
+00:01:18,050 --> 00:01:23,730
+Nós temos o nosso componente personalizado, mas lá, ainda temos alguns HDMI estáticos.
+
+17
+00:01:23,750 --> 00:01:27,230
+Vou enviar um texto de conteúdo HMO no final.
+
+18
+00:01:27,230 --> 00:01:35,810
+Muitas vezes, seus modelos, seu código GSX deve ser dinâmico, emitir coisas diferentes dependendo do estado do seu
+
+19
+00:01:35,810 --> 00:01:39,250
+aplicativo ou de alguma entrada do usuário.
+
+20
+00:01:39,470 --> 00:01:45,490
+Agora vamos fazer isso muito para o curso, mas vamos lançar as bases para isso na próxima palestra.

@@ -1,0 +1,91 @@
+1
+00:00:02,320 --> 00:00:05,200
+Wróciłem do projektu, nad którym pracowaliśmy do tej pory.
+
+2
+00:00:05,200 --> 00:00:07,810
+Dostajemy tam podstawową stylizację, na przykład
+
+3
+00:00:07,810 --> 00:00:12,180
+te karty, na których wyprowadzamy osoby i ten przycisk.
+
+4
+00:00:12,310 --> 00:00:15,130
+Ale zacznijmy od tego przycisku, na
+
+5
+00:00:15,130 --> 00:00:18,590
+przykład, mamy już jeden problem, gdy nad nim
+
+6
+00:00:18,590 --> 00:00:20,670
+klikniemy, nie zmieni tego stylu.
+
+7
+00:00:20,680 --> 00:00:28,150
+Problem polega na tym, że ten przycisk, który jest częścią naszego komponentu aplikacji, widzimy go tutaj
+
+8
+00:00:28,480 --> 00:00:36,810
+w naszym szablonie, że ten przycisk jest po prostu stylizowany stylami wewnętrznymi, przyporządkowujemy je tutaj i konfigurujemy je
+
+9
+00:00:36,820 --> 00:00:38,480
+wcześniej w metodzie renderowania.
+
+10
+00:00:38,680 --> 00:00:46,150
+Używamy javascript do stworzenia obiektu i przypisujemy go do właściwości stylu i jsx, a reagujemy
+
+11
+00:00:46,150 --> 00:00:50,260
+dbając o ustawienie tego na faktycznym elemencie HTML.
+
+12
+00:00:50,260 --> 00:00:54,050
+Problem polega na tym, że nie możemy tutaj używać selektorów pseudosony.
+
+13
+00:00:54,160 --> 00:01:01,210
+Zaletą jest oczywiście to, że stylizacja dotyczy tylko tego przycisku i nie ma innego
+
+14
+00:01:01,210 --> 00:01:07,690
+przycisku w aplikacji, gdybyśmy mieli inny przycisk. I już wspomniałem, że alternatywą byłoby stylizowanie go
+
+15
+00:01:07,690 --> 00:01:15,270
+w pliku css i tam możemy użyć zwykłego css, w tym pseudo-selektorów, takich jak hover, ale wtedy globalnie
+
+16
+00:01:15,430 --> 00:01:22,040
+wpłynęłoby to na wszystkie przyciski w naszej aplikacji, nawet gdyby były umieszczone w innych komponentach.
+
+17
+00:01:22,060 --> 00:01:28,300
+To zestaw problemów, który chcę poradzić sobie w tym module, ale poza tym chcę też rzucić okiem
+
+18
+00:01:28,300 --> 00:01:29,550
+na coś innego.
+
+19
+00:01:29,620 --> 00:01:33,880
+Co, jeśli chcemy dynamicznie zmieniać styl?
+
+20
+00:01:33,880 --> 00:01:41,480
+Zacznijmy od tego, powiedzmy, Toggle Persons, ten przycisk powinien mieć zielony kolor tła,
+
+21
+00:01:41,590 --> 00:01:47,450
+jeśli chcemy pokazać osobom z kliknięciem i czerwonym kolorem tła,
+
+22
+00:01:47,650 --> 00:01:55,720
+jeśli mamy zamiar usunąć listę osób. Zobaczmy, jak możemy dynamicznie zmieniać style w następnym
+
+23
+00:01:55,720 --> 00:01:56,520
+wykładzie.

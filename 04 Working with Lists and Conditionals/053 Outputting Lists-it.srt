@@ -1,0 +1,267 @@
+1
+00:00:02,200 --> 00:00:05,460
+Quindi iniziamo senza metterlo come una lista reale.
+
+2
+00:00:05,620 --> 00:00:11,510
+Se diamo un'occhiata otteniamo elementi gratuiti nella serie di questa persona sul nostro stato.
+
+3
+00:00:11,560 --> 00:00:17,000
+Ora di nuovo su Auburn o strutture che potresti sapere se non lo fai, non è un problema.
+
+4
+00:00:17,050 --> 00:00:18,530
+È diverso qui comunque.
+
+5
+00:00:18,650 --> 00:00:26,920
+In altri quadri come in te avresti una direttiva prima o Engy angolare per ora in reazione non hai
+
+6
+00:00:26,920 --> 00:00:28,900
+questo perché indovina cosa.
+
+7
+00:00:29,120 --> 00:00:31,760
+Tutto è javascript qui come hai imparato.
+
+8
+00:00:32,170 --> 00:00:39,760
+i contenuti condizionali che siamo qui a portata di mano con il javascript normale, gestiamo anche le liste con gli strumenti predefiniti.
+
+9
+00:00:39,760 --> 00:00:40,950
+Proprio come con
+
+10
+00:00:40,990 --> 00:00:45,240
+Javascript ci dà il lavoro con le liste.
+
+11
+00:00:45,340 --> 00:00:47,070
+Come sarebbe questo?
+
+12
+00:00:47,140 --> 00:00:55,820
+Nel nostro caso qui, dove abbiamo il Bene della persona, utilizzeremmo di nuovo singole parentesi graffe per rendere dinamico
+
+13
+00:00:55,820 --> 00:00:58,400
+qualcosa all'interno del nostro codice GSX.
+
+14
+00:00:58,760 --> 00:01:07,220
+E poi vogliamo rendere il nostro array di persone nello stato in modo che queste persone statuali si riferiscano
+
+15
+00:01:07,220 --> 00:01:09,170
+semplicemente a questo array.
+
+16
+00:01:09,170 --> 00:01:10,860
+Ora questo da solo non farà il trucco.
+
+17
+00:01:10,940 --> 00:01:15,190
+Questa è una serie di oggetti javascript e non qualcosa su cui possiamo codificare le parole.
+
+18
+00:01:15,260 --> 00:01:18,780
+Tim L non qualcosa di re-act capirebbe qui.
+
+19
+00:01:19,130 --> 00:01:24,930
+Quindi abbiamo bisogno di parole gentili questo array di javascript che non è valido.
+
+20
+00:01:24,950 --> 00:01:25,460
+J.
+
+21
+00:01:25,480 --> 00:01:34,310
+X 2 valido J us X e Javascript vanilla javascript ci offre una funzione per convertire gli array.
+
+22
+00:01:34,520 --> 00:01:42,500
+È la mappa delle funzioni della mappa che mappa semplicemente ogni elemento in un dato array come il nostro array
+
+23
+00:01:42,980 --> 00:01:45,070
+di persone qui in qualcos'altro.
+
+24
+00:01:45,320 --> 00:01:50,720
+Lo fa eseguendo un metodo su ogni elemento in un determinato array.
+
+25
+00:01:50,720 --> 00:01:58,410
+Quindi su questo array in questo caso questo metodo o questa funzione viene passata al metodo map qui.
+
+26
+00:01:58,820 --> 00:02:02,040
+Prende l'elemento dell'array come input.
+
+27
+00:02:02,060 --> 00:02:05,950
+Quindi, per una persona sola, il nome di questo argomento dipende totalmente da te.
+
+28
+00:02:05,960 --> 00:02:11,580
+Sto solo scrivendo una funzione anonima qui e in realtà sto scrivendo una funzione freccia qui.
+
+29
+00:02:11,750 --> 00:02:18,590
+Quindi c'è una funzione a 6 frecce che passo al metodo della mappa potrebbe sembrare strana,
+
+30
+00:02:18,590 --> 00:02:25,070
+ma in realtà è vanilla javascript ESX ma javascript non J è X niente del genere.
+
+31
+00:02:25,100 --> 00:02:28,070
+Ecco perché è all'interno di singole parentesi graffe.
+
+32
+00:02:28,670 --> 00:02:36,110
+e Javascript assegna automaticamente come ogni elemento come input a quella funzione che eseguiamo su ogni elemento.
+
+33
+00:02:36,170 --> 00:02:43,250
+Quindi questa funzione qui che passo come funzione anonima al metodo map viene eseguita su
+
+34
+00:02:43,340 --> 00:02:45,310
+ogni elemento dell'array person
+
+35
+00:02:45,320 --> 00:02:47,250
+Quindi in questo caso è la nostra persona.
+
+36
+00:02:47,270 --> 00:02:53,180
+Ancora una volta puoi nominare quello che vuoi ma dal momento che è una serie di persone, la persona probabilmente ha un senso.
+
+37
+00:02:53,570 --> 00:02:55,670
+E ora devi restituire qualcosa.
+
+38
+00:02:55,910 --> 00:03:01,010
+Dovresti restituire ciò in cui desideri mappare questo elemento.
+
+39
+00:03:01,010 --> 00:03:03,850
+Quindi abbiamo una serie di oggetti e persone javascript.
+
+40
+00:03:03,870 --> 00:03:05,080
+Il tuo unico oggetto
+
+41
+00:03:05,090 --> 00:03:10,530
+Due oggetti tre oggetti e vogliamo convertirlo in qualcos'altro.
+
+42
+00:03:10,580 --> 00:03:15,830
+Il metodo di mappa che stiamo usando qui semplicemente restituisce semplicemente un nuovo array.
+
+43
+00:03:16,010 --> 00:03:24,290
+E siccome stampo questo nuovo array come questo all'interno di GSX, proverò fondamentalmente a prendere i singoli elementi
+
+44
+00:03:24,290 --> 00:03:28,700
+di questo nuovo array e renderli due a Dom.
+
+45
+00:03:28,850 --> 00:03:31,490
+Se sono validi J us x.
+
+46
+00:03:31,520 --> 00:03:38,270
+Quindi il nostro obiettivo è semplicemente restituire ceria X qui in modo che ogni elemento dell'array della persona
+
+47
+00:03:38,390 --> 00:03:41,230
+venga mappato in un j come rappresentante x.
+
+48
+00:03:41,540 --> 00:03:49,940
+persona può essere rappresentato come componente di una persona e il mio progetto qui e quindi semplicemente assegniamo nuovamente un nome.
+
+49
+00:03:49,940 --> 00:03:56,330
+Quindi qui voglio mapparlo in un componente persona alla fine perché ogni oggetto javascript di una
+
+50
+00:03:56,480 --> 00:03:59,950
+E qui possiamo usare la persona che otteniamo come input.
+
+51
+00:04:00,080 --> 00:04:07,730
+Quindi, l'elemento individuale per il quale viene eseguita la disfunzione e lì abbiamo la proprietà del nome allo stesso,
+
+52
+00:04:07,730 --> 00:04:15,200
+naturalmente, per l'età in cui ora può x persona essere divisa su più righe per renderla più facile
+
+53
+00:04:15,200 --> 00:04:15,930
+da leggere.
+
+54
+00:04:16,160 --> 00:04:18,460
+E questo è davvero.
+
+55
+00:04:18,560 --> 00:04:25,410
+Con ciò posso sbarazzarmi di tutte le altre persone e le rimuoverò per ora semplicemente.
+
+56
+00:04:25,520 --> 00:04:33,290
+lista di persone che cliccano su di loro e cambiando il nome non funzionerà per ora perché sono rimossi i gestori li aggiungeranno presto.
+
+57
+00:04:33,290 --> 00:04:37,040
+E ora ciò che porterà a questo è che stamperà ancora una
+
+58
+00:04:37,820 --> 00:04:44,990
+Ed è semplicemente un pulviscolo mappando questo array javascript in un javascript di grandi dimensioni, ma
+
+59
+00:04:45,050 --> 00:04:51,820
+un array con oggetti GSX al suo interno che re-act automaticamente estrarrà e renderizzerà sullo schermo.
+
+60
+00:04:52,190 --> 00:04:59,460
+Salviamo il file e vediamo il risultato se parlo delle mie borse qui vediamo tutte le borse.
+
+61
+00:04:59,780 --> 00:05:06,460
+Riceviamo anche un nuovo avviso oltre a quello che già sappiamo che dovremmo assegnare una proprietà chiave.
+
+62
+00:05:06,550 --> 00:05:08,560
+No, tornerò sicuramente su questo.
+
+63
+00:05:08,570 --> 00:05:10,050
+È super importante.
+
+64
+00:05:10,070 --> 00:05:13,710
+Possiamo già vedere che in pratica funziona.
+
+65
+00:05:13,760 --> 00:05:19,910
+Sta mostrando questa lista di elementi mappando la nostra matrice in qualcos'altro.
+
+66
+00:05:19,910 --> 00:05:25,610
+Ora approfondiamo questa lista e impariamo cosa succede con quella chiave e come possiamo reagire ai
+
+67
+00:05:25,610 --> 00:05:30,390
+cambiamenti del nostro array e come possiamo cambiarlo usando i nostri listener di eventi.

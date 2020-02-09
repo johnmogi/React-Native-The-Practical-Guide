@@ -1,0 +1,367 @@
+1
+00:00:02,210 --> 00:00:08,480
+Todos aprendimos mucho sobre los fundamentos básicos de la repetición, especialmente este genio X, que es muy importante para
+
+2
+00:00:08,480 --> 00:00:14,930
+hacer las cosas bien y entender, pero también mencioné en el primer módulo del curso que el reactor tiene
+
+3
+00:00:15,140 --> 00:00:21,890
+que ver con los componentes con los que construyes tu aplicación. componentes y reaccionan como una biblioteca que hace que
+
+4
+00:00:21,890 --> 00:00:24,410
+la construcción de estos componentes sea tan fácil.
+
+5
+00:00:24,590 --> 00:00:27,590
+Bueno, ahora solo estamos usando un componente.
+
+6
+00:00:27,620 --> 00:00:33,870
+Es hora de cambiar esto y para esto agregaré un nuevo archivo en la carpeta fuente de nuestro proyecto.
+
+7
+00:00:33,890 --> 00:00:39,020
+De hecho, incluso agregaré una nueva carpeta y la nombraré con una P. mayúscula.
+
+8
+00:00:39,100 --> 00:00:41,220
+Esta es una especie de reacción de la convención.
+
+9
+00:00:41,240 --> 00:00:48,620
+No tiene que hacer eso, pero le da sus componentes a los archivos donde los crea caracteres iniciales
+
+10
+00:00:48,620 --> 00:00:54,380
+capitales y describe qué es este espacio y, por lo tanto, aquí quiero presentar
+
+11
+00:00:54,380 --> 00:01:01,490
+información sobre una persona dentro de la carpeta de esa persona que está almacenada en la carpeta fuente
+
+12
+00:01:01,490 --> 00:01:04,120
+o a la persona que js archivo.
+
+13
+00:01:04,220 --> 00:01:09,410
+De nuevo, siguiendo esta convención de tener un personaje capital inicial y
+
+14
+00:01:09,410 --> 00:01:16,420
+describir de qué se trata este componente ahora, quiero crear un componente y ya lo hicimos.
+
+15
+00:01:16,520 --> 00:01:23,750
+De hecho, lo sacamos de la caja en el archivo JS pensado ampliando la clase componente de
+
+16
+00:01:23,750 --> 00:01:25,580
+la biblioteca de acciones.
+
+17
+00:01:25,670 --> 00:01:31,940
+Podemos usar este enfoque de manera absoluta y será más importante más adelante cuando conozca el
+
+18
+00:01:32,300 --> 00:01:37,800
+estado que básicamente le permite cambiar su componente en tiempo de ejecución, podría decir.
+
+19
+00:01:38,060 --> 00:01:43,850
+Pero la mayoría de las veces debes usar una forma diferente de componente.
+
+20
+00:01:43,850 --> 00:01:51,620
+O para crear componentes, una función mejor es una función simple de JavaScript porque en su forma
+
+21
+00:01:51,950 --> 00:01:58,480
+más simple un componente es solo una función que devuelve algo de GSX y HVM.
+
+22
+00:01:58,520 --> 00:02:03,040
+Podría decir: Ahora, por supuesto, puede crear una función con una palabra clave de función.
+
+23
+00:02:03,050 --> 00:02:08,290
+Podría nombrar a una persona aquí con un carácter inicial en minúscula, que es una especie de convención aquí.
+
+24
+00:02:08,330 --> 00:02:13,970
+Sin embargo, podría usar uno de capital y luego podría devolver algo de genio X aquí.
+
+25
+00:02:13,970 --> 00:02:16,050
+Usted puede hacer eso absolutamente.
+
+26
+00:02:16,070 --> 00:02:22,550
+También podría usar Diest cinco sintaxis para crear una variable que contenga una función que al
+
+27
+00:02:22,550 --> 00:02:24,570
+final resultaría en lo mismo.
+
+28
+00:02:25,070 --> 00:02:29,450
+Pero lo usaré como seis en este curso que recomiendo encarecidamente.
+
+29
+00:02:29,450 --> 00:02:32,700
+Es una buena práctica al tratar proyectos de Riak.
+
+30
+00:02:32,720 --> 00:02:36,080
+Le da acceso a muchas características nuevas y modernas.
+
+31
+00:02:36,170 --> 00:02:42,650
+Por lo tanto, trataré una variable no con la palabra clave palabra sino con la palabra Konski porque no
+
+32
+00:02:42,650 --> 00:02:45,950
+planeo cambiar esta variable de manera efectiva haciéndola constante.
+
+33
+00:02:46,070 --> 00:02:48,410
+Y, por lo tanto, deberíamos comercializar como tal.
+
+34
+00:02:48,530 --> 00:02:51,430
+Lo nombraré persona con un carácter minúsculo.
+
+35
+00:02:51,730 --> 00:02:59,930
+Como dije, puedes elegir a una persona con P mayúscula, pero a menudo ves que el nombre de la función es todo en minúscula.
+
+36
+00:02:59,930 --> 00:03:06,980
+De lo contrario, debería ser el mismo nombre que su nombre de archivo o el nombre del componente Asti que desea utilizar.
+
+37
+00:03:07,100 --> 00:03:12,380
+Luego asignaré un valor a esta variable o constante para ser preciso.
+
+38
+00:03:12,560 --> 00:03:14,330
+Y esto debería ser una función.
+
+39
+00:03:14,380 --> 00:03:18,880
+Ahora podría volver a utilizar la función aquí, pero en realidad quiero usar sí.
+
+40
+00:03:18,920 --> 00:03:20,580
+Seis sintaxis de funciones
+
+41
+00:03:20,690 --> 00:03:29,810
+Esta sintaxis de la función de la flecha así que diré el cuerpo de la función de la flecha de la lista de los mismos argumentos.
+
+42
+00:03:29,810 --> 00:03:31,310
+Esto es solo un seis.
+
+43
+00:03:31,310 --> 00:03:35,090
+Equivalente a la función creada con la palabra clave function.
+
+44
+00:03:35,090 --> 00:03:41,480
+Tiene algunas ventajas, especialmente cuando se trata de esta palabra clave, por lo que
+
+45
+00:03:41,480 --> 00:03:43,520
+recomiendo usar esta sintaxis.
+
+46
+00:03:43,520 --> 00:03:49,970
+Si esto es nuevo para usted ahora que lo sabe y, en general, puede interesarle también
+
+47
+00:03:49,970 --> 00:03:57,890
+sumergirse en algunos seis cursos o materiales de aprendizaje, simplemente aprenderá acerca de todas las características increíbles que sí
+
+48
+00:03:57,890 --> 00:04:00,140
+tiene para ofrecer, como esta.
+
+49
+00:04:00,140 --> 00:04:01,800
+De regreso a la sintaxis sin embargo.
+
+50
+00:04:01,970 --> 00:04:08,510
+Efectivamente tenemos una función aquí y como dije en su forma más simple, un componente es una función que devuelve
+
+51
+00:04:08,510 --> 00:04:10,020
+algo de J S x.
+
+52
+00:04:10,010 --> 00:04:11,010
+Así que hagámoslo.
+
+53
+00:04:11,240 --> 00:04:22,770
+Devolvamos algo de j como X y podríamos simplemente devolver un párrafo aquí donde digo que soy una persona ahora.
+
+54
+00:04:22,790 --> 00:04:30,970
+Solo esto crea una función válida que podríamos usar como un componente, pero también tenemos que hacer dos cosas.
+
+55
+00:04:30,980 --> 00:04:36,020
+¿Tienes una idea de lo que tenemos que hacer?
+
+56
+00:04:36,090 --> 00:04:44,850
+cuenta que esta sintaxis GSX se transforma para reaccionar al elemento crear y poder llamar a este método.
+
+57
+00:04:44,940 --> 00:04:49,220
+Por un lado, necesitamos importar rechazar porque tenga en
+
+58
+00:04:49,260 --> 00:04:55,500
+Necesitamos importar reaccionar con un capital del paquete de acción como este.
+
+59
+00:04:55,500 --> 00:05:03,800
+Así como lo hacemos en Abchurch Sí, aquí no necesitamos componentes porque aquí no estamos usando una clase
+
+60
+00:05:03,800 --> 00:05:05,830
+que extienda el componente.
+
+61
+00:05:05,960 --> 00:05:08,270
+En cambio, estamos creando una función.
+
+62
+00:05:08,720 --> 00:05:14,300
+Todavía tenemos que exportar esa función como predeterminado de este archivo.
+
+63
+00:05:14,300 --> 00:05:21,890
+para que este Daut aquí aparezca y solo veamos la cruz y ahora podemos comenzar a usar este
+
+64
+00:05:21,890 --> 00:05:29,360
+componente en otras facetas de nuestro proyecto, es decir, en el único nuestro componente nuestro componente raíz
+
+65
+00:05:29,450 --> 00:05:35,930
+Aquí exportamos esta persona Constand que mantiene esta función con la que es seguro seguir
+
+66
+00:05:35,930 --> 00:05:40,570
+Todavía tenemos India pensó que JS caería allí.
+
+67
+00:05:40,580 --> 00:05:45,290
+Agregaré una importación e importaré una persona.
+
+68
+00:05:45,290 --> 00:05:50,420
+Este nombre ahora depende totalmente de usted, pero debería ser el nombre de sus componentes comenzando con un
+
+69
+00:05:50,420 --> 00:05:51,370
+carácter de mayúscula.
+
+70
+00:05:52,630 --> 00:06:01,210
+Desde punto barra porque es una ganancia relativa la carpeta de persona.
+
+71
+00:06:01,360 --> 00:06:08,320
+Así que refiriéndome a la carpeta de dis que está en la misma ruta que la computadora portátil simplemente se cae y
+
+72
+00:06:08,380 --> 00:06:15,700
+allí la persona que js archiva aunque podemos omitir el punto J porque se agrega automáticamente por el flujo de trabajo de compilación.
+
+73
+00:06:15,700 --> 00:06:21,140
+Ahora es importante que le des un nombre que comience con el carácter en mayúscula.
+
+74
+00:06:21,250 --> 00:06:26,320
+Puede usar cualquier otro nombre, no tiene que ser persona, aunque tiene sentido
+
+75
+00:06:26,320 --> 00:06:34,000
+usarlo para nombrar algunos componentes, pero debería tener el carácter correspondiente porque en reaccionar en GSX todos los elementos comienzan
+
+76
+00:06:34,000 --> 00:06:40,740
+con caracteres en minúscula, como div, donde la edad 1 está reservada para los elementos HVM nativos.
+
+77
+00:06:41,050 --> 00:06:47,710
+Entonces podrías crear tu propio componente al que bautizaste div con mayúscula D y luego Riette podría
+
+78
+00:06:47,710 --> 00:06:53,800
+usarlo porque no interferiría con la definición normal y por la misma razón deberías darle a
+
+79
+00:06:53,800 --> 00:06:59,710
+tu persona el carácter en mayúscula para que la acción lo identifique como un componente personalizado.
+
+80
+00:07:00,040 --> 00:07:07,150
+apertura y cierre como esta o porque no anidamos nada entre o regresamos a papá y las próximas conferencias también.
+
+81
+00:07:07,150 --> 00:07:11,550
+Así que usemos a la persona aquí y podemos usar la etiqueta de
+
+82
+00:07:11,830 --> 00:07:19,730
+También puede usar una etiqueta de cierre automático donde barra y luego el signo más grande que el dnt con deuda si lo
+
+83
+00:07:19,730 --> 00:07:20,740
+guarda este otoño.
+
+84
+00:07:20,740 --> 00:07:26,560
+P Y ahora vuelve a su aplicación con el inicio de NPM todavía ejecutándose en la terminal.
+
+85
+00:07:26,600 --> 00:07:32,700
+Verás que soy una persona que se muestra debajo del contenido de componente de la aplicación.
+
+86
+00:07:32,750 --> 00:07:35,210
+Esto ahora viene de nuestro propio componente.
+
+87
+00:07:35,300 --> 00:07:40,970
+Y si lo inspeccionamos, vemos que al final no vemos nuestro elemento personalizado, solo vemos el
+
+88
+00:07:40,970 --> 00:07:45,130
+párrafo que estamos exportando en función y así es cómo debería ser.
+
+89
+00:07:45,620 --> 00:07:53,300
+Así que ahora este es nuestro único componente que se está utilizando, por supuesto, usarlo como si esto ya
+
+90
+00:07:53,300 --> 00:08:01,270
+fuera agradable, pero cuál es exactamente el beneficio de tratarlo así en lugar de simplemente agregar el código directamente en
+
+91
+00:08:01,280 --> 00:08:02,470
+los objetos aptos.
+
+92
+00:08:02,510 --> 00:08:07,200
+Hagamos más con este componente para ver ese beneficio en la próxima conferencia.

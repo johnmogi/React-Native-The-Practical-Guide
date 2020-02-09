@@ -1,0 +1,123 @@
+1
+00:00:02,250 --> 00:00:08,020
+Now you learned how to read and understand error messages and how to find logical errors.
+
+2
+00:00:08,100 --> 00:00:13,860
+Sometimes you want know the current state of your react app and whilst you might be able to figure
+
+3
+00:00:13,860 --> 00:00:17,500
+that out with the developer tools, it can be inconvenient.
+
+4
+00:00:17,970 --> 00:00:24,120
+Thankfully there is a cool extension you can add to Chrome, the react developer tools,
+
+5
+00:00:24,120 --> 00:00:25,730
+let's install it together.
+
+6
+00:00:25,950 --> 00:00:32,760
+You can simply google for react developer tools and you will find the github repository where you can learn
+
+7
+00:00:32,760 --> 00:00:38,700
+more about them, how to use them and can even contribute to the project or you head right to the Chrome
+
+8
+00:00:38,700 --> 00:00:39,610
+web store.
+
+9
+00:00:39,630 --> 00:00:39,890
+Now,
+
+10
+00:00:39,900 --> 00:00:40,400
+no worries,
+
+11
+00:00:40,400 --> 00:00:42,930
+these are free. In the Chrome web store,
+
+12
+00:00:42,930 --> 00:00:48,630
+I already added them to Chrome but you can click add to Chrome if you haven't done so.
+
+13
+00:00:48,630 --> 00:00:54,960
+Once you added them, you probably need to restart Chrome and thereafter in the chrome developer tools,
+
+14
+00:00:54,960 --> 00:00:59,210
+you can choose react, this new tab should be available
+
+15
+00:00:59,220 --> 00:01:06,810
+now. Very cool thing is you now see your react app as you created it,
+
+16
+00:01:06,870 --> 00:01:12,330
+if you click toggle person you see something which differs from the normal elements tab you have though.
+
+17
+00:01:12,810 --> 00:01:19,260
+You don't just see the dom elements you see your components to like the person component here or the
+
+18
+00:01:19,260 --> 00:01:20,670
+app component.
+
+19
+00:01:21,090 --> 00:01:26,840
+And down there at the button, you also see props and state of that component,
+
+20
+00:01:27,000 --> 00:01:29,590
+so for the app component you see the person's array
+
+21
+00:01:29,680 --> 00:01:33,500
+and if I click on a person, remove it, this is updated too.
+
+22
+00:01:33,510 --> 00:01:39,860
+So here you can see your state, you can also change it there and for the person component,
+
+23
+00:01:39,870 --> 00:01:47,430
+you see it doesn't have a state but it has props and which props these are. You can also highlight updates
+
+24
+00:01:47,700 --> 00:01:51,480
+so that you see highlighted here
+
+25
+00:01:51,540 --> 00:01:56,430
+what changed in your code, like the addition of this class name for example,
+
+26
+00:01:56,430 --> 00:01:58,070
+so that's pretty cool too.
+
+27
+00:01:58,080 --> 00:02:04,650
+It allows you to quickly understand the state of your components of your app and manipulate it and give
+
+28
+00:02:04,650 --> 00:02:10,560
+you some insights you can't easily get with the normal developer tools because it goes beyond showing
+
+29
+00:02:10,590 --> 00:02:11,850
+what was rendered,
+
+30
+00:02:11,910 --> 00:02:15,500
+it shows you what's behind the scenes, what's under the hood
+
+31
+00:02:15,510 --> 00:02:16,140
+basically.

@@ -1,0 +1,275 @@
+1
+00:00:02,380 --> 00:00:07,900
+Son dersin sonunda Create tepkimesiyle yarattığınız klasör yapısına geldim.
+
+2
+00:00:08,020 --> 00:00:09,650
+Ve biz de bizim bölümümüzü düzenledik.
+
+3
+00:00:09,670 --> 00:00:10,730
+JS düşer.
+
+4
+00:00:10,840 --> 00:00:13,620
+Şimdi burada daha fazla görelim.
+
+5
+00:00:13,690 --> 00:00:21,190
+Açıklamış olduğumuz gibi tekrar aktör bileşen görüyoruz, yeniden aktarma, temel olarak uygulamanızı oluşturmak için
+
+6
+00:00:21,400 --> 00:00:26,200
+kullanabileceğiniz söyleyebileceğiniz temel olarak özel HVM öğeleri oluşturmakla ilgili.
+
+7
+00:00:26,200 --> 00:00:33,280
+Bu uygulama bileşeni aslında bu kök öğesinin yerine yerleştirdiğiniz sonraki js dosyasını
+
+8
+00:00:33,340 --> 00:00:34,030
+kullanır.
+
+9
+00:00:34,210 --> 00:00:39,450
+Ve örneğin test etmek için normal yaşlı bir dişi öğe oluşturabiliriz.
+
+10
+00:00:39,480 --> 00:00:40,240
+Bu işe yarar.
+
+11
+00:00:40,240 --> 00:00:42,570
+Bu artık bir hareket bileşeni değil mi?
+
+12
+00:00:42,610 --> 00:00:45,640
+Bunu yaparsam, bu yaş Wintec'i görürüm.
+
+13
+00:00:46,000 --> 00:00:49,360
+Ancak elbette o zaman gerçek bir yeniden başvuru uygulaması yok.
+
+14
+00:00:49,470 --> 00:00:55,860
+Normal bir HVM öğesi üretiyoruz, ancak kendi yeniden aktarma bileşenimizi oluşturmayacağız.
+
+15
+00:00:55,870 --> 00:01:02,800
+Artık bir işleyicide birden çok tepki verebilir ve uygulamanızda kullanmak istediğiniz tüm HP
+
+16
+00:01:02,860 --> 00:01:03,940
+kodunu oluşturabilirsiniz.
+
+17
+00:01:04,030 --> 00:01:07,530
+Gerçi re-act uygulamalarınızı bu şekilde yaratmazsınız.
+
+18
+00:01:07,810 --> 00:01:15,760
+Genellikle bir kök bileşeni uygulama bileşeni olarak oluşturursunuz, ancak bir kök bileşenini istediğiniz
+
+19
+00:01:15,820 --> 00:01:16,840
+gibi adlandırabilirsiniz.
+
+20
+00:01:16,840 --> 00:01:24,150
+Bizim durumumuzda, app adında bir tiap bileşeni var ve orada tüm diğer bileşenleri iç içe yerleştireceksin.
+
+21
+00:01:24,150 --> 00:01:30,050
+Uygulamanız gerekebilir ve tabii ki bu bileşenler birbirlerine de iç içe yerleştirilebilir.
+
+22
+00:01:30,250 --> 00:01:37,300
+Ancak üst sıraya kadar yalnızca bir kök bileşene sahipsiniz ve HMO sonbaharında birden çok
+
+23
+00:01:37,330 --> 00:01:45,010
+düğüme erişebilir ve aynı projede farklı yeniden eylemler uygulamaları için farklı kök bileşenleri monte edebilirsiniz.
+
+24
+00:01:45,010 --> 00:01:47,950
+Bu mümkün olabilir, ancak burada yaptığımız iş değil.
+
+25
+00:01:47,980 --> 00:01:52,810
+Sonunda elbette ki bu derste öğrendiklerinizi birden fazla uygulama için aynı
+
+26
+00:01:52,930 --> 00:01:55,270
+HTL dosyasında birer birer tekrarlayabilirsiniz.
+
+27
+00:01:55,540 --> 00:01:59,170
+Fakat reaksiyonun genel veya tipik kullanımına bağlı kalalım.
+
+28
+00:01:59,170 --> 00:02:04,450
+Derin bir düşünce JS dosyası bulmak için olan bu uygulama bileşenimiz var.
+
+29
+00:02:04,450 --> 00:02:11,140
+Burada, bir tepki bileşenini tanımlamanın iki yoldan birine, sınıf anahtar sözcüğüyle bir javascript sınıfı
+
+30
+00:02:11,140 --> 00:02:18,730
+oluşturduğumuzu görüyoruz ve bu bileşen nesnesi veya sınıfından miras almak için uzantılar anahtar kelimesini kullanıyoruz.
+
+31
+00:02:18,730 --> 00:02:25,120
+Burada tekrar aktarma kütüphanesinden ithal edilen kesin olmak gerekirse.
+
+32
+00:02:25,120 --> 00:02:33,250
+iki şey geri alma işlemini gerçekleştiririz; DOM sorumlu değildir veya sorumludur.
+
+33
+00:02:33,250 --> 00:02:34,030
+Aslında,
+
+34
+00:02:34,030 --> 00:02:37,750
+Her zaman bir bileşeni tanımladığımız bir dosyaya aktarmamız gerekir.
+
+35
+00:02:38,080 --> 00:02:43,300
+Ve elbette bileşen sınıfı kendisi size bileşenleri yaratmanın farklı bir yolunu
+
+36
+00:02:43,330 --> 00:02:44,370
+yakında göstereceğim.
+
+37
+00:02:44,470 --> 00:02:46,800
+Şimdi bu sınıfın bir yöntemi var.
+
+38
+00:02:46,930 --> 00:02:48,130
+İşleme yöntemi.
+
+39
+00:02:48,220 --> 00:02:54,940
+Bunun olması gerekir çünkü yeniden harekete geçirmek ekrana bir şey üretmek için bu yöntemi çağıracaktır.
+
+40
+00:02:55,230 --> 00:02:57,400
+Önemli bir iş var.
+
+41
+00:02:57,580 --> 00:03:06,370
+Yeniden hareket eden her bileşen, Dom'a döndürülebilen bazı HVM kodlarını döndürmek ya da render
+
+42
+00:03:06,440 --> 00:03:08,240
+etmek zorunda kalıyor.
+
+43
+00:03:08,470 --> 00:03:12,160
+İnternete ulaşmak için orada daha başka şeyler yapabilirsiniz.
+
+44
+00:03:12,160 --> 00:03:17,320
+Bazı hesaplamalar, uygulamanızda ne olursa olsun olayları dinliyor mu?
+
+45
+00:03:17,320 --> 00:03:25,020
+Bütün bunları bu derste göreceğiz, ancak şafak vakti daima bazı HVM postaları oluşturmanız gerekiyor.
+
+46
+00:03:25,030 --> 00:03:28,140
+Akılda tutulması gereken bu çok önemlidir.
+
+47
+00:03:28,330 --> 00:03:34,440
+Ardından, bu AB sınıfını bu dosyanın varsayılan dışa aktarma olarak dışa aktarırız.
+
+48
+00:03:34,510 --> 00:03:41,020
+basitçe bu dosyayı içe aktarırsanız, varsayılan dışa aktarma olduğu için bu sınıfı içe aktaracağınız anlamına gelir.
+
+49
+00:03:41,020 --> 00:03:43,280
+Bu ESX özelliği mu ve
+
+50
+00:03:43,660 --> 00:03:50,210
+Bunları, uygulama dosyasından tekrar uygulama ithal ettiğimiz Jaspal dizininde kullanıyoruz.
+
+51
+00:03:50,230 --> 00:03:56,840
+Javascript dosyaları için otomatik olarak oluşturma iş akışımız tarafından eklendiğinden bu uzantıyı atlama.
+
+52
+00:03:57,260 --> 00:04:02,910
+Burada keyifle seçilmiş apt adı var, ancak genelde bileşenin adını kullanıyorsunuz.
+
+53
+00:04:02,980 --> 00:04:08,140
+Ayrıca dosyayı kullanırsınız ve ardından bir dosya adı olarak da kullanabilirsiniz.
+
+54
+00:04:08,140 --> 00:04:09,320
+Bir taraf not.
+
+55
+00:04:09,400 --> 00:04:16,890
+Bu bileşenler Dot J'yi X olarak, J S. yerine bir dosya uzantısı olarak da görebilirsiniz.
+
+56
+00:04:16,930 --> 00:04:19,970
+Bunun nedeni burada kod.
+
+57
+00:04:20,260 --> 00:04:24,410
+Ona geri döndüğüm h t m l olarak değindim.
+
+58
+00:04:24,760 --> 00:04:27,250
+Ancak sonunda bu HVM L değildir.
+
+59
+00:04:27,310 --> 00:04:32,880
+Öyle görünüyor ama javascript olduğu için J olarak J'dir.
+
+60
+00:04:32,980 --> 00:04:39,340
+Biraz farklı görünüyorsanız ve bu, ilk önce tepkisini öğrenirken kafa karıştırıcı olabilir, bilmeniz
+
+61
+00:04:39,340 --> 00:04:46,720
+gereken en kafa karıştırıcı şeylerden biri olabilir, bu sadece bazı sözdizimsel şekerin esasen yeniden hareket ekibi
+
+62
+00:04:46,720 --> 00:04:52,630
+tarafından icat edildi ve biz ona yazabiliriz Burada kullandığımız yapı iş akışı
+
+63
+00:04:52,630 --> 00:04:54,330
+nedeniyle bir javascript dosyasında.
+
+64
+00:04:54,340 --> 00:04:58,940
+Temelde otomatik olarak geçerli javascript ve dnt için pilotlar trons.
+
+65
+00:04:59,350 --> 00:05:07,190
+Kullandığınız kullandığınız Falak'a bağlı değildir ve bugünlerde Dot James ve Dot James Ex Files ve kongre günümüzde oldukça
+
+66
+00:05:07,330 --> 00:05:12,660
+hoşunuza giden nokta J'yi yanlış olarak kullanmaktadır, bu yüzden burada da yapmaktayız.
+
+67
+00:05:13,030 --> 00:05:22,600
+Ve kod ya da tırnak işaretleri içinde HVM posta yazmak için kullanabileceğiniz bir sözdizimi basitçe
+
+68
+00:05:22,660 --> 00:05:25,310
+yazarken, kafa karıştırıcı geliyor.
+
+69
+00:05:25,420 --> 00:05:29,890
+Bir sonraki konuşmada bunun gerçekte derlendiğini size göstereceğim.

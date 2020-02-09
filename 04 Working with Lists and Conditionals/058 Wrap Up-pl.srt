@@ -1,0 +1,79 @@
+1
+00:00:02,340 --> 00:00:08,800
+W tym module dowiedzieliśmy się dużo o warunkowym generowaniu treści i wyjściowych listach, a ja po prostu
+
+2
+00:00:08,850 --> 00:00:12,740
+chcę krótko podsumować to, zanim wyślę cię do zadania i
+
+3
+00:00:12,740 --> 00:00:18,360
+pozwolę ci to ćwiczyć, ponieważ jest to tak ważne, aby je poprawnie zrozumieć i zrozumieć.
+
+4
+00:00:18,420 --> 00:00:27,630
+Nauczyliśmy się dwóch ważnych rzeczy, że powinniśmy dostarczać treści warunkowo, używając javascript i tego
+
+5
+00:00:27,630 --> 00:00:29,220
+samego dla list.
+
+6
+00:00:29,220 --> 00:00:32,910
+Wszystko jest javascript, klucz na wynos.
+
+7
+00:00:33,120 --> 00:00:41,280
+Możesz wtedy zrobić to z wyrażeniami potrójnymi, ale nauczysz się lepiej tworzyć po prostu zmienne, które
+
+8
+00:00:41,280 --> 00:00:48,680
+wypiszesz w swoim jsx, który zwrócisz w końcu, i które dostosujesz za pomocą instrukcji if,
+
+9
+00:00:48,690 --> 00:00:51,240
+jeśli chcesz renderować coś warunkowo.
+
+10
+00:00:51,810 --> 00:00:56,700
+A jeśli chcesz zwrócić lub wyrenderować listę, użyj operatora mapy,
+
+11
+00:00:56,790 --> 00:01:03,600
+domyślnej metody javascript, której możesz użyć na tablicach, aby odwzorować tablicę javascript obiektów lub
+
+12
+00:01:03,630 --> 00:01:10,890
+łańcuchów lub cokolwiek w niej zawartego na tablicę elementów jsx i zareagować następnie wyciągnij te
+
+13
+00:01:10,980 --> 00:01:13,710
+elementy i wyślij je na ekran.
+
+14
+00:01:13,830 --> 00:01:19,860
+Dowiedziałeś się również, że mapa daje ci nie tylko element, dla którego aktualnie
+
+15
+00:01:20,220 --> 00:01:26,820
+wykonuje tę funkcję, ale także dostęp do indeksu, jeśli potrzebujesz, na przykład, aby usunąć element,
+
+16
+00:01:26,820 --> 00:01:33,420
+który powinieneś dodać ten klucz, aby umożliwić wydajną aktualizację wszystkiego i tego masz kilka narzędzi,
+
+17
+00:01:33,450 --> 00:01:42,180
+jak widać tutaj, aby zaktualizować nazwę, aby naprawdę wykonać kod na elemencie listy, na którym coś naprawdę się dzieje.
+
+18
+00:01:42,300 --> 00:01:47,530
+Dowiesz się wielu użytecznych rzeczy, ale najlepszym sposobem, jak zawsze, jest po prostu praktyka.
+
+19
+00:01:47,550 --> 00:01:52,680
+Przejdźmy więc do zadania, aby samodzielnie wprowadzić wszystkie te rzeczy, których właśnie
+
+20
+00:01:52,920 --> 00:01:53,860
+się nauczyliście.

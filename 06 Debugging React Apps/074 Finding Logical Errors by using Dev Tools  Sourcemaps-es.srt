@@ -1,0 +1,203 @@
+1
+00:00:02,090 --> 00:00:09,330
+Y el último realmente echó un vistazo a los mensajes de error ciertamente importantes, pero a menudo tiene errores
+
+2
+00:00:09,330 --> 00:00:12,210
+lógicos que son aún más difíciles de detectar.
+
+3
+00:00:12,210 --> 00:00:15,830
+No aparece el mensaje de error, pero de alguna manera no funciona.
+
+4
+00:00:16,170 --> 00:00:23,160
+Digamos que el nombre cambia el controlador cuando encontramos el índice de una persona que queremos actualizar que dice
+
+5
+00:00:23,160 --> 00:00:26,180
+que comparamos el ID de usuario con ID.
+
+6
+00:00:26,460 --> 00:00:30,570
+Y esto es incorrecto, una persona no tiene una propiedad de identificación de usuario.
+
+7
+00:00:30,570 --> 00:00:38,640
+Sin embargo, no arrojará un error porque la identificación del usuario no está definida, pero puede comparar en el hallazgo
+
+8
+00:00:38,970 --> 00:00:42,360
+con algo que probablemente no encontrará una persona adecuada.
+
+9
+00:00:42,360 --> 00:00:48,470
+Entonces, si guardo este código por cierto, corrija el error de The Last Lecture.
+
+10
+00:00:48,950 --> 00:00:56,630
+Entonces, si guardo este código y volvemos a la aplicación, si ahora comenzamos a escribir, no obtenemos un error, pero puedo
+
+11
+00:00:56,820 --> 00:00:58,860
+escribir todo lo que quiera.
+
+12
+00:00:58,890 --> 00:01:00,030
+No se actualizará.
+
+13
+00:01:00,060 --> 00:01:05,370
+Ni siquiera veo mi valor actualizado aquí porque rompió el enlace bidireccional porque no
+
+14
+00:01:05,370 --> 00:01:08,450
+estoy actualizando correctamente el nombre de esta persona.
+
+15
+00:01:08,460 --> 00:01:11,200
+Ahora, ¿qué podemos hacer en tal caso?
+
+16
+00:01:11,370 --> 00:01:14,320
+Podemos recorrer nuestro código paso a paso.
+
+17
+00:01:14,370 --> 00:01:17,650
+Para eso, recomiendo usar las herramientas de desarrollo de Chrome.
+
+18
+00:01:17,760 --> 00:01:27,630
+Allí puede ir a la pestaña de fuentes en la pestaña de fuentes donde encontrará la estructura del código que se
+
+19
+00:01:27,630 --> 00:01:29,160
+muestra en localhost.
+
+20
+00:01:29,160 --> 00:01:34,750
+Allí encontrará una carpeta fuente y encontrará su código aquí.
+
+21
+00:01:34,770 --> 00:01:39,110
+Ahora esto es posible youtoo mapas de origen que se generan.
+
+22
+00:01:39,450 --> 00:01:47,220
+Básicamente, podría decirse que los archivos de traducción permiten que las herramientas de desarrollo del navegador entren en su código
+
+23
+00:01:47,250 --> 00:01:53,730
+tal como lo escribió y le permiten depurar ese código aunque el código que se envía
+
+24
+00:01:54,060 --> 00:01:57,690
+al navegador sea diferente y esté optimizado y empaquetado.
+
+25
+00:01:57,800 --> 00:02:02,310
+Esto es muy bueno porque puedes depurar el código que escribiste aunque no sea el código que
+
+26
+00:02:02,310 --> 00:02:03,630
+se ejecuta en el navegador.
+
+27
+00:02:03,780 --> 00:02:07,210
+Entonces, allí sabemos que algo no funciona cuando escribo aquí.
+
+28
+00:02:07,380 --> 00:02:13,840
+Y a medida que escribimos el código, sabemos que el nombre cambió a los controladores que fueron despedidos cuando escribimos.
+
+29
+00:02:13,980 --> 00:02:17,300
+Pongamos un punto de interrupción haciendo clic en el número de línea aquí.
+
+30
+00:02:17,700 --> 00:02:19,910
+Y comencemos a escribir de nuevo.
+
+31
+00:02:20,670 --> 00:02:23,890
+Escribí un personaje y ahora está pausando esto.
+
+32
+00:02:24,180 --> 00:02:29,370
+Verás que está agregando esto yo. mi. ejecutar todo el código que anularía eso nuevamente.
+
+33
+00:02:29,370 --> 00:02:32,260
+porque es el comportamiento de des-evolución del elemento th tremelo y tenemos que
+
+34
+00:02:32,520 --> 00:02:40,200
+Y ahora podemos usar las herramientas normales de depuración de Chrome aquí para revisar nuestro código y aquí podemos
+
+35
+00:02:40,290 --> 00:02:48,760
+pasar a la siguiente llamada de función para entrar en la función de búsqueda de días y comprender qué está sucediendo allí.
+
+36
+00:02:49,870 --> 00:02:53,950
+Entonces, ahora adentro, podemos echar un vistazo a los datos.
+
+37
+00:02:53,950 --> 00:02:57,510
+Tenemos un bote ballenero como el objeto p.
+
+38
+00:02:57,520 --> 00:03:03,610
+Ahora vemos que esto es para Max. Es el objeto que está buscando actualmente con find.
+
+39
+00:03:03,620 --> 00:03:08,580
+A continuación tenemos una idea de una s f a one.
+
+40
+00:03:08,710 --> 00:03:17,050
+que esta expresión aquí no está definida y la comparamos con una idea de s f a one.
+
+41
+00:03:17,050 --> 00:03:18,210
+También vemos
+
+42
+00:03:18,250 --> 00:03:26,200
+Entonces, esto debería coincidir con esta prisión, que decidió que, dado que accedemos al ID de usuario, podemos ver que
+
+43
+00:03:26,640 --> 00:03:35,530
+no está definido y podemos ver claramente que el ID de usuario no es un ID válido porque si pasamos sobre la persona
+
+44
+00:03:35,530 --> 00:03:41,150
+vemos que solo hay un objeto ID sin usuario objeto id con esa información.
+
+45
+00:03:41,380 --> 00:03:46,960
+Ahora podemos salir de este proceso, volver a nuestro código y corregir nuestro error lógico.
+
+46
+00:03:47,050 --> 00:03:55,120
+Entonces, el uso de las herramientas de depuración de Chrome con los mapas de origen que se generan automáticamente para usted es
+
+47
+00:03:55,120 --> 00:03:57,820
+una poderosa función para detectar errores lógicos.
+
+48
+00:03:57,850 --> 00:04:03,140
+Puede recorrer su código a medida que avance, aunque ese no sea el código que se ejecuta en el navegador.
+
+49
+00:04:03,310 --> 00:04:06,200
+Entonces, hay una herramienta genial que debes tener en cuenta.
+
+50
+00:04:06,340 --> 00:04:13,210
+Para encontrar y corregir errores utilizando las herramientas de desarrollador con la pestaña de fuentes donde puede acceder a su
+
+51
+00:04:13,210 --> 00:04:15,600
+código original a los mapas de origen.

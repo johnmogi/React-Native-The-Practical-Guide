@@ -1,0 +1,199 @@
+1
+00:00:02,090 --> 00:00:09,330
+In the last lecture, we had a look at error messages, certainly important but oftentimes you have logical
+
+2
+00:00:09,330 --> 00:00:12,210
+errors which are even harder to spot.
+
+3
+00:00:12,210 --> 00:00:15,830
+You don't get the error message but somehow it's not working.
+
+4
+00:00:16,170 --> 00:00:23,160
+Let's say the nameChangedHandler, when we find the index of a person we want to update, let's say we
+
+5
+00:00:23,160 --> 00:00:26,180
+compare user ID with ID
+
+6
+00:00:26,460 --> 00:00:30,570
+and this is incorrect, a person has no user id property.
+
+7
+00:00:30,570 --> 00:00:38,640
+It will not throw an error though because user ID is undefined but you can compare undefined to something
+
+8
+00:00:38,970 --> 00:00:42,360
+you probably just won't find a fitting person.
+
+9
+00:00:42,360 --> 00:00:48,470
+So if I save this code, by the way of course fixed the error from the last lecture,
+
+10
+00:00:48,950 --> 00:00:56,630
+so if I save this code and we go back to the application, if we now start typing, we don't get an error
+
+11
+00:00:56,820 --> 00:00:58,860
+but I can type as much as I want,
+
+12
+00:00:58,890 --> 00:01:00,030
+it won't update,
+
+13
+00:01:00,060 --> 00:01:05,370
+I don't even see my updated value here because I broke the two way binding because I'm not correctly
+
+14
+00:01:05,370 --> 00:01:08,450
+updating the name of this person.
+
+15
+00:01:08,460 --> 00:01:11,200
+Now what can we do in such a case?
+
+16
+00:01:11,370 --> 00:01:14,320
+We can walk through our code step by step,
+
+17
+00:01:14,370 --> 00:01:17,650
+for that I recommend using the chrome developer tools.
+
+18
+00:01:17,760 --> 00:01:27,630
+There you can go to the sources tab, in the sources tab you will find your code structure shown under
+
+19
+00:01:27,630 --> 00:01:29,160
+localhost,
+
+20
+00:01:29,160 --> 00:01:34,750
+there you will find a source folder and you actually find your code here.
+
+21
+00:01:34,770 --> 00:01:39,110
+Now this is possible due to source maps which are generated.
+
+22
+00:01:39,450 --> 00:01:47,220
+Basically you could say translation files allowing the browser developer tools to go into your code
+
+23
+00:01:47,250 --> 00:01:53,730
+as you wrote it and allow you to debug that code even though the code which is shipped to the browser
+
+24
+00:01:54,060 --> 00:01:57,690
+will be a different one, an optimized and bundled one.
+
+25
+00:01:57,800 --> 00:02:02,310
+This is pretty cool because you can debug the code you wrote even though it's not the code running in
+
+26
+00:02:02,310 --> 00:02:03,630
+the browser.
+
+27
+00:02:03,780 --> 00:02:07,210
+So in there, we know something's not working when I type here
+
+28
+00:02:07,380 --> 00:02:13,840
+and as we wrote the code, we know that the nameChangedHandler is getting fired when we type.
+
+29
+00:02:13,980 --> 00:02:17,300
+So let's place a breakpoint by clicking on a new line number here
+
+30
+00:02:17,700 --> 00:02:19,910
+and let's start typing again.
+
+31
+00:02:20,670 --> 00:02:23,890
+I typed one character and that's now pausing this,
+
+32
+00:02:24,180 --> 00:02:29,370
+you'll see it's adding this i because that's default behavior of the html element and we haven't
+
+33
+00:02:29,370 --> 00:02:32,260
+execute all the code which would overwrite that again,
+
+34
+00:02:32,520 --> 00:02:40,200
+and now we can use the normal chrome debugger tools here to walk through our code. And here we can step
+
+35
+00:02:40,290 --> 00:02:48,760
+into the next function call to step into this find index function and understand what's happening there.
+
+36
+00:02:49,870 --> 00:02:53,950
+So now inside there, we can have a look at the data
+
+37
+00:02:53,950 --> 00:02:57,510
+we have available there like the p object.
+
+38
+00:02:57,520 --> 00:03:03,610
+Now we see this is for Max, this is the object it's currently looking at with find
+
+39
+00:03:03,620 --> 00:03:08,580
+index and we have an idea of asfa1.
+
+40
+00:03:08,710 --> 00:03:17,050
+We also see that this expression here is undefined though and we compared this to an id of asfa1
+
+41
+00:03:18,250 --> 00:03:26,200
+So whilst this should match this person that has this ID, since we access user ID we can see it's undefined
+
+42
+00:03:26,640 --> 00:03:35,530
+and we can clearly see that user ID is not a valid ID because if we hover over the person again, we see
+
+43
+00:03:35,530 --> 00:03:41,150
+there only is ID object, no user id object. With that information,
+
+44
+00:03:41,380 --> 00:03:46,960
+we can now exit this process go back to our code and fix our logical error.
+
+45
+00:03:47,050 --> 00:03:55,120
+So using the chrome debugger tools with source maps which are generated for you automatically is a powerful
+
+46
+00:03:55,120 --> 00:03:57,820
+feature for detecting logical errors.
+
+47
+00:03:57,850 --> 00:04:03,140
+You can walk your code as you wrote it, even though that's not the code running in the browser.
+
+48
+00:04:03,310 --> 00:04:06,200
+So that's a cool tool you should be aware of
+
+49
+00:04:06,340 --> 00:04:13,210
+for finding and fixing errors. Using the developer tools with the sources tab where you can access your
+
+50
+00:04:13,210 --> 00:04:15,600
+original code due to source maps.

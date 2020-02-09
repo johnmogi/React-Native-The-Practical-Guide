@@ -1,0 +1,287 @@
+1
+00:00:02,270 --> 00:00:05,110
+Ya aprendemos mucho sobre los conceptos básicos de reactivación.
+
+2
+00:00:05,120 --> 00:00:10,870
+En las últimas conferencias nuestras aplicaciones aún pueden usar un estilo extra.
+
+3
+00:00:10,870 --> 00:00:20,490
+Yo diría que, por ejemplo, estos componentes de persona serían agradables si se vieran como cartas y se atrevieran
+
+4
+00:00:20,490 --> 00:00:23,800
+a parecerse más a objetos cerrados.
+
+5
+00:00:23,840 --> 00:00:29,330
+En este momento no podemos ver las diferencias o no podemos ver las fronteras entre este componente y
+
+6
+00:00:29,330 --> 00:00:30,740
+los componentes de la flecha.
+
+7
+00:00:31,070 --> 00:00:35,540
+Así que diseñar componentes es obviamente algo súper importante.
+
+8
+00:00:35,750 --> 00:00:40,700
+Y en este momento hay dos formas de diseñar que podemos implementar.
+
+9
+00:00:40,700 --> 00:00:42,290
+Los mostraré a los dos.
+
+10
+00:00:42,500 --> 00:00:45,770
+Antes que nada agreguemos una persona que caiga en C S.
+
+11
+00:00:45,770 --> 00:00:51,950
+Q Nuestro componente actual y yo le dimos a este seguir el mismo nombre que el archivo javascript con
+
+12
+00:00:51,950 --> 00:00:53,530
+una extensión de curso diferente.
+
+13
+00:00:53,540 --> 00:00:55,850
+En teoría, ese nombre de fuente depende de usted.
+
+14
+00:00:56,180 --> 00:01:03,700
+Ahora, una cosa importante que nos ve como código que escribo aquí no tiene alcance dispersante.
+
+15
+00:01:03,790 --> 00:01:05,900
+J. S. componente es global.
+
+16
+00:01:05,890 --> 00:01:07,870
+C s s código.
+
+17
+00:01:08,000 --> 00:01:12,340
+Entonces definiré y verá como clase a la que nombré persona con una P. mayúscula.
+
+18
+00:01:12,440 --> 00:01:18,950
+Aún así, podría agregar esto en cualquier lugar de mi aplicación, ya que es global, pero al usar el nombre
+
+19
+00:01:19,190 --> 00:01:23,630
+de mi componente puedo descartar el peligro de utilizarlo accidentalmente en otro lugar.
+
+20
+00:01:23,630 --> 00:01:26,990
+Así que simplemente le asignaré mi nombre de clase a mi muerte.
+
+21
+00:01:26,990 --> 00:01:32,280
+Tenga en cuenta que el nombre de la clase no es persona persona de cadena.
+
+22
+00:01:32,660 --> 00:01:37,820
+Ahora, en el archivo C S S, ahora puedo cambiar al estilo.
+
+23
+00:01:37,820 --> 00:01:46,180
+Tal vez dado el ancho del 60 por ciento y un margen de auto centrado puede ser.
+
+24
+00:01:46,180 --> 00:01:58,070
+y una sombra de caja de 0 2 píxeles 3 píxeles y un gris ligeramente más oscuro, y déjale un relleno de 16 píxeles.
+
+25
+00:01:58,160 --> 00:02:04,650
+También dale un borde de un píxel sólido, es decir, un gris claro
+
+26
+00:02:04,650 --> 00:02:14,550
+Quizás, finalmente, establezcamos que el texto se alinee con el centro para centrar todo el texto, por ahora el archivo SEUS de días seguros y guarde la persona
+
+27
+00:02:14,550 --> 00:02:16,470
+que el seguidor de JS.
+
+28
+00:02:16,470 --> 00:02:19,150
+Lo asigno como un clos.
+
+29
+00:02:19,360 --> 00:02:20,910
+No pasa nada.
+
+30
+00:02:20,950 --> 00:02:30,380
+¿Sabes por qué? Porque realmente aún en nuestro año de clase en el archivo de EE. UU. De este año, pero de forma predeterminada, es algo
+
+31
+00:02:30,470 --> 00:02:36,970
+que no sabías porque no es necesariamente intuitivo, pero por defecto no se incluye ningún archivo en tu
+
+32
+00:02:36,970 --> 00:02:42,430
+proyecto en el código que se crea un flujo de trabajo de construcción bited.
+
+33
+00:02:42,680 --> 00:02:47,240
+Siempre debe importar archivos para agregarlos al juego.
+
+34
+00:02:47,450 --> 00:02:52,390
+Entonces imploramos el componente persona en nuestro archivo de captura Sí.
+
+35
+00:02:52,400 --> 00:02:55,840
+Y también importamos la aplicación C S S archivo aquí.
+
+36
+00:02:55,960 --> 00:03:02,630
+Ahora puede parecer extraño importar un archivo C S en un archivo javascript como este, pero gracias a Pech mojado, que
+
+37
+00:03:02,630 --> 00:03:09,290
+es una herramienta de compilación que es Sindhi y utilizada por este paquete de scripts de reactividad que estamos usando implícitamente
+
+38
+00:03:09,290 --> 00:03:09,910
+aquí.
+
+39
+00:03:10,220 --> 00:03:17,510
+Gracias a la vinculación web, podemos importar CSSA a javascript, aunque en realidad no fusionará los dos archivos
+
+40
+00:03:17,510 --> 00:03:19,180
+ni nada de eso.
+
+41
+00:03:19,250 --> 00:03:26,240
+Simplemente se conoce el archivo C S como archivo y se manejará de forma diferente, básicamente se importará
+
+42
+00:03:26,240 --> 00:03:28,240
+a nuestro archivo HVM Al.
+
+43
+00:03:28,460 --> 00:03:30,300
+Así que en persona J J. S. También agregaré la importación al punto barra persona C S.
+
+44
+00:03:30,440 --> 00:03:35,170
+Y aquí necesitas la extensión de archivo.
+
+45
+00:03:35,270 --> 00:03:37,670
+Solo se puede omitir para los archivos javascript.
+
+46
+00:03:37,670 --> 00:03:41,130
+Ahora que has añadido esto, has hecho que WePay lo sepa.
+
+47
+00:03:41,240 --> 00:03:44,690
+Ahora se agregará a su archivo HDMI
+
+48
+00:03:44,690 --> 00:03:52,400
+y, por lo tanto, si ahora regresa verá que tenemos este estilo extra en nuestros componentes.
+
+49
+00:03:52,400 --> 00:03:54,130
+También puede ver que si inspecciona
+
+50
+00:03:54,200 --> 00:04:01,370
+su código, tenemos la clase de persona aquí y si se desplaza hasta la sección de cabecera, se encuentra en las herramientas de desarrollador.
+
+51
+00:04:01,370 --> 00:04:04,800
+Ves que tenemos textos de estilo DS que puedes encontrar en el H. MI. archivo de correo en
+
+52
+00:04:05,000 --> 00:04:13,710
+la carpeta pública allí.
+
+53
+00:04:13,710 --> 00:04:15,330
+No tenemos etiquetas de estilo en su sección principal.
+
+54
+00:04:15,360 --> 00:04:18,180
+Solo algunos enlaces al manifiesto, etc.
+
+55
+00:04:18,270 --> 00:04:20,970
+Entonces, ni siquiera para ver los archivos SS.
+
+56
+00:04:20,970 --> 00:04:24,030
+La razón de esto es que el texto de estilo se inyecta dinámicamente por la web Pech.
+
+57
+00:04:24,030 --> 00:04:28,750
+Esta es la parte que quería decir con la que gestiona las importaciones que agrega.
+
+58
+00:04:28,760 --> 00:04:32,920
+Y esta última etiqueta de estilo debería contener tu bolso en clase.
+
+59
+00:04:33,270 --> 00:04:38,000
+Y allí se puede ver claramente que es una clase normal de servicios globales.
+
+60
+00:04:38,040 --> 00:04:42,340
+También ves esa sincronización automática de prefijo, que es
+
+61
+00:04:42,420 --> 00:04:47,730
+muy conveniente porque asegura que no tenemos que hacer eso.
+
+62
+00:04:47,730 --> 00:04:48,890
+Podemos escribir el código
+
+63
+00:04:48,960 --> 00:04:55,650
+de abreviado a cs posible o necesario y lo prefigrará automáticamente para trabajar en ASP en cualquier navegador como sea posible.
+
+64
+00:04:55,680 --> 00:04:58,410
+Así que este es el estilo que configuramos.
+
+65
+00:04:58,920 --> 00:05:00,550
+Vamos a afinarlo un poco más agregando un margen superior e inferior aquí.
+
+66
+00:05:00,600 --> 00:05:07,300
+Así que vamos a establecer esto en 16 píxeles para que tengamos alguna separación entre nuestras tarjetas.
+
+67
+00:05:07,500 --> 00:05:13,930
+Se ve mucho mejor.
+
+68
+00:05:13,980 --> 00:05:15,230
+Ahora tenemos a las personas aquí.
+
+69
+00:05:15,510 --> 00:05:17,250
+Ahora también tiene un
+
+70
+00:05:17,460 --> 00:05:23,940
+botón de estilo y el estilo es diferente porque mencioné que hay dos formas de diseñar.
+
+71
+00:05:23,940 --> 00:05:24,910
+Sabemos ahora mismo al menos.
+
+72
+00:05:24,960 --> 00:05:26,580
+&nbsp;

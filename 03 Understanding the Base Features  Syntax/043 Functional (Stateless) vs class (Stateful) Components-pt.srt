@@ -1,0 +1,171 @@
+1
+00:00:02,320 --> 00:00:05,490
+Nas últimas palestras, aprendemos muito sobre o estado e os adereços.
+
+2
+00:00:05,500 --> 00:00:12,030
+Aprendemos que estas são as duas únicas coisas que levam a reagir para atualizar seu dormitório se algo mudou.
+
+3
+00:00:12,040 --> 00:00:19,050
+Agora eu também mencionei mortos ao criar um componente como uma função como fazemos por uma pessoa.
+
+4
+00:00:19,090 --> 00:00:24,420
+Não podemos usar o estado lá porque é apenas uma função em que devolvemos algum código GSX.
+
+5
+00:00:24,430 --> 00:00:27,770
+Concedido, poderíamos dirigir o código Albert antes de fazer isso.
+
+6
+00:00:27,970 --> 00:00:34,300
+E você costuma fazer isso se precisar transformar seus adereços para nós ou algo assim, mas você pode
+
+7
+00:00:34,300 --> 00:00:41,580
+configurar uma propriedade de estado aqui, você pode chamar este estado definido porque não é um componente de extensão de classe.
+
+8
+00:00:41,590 --> 00:00:44,830
+O referido mapeamento estatal não é conhecido e não temos métodos de qualquer maneira.
+
+9
+00:00:44,890 --> 00:00:45,850
+Não é uma classe.
+
+10
+00:00:45,880 --> 00:00:46,970
+É uma função.
+
+11
+00:00:47,380 --> 00:00:54,730
+E ainda mencionei que você deveria usar esta forma de função dos componentes o mais rápido possível.
+
+12
+00:00:55,060 --> 00:00:57,880
+E enfatizarei que aqui mais uma vez.
+
+13
+00:00:58,210 --> 00:01:00,180
+Por que isso é tão importante.
+
+14
+00:01:00,760 --> 00:01:09,580
+Como esses componentes simples que são apenas funções que recebem adereços são muito claros sobre o que
+
+15
+00:01:09,580 --> 00:01:10,420
+eles fazem.
+
+16
+00:01:10,750 --> 00:01:13,250
+Eles apenas renderizam algo ao DOM.
+
+17
+00:01:13,270 --> 00:01:20,370
+Eles são dinâmicos devido a adereços e você pode adicionar alguma lógica adicional antes do retorno de chamada.
+
+18
+00:01:20,770 --> 00:01:23,080
+Mas e isso é super importante.
+
+19
+00:01:23,140 --> 00:01:28,570
+Eles não manipulam seu estado de aplicação à medida que seu aplicativo cresce.
+
+20
+00:01:28,570 --> 00:01:32,280
+Você verá que isso não é tão sem importância.
+
+21
+00:01:32,280 --> 00:01:34,610
+Isso é realmente muito importante.
+
+22
+00:01:34,630 --> 00:01:39,990
+A maioria das partes do seu aplicativo não deve alterar o estado do aplicativo.
+
+23
+00:01:40,030 --> 00:01:43,770
+Eles devem apenas renderizar algo para a dinâmica DOM.
+
+24
+00:01:43,900 --> 00:01:48,780
+Sim, mas eles não devem permitir que você altere o estado da sua aplicação.
+
+25
+00:01:48,820 --> 00:01:54,880
+Os seus estados de aplicação só devem ser alterados e manipulados em alguns componentes selecionados.
+
+26
+00:01:54,880 --> 00:01:57,910
+Também referidos como recipientes.
+
+27
+00:01:57,910 --> 00:02:00,110
+Na verdade, como seria tal um recipiente.
+
+28
+00:02:00,280 --> 00:02:06,310
+Esse é apenas outro nome, é um componente, mas nós nos referimos a ele como um contêiner porque ele contém
+
+29
+00:02:06,310 --> 00:02:08,370
+alguma parte do nosso estado de aplicação.
+
+30
+00:02:08,560 --> 00:02:15,580
+Em nosso aplicativo de demonstração, na verdade, todo o estado do aplicativo aqui podemos mudar algo sobre
+
+31
+00:02:15,580 --> 00:02:22,270
+o nosso aplicativo e, então, passamos essas mudanças para, por exemplo, o componente pessoa, mas é isso.
+
+32
+00:02:22,270 --> 00:02:29,530
+Aperture Sim e, uma vez que começamos a construir o projeto do curso, você vai me ver usar esse padrão.
+
+33
+00:02:29,530 --> 00:02:30,900
+A mudança acontece no
+
+34
+00:02:31,000 --> 00:02:38,380
+Eu vou ter alguns componentes onde o estado realmente mora e se altera e muitos componentes
+
+35
+00:02:38,740 --> 00:02:46,030
+que tomam algumas entradas e, em seguida, apenas tornam algo na tela, mas que não manipularão
+
+36
+00:02:46,120 --> 00:02:47,790
+diretamente o estado.
+
+37
+00:02:47,800 --> 00:02:54,970
+Ainda assim, você pode ter casos em que talvez todos desejem ouvir um evento no componente da pessoa ou
+
+38
+00:02:54,970 --> 00:02:56,670
+em qualquer outro componente.
+
+39
+00:02:57,100 --> 00:03:02,770
+queira ouvir algum evento aqui, mas execute algum método na verdade, sim, para que
+
+40
+00:03:02,800 --> 00:03:11,490
+você possa manter esse padrão de alteração do nome Na verdade, sim, mas realmente ouvindo o evento no componente estreito.
+
+41
+00:03:11,500 --> 00:03:19,990
+Agora é claro que você poderia transformar isso em um componente que estende o componente para que você possa encontrar métodos
+
+42
+00:03:19,990 --> 00:03:22,370
+que você executa, mas talvez você
+
+43
+00:03:22,750 --> 00:03:31,470
+Vamos dar uma olhada em como podemos lidar com isso e mudar um estado de um componente de número na próxima palestra.

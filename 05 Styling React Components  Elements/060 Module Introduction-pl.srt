@@ -1,0 +1,51 @@
+1
+00:00:02,360 --> 00:00:08,240
+Witaj w nowym module, w porównaniu z poprzednimi modułami nauczyłeś się dużo
+
+2
+00:00:08,720 --> 00:00:16,580
+o tworzeniu komponentów i korzystaniu z różnych reagujących i faktycznie natywnych funkcji javascript do wyświetlania treści dynamicznych,
+
+3
+00:00:16,580 --> 00:00:20,740
+tworzenia dynamicznej zawartości w kodzie jsx i wielu innych.
+
+4
+00:00:21,110 --> 00:00:25,130
+Krótko poruszyliśmy także stylowe komponenty reagujące, zrobiłem to
+
+5
+00:00:25,340 --> 00:00:33,020
+z wbudowanymi stylami i pokazałem ci, jak zaimportować plik css, aby zastosować te style CSS. Wspomniałem
+
+6
+00:00:33,020 --> 00:00:38,660
+również, że nie były one ograniczone do komponentów, do których je zaimportowałeś.
+
+7
+00:00:38,670 --> 00:00:44,990
+chociaż. W tym module chcę skupić się na stylizacji elementów reagujących, ponieważ jest w
+
+8
+00:00:44,990 --> 00:00:46,760
+tym coś więcej niż to, co dotąd widziałem.
+
+9
+00:00:46,760 --> 00:00:52,020
+Po pierwsze, chciałbym rzucić okiem na to, w jaki sposób można dynamicznie dopasowywać style
+
+10
+00:00:52,310 --> 00:00:59,480
+lub nazwy klas, a także chcę pokazać, jak obejść to ograniczenie, używając stylów wbudowanych, a więc mających style zakresu,
+
+11
+00:00:59,480 --> 00:01:06,350
+ale z ograniczeniami, takimi jak brak możliwości używaj zapytań o media lub pseudo selektorów lub korzystaj z plików
+
+12
+00:01:06,620 --> 00:01:12,540
+css, a następnie korzystaj ze stylów globalnych. Istnieje kilka sposobów radzenia sobie z tym i
+
+13
+00:01:12,530 --> 00:01:17,440
+zagłębimy się we wszystkie te sposoby pracy ze stylami w tym module.

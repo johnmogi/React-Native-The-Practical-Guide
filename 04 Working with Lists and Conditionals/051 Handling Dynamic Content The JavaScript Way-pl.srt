@@ -1,0 +1,243 @@
+1
+00:00:02,250 --> 00:00:08,530
+W ostatnim wykładzie nauczyliśmy się, jak renderować zawartość dynamicznie, warunkowo, powinienem powiedzieć,
+
+2
+00:00:08,550 --> 00:00:14,520
+że po prostu wykorzystujemy fakt, że wszystko tutaj jest javascriptem i to
+
+3
+00:00:14,580 --> 00:00:16,240
+ogólnie jest mantra
+
+4
+00:00:16,320 --> 00:00:18,160
+reakcji, wszystko jest javascript.
+
+5
+00:00:18,180 --> 00:00:24,600
+Wspomniałem również, że używanie tego potrójnego wyrażenia, jak to tutaj robimy, niekoniecznie jest optymalne,
+
+6
+00:00:24,600 --> 00:00:25,700
+tutaj jest
+
+7
+00:00:25,710 --> 00:00:33,930
+zupełnie w porządku, ale w miarę jak nasza aplikacja rośnie i, jak możemy, warunki gniazdowania, ciężko jest śledzić,
+
+8
+00:00:33,930 --> 00:00:36,330
+która ekspresja jest odpowiedzialna za
+
+9
+00:00:36,360 --> 00:00:39,250
+co i aby je w naszym kodzie jsx.
+
+10
+00:00:39,750 --> 00:00:43,830
+Tak więc istnieje czystsze rozwiązanie tego, co chcę wam pokazać
+
+11
+00:00:43,830 --> 00:00:48,290
+w tym wykładzie, pozwólcie mi usunąć ten nawias klamrowy i
+
+12
+00:00:48,390 --> 00:00:53,480
+ten potrójny wyraz tutaj, aby na razie wszystkie osoby były ponownie renderowane.
+
+13
+00:00:53,590 --> 00:00:59,640
+Powinienem się upewnić, że usunięto tylko części wyrażenia, a nie div.
+
+14
+00:00:59,790 --> 00:01:04,270
+Tak więc wracamy do punktu wyjścia, teraz nie możemy tego zmienić.
+
+15
+00:01:04,350 --> 00:01:11,390
+Teraz należy pamiętać, że wszystko jest javascript, a na końcu to, co robimy tutaj z jsx, polega
+
+16
+00:01:11,390 --> 00:01:16,790
+na tym, że zwracamy je za pomocą instrukcji return w tej metodzie renderowania.
+
+17
+00:01:16,800 --> 00:01:23,310
+Teraz należy pamiętać o jednej ważnej rzeczy, gdy reaguje ona renderowaniem czegoś na
+
+18
+00:01:23,310 --> 00:01:31,330
+ekran, gdy zdecyduje, że musi zaktualizować ekran, wykonuje tę metodę renderowania, a nie tylko wyrażenie zwrotu,
+
+19
+00:01:31,390 --> 00:01:32,820
+wszystko tutaj.
+
+20
+00:01:33,030 --> 00:01:41,640
+Zatem wszystko wewnątrz metody renderowania jest wykonywane, gdy tylko reagujemy na ponowne renderowanie tego komponentu i dlatego możemy
+
+21
+00:01:42,060 --> 00:01:43,790
+skorzystać z tego, możemy
+
+22
+00:01:43,860 --> 00:01:47,720
+dodać tutaj trochę kodu, zanim coś zwrócę.
+
+23
+00:01:47,730 --> 00:01:52,400
+Dodam tutaj zmienną o nazwie persons, którą ustawię na wartość null.
+
+24
+00:01:52,470 --> 00:01:54,880
+Powinno to być domyślne, możesz
+
+25
+00:01:54,900 --> 00:01:57,650
+podać dowolną inną nazwę, a następnie
+
+26
+00:01:57,720 --> 00:02:00,060
+dodaję zwykłą instrukcję if.
+
+27
+00:02:00,120 --> 00:02:03,150
+Mogę to zrobić tutaj, ponieważ nie jestem wewnątrz jsx, jestem wewnątrz
+
+28
+00:02:03,180 --> 00:02:10,500
+mojego normalnego kodu javascript tutaj, i tam teraz chcę sprawdzić, czy ten stan. showPersons, należy pamiętać, że showPersons jest
+
+29
+00:02:10,500 --> 00:02:14,740
+wartością logiczną, więc jest to prawda lub fałsz.
+
+30
+00:02:14,760 --> 00:02:17,930
+Nie musimy koniecznie porównywać go
+
+31
+00:02:17,940 --> 00:02:26,460
+z prawdą lub fałszem, możemy to pominąć. Teraz mam tę kontrolę i jeśli to prawda, to chcę ustawić
+
+32
+00:02:26,790 --> 00:02:29,850
+zmienną "moje osoby" na jakiś kod jsx i
+
+33
+00:02:29,910 --> 00:02:36,150
+zawsze pamiętam, mógłbym też ustawić ją na wynik reagowania elementu create, to jest to, co jsx kompiluje
+
+34
+00:02:36,140 --> 00:02:37,050
+do na końcu.
+
+35
+00:02:37,290 --> 00:02:39,390
+Teraz złapię kod
+
+36
+00:02:39,420 --> 00:02:40,860
+tutaj, Moje
+
+37
+00:02:41,190 --> 00:02:48,300
+osoby, rozetnę go tam z osobą wewnątrz i dodaję tutaj.
+
+38
+00:02:48,300 --> 00:02:50,310
+Teraz to, co robię, jest
+
+39
+00:02:50,430 --> 00:02:51,450
+następujące, Domyślnie, osoby.
+
+40
+00:02:51,450 --> 00:02:52,970
+ta zmienna ma wartość NULL.
+
+41
+00:02:53,160 --> 00:02:59,800
+Ale jeśli ten stan showPersons jest prawdziwy, ludzie faktycznie posiadają ten kod jsx
+
+42
+00:02:59,800 --> 00:03:05,820
+i dzięki temu mogę po prostu wziąć tę zmienną i dane wyjściowe
+
+43
+00:03:05,820 --> 00:03:14,400
+które tutaj w moim kodzie jsx wróciłem na końcu. Więc jeśli pojedyncze nawiasy klamrowe mogę wyprowadzać tutaj osoby, odnosząc się do tej
+
+44
+00:03:14,610 --> 00:03:22,230
+zmiennej, która jest nawet teraz domyślnie lub osób, jeśli showPersons jest prawdą i ponieważ render jest wywoływany za każdym razem, gdy reaguje, sprawdza
+
+45
+00:03:22,320 --> 00:03:29,010
+czy potrzebuje ponownie renderować tę stronę lub ten komponent, powinienem mówić. Ponieważ dzieje się to za każdym razem, gdy
+
+46
+00:03:29,030 --> 00:03:35,300
+pojawia się ponowne renderowanie, upewniamy się, że zawsze bierzemy pod uwagę najnowszy stan, który mamy,
+
+47
+00:03:35,310 --> 00:03:42,090
+i czy nie oddajemy niczego lub osób, ponieważ należy pamiętać, że jedną z dwóch rzeczy wyzwalających
+
+48
+00:03:42,120 --> 00:03:43,430
+aktualizację jest zmiana stanu.
+
+49
+00:03:43,500 --> 00:03:49,560
+Teraz z tym, pozwól mi zapisać ten plik i wrócić do aplikacji.
+
+50
+00:03:49,570 --> 00:03:53,040
+Tam idziemy do konsoli, nie widzimy błędu.
+
+51
+00:03:53,280 --> 00:03:57,410
+Mogę ponownie załadować stronę, aby wyraźnie zobaczyć, że używamy najnowszej wersji,
+
+52
+00:03:57,660 --> 00:04:03,410
+a teraz pozwolę mi kliknąć Przełącz ludzi i tak samo jak poprzednio, widzisz to samo zachowanie.
+
+53
+00:04:03,460 --> 00:04:10,080
+Możemy to zmienić, ale teraz używamy tego bardziej eleganckiego sposobu outsourcingu tego
+
+54
+00:04:10,440 --> 00:04:16,840
+czeku od jsx, który zwracamy do zmiennej, którą warunkowo przypisujemy przed powrotem.
+
+55
+00:04:16,920 --> 00:04:19,590
+Nadal w funkcji
+
+56
+00:04:19,600 --> 00:04:27,560
+renderowania, ale przed zwróceniem tego. Dzięki temu zachowujemy jsx, który zwracamy, a zatem nasz podstawowy
+
+57
+00:04:27,560 --> 00:04:28,050
+szablon
+
+58
+00:04:28,050 --> 00:04:34,820
+tego komponentu można powiedzieć, utrzymujemy go w czystości, a my upewniamy się, że mamy tu tylko to
+
+59
+00:04:34,830 --> 00:04:40,410
+małe odniesienie, osoby, wewnątrz którego się kończymy, albo nic albo nic te osoby.
+
+60
+00:04:40,520 --> 00:04:46,470
+W rzeczywistości jest to preferowany sposób generowania treści warunkowych i jest to sposób, który
+
+61
+00:04:46,470 --> 00:04:46,980
+polecam.

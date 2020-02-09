@@ -1,0 +1,247 @@
+1
+00:00:02,170 --> 00:00:06,880
+Y The Last Lecture habilitamos este módulo al expulsar la configuración.
+
+2
+00:00:06,880 --> 00:00:13,410
+Afinarlo y luego importar clases de CSA de la siguiente manera y usarlas.
+
+3
+00:00:13,450 --> 00:00:17,410
+Ahora agreguemos pseudo selectores y consultas de medios.
+
+4
+00:00:17,590 --> 00:00:22,880
+Los electros de Pseudos son importantes aquí en la caída de Apogees donde asignamos un estilo de botón.
+
+5
+00:00:22,990 --> 00:00:30,190
+Ahora ya no haremos esto en línea, así que quitaré la propiedad D-Star del botón aquí y ya no estableceré el color
+
+6
+00:00:30,190 --> 00:00:35,760
+de fondo de la tienda para leer aquí y ya no estableceré el estilo de esta manera.
+
+7
+00:00:35,860 --> 00:00:43,200
+el estilo Marshals de EE. UU. Entonces, ahora podríamos crear una clase de botón AC Ss que luego asignamos
+
+8
+00:00:43,200 --> 00:00:51,010
+al botón o simplemente creamos un Vidente normal como regla para cada botón anidado dentro de nuestro envolver la clase.
+
+9
+00:00:51,010 --> 00:00:54,430
+Podríamos hacer esto, pero ahora quiero hacerlo DC como
+
+10
+00:00:54,580 --> 00:00:58,200
+Ahora podemos asignar los estilos que queremos.
+
+11
+00:00:58,210 --> 00:01:03,150
+Ahora bien, este debería ser el estilo que teníamos antes de eliminarlos, así que simplemente intentaré reconstruirlo.
+
+12
+00:01:03,280 --> 00:01:05,000
+Teníamos un borde azul, supongo.
+
+13
+00:01:05,260 --> 00:01:08,230
+Agreguemos un relleno de unos 16 píxeles.
+
+14
+00:01:08,500 --> 00:01:13,650
+Agreguemos un color de fondo de verde.
+
+15
+00:01:13,650 --> 00:01:15,490
+Por defecto tal vez.
+
+16
+00:01:15,700 --> 00:01:19,200
+Y configuremos la fuente para que herede.
+
+17
+00:01:19,410 --> 00:01:28,910
+Y ahora, si guardamos esto, deberíamos obtener este botón Stolle aquí porque todavía aplicamos nuestros estilos.
+
+18
+00:01:28,940 --> 00:01:32,030
+Sin embargo, ya no estás en línea.
+
+19
+00:01:32,030 --> 00:01:35,560
+Asegúrese de guardar también la apertura para ver realmente los cambios.
+
+20
+00:01:35,600 --> 00:01:42,580
+Deberíamos conseguir que este estilo ya no esté en línea, pero el botón aquí está estancado porque está anidado debajo
+
+21
+00:01:42,590 --> 00:01:44,510
+de nuestro selector de aplicaciones aquí.
+
+22
+00:01:44,720 --> 00:01:49,200
+Una aplicación es este selector especial que se aplica al div externo.
+
+23
+00:01:49,270 --> 00:01:57,250
+Ahora permítanme simplemente modificar el color y, por supuesto, aún queremos poder establecer el botón en
+
+24
+00:01:57,250 --> 00:02:01,980
+rojo y queremos poder verlo como flotando sobre él.
+
+25
+00:02:02,360 --> 00:02:03,730
+Así que déjame agregar el botón.
+
+26
+00:02:03,860 --> 00:02:05,000
+Flotar.
+
+27
+00:02:05,300 --> 00:02:06,560
+La normalidad es el código s aquí.
+
+28
+00:02:06,560 --> 00:02:15,130
+Nada especial y establece el color de fondo aquí a verde claro y el color a negro.
+
+29
+00:02:15,140 --> 00:02:16,680
+Tal vez.
+
+30
+00:02:16,870 --> 00:02:19,990
+Y ahora agreguemos el estuche rojo.
+
+31
+00:02:20,320 --> 00:02:26,230
+Ahora para eso, simplemente agregaré el botón de la aplicación en rojo.
+
+32
+00:02:26,500 --> 00:02:34,150
+botón que tenga la clase de lectura configurada aquí para leer el color de fondo y ahora también agrega el botón de la aplicación.
+
+33
+00:02:34,450 --> 00:02:39,820
+Así que la normalidad le ha pedido a la regla que cambie el estilo de cualquier
+
+34
+00:02:39,880 --> 00:02:49,470
+Lea sobre pasar el mouse para establecer el color de fondo en Salmen y el color en negro para los botones Hubbard con
+
+35
+00:02:49,470 --> 00:02:50,710
+la clase roja.
+
+36
+00:02:50,730 --> 00:02:55,740
+Ahora todo lo que tenemos que hacer es agregar de manera condicional clase Duret a este botón si lo necesitamos.
+
+37
+00:02:55,740 --> 00:03:04,860
+Así que de vuelta en la aplicación J. S. simplemente tenemos que vincular el nombre de clase con el botón, por
+
+38
+00:03:04,860 --> 00:03:08,770
+lo que lo haremos no es una función de renderización anterior a la instrucción of.
+
+39
+00:03:08,960 --> 00:03:17,380
+Tenemos una clase de botón predeterminada que es nula, digamos, o simplemente una cadena vacía.
+
+40
+00:03:17,480 --> 00:03:29,760
+de esta declaración if, se me asignaron personas ojos que clase Button, igual a las clases leídas, veamos si eso funciona.
+
+41
+00:03:29,770 --> 00:03:30,850
+Luego, dentro
+
+42
+00:03:30,850 --> 00:03:40,080
+Si ahora voy al botón, agrego el nombre de la clase y configuro esto igual a la clase de botón.
+
+43
+00:03:40,270 --> 00:03:41,520
+Ahora una nota importante.
+
+44
+00:03:41,530 --> 00:03:46,990
+Pero la clase siempre debe ser una cadena si asignamos un nombre de clase y un hilo de clase y el final.
+
+45
+00:03:47,080 --> 00:03:55,140
+Solo una cadena creada por D. DO. 's s loader, que nos da acceso a la clase de
+
+46
+00:03:55,230 --> 00:03:59,300
+esta manera pero devuelve una cadena con la C S válida o es una cadena vacía.
+
+47
+00:03:59,350 --> 00:04:01,820
+Si estamos fuera de esta condición si.
+
+48
+00:04:02,180 --> 00:04:06,890
+Ahora vamos a guardar esto, echemos un vistazo a la sobrecarga de vuelo x.
+
+49
+00:04:07,000 --> 00:04:12,610
+Deberíamos agregar que es un puntero y hacer clic en él también funciona con la cláusula de
+
+50
+00:04:12,610 --> 00:04:14,150
+terror que ahora puedes ver.
+
+51
+00:04:14,350 --> 00:04:22,300
+Entonces, todo esto funciona para las clases anidadas, como puede ver, leer como clase, encontrar solo los botones y aún
+
+52
+00:04:22,300 --> 00:04:24,100
+en nuestro componente javascript.
+
+53
+00:04:24,310 --> 00:04:27,580
+Importamos en ese objeto de clases Oberle.
+
+54
+00:04:27,910 --> 00:04:32,360
+Entonces cualquier clase C S S que definimos en DC es la siguiente.
+
+55
+00:04:32,390 --> 00:04:39,880
+Importamos con ese C-s como módulos habilitados para cualquier clase definida aquí incluso si solo se
+
+56
+00:04:39,880 --> 00:04:46,030
+aplican a un subconjunto especial de Lechter están disponibles en el objeto Coloso.
+
+57
+00:04:46,030 --> 00:04:49,720
+Estamos importando desde ese archivo CSSA.
+
+58
+00:04:49,730 --> 00:04:52,910
+Ahora déjenme concluir este botón aquí.
+
+59
+00:04:52,910 --> 00:05:00,830
+Nuevamente agregando un cursor que es un puntero con eso guardamos todo el falso y ahora obtenemos este lindo puntero
+
+60
+00:05:00,830 --> 00:05:01,350
+aquí.
+
+61
+00:05:01,520 --> 00:05:03,660
+Todo funcionando como debería.
+
+62
+00:05:04,100 --> 00:05:06,140
+Veamos a continuación las consultas sobre medios.

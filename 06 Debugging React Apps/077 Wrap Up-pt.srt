@@ -1,0 +1,43 @@
+1
+00:00:00,170 --> 00:00:06,330
+Neste módulo, tivemos que ver como podemos ler reagir, nossa mensagem aqui é que eles podem ser bastante
+
+2
+00:00:06,330 --> 00:00:11,520
+úteis que não devemos ficar chocados se os vejamos e que sempre devemos verificar os
+
+3
+00:00:11,550 --> 00:00:13,810
+números de linha que vemos nas mensagens.
+
+4
+00:00:13,830 --> 00:00:20,610
+Você também aprendeu a depurar erros lógicos sem a ajuda de mapas de origem e as ferramentas de desenvolvimento do Chrome, onde
+
+5
+00:00:20,610 --> 00:00:24,630
+você pode colocar pontos de interrupção e passar por cima do seu código.
+
+6
+00:00:24,720 --> 00:00:26,880
+Você também aprendeu a usar você reage.
+
+7
+00:00:26,880 --> 00:00:34,680
+vai aprender a usar o limite da seta aqui para envolver o código que pode falhar no tempo de execução que você pode prevenir
+
+8
+00:00:34,680 --> 00:00:41,670
+e, em seguida, mostrar uma mensagem de erro personalizada ou alguma página de retorno ou conteúdo don ' Sobre eles, use-os.
+
+9
+00:00:41,700 --> 00:00:46,100
+Def ferramentas para obter informações sobre o estado do seu aplicativo e você
+
+10
+00:00:46,230 --> 00:00:55,020
+Mas com todas essas ferramentas, você deve ter um conjunto de ferramentas ricas para criar aplicativos de reação
+
+11
+00:00:55,290 --> 00:00:57,090
+auturos endurecidos e seguros.

@@ -1,0 +1,287 @@
+1
+00:00:02,270 --> 00:00:05,110
+Yeniden hareket temelleri hakkında daha önce çok şey öğrendik.
+
+2
+00:00:05,120 --> 00:00:10,870
+Son derslerimiz boyunca uygulamalarımız halen ekstra bir stil kullanabilir.
+
+3
+00:00:10,870 --> 00:00:20,490
+Örneğin, bu kişiler bileşenlerinin kartlara benzeyecekleri ve daha çok kapalı nesneler gibi olmasına
+
+4
+00:00:20,490 --> 00:00:23,800
+cesaret ederse güzel olacaklarını söyleyebilirim.
+
+5
+00:00:23,840 --> 00:00:29,330
+Şu an farkları göremiyoruz ya da bu bileşen ile ok bileşenleri arasındaki
+
+6
+00:00:29,330 --> 00:00:30,740
+sınırları gerçekten göremiyoruz.
+
+7
+00:00:31,070 --> 00:00:35,540
+Öylesine şekillendirici bileşenler belli ki çok önemli bir şeydir.
+
+8
+00:00:35,750 --> 00:00:40,700
+Ve şu anda uygulayabileceğimiz iki stil şekli var.
+
+9
+00:00:40,700 --> 00:00:42,290
+Ikinizi de göstereceğim
+
+10
+00:00:42,500 --> 00:00:45,770
+Öncelikle Cs S'nin düştüğü bir kişiyi ekleyelim.
+
+11
+00:00:45,770 --> 00:00:51,950
+Q Şu anki bileşeni ve ben de bu izlemeyi javascript dosyası ile aynı tablonun sadece farklı
+
+12
+00:00:51,950 --> 00:00:53,530
+bir uzantısı ile verdim.
+
+13
+00:00:53,540 --> 00:00:55,850
+Teorik olarak bu yazı tipi adı size kalmıştır.
+
+14
+00:00:56,180 --> 00:01:03,700
+Şimdi, bizi burada yazdığım kod olarak gören önemli bir şey dağılmaya yönelik değildir.
+
+15
+00:01:03,790 --> 00:01:05,900
+J. S. bileşeni globaltir.
+
+16
+00:01:05,890 --> 00:01:07,870
+C s kodu.
+
+17
+00:01:08,000 --> 00:01:12,340
+Böylece tanımlayacağım ve sermayesi P olan kişiyi adlandırdığım sınıf olarak görüyorsunuz.
+
+18
+00:01:12,440 --> 00:01:18,950
+Yine de, bunu küresel olduğu için uygulamanın herhangi bir yerinde ekleyebilirim, ancak bileşen adımı
+
+19
+00:01:19,190 --> 00:01:23,630
+kullanarak tehlikeyi ekarte edip yanlışlıkla başka bir yerde kullanabilirim.
+
+20
+00:01:23,630 --> 00:01:26,990
+Bu yüzden sınıf adını ölümüme atayacağım.
+
+21
+00:01:26,990 --> 00:01:32,280
+Unutmayın sınıf sınıfı ismi Kişi A dize kişidir.
+
+22
+00:01:32,660 --> 00:01:37,820
+Şimdi orada C S S dosyasında şimdi şekillendirme moduna geçebilirim.
+
+23
+00:01:37,820 --> 00:01:46,180
+Belki de yüzde 60 genişliği ve otomatik kenar boşluğu verildiğinde verilebilir.
+
+24
+00:01:46,180 --> 00:01:58,070
+3 piksel kutu gölgesi ve biraz daha koyu gri bir kenarlık verin ve ona bir 16 piksellik dolgu verelim.
+
+25
+00:01:58,160 --> 00:02:04,650
+Ayrıca bir piksel katı, yani açık gri ve 0 2 piksel
+
+26
+00:02:04,650 --> 00:02:14,550
+Belki sonunda, metni, güvenli günlerdeki SEUS dosyası için merkezin ortasına hizalayarak ayarlayalım ve JS takipçisi
+
+27
+00:02:14,550 --> 00:02:16,470
+olan kişiyi kurtaralım.
+
+28
+00:02:16,470 --> 00:02:19,150
+Onu kapanmış olarak atadım.
+
+29
+00:02:19,360 --> 00:02:20,910
+Hiçbir şey olmuyor.
+
+30
+00:02:20,950 --> 00:02:30,380
+Niçin iyi biliyor musunuz, çünkü bu yılın ABD dosyamızda gerçekten henüz sınıfımızdayız ancak varsayılan olarak ve bilmediğiniz
+
+31
+00:02:30,470 --> 00:02:36,970
+bir şey bu, mutlaka sezgisel olmadığı için, ancak varsayılan olarak hiçbir dosyanın
+
+32
+00:02:36,970 --> 00:02:42,430
+projenize dahil edilmediği koda dahil edilmiştir. Biteştirilmiş iş akışı oluşturulur.
+
+33
+00:02:42,680 --> 00:02:47,240
+Onları oyuna eklemek için dosyaları her zaman içeri aktarmanız gerekir.
+
+34
+00:02:47,450 --> 00:02:52,390
+Bu yüzden yakalama dosyamızda kişi bileşeni için yalvarılmış bulunuyoruz.
+
+35
+00:02:52,400 --> 00:02:55,840
+Ayrıca C S S dosyasının dosyasını da buraya aktarıyoruz.
+
+36
+00:02:55,960 --> 00:03:02,630
+Şimdi, böyle bir javascript dosyasına bir C SS dosyası girmek garip gelebilir ama Sindhi'yi ve
+
+37
+00:03:02,630 --> 00:03:09,290
+bu yeniden aktarmalı komut paketi tarafından kullanılan aracı oluşturmak için ıslak Pech sayesinde dolaylı olarak
+
+38
+00:03:09,290 --> 00:03:09,910
+burada kullanıyoruz.
+
+39
+00:03:10,220 --> 00:03:17,510
+Gerçekten iki dosyayı veya böyle bir şeyi birleştiremeyecek olsa da, web kafes sayesinde CSSA'yı
+
+40
+00:03:17,510 --> 00:03:19,180
+javascript içine alabiliriz.
+
+41
+00:03:19,250 --> 00:03:26,240
+Sadece dosyanın C S'sinin farkındadır ve farklı şekilde temel olarak HVM
+
+42
+00:03:26,240 --> 00:03:28,240
+Al dosyasına aktarılacaktır.
+
+43
+00:03:28,460 --> 00:03:30,300
+Yani şahsen J J. S. Ayrıca noktalı eğik çizgi şahsa C S S.'ye içe aktarma da ekleyeceğim.
+
+44
+00:03:30,440 --> 00:03:35,170
+Ve burada dosya uzantısına ihtiyacın var.
+
+45
+00:03:35,270 --> 00:03:37,670
+Sadece javascript dosyaları için atlanabilir.
+
+46
+00:03:37,670 --> 00:03:41,130
+Şimdi bunu ekledikçe WePay'ın farkında oldu.
+
+47
+00:03:41,240 --> 00:03:44,690
+Artık HDMI dosyanıza eklenecektir ve
+
+48
+00:03:44,690 --> 00:03:52,400
+dolayısıyla şimdi geri döndüğünüzde, bileşenlerimiz üzerinde ekstra bir tasarıma sahip olduğumuzu görüyorsunuz.
+
+49
+00:03:52,400 --> 00:03:54,130
+Ayrıca, kodunuzu incelerseniz
+
+50
+00:03:54,200 --> 00:04:01,370
+burada kişi sınıfımız olduğunu ve baş bölümüne kadar ilerleyip geliştirici araçlarında olduğunuzu görebilirsiniz.
+
+51
+00:04:01,370 --> 00:04:04,800
+Görüyorsunuz ki orada H tarzında bulabileceğiniz DS stili metinleri var. E. posta dosyasını oradaki
+
+52
+00:04:05,000 --> 00:04:13,710
+ortak klasörde saklayın.
+
+53
+00:04:13,710 --> 00:04:15,330
+Baş bölümlerinde stil etiketleri yok.
+
+54
+00:04:15,360 --> 00:04:18,180
+Tezahür etmeye devam eden bazı bağlantılar vb.
+
+55
+00:04:18,270 --> 00:04:20,970
+Yani SS dosyalarını bile görmemelisin.
+
+56
+00:04:20,970 --> 00:04:24,030
+Bunun nedeni, stil metninin Pech web tarafından dinamik olarak enjekte edilmesidir.
+
+57
+00:04:24,030 --> 00:04:28,750
+Eklediğiniz ithalatları yönettiği anlamına gelen budur.
+
+58
+00:04:28,760 --> 00:04:32,920
+Ve burada geçen son stil etiketi aslında çantanızı sınıfta tutmalı.
+
+59
+00:04:33,270 --> 00:04:38,000
+Ve burada normal bir küresel hizmetler sınıfı olduğunu görebilirsiniz.
+
+60
+00:04:38,040 --> 00:04:42,340
+Otomatik önek senkronizasyonunun da çok uygun olduğunu
+
+61
+00:04:42,420 --> 00:04:47,730
+görüyorsunuz çünkü bunu yapmak zorunda kalmamız mümkün olmaktadır.
+
+62
+00:04:47,730 --> 00:04:48,890
+C'nin mümkün olan veya
+
+63
+00:04:48,960 --> 00:04:55,650
+gerekli olan kodunu kısa olarak yazabiliriz ve ASP'yi mümkün olduğunca herhangi bir tarayıcıda çalışacak şekilde otomatik olarak ön ek olarak alacaktır.
+
+64
+00:04:55,680 --> 00:04:58,410
+Bu yüzden kurduğumuz tarz budur.
+
+65
+00:04:58,920 --> 00:05:00,550
+Belki burada bir üst ve alt kenar boşluğu ekleyerek biraz daha ince ayar yapalım.
+
+66
+00:05:00,600 --> 00:05:07,300
+Bu yüzden kartları arasında bir miktar ayırım yapılmasını sağlamak için bunu 16 piksele ayarlayalım.
+
+67
+00:05:07,500 --> 00:05:13,930
+Çok daha iyi görünüyor.
+
+68
+00:05:13,980 --> 00:05:15,230
+Ţimdi burada insanlar var.
+
+69
+00:05:15,510 --> 00:05:17,250
+Şimdi de bir düğme
+
+70
+00:05:17,460 --> 00:05:23,940
+tarzı var ve stili farklı kılmasına izin verdim çünkü iki şekillendirme yolu var dedim.
+
+71
+00:05:23,940 --> 00:05:24,910
+Şu anda en azından biliyoruz.
+
+72
+00:05:24,960 --> 00:05:26,580
+&nbsp;

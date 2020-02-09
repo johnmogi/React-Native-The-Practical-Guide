@@ -1,0 +1,307 @@
+1
+00:00:02,320 --> 00:00:06,310
+In the last lectures we had a look at props. Props,
+
+2
+00:00:06,340 --> 00:00:12,950
+simply an object giving us access to all the attributes we pass to our own components.
+
+3
+00:00:13,050 --> 00:00:20,530
+Now sometimes you don't want to get some information from outside but you want to have it inside a component
+
+4
+00:00:20,590 --> 00:00:23,880
+and change it from inside there too.
+
+5
+00:00:24,310 --> 00:00:35,220
+So for example here in our app.js file, let's say we also want to add a button which if we click, it simply
+
+6
+00:00:35,420 --> 00:00:38,850
+switches one of the names we use here.
+
+7
+00:00:38,920 --> 00:00:42,550
+So where we simply put a caption of Switch Name maybe,
+
+8
+00:00:43,150 --> 00:00:47,160
+well we'll come to handling this click event in the next lectures.
+
+9
+00:00:47,320 --> 00:00:55,060
+But first of all we need to define these names here in a non hardcoded way,
+
+10
+00:00:55,060 --> 00:00:57,840
+right now it's hardcoded into our jsx code
+
+11
+00:00:57,850 --> 00:01:04,720
+and this is okay here but if we later want to change it, we have to store it in some variable or something
+
+12
+00:01:04,720 --> 00:01:05,650
+like that.
+
+13
+00:01:06,070 --> 00:01:12,080
+Well this actually is a class and a class has properties,
+
+14
+00:01:12,130 --> 00:01:17,190
+this is not just the case in javascript but in other programming languages too.
+
+15
+00:01:17,350 --> 00:01:22,790
+You can kind of think of a property as a variable of a class,
+
+16
+00:01:22,810 --> 00:01:29,300
+so in normal javascript code you would simply write var something equals some value.
+
+17
+00:01:30,710 --> 00:01:32,650
+This doesn't work in a class,
+
+18
+00:01:32,810 --> 00:01:38,710
+there you can simply write something equals some value,
+
+19
+00:01:38,940 --> 00:01:40,380
+so a bit shorter.
+
+20
+00:01:40,410 --> 00:01:48,030
+but in the end the same you could say. There is one special property you can define in any component which
+
+21
+00:01:48,030 --> 00:01:49,630
+extends component,
+
+22
+00:01:49,770 --> 00:01:52,360
+so you can't do it in person,
+
+23
+00:01:52,380 --> 00:01:56,840
+you can define properties here anyway because that's a normal function,
+
+24
+00:01:56,850 --> 00:02:02,940
+so here you would have to use some constants or some variables. Still what we're about you only works
+
+25
+00:02:03,030 --> 00:02:07,480
+in components which are created by extending component.
+
+26
+00:02:07,740 --> 00:02:17,340
+There we can define a special property name state whereas props are set and passed from outside like
+
+27
+00:02:17,340 --> 00:02:24,900
+name and age into the person component, state is managed from inside a component and state is only
+
+28
+00:02:24,900 --> 00:02:31,700
+available in components which are used by extending component which is imported from react,
+
+29
+00:02:31,710 --> 00:02:35,480
+it's not available in function components.
+
+30
+00:02:35,760 --> 00:02:43,260
+Still you should use function components as often as possible because you should use state with care
+
+31
+00:02:43,680 --> 00:02:49,640
+because having state and all your components and manipulating it from anywhere in your app makes your app
+
+32
+00:02:49,650 --> 00:02:54,580
+quickly unpredictable and hard to manage especially as it grows,
+
+33
+00:02:54,660 --> 00:02:57,060
+of course that doesn't mean you shouldn't use it at all though
+
+34
+00:02:57,120 --> 00:02:59,230
+here it makes perfect sense.
+
+35
+00:02:59,310 --> 00:03:05,050
+We initialize it by assigning a value and this value is a javascript object,
+
+36
+00:03:05,070 --> 00:03:14,160
+again this is a reserved word and we should use it if we want to manage well some component internal
+
+37
+00:03:14,250 --> 00:03:14,690
+data
+
+38
+00:03:14,690 --> 00:03:22,820
+you should say. So now the state could have some persons, this is totally up to you,
+
+39
+00:03:22,830 --> 00:03:28,980
+I simply create a persons property in this javascript object and this will be an array,
+
+40
+00:03:29,160 --> 00:03:36,210
+and you can set up any kind of data you want in this state object. You could set up a name property which
+
+41
+00:03:36,210 --> 00:03:40,940
+is some name, you can really manage whatever you want, here
+
+42
+00:03:40,950 --> 00:03:44,090
+I want to manage an array of persons though.
+
+43
+00:03:44,370 --> 00:03:52,050
+Now this person's array again is an array of javascript objects where each object has a name,
+
+44
+00:03:52,080 --> 00:04:00,720
+maybe Max and an age, maybe 28, a number here, not a string unlike down there where we do pass a string but
+
+45
+00:04:00,720 --> 00:04:03,270
+a number is fine from here.
+
+46
+00:04:03,450 --> 00:04:07,510
+I also want to have another one here, name
+
+47
+00:04:07,530 --> 00:04:11,970
+Manu and age 29 and a third one,
+
+48
+00:04:12,000 --> 00:04:19,130
+you guessed it, for Stephanie which has the age of 26.
+
+49
+00:04:19,240 --> 00:04:21,560
+Now this is my state,
+
+50
+00:04:21,640 --> 00:04:24,860
+we can now access a property like this,
+
+51
+00:04:24,910 --> 00:04:32,110
+and that's not just true for state but for any property in our render method by simply outputting something
+
+52
+00:04:32,110 --> 00:04:41,570
+dynamic with single curly braces as you learned it, and then the this keyword. This refers to the class due
+
+53
+00:04:42,060 --> 00:04:45,360
+to our ES6 syntax we're using,
+
+54
+00:04:45,730 --> 00:04:52,530
+and on our class we have a render method we could call, we shouldn't do that though react does that but
+
+55
+00:04:52,540 --> 00:04:54,550
+we have a state property.
+
+56
+00:04:54,640 --> 00:04:59,200
+And as I said, you can also define your own properties but states is a special one as you will learn over
+
+57
+00:04:59,200 --> 00:05:00,880
+the next lectures.
+
+58
+00:05:00,880 --> 00:05:06,510
+So here we can then access this state and on state, my persons array
+
+59
+00:05:06,610 --> 00:05:12,580
+there may be the first element by using index 0 and then the name.
+
+60
+00:05:12,850 --> 00:05:20,080
+So instead of hardcoding it, I'm now accessing this property in this object here in the persons array
+
+61
+00:05:20,260 --> 00:05:22,520
+on the state property.
+
+62
+00:05:22,540 --> 00:05:29,400
+Now I'll copy this code here and replace my age with it too, there
+
+63
+00:05:29,440 --> 00:05:31,910
+I of course want to access the age property,
+
+64
+00:05:32,930 --> 00:05:34,920
+and I'll replicate this for Manu
+
+65
+00:05:34,950 --> 00:05:37,810
+but here, it's of course the first element,
+
+66
+00:05:37,850 --> 00:05:44,870
+the second element with index one in this array. And for the age, I'll also access element one
+
+67
+00:05:44,900 --> 00:05:51,540
+and of course the age property. And for Stephanie, you probably guessed it, index two
+
+68
+00:05:51,710 --> 00:05:59,870
+and also for the age index two and age property. With that if we save this and we go back to the application
+
+69
+00:06:00,170 --> 00:06:02,240
+we see the button which doesn't do anything
+
+70
+00:06:02,420 --> 00:06:07,570
+and we see the same output as before, this time using a property,
+
+71
+00:06:07,700 --> 00:06:09,650
+the state property though.
+
+72
+00:06:09,650 --> 00:06:12,810
+Now I said state would be a special property,
+
+73
+00:06:12,830 --> 00:06:21,920
+thus far we don't use it in a special way though, we can change this. State can be changed and if it changes
+
+74
+00:06:21,950 --> 00:06:26,510
+and that's the special thing about it and it only works on that state property,
+
+75
+00:06:26,510 --> 00:06:35,880
+if it changes, it will lead react to re-render our dom or to update the dom I should say.
+
+76
+00:06:36,230 --> 00:06:45,380
+So if we changed the name of Max here for example, this will lead to this being re-rendered,
+
+77
+00:06:45,620 --> 00:06:51,660
+and let me prove it to you by showing you how to listen to events like clicking on this button.

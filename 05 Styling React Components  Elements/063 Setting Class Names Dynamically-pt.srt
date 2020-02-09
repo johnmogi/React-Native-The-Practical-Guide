@@ -1,0 +1,367 @@
+1
+00:00:02,140 --> 00:00:08,560
+Na última palestra, você aprende a configurar o Stout de forma dinâmica e então você aprende a usar o javascript
+
+2
+00:00:08,560 --> 00:00:13,080
+para manipular o que quer que você fique cego para essa propriedade de estilo.
+
+3
+00:00:13,450 --> 00:00:19,230
+Agora, o nome da classe, claro, também pode ser definido dinamicamente como aqui para o DNA.
+
+4
+00:00:19,480 --> 00:00:25,720
+Mas também podemos introduzir uma nova classe para ter algo para jogar, então, por exemplo, podemos dizer
+
+5
+00:00:25,870 --> 00:00:28,800
+que queremos mudar algo no nosso código aqui.
+
+6
+00:00:28,930 --> 00:00:39,640
+Digamos que este parágrafo é realmente funcionando, dependendo de se a nossa lista de pessoas tem elementos gratuitos como
+
+7
+00:00:39,640 --> 00:00:43,740
+o fez no início ou no final.
+
+8
+00:00:43,810 --> 00:00:46,290
+Então, talvez queremos colorir o texto em vermelho.
+
+9
+00:00:46,330 --> 00:00:53,440
+Então, vou adicionar uma nova classe que nomeará a normalidade da classe normal da classe S S que a cor
+
+10
+00:00:53,440 --> 00:01:00,730
+vermelha e isso, naturalmente, afetará a cor do texto e talvez até desejemos torná-lo corajoso, então nome ou classe ou crie
+
+11
+00:01:00,730 --> 00:01:02,010
+uma classe chamada parafuso.
+
+12
+00:01:02,010 --> 00:01:07,870
+Depende de você se estamos em um elemento deixado de forma tão corajosa.
+
+13
+00:01:07,990 --> 00:01:09,920
+Eu tenho que nos ver como aulas.
+
+14
+00:01:09,940 --> 00:01:11,850
+Estes estão disponíveis Clovelly.
+
+15
+00:01:11,950 --> 00:01:13,990
+Mas agora não estou usando nenhum.
+
+16
+00:01:14,260 --> 00:01:21,430
+ou 2 ou menos elementos que eu devo dizer girar em Vermelho 1 e último vermelho e negrito.
+
+17
+00:01:21,760 --> 00:01:32,170
+Agora eu quero definir o nome da classe deste parágrafo de forma dinâmica dependendo do comprimento dos elementos na matriz da minha pessoa aqui abaixo
+
+18
+00:01:32,170 --> 00:01:33,020
+de 2
+
+19
+00:01:33,400 --> 00:01:44,140
+Então, para fazer isso, é claro, também preciso ajustar as classes ou o nome da classe que eu configurei neste parágrafo dinamicamente.
+
+20
+00:01:44,230 --> 00:01:50,950
+Então, o que eu vou fazer é criar uma nova variável aqui que todas as classes de nomes e o nome é
+
+21
+00:01:50,950 --> 00:01:51,800
+totalmente para você.
+
+22
+00:01:52,030 --> 00:01:55,850
+Se eu estivesse no final, criaremos uma série de cordas.
+
+23
+00:01:55,870 --> 00:01:58,990
+Esta é uma maneira de fazer isso aqui.
+
+24
+00:01:59,020 --> 00:02:05,340
+Eu vou adicionar vermelho e corajoso e estes são apenas os nomes das classes que eu teria encontrado aqui.
+
+25
+00:02:05,340 --> 00:02:07,660
+Vermelho e corajoso sem o ponto.
+
+26
+00:02:07,810 --> 00:02:09,170
+Basta escolher o último nome.
+
+27
+00:02:09,280 --> 00:02:15,820
+Em seguida, chamarei de exibição aqui e mostrá-los com um espaço vazio.
+
+28
+00:02:15,820 --> 00:02:22,790
+Isso transformará essa matriz de seqüências de caracteres em uma seqüência de caracteres que acabou de ler em negrito.
+
+29
+00:02:22,810 --> 00:02:25,050
+Isto é o que você obtém no final.
+
+30
+00:02:25,050 --> 00:02:30,200
+Este é um C válido como uma lista de classes que podemos atribuir dois nomes de classe.
+
+31
+00:02:30,340 --> 00:02:35,530
+E é claro que eu poderia criá-lo manualmente, mas em breve adicionei dicere dinamicamente, e é por isso
+
+32
+00:02:35,530 --> 00:02:37,670
+que eu quero ter uma solução genérica.
+
+33
+00:02:37,930 --> 00:02:41,210
+Agora posso acessar este parágrafo e adicionar o nome da classe.
+
+34
+00:02:41,380 --> 00:02:45,340
+E, claro, não tenho que ligar isso a uma string como eu faço aqui.
+
+35
+00:02:45,370 --> 00:02:51,640
+Eu também posso ligar isso de forma dinâmica com aparelhos de chamada única para a variável de classe
+
+36
+00:02:51,640 --> 00:02:56,400
+que eu tenho, cujas lembranças são apenas uma string juntada com um espaço vazio.
+
+37
+00:02:56,470 --> 00:03:01,620
+Se eu salvar agora isso e certifique-se de que você também salvou o arquivo SS do Deepsea.
+
+38
+00:03:01,630 --> 00:03:05,100
+Agora vamos voltar ao aplicativo e é vermelho e ousado.
+
+39
+00:03:05,230 --> 00:03:08,670
+Desde o início sem que toquemos pessoas.
+
+40
+00:03:08,740 --> 00:03:10,800
+Isso parece um pouco estranho, mas você sabe o que quero dizer.
+
+41
+00:03:10,810 --> 00:03:15,280
+Então é lido desde o início porque você sempre atribuiu essas classes.
+
+42
+00:03:15,310 --> 00:03:19,290
+Agora, podemos adicionar alguma natureza dinâmica a isso.
+
+43
+00:03:19,330 --> 00:03:24,450
+Nós só queremos fazer isso se for inferior a uma pessoa, caso contrário, deve ser lida.
+
+44
+00:03:24,460 --> 00:03:30,730
+Se for inferior a 2 ou menos e igual, e se tivermos todas as três pessoas, essas classes
+
+45
+00:03:30,850 --> 00:03:32,440
+não devem estar anexadas.
+
+46
+00:03:32,440 --> 00:03:37,600
+Então, deixe-me realmente fazer outra coisa ou remover a declaração de escolha aqui e as subcláusulas para uma
+
+47
+00:03:37,600 --> 00:03:38,200
+matriz vazia.
+
+48
+00:03:38,710 --> 00:03:43,660
+E então, simplesmente adicionarei uma declaração if aqui.
+
+49
+00:03:43,990 --> 00:03:51,930
+E se o comprimento dessa pessoa do estado for menor ou igual a 2.
+
+50
+00:03:51,960 --> 00:03:54,040
+Então, apenas duas ou menos pessoas deixaram.
+
+51
+00:03:54,040 --> 00:04:01,990
+Eu tomarei as aulas variável e realmente deixa apenas a versão ESX 6 da guerra.
+
+52
+00:04:02,000 --> 00:04:05,750
+Mas podemos usar o Konst aqui porque nunca vou atribuir um novo valor.
+
+53
+00:04:06,000 --> 00:04:15,270
+Então, se isso for inferior a dois, chamarei de push o método de javascript normal para empurrar a classe de
+
+54
+00:04:15,340 --> 00:04:16,510
+ret para Dicere.
+
+55
+00:04:16,800 --> 00:04:22,750
+Então, neste momento, as aulas serão lidas assim.
+
+56
+00:04:22,790 --> 00:04:25,680
+Eu também adicionarei um número se for verificado.
+
+57
+00:04:25,880 --> 00:04:32,760
+Eu direi se o comprimento das pessoas do estado é menor ou igual que um.
+
+58
+00:04:32,940 --> 00:04:36,090
+E note que esta não é mais se condição.
+
+59
+00:04:36,090 --> 00:04:41,460
+É apenas mais uma declaração se ou se chega depois da primeira porque eu quero executar ambas.
+
+60
+00:04:41,550 --> 00:04:48,360
+Então, se for ainda menor ou igual a um, ele irá chegar às classes novamente e empurrar outra classe
+
+61
+00:04:48,840 --> 00:04:50,290
+para a classe ousada.
+
+62
+00:04:50,610 --> 00:04:57,590
+Então, neste momento, as aulas são lidas e também são negrito.
+
+63
+00:04:57,620 --> 00:05:04,400
+Agora, se tivermos apenas dois elementos na matriz de pessoas que acabamos de ler e vamos
+
+64
+00:05:04,790 --> 00:05:08,000
+ignorar isso porque esta condição aqui será falsa.
+
+65
+00:05:08,000 --> 00:05:13,450
+Agora, temos uma série de classes que podem ser assim ou como essa ou ser uma matriz vazia.
+
+66
+00:05:13,520 --> 00:05:20,680
+Se tivermos todos os três elementos, então eu quero atribuí-lo aqui e classes como esta não funcionarão mais porque agora é
+
+67
+00:05:20,680 --> 00:05:21,530
+uma matriz.
+
+68
+00:05:21,550 --> 00:05:23,720
+Nós precisamos passar uma string aqui.
+
+69
+00:05:24,100 --> 00:05:28,470
+Bem, eu simplesmente posso chamar de exibição com um espaço vazio no meio.
+
+70
+00:05:28,480 --> 00:05:34,000
+Então, um personagem de espaço em branco na classe deste ano, quando eu atribuí-lo, eu poderia, claro, também fazer
+
+71
+00:05:34,000 --> 00:05:36,520
+isso antes disso e armazená-lo em uma nova variável.
+
+72
+00:05:36,650 --> 00:05:43,780
+simplesmente minha escolha para criar nunca mais nada lido ou lido em negrito com um espaço em branco no meio.
+
+73
+00:05:43,990 --> 00:05:47,050
+Com isso, agora estou atribuindo uma string que é
+
+74
+00:05:47,500 --> 00:05:51,670
+E agora com isso, deixe-me salvar isso e volte se ele agora recarregar.
+
+75
+00:05:51,760 --> 00:05:54,100
+É um texto preto por padrão.
+
+76
+00:05:54,100 --> 00:05:57,030
+Agora vamos falar sobre as pessoas e vamos remover uma.
+
+77
+00:05:57,190 --> 00:05:59,410
+Agora é vermelho, mas não corajoso.
+
+78
+00:05:59,440 --> 00:06:02,750
+Se eu remover o número um agora, ele é chamado de parafuso.
+
+79
+00:06:03,010 --> 00:06:09,370
+E agora, se você encaminhou um, fica assim, obviamente, mostra como você também pode adicioná-lo e
+
+80
+00:06:09,430 --> 00:06:11,540
+atribuir classes de maneira dinâmica.
+
+81
+00:06:11,710 --> 00:06:13,960
+E não posso enfatizar o suficiente.
+
+82
+00:06:14,260 --> 00:06:16,310
+Tudo é apenas javascript.
+
+83
+00:06:16,330 --> 00:06:21,940
+Então você trabalha com sua variedade de aulas aqui como você faz com uma matriz normal porque é uma matriz normal
+
+84
+00:06:22,060 --> 00:06:27,760
+no javascript normal e tudo o que você faz no final aqui é que você precisa ter certeza de que você
+
+85
+00:06:27,760 --> 00:06:31,080
+realmente atribua uma string como fazemos aqui com o método de junção.
+
+86
+00:06:31,450 --> 00:06:39,040
+E é claro que você poderia ter qualquer lógica que você precise para construir uma série de classes ou obter uma string com
+
+87
+00:06:39,040 --> 00:06:44,110
+as classes de C-s por outros meios, sem juntar uma matriz o que você tiver.
+
+88
+00:06:44,170 --> 00:06:47,410
+Talvez tome alguma entrada de usuário que seja uma string por padrão.
+
+89
+00:06:47,410 --> 00:06:53,410
+Você pode atribuir qualquer coisa que seja uma string válida para o nome da classe e então será tratada
+
+90
+00:06:53,440 --> 00:07:00,220
+como uma lista de classes C S S que, esperançosamente, atenderá às classes que você configurou no seu arquivo C S S.
+
+91
+00:07:00,220 --> 00:07:05,760
+Então, com isso, você aprendeu a transformar amygdale atribuir Stults e editá-los e atribuir
+
+92
+00:07:05,770 --> 00:07:07,060
+dinamicamente classes adicionadas.

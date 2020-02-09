@@ -1,0 +1,59 @@
+1
+00:00:02,190 --> 00:00:08,250
+Son derslerde, içeriğin koşullu olarak nasıl çıktılacağını öğreneceğiz ve her
+
+2
+00:00:08,250 --> 00:00:11,310
+şeyin javascript olduğu gerçeğinden yararlanacağız.
+
+3
+00:00:11,310 --> 00:00:20,100
+Şimdi, kişi listemi şimdiye kadar vermek istiyorum, bunu gerçekten dinamik bir şekilde yapmıyoruz.
+
+4
+00:00:20,100 --> 00:00:26,000
+Eyaletimizde birkaç kişi var, bu da tek gerçeklik kaynağı olmalı.
+
+5
+00:00:26,010 --> 00:00:32,090
+Bu, gerçek uygulamalardaki daha büyük uygulamalardaki veri kaynağımız olmalıdır.
+
+6
+00:00:32,100 --> 00:00:37,010
+Bu, Dedo'dan veya bir sunucudan aldığınız verilerle doldurulabilir.
+
+7
+00:00:37,350 --> 00:00:46,260
+Bir dizi kişi var, ancak Rouget'ta X olarak burada koşulumuza dönüyoruz.
+
+8
+00:00:46,260 --> 00:00:53,400
+ve manuel olarak farklı kişiye veri atadık ve dizimiz elbette süper esnek değil.
+
+9
+00:00:54,050 --> 00:00:56,470
+Şimdi üç kişiyi kodladık
+
+10
+00:00:56,700 --> 00:01:04,560
+Yeni bir kişi eklersek veya bir kişiyi kaldırırsak herhangi bir şeyi değiştirirsek, temelde bu durum kesilecek ve tıklama
+
+11
+00:01:04,560 --> 00:01:11,200
+veya sözcük değiştirme işleyicisiyle burada yaptığımız gibi onu güncellerken belirli bir kişiye bile hitap edemiyoruz.
+
+12
+00:01:11,210 --> 00:01:14,400
+Bütün bunlar gerçekten çalışacak şekilde çalışmıyor mu?
+
+13
+00:01:14,520 --> 00:01:22,170
+Öyleyse, temel olarak veri dizilerinin listelerini nasıl dökebileceğimizi ve bunlarla nasıl etkileşim kurabileceğimizi
+
+14
+00:01:22,170 --> 00:01:25,620
+ve dizileri doğru şekilde güncelleyebileceğimizi öğrenelim.
+
+15
+00:01:25,620 --> 00:01:29,500
+Ve devletimiz, sonraki konferanslar boyunca bütün bunlara odaklanacaktır.

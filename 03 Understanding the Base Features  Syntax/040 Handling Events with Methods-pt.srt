@@ -1,0 +1,187 @@
+1
+00:00:02,170 --> 00:00:07,570
+Na última conferência, configuramos o estado e eu lhe disse que seria especial que realmente não vejamos
+
+2
+00:00:07,570 --> 00:00:08,310
+isso ainda.
+
+3
+00:00:08,440 --> 00:00:13,990
+Tudo o que fazemos agora é gerenciar nossos dados lá e depois acessar isso no nosso código GSX.
+
+4
+00:00:14,000 --> 00:00:14,540
+Sim.
+
+5
+00:00:14,560 --> 00:00:15,880
+Arquivo JS.
+
+6
+00:00:16,340 --> 00:00:19,740
+Vamos agora clicar neste botão.
+
+7
+00:00:19,810 --> 00:00:23,430
+Fazemos isso adicionando um clique.
+
+8
+00:00:23,440 --> 00:00:24,660
+Agora isso é importante.
+
+9
+00:00:24,670 --> 00:00:31,930
+No javascript normal e na idade normal, ele seria preciso, seria clicar com um minúsculo c agora no JS
+
+10
+00:00:31,930 --> 00:00:34,170
+X e isso é realmente importante.
+
+11
+00:00:34,300 --> 00:00:37,180
+Está clicando com um C.
+
+12
+00:00:37,420 --> 00:00:45,580
+Ainda não atribuímos como valor o código que deseja executar com um clique e, em seguida,
+
+13
+00:00:45,580 --> 00:00:50,000
+podemos usar chaves flexíveis para executar algum código dinâmico.
+
+14
+00:00:50,020 --> 00:00:58,240
+Agora, normalmente, você deseja executar uma função da sua classe um chamado método.
+
+15
+00:00:58,460 --> 00:01:06,080
+E é uma convenção a dar é um nome como o seguinte manipulador de nome de switch talvez.
+
+16
+00:01:06,100 --> 00:01:12,700
+necessário seguir este padrão, então você pode Conheça isso o que quiser, é claro, é uma boa prática para nomeá-lo assim.
+
+17
+00:01:12,700 --> 00:01:20,110
+Agora, o primeiro nome de troca de parte é totalmente para você, mas você geralmente usa o manipulador aqui para indicar que este é
+
+18
+00:01:20,110 --> 00:01:24,910
+um método que você não está ativamente ligando, mas você está atribuindo como um manipulador
+
+19
+00:01:24,910 --> 00:01:26,260
+de eventos, não é
+
+20
+00:01:27,470 --> 00:01:31,570
+Então, o manipulador do switch name agora deve ser uma função.
+
+21
+00:01:31,970 --> 00:01:38,280
+Agora, se você simplesmente disse igual agora, é exatamente a mesma sintaxe da propriedade do estado.
+
+22
+00:01:38,570 --> 00:01:43,540
+Mas se nós atribuímos uma função como um valor aqui, ele se torna um método basicamente.
+
+23
+00:01:43,700 --> 00:01:49,390
+Ainda é uma propriedade que você pode dizer, mas uma propriedade que contém uma função que pode ser executada aqui.
+
+24
+00:01:49,440 --> 00:01:53,330
+Também use isso como seis funções de seta.
+
+25
+00:01:53,330 --> 00:01:56,070
+Tenha em mente que esta é apenas uma função normal.
+
+26
+00:01:56,070 --> 00:02:01,610
+O fim e aí agora eu quero editar meu estado.
+
+27
+00:02:01,890 --> 00:02:05,950
+Os Furbies antes de fazer isso, vamos ver se podemos chamar isso com sucesso.
+
+28
+00:02:05,950 --> 00:02:13,450
+Vou dizer que o log da Konsole foi coletado para que possamos ver algo na consola uma vez que isso foi clicado.
+
+29
+00:02:13,930 --> 00:02:22,120
+E irei para o meu ouvinte de cliques e entre as braçadeiras Akali. Agora, posso executar este manipulador de nome
+
+30
+00:02:22,750 --> 00:02:25,330
+de chave e não adicionar parênteses.
+
+31
+00:02:25,420 --> 00:02:26,890
+Não faça isso.
+
+32
+00:02:26,890 --> 00:02:33,850
+depois de re-agir, faz isso para o dom porque você executa esta função com os parênteses.
+
+33
+00:02:33,850 --> 00:02:35,070
+Isso executá-lo-ia imediatamente
+
+34
+00:02:35,380 --> 00:02:43,330
+Nós só queremos passar uma referência e nós fazemos isso usando isso e depois nos referindo a
+
+35
+00:02:43,330 --> 00:02:46,340
+essa propriedade que mantém uma função importante.
+
+36
+00:02:46,720 --> 00:02:54,160
+Se você não usa a sintaxe aqui, basicamente, onde você atribui uma função a uma propriedade, você pode
+
+37
+00:02:54,160 --> 00:03:01,030
+dizer que você entrará em erros se tentar usar isso, como você irá fazer em breve.
+
+38
+00:03:01,030 --> 00:03:08,830
+Qual função de manipulador de nomes, porque isso não se referirá à classe em tempo de execução simplesmente para você como
+
+39
+00:03:08,830 --> 00:03:09,090
+fazer.
+
+40
+00:03:09,100 --> 00:03:12,370
+Isso funciona no IIS 5 javascript.
+
+41
+00:03:12,580 --> 00:03:18,170
+Ao usar isso como 6 Sendak, nós contornamos esse problema que se tornará importante mais tarde.
+
+42
+00:03:18,250 --> 00:03:25,480
+Por enquanto importante, não adicione parênteses aqui apenas passe uma referência a esta função com aquela que
+
+43
+00:03:25,480 --> 00:03:26,530
+guarda este arquivo.
+
+44
+00:03:26,710 --> 00:03:33,520
+E não vamos abrir o console nas ferramentas do desenvolvedor e clicar no nome do switch e você deve ver foi clicado
+
+45
+00:03:33,970 --> 00:03:35,750
+em suas ferramentas do desenvolvedor aqui.
+
+46
+00:03:36,840 --> 00:03:38,480
+Agora é legal.
+
+47
+00:03:38,490 --> 00:03:43,230
+Agora vamos mudar o estado, vamos fazer isso na próxima palestra.

@@ -1,0 +1,291 @@
+1
+00:00:02,280 --> 00:00:05,290
+Cobrimos muito e mudamos muitos nomes aqui.
+
+2
+00:00:05,550 --> 00:00:14,260
+Mas e se nós realmente queremos mudar o nome por conta própria, então digamos que, no componente
+
+3
+00:00:14,260 --> 00:00:23,290
+da pessoa, nós também possuímos um elemento numérico, um elemento de entrada normal, que é de tipo texto,
+
+4
+00:00:23,290 --> 00:00:26,380
+e isso deve ser fechado automaticamente.
+
+5
+00:00:26,470 --> 00:00:34,680
+Agora, sempre que escrevemos algo, queremos usar o que escrevemos aqui como um novo nome agora morto.
+
+6
+00:00:34,690 --> 00:00:43,970
+Podemos ouvir um evento especial na mudança, a mudança será ativada sempre que o valor na entrada muda.
+
+7
+00:00:44,650 --> 00:00:53,440
+E aqui não quero executar algum método que eu preciso passar do meu arquivo de busca do aplicativo.
+
+8
+00:00:53,440 --> 00:01:01,810
+e vou deixá-lo como está e, em vez disso, adicione um novo manipulador de todos os nomes e manipuladores de mudança de nome.
+
+9
+00:01:01,810 --> 00:01:04,950
+Nós conseguimos esse manipulador de nome de switch
+
+10
+00:01:05,380 --> 00:01:08,680
+Espero obter um objeto de evento aqui.
+
+11
+00:01:08,680 --> 00:01:14,710
+Nós não usamos isso antes, mas lá, eu ainda quero mudar o estado.
+
+12
+00:01:14,820 --> 00:01:18,880
+Agora é claro, teoricamente, você gostaria de mudar.
+
+13
+00:01:18,880 --> 00:01:24,250
+Isso indica ou o nome da pessoa para a qual escrevemos isso.
+
+14
+00:01:24,250 --> 00:01:31,450
+Isso é algo que faremos mais tarde no curso, uma vez que aprendemos a renderizar corretamente uma lista
+
+15
+00:01:31,480 --> 00:01:32,560
+de elementos dinâmicos.
+
+16
+00:01:32,560 --> 00:01:36,340
+Por enquanto, sempre mudarei o nome de Manue aqui.
+
+17
+00:01:36,580 --> 00:01:42,220
+Então Max vai ficar Max e os homens de Stefani devem manter sua idade de 26 talvez até.
+
+18
+00:01:42,340 --> 00:01:50,410
+Mas cara, você deve mudar seu nome, independentemente de qual instância desse componente pessoa digite novamente, isso é
+
+19
+00:01:50,470 --> 00:01:53,190
+algo que vamos corrigir mais tarde.
+
+20
+00:01:53,230 --> 00:01:56,490
+Então, aqui vou pegar uma curva em U.
+
+21
+00:01:56,620 --> 00:02:03,910
+E, como você pode saber para os eventos de javascript, este evento provavelmente tem um destino, o
+
+22
+00:02:03,910 --> 00:02:11,280
+alvo não faz para um bom nome, porém o alvo deve ser a entrada em que nós digitamos.
+
+23
+00:02:11,470 --> 00:02:17,750
+Então, ele também deve ter uma propriedade de valor que seja de valor para o usuário
+
+24
+00:02:17,770 --> 00:02:23,180
+inserido e, portanto, isso agora faz para um bom valor atualizado para o nome.
+
+25
+00:02:23,320 --> 00:02:27,580
+Portanto, o valor do objetivo do evento é o que eu quero atribuir como um novo nome para o manual.
+
+26
+00:02:27,640 --> 00:02:35,320
+Novamente, por enquanto, não importa em que entrada o componente que eu digitei, o manipulador alterado do nome
+
+27
+00:02:35,320 --> 00:02:36,640
+é meu manipulador.
+
+28
+00:02:36,640 --> 00:02:42,680
+Agora eu preciso passar para um componente para poder acessá-lo a partir daí.
+
+29
+00:02:43,090 --> 00:02:47,830
+E uma vez que eu só posso mudar de menu, só o passarei para a pessoa do menu.
+
+30
+00:02:47,920 --> 00:02:50,730
+Embora possamos passá-lo para qualquer outro, é claro.
+
+31
+00:02:51,010 --> 00:03:01,870
+Aqui vou simplesmente nomear isso mudado e passar este nome manipulador alterado seguindo a mesma lógica pedida para encaminhar um
+
+32
+00:03:01,890 --> 00:03:05,460
+evento de clique dentro da pessoa.
+
+33
+00:03:05,500 --> 00:03:14,500
+Posso agora acessar esta propriedade alterada e simplesmente chamar o prop mudado aqui ou não chamar, não adicione
+
+34
+00:03:14,500 --> 00:03:18,450
+parênteses, mas simplesmente passe a referência para ele.
+
+35
+00:03:18,580 --> 00:03:25,970
+E tenha em mente que isso se refere ao método que declaramos na verdade, sim, esse manipulador alterado pelo nome.
+
+36
+00:03:26,540 --> 00:03:33,410
+O objeto de evento será realmente passado para ele automaticamente por reagir como um javascript normal.
+
+37
+00:03:33,430 --> 00:03:36,370
+Onde você está, por padrão, obter acesso ao objeto de evento.
+
+38
+00:03:37,130 --> 00:03:40,050
+Com isso vamos salvar isso e vamos ver o que acontece.
+
+39
+00:03:40,130 --> 00:03:46,090
+Propp alterado que contém uma referência ao manipulador de mudança de nome e usamos o objeto de evento
+
+40
+00:03:46,100 --> 00:03:53,650
+Stiefel para extrair o alvo que é o elemento de entrada e, em seguida, o valor do destino que é o que inserimos.
+
+41
+00:03:53,690 --> 00:04:01,610
+Temos entradas abaixo de todos os componentes, mas para a maioria deles, nada acontece se eu digito neles para um homem que você conhece
+
+42
+00:04:01,850 --> 00:04:07,820
+que vê com cada batida de teclas, o nome atualiza o manual, o que quer que eu digite,
+
+43
+00:04:07,820 --> 00:04:10,970
+faz isso porque nós encadernamos a mudança para o
+
+44
+00:04:10,970 --> 00:04:16,850
+Isso mostra é, na verdade, duas coisas, como podemos atualizar dinamicamente algo dinamicamente, chamar um evento e
+
+45
+00:04:16,850 --> 00:04:22,430
+usar as coisas que aprendemos antes, como passar por referências de eventos ou referências de métodos,
+
+46
+00:04:22,430 --> 00:04:26,990
+devo dizer, mas tudo nos mostra como podemos lidar com as entradas.
+
+47
+00:04:27,530 --> 00:04:36,820
+Agora, tudo seria bom se verássemos o valor atual do nome na entrada desde o início.
+
+48
+00:04:37,130 --> 00:04:43,760
+de duas vias quando a mudamos, queremos propagar essa mudança para que possamos atualizar o estado.
+
+49
+00:04:43,760 --> 00:04:46,220
+Então, basicamente, queremos configurar a ligação
+
+50
+00:04:46,430 --> 00:04:49,890
+Mas também queremos ver o estado atual desde o início.
+
+51
+00:04:50,390 --> 00:04:57,070
+Para fazer isso, posso definir valor igual ao nome do suporte.
+
+52
+00:04:57,080 --> 00:04:59,210
+Este é o nome, afinal.
+
+53
+00:04:59,210 --> 00:05:02,160
+E agora temos nossa própria configuração de ligação de duas vias.
+
+54
+00:05:02,270 --> 00:05:09,350
+Nós ouvimos as alterações chamar o método de mudança no final que se refere ao manipulador de mudança de
+
+55
+00:05:09,350 --> 00:05:17,030
+nome que perturba as atualizações para o estado e passamos o estado para a pessoa com nome e idade e
+
+56
+00:05:17,030 --> 00:05:20,510
+nós emitimos o nome como o valor da entrada.
+
+57
+00:05:20,510 --> 00:05:24,800
+Isso agora nos permite mostrar esse valor desde o início.
+
+58
+00:05:25,070 --> 00:05:31,190
+E aqui, eu realmente recebo um aviso, este aviso, teoricamente, faz sentido, porque se você
+
+59
+00:05:31,190 --> 00:05:38,910
+fornecer um suporte de valor sem um manipulador de troca on-line, você realmente se depara com problemas, porque você
+
+60
+00:05:38,910 --> 00:05:43,310
+está desaprovando desvalorizado para uma propriedade sem se permitir reagir às mudanças.
+
+61
+00:05:43,310 --> 00:05:45,730
+Portanto, você bloquearia sua entrada.
+
+62
+00:05:45,770 --> 00:05:51,800
+Eu poderia mostrar que se eu remover o onchange Agora você vê que ainda vemos os valores, mas se eu digitar, não
+
+63
+00:05:51,800 --> 00:05:55,550
+há nada que ocorra, não posso digitar porque não estamos manipulando as alterações.
+
+64
+00:05:55,670 --> 00:06:00,920
+Portanto, sempre substituímos o que quer que tentemos digitar com o nome existente.
+
+65
+00:06:01,340 --> 00:06:08,320
+Se eu reintroduzir onchange embora o erro permaneça aqui, o que é simplesmente um alarme falso.
+
+66
+00:06:08,510 --> 00:06:14,180
+Como você pode ver claramente, eu posso digitar porque sou Ahan capaz de lidar com minhas mudanças.
+
+67
+00:06:14,180 --> 00:06:19,880
+Atualize meu estado atualize meus adereços e, portanto, reflita minhas mudanças na entrada aqui também.
+
+68
+00:06:20,060 --> 00:06:25,230
+Então, conseguimos um vínculo de duas vias e podemos mudar esse nome dinamicamente agora.
+
+69
+00:06:25,340 --> 00:06:31,730
+Mais uma vez, tenha em mente apenas o manual porque não configuramos a lógica das entradas de
+
+70
+00:06:31,760 --> 00:06:35,690
+yabber e do tipo Sukant, porque não podemos atualizar esses nomes.
+
+71
+00:06:35,840 --> 00:06:40,630
+E é provavelmente por isso que está reclamando aqui por essas inscrições da Ashbery.
+
+72
+00:06:40,860 --> 00:06:47,600
+isso, embora melhoremos isso, uma vez que temos uma maneira melhor de renderizar dinamicamente uma lista de elementos.
+
+73
+00:06:47,690 --> 00:06:49,410
+Por enquanto, podemos ignorar

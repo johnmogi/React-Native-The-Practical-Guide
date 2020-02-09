@@ -1,0 +1,307 @@
+1
+00:00:02,320 --> 00:00:06,310
+Son derslerde sahne süpürgelerine baktık.
+
+2
+00:00:06,340 --> 00:00:12,950
+Kendi bileşenlerimize aktardığımız tüm niteliklere bize erişim sağlayan basit bir nesne.
+
+3
+00:00:13,050 --> 00:00:20,530
+Artık bazen dışarıdan bilgi almak istemiyorsunuz ancak bir bileşene dahil
+
+4
+00:00:20,590 --> 00:00:23,880
+etmek ve içeriden değiştirmek istiyorsun.
+
+5
+00:00:24,310 --> 00:00:35,220
+Örneğin, burada uygulama js dosyamızda, biz tıklarsak, burada kullandığımız isimlerden birine geçiş yapan bir
+
+6
+00:00:35,420 --> 00:00:38,850
+düğme eklemek istediğimizi varsayalım.
+
+7
+00:00:38,920 --> 00:00:42,550
+Dolayısıyla, anahtar adının başlığını belki de koyduk.
+
+8
+00:00:43,150 --> 00:00:47,160
+Bu tıklama olayını ve bir sonraki dersleri halledeceğiz.
+
+9
+00:00:47,320 --> 00:00:55,060
+Fakat öncelikle burada bu isimleri zor kodlamamış bir şekilde tanımlamamız gerekir.
+
+10
+00:00:55,060 --> 00:00:57,840
+Şu anda GSX kodumuza zor kodlanmış.
+
+11
+00:00:57,850 --> 00:01:04,720
+Ve burada sorun yok, ancak daha sonra değiştirmek istersek, onu bir değişken veya benzeri bir
+
+12
+00:01:04,720 --> 00:01:05,650
+şeyde saklamalısın.
+
+13
+00:01:06,070 --> 00:01:12,080
+Bu aslında bir sınıftır ve bir sınıfın özellikleri vardır.
+
+14
+00:01:12,130 --> 00:01:17,190
+Bu sadece javascript'te bir durum değil, ancak bir saatlik programlama dili de.
+
+15
+00:01:17,350 --> 00:01:22,790
+Bir mülkü bir sınıfın bir değişkeni olarak düşünebilirsin.
+
+16
+00:01:22,810 --> 00:01:29,300
+Yani normal javascript kodunda yalnızca bir şeyin bir miktarla eşit olduğunu yazarsınız.
+
+17
+00:01:30,710 --> 00:01:32,650
+Bu bir sınıfta işe yaramaz.
+
+18
+00:01:32,810 --> 00:01:38,710
+Orada bir şeyler eşit bir değere yazabilirsiniz.
+
+19
+00:01:38,940 --> 00:01:40,380
+Biraz daha kısa.
+
+20
+00:01:40,410 --> 00:01:48,030
+Ancak sonunda aynı şeyi söyleyebiliriz, bileşeni genişleten herhangi bir bileşende bulabileceğiniz bir
+
+21
+00:01:48,030 --> 00:01:49,630
+özellik var demektir.
+
+22
+00:01:49,770 --> 00:01:52,360
+Yani bizzat yapamazsın.
+
+23
+00:01:52,380 --> 00:01:56,840
+Özelliklerini burada bulabilirsiniz, çünkü bu normal bir işlevdir.
+
+24
+00:01:56,850 --> 00:02:02,940
+ancak yine de sadece hakkımızda olan şey, yalnızca bileşeni genişleterek oluşturulan bileşenlerde çalışıyor.
+
+25
+00:02:03,030 --> 00:02:07,480
+Yani burada bazı Constans'ı veya bazı değişkenleri kullanmak zorundasın,
+
+26
+00:02:07,740 --> 00:02:17,340
+Orada özel bir mülkiyet adı devleti tanımlayabiliriz, burada sahne dışından, ad ve yaş gibi dışarıdan
+
+27
+00:02:17,340 --> 00:02:24,900
+bir bileşenin içinden yönetilen kişi bileşen devletine geçirilir ve devlet, uzatılmış bileşen
+
+28
+00:02:24,900 --> 00:02:31,700
+tarafından kullanılan bileşenlerde yalnızca bir yol seviyesidir. tepkiden ithal edildi.
+
+29
+00:02:31,710 --> 00:02:35,480
+Bu, işlev bileşenleri içinde bir yol değil.
+
+30
+00:02:35,760 --> 00:02:43,260
+Yine de, mümkün olduğunca işlev bileşenlerini kullanmalısınız çünkü devleti ve tüm bileşenleri sahibi
+
+31
+00:02:43,680 --> 00:02:49,640
+olmak ve uygulamanızın herhangi bir yerindeki uygulama karıştırıcısında hızla öngörülemeyen
+
+32
+00:02:49,650 --> 00:02:54,580
+ve özellikle büyüdükçe yönetmek zor olduğunda durumu ehemmiyetle kullanmalısınız.
+
+33
+00:02:54,660 --> 00:02:57,060
+Tabii ki bu hiç de kullanmamalısınız anlamına gelmez.
+
+34
+00:02:57,120 --> 00:02:59,230
+Burada mantıklı geliyor.
+
+35
+00:02:59,310 --> 00:03:05,050
+Bir değeri atayarak başlatırız ve bu değer bir javascript nesnesidir.
+
+36
+00:03:05,070 --> 00:03:14,160
+Yine bu ayrılmış bir sözcüktür ve bazı bileşen iç verilerini iyi yönetmek istersek
+
+37
+00:03:14,250 --> 00:03:14,690
+kullanmalısınız.
+
+38
+00:03:14,690 --> 00:03:22,820
+Şimdi de söylemelisin ki devlet bazı insanlara sahip olabilir Bu tamamen size kalmış.
+
+39
+00:03:22,830 --> 00:03:28,980
+Bir kişilerin mülkiyetini basitçe ele alıyorum ve javascript nesnesi yapıyorum ve bu bir dizi olacak.
+
+40
+00:03:29,160 --> 00:03:36,210
+türünü ayarlayabilir, burada istediğiniz her şeyi gerçekten yönetebileceğiniz bir isim özelliği ayarlayabilirsiniz.
+
+41
+00:03:36,210 --> 00:03:40,940
+Ve bu devlet nesnesinde istediğiniz herhangi bir veri
+
+42
+00:03:40,950 --> 00:03:44,090
+Bir dizi kişiyi yönetmek istiyorum.
+
+43
+00:03:44,370 --> 00:03:52,050
+Şimdi bu kişinin dizisi yine her nesnenin bir adı olan bir dizi javascript nesnesi.
+
+44
+00:03:52,080 --> 00:04:00,720
+Belki Max ve H belki bir numara burada bir dize değil, aksine bir dize geçiririz ama burada bir numara
+
+45
+00:04:00,720 --> 00:04:03,270
+gayet iyi bir dize olabilir.
+
+46
+00:04:03,450 --> 00:04:07,510
+Ayrıca adınıza bir numara yapmak istiyorum.
+
+47
+00:04:07,530 --> 00:04:11,970
+Seni ve yaşı 29 yaşında, üçüncüsü.
+
+48
+00:04:12,000 --> 00:04:19,130
+Sizce dört yaşındaki Stefany 26 yaşında olduğunu tahmin ettiniz.
+
+49
+00:04:19,240 --> 00:04:21,560
+Şimdi bu benim devletim.
+
+50
+00:04:21,640 --> 00:04:24,860
+Artık böyle bir mülke erişebiliriz.
+
+51
+00:04:24,910 --> 00:04:32,110
+Ve bu durum için sadece doğru değil, öğrendiğimiz gibi tek çağırma ayraçlarıyla dinamik
+
+52
+00:04:32,110 --> 00:04:41,570
+bir şey çıkartarak Meffert'ımızdaki herhangi bir mülk için de geçerlidir. Daha sonra bu anahtar kelime, kullandığımız Evet
+
+53
+00:04:42,060 --> 00:04:45,360
+altı sözdizimine sınıfı ifade etmektedir.
+
+54
+00:04:45,730 --> 00:04:52,530
+Ve sınıfta, ABD borcunu değiştirdiğimiz halde bunu yapmamamız gerektiğini söyleyebileceğimiz bir render yöntemine sahibiz ancak
+
+55
+00:04:52,540 --> 00:04:54,550
+bir devletin mülkümüz var.
+
+56
+00:04:54,640 --> 00:04:59,200
+de tanımlayabilirsin, ancak bir sonraki derslerde öğreneceğin gibi özellikle bir tanesini ifade eder.
+
+57
+00:04:59,200 --> 00:05:00,880
+Ve dediğim gibi Kendi özelliklerini
+
+58
+00:05:00,880 --> 00:05:06,510
+Böylece burada burada bu duruma erişebiliriz ve tüm bunlar kişinin düzenini devlete açıklar.
+
+59
+00:05:06,610 --> 00:05:12,580
+Dizin 0'ı ve ardından adı kullanarak ilk öğe olabilir.
+
+60
+00:05:12,850 --> 00:05:20,080
+Dolayısıyla sabit kodlama yerine şu anda burada bu mülkte devlet mülkündeki
+
+61
+00:05:20,260 --> 00:05:22,520
+kişinin dizisine erişiyorum.
+
+62
+00:05:22,540 --> 00:05:29,400
+Şimdi bu kodu buraya kopyalayıp yaşımı onunla orda değiştireceğim.
+
+63
+00:05:29,440 --> 00:05:31,910
+Elbette mülkiyetime erişmek istiyorum.
+
+64
+00:05:32,930 --> 00:05:34,920
+Ve bunu adam için tekrarlayacağım.
+
+65
+00:05:34,950 --> 00:05:37,810
+Ancak sizin ilk unsurunuz elbette.
+
+66
+00:05:37,850 --> 00:05:44,870
+Bu dizide birincil olan ve tüm fazla element 1'in yaşı için ikinci unsur.
+
+67
+00:05:44,900 --> 00:05:51,540
+Ve elbette age özelliği ve Stephanie için muhtemelen bu dizini tahmin etmişsinizdir.
+
+68
+00:05:51,710 --> 00:05:59,870
+Ve D. için de. H. indeks de ve bunun bir özelliği varsa bunu kaydedersek ve
+
+69
+00:06:00,170 --> 00:06:02,240
+uygulamaya dönersek, hiçbir şey yapmayan düğmeyi görürüz.
+
+70
+00:06:02,420 --> 00:06:07,570
+Ve bir mülk kullanarak bu saatten önce aynı çıktıyı görüyoruz.
+
+71
+00:06:07,700 --> 00:06:09,650
+Devlet mülkiyet olsa.
+
+72
+00:06:09,650 --> 00:06:12,810
+Şimdi devlet özel bir mülk olacağını söyledim.
+
+73
+00:06:12,830 --> 00:06:21,920
+Şimdiye kadar bunu özel bir şekilde kullanmamıza rağmen biz değiştirebiliriz bu durumu değiştirebilir ve değiştirebiliriz.
+
+74
+00:06:21,950 --> 00:06:26,510
+Ve bu konuda özel bir şey bu sadece devlet malında işe yarıyor.
+
+75
+00:06:26,510 --> 00:06:35,880
+Değişiklik yaparsa, yurdumuzun yeniden oluşturulması ya da söylemem gereken yurt güncellemesi tepki verecektir.
+
+76
+00:06:36,230 --> 00:06:45,380
+Örneğin, Max'in adını değiştirdiysek, bu, bunun, işlenip okunmasına yol açacaktır.
+
+77
+00:06:45,620 --> 00:06:51,660
+Bu düğmeyi tıklamak gibi olayları nasıl dinleyeceğinizi size gösterecek şekilde kanıtlayayım.

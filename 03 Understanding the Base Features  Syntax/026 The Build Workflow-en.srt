@@ -1,0 +1,407 @@
+1
+00:00:02,610 --> 00:00:07,170
+So we want to set up a local react project. With local,
+
+2
+00:00:07,170 --> 00:00:13,430
+I mean we don't use codepen but instead we will have a project on our machine where we can work in
+
+3
+00:00:13,440 --> 00:00:15,600
+with our own IDE or editor.
+
+4
+00:00:15,600 --> 00:00:18,010
+This of course is the way we want to work with react,
+
+5
+00:00:18,030 --> 00:00:19,810
+we want to have it on our machine,
+
+6
+00:00:19,830 --> 00:00:21,890
+we have more features available there,
+
+7
+00:00:21,930 --> 00:00:27,840
+it's more convenient than using some web editor and codepen which we used before or JSBin which
+
+8
+00:00:27,840 --> 00:00:33,960
+we used in the optional second module are really more playgrounds than real work environments for real
+
+9
+00:00:33,960 --> 00:00:34,710
+projects.
+
+10
+00:00:34,860 --> 00:00:36,990
+So we will set up a local project,
+
+11
+00:00:37,140 --> 00:00:41,330
+and react is actually more than just importing the two files.
+
+12
+00:00:41,350 --> 00:00:43,050
+we imported in codepen.
+
+13
+00:00:43,200 --> 00:00:47,020
+We need a more elaborate workflow for real projects
+
+14
+00:00:47,130 --> 00:00:51,380
+and this is recommended for both single page and multi-page applications.
+
+15
+00:00:51,390 --> 00:00:57,300
+The question of course is why do we need a more complex workflow and how do we then achieve it?
+
+16
+00:00:57,300 --> 00:01:05,270
+Let me start with the why, when building a real app we want to actually optimize our code.
+
+17
+00:01:05,280 --> 00:01:11,490
+We didn't care about this in the demo project in the first course module on codepen, but for a big react
+
+18
+00:01:11,490 --> 00:01:19,980
+application, we want to ship code that is as small as possible and as optimized as possible, obviously
+
+19
+00:01:20,050 --> 00:01:23,400
+because that increases the performance of our app.
+
+20
+00:01:23,400 --> 00:01:25,390
+Additionally and that is super important,
+
+21
+00:01:25,470 --> 00:01:28,720
+we want to use these next generation javascript features
+
+22
+00:01:28,770 --> 00:01:32,520
+I taught you about in the last optional module.
+
+23
+00:01:32,610 --> 00:01:37,400
+Now we want to use that because it makes our life as a developer much easier,
+
+24
+00:01:37,650 --> 00:01:43,350
+and it's the de-facto standard for react that's to use all these next gen features because the code
+
+25
+00:01:43,350 --> 00:01:45,970
+is leaner, easier to read, faster,
+
+26
+00:01:45,990 --> 00:01:48,980
+less error prone and many other reasons.
+
+27
+00:01:49,020 --> 00:01:51,480
+So you should really use these features,
+
+28
+00:01:51,480 --> 00:01:54,230
+it's not just something nice, optional,
+
+29
+00:01:54,330 --> 00:01:56,550
+I strongly recommend using these features,
+
+30
+00:01:56,630 --> 00:02:01,560
+it is considered the best practice and it is what I teach you in this course because obviously I want
+
+31
+00:02:01,560 --> 00:02:03,170
+to teach you best practices.
+
+32
+00:02:03,510 --> 00:02:09,060
+So we want to use next generation javascript features to have an easier time to write less error prone
+
+33
+00:02:09,060 --> 00:02:09,910
+code
+
+34
+00:02:10,320 --> 00:02:16,100
+and with all of that we need a workflow that supports these features, even on codepen
+
+35
+00:02:16,140 --> 00:02:22,770
+we implicitly did this. Remember that preprocessor dropdown where we switched to Babel? That behind the
+
+36
+00:02:22,770 --> 00:02:31,710
+scenes unlocked a couple of build tools that would parse our code and support JSX, this HTML in javascript
+
+37
+00:02:31,710 --> 00:02:33,140
+syntax, for example.
+
+38
+00:02:33,300 --> 00:02:35,670
+So we want to use these next gen features,
+
+39
+00:02:35,760 --> 00:02:43,020
+essentially we want to be able to write ES6 or above code and still ship code in the end that runs on
+
+40
+00:02:43,020 --> 00:02:49,710
+as many browsers as possible, and not that many browsers support all these next gen features.
+
+41
+00:02:49,710 --> 00:02:54,590
+That is why we need a build workflow that actually compiles these features.
+
+42
+00:02:54,720 --> 00:02:57,140
+Finally in the end, we want to be more productive,
+
+43
+00:02:57,180 --> 00:03:02,850
+these includes next generation javascript features which often allow us to write more condensed code
+
+44
+00:03:03,180 --> 00:03:06,880
+but it also includes things like CSS auto-prefixing.
+
+45
+00:03:06,960 --> 00:03:13,410
+You might know that CSS prefixes are a thing to achieve the broadest possible browser support for
+
+46
+00:03:13,410 --> 00:03:14,850
+CSS features.
+
+47
+00:03:15,090 --> 00:03:17,860
+Now manually adding these prefixes is quite annoying,
+
+48
+00:03:17,940 --> 00:03:19,990
+so automatically adding them is nice.
+
+49
+00:03:20,040 --> 00:03:21,560
+Or consider linting,
+
+50
+00:03:21,570 --> 00:03:28,740
+so a tool which actually warns you if you are writing sub-optimal code, that would be nice to have too,
+
+51
+00:03:28,800 --> 00:03:34,990
+not strictly required but a nice feature and all these things should be part of a build workflow.
+
+52
+00:03:35,100 --> 00:03:41,370
+Now to implement them there, we need a couple of tools that actually let them run over our code to either
+
+53
+00:03:41,370 --> 00:03:49,020
+warn us in the case of linting or to compile the code to code that runs on as many browsers as possible
+
+54
+00:03:49,170 --> 00:03:57,040
+whilst we as a developer are writing very modern code that would on its own not run on that many browsers.
+
+55
+00:03:57,420 --> 00:04:04,230
+So that's the why, a couple of reasons why writing this kind of code is desirable and why we need a more
+
+56
+00:04:04,230 --> 00:04:10,350
+complex build workflow that actually allows us to write this code that actually optimizes the code for us,
+
+57
+00:04:11,010 --> 00:04:13,570
+and for that, the how of course is relevant.
+
+58
+00:04:13,800 --> 00:04:16,210
+How do we achieve such a workflow?
+
+59
+00:04:16,230 --> 00:04:19,110
+We first of all need a dependency management tool,
+
+60
+00:04:19,140 --> 00:04:25,310
+dependencies are simply third party libraries, third party javascript packages. React for example is a
+
+61
+00:04:25,330 --> 00:04:31,640
+dependency, react dom is a dependency and also all the built tools we will need in the end
+
+62
+00:04:31,710 --> 00:04:32,930
+are dependencies.
+
+63
+00:04:33,120 --> 00:04:38,980
+So the compiler for next gen javascript to current gen javascript, that is a dependency.
+
+64
+00:04:39,150 --> 00:04:40,860
+And we will use npm here,
+
+65
+00:04:40,980 --> 00:04:48,060
+yarn would be another tool you could use, but we will use npm node's package manager, a tool which just
+
+66
+00:04:48,390 --> 00:04:54,130
+allows us to manage packages and which is just a defacto standard for managing dependencies
+
+67
+00:04:54,240 --> 00:04:57,030
+also on front end projects.
+
+68
+00:04:57,030 --> 00:05:04,960
+Besides that dependency management tool, we need a bundler because we want to write modular code and
+
+69
+00:05:04,960 --> 00:05:10,450
+split it up over multiple files so that each file has a clear task, a clear focus and therefore is
+
+70
+00:05:10,480 --> 00:05:12,540
+easier for us to maintain and manage.
+
+71
+00:05:12,850 --> 00:05:19,810
+But then, we want to make sure that all this code gets bundled into a couple of files in the end when
+
+72
+00:05:19,810 --> 00:05:26,680
+we ship it because browsers don't even support split up files, older browsers at least don't do,
+
+73
+00:05:26,980 --> 00:05:33,010
+and it might also even if they did support it, not be that optimal to make thousands of requests to all these
+
+74
+00:05:33,010 --> 00:05:35,020
+tiny focused files.
+
+75
+00:05:35,170 --> 00:05:40,120
+So we want to have that bundler and we will use webpack which is the defacto standard for bundling these
+
+76
+00:05:40,120 --> 00:05:40,720
+days.
+
+77
+00:05:40,720 --> 00:05:44,250
+The cool thing about webpack is it doesn't just bundle files,
+
+78
+00:05:44,320 --> 00:05:50,140
+it also allows us to apply a couple of other build steps before it does this bundling,
+
+79
+00:05:50,140 --> 00:05:57,370
+for example, the mentioned compilation of next gen javascript, that requires another tool, Babel.
+
+80
+00:05:57,400 --> 00:06:04,420
+We need a compiler that does this javascript compilation, which means translation from modern features
+
+81
+00:06:04,690 --> 00:06:12,310
+to work arounds that also work on older browsers and we will use Babel plus presets which can be hooked
+
+82
+00:06:12,310 --> 00:06:19,100
+into the webpack configuration so that they are part of this bundling and optimization process.
+
+83
+00:06:19,180 --> 00:06:25,900
+And finally in the end, we want to use a development server to test our app locally on our machine, development
+
+84
+00:06:25,900 --> 00:06:32,590
+server is a web server but one running on our machine. We could open a HTML file by double clicking
+
+85
+00:06:32,590 --> 00:06:39,370
+on it but this would use the file protocol and would not correctly emulate the app running as it runs
+
+86
+00:06:39,460 --> 00:06:40,570
+on a web server.
+
+87
+00:06:40,780 --> 00:06:45,300
+So we need a web server and we can of course run one on our local machine.
+
+88
+00:06:45,460 --> 00:06:49,760
+The server is then only accessible by us but that's all we need as a developer,
+
+89
+00:06:49,870 --> 00:06:55,020
+and there, we can really see the app run as it will run in the end on a real server.
+
+90
+00:06:55,060 --> 00:06:59,570
+We need all these things and it sounds like that's super complex to set up,
+
+91
+00:06:59,590 --> 00:07:07,000
+the good thing is it's not. I will present you a tool that will create a project supporting all these
+
+92
+00:07:07,000 --> 00:07:12,490
+things out of the box with zero configuration in the next lectures.
+
+93
+00:07:12,490 --> 00:07:18,010
+We will install this tool together and it is a tool created by the react team and community
+
+94
+00:07:18,170 --> 00:07:24,380
+and the officially recommended way of creating new react apps, because that's the general theme of this course,
+
+95
+00:07:24,550 --> 00:07:32,000
+I will teach you things in the best practice and recommended way, so all of the set up is quite easy.
+
+96
+00:07:32,080 --> 00:07:38,170
+And as a side note, if you still want to dive into how this works behind the scenes and you want to set
+
+97
+00:07:38,170 --> 00:07:39,610
+this up from scratch,
+
+98
+00:07:39,610 --> 00:07:46,030
+I also got a module for that towards the end of the course where you will build a react app, a react project
+
+99
+00:07:46,180 --> 00:07:47,560
+from scratch.
+
+100
+00:07:47,560 --> 00:07:50,080
+Now with that, you know what we need and how,
+
+101
+00:07:50,080 --> 00:07:55,990
+now let's dive into that tool I mentioned and let's learn how we actually get started with a new react
+
+102
+00:07:55,990 --> 00:07:58,550
+project supporting all these features.

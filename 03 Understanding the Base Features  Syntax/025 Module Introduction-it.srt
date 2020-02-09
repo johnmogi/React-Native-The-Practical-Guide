@@ -1,0 +1,27 @@
+1
+00:00:02,360 --> 00:00:08,030
+Ora e abbiamo dato un'occhiata a quale reattore e perché potremmo volerlo usare così come abbiamo fatto
+
+2
+00:00:08,060 --> 00:00:09,520
+la nostra prima reazione.
+
+3
+00:00:09,770 --> 00:00:15,280
+Facciamo un tuffo in tutti i concetti fondamentali di reazione e nella sintassi di base di reazione.
+
+4
+00:00:15,440 --> 00:00:20,180
+E questo modulo darà un'occhiata a ciò che serve per costruire una vera app di re-act.
+
+5
+00:00:20,270 --> 00:00:25,690
+E con quello naturalmente intendo anche localmente sulla nostra macchina e non sulla penna del codice.
+
+6
+00:00:26,000 --> 00:00:30,000
+E imparerai quali funzionalità di base riattivi l'offerta e come le utilizzi.
+
+7
+00:00:30,080 --> 00:00:36,990
+Entriamo subito in questo e impariamo come impostiamo un progetto di reazione locale sulla nostra macchina.

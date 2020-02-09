@@ -1,0 +1,243 @@
+1
+00:00:02,250 --> 00:00:08,530
+Son derste bir içeriği dinamik olarak koşullu olarak nasıl işleyeceğimizi öğreneceğiz, burada
+
+2
+00:00:08,550 --> 00:00:14,520
+her şeyin javascript olduğunu ve bu genellikle tepki mantrasını kullandığımızı söyleyip
+
+3
+00:00:14,580 --> 00:00:16,240
+ölüme kadar sürecek.
+
+4
+00:00:16,320 --> 00:00:18,160
+Her şey javascript.
+
+5
+00:00:18,180 --> 00:00:24,600
+Ayrıca, burada kullandığımız gibi her ifadeyi çevirmenin mutlaka optimal olduğu anlamına gelmez, burada da mükemmel
+
+6
+00:00:24,600 --> 00:00:25,700
+bir sonuç var.
+
+7
+00:00:25,710 --> 00:00:33,930
+Ancak, başvurumuz büyüdükçe ve koşulları yuvalarlayabildiğimiz için hangi ifadenin ne için sorumlu olduğunu
+
+8
+00:00:33,930 --> 00:00:36,330
+takip etmek zor olabilir.
+
+9
+00:00:36,360 --> 00:00:39,250
+Ve onları GSX kodumuza yerleştirmek için.
+
+10
+00:00:39,750 --> 00:00:43,830
+Bu nedenle, size bu dersde göstermek istediğim daha temiz bir çözüm var.
+
+11
+00:00:43,830 --> 00:00:48,290
+Kaldırmamı sağlarım brazened üçlü ifade burada.
+
+12
+00:00:48,390 --> 00:00:53,480
+O halde şu an için tüm insanlar her zaman yeniden yaratılıyor.
+
+13
+00:00:53,590 --> 00:00:59,640
+Afedersiniz, yalnızca ölüme değil, ifade parçalarını kaldırmaya özen gösterin.
+
+14
+00:00:59,790 --> 00:01:04,270
+Bu yüzden şu anda başlangıç ​​noktasına geri döndük, şu anda bunlardan hiçbirini konuşamıyoruz.
+
+15
+00:01:04,350 --> 00:01:11,390
+Şimdi unutmayın ki herşey javascript ve sonunda burada J ile yapacağımız şey X, sadece öldü.
+
+16
+00:01:11,390 --> 00:01:16,790
+Dönüş yönteminde return deyimi ile döndürüyoruz.
+
+17
+00:01:16,800 --> 00:01:23,310
+Şimdi aklınızda bulundurmanız gereken önemli bir nokta da, re-act ekranı güncelleştirmesi gerektiğini kararlaştırdığında
+
+18
+00:01:23,310 --> 00:01:31,330
+ekrana bir şey oluşturduğunda, Methot'un işlediği ekranda sadece bir dönüş ifadesi değil, burada her şey için bir
+
+19
+00:01:31,390 --> 00:01:32,820
+dönüş ifadesi değil.
+
+20
+00:01:33,030 --> 00:01:41,640
+Böylece, render yöntemi içindeki her şey, tepki re bileşeni oluşturduğunda yürütülür ve bu nedenle
+
+21
+00:01:42,060 --> 00:01:43,790
+bu yöntemden faydalanabiliriz.
+
+22
+00:01:43,860 --> 00:01:47,720
+Bir şey döndürmeden önce biraz kod ekleyebiliriz.
+
+23
+00:01:47,730 --> 00:01:52,400
+Burada, NULL olarak ayarlanacak olan kişiler adında bir değişken ekleyeceğim.
+
+24
+00:01:52,470 --> 00:01:54,880
+Şimdi bu varsayılan olmalıdır.
+
+25
+00:01:54,900 --> 00:01:57,650
+Beğendiğin herhangi bir isim gibi bir hediye verebilirdin.
+
+26
+00:01:57,720 --> 00:02:00,060
+Sonra normal bir IF deyimi ekleyeceğim.
+
+27
+00:02:00,120 --> 00:02:03,150
+Bunu ben yapabilirim çünkü J'nin içinde X değilim. Normal javascript kodum içerisindeyim ve şimdi devlet şovları olup olmadığını kontrol etmek istiyorum.
+
+28
+00:02:03,180 --> 00:02:10,500
+Unutmayın ki şov kişileri bir Boolean'dır Dolayısıyla bu doğru ya da yanlış olur.
+
+29
+00:02:10,500 --> 00:02:14,740
+Bunu mutlaka Doğru veya Yalancı ile karşılaştırmamıza gerek yoktur.
+
+30
+00:02:14,760 --> 00:02:17,930
+Bunu atlayabiliriz, şimdi kontrol etmek zorundayız ve
+
+31
+00:02:17,940 --> 00:02:26,460
+eğer bu doğruysa, kişisel değişkenimizi bazı j'ye X kodu olarak ayarlamak ve her zaman aklınızda tutmak istiyorum.
+
+32
+00:02:26,790 --> 00:02:29,850
+GSX'in derlediği sonuca ayarlayabilirim.
+
+33
+00:02:29,910 --> 00:02:36,150
+Ayrıca sadece onu yeniden yaratma eylemi unsuru
+
+34
+00:02:36,140 --> 00:02:37,050
+Şimdi kodu buraya saracağım.
+
+35
+00:02:37,290 --> 00:02:39,390
+Benimkilerim.
+
+36
+00:02:39,420 --> 00:02:40,860
+İçindeki kişiyi orada indirip, buraya ekleyeceğim.
+
+37
+00:02:41,190 --> 00:02:48,300
+Şimdi yaptığım şey şudur:
+
+38
+00:02:48,300 --> 00:02:50,310
+Varsayılan olarak insanlar.
+
+39
+00:02:50,430 --> 00:02:51,450
+Bu değişken boş.
+
+40
+00:02:51,450 --> 00:02:52,970
+GSX kodumda çıktı alabilirim.
+
+41
+00:02:53,160 --> 00:02:59,800
+Ancak eğer bu gösteri kişisi gerçekte bu GSX kodunu tutan gerçek bir kişiyse ve o kişinin değişkenini alıp
+
+42
+00:02:59,800 --> 00:03:05,820
+Sonunda dönerim, eğer tekli arama parantezi yaparsam ben burada varsayılan
+
+43
+00:03:05,820 --> 00:03:14,400
+olarak Sieber olan kişinin değişkenine atıfta bulunan kişilere atıfta bulunabilir veya Şahısları gösterdikleri doğru kişi
+
+44
+00:03:14,610 --> 00:03:22,230
+olur ve reak bu sayfayı tekrar çalıştırması gerekip gerekmeyeceğini kontrol ettiğinde soğumasını sağlayabilir.
+
+45
+00:03:22,320 --> 00:03:29,010
+Bu bileşen, önceden oluşturulmuş her gerçekleştiğinde söylemeliyim ki, sahip olduğumuz en son
+
+46
+00:03:29,030 --> 00:03:35,300
+durumu göz önüne alıp, hiçbir şeyi veya insanlara rastlamayacağımıza emin olun
+
+47
+00:03:35,310 --> 00:03:42,090
+çünkü bir güncellemeyi tetikleyen iki şeyden birinin bir devlet olduğunu unutmayın değişiklik.
+
+48
+00:03:42,120 --> 00:03:43,430
+Şimdi bu dosyayı kaydetme ve uygulamaya geri dönmeme izin ver.
+
+49
+00:03:43,500 --> 00:03:49,560
+Orada con'a gidiyoruz. Hatayı görmüyoruz.
+
+50
+00:03:49,570 --> 00:03:53,040
+Sayfa 2 ile ilgili olarak en son sürümü kullandığımızı açıkça görüyorum.
+
+51
+00:03:53,280 --> 00:03:57,410
+Ve şimdi, geçiş yapanları tıklamama izin verin ve aynı davranışı görmeden önce isteyin.
+
+52
+00:03:57,660 --> 00:04:03,410
+Bu değişimi okuyabiliriz, ancak şimdi bu daha şık bir şekilde, GSX'den bu
+
+53
+00:04:03,460 --> 00:04:10,080
+kontrol dışkurumunu kullanıyoruz; bu, şartlı olarak geri dönmeden önce atadığımız bir değişkene dönüyor.
+
+54
+00:04:10,440 --> 00:04:16,840
+Hâlâ render işlevindeyim.
+
+55
+00:04:16,920 --> 00:04:19,590
+Ama bunu babamla iade etmeden önce D tutuyoruz J. XP dönüşü ve dolayısıyla bu
+
+56
+00:04:19,600 --> 00:04:27,560
+bileşen için temel şablonumuzdur.
+
+57
+00:04:27,560 --> 00:04:28,050
+Onu temiz tutacağımızı söyleyebiliriz ve burada yalnızca bu küçük referansa sahip olduğumuzdan emin olalım.
+
+58
+00:04:28,050 --> 00:04:34,820
+İçinde bulunan ya biten ya da hiçbir şeye ya da tüm kişilere ait olanlar.
+
+59
+00:04:34,830 --> 00:04:40,410
+Aslında koşullu içeriğin çıktısının tercih edilen
+
+60
+00:04:40,520 --> 00:04:46,470
+yolu budur ve bunu kullanmam öneririz.
+
+61
+00:04:46,470 --> 00:04:46,980
+&nbsp;

@@ -1,0 +1,43 @@
+1
+00:00:02,430 --> 00:00:10,650
+Söylem modülüne hoş geldiniz, tepki vermeyi çok şey öğrendik ve tekrar uygulama uygulamamızda da
+
+2
+00:00:10,740 --> 00:00:12,790
+bazı hatalar gördük.
+
+3
+00:00:12,880 --> 00:00:21,900
+Şimdi bir programcının ne kadar iyi olursa olsun hatalarınıza hiç hata, mesaj veya çoğu zaman
+
+4
+00:00:21,900 --> 00:00:22,680
+vurmayacaksınız.
+
+5
+00:00:22,680 --> 00:00:25,390
+Bu mantıksal hatadan daha kötüydü.
+
+6
+00:00:25,470 --> 00:00:32,460
+Şimdi bu el kitabında tekrar eyleme uygulamanızın nasıl hata ayıklayabileceğini göstereceğim ve yeniden eyleme
+
+7
+00:00:32,520 --> 00:00:35,340
+geçme hata iletilerini nasıl okuyup anlayacaksınız.
+
+8
+00:00:35,400 --> 00:00:41,940
+ve faydalı olduğundan ve daha sonra hatasız olan yeniden-eyleme uygulaması nasıl oluşturabileceğinizden.
+
+9
+00:00:41,940 --> 00:00:44,270
+Birçoğu aslında oldukça iyi
+
+10
+00:00:44,700 --> 00:00:50,940
+Buna dalalım ve hataları anlamak ve işlemek için kullanımınıza sunduğunuz
+
+11
+00:00:50,940 --> 00:00:52,660
+çeşitli teknikleri öğrenelim.

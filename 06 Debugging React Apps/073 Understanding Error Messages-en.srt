@@ -1,0 +1,139 @@
+1
+00:00:02,160 --> 00:00:09,590
+So let's dive into error messages in react application. In the project you worked on thus far, in
+
+2
+00:00:09,590 --> 00:00:20,480
+the nameChangedHandler, I'll add an error. In the code there where we assigned person, the updated person
+
+3
+00:00:20,480 --> 00:00:21,220
+here,
+
+4
+00:00:21,590 --> 00:00:28,300
+we reach out to event target value to get the value the user entered. Here where I assigned a value,
+
+5
+00:00:28,370 --> 00:00:35,900
+let's say we're not accessing event target which is correct but event input which is incorrect.
+
+6
+00:00:35,900 --> 00:00:37,920
+Well let's say we made this mistake,
+
+7
+00:00:38,360 --> 00:00:42,300
+now if you go back to the application on the first look it seems to work,
+
+8
+00:00:42,530 --> 00:00:48,410
+we toggle a person, it still works but if I start typing we actually get an error,
+
+9
+00:00:48,620 --> 00:00:53,840
+and in our development workflow, we even get a nice display of the error here in the middle.
+
+10
+00:00:53,840 --> 00:00:56,400
+Now let's focus on the error message on the right,
+
+11
+00:00:56,450 --> 00:00:59,900
+always scroll up all the way to the top to see your error message
+
+12
+00:00:59,900 --> 00:01:05,260
+and there you see cannot read property value of undefined.
+
+13
+00:01:05,330 --> 00:01:10,280
+You also get a hint at where this occurred in nameChangedHandler
+
+14
+00:01:10,400 --> 00:01:11,610
+app.js
+
+15
+00:01:11,690 --> 00:01:16,200
+line 27, and it's displayed even nicer here in the middle,
+
+16
+00:01:16,280 --> 00:01:19,880
+you get it highlighted event input value.
+
+17
+00:01:19,880 --> 00:01:27,080
+So this line seems to be incorrect and there is no value property on undefined, now that simply means
+
+18
+00:01:27,500 --> 00:01:29,510
+the part prior to value,
+
+19
+00:01:29,630 --> 00:01:36,180
+so this part here, is undefined which is the case because there is no input property on event.
+
+20
+00:01:36,200 --> 00:01:39,470
+Now you still need to figure out the target is correct on your own
+
+21
+00:01:39,500 --> 00:01:45,110
+for example by looking into the event documentation that's the you can look into the normal html
+
+22
+00:01:45,320 --> 00:01:47,080
+input event documentation
+
+23
+00:01:47,540 --> 00:01:51,590
+but you get a clear clue about what went wrong and where.
+
+24
+00:01:51,740 --> 00:02:00,440
+Now sometimes error messages are less helpful than this one is, even if the error message itself is cryptic.
+
+25
+00:02:00,590 --> 00:02:07,130
+Most of the time you should get a helpful line number which allows you to go back into your code and
+
+26
+00:02:07,160 --> 00:02:10,400
+try to find out what's wrong about this line,
+
+27
+00:02:10,430 --> 00:02:14,980
+this should be helpful and should allow you to fix the value.
+
+28
+00:02:14,990 --> 00:02:19,570
+This is how you react on react error messages,
+
+29
+00:02:19,670 --> 00:02:20,810
+don't get afraid,
+
+30
+00:02:20,810 --> 00:02:21,920
+don't panic,
+
+31
+00:02:21,950 --> 00:02:25,400
+oftentimes these error messages are really useful,
+
+32
+00:02:25,430 --> 00:02:28,480
+you should read them and you should have a look at the line numbers
+
+33
+00:02:28,490 --> 00:02:29,950
+they point you to.
+
+34
+00:02:30,200 --> 00:02:32,810
+Now what about logical errors though?
+
+35
+00:02:32,870 --> 00:02:35,370
+Let's have a look at these in the next lecture.

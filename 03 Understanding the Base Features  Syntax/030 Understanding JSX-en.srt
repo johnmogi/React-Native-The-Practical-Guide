@@ -1,0 +1,263 @@
+1
+00:00:02,150 --> 00:00:06,920
+In the last lecture, I walked you through this component and how generally is structured.
+
+2
+00:00:07,020 --> 00:00:08,610
+Now let's dive deeper into this
+
+3
+00:00:08,680 --> 00:00:17,160
+jsx thing. For this, I'll comment out this block here so that it's not used anymore and I'll return something else,
+
+4
+00:00:17,730 --> 00:00:23,310
+I can use the react object we're importing up here and call a method on it,
+
+5
+00:00:23,370 --> 00:00:30,690
+create element, this by the way is also the reason why we have to import react because this code here
+
+6
+00:00:31,050 --> 00:00:33,720
+isn't yet compiled to what we're writing here
+
+7
+00:00:33,810 --> 00:00:40,260
+even though we don't see that. Create element is a method and it takes three arguments, actually it takes
+
+8
+00:00:40,260 --> 00:00:48,240
+an infinite amount of arguments but at least three. The first one is the element we want to render to
+
+9
+00:00:48,240 --> 00:00:48,840
+the dom,
+
+10
+00:00:48,840 --> 00:00:54,580
+this could be a div, this can be a normal html element like a div,
+
+11
+00:00:54,660 --> 00:00:58,980
+It could also be your own component if you have one here.
+
+12
+00:00:59,160 --> 00:01:04,860
+We don't though, because we're inside a component we can't render that, we could render any other component
+
+13
+00:01:04,860 --> 00:01:08,390
+we're importing but we have no such component.
+
+14
+00:01:08,400 --> 00:01:13,000
+The second argument is basically the configuration for this
+
+15
+00:01:13,350 --> 00:01:20,460
+and there, we would pass a javascript object,this is optional we can also pass null and we'll do this
+
+16
+00:01:20,460 --> 00:01:23,140
+for now because I don't want to configure it.
+
+17
+00:01:23,280 --> 00:01:30,510
+The third argument here then is any amount of children and we could have multiple arguments separated
+
+18
+00:01:30,510 --> 00:01:31,820
+by commas.
+
+19
+00:01:31,890 --> 00:01:35,980
+Children means what's nested inside this div,
+
+20
+00:01:36,060 --> 00:01:39,450
+now in this case, we want to nest h1 element.
+
+21
+00:01:39,720 --> 00:01:49,650
+Let's try by adding h1 and then as another argument, let's add this text here with multiple exclamation
+
+22
+00:01:49,650 --> 00:01:56,310
+marks and let's escape this quotation mark here with the backslash so that we can identify that this
+
+23
+00:01:56,310 --> 00:01:58,570
+was rendered by this create element method.
+
+24
+00:01:59,410 --> 00:02:05,450
+Now with that, let me save this code create element with four arguments, div,
+
+25
+00:02:05,500 --> 00:02:13,270
+null, h1 and the text, make sure you save the file in visual studio code, you'll see that is saved if you
+
+26
+00:02:13,270 --> 00:02:19,300
+see a cross here and no dot and then let's go back to our application.
+
+27
+00:02:19,300 --> 00:02:21,210
+Here we see h1,
+
+28
+00:02:21,440 --> 00:02:23,610
+Hi I'm react app
+
+29
+00:02:23,650 --> 00:02:28,840
+and if we inspect this in the developer tools, in Chrome here in my case which I strongly recommend
+
+30
+00:02:28,840 --> 00:02:29,600
+using,
+
+31
+00:02:29,770 --> 00:02:34,330
+you'll see we get a div with two text nodes inside, h1 and
+
+32
+00:02:34,390 --> 00:02:37,340
+Hi I'm a react app. So we didn't render h1
+
+33
+00:02:37,360 --> 00:02:45,370
+element, we rendered text and this is actually the default behavior, h1 here is interpreted as
+
+34
+00:02:45,370 --> 00:02:46,010
+text,
+
+35
+00:02:46,120 --> 00:02:52,510
+it's not rendered as element. If we want to render another element inside the div,
+
+36
+00:02:52,750 --> 00:03:00,580
+what we have to do is replace this code here with another call to react create element to create a
+
+37
+00:03:00,580 --> 00:03:03,290
+new html element at the end.
+
+38
+00:03:03,310 --> 00:03:10,900
+Here we now pass h1, then null as configuration and then the text we want to render,
+
+39
+00:03:10,900 --> 00:03:15,800
+so here let's mix this up and say does this work now.
+
+40
+00:03:15,810 --> 00:03:21,690
+Now if we save this file and we go back to the application we see a h1 tag, does this work
+
+41
+00:03:21,690 --> 00:03:25,640
+now. We can also see this if we inspect it in the developer tools,
+
+42
+00:03:25,780 --> 00:03:27,460
+we get a div wrapped in a
+
+43
+00:03:27,490 --> 00:03:29,900
+h1 tag.
+
+44
+00:03:29,950 --> 00:03:38,290
+Now what we don't see is the css styling getting applied because we don't see the class being added,
+
+45
+00:03:39,190 --> 00:03:40,770
+in our jsx code,
+
+46
+00:03:40,780 --> 00:03:45,640
+we added a css class with class name not with class
+
+47
+00:03:45,640 --> 00:03:51,680
+by the way. I'll come back to why we use class name in the next lecture. So we add
+
+48
+00:03:51,690 --> 00:03:55,850
+class name, in our create element call,
+
+49
+00:03:55,920 --> 00:04:01,020
+we would simply not pass null as configuration but a javascript object,
+
+50
+00:04:01,530 --> 00:04:07,470
+and there we can define class name and assign any css classes we want to add,
+
+51
+00:04:07,620 --> 00:04:11,930
+for example, app, the same class we're applying here.
+
+52
+00:04:12,770 --> 00:04:20,710
+We now save this file again, it reloads and we now see the updated styling with the center text, we see
+
+53
+00:04:20,710 --> 00:04:28,210
+these css class being applied here on the div too. This is super important to understand, the code
+
+54
+00:04:28,210 --> 00:04:36,910
+we just wrote here with react create element and the nested react create element is the exact equivalent
+
+55
+00:04:36,940 --> 00:04:45,310
+of this jsx code and it's actually to what this code here will get compiled by one of the many build
+
+56
+00:04:45,340 --> 00:04:46,960
+tools we get out of the box
+
+57
+00:04:46,960 --> 00:04:54,160
+in this project. It is the reason why we need to import react even though we're not using it at all
+
+58
+00:04:54,160 --> 00:04:59,720
+when using this syntax, because behind the scenes we will use it once it is compiled.
+
+59
+00:05:00,010 --> 00:05:07,180
+Of course writing the code like this with create element is really cumbersome especially as you add
+
+60
+00:05:07,180 --> 00:05:10,000
+and nest more and more elements,
+
+61
+00:05:10,000 --> 00:05:12,910
+this is why we typically don't use this code
+
+62
+00:05:13,210 --> 00:05:19,930
+but instead, this code we started with. This is the reason why we use jsx but it's super important
+
+63
+00:05:19,930 --> 00:05:24,080
+to understand the internals and understand what this compiles to
+
+64
+00:05:24,130 --> 00:05:31,090
+and also, most important of all, understand that whilst it does look like html, it isn't.
+
+65
+00:05:31,090 --> 00:05:33,370
+This is javascript in the end,
+
+66
+00:05:33,400 --> 00:05:35,960
+it gets compiled to this code.

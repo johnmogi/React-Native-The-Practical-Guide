@@ -1,0 +1,287 @@
+1
+00:00:02,270 --> 00:00:05,110
+We already learn a lot about the react basics.
+
+2
+00:00:05,120 --> 00:00:10,870
+over the last lectures. Our applications still can use some extra styling
+
+3
+00:00:10,870 --> 00:00:20,490
+I'd say though. For example, this person components would be nice if they would look like cards and therefore
+
+4
+00:00:20,490 --> 00:00:23,800
+be more like closed objects.
+
+5
+00:00:23,840 --> 00:00:29,330
+Right now we can't really see the differences or we can't really see the borders between this component
+
+6
+00:00:29,330 --> 00:00:30,740
+and the other components.
+
+7
+00:00:31,070 --> 00:00:35,540
+So styling components is obviously something super important
+
+8
+00:00:35,750 --> 00:00:40,700
+and right now there are two ways of styling we can implement,
+
+9
+00:00:40,700 --> 00:00:42,290
+I will show you both.
+
+10
+00:00:42,500 --> 00:00:45,770
+First of all, let's add a person.css file
+
+11
+00:00:45,770 --> 00:00:51,950
+to our person component and I gave this follow the same name as the javascript file, just with a different
+
+12
+00:00:51,950 --> 00:00:53,530
+extension. Of course
+
+13
+00:00:53,540 --> 00:00:55,850
+theoretically, that file name is up to you.
+
+14
+00:00:56,180 --> 00:01:03,700
+Now one important thing, whichever css code I write in here is not scoped to this person.js
+
+15
+00:01:03,790 --> 00:01:05,900
+component, it is global
+
+16
+00:01:05,890 --> 00:01:07,870
+css code.
+
+17
+00:01:08,000 --> 00:01:12,340
+So I will define a new css class which I named Person with a capital P,
+
+18
+00:01:12,440 --> 00:01:18,950
+still I could add this anywhere in my application since it is global but by using my component name,
+
+19
+00:01:19,190 --> 00:01:23,630
+I can rule out the danger of and accidentally using it somewhere else.
+
+20
+00:01:23,630 --> 00:01:26,990
+So I will simply assign it to my div here, class name
+
+21
+00:01:26,990 --> 00:01:32,280
+Keep in mind, not class, class name is person, a string person.
+
+22
+00:01:32,660 --> 00:01:37,820
+Now down there in the css file I can now change the styling,
+
+23
+00:01:37,820 --> 00:01:46,180
+maybe give it a width of 60% and a margin of auto, to center it. Maybe
+
+24
+00:01:46,180 --> 00:01:58,070
+also give it a border of 1px pixel solid #eee, a light grey and a box shadow of 0 2px 3px and
+
+25
+00:01:58,160 --> 00:02:04,650
+a slightly darker gray and let's give it a padding of 16px
+
+26
+00:02:04,650 --> 00:02:14,550
+maybe. Finally, let's set text align to center to center all the text for now, save this css file and
+
+27
+00:02:14,550 --> 00:02:16,470
+save the person.js file where
+
+28
+00:02:16,470 --> 00:02:19,150
+I assign it as a class,
+
+29
+00:02:19,360 --> 00:02:20,910
+nothing happens.
+
+30
+00:02:20,950 --> 00:02:30,380
+Do you know why? Well because we created our css class in our css file but by default and
+
+31
+00:02:30,470 --> 00:02:36,970
+this is maybe something you didn't know because it's not necessarily intuitive but by default, no file
+
+32
+00:02:36,970 --> 00:02:42,430
+is included into your project into the code which gets created by the build workflow.
+
+33
+00:02:42,680 --> 00:02:47,240
+You always have to import files to add them to the game.
+
+34
+00:02:47,450 --> 00:02:52,390
+So we import the person component in our app.js file
+
+35
+00:02:52,400 --> 00:02:55,840
+and we also import the app.css file here.
+
+36
+00:02:55,960 --> 00:03:02,630
+Now it might look strange to import a css file into a javascript file like this but thanks to web
+
+37
+00:03:02,630 --> 00:03:09,290
+pack which is the build tool which is in the end used by this react script package we're using implicitly
+
+38
+00:03:09,290 --> 00:03:09,910
+here,
+
+39
+00:03:10,220 --> 00:03:17,510
+thanks to webpack, we can actually import css into javascript though it will not really merge the two
+
+40
+00:03:17,510 --> 00:03:19,180
+files or anything like that,
+
+41
+00:03:19,250 --> 00:03:26,240
+it is just made aware of that css file and will handle that differently, will basically import it into
+
+42
+00:03:26,240 --> 00:03:28,240
+our html file.
+
+43
+00:03:28,460 --> 00:03:30,300
+So in person.js,
+
+44
+00:03:30,440 --> 00:03:35,170
+I will also add import to dot slash person.css
+
+45
+00:03:35,270 --> 00:03:37,670
+and here you need the file extension,
+
+46
+00:03:37,670 --> 00:03:41,130
+you can only omit it for javascript files.
+
+47
+00:03:41,240 --> 00:03:44,690
+Now with that you added this you made webpack aware of it,
+
+48
+00:03:44,690 --> 00:03:52,400
+it will now add to your html file and hence if you now go back you see we have this extra styling on
+
+49
+00:03:52,400 --> 00:03:54,130
+our components.
+
+50
+00:03:54,200 --> 00:04:01,370
+You can also see that if you inspect your code, we have the person class here and if you scroll all the
+
+51
+00:04:01,370 --> 00:04:04,800
+way up to the head section here in the developer tools
+
+52
+00:04:05,000 --> 00:04:13,710
+you see that there, we actually have these style tags which you can't find in the html file in the public
+
+53
+00:04:13,710 --> 00:04:15,330
+folder. There
+
+54
+00:04:15,360 --> 00:04:18,180
+we got no style tags in the head section,
+
+55
+00:04:18,270 --> 00:04:20,970
+just some links to the manifest and so on,
+
+56
+00:04:20,970 --> 00:04:24,030
+so not even to css files.
+
+57
+00:04:24,030 --> 00:04:28,750
+The reason for this is that the style text are injected dynamically by webpack,
+
+58
+00:04:28,760 --> 00:04:32,920
+this is the part I meant with it manages the imports you add.
+
+59
+00:04:33,270 --> 00:04:38,000
+And this last style tag here should actually hold your person class,
+
+60
+00:04:38,040 --> 00:04:42,340
+and there you can clearly see it's a normal global css class.
+
+61
+00:04:42,420 --> 00:04:47,730
+You also see that automatic prefixing though which is very convenient because it makes sure that we
+
+62
+00:04:47,730 --> 00:04:48,890
+don't have to do that.
+
+63
+00:04:48,960 --> 00:04:55,650
+We can write the shortest css code possible or needed and it will automatically prefix it to work
+
+64
+00:04:55,680 --> 00:04:58,410
+in as many browsers as possible.
+
+65
+00:04:58,920 --> 00:05:00,550
+So this is the style we set up,
+
+66
+00:05:00,600 --> 00:05:07,300
+let's maybe fine tune it a bit more by adding a top and bottom margin here.
+
+67
+00:05:07,500 --> 00:05:13,930
+So let's maybe set this to 16px so that we have some separation between our cards,
+
+68
+00:05:13,980 --> 00:05:15,230
+looks much better.
+
+69
+00:05:15,510 --> 00:05:17,250
+Now we got the persons here,
+
+70
+00:05:17,460 --> 00:05:23,940
+now let's also style that button and let's style it differently because I mentioned that there are two ways
+
+71
+00:05:23,940 --> 00:05:24,910
+of styling
+
+72
+00:05:24,960 --> 00:05:26,580
+we know right now at least.

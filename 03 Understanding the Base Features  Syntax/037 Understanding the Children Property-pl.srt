@@ -1,0 +1,115 @@
+1
+00:00:02,200 --> 00:00:08,590
+W ostatnim wykładzie nauczyliśmy się używać rekwizytów, jak je odbierać jako argumenty i dynamicznie wyprowadzać
+
+2
+00:00:08,590 --> 00:00:10,390
+je w naszym kodzie.
+
+3
+00:00:10,390 --> 00:00:17,320
+Teraz również chcę wypisać wszystko, co przekazujemy między tagiem otwierającym i zamykającym naszego komponentu niestandardowego, a
+
+4
+00:00:17,320 --> 00:00:19,960
+to jest w rzeczywistości bardzo proste.
+
+5
+00:00:20,020 --> 00:00:27,610
+Istnieje specjalna podpora, do której możemy uzyskać dostęp, reakcja daje nam do niej dostęp, aby być precyzyjnym. W składniku osoby, w którym chcemy go
+
+6
+00:00:27,640 --> 00:00:29,020
+otrzymać, będę
+
+7
+00:00:29,020 --> 00:00:37,360
+owijał mój akapit normalnymi nawiasami, tak, żebym mógł napisać to w wielu wierszach, ponieważ teraz
+
+8
+00:00:38,050 --> 00:00:46,540
+również chcę utworzyć element zawijania po prostu div i chcę zawinąć akapit wewnątrz tego div,
+
+9
+00:00:46,810 --> 00:00:56,280
+a także dodać kolejny element po tym akapicie. Innym elementem powinien być również
+
+10
+00:00:56,400 --> 00:01:03,980
+paragraf, ale powinien to być paragraf, który wyprowadza
+
+11
+00:01:04,000 --> 00:01:13,610
+tę część, którą mijamy. Możemy to zrobić za pomocą pojedynczych nawiasów klamrowych, aby umieścić
+
+12
+00:01:13,610 --> 00:01:14,680
+coś dynamicznego,
+
+13
+00:01:14,930 --> 00:01:20,150
+uzyskując dostęp do rekwizytów, a następnie tutaj, specjalną cechę podrzędną.
+
+14
+00:01:20,150 --> 00:01:28,190
+To jest zastrzeżone słowo, nie przekazywaliśmy niczego jak dzieci naszym osobom, tylko przekazujemy
+
+15
+00:01:28,190 --> 00:01:32,090
+imiona i wiek. Dzieci odnoszą się do
+
+16
+00:01:32,090 --> 00:01:38,960
+dowolnych elementów i obejmuje to zwykły tekst, ponieważ mamy go tutaj między tagiem otwierającym i zamykającym
+
+17
+00:01:39,200 --> 00:01:43,000
+naszego komponentu, a także można zagnieżdżać skomplikowany kod hmtl.
+
+18
+00:01:43,060 --> 00:01:49,550
+Nie musi to być po prostu tekst, może być lista nieuporządkowana z wieloma elementami listy,
+
+19
+00:01:49,550 --> 00:01:57,790
+może to być inne komponenty reagujące, wszystko może tutaj przejść. A te dzieci są teraz wyprowadzane z tą składnią, oczywiście
+
+20
+00:01:57,950 --> 00:02:03,240
+nie musisz owijać tego w akapit, możesz go używać w dowolnym miejscu kodu
+
+21
+00:02:03,530 --> 00:02:11,080
+jsx, a po zapisaniu tego, widzimy moje hobby ścigające się dla Manu podczas gdy Max i Stephanie nadal
+
+22
+00:02:11,080 --> 00:02:15,230
+wyświetlają inne treści tylko dlatego, że nie przekazujemy żadnych dzieci.
+
+23
+00:02:15,530 --> 00:02:23,610
+Jeśli to sprawdzimy, widzimy, że pusty akapit jest renderowany, więc akapit jest
+
+24
+00:02:23,900 --> 00:02:30,680
+tam, jest pusty, ponieważ rekwizyty. dzieci są w zasadzie niezdefiniowane jako puste, ponieważ nie mamy nic między otwieraniem
+
+25
+00:02:30,680 --> 00:02:31,570
+a zamykaniem tagu.
+
+26
+00:02:32,030 --> 00:02:33,490
+Ważne jest, aby
+
+27
+00:02:33,530 --> 00:02:40,130
+wiedzieć, że możesz umieścić swoje treści w swoim komponencie z zewnątrz, nie tylko przez przekazywanie
+
+28
+00:02:40,130 --> 00:02:48,230
+takich rekwizytów, ale także jeśli chcesz przekazać jakąś strukturę html, umieszczając ją między tagiem otwierającym a zamykającym i
+
+29
+00:02:48,230 --> 00:02:54,160
+uzyskując dostęp do niego za pomocą rekwizytów. dzieci.

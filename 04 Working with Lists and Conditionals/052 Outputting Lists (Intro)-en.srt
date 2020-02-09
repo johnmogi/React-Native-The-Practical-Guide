@@ -1,0 +1,59 @@
+1
+00:00:02,190 --> 00:00:08,250
+Over the last lectures, we learned how to output content conditionally and that we simply take advantage
+
+2
+00:00:08,250 --> 00:00:11,310
+of the fact that everything is javascript.
+
+3
+00:00:11,310 --> 00:00:20,100
+Now I want to render my list of persons, thus far we're not really doing this in a dynamic way.
+
+4
+00:00:20,100 --> 00:00:26,000
+We have a couple of persons here in our state and this should be our single source of truth.
+
+5
+00:00:26,010 --> 00:00:32,090
+This should be our data source in bigger applications, in real applications,
+
+6
+00:00:32,100 --> 00:00:37,010
+this might be populated from data or with data you fetch from a server.
+
+7
+00:00:37,350 --> 00:00:46,260
+So here, we got an array of persons but in the jsx we return here in our conditional
+
+8
+00:00:46,260 --> 00:00:53,400
+now, we simply hardcoded three persons and manually assigned data to the different persons in our array
+
+9
+00:00:54,050 --> 00:00:56,470
+this of course is super inflexible.
+
+10
+00:00:56,700 --> 00:01:04,560
+If we ever change something, if we add a new person or remove one, this will basically break and we can't
+
+11
+00:01:04,560 --> 00:01:11,200
+even address a specific person when updating it like we do here with the click or the changedHandler.
+
+12
+00:01:11,210 --> 00:01:14,400
+This is all not really working in the way it should work,
+
+13
+00:01:14,520 --> 00:01:22,170
+so let's learn how we can output lists of data, arrays basically and how we can also then interact
+
+14
+00:01:22,170 --> 00:01:25,620
+with them, update them and correctly change arrays
+
+15
+00:01:25,620 --> 00:01:29,500
+in our state. We'll focus on all these things over the next lectures.

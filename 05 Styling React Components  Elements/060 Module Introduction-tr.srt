@@ -1,0 +1,51 @@
+1
+00:00:02,360 --> 00:00:08,240
+Önceki modüllere göre yeni bir modüle hoş geldiniz, bileşenleri oluşturma ve
+
+2
+00:00:08,720 --> 00:00:16,580
+dinamik içeriği dinamik içeriği JS X kodunda çıktı olarak görüntülemek için çeşitli tepki veren
+
+3
+00:00:16,580 --> 00:00:20,740
+ve yerli javascript özelliklerini kullanarak çok şey öğreneceksiniz.
+
+4
+00:00:21,110 --> 00:00:25,130
+Ayrıca, yeniden aktive bileşenleri şekillendirmeye de değindik.
+
+5
+00:00:25,340 --> 00:00:33,020
+Satır içi stiller ile yaptım ve sana bu CSSA stillerini uygulamak için bir C S S dosyası nasıl içe aktaracağımı gösterdim.
+
+6
+00:00:33,020 --> 00:00:38,660
+Bunların, ithal ettiğiniz bileşenlere uymadığından bahsettim.
+
+7
+00:00:38,670 --> 00:00:44,990
+Bu yürüyüşte unsurları yeniden şekillendirmeye odaklanmak istiyorum çünkü şimdiye kadar çözdüğünüzden daha
+
+8
+00:00:44,990 --> 00:00:46,760
+fazla şey var.
+
+9
+00:00:46,760 --> 00:00:52,020
+Birincisi, stilleri veya sınıf adlarını dinamik olarak nasıl ayarlayabileceğinize bakmak istiyorum.
+
+10
+00:00:52,310 --> 00:00:59,480
+Ayrıca, satır içi stilleri kullanmanın bu kısıtlamasının etrafında nasıl çalışılacağını size göstermek istiyorum, bu nedenle sınırlandırılmış
+
+11
+00:00:59,480 --> 00:01:06,350
+stillere sahip olmakla birlikte, medya sorgularını veya sahte seçicileri kullanamamak veya Seer'in dosyalarını kullanamamak gibi
+
+12
+00:01:06,620 --> 00:01:12,540
+kısıtlamalara sahip olmak ve genel Stahl'ın sahip olduğu bir Bu konuyu ele almanın
+
+13
+00:01:12,530 --> 00:01:17,440
+birkaç yolu ve bu modülde katılarla çalışmanın tüm bu yollarına dalacağız.

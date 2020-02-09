@@ -1,0 +1,211 @@
+1
+00:00:02,850 --> 00:00:08,370
+Abbiamo già messo un po 'di lavoro in elenchi e li abbiamo migliorati, ad esempio
+
+2
+00:00:08,370 --> 00:00:15,390
+sfruttando l'indice del nostro elemento per eseguire un codice che tiene veramente conto di quale elemento viene eseguito, ma possiamo
+
+3
+00:00:15,390 --> 00:00:22,320
+ancora migliorarlo, ad esempio prendendoci cura di questo errore stiamo prendendo l'approccio chiave a cui manca la chiave. Propp
+
+4
+00:00:22,320 --> 00:00:29,190
+è in realtà una proprietà importante che dovremmo aggiungere durante il rendering degli elenchi di dati ed è per
+
+5
+00:00:29,190 --> 00:00:31,540
+questo che Riak ci dice di farlo.
+
+6
+00:00:31,920 --> 00:00:35,130
+Non abbiamo specificato una proprietà chiave di persona.
+
+7
+00:00:35,130 --> 00:00:41,970
+In realtà è una proprietà predefinita che re-act si aspetta di trovare su un elemento, indipendentemente dal fatto che si tratti di un
+
+8
+00:00:42,330 --> 00:00:47,210
+componente personalizzato o di un elemento HVM predefinito che si esegue il rendering attraverso un elenco.
+
+9
+00:00:47,220 --> 00:00:57,350
+Quindi fondamentalmente mappando un array in J come elementi x la proprietà Diski aiuta a riattivare l'elenco in modo efficiente.
+
+10
+00:00:57,360 --> 00:01:00,980
+Considera il caso in cui abbiamo eliminato elementi dalla lista.
+
+11
+00:01:00,990 --> 00:01:02,650
+Certo che funziona.
+
+12
+00:01:02,730 --> 00:01:09,420
+Ma dietro le quinte la reazione ha bisogno di scoprire che cosa ha realmente bisogno di aggiustare nel Dom generale e
+
+13
+00:01:09,420 --> 00:01:15,510
+ci addentreremo più in profondità in ciò che re-act fa esattamente in una sezione specifica qui nel corso, dove
+
+14
+00:01:15,510 --> 00:01:17,910
+ti do un breve sguardo dietro le quinte.
+
+15
+00:01:17,910 --> 00:01:24,380
+di rendering ora o se in realtà ha fatto solo il vero Dom con il risultato del metodo
+
+16
+00:01:24,390 --> 00:01:31,920
+di rendering al Dom precedente che lo ha reso questa compressione del futuro con il passato in fondo e per le liste.
+
+17
+00:01:31,920 --> 00:01:37,380
+Ma fondamentalmente ciò che fa è che ha qualcosa chiamato Dom di Wordle in cui
+
+18
+00:01:37,380 --> 00:01:40,860
+confronta ciò che renderizzerebbe Ora se dovesse chiamare il metodo
+
+19
+00:01:40,860 --> 00:01:46,180
+Ovviamente ha bisogno di scoprire quali elementi sono cambiati e reagire non sono umani.
+
+20
+00:01:46,200 --> 00:01:52,260
+Non vediamo chiaramente come facciamo che abbiamo tre elementi distinti con nomi diversi da
+
+21
+00:01:52,860 --> 00:01:54,780
+renderizzare che ho cliccato accidentalmente.
+
+22
+00:01:54,780 --> 00:02:00,740
+Quindi non vede che questo è il menu di Mac e Steffanie reagisce solo con un gruppo di componenti di una
+
+23
+00:02:01,170 --> 00:02:03,300
+persona e non li ispeziona a fondo.
+
+24
+00:02:03,300 --> 00:02:05,170
+Sarebbe super inefficiente.
+
+25
+00:02:05,670 --> 00:02:08,700
+Quindi per impostazione predefinita sarà solo Riera sotto l'intera lista.
+
+26
+00:02:08,700 --> 00:02:11,790
+E per una lunga lista questo è molto inefficiente.
+
+27
+00:02:11,790 --> 00:02:17,040
+È qui che dovremmo assegnare una chiave a una proprietà per consentire a reagire di reagire
+
+28
+00:02:17,040 --> 00:02:24,720
+per tenere traccia dei singoli elementi in modo che abbia una chiara proprietà che possa confrontare tra i diversi elementi per scoprire quali
+
+29
+00:02:24,720 --> 00:02:26,800
+elementi sono cambiati e quali no.
+
+30
+00:02:26,910 --> 00:02:31,680
+Quindi aggiunsero solo elementi rilegati che cambiarono e non l'intera lista.
+
+31
+00:02:32,040 --> 00:02:38,870
+Quindi quello che facciamo è assegnare la chiave e ora cosa assegniamo qui qualcosa di unico.
+
+32
+00:02:39,180 --> 00:02:45,120
+probabilmente hai qualche idea sui tuoi elementi se li ottieni da un database o qualcosa del genere.
+
+33
+00:02:45,120 --> 00:02:45,790
+In genere
+
+34
+00:02:45,810 --> 00:02:53,370
+È probabile che tu abbia un ID o qualsiasi altro identificativo univoco e il tuo nome
+
+35
+00:02:53,370 --> 00:02:56,250
+sarebbe unico ma non necessariamente garantito.
+
+36
+00:02:56,250 --> 00:03:02,340
+Quindi, quello che potremmo fare è usare indice perché dopo tutte le modifiche indicizzate in cui ogni elemento della
+
+37
+00:03:02,340 --> 00:03:02,630
+matrice.
+
+38
+00:03:02,630 --> 00:03:03,210
+Destra.
+
+39
+00:03:03,450 --> 00:03:04,110
+Giusto.
+
+40
+00:03:04,110 --> 00:03:06,920
+Ma anche l'indice fa parte della lista stessa.
+
+41
+00:03:07,020 --> 00:03:11,160
+Se la lista cambia ogni elemento riceverà un nuovo indice.
+
+42
+00:03:11,160 --> 00:03:13,740
+Almeno ogni elemento dopo il cambiamento.
+
+43
+00:03:13,740 --> 00:03:19,890
+Quindi non è una buona chiave, alla fine, non aiuterà davvero a reagire, quindi dovremmo davvero provare ad avere
+
+44
+00:03:19,890 --> 00:03:21,010
+un identificatore univoco.
+
+45
+00:03:21,240 --> 00:03:26,530
+E ancora, questo è solo Datore di dati fittizi qui, aggiungerò semplicemente un ID in dati reali.
+
+46
+00:03:26,550 --> 00:03:32,380
+È probabile che tu abbia un ID di questo tipo che non deve essere un numero può essere qualcosa di unico.
+
+47
+00:03:32,460 --> 00:03:37,650
+Quindi qui sto solo martellando sulla mia tastiera per ottenere alcuni ID univoci.
+
+48
+00:03:37,650 --> 00:03:40,040
+Ora con quello posso usarlo.
+
+49
+00:03:40,050 --> 00:03:48,240
+Sei in possesso di un identificativo personale per assicurarti che ogni elemento abbia una reazione chiave unica che può essere utilizzato per confrontare
+
+50
+00:03:48,240 --> 00:03:54,790
+gli elementi del futuro con gli elementi del passato e solo fino ai luoghi dormienti dove deve essere aggiornato.
+
+51
+00:03:55,020 --> 00:04:01,680
+Ora, se se ricarichiamo questo e le persone bersaglio l'avvertimento chiave è sparito, otteniamo lo stesso comportamento
+
+52
+00:04:01,680 --> 00:04:06,230
+di prima e possiamo ispezionarlo per vedere come aggiorna Saddam qui.
+
+53
+00:04:06,270 --> 00:04:12,390
+Ma dietro le quinte è ora in grado di farlo in un modo più efficiente, che ovviamente è molto importante.

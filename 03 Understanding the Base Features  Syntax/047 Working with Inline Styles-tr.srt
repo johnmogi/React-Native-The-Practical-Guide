@@ -1,0 +1,211 @@
+1
+00:00:02,130 --> 00:00:07,990
+Son dersimizde, uygulamanın stilini belirlemek için farklı yollar bulduğumuzdan bahsettim ve bu düğmeyi
+
+2
+00:00:07,990 --> 00:00:15,400
+farklı tarzda stil edelim ve sadece bu düğmeyi nerede bulunduğumuzu takip etmeliyiz. Bu düğmeyi satır içi
+
+3
+00:00:15,400 --> 00:00:18,770
+stiller olarak adlandırılan bir şeyle stil etmek istiyoruz.
+
+4
+00:00:18,840 --> 00:00:24,850
+C-s'leri dosya ve sınıf olarak kullanmanın yanlış bir yanı yoktur ve bu tercih edilen yol olabilir.
+
+5
+00:00:25,330 --> 00:00:32,790
+Ancak sıklıkla uygulamaları gördüğünüz ve yeniden uyguladığınız şey aslında stilinizi javascript içinde tasarlamanızdır.
+
+6
+00:00:32,800 --> 00:00:34,420
+Bu nasıl çalışıyor.
+
+7
+00:00:34,800 --> 00:00:40,080
+Şimdi, render işlevinde stili adlandıracağım yeni bir sabit oluşturmaya gidelim.
+
+8
+00:00:40,090 --> 00:00:41,660
+Ad sana kalmış.
+
+9
+00:00:41,740 --> 00:00:43,460
+Bu bir javascript nesnesi.
+
+10
+00:00:43,480 --> 00:00:50,800
+Ve farkında olabileceğiniz gibi D. C. 'nın stil özellikleri gibi, arka
+
+11
+00:00:50,800 --> 00:00:59,170
+plan rengi geçersiz olacağından, çizgi yerine arka plan rengi deve kılıfı için javascript bastırma ek açıklamaları vardır.
+
+12
+00:00:59,170 --> 00:01:04,140
+Javascript mülkiyet ismini, bunu kullanmak için tırnak işaretleri içine sarabilirsiniz.
+
+13
+00:01:04,360 --> 00:01:09,850
+Deve kılıfını basılı bir temsil için kullanacağım ve sonra bir renk olabilen bir dize olan
+
+14
+00:01:10,210 --> 00:01:11,510
+bir değer atadım.
+
+15
+00:01:11,530 --> 00:01:16,630
+Örneğin beyaz, yazı tipini miras alacak şekilde ayarlayabiliriz.
+
+16
+00:01:16,630 --> 00:01:26,080
+piksel Sallet'in sınırı ve daha sonra mavi ayarlayabiliriz ve biz de biraz dolgu ekleyebiliriz.
+
+17
+00:01:26,580 --> 00:01:32,970
+Çevreleyen fonumuzu kullanmak için, kenarlık değil kenarlık da sadece bir
+
+18
+00:01:32,980 --> 00:01:34,840
+Belki 8 piksel.
+
+19
+00:01:34,840 --> 00:01:39,760
+Chalis Trottier'ı yazdığımız için tüm bu değerleri tırnak işareti içine koyduğunuzdan emin olun.
+
+20
+00:01:39,880 --> 00:01:42,840
+Bu dizeler olmalı.
+
+21
+00:01:42,860 --> 00:01:49,430
+Şimdi, bir stil mülkü okumak ve eklemek için biraz daha kolay bir hale getirmek için yeni bir satıra
+
+22
+00:01:49,640 --> 00:01:50,720
+tıklama düğmesine basabilirim.
+
+23
+00:01:51,080 --> 00:01:58,280
+Bu aslında J S X tarafından sağlanan normal stil niteliğidir ve stil sizin de görebileceğiniz
+
+24
+00:01:58,280 --> 00:02:01,060
+gibi burada dinamik bir değer almalıdır.
+
+25
+00:02:01,320 --> 00:02:09,230
+Tüm ABD, buradaki ifadede burada tanımlanan bu stil sabitine atıfta bulunarak burada stil geçirir; bu şekilde burada
+
+26
+00:02:09,620 --> 00:02:14,630
+bir ifade döndürür ve böylece yalnızca bu gibi şeyleri kullanamazsınız.
+
+27
+00:02:14,630 --> 00:02:16,150
+Sınıf mülkü değil.
+
+28
+00:02:16,190 --> 00:02:23,120
+Normal bir değişkendir ya da aslında, bu oluşturma yönteminin sabitini asla değiştirmiyoruz.
+
+29
+00:02:23,660 --> 00:02:31,840
+Bakalım bu kaydedersek bunun bir etkisi olup olmadığını gerçekten düğmenin şimdi farklı göründüğünü görüyoruz.
+
+30
+00:02:31,990 --> 00:02:37,750
+Bu hatayı düzelterek ve sınırlarımızda bir piksel bulundurarak biraz daha geliştirebiliriz, böylece
+
+31
+00:02:37,760 --> 00:02:44,880
+bu stil uygulanır ve işaretçiyi imleci işaret ederek elde ederiz, böylece Roker'in üzerine geldiğimizde
+
+32
+00:02:44,880 --> 00:02:46,460
+veya üzerinde gezinirken.
+
+33
+00:02:46,630 --> 00:02:47,700
+Şimdiye kadar güvende
+
+34
+00:02:47,980 --> 00:02:52,150
+Mavi kenarlığı görüyoruz ve o imleci tekrar görüyoruz.
+
+35
+00:02:52,150 --> 00:02:58,780
+Artık gezinme konusunda değişmez ve satır içi stilleri kullanırken bu efekt
+
+36
+00:02:58,780 --> 00:03:00,530
+efektini gerçekten zorlar.
+
+37
+00:03:00,530 --> 00:03:05,920
+Zaten bir kısıtlamadır ancak bu derste bir bütün modül var, burada
+
+38
+00:03:05,920 --> 00:03:12,790
+sana bir sürü düşünce koyabileceğin bir şey olabilir stil yeniden eyleme bileşenlere bazı akıllı
+
+39
+00:03:12,790 --> 00:03:13,650
+çözümler göstereceğim.
+
+40
+00:03:13,660 --> 00:03:16,720
+Her zaman bir CSR dosyası kullanabileceğinizi unutmayın.
+
+41
+00:03:16,930 --> 00:03:19,310
+Bulunduğunuz bulaşık torbaları küresel.
+
+42
+00:03:19,330 --> 00:03:23,590
+Düğmeyi burada değiştirirsek, tüm uygulamanızdaki tüm düğmeler değiştirilecek.
+
+43
+00:03:23,620 --> 00:03:30,940
+İstediğiniz gibi olmayabilir ancak normalde sözdizimi olarak kullanabilirsiniz veya satır içi stilleri
+
+44
+00:03:30,940 --> 00:03:33,250
+burada yaptığınız gibi kullanırsınız.
+
+45
+00:03:33,250 --> 00:03:38,860
+Ardından, stil, bileşene veya eklediğiniz unsurun kapsamına alınır.
+
+46
+00:03:39,040 --> 00:03:44,250
+Ancak, C-s'lerin tam gücünü kullanamamanın bazı kısıtlamaları var.
+
+47
+00:03:44,560 --> 00:03:49,870
+Bahsettiğim gibi bununla ilgili tam bir modüle sahip olacağım, çünkü kapsamın stillerini nerede
+
+48
+00:03:49,870 --> 00:03:54,460
+bulabileceğiniz ve tüm C S S özelliklerini kullanabileceğiniz altın bir yol var.
+
+49
+00:03:54,460 --> 00:03:55,930
+Bununla ilgili daha fazla bilgi için şimdilik.
+
+50
+00:03:55,930 --> 00:04:00,230
+Şu anda bu iki farklı stil biçimine sahip olduğumuzun farkında olun.
+
+51
+00:04:00,370 --> 00:04:02,890
+Satır içi stilleri burada yaptığımız gibi kullanın.
+
+52
+00:04:02,980 --> 00:04:09,980
+Bir kapsamın stilini istediğiniz zaman ve yalnızca uygulamanızda veya aynı bileşende bu tek öğe için ve
+
+53
+00:04:10,060 --> 00:04:13,360
+öğemiz dışındaki öğeler için geçerli olduğundan emin olun.

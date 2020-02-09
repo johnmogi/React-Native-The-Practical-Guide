@@ -1,0 +1,91 @@
+1
+00:00:02,320 --> 00:00:05,200
+Şimdiye kadar üzerinde çalıştığımız projeye geri döndüm.
+
+2
+00:00:05,200 --> 00:00:07,810
+Orada bazı temel stilleri edindik.
+
+3
+00:00:07,810 --> 00:00:12,180
+Örneğin, bu kartları, kişileri ve bu düğmeyi çıktığımızda.
+
+4
+00:00:12,310 --> 00:00:15,130
+Ama örneğin bu düğmeye başlayalım.
+
+5
+00:00:15,130 --> 00:00:18,590
+Üzerinde bulunduğumuzda zaten bir konumuz var.
+
+6
+00:00:18,590 --> 00:00:20,670
+Bu stili değiştirmez.
+
+7
+00:00:20,680 --> 00:00:28,150
+bizim uygulama bileşenimizin bir parçası olan bu buton burada bizim şablonumuzda görebiliyoruz ki bu düğme
+
+8
+00:00:28,480 --> 00:00:36,810
+burada sıraladığımız satır içi stillerle şekillendirilmiş ve biz onları daha önce kurduk ve işleme yöntemini burada buluyoruz.
+
+9
+00:00:36,820 --> 00:00:38,480
+Sorun şu ki
+
+10
+00:00:38,680 --> 00:00:46,150
+Bir nesne oluşturmak ve stil özelliğine veri atamak için javascript kullanıyoruz ve j olarak X ve tepki gerçek H
+
+11
+00:00:46,150 --> 00:00:50,260
+üzerinde ayarlama konusunda ilgileniyor. T. erkek elemanın
+
+12
+00:00:50,260 --> 00:00:54,050
+Mesele burada pseudo Electress'i kullanamayacağımız.
+
+13
+00:00:54,160 --> 00:01:01,210
+Corps'un stil avantajı sadece bu desene uygulanıyor ve Obert'ı biliyor Ama daha sonra
+
+14
+00:01:01,210 --> 00:01:07,690
+başka bir düğmeyle başvuru yapmışsam ve zaten alternatifin CSS dosyasında stil etmek
+
+15
+00:01:07,690 --> 00:01:15,270
+istediğini belirtmiştik ve orada sahte dahil olmak üzere normal CSSA kullanabiliriz seçiciler Hulver'a benzer,
+
+16
+00:01:15,430 --> 00:01:22,040
+ancak Clovelly'nin Avro bileşenlerine yerleştirilse bile uygulamanızdaki tüm düğmeleri etkilediğini yapar.
+
+17
+00:01:22,060 --> 00:01:28,300
+Bu sorun, bu monohull'ta başa çıkmak için bir tane ayarladı Ama bunun yanında başka bir
+
+18
+00:01:28,300 --> 00:01:29,550
+şeye bakmak istiyorum.
+
+19
+00:01:29,620 --> 00:01:33,880
+Aslında stil dinamik olarak değiştirmek istersek ne olur.
+
+20
+00:01:33,880 --> 00:01:41,480
+Diyelim ki, bu düğmenin yeşil arka plan rengine sahip olması gerektiğini düşünelim.
+
+21
+00:01:41,590 --> 00:01:47,450
+Bir tıklama ve kırmızı arka plan rengi olan kişilere göstermek üzereyiz.
+
+22
+00:01:47,650 --> 00:01:55,720
+Kişi listesini kaldırmak üzereysek, bir sonraki derste stilleri dinamik olarak nasıl değiştirebileceğimizi
+
+23
+00:01:55,720 --> 00:01:56,520
+görelim.

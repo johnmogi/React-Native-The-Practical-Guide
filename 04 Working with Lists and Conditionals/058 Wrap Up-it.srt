@@ -1,0 +1,79 @@
+1
+00:00:02,340 --> 00:00:08,800
+In questo modulo impariamo molto sull'output condizionale del contenuto e sull'output di liste.
+
+2
+00:00:08,850 --> 00:00:12,740
+E voglio solo riassumere brevemente come prima che ti mando all'assegnazione.
+
+3
+00:00:12,740 --> 00:00:18,360
+Ti consente di esercitarti perché è fondamentale per farlo bene e per comprenderlo.
+
+4
+00:00:18,420 --> 00:00:27,630
+Abbiamo appreso due cose importanti che dovremmo pubblicare il contenuto in modo condizionale usando javascript e lo stesso
+
+5
+00:00:27,630 --> 00:00:29,220
+per gli elenchi.
+
+6
+00:00:29,220 --> 00:00:32,910
+Tutto è javascript key da asporto.
+
+7
+00:00:33,120 --> 00:00:41,280
+ternarie come hai imparato, ma un approccio migliore consiste semplicemente nel creare variabili che vengono emesse nel GSX che
+
+8
+00:00:41,280 --> 00:00:48,680
+si restituisce alla fine e con le istruzioni if ​​se si desidera rendere qualcosa in modo condizionale.
+
+9
+00:00:48,690 --> 00:00:51,240
+Puoi quindi farlo con le espressioni
+
+10
+00:00:51,810 --> 00:00:56,700
+E se vuoi restituire o rendere una lista, usi l'operatore della mappa.
+
+11
+00:00:56,790 --> 00:01:03,600
+Un metodo javascript predefinito che puoi usare sugli array per mappare il tuo array javascript di oggetti o
+
+12
+00:01:03,630 --> 00:01:10,890
+stringhe o qualsiasi cosa ci sia dentro una serie di elementi J S X e re-act estrae quindi questi
+
+13
+00:01:10,980 --> 00:01:13,710
+elementi e renderizza per te lo schermo.
+
+14
+00:01:13,830 --> 00:01:19,860
+ti serve, ad esempio, per rimuovere un elemento che devi aggiungere è la chiave per riaggiustare
+
+15
+00:01:20,220 --> 00:01:26,820
+il latch in modo efficiente aggiorna tutto e che tu avere un paio di strumenti come potete vedere
+
+16
+00:01:26,820 --> 00:01:33,420
+qui per aggiornare il nome per eseguire codice realmente sull'elemento di una lista in cui qualcosa accade realmente.
+
+17
+00:01:33,450 --> 00:01:42,180
+Hai anche appreso che la mappa ti dà non solo l'elemento per il quale è attualmente eseguita questa funzione, ma anche l'uscita dell'indice se
+
+18
+00:01:42,300 --> 00:01:47,530
+Qui impari molte cose utili ma il modo migliore è sempre praticarlo.
+
+19
+00:01:47,550 --> 00:01:52,680
+Quindi passiamo a un compito in modo da poter mettere in pratica tutte le cose che
+
+20
+00:01:52,920 --> 00:01:53,860
+hai appena appreso.
